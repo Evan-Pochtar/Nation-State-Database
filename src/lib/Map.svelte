@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount, onDestroy, tick } from 'svelte';
 	import * as d3 from 'd3';
 	import { feature } from 'topojson-client';
 
@@ -39,60 +39,13 @@
 	let clockTimer: number;
 	const CLOCK_TICK = 50;
 
-	const countryInfoMapByName: Record<string, CountryData> = {
-		Germany: {
-			capital: 'Berlin',
-			population: '83.2M',
-			short:
-				'Germany is a central European country with a history spanning Roman times, the Holy Roman Empire, unification in 1871, 20th-century turmoil, and reunification in 1990.',
-			politics:
-				'Federal parliamentary republic. Chancellor-led government. Multi-party system with proportional representation.',
-			economics:
-				"Europe's largest economy. Strong manufacturing, automotive, and export sectors. Major global exporter."
-		},
-		'United States of America': {
-			capital: 'Washington, D.C.',
-			population: '331.9M',
-			short:
-				'The United States is a federal republic comprising 50 states, with a diverse geography and culture.',
-			politics: 'Federal presidential constitutional republic with separation of powers.',
-			economics: "World's largest economy driven by services, technology, and consumer spending."
-		},
-		France: {
-			capital: 'Paris',
-			population: '68.0M',
-			short:
-				'France is a Western European country known for its culture, cuisine, and historical influence.',
-			politics: 'Semi-presidential republic with a strong executive branch.',
-			economics: 'Mixed economy with significant state involvement in key sectors.'
-		},
-		'United Kingdom': {
-			capital: 'London',
-			population: '67.3M',
-			short:
-				'The United Kingdom is an island nation in northwestern Europe comprising England, Scotland, Wales, and Northern Ireland.',
-			politics: 'Constitutional monarchy with parliamentary democracy.',
-			economics: 'Service-based economy with strong financial and creative sectors.'
-		},
-		Italy: {
-			capital: 'Rome',
-			population: '59.1M',
-			short:
-				'Italy is a Southern European country known for its rich history, art, cuisine, and cultural influence.',
-			politics: 'Parliamentary republic with a multi-party system.',
-			economics: 'Mixed economy with strong manufacturing and tourism sectors.'
-		},
-		Spain: {
-			capital: 'Madrid',
-			population: '47.4M',
-			short:
-				'Spain is a Southwestern European country known for its diverse regions, culture, and history.',
-			politics: 'Constitutional monarchy with parliamentary democracy.',
-			economics: 'Mixed economy with tourism, manufacturing, and agriculture.'
-		}
-	};
+	const countryInfoMapByName: Record<string, CountryData> = {};
 
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
+
+	let svgEl: SVGSVGElement | null = null;
+	let mapGroup: SVGGElement | null = null;
+	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
 
 	onMount(async () => {
 		clockTimer = window.setInterval(() => (now = new Date()), CLOCK_TICK);
@@ -133,6 +86,10 @@
 		window.removeEventListener('resize', handleResize);
 		clearInterval(clockTimer);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
+		if (svgEl && zoomBehavior) {
+			d3.select(svgEl).on('.zoom', null);
+			zoomBehavior = null;
+		}
 	});
 
 	function handleResize() {
@@ -158,6 +115,8 @@
 				setupFocusProjection();
 			}
 		}
+
+		initZoom();
 	}
 
 	function setupFocusProjection() {
@@ -204,6 +163,8 @@
 			focusProjection = fallback;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 		}
+
+		initZoom();
 	}
 
 	function getCountryName(f: GeoFeature): string {
@@ -225,19 +186,11 @@
 					const localJson = await localResp.json();
 
 					if (Array.isArray(localJson)) {
-						localEntry =
-							localJson.find(
-								(e) =>
-									e.name === name
-							) ?? null;
+						localEntry = localJson.find((e) => e.name === name) ?? null;
 					} else if (localJson && typeof localJson === 'object') {
 						localEntry = localJson[name] ?? null;
 						if (!localEntry) {
-							localEntry =
-								Object.values(localJson).find(
-									(e: any) =>
-										e.name === name
-								) ?? null;
+							localEntry = Object.values(localJson).find((e: any) => e.name === name) ?? null;
 						}
 					}
 				} else {
@@ -297,8 +250,10 @@
 				capital: localEntry?.capital ?? countryInfoMapByName[name]?.capital ?? '—',
 				population: localEntry?.population ?? countryInfoMapByName[name]?.population ?? '—',
 				short: summary ?? countryInfoMapByName[name]?.short ?? '—',
-				politics: localEntry?.politics ?? countryInfoMapByName[name]?.politics ?? 'Data not provided.',
-				economics: localEntry?.economics ?? countryInfoMapByName[name]?.economics ?? 'Data not provided.'
+				politics:
+					localEntry?.politics ?? countryInfoMapByName[name]?.politics ?? 'Data not provided.',
+				economics:
+					localEntry?.economics ?? countryInfoMapByName[name]?.economics ?? 'Data not provided.'
 			};
 
 			try {
@@ -309,8 +264,7 @@
 						body: JSON.stringify({ name: name, summary })
 					});
 				} else {
-					const hadSummary =
-						localEntry.summary;
+					const hadSummary = localEntry.summary;
 					if (!hadSummary && summary) {
 						await fetch('/api/countries', {
 							method: 'POST',
@@ -347,12 +301,17 @@
 		}, 800);
 	}
 
-	function closePanel() {
+	async function closePanel() {
 		selectedFeature = null;
 		selectedName = null;
 		focusProjection = undefined;
 		focusPathGenerator = null;
+
+		await tick();
 		handleResize();
+
+		resetZoom();
+		initZoom();
 	}
 
 	function handlePointerDown() {
@@ -397,6 +356,77 @@
 		const hh = String(Math.floor(abs / 60)).padStart(2, '0');
 		const mm = String(abs % 60).padStart(2, '0');
 		return `${sign}${hh}:${mm}`;
+	}
+
+	function buildZoomBehavior() {
+		return d3
+			.zoom<SVGSVGElement, unknown>()
+			.scaleExtent([1, 15])
+			.on('zoom', (event: any) => {
+				if (!mapGroup || !svgEl) return;
+
+				const t = event.transform;
+				const k = t.k;
+				let tx = t.x;
+				let ty = t.y;
+
+				const bbox = mapGroup.getBBox();
+				const vb = svgEl.viewBox.baseVal;
+				const viewW = vb && vb.width ? vb.width : svgEl.clientWidth;
+				const viewH = vb && vb.height ? vb.height : svgEl.clientHeight;
+
+				const txMin = viewW - (bbox.x + bbox.width) * k; // far left
+				const txMax = -bbox.x * k; // far right
+				const tyMin = viewH - (bbox.y + bbox.height) * k; // far top
+				const tyMax = -bbox.y * k; // far bottom
+
+				if (txMin > txMax) {
+					tx = (txMin + txMax) / 2;
+				} else {
+					tx = Math.min(Math.max(tx, txMin), txMax);
+				}
+
+				if (tyMin > tyMax) {
+					ty = (tyMin + tyMax) / 2;
+				} else {
+					ty = Math.min(Math.max(ty, tyMin), tyMax);
+				}
+
+				mapGroup.setAttribute('transform', `translate(${tx},${ty}) scale(${k})`);
+			});
+	}
+
+	function initZoom() {
+		if (!svgEl || !mapGroup) return;
+		d3.select(svgEl).on('.zoom', null);
+
+		zoomBehavior = buildZoomBehavior();
+		d3.select(svgEl).call(zoomBehavior as any);
+
+		d3.select(svgEl).on('dblclick.zoom', () => {
+			resetZoom();
+		});
+	}
+
+	function resetZoom() {
+		if (!svgEl || !zoomBehavior || !mapGroup) return;
+
+		const vb = svgEl.viewBox.baseVal;
+		const viewW = vb && vb.width ? vb.width : svgEl.clientWidth;
+		const viewH = vb && vb.height ? vb.height : svgEl.clientHeight;
+		const bbox = mapGroup.getBBox();
+
+		const sx = viewW / (bbox.width || viewW);
+		const sy = viewH / (bbox.height || viewH);
+		const s = Math.min(1, Math.max(0.4, Math.min(sx, sy)));
+
+		const tx = (viewW - (bbox.x + bbox.width) * s + -bbox.x * s) / 2;
+		const ty = (viewH - (bbox.y + bbox.height) * s + -bbox.y * s) / 2;
+
+		d3.select(svgEl)
+			.transition()
+			.duration(350)
+			.call((zoomBehavior as any).transform, d3.zoomIdentity.translate(tx, ty).scale(s));
 	}
 </script>
 
@@ -473,40 +503,14 @@
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
 				style="width: 100%; height: 100%;"
+				bind:this={svgEl}
 			>
-				{#if countries.length && pathGenerator}
-					{#each countries as c}
-						<path
-							d={pathGenerator(c as any)}
-							class="country clickable"
-							on:click={() => onCountryClick(c)}
-							role="button"
-							tabindex="0"
-							aria-label={getCountryName(c)}
-							on:keydown={(e) => {
-								if (e.key === 'Enter' || e.key === ' ') {
-									e.preventDefault();
-									onCountryClick(c);
-								}
-							}}
-						/>
-					{/each}
-				{/if}
-			</svg>
-
-			<div class="zoom-hint">Click on any country to zoom in and view details</div>
-		{:else}
-			<svg
-				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
-				preserveAspectRatio="xMidYMid meet"
-				style="width: 100%; height: 100%;"
-			>
-				{#if countries.length && focusPathGenerator}
-					{#each countries as c}
-						{#if c !== selectedFeature}
+				<g bind:this={mapGroup}>
+					{#if countries.length && pathGenerator}
+						{#each countries as c}
 							<path
-								d={focusPathGenerator(c as any)}
-								class="country focus-background clickable"
+								d={pathGenerator(c as any)}
+								class="country clickable"
 								on:click={() => onCountryClick(c)}
 								role="button"
 								tabindex="0"
@@ -518,11 +522,43 @@
 									}
 								}}
 							/>
-						{/if}
-					{/each}
+						{/each}
+					{/if}
+				</g>
+			</svg>
 
-					<path d={focusPathGenerator(selectedFeature as any)} class="focus-country" />
-				{/if}
+			<div class="zoom-hint">Click on any country to zoom in and view details</div>
+		{:else}
+			<svg
+				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
+				preserveAspectRatio="xMidYMid meet"
+				style="width: 100%; height: 100%;"
+				bind:this={svgEl}
+			>
+				<g bind:this={mapGroup}>
+					{#if countries.length && focusPathGenerator}
+						{#each countries as c}
+							{#if c !== selectedFeature}
+								<path
+									d={focusPathGenerator(c as any)}
+									class="country focus-background clickable"
+									on:click={() => onCountryClick(c)}
+									role="button"
+									tabindex="0"
+									aria-label={getCountryName(c)}
+									on:keydown={(e) => {
+										if (e.key === 'Enter' || e.key === ' ') {
+											e.preventDefault();
+											onCountryClick(c);
+										}
+									}}
+								/>
+							{/if}
+						{/each}
+
+						<path d={focusPathGenerator(selectedFeature as any)} class="focus-country" />
+					{/if}
+				</g>
 			</svg>
 		{/if}
 
