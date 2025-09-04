@@ -1,5 +1,6 @@
 test-results
 node_modules
+static/data/countries-data.json
 
 # Output
 .output

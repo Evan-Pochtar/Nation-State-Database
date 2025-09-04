@@ -212,21 +212,116 @@
 	}
 
 	async function fetchCountryInfoByName(name: string | '') {
+		if (!name) return;
 		if (infoCache[name]?.data || infoCache[name]?.loading) return;
 
 		infoCache[name] = { loading: true };
 
 		try {
-			// ADD API CALLS HERE
-			const data: CountryData = countryInfoMapByName[name] ?? {
-				capital: '—',
-				population: '—',
-				short: `Placeholder overview for ${name}.`,
-				politics: 'Data not provided.',
-				economics: 'Data not provided.'
+			let localEntry: any = null;
+			try {
+				const localResp = await fetch('/data/countries-data.json');
+				if (localResp.ok) {
+					const localJson = await localResp.json();
+
+					if (Array.isArray(localJson)) {
+						localEntry =
+							localJson.find(
+								(e) =>
+									e.name === name
+							) ?? null;
+					} else if (localJson && typeof localJson === 'object') {
+						localEntry = localJson[name] ?? null;
+						if (!localEntry) {
+							localEntry =
+								Object.values(localJson).find(
+									(e: any) =>
+										e.name === name
+								) ?? null;
+						}
+					}
+				} else {
+					console.warn('No local countries-data.json accessible:', localResp.status);
+				}
+			} catch (err) {
+				console.warn('Error loading /data/countries-data.json', err);
+				localEntry = null;
+			}
+
+			let summary: string | null = null;
+			if (localEntry) {
+				summary =
+					localEntry.short ??
+					localEntry.summary ??
+					localEntry.description ??
+					localEntry.shortDescription ??
+					null;
+			}
+
+			let wikiExtract: string | null = null;
+			if (!summary) {
+				try {
+					const endpoint = 'https://en.wikipedia.org/w/api.php';
+					const params = new URLSearchParams({
+						action: 'query',
+						format: 'json',
+						origin: '*',
+						prop: 'extracts',
+						titles: name,
+						exintro: '1',
+						explaintext: '1',
+						exsectionformat: 'plain'
+					});
+
+					const res = await fetch(`${endpoint}?${params.toString()}`);
+					if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
+					const json = await res.json();
+					const pages = json?.query?.pages;
+					if (!pages) throw new Error('no page data returned');
+
+					const page = Object.values(pages)[0] as any;
+					if (!page || page.missing) {
+						wikiExtract = 'No summary available.';
+					} else {
+						wikiExtract = page.extract || 'No summary available.';
+					}
+
+					summary = wikiExtract;
+				} catch (err) {
+					console.warn('Wikipedia fetch failed, falling back to placeholder summary', err);
+					summary = 'No summary available.';
+				}
+			}
+
+			const data: CountryData = {
+				capital: localEntry?.capital ?? countryInfoMapByName[name]?.capital ?? '—',
+				population: localEntry?.population ?? countryInfoMapByName[name]?.population ?? '—',
+				short: summary ?? countryInfoMapByName[name]?.short ?? '—',
+				politics: localEntry?.politics ?? countryInfoMapByName[name]?.politics ?? 'Data not provided.',
+				economics: localEntry?.economics ?? countryInfoMapByName[name]?.economics ?? 'Data not provided.'
 			};
 
-			await Promise.resolve();
+			try {
+				if (!localEntry) {
+					await fetch('/api', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ name: name, summary })
+					});
+				} else {
+					const hadSummary =
+						localEntry.summary;
+					if (!hadSummary && summary) {
+						await fetch('/api/countries', {
+							method: 'POST',
+							headers: { 'Content-Type': 'application/json' },
+							body: JSON.stringify({ name: localEntry.name ?? name, summary })
+						});
+					}
+				}
+			} catch (err) {
+				console.warn('Failed to persist country summary to /api/countries', err);
+			}
 
 			infoCache[name] = { data, loading: false };
 		} catch (err: any) {
@@ -307,7 +402,7 @@
 
 <div class="map-shell" tabindex="-1">
 	{#if selectedFeature}
-		<div class="left-panel" style="width: {leftWidth}px; min-width: 240px;" aria-hidden="false">
+		<div class="left-panel" style="width: 40vw; min-width: 240px;" aria-hidden="false">
 			<div class="panel-inner">
 				<div
 					style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;"
