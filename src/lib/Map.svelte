@@ -17,6 +17,7 @@
 	let selectedName: string | null = null;
 
 	let leftWidth = 360;
+	let tempLeftWidth = 360;
 	let dragging = false;
 
 	const HANDLE_WIDTH = 6;
@@ -47,6 +48,17 @@
 	let mapGroup: SVGGElement | null = null;
 	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
 
+	let resizeTimeout: number;
+	let currentTransform = d3.zoomIdentity;
+	let isZooming = false;
+
+	function throttledResize() {
+		if (resizeTimeout) clearTimeout(resizeTimeout);
+		resizeTimeout = window.setTimeout(() => {
+			handleResize();
+		}, 100);
+	}
+
 	onMount(async () => {
 		clockTimer = window.setInterval(() => (now = new Date()), CLOCK_TICK);
 
@@ -76,14 +88,15 @@
 			console.log(`Loaded ${countries.length} countries`);
 
 			handleResize();
-			window.addEventListener('resize', handleResize);
+			window.addEventListener('resize', throttledResize);
 		} catch (error) {
 			console.error('Error loading map data:', error);
 		}
 	});
 
 	onDestroy(() => {
-		window.removeEventListener('resize', handleResize);
+		window.removeEventListener('resize', throttledResize);
+		if (resizeTimeout) clearTimeout(resizeTimeout);
 		clearInterval(clockTimer);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
 		if (svgEl && zoomBehavior) {
@@ -132,12 +145,13 @@
 			let proj: d3.GeoProjection;
 			proj = d3.geoMercator();
 
-			const minDim = Math.min(Math.max(300, rightWidth), Math.max(300, rightHeight));
+			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
+			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
 			const paddingPx = Math.max(20, Math.min(80, Math.round(minDim * 0.06)));
 
 			const left = paddingPx;
 			const top = paddingPx;
-			const right = Math.max(rightWidth - paddingPx, left + 10);
+			const right = Math.max(currentRightWidth - paddingPx, left + 10);
 			const bottom = Math.max(rightHeight - paddingPx, top + 10);
 
 			proj.fitExtent(
@@ -156,15 +170,18 @@
 			console.error('Error setting up focus projection:', error);
 
 			const fallback = d3.geoMercator();
+			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			fallback.fitSize(
-				[Math.max(100, rightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
+				[Math.max(100, currentRightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
 				selectedFeature as any
 			);
 			focusProjection = fallback;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 		}
 
-		initZoom();
+		if (!isZooming) {
+			initZoom();
+		}
 	}
 
 	function getCountryName(f: GeoFeature): string {
@@ -203,17 +220,15 @@
 
 			let summary: string | null = null;
 			if (localEntry) {
-				summary =
-					localEntry.short ??
-					localEntry.summary ??
-					localEntry.description ??
-					localEntry.shortDescription ??
-					null;
+				summary = localEntry.summary ?? null;
 			}
 
 			let wikiExtract: string | null = null;
 			if (!summary) {
 				try {
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+
 					const endpoint = 'https://en.wikipedia.org/w/api.php';
 					const params = new URLSearchParams({
 						action: 'query',
@@ -226,7 +241,11 @@
 						exsectionformat: 'plain'
 					});
 
-					const res = await fetch(`${endpoint}?${params.toString()}`);
+					const res = await fetch(`${endpoint}?${params.toString()}`, {
+						signal: controller.signal
+					});
+					clearTimeout(timeoutId);
+					
 					if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
 					const json = await res.json();
 					const pages = json?.query?.pages;
@@ -256,26 +275,28 @@
 					localEntry?.economics ?? countryInfoMapByName[name]?.economics ?? 'Data not provided.'
 			};
 
-			try {
-				if (!localEntry) {
-					await fetch('/api', {
-						method: 'POST',
-						headers: { 'Content-Type': 'application/json' },
-						body: JSON.stringify({ name: name, summary })
-					});
-				} else {
-					const hadSummary = localEntry.summary;
-					if (!hadSummary && summary) {
-						await fetch('/api/countries', {
+			Promise.resolve().then(async () => {
+				try {
+					if (!localEntry) {
+						await fetch('/api', {
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json' },
-							body: JSON.stringify({ name: localEntry.name ?? name, summary })
+							body: JSON.stringify({ name: name, summary })
 						});
+					} else {
+						const hadSummary = localEntry.summary;
+						if (!hadSummary && summary) {
+							await fetch('/api/countries', {
+								method: 'POST',
+								headers: { 'Content-Type': 'application/json' },
+								body: JSON.stringify({ name: localEntry.name ?? name, summary })
+							});
+						}
 					}
+				} catch (err) {
+					console.warn('Failed to persist country summary to /api/countries', err);
 				}
-			} catch (err) {
-				console.warn('Failed to persist country summary to /api/countries', err);
-			}
+			});
 
 			infoCache[name] = { data, loading: false };
 		} catch (err: any) {
@@ -317,19 +338,22 @@
 	function handlePointerDown() {
 		if (!selectedFeature) return;
 		dragging = true;
+		tempLeftWidth = leftWidth;
 		window.addEventListener('pointermove', handlePointerMove);
 		window.addEventListener('pointerup', handlePointerUp, { once: true });
 	}
 
 	function handlePointerMove(e: PointerEvent) {
 		if (!dragging) return;
-		leftWidth = Math.max(240, Math.min(800, e.clientX));
-		rightWidth = Math.max(300, outerWidth - leftWidth - HANDLE_WIDTH);
-		setupFocusProjection();
+		tempLeftWidth = Math.max(240, Math.min(800, e.clientX));
 	}
 
 	function handlePointerUp() {
+		if (!dragging) return;
 		dragging = false;
+		leftWidth = tempLeftWidth;
+		rightWidth = Math.max(300, outerWidth - leftWidth - HANDLE_WIDTH);
+		setupFocusProjection();
 		window.removeEventListener('pointermove', handlePointerMove);
 	}
 
@@ -362,10 +386,14 @@
 		return d3
 			.zoom<SVGSVGElement, unknown>()
 			.scaleExtent([1, 15])
+			.on('start', () => {
+				isZooming = true;
+			})
 			.on('zoom', (event: any) => {
 				if (!mapGroup || !svgEl) return;
 
 				const t = event.transform;
+				currentTransform = t;
 				const k = t.k;
 				let tx = t.x;
 				let ty = t.y;
@@ -375,10 +403,10 @@
 				const viewW = vb && vb.width ? vb.width : svgEl.clientWidth;
 				const viewH = vb && vb.height ? vb.height : svgEl.clientHeight;
 
-				const txMin = viewW - (bbox.x + bbox.width) * k; // far left
-				const txMax = -bbox.x * k; // far right
-				const tyMin = viewH - (bbox.y + bbox.height) * k; // far top
-				const tyMax = -bbox.y * k; // far bottom
+				const txMin = viewW - (bbox.x + bbox.width) * k;
+				const txMax = -bbox.x * k;
+				const tyMin = viewH - (bbox.y + bbox.height) * k;
+				const tyMax = -bbox.y * k;
 
 				if (txMin > txMax) {
 					tx = (txMin + txMax) / 2;
@@ -392,7 +420,10 @@
 					ty = Math.min(Math.max(ty, tyMin), tyMax);
 				}
 
-				mapGroup.setAttribute('transform', `translate(${tx},${ty}) scale(${k})`);
+				mapGroup.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${k})`;
+			})
+			.on('end', () => {
+				isZooming = false;
 			});
 	}
 
@@ -423,16 +454,22 @@
 		const tx = (viewW - (bbox.x + bbox.width) * s + -bbox.x * s) / 2;
 		const ty = (viewH - (bbox.y + bbox.height) * s + -bbox.y * s) / 2;
 
+		currentTransform = d3.zoomIdentity.translate(tx, ty).scale(s);
+
 		d3.select(svgEl)
 			.transition()
 			.duration(350)
-			.call((zoomBehavior as any).transform, d3.zoomIdentity.translate(tx, ty).scale(s));
+			.call((zoomBehavior as any).transform, currentTransform);
 	}
 </script>
 
 <div class="map-shell" tabindex="-1">
 	{#if selectedFeature}
-		<div class="left-panel" style="width: 40vw; min-width: 240px;" aria-hidden="false">
+		<div 
+			class="left-panel" 
+			style="width: {leftWidth}px;" 
+			aria-hidden="false"
+		>
 			<div class="panel-inner">
 				<div
 					style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;"
@@ -488,10 +525,15 @@
 
 		<div
 			class="split-handle"
+			class:dragging
 			on:pointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
-		></div>
+		>
+			{#if dragging}
+				<div class="drag-preview-line" style="left: {tempLeftWidth - leftWidth}px;"></div>
+			{/if}
+		</div>
 	{/if}
 
 	<div
@@ -505,9 +547,9 @@
 				style="width: 100%; height: 100%;"
 				bind:this={svgEl}
 			>
-				<g bind:this={mapGroup}>
+				<g bind:this={mapGroup} style="will-change: transform;">
 					{#if countries.length && pathGenerator}
-						{#each countries as c}
+						{#each countries as c (getCountryName(c))}
 							<path
 								d={pathGenerator(c as any)}
 								class="country clickable"
@@ -535,9 +577,9 @@
 				style="width: 100%; height: 100%;"
 				bind:this={svgEl}
 			>
-				<g bind:this={mapGroup}>
+				<g bind:this={mapGroup} style="will-change: transform;">
 					{#if countries.length && focusPathGenerator}
-						{#each countries as c}
+						{#each countries as c (getCountryName(c))}
 							{#if c !== selectedFeature}
 								<path
 									d={focusPathGenerator(c as any)}
@@ -595,10 +637,11 @@
 		background: linear-gradient(135deg, rgba(16, 16, 30, 0.95), rgba(8, 8, 16, 0.98));
 		color: #ffffff;
 		border-right: 1px solid rgba(0, 255, 255, 0.2);
-		transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		transition: width 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		z-index: 20;
 		backdrop-filter: blur(20px);
 		box-shadow: 0 0 50px rgba(0, 255, 255, 0.1);
+		min-width: 240px;
 	}
 
 	.panel-inner {
@@ -637,11 +680,43 @@
 		z-index: 25;
 		transition: all 300ms ease;
 		box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+		position: relative;
+		overflow: visible;
 	}
 
 	.split-handle:hover {
 		background: linear-gradient(180deg, rgba(0, 255, 255, 0.5), rgba(0, 200, 255, 0.7));
 		box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+	}
+
+	.split-handle.dragging {
+		background: linear-gradient(180deg, rgba(255, 255, 0, 0.5), rgba(255, 200, 0, 0.7));
+		box-shadow: 0 0 30px rgba(255, 255, 0, 0.6);
+	}
+
+	.drag-preview-line {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: rgba(255, 255, 255, 0.8);
+		border-left: 2px dashed rgba(0, 255, 255, 0.8);
+		box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+		pointer-events: none;
+		z-index: 30;
+		animation: dash 1s linear infinite;
+	}
+
+	@keyframes dash {
+		0% {
+			border-left-color: rgba(0, 255, 255, 0.8);
+		}
+		50% {
+			border-left-color: rgba(0, 255, 255, 0.4);
+		}
+		100% {
+			border-left-color: rgba(0, 255, 255, 0.8);
+		}
 	}
 
 	.right-panel {
@@ -663,6 +738,7 @@
 		stroke-width: 0.5px;
 		transition: all 300ms ease;
 		filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
+		will-change: transform;
 	}
 
 	.country.clickable {
@@ -683,12 +759,14 @@
 		stroke-width: 3px;
 		filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
 		animation: pulse 2s infinite ease-in-out;
+		will-change: transform;
 	}
 
 	.focus-background {
 		fill: rgba(255, 255, 255, 0.02);
 		stroke: rgba(255, 255, 255, 0.15);
 		stroke-width: 0.3px;
+		will-change: transform;
 	}
 
 	@keyframes pulse {
