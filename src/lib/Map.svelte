@@ -5,9 +5,20 @@
 
 	type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
 	type CountryData = {
+		officialName: string;
+		cca2ID: string;
+		flag: string;
+		coatOfArms: string;
+		independent: boolean;
+		region: string;
+		subregion: string;
 		capital: string;
-		population: string;
-		short: string;
+		area: Number;
+		population: Number;
+		languages: string[];
+		gini: Number;
+		gdp: Number;
+		summary: string;
 		politics: string;
 		economics: string;
 	};
@@ -39,8 +50,6 @@
 	let now = new Date();
 	let clockTimer: number;
 	const CLOCK_TICK = 50;
-
-	const countryInfoMapByName: Record<string, CountryData> = {};
 
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
 
@@ -145,7 +154,9 @@
 			let proj: d3.GeoProjection;
 			proj = d3.geoMercator();
 
-			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
+			const currentRightWidth = dragging
+				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
+				: rightWidth;
 			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
 			const paddingPx = Math.max(20, Math.min(80, Math.round(minDim * 0.06)));
 
@@ -170,7 +181,9 @@
 			console.error('Error setting up focus projection:', error);
 
 			const fallback = d3.geoMercator();
-			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
+			const currentRightWidth = dragging
+				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
+				: rightWidth;
 			fallback.fitSize(
 				[Math.max(100, currentRightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
 				selectedFeature as any
@@ -218,16 +231,44 @@
 				localEntry = null;
 			}
 
+			console.log('Local entry for', name, localEntry);
+
+			let cca2ID: string | null = null;
+			let officialName: string | null = null;
 			let summary: string | null = null;
+			let flag: string | null = null;
+			let coatOfArms: string | null = null;
+			let capital: string | null = null;
+			let independent: boolean | null = null;
+			let region: string | null = null;
+			let subregion: string | null = null;
+			let area: number | null = null;
+			let languages: string[] | null = null;
+			let population: number | null = null;
+			let gini: number | null = null;
+			let gdp: number | null = null;
 			if (localEntry) {
+				cca2ID = localEntry.cca2ID ?? null;
+				officialName = localEntry.officialName ?? null;
 				summary = localEntry.summary ?? null;
+				flag = localEntry.flag ?? null;
+				coatOfArms = localEntry.coatOfArms ?? null;
+				capital = localEntry.capital ?? null;
+				independent = localEntry.independent ?? null;
+				region = localEntry.region ?? null;
+				subregion = localEntry.subregion ?? null;
+				area = localEntry.area ?? null;
+				languages = localEntry.languages ?? null;
+				population = localEntry.population ?? null;
+				gini = localEntry.gini ?? null;
+				gdp = localEntry.gdp ?? null;
 			}
 
 			let wikiExtract: string | null = null;
 			if (!summary) {
 				try {
 					const controller = new AbortController();
-					const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+					const timeoutId = setTimeout(() => controller.abort(), 5000);
 
 					const endpoint = 'https://en.wikipedia.org/w/api.php';
 					const params = new URLSearchParams({
@@ -245,7 +286,7 @@
 						signal: controller.signal
 					});
 					clearTimeout(timeoutId);
-					
+
 					if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
 					const json = await res.json();
 					const pages = json?.query?.pages;
@@ -265,14 +306,57 @@
 				}
 			}
 
+			if (!cca2ID) {
+				try {
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+					const res = await fetch(
+						'https://restcountries.com/v3.1/name/' + encodeURIComponent(name),
+						{
+							signal: controller.signal
+						}
+					);
+					clearTimeout(timeoutId);
+
+					if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
+					const json = await res.json();
+					console.log(json[0]);
+
+					cca2ID = json[0].cca2 ?? 'UNKNOWN';
+					officialName = json[0].name.official ?? 'UNKNOWN';
+					flag = json[0].flags.svg ?? 'UNKNOWN';
+					coatOfArms = json[0].coatOfArms.svg ?? 'UNKNOWN';
+					capital = json[0].capital[0] ?? '—';
+					independent = json[0].independent ?? false;
+					region = json[0].region ?? 'UNKNOWN';
+					subregion = json[0].subregion ?? 'UNKNOWN';
+					area = json[0].area ?? 0;
+					languages = json[0].languages ?? [];
+					population = json[0].population ?? 0;
+					gini = json[0].gini[0] ?? 0;
+				} catch (err) {
+					console.warn('RestCountries fetch failed, falling back to placeholder information', err);
+				}
+			}
+
 			const data: CountryData = {
-				capital: localEntry?.capital ?? countryInfoMapByName[name]?.capital ?? '—',
-				population: localEntry?.population ?? countryInfoMapByName[name]?.population ?? '—',
-				short: summary ?? countryInfoMapByName[name]?.short ?? '—',
-				politics:
-					localEntry?.politics ?? countryInfoMapByName[name]?.politics ?? 'Data not provided.',
-				economics:
-					localEntry?.economics ?? countryInfoMapByName[name]?.economics ?? 'Data not provided.'
+				cca2ID: cca2ID ?? 'UNKNOWN',
+				officialName: officialName ?? 'UNKNOWN',
+				flag: flag ?? 'UNKNOWN',
+				coatOfArms: coatOfArms ?? 'UNKNOWN',
+				independent: independent ?? false,
+				region: region ?? 'UNKNOWN',
+				subregion: subregion ?? 'UNKNOWN',
+				area: area ?? 0,
+				languages: languages ?? [],
+				capital: capital ?? '—',
+				population: population ?? 0,
+				gini: gini ?? 0,
+				gdp: localEntry?.gdp ?? 0,
+				summary: summary ?? '—',
+				politics: localEntry?.politics ?? 'Data not provided.',
+				economics: localEntry?.economics ?? 'Data not provided.'
 			};
 
 			Promise.resolve().then(async () => {
@@ -281,15 +365,48 @@
 						await fetch('/api', {
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json' },
-							body: JSON.stringify({ name: name, summary })
+							body: JSON.stringify({
+								name,
+								summary,
+								cca2ID,
+								officialName,
+								flag,
+								coatOfArms,
+								independent,
+								region,
+								subregion,
+								area,
+								languages,
+								capital,
+								population,
+								gini,
+								gdp
+							})
 						});
 					} else {
 						const hadSummary = localEntry.summary;
-						if (!hadSummary && summary) {
-							await fetch('/api/countries', {
+						const hadcca2ID = localEntry.cca2ID;
+						if (!hadSummary && !hadcca2ID && summary) {
+							await fetch('/api', {
 								method: 'POST',
 								headers: { 'Content-Type': 'application/json' },
-								body: JSON.stringify({ name: localEntry.name ?? name, summary })
+								body: JSON.stringify({
+									name: localEntry.name ?? name,
+									summary,
+									cca2ID,
+									officialName,
+									flag,
+									coatOfArms,
+									independent,
+									region,
+									subregion,
+									area,
+									languages,
+									capital,
+									population,
+									gini,
+									gdp
+								})
 							});
 						}
 					}
@@ -465,11 +582,7 @@
 
 <div class="map-shell" tabindex="-1">
 	{#if selectedFeature}
-		<div 
-			class="left-panel" 
-			style="width: {leftWidth}px;" 
-			aria-hidden="false"
-		>
+		<div class="left-panel" style="width: {leftWidth}px;" aria-hidden="false">
 			<div class="panel-inner">
 				<div
 					style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;"
@@ -495,7 +608,7 @@
 				{:else if selectedInfo}
 					<div class="section">
 						<div class="label">Overview</div>
-						<div class="section-content">{selectedInfo.short}</div>
+						<div class="section-content">{selectedInfo.summary}</div>
 					</div>
 
 					<div class="section">
