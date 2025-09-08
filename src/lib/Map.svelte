@@ -4,6 +4,27 @@
 	import { feature } from 'topojson-client';
 
 	type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
+
+	type SourceValue = string | { label: string; url?: string };
+
+	type DataSources = {
+		flag?: SourceValue;
+		coatOfArms?: SourceValue;
+		summary?: SourceValue;
+		officialName?: SourceValue;
+		capital?: SourceValue;
+		population?: SourceValue;
+		area?: SourceValue;
+		languages?: SourceValue;
+		region?: SourceValue;
+		subregion?: SourceValue;
+		independent?: SourceValue;
+		gini?: SourceValue;
+		gdp?: SourceValue;
+		politics?: SourceValue;
+		economics?: SourceValue;
+	};
+
 	type CountryData = {
 		officialName: string;
 		cca2ID: string;
@@ -21,6 +42,7 @@
 		summary: string;
 		politics: string;
 		economics: string;
+		sources?: DataSources;
 	};
 
 	let countries: GeoFeature[] = [];
@@ -67,6 +89,8 @@
 	let resizeTimeout: number;
 	let currentTransform = d3.zoomIdentity;
 	let isZooming = false;
+
+	let showSources = false;
 
 	function throttledResize() {
 		if (resizeTimeout) clearTimeout(resizeTimeout);
@@ -217,6 +241,35 @@
 		return (p.name as string) ?? 'Unknown Country';
 	}
 
+	function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
+		const out: DataSources = {};
+		if (!raw || typeof raw !== 'object') return out;
+
+		const entries = Object.entries(raw) as [keyof DataSources, any][];
+		for (const [k, v] of entries) {
+			if (typeof v === 'string') {
+				if (v === 'Wikipedia' || v.toLowerCase().includes('wiki')) {
+					out[k] = {
+						label: v,
+						url: `https://en.wikipedia.org/wiki/${encodeURIComponent(nameForWikipediaHint ?? '')}`
+					};
+				} else if (v.toLowerCase().includes('rest')) {
+					out[k] = {
+						label: v,
+						url: `https://restcountries.com/v3.1/name/${encodeURIComponent(nameForWikipediaHint ?? '')}`
+					};
+				} else {
+					out[k] = v;
+				}
+			} else if (v && typeof v === 'object' && ('label' in v || 'url' in v)) {
+				out[k] = v as SourceValue;
+			} else {
+				out[k] = String(v);
+			}
+		}
+		return out;
+	}
+
 	async function fetchCountryInfoByName(name: string | '') {
 		if (!name) return;
 		if (infoCache[name]?.data || infoCache[name]?.loading) return;
@@ -262,6 +315,8 @@
 			let population: number | null = null;
 			let gini: number | null = null;
 			let gdp: number | null = null;
+			let sources: DataSources = {};
+
 			if (localEntry) {
 				cca2ID = localEntry.cca2ID ?? null;
 				officialName = localEntry.officialName ?? null;
@@ -277,6 +332,7 @@
 				population = localEntry.population ?? null;
 				gini = localEntry.gini ?? null;
 				gdp = localEntry.gdp ?? null;
+				sources = normalizeSources(localEntry.sources ?? {}, name);
 			}
 
 			let wikiExtract: string | null = null;
@@ -315,6 +371,13 @@
 					}
 
 					summary = wikiExtract;
+					sources = {
+						...(sources || {}),
+						summary: {
+							label: 'Wikipedia',
+							url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
+						}
+					};
 				} catch (err) {
 					console.warn('Wikipedia fetch failed, falling back to placeholder summary', err);
 					summary = 'No summary available.';
@@ -334,7 +397,7 @@
 					);
 					clearTimeout(timeoutId);
 
-					if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
+					if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 					const json = await res.json();
 					console.log(json[0]);
 
@@ -342,14 +405,28 @@
 					officialName = json[0].name.official ?? 'UNKNOWN';
 					flag = json[0].flags.svg ?? 'UNKNOWN';
 					coatOfArms = json[0].coatOfArms.svg ?? 'UNKNOWN';
-					capital = json[0].capital[0] ?? '—';
+					capital = json[0].capital ? json[0].capital[0] : '—';
 					independent = json[0].independent ?? false;
 					region = json[0].region ?? 'UNKNOWN';
 					subregion = json[0].subregion ?? 'UNKNOWN';
 					area = json[0].area ?? 0;
 					languages = json[0].languages ?? [];
 					population = json[0].population ?? 0;
-					gini = json[0].gini[Object.keys(json[0].gini ?? {})[0]] ?? 0;
+					gini = json[0].gini ? (json[0].gini[Object.keys(json[0].gini ?? {})[0]] ?? 0) : 0;
+
+					const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
+					if (!sources.flag) sources.flag = { label: 'REST Countries', url: restUrl };
+					if (!sources.coatOfArms) sources.coatOfArms = { label: 'REST Countries', url: restUrl };
+					if (!sources.officialName)
+						sources.officialName = { label: 'REST Countries', url: restUrl };
+					if (!sources.capital) sources.capital = { label: 'REST Countries', url: restUrl };
+					if (!sources.independent) sources.independent = { label: 'REST Countries', url: restUrl };
+					if (!sources.region) sources.region = { label: 'REST Countries', url: restUrl };
+					if (!sources.subregion) sources.subregion = { label: 'REST Countries', url: restUrl };
+					if (!sources.area) sources.area = { label: 'REST Countries', url: restUrl };
+					if (!sources.languages) sources.languages = { label: 'REST Countries', url: restUrl };
+					if (!sources.population) sources.population = { label: 'REST Countries', url: restUrl };
+					if (!sources.gini) sources.gini = { label: 'REST Countries', url: restUrl };
 				} catch (err) {
 					console.warn('RestCountries fetch failed, falling back to placeholder information', err);
 				}
@@ -371,7 +448,8 @@
 				gdp: localEntry?.gdp ?? 0,
 				summary: summary ?? '—',
 				politics: localEntry?.politics ?? 'Data not provided.',
-				economics: localEntry?.economics ?? 'Data not provided.'
+				economics: localEntry?.economics ?? 'Data not provided.',
+				sources: sources
 			};
 
 			Promise.resolve().then(async () => {
@@ -395,7 +473,8 @@
 								capital,
 								population,
 								gini,
-								gdp
+								gdp,
+								sources
 							})
 						});
 					} else {
@@ -420,7 +499,8 @@
 									capital,
 									population,
 									gini,
-									gdp
+									gdp,
+									sources
 								})
 							});
 						}
@@ -630,6 +710,15 @@
 		if (typeof langs === 'object') return Object.values(langs as Record<string, any>).join(', ');
 		return String(langs);
 	}
+
+	function getSource(field: keyof DataSources): SourceValue | null {
+		if (!selectedInfo?.sources) return null;
+		return (selectedInfo.sources as any)[field] || null;
+	}
+
+	function toggleSources() {
+		showSources = !showSources;
+	}
 </script>
 
 <div class="map-shell" tabindex="-1">
@@ -644,27 +733,160 @@
 				{:else if selectedInfo}
 					<header class="info-header">
 						<div class="media big" aria-hidden="false">
-							<img class="media-img flag big" src={selectedInfo.flag} alt="{selectedName} flag" />
-							<img
-								class="media-img coa big"
-								src={selectedInfo.coatOfArms}
-								alt="{selectedName} coat of arms"
-							/>
-						</div>
-
-						<div class="title-block">
-							<div class="country-title neon">{selectedInfo.officialName ?? selectedName}</div>
-							<div class="sub-meta">
-								<span class="region-chip">{selectedInfo.region}</span>
-								{#if selectedInfo.subregion}<span class="region-chip subtle"
-										>{selectedInfo.subregion}</span
-									>{/if}
-								<span class="meta small">Capital: {selectedInfo.capital}</span>
-								<span class="meta small">Population: {formatNumber(selectedInfo.population)}</span>
+							<div class="media-wrapper">
+								<img class="media-img flag big" src={selectedInfo.flag} alt="{selectedName} flag" />
+								{#if showSources && getSource('flag')}
+									{#if typeof getSource('flag') === 'string'}
+										<div class="source-badge">{getSource('flag')}</div>
+									{:else}
+										<div class="source-badge">
+											<a
+												href={(getSource('flag') as any).url ?? '#'}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="source-link">{(getSource('flag') as any).label}</a
+											>
+										</div>
+									{/if}
+								{/if}
+							</div>
+							<div class="media-wrapper">
+								<img
+									class="media-img coa big"
+									src={selectedInfo.coatOfArms}
+									alt="{selectedName} coat of arms"
+								/>
+								{#if showSources && getSource('coatOfArms')}
+									{#if typeof getSource('coatOfArms') === 'string'}
+										<div class="source-badge">{getSource('coatOfArms')}</div>
+									{:else}
+										<div class="source-badge">
+											<a
+												href={(getSource('coatOfArms') as any).url ?? '#'}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="source-link">{(getSource('coatOfArms') as any).label}</a
+											>
+										</div>
+									{/if}
+								{/if}
 							</div>
 						</div>
 
-						<div style="margin-left:12px;">
+						<div class="title-block">
+							<div class="country-title neon">
+								{selectedInfo.officialName ?? selectedName}
+								{#if showSources && getSource('officialName')}
+									<span class="inline-source"
+										>(
+										{#if typeof getSource('officialName') === 'string'}
+											{getSource('officialName')}
+										{:else}
+											<a
+												href={(getSource('officialName') as any).url ?? '#'}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="source-inline-link">{(getSource('officialName') as any).label}</a
+											>
+										{/if}
+										)</span
+									>
+								{/if}
+							</div>
+							<div class="sub-meta">
+								<span class="region-chip">
+									{selectedInfo.region}
+									{#if showSources && getSource('region')}
+										<span class="chip-source"
+											>·
+											{#if typeof getSource('region') === 'string'}
+												{getSource('region')}
+											{:else}
+												<a
+													href={(getSource('region') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="chip-link">{(getSource('region') as any).label}</a
+												>
+											{/if}
+										</span>
+									{/if}
+								</span>
+								{#if selectedInfo.subregion}
+									<span class="region-chip subtle">
+										{selectedInfo.subregion}
+										{#if showSources && getSource('subregion')}
+											<span class="chip-source"
+												>·
+												{#if typeof getSource('subregion') === 'string'}
+													{getSource('subregion')}
+												{:else}
+													<a
+														href={(getSource('subregion') as any).url ?? '#'}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="chip-link">{(getSource('subregion') as any).label}</a
+													>
+												{/if}
+											</span>
+										{/if}
+									</span>
+								{/if}
+								<span class="meta small">
+									Capital: {selectedInfo.capital}
+									{#if showSources && getSource('capital')}
+										<span class="inline-source"
+											>(
+											{#if typeof getSource('capital') === 'string'}
+												{getSource('capital')}
+											{:else}
+												<a
+													href={(getSource('capital') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="source-inline-link">{(getSource('capital') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</span>
+								<span class="meta small">
+									Population: {formatNumber(selectedInfo.population)}
+									{#if showSources && getSource('population')}
+										<span class="inline-source"
+											>(
+											{#if typeof getSource('population') === 'string'}
+												{getSource('population')}
+											{:else}
+												<a
+													href={(getSource('population') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="source-inline-link">{(getSource('population') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</span>
+							</div>
+						</div>
+
+						<div class="header-controls">
+							<button
+								class="sources-btn"
+								class:active={showSources}
+								on:click={toggleSources}
+								aria-label="Toggle source attribution"
+								title="Toggle source attribution"
+							>
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+									/>
+								</svg>
+							</button>
 							<button
 								class="close-btn panel-close"
 								on:click={closePanel}
@@ -676,22 +898,94 @@
 					<section class="stats" aria-label="Key facts">
 						<div class="stat-grid">
 							<div class="stat">
-								<div class="stat-label">Area</div>
+								<div class="stat-label">
+									Area
+									{#if showSources && getSource('area')}
+										<span class="label-source"
+											>(
+											{#if typeof getSource('area') === 'string'}
+												{getSource('area')}
+											{:else}
+												<a
+													href={(getSource('area') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="label-link">{(getSource('area') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</div>
 								<div class="stat-value">{formatNumber(selectedInfo.area)} km²</div>
 							</div>
 
 							<div class="stat">
-								<div class="stat-label">GDP (USD)</div>
+								<div class="stat-label">
+									GDP (USD)
+									{#if showSources && getSource('gdp')}
+										<span class="label-source"
+											>(
+											{#if typeof getSource('gdp') === 'string'}
+												{getSource('gdp')}
+											{:else}
+												<a
+													href={(getSource('gdp') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="label-link">{(getSource('gdp') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</div>
 								<div class="stat-value">{formatGDP(selectedInfo.gdp)}</div>
 							</div>
 
 							<div class="stat">
-								<div class="stat-label">Gini</div>
+								<div class="stat-label">
+									Gini
+									{#if showSources && getSource('gini')}
+										<span class="label-source"
+											>(
+											{#if typeof getSource('gini') === 'string'}
+												{getSource('gini')}
+											{:else}
+												<a
+													href={(getSource('gini') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="label-link">{(getSource('gini') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</div>
 								<div class="stat-value">{selectedInfo.gini ?? '—'}</div>
 							</div>
 
 							<div class="stat">
-								<div class="stat-label">Languages</div>
+								<div class="stat-label">
+									Languages
+									{#if showSources && getSource('languages')}
+										<span class="label-source"
+											>(
+											{#if typeof getSource('languages') === 'string'}
+												{getSource('languages')}
+											{:else}
+												<a
+													href={(getSource('languages') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="label-link">{(getSource('languages') as any).label}</a
+												>
+											{/if}
+											)</span
+										>
+									{/if}
+								</div>
 								<div class="stat-value">{formatLanguages(selectedInfo.languages)}</div>
 							</div>
 						</div>
@@ -722,17 +1016,71 @@
 						<div class="read-content">
 							{#if activeTab === 'overview'}
 								<div class="panel-section" aria-hidden="false">
-									<div class="label">Overview</div>
+									<div class="label">
+										Overview
+										{#if showSources && getSource('summary')}
+											<span class="label-source"
+												>(
+												{#if typeof getSource('summary') === 'string'}
+													{getSource('summary')}
+												{:else}
+													<a
+														href={(getSource('summary') as any).url ?? '#'}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="label-link">{(getSource('summary') as any).label}</a
+													>
+												{/if}
+												)</span
+											>
+										{/if}
+									</div>
 									<p class="section-content">{selectedInfo.summary}</p>
 								</div>
 							{:else if activeTab === 'politics'}
 								<div class="panel-section" aria-hidden="false">
-									<div class="label">Politics</div>
+									<div class="label">
+										Politics
+										{#if showSources && getSource('politics')}
+											<span class="label-source"
+												>(
+												{#if typeof getSource('politics') === 'string'}
+													{getSource('politics')}
+												{:else}
+													<a
+														href={(getSource('politics') as any).url ?? '#'}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="label-link">{(getSource('politics') as any).label}</a
+													>
+												{/if}
+												)</span
+											>
+										{/if}
+									</div>
 									<p class="section-content">{selectedInfo.politics}</p>
 								</div>
 							{:else}
 								<div class="panel-section" aria-hidden="false">
-									<div class="label">Economy</div>
+									<div class="label">
+										Economy
+										{#if showSources && getSource('economics')}
+											<span class="label-source"
+												>(
+												{#if typeof getSource('economics') === 'string'}
+													{getSource('economics')}
+												{:else}
+													<a
+														href={(getSource('economics') as any).url ?? '#'}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="label-link">{(getSource('economics') as any).label}</a
+													>
+												{/if}
+												)</span
+											>
+										{/if}
+									</div>
 									<p class="section-content">{selectedInfo.economics}</p>
 								</div>
 							{/if}
@@ -895,6 +1243,93 @@
 
 	.close-btn:active {
 		transform: scale(0.98);
+	}
+
+	.sources-btn {
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+		color: rgba(255, 255, 255, 0.7);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		padding: 8px;
+		cursor: pointer;
+		transition: all 200ms ease;
+		border-radius: 6px;
+		font-size: 12px;
+		backdrop-filter: blur(10px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.sources-btn:hover {
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
+		color: rgba(255, 255, 255, 0.9);
+		transform: scale(1.05);
+	}
+
+	.sources-btn.active {
+		background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 200, 255, 0.2));
+		color: #00ffff;
+		border-color: rgba(0, 255, 255, 0.3);
+		box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+	}
+
+	.sources-btn:active {
+		transform: scale(0.98);
+	}
+
+	.header-controls {
+		display: flex;
+		gap: 8px;
+		align-items: flex-start;
+	}
+
+	.media-wrapper {
+		position: relative;
+		display: inline-block;
+	}
+
+	.source-badge a.source-link,
+	.inline-source a.source-inline-link,
+	.chip-source a.chip-link,
+	.label-source a.label-link {
+		color: #bfefff;
+		text-decoration: underline;
+		font-weight: 600;
+	}
+
+	.source-badge {
+		position: absolute;
+		bottom: 4px;
+		right: 4px;
+		background: rgba(0, 0, 0, 0.8);
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 10px;
+		padding: 2px 6px;
+		border-radius: 4px;
+		border: 1px solid rgba(0, 255, 255, 0.3);
+		backdrop-filter: blur(10px);
+		font-weight: 500;
+		letter-spacing: 0.2px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+	}
+
+	.inline-source {
+		font-size: 0.8em;
+		opacity: 0.6;
+		font-weight: 400;
+		margin-left: 4px;
+	}
+
+	.chip-source {
+		opacity: 0.7;
+		font-weight: 400;
+	}
+
+	.label-source {
+		font-size: 10px;
+		opacity: 0.6;
+		font-weight: 400;
+		margin-left: 4px;
 	}
 
 	.split-handle {
