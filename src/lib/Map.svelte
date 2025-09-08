@@ -721,51 +721,82 @@
 	}
 </script>
 
-<div class="map-shell" tabindex="-1">
+<div
+	class="fixed inset-0 flex h-screen w-screen overflow-hidden bg-[radial-gradient(ellipse_at_center,_#1a1a2e_0%,_#0a0a0a_100%)] font-sans text-white"
+	tabindex="-1"
+>
 	{#if selectedFeature}
-		<div class="left-panel" style="width: {leftWidth}px;" aria-hidden="false">
-			<div class="panel-inner">
+		<div
+			class="z-20 min-w-[320px] border-r border-[rgba(0,255,255,0.2)] bg-[linear-gradient(135deg,rgba(16,16,30,0.95),rgba(8,8,16,0.98))] shadow-[0_0_50px_rgba(0,255,255,0.1)] backdrop-blur-[20px] transition-[width] duration-400 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+			style="width: {leftWidth}px;"
+			aria-hidden="false"
+		>
+			<div class="flex h-full flex-col gap-4 overflow-y-auto p-6">
 				{#if selectedLoading}
-					<div class="info-loading">
-						<div class="loader" aria-hidden="true"></div>
-						<div class="loading-text">Fetching data for {selectedName}…</div>
+					<div class="flex items-center gap-3 px-2 py-8">
+						<div
+							class="h-9 w-9 animate-spin rounded-full border-4 border-[rgba(255,255,255,0.06)] border-t-[rgba(0,255,255,0.7)]"
+							aria-hidden="true"
+						></div>
+						<div class="font-semibold text-[rgba(255,255,255,0.75)]">
+							Fetching data for {selectedName}…
+						</div>
 					</div>
 				{:else if selectedInfo}
-					<header class="info-header">
-						<div class="media big" aria-hidden="false">
-							<div class="media-wrapper">
-								<img class="media-img flag big" src={selectedInfo.flag} alt="{selectedName} flag" />
+					<header class="flex flex-wrap items-start gap-4">
+						<div class="flex items-center gap-3">
+							<div class="relative inline-block">
+								<img
+									class="h-[140px] w-[240px] rounded-lg object-cover contrast-[1.02] saturate-[0.95] filter"
+									src={selectedInfo.flag}
+									alt="{selectedName} flag"
+								/>
 								{#if showSources && getSource('flag')}
 									{#if typeof getSource('flag') === 'string'}
-										<div class="source-badge">{getSource('flag')}</div>
+										<div
+											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										>
+											{getSource('flag')}
+										</div>
 									{:else}
-										<div class="source-badge">
+										<div
+											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										>
 											<a
 												href={(getSource('flag') as any).url ?? '#'}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="source-link">{(getSource('flag') as any).label}</a
+												class="font-semibold text-[#bfefff] underline"
+												>{(getSource('flag') as any).label}</a
 											>
 										</div>
 									{/if}
 								{/if}
 							</div>
-							<div class="media-wrapper">
+
+							<div class="relative inline-block">
 								<img
-									class="media-img coa big"
+									class="h-[140px] w-[140px] self-center rounded-lg bg-[rgba(0,0,0,0.02)] object-contain p-2"
 									src={selectedInfo.coatOfArms}
 									alt="{selectedName} coat of arms"
 								/>
 								{#if showSources && getSource('coatOfArms')}
 									{#if typeof getSource('coatOfArms') === 'string'}
-										<div class="source-badge">{getSource('coatOfArms')}</div>
+										<div
+											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										>
+											{getSource('coatOfArms')}
+										</div>
 									{:else}
-										<div class="source-badge">
+										<div
+											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										>
 											<a
 												href={(getSource('coatOfArms') as any).url ?? '#'}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="source-link">{(getSource('coatOfArms') as any).label}</a
+												class="font-semibold text-[#bfefff] underline"
+												>{(getSource('coatOfArms') as any).label}</a
 											>
 										</div>
 									{/if}
@@ -773,12 +804,12 @@
 							</div>
 						</div>
 
-						<div class="title-block">
-							<div class="country-title neon">
+						<div class="flex min-w-0 flex-1 flex-col gap-2">
+							<div class="text-[20px] leading-tight font-extrabold text-[#e6ffff]">
 								{selectedInfo.officialName ?? selectedName}
 								{#if showSources && getSource('officialName')}
-									<span class="inline-source"
-										>(
+									<span class="ml-1 text-[0.8em] font-normal opacity-60">
+										(
 										{#if typeof getSource('officialName') === 'string'}
 											{getSource('officialName')}
 										{:else}
@@ -786,18 +817,22 @@
 												href={(getSource('officialName') as any).url ?? '#'}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="source-inline-link">{(getSource('officialName') as any).label}</a
+												class="ml-1 font-semibold text-[#bfefff] underline"
+												>{(getSource('officialName') as any).label}</a
 											>
 										{/if}
-										)</span
-									>
+										)
+									</span>
 								{/if}
 							</div>
-							<div class="sub-meta">
-								<span class="region-chip">
+
+							<div class="mt-1 flex flex-wrap items-center gap-2">
+								<span
+									class="rounded-full border border-[rgba(0,255,255,0.06)] bg-[linear-gradient(135deg,rgba(0,255,255,0.06),rgba(0,200,255,0.02))] px-2 py-1 text-[12px] text-[#ccfbff] opacity-95"
+								>
 									{selectedInfo.region}
 									{#if showSources && getSource('region')}
-										<span class="chip-source"
+										<span class="ml-1 font-normal opacity-70"
 											>·
 											{#if typeof getSource('region') === 'string'}
 												{getSource('region')}
@@ -806,17 +841,21 @@
 													href={(getSource('region') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="chip-link">{(getSource('region') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('region') as any).label}</a
 												>
 											{/if}
 										</span>
 									{/if}
 								</span>
+
 								{#if selectedInfo.subregion}
-									<span class="region-chip subtle">
+									<span
+										class="rounded-full border border-[rgba(255,255,255,0.04)] bg-transparent px-2 py-1 text-[12px] text-[#bfc9d1] opacity-60"
+									>
 										{selectedInfo.subregion}
 										{#if showSources && getSource('subregion')}
-											<span class="chip-source"
+											<span class="ml-1 font-normal opacity-70"
 												>·
 												{#if typeof getSource('subregion') === 'string'}
 													{getSource('subregion')}
@@ -825,17 +864,19 @@
 														href={(getSource('subregion') as any).url ?? '#'}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="chip-link">{(getSource('subregion') as any).label}</a
+														class="ml-1 font-semibold text-[#bfefff] underline"
+														>{(getSource('subregion') as any).label}</a
 													>
 												{/if}
 											</span>
 										{/if}
 									</span>
 								{/if}
-								<span class="meta small">
+
+								<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
 									Capital: {selectedInfo.capital}
 									{#if showSources && getSource('capital')}
-										<span class="inline-source"
+										<span class="ml-1 text-[0.8em] font-normal opacity-60"
 											>(
 											{#if typeof getSource('capital') === 'string'}
 												{getSource('capital')}
@@ -844,17 +885,19 @@
 													href={(getSource('capital') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="source-inline-link">{(getSource('capital') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('capital') as any).label}</a
 												>
 											{/if}
 											)</span
 										>
 									{/if}
 								</span>
-								<span class="meta small">
+
+								<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
 									Population: {formatNumber(selectedInfo.population)}
 									{#if showSources && getSource('population')}
-										<span class="inline-source"
+										<span class="ml-1 text-[0.8em] font-normal opacity-60"
 											>(
 											{#if typeof getSource('population') === 'string'}
 												{getSource('population')}
@@ -863,7 +906,8 @@
 													href={(getSource('population') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="source-inline-link">{(getSource('population') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('population') as any).label}</a
 												>
 											{/if}
 											)</span
@@ -873,13 +917,12 @@
 							</div>
 						</div>
 
-						<div class="header-controls">
+						<div class="flex items-start gap-2">
 							<button
-								class="sources-btn"
-								class:active={showSources}
 								on:click={toggleSources}
 								aria-label="Toggle source attribution"
 								title="Toggle source attribution"
+								class="flex cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] px-2 py-2 text-[12px] text-[rgba(255,255,255,0.7)] backdrop-blur-[10px] transition-transform duration-200"
 							>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
 									<path
@@ -887,21 +930,27 @@
 									/>
 								</svg>
 							</button>
+
 							<button
-								class="close-btn panel-close"
 								on:click={closePanel}
-								aria-label="Close info panel">✕</button
+								aria-label="Close info panel"
+								class="h-10 cursor-pointer rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
+								>✕</button
 							>
 						</div>
 					</header>
 
-					<section class="stats" aria-label="Key facts">
-						<div class="stat-grid">
-							<div class="stat">
-								<div class="stat-label">
+					<section class="mt-3" aria-label="Key facts">
+						<div class="grid grid-cols-2 gap-2">
+							<div
+								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
+							>
+								<div
+									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
+								>
 									Area
 									{#if showSources && getSource('area')}
-										<span class="label-source"
+										<span class="ml-1 text-[10px] font-normal opacity-60"
 											>(
 											{#if typeof getSource('area') === 'string'}
 												{getSource('area')}
@@ -910,21 +959,28 @@
 													href={(getSource('area') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="label-link">{(getSource('area') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('area') as any).label}</a
 												>
 											{/if}
 											)</span
 										>
 									{/if}
 								</div>
-								<div class="stat-value">{formatNumber(selectedInfo.area)} km²</div>
+								<div class="text-[14px] font-extrabold text-white">
+									{formatNumber(selectedInfo.area)} km²
+								</div>
 							</div>
 
-							<div class="stat">
-								<div class="stat-label">
+							<div
+								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
+							>
+								<div
+									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
+								>
 									GDP (USD)
 									{#if showSources && getSource('gdp')}
-										<span class="label-source"
+										<span class="ml-1 text-[10px] font-normal opacity-60"
 											>(
 											{#if typeof getSource('gdp') === 'string'}
 												{getSource('gdp')}
@@ -933,21 +989,28 @@
 													href={(getSource('gdp') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="label-link">{(getSource('gdp') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('gdp') as any).label}</a
 												>
 											{/if}
 											)</span
 										>
 									{/if}
 								</div>
-								<div class="stat-value">{formatGDP(selectedInfo.gdp)}</div>
+								<div class="text-[14px] font-extrabold text-white">
+									{formatGDP(selectedInfo.gdp)}
+								</div>
 							</div>
 
-							<div class="stat">
-								<div class="stat-label">
+							<div
+								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
+							>
+								<div
+									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
+								>
 									Gini
 									{#if showSources && getSource('gini')}
-										<span class="label-source"
+										<span class="ml-1 text-[10px] font-normal opacity-60"
 											>(
 											{#if typeof getSource('gini') === 'string'}
 												{getSource('gini')}
@@ -956,21 +1019,26 @@
 													href={(getSource('gini') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="label-link">{(getSource('gini') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('gini') as any).label}</a
 												>
 											{/if}
 											)</span
 										>
 									{/if}
 								</div>
-								<div class="stat-value">{selectedInfo.gini ?? '—'}</div>
+								<div class="text-[14px] font-extrabold text-white">{selectedInfo.gini ?? '—'}</div>
 							</div>
 
-							<div class="stat">
-								<div class="stat-label">
+							<div
+								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
+							>
+								<div
+									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
+								>
 									Languages
 									{#if showSources && getSource('languages')}
-										<span class="label-source"
+										<span class="ml-1 text-[10px] font-normal opacity-60"
 											>(
 											{#if typeof getSource('languages') === 'string'}
 												{getSource('languages')}
@@ -979,47 +1047,58 @@
 													href={(getSource('languages') as any).url ?? '#'}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="label-link">{(getSource('languages') as any).label}</a
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{(getSource('languages') as any).label}</a
 												>
 											{/if}
 											)</span
 										>
 									{/if}
 								</div>
-								<div class="stat-value">{formatLanguages(selectedInfo.languages)}</div>
+								<div class="text-[14px] font-extrabold text-white">
+									{formatLanguages(selectedInfo.languages)}
+								</div>
 							</div>
 						</div>
 					</section>
 
-					<nav class="tab-controls" aria-label="Country sections">
+					<nav class="mt-2 flex gap-2" aria-label="Country sections">
 						<button
-							class="tab"
 							role="tab"
 							aria-selected={activeTab === 'overview'}
-							on:click={() => setTab('overview')}>Overview</button
+							on:click={() => setTab('overview')}
+							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
+							>Overview</button
 						>
+
 						<button
-							class="tab"
 							role="tab"
 							aria-selected={activeTab === 'politics'}
-							on:click={() => setTab('politics')}>Politics</button
+							on:click={() => setTab('politics')}
+							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
+							>Politics</button
 						>
+
 						<button
-							class="tab"
 							role="tab"
 							aria-selected={activeTab === 'economics'}
-							on:click={() => setTab('economics')}>Economy</button
+							on:click={() => setTab('economics')}
+							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
+							>Economy</button
 						>
 					</nav>
 
-					<section class="read-panel" aria-live="polite">
-						<div class="read-content">
+					<section
+						class="mt-3 max-h-[46vh] overflow-auto rounded-xl border border-[rgba(0,255,255,0.03)] bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
+						aria-live="polite"
+					>
+						<div class="pr-1">
 							{#if activeTab === 'overview'}
-								<div class="panel-section" aria-hidden="false">
-									<div class="label">
+								<div class="rounded-xl bg-transparent p-0">
+									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
 										Overview
 										{#if showSources && getSource('summary')}
-											<span class="label-source"
+											<span class="ml-1 text-[10px] font-normal opacity-60"
 												>(
 												{#if typeof getSource('summary') === 'string'}
 													{getSource('summary')}
@@ -1028,21 +1107,26 @@
 														href={(getSource('summary') as any).url ?? '#'}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="label-link">{(getSource('summary') as any).label}</a
+														class="ml-1 font-semibold text-[#bfefff] underline"
+														>{(getSource('summary') as any).label}</a
 													>
 												{/if}
 												)</span
 											>
 										{/if}
 									</div>
-									<p class="section-content">{selectedInfo.summary}</p>
+									<p
+										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
+									>
+										{selectedInfo.summary}
+									</p>
 								</div>
 							{:else if activeTab === 'politics'}
-								<div class="panel-section" aria-hidden="false">
-									<div class="label">
+								<div class="rounded-xl bg-transparent p-0">
+									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
 										Politics
 										{#if showSources && getSource('politics')}
-											<span class="label-source"
+											<span class="ml-1 text-[10px] font-normal opacity-60"
 												>(
 												{#if typeof getSource('politics') === 'string'}
 													{getSource('politics')}
@@ -1051,21 +1135,26 @@
 														href={(getSource('politics') as any).url ?? '#'}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="label-link">{(getSource('politics') as any).label}</a
+														class="ml-1 font-semibold text-[#bfefff] underline"
+														>{(getSource('politics') as any).label}</a
 													>
 												{/if}
 												)</span
 											>
 										{/if}
 									</div>
-									<p class="section-content">{selectedInfo.politics}</p>
+									<p
+										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
+									>
+										{selectedInfo.politics}
+									</p>
 								</div>
 							{:else}
-								<div class="panel-section" aria-hidden="false">
-									<div class="label">
+								<div class="rounded-xl bg-transparent p-0">
+									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
 										Economy
 										{#if showSources && getSource('economics')}
-											<span class="label-source"
+											<span class="ml-1 text-[10px] font-normal opacity-60"
 												>(
 												{#if typeof getSource('economics') === 'string'}
 													{getSource('economics')}
@@ -1074,49 +1163,58 @@
 														href={(getSource('economics') as any).url ?? '#'}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="label-link">{(getSource('economics') as any).label}</a
+														class="ml-1 font-semibold text-[#bfefff] underline"
+														>{(getSource('economics') as any).label}</a
 													>
 												{/if}
 												)</span
 											>
 										{/if}
 									</div>
-									<p class="section-content">{selectedInfo.economics}</p>
+									<p
+										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
+									>
+										{selectedInfo.economics}
+									</p>
 								</div>
 							{/if}
 						</div>
 					</section>
 				{:else}
-					<div class="no-data">
-						<div class="label">No Extended Data</div>
-						<div class="meta">Additional information for this country is not yet available.</div>
+					<div class="p-4 text-[rgba(255,255,255,0.9)]">
+						<div class="font-bold">No Extended Data</div>
+						<div class="text-[rgba(255,255,255,0.7)]">
+							Additional information for this country is not yet available.
+						</div>
 					</div>
 				{/if}
 			</div>
 		</div>
 
 		<div
-			class="split-handle"
-			class:dragging
+			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-[linear-gradient(180deg,rgba(0,255,255,0.3),rgba(0,200,255,0.5))] shadow-[0_0_10px_rgba(0,255,255,0.3)] transition-all duration-300"
 			on:pointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
 		>
 			{#if dragging}
-				<div class="drag-preview-line" style="left: {tempLeftWidth - leftWidth}px;"></div>
+				<div
+					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-[rgba(0,255,255,0.8)] bg-[rgba(255,255,255,0.8)] shadow-[0_0_10px_rgba(0,255,255,0.5)]"
+					style="left: {tempLeftWidth - leftWidth}px; animation: dash 1s linear infinite;"
+				></div>
 			{/if}
 		</div>
 	{/if}
 
 	<div
-		class="right-panel"
+		class="relative flex-1 overflow-hidden bg-black text-white"
 		style="width: {selectedFeature ? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)` : '100%'};"
 	>
 		{#if !selectedFeature}
 			<svg
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				style="width: 100%; height: 100%;"
+				class="block h-full w-full transition-all duration-[800ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
 				bind:this={svgEl}
 			>
 				<g bind:this={mapGroup} style="will-change: transform;">
@@ -1124,7 +1222,7 @@
 						{#each countries as c (getCountryName(c))}
 							<path
 								d={pathGenerator(c as any)}
-								class="country clickable"
+								class="cursor-pointer fill-[rgba(255,255,255,0.08)] stroke-[rgba(255,255,255,0.4)] stroke-[0.5px] filter-[drop-shadow(0_0_2px_rgba(255,255,255,0.2))] transition-all duration-300 will-change-transform hover:fill-[rgba(255,255,255,0.2)] hover:stroke-[rgba(255,255,255,0.8)] hover:stroke-[1.5px] hover:filter-[drop-shadow(0_0_10px_rgba(255,255,255,0.4))]"
 								on:click={() => onCountryClick(c)}
 								role="button"
 								tabindex="0"
@@ -1141,12 +1239,16 @@
 				</g>
 			</svg>
 
-			<div class="zoom-hint">Click on any country to zoom in and view details</div>
+			<div
+				class="absolute bottom-5 left-5 z-50 rounded-md border border-[rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(16,16,16,0.8),rgba(8,8,8,0.9))] px-3 py-2 text-[12px] text-[rgba(255,255,255,0.6)] backdrop-blur-[10px]"
+			>
+				Click on any country to zoom in and view details
+			</div>
 		{:else}
 			<svg
 				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				style="width: 100%; height: 100%;"
+				class="block h-full w-full transition-all duration-[800ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
 				bind:this={svgEl}
 			>
 				<g bind:this={mapGroup} style="will-change: transform;">
@@ -1155,7 +1257,7 @@
 							{#if c !== selectedFeature}
 								<path
 									d={focusPathGenerator(c as any)}
-									class="country focus-background clickable"
+									class="cursor-pointer fill-[rgba(255,255,255,0.02)] stroke-[rgba(255,255,255,0.15)] stroke-[0.3px] will-change-transform"
 									on:click={() => onCountryClick(c)}
 									role="button"
 									tabindex="0"
@@ -1170,202 +1272,25 @@
 							{/if}
 						{/each}
 
-						<path d={focusPathGenerator(selectedFeature as any)} class="focus-country" />
+						<path
+							d={focusPathGenerator(selectedFeature as any)}
+							class="animate-pulse fill-[rgba(0,255,255,0.08)] stroke-[rgba(0,255,255,0.95)] stroke-[3px] filter-[drop-shadow(0_0_20px_rgba(0,255,255,0.6))]"
+						/>
 					{/if}
 				</g>
 			</svg>
 		{/if}
 
-		<div class="clock" aria-hidden="false">{formatClock(now)}</div>
+		<div
+			class="absolute top-5 right-5 z-50 rounded-lg border border-[rgba(255,255,255,0.2)] bg-[linear-gradient(135deg,rgba(16,16,16,0.9),rgba(8,8,8,0.95))] px-4 py-3 font-mono text-[14px] text-white shadow-[0_0_30px_rgba(255,255,255,0.1)] backdrop-blur-[15px] select-none"
+			aria-hidden="false"
+		>
+			{formatClock(now)}
+		</div>
 	</div>
 </div>
 
-<style>
-	:global(body) {
-		margin: 0;
-		background: #0a0a0a;
-		color: #ffffff;
-		font-family:
-			'Inter',
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			Roboto,
-			sans-serif;
-		overflow: hidden;
-	}
-
-	.map-shell {
-		position: fixed;
-		inset: 0;
-		height: 100vh;
-		width: 100vw;
-		display: flex;
-		overflow: hidden;
-		background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 100%);
-	}
-
-	.left-panel {
-		background: linear-gradient(135deg, rgba(16, 16, 30, 0.95), rgba(8, 8, 16, 0.98));
-		color: #ffffff;
-		border-right: 1px solid rgba(0, 255, 255, 0.2);
-		transition: width 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		z-index: 20;
-		backdrop-filter: blur(20px);
-		box-shadow: 0 0 50px rgba(0, 255, 255, 0.1);
-		min-width: 320px;
-	}
-
-	.panel-inner {
-		padding: 24px;
-		height: 100%;
-		overflow-y: auto;
-	}
-
-	.close-btn {
-		background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 200, 255, 0.2));
-		color: #00ffff;
-		border: 1px solid rgba(0, 255, 255, 0.3);
-		padding: 8px 12px;
-		cursor: pointer;
-		font-weight: 600;
-		transition: all 200ms ease;
-		border-radius: 6px;
-		font-size: 14px;
-		backdrop-filter: blur(10px);
-	}
-
-	.close-btn:hover {
-		background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 200, 255, 0.3));
-		transform: scale(1.05);
-		box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-	}
-
-	.close-btn:active {
-		transform: scale(0.98);
-	}
-
-	.sources-btn {
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
-		color: rgba(255, 255, 255, 0.7);
-		border: 1px solid rgba(255, 255, 255, 0.15);
-		padding: 8px;
-		cursor: pointer;
-		transition: all 200ms ease;
-		border-radius: 6px;
-		font-size: 12px;
-		backdrop-filter: blur(10px);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.sources-btn:hover {
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
-		color: rgba(255, 255, 255, 0.9);
-		transform: scale(1.05);
-	}
-
-	.sources-btn.active {
-		background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 200, 255, 0.2));
-		color: #00ffff;
-		border-color: rgba(0, 255, 255, 0.3);
-		box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-	}
-
-	.sources-btn:active {
-		transform: scale(0.98);
-	}
-
-	.header-controls {
-		display: flex;
-		gap: 8px;
-		align-items: flex-start;
-	}
-
-	.media-wrapper {
-		position: relative;
-		display: inline-block;
-	}
-
-	.source-badge a.source-link,
-	.inline-source a.source-inline-link,
-	.chip-source a.chip-link,
-	.label-source a.label-link {
-		color: #bfefff;
-		text-decoration: underline;
-		font-weight: 600;
-	}
-
-	.source-badge {
-		position: absolute;
-		bottom: 4px;
-		right: 4px;
-		background: rgba(0, 0, 0, 0.8);
-		color: rgba(255, 255, 255, 0.9);
-		font-size: 10px;
-		padding: 2px 6px;
-		border-radius: 4px;
-		border: 1px solid rgba(0, 255, 255, 0.3);
-		backdrop-filter: blur(10px);
-		font-weight: 500;
-		letter-spacing: 0.2px;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-	}
-
-	.inline-source {
-		font-size: 0.8em;
-		opacity: 0.6;
-		font-weight: 400;
-		margin-left: 4px;
-	}
-
-	.chip-source {
-		opacity: 0.7;
-		font-weight: 400;
-	}
-
-	.label-source {
-		font-size: 10px;
-		opacity: 0.6;
-		font-weight: 400;
-		margin-left: 4px;
-	}
-
-	.split-handle {
-		width: 6px;
-		cursor: ew-resize;
-		background: linear-gradient(180deg, rgba(0, 255, 255, 0.3), rgba(0, 200, 255, 0.5));
-		z-index: 25;
-		transition: all 300ms ease;
-		box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-		position: relative;
-		overflow: visible;
-	}
-
-	.split-handle:hover {
-		background: linear-gradient(180deg, rgba(0, 255, 255, 0.5), rgba(0, 200, 255, 0.7));
-		box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-	}
-
-	.split-handle.dragging {
-		background: linear-gradient(180deg, rgba(255, 255, 0, 0.5), rgba(255, 200, 0, 0.7));
-		box-shadow: 0 0 30px rgba(255, 255, 0, 0.6);
-	}
-
-	.drag-preview-line {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		width: 2px;
-		background: rgba(255, 255, 255, 0.8);
-		border-left: 2px dashed rgba(0, 255, 255, 0.8);
-		box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-		pointer-events: none;
-		z-index: 30;
-		animation: dash 1s linear infinite;
-	}
-
+<style global>
 	@keyframes dash {
 		0% {
 			border-left-color: rgba(0, 255, 255, 0.8);
@@ -1376,439 +1301,5 @@
 		100% {
 			border-left-color: rgba(0, 255, 255, 0.8);
 		}
-	}
-
-	.right-panel {
-		background: #000000;
-		color: #ffffff;
-		flex: 1;
-		position: relative;
-		overflow: hidden;
-	}
-
-	svg {
-		display: block;
-		transition: all 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-	}
-
-	.country {
-		fill: rgba(255, 255, 255, 0.08);
-		stroke: rgba(255, 255, 255, 0.4);
-		stroke-width: 0.5px;
-		transition: all 300ms ease;
-		filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
-		will-change: transform;
-	}
-
-	.country.clickable {
-		cursor: pointer;
-		fill: rgba(255, 255, 255, 0.12);
-	}
-
-	.country.clickable:hover {
-		stroke: rgba(255, 255, 255, 0.8);
-		stroke-width: 1.5px;
-		fill: rgba(255, 255, 255, 0.2);
-		filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
-	}
-
-	.focus-country {
-		fill: rgba(0, 255, 255, 0.08);
-		stroke: rgba(0, 255, 255, 0.95);
-		stroke-width: 3px;
-		filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
-		animation: pulse 2s infinite ease-in-out;
-		will-change: transform;
-	}
-
-	.focus-background {
-		fill: rgba(255, 255, 255, 0.02);
-		stroke: rgba(255, 255, 255, 0.15);
-		stroke-width: 0.3px;
-		will-change: transform;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			stroke-width: 3px;
-			opacity: 0.9;
-			filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
-		}
-		50% {
-			stroke-width: 4px;
-			opacity: 1;
-			filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8));
-		}
-	}
-
-	.clock {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		z-index: 50;
-		background: linear-gradient(135deg, rgba(16, 16, 16, 0.9), rgba(8, 8, 8, 0.95));
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		padding: 12px 16px;
-		font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-		font-size: 14px;
-		line-height: 1;
-		user-select: none;
-		border-radius: 8px;
-		backdrop-filter: blur(15px);
-		color: #ffffff;
-		box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-	}
-
-	.country-title {
-		font-size: 20px;
-		font-weight: 700;
-		color: #ffffff;
-		margin-bottom: 8px;
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-	}
-
-	.meta {
-		font-size: 14px;
-		opacity: 0.7;
-		color: #cccccc;
-	}
-
-	.label {
-		font-weight: 700;
-		font-size: 13px;
-		color: #ffffff;
-		opacity: 0.9;
-		margin-bottom: 8px;
-		display: block;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-	}
-
-	.section-content {
-		color: rgba(255, 255, 255, 0.85);
-		line-height: 1.5;
-	}
-
-	.zoom-hint {
-		position: absolute;
-		bottom: 20px;
-		left: 20px;
-		z-index: 50;
-		background: linear-gradient(135deg, rgba(16, 16, 16, 0.8), rgba(8, 8, 8, 0.9));
-		border: 1px solid rgba(255, 255, 255, 0.1);
-		padding: 8px 12px;
-		font-size: 12px;
-		color: rgba(255, 255, 255, 0.6);
-		border-radius: 6px;
-		backdrop-filter: blur(10px);
-	}
-
-	.panel-inner {
-		padding: 20px 22px;
-		display: flex;
-		flex-direction: column;
-		gap: 18px;
-		animation: panelFadeIn 360ms cubic-bezier(0.2, 0.9, 0.2, 1);
-	}
-
-	@keyframes panelFadeIn {
-		from {
-			opacity: 0;
-			transform: translateX(-6px);
-		}
-		to {
-			opacity: 1;
-			transform: translateX(0);
-		}
-	}
-
-	.info-header {
-		display: flex;
-		gap: 18px;
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
-
-	.media {
-		display: flex;
-		gap: 10px;
-		align-items: center;
-	}
-
-	.media-img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		display: block;
-		filter: saturate(0.95) contrast(1.02);
-	}
-
-	.media-img.coa {
-		width: 56px;
-		height: 56px;
-		border-radius: 6px;
-	}
-
-	.title-block {
-		flex: 1;
-		min-width: 0;
-	}
-
-	.country-title.neon {
-		font-size: 20px;
-		letter-spacing: 0.2px;
-		color: #e6ffff;
-		text-shadow:
-			0 0 8px rgba(0, 255, 255, 0.12),
-			0 2px 20px rgba(0, 255, 255, 0.04);
-		animation: subtleGlow 3s ease-in-out infinite;
-	}
-
-	@keyframes subtleGlow {
-		0%,
-		100% {
-			text-shadow: 0 0 6px rgba(0, 255, 255, 0.06);
-		}
-		50% {
-			text-shadow: 0 0 12px rgba(0, 255, 255, 0.12);
-		}
-	}
-
-	.sub-meta {
-		margin-top: 6px;
-		display: flex;
-		gap: 8px;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
-	.region-chip {
-		font-size: 12px;
-		padding: 6px 8px;
-		border-radius: 999px;
-		background: linear-gradient(135deg, rgba(0, 255, 255, 0.06), rgba(0, 200, 255, 0.02));
-		border: 1px solid rgba(0, 255, 255, 0.06);
-		color: #ccfbff;
-		opacity: 0.95;
-	}
-
-	.region-chip.subtle {
-		opacity: 0.6;
-		background: transparent;
-		border-color: rgba(255, 255, 255, 0.04);
-		color: #bfc9d1;
-	}
-
-	.stats {
-		margin-top: 14px;
-	}
-
-	.stat-grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 10px;
-	}
-
-	.stat {
-		background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));
-		border: 1px solid rgba(0, 255, 255, 0.04);
-		padding: 10px;
-		border-radius: 10px;
-		backdrop-filter: blur(6px);
-		box-shadow: 0 6px 18px rgba(0, 255, 255, 0.02);
-	}
-
-	.stat-label {
-		font-size: 11px;
-		text-transform: uppercase;
-		letter-spacing: 0.6px;
-		color: rgba(255, 255, 255, 0.6);
-		margin-bottom: 6px;
-	}
-	.stat-value {
-		font-weight: 700;
-		font-size: 14px;
-		color: #ffffff;
-	}
-
-	.panel-section {
-		padding: 12px;
-		border-radius: 10px;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(255, 255, 255, 0.01));
-		border: 1px solid rgba(0, 255, 255, 0.03);
-		transition:
-			transform 300ms cubic-bezier(0.2, 0.9, 0.2, 1),
-			box-shadow 300ms;
-		overflow: hidden;
-	}
-
-	.panel-section[aria-hidden='false'] {
-		max-height: 2000px;
-		box-shadow: 0 18px 48px rgba(0, 255, 255, 0.03);
-		transform: translateY(-2px);
-	}
-
-	.panel-section .label {
-		font-weight: 700;
-		font-size: 13px;
-		margin-bottom: 8px;
-		color: #eaffff;
-	}
-
-	.section-content {
-		color: rgba(255, 255, 255, 0.86);
-		font-size: 13px;
-		line-height: 1.6;
-		white-space: pre-wrap;
-	}
-
-	.info-loading {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		padding: 30px 10px;
-	}
-
-	.loader {
-		width: 36px;
-		height: 36px;
-		border-radius: 50%;
-		border: 4px solid rgba(255, 255, 255, 0.06);
-		border-top-color: rgba(0, 255, 255, 0.7);
-		animation: spin 1s linear infinite;
-	}
-
-	@keyframes spin {
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
-	.loading-text {
-		color: rgba(255, 255, 255, 0.75);
-		font-weight: 600;
-	}
-
-	.no-data {
-		padding: 18px;
-		color: rgba(255, 255, 255, 0.9);
-	}
-
-	.info-header {
-		align-items: flex-start;
-		gap: 18px;
-	}
-	.media.big {
-		display: flex;
-		gap: 12px;
-		align-items: center;
-		margin-right: 6px;
-	}
-	.media.big {
-		display: flex;
-		gap: 12px;
-		align-items: center;
-	}
-	@media (max-width: 700px) {
-		.media.big {
-			flex-direction: column;
-			gap: 8px;
-			align-items: center;
-			width: 100%;
-		}
-		.title-block {
-			width: 100%;
-		}
-	}
-
-	.media-img.flag.big {
-		width: 240px;
-		height: 140px;
-		object-fit: cover;
-		border-radius: 8px;
-	}
-	.media-img.coa.big {
-		width: 140px;
-		height: 140px;
-		object-fit: contain;
-		background: rgba(0, 0, 0, 0.02);
-		padding: 8px;
-		border-radius: 10px;
-		align-self: center;
-	}
-
-	.title-block {
-		flex: 1;
-		min-width: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 6px;
-	}
-	.sub-meta {
-		display: flex;
-		gap: 8px;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-top: 4px;
-	}
-	.meta.small {
-		font-size: 12px;
-		color: rgba(255, 255, 255, 0.6);
-		margin-left: 6px;
-	}
-
-	.panel-close {
-		padding: 8px 10px;
-		height: 40px;
-		align-self: flex-start;
-	}
-
-	.tab-controls {
-		display: flex;
-		gap: 8px;
-		margin-top: 10px;
-	}
-	.tab {
-		padding: 8px 12px;
-		border-radius: 10px;
-		background: linear-gradient(90deg, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.02));
-		border: 1px solid rgba(0, 255, 255, 0.04);
-		cursor: pointer;
-		font-weight: 700;
-		color: #dffbff;
-		transition:
-			transform 160ms ease,
-			box-shadow 160ms ease;
-	}
-	.tab[aria-selected='true'] {
-		background: linear-gradient(90deg, rgba(0, 255, 255, 0.06), rgba(0, 200, 255, 0.02));
-		box-shadow: 0 10px 30px rgba(0, 255, 255, 0.03);
-		transform: translateY(-3px);
-	}
-
-	.read-panel {
-		margin-top: 12px;
-		max-height: 46vh;
-		overflow: auto;
-		padding: 12px;
-		border-radius: 10px;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(255, 255, 255, 0.01));
-		border: 1px solid rgba(0, 255, 255, 0.03);
-		box-shadow: 0 8px 30px rgba(0, 255, 255, 0.02);
-	}
-	.read-content {
-		padding-right: 6px;
-	}
-	.panel-section {
-		background: transparent;
-		padding: 0;
-		border: none;
-	}
-	.section-content {
-		color: rgba(255, 255, 255, 0.9);
-		font-size: 14px;
-		line-height: 1.7;
-		white-space: pre-wrap;
 	}
 </style>
