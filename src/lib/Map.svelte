@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
+	import { slide } from 'svelte/transition';
 	import type { GeoFeature, SourceValue, DataSources, CountryData } from '$lib/types';
 	import * as d3 from 'd3';
 	import { feature } from 'topojson-client';
@@ -719,6 +720,8 @@
 >
 	{#if selectedFeature}
 		<div
+			in:slide={{ duration: 260 }}
+			out:slide={{ duration: 220 }}
 			class="z-20 min-w-[320px] border-r border-[rgba(0,255,255,0.2)] bg-[linear-gradient(135deg,rgba(16,16,30,0.95),rgba(8,8,16,0.98))] shadow-[0_0_50px_rgba(0,255,255,0.1)] backdrop-blur-[20px] transition-[width] duration-400 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
 			style="width: {leftWidth}px;"
 			aria-hidden="false"
@@ -1298,5 +1301,10 @@
 		100% {
 			border-left-color: rgba(0, 255, 255, 0.8);
 		}
+	}
+
+	.svelte-slide-out {
+		opacity: 0;
+		transform-origin: left center;
 	}
 </style>
