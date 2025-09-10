@@ -30,7 +30,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			capital,
 			population,
 			gini,
-			gdp
+			gdp,
+			sources
 		} = body ?? {};
 
 		if (!name || typeof name !== 'string') {
@@ -67,7 +68,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			population: population ?? null,
 			gini: gini ?? null,
 			gdp: gdp ?? null,
-			summary: summary ?? null
+			summary: summary ?? null,
+			sources: sources ?? null
 		};
 
 		if (idx >= 0) {

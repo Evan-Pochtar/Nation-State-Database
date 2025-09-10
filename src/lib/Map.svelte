@@ -1,49 +1,8 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
+	import type { GeoFeature, SourceValue, DataSources, CountryData } from '$lib/types';
 	import * as d3 from 'd3';
 	import { feature } from 'topojson-client';
-
-	type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
-
-	type SourceValue = string | { label: string; url?: string };
-
-	type DataSources = {
-		flag?: SourceValue;
-		coatOfArms?: SourceValue;
-		summary?: SourceValue;
-		officialName?: SourceValue;
-		capital?: SourceValue;
-		population?: SourceValue;
-		area?: SourceValue;
-		languages?: SourceValue;
-		region?: SourceValue;
-		subregion?: SourceValue;
-		independent?: SourceValue;
-		gini?: SourceValue;
-		gdp?: SourceValue;
-		politics?: SourceValue;
-		economics?: SourceValue;
-	};
-
-	type CountryData = {
-		officialName: string;
-		cca2ID: string;
-		flag: string;
-		coatOfArms: string;
-		independent: boolean;
-		region: string;
-		subregion: string;
-		capital: string;
-		area: number;
-		population: number;
-		languages: string[];
-		gini: number;
-		gdp: number;
-		summary: string;
-		politics: string;
-		economics: string;
-		sources?: DataSources;
-	};
 
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
