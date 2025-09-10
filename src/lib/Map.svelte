@@ -368,10 +368,10 @@
 					independent = json[0].independent ?? false;
 					region = json[0].region ?? 'UNKNOWN';
 					subregion = json[0].subregion ?? 'UNKNOWN';
-					area = json[0].area ?? 0;
+					area = json[0].area ?? -1;
 					languages = json[0].languages ?? [];
-					population = json[0].population ?? 0;
-					gini = json[0].gini ? (json[0].gini[Object.keys(json[0].gini ?? {})[0]] ?? 0) : 0;
+					population = json[0].population ?? -1;
+					gini = json[0].gini ? (json[0].gini[Object.keys(json[0].gini ?? {})[0]] ?? 0) : -1;
 
 					const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
 					if (!sources.flag) sources.flag = { label: 'REST Countries', url: restUrl };
@@ -391,6 +391,39 @@
 				}
 			}
 
+			if (!gdp && cca2ID && cca2ID !== 'UNKNOWN') {
+				try {
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+					const res = await fetch(
+						'https://api.worldbank.org/v2/country/' +
+							encodeURIComponent(cca2ID) +
+							'/indicator/NY.GDP.MKTP.CD?format=json&date=2024',
+						{
+							signal: controller.signal
+						}
+					);
+
+					clearTimeout(timeoutId);
+
+					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
+					const json = await res.json();
+					console.log(json[1][0]);
+
+					gdp = json[1][0].value ?? -1;
+
+					const worldBankUrl =
+						'https://api.worldbank.org/v2/country/' +
+						encodeURIComponent(cca2ID) +
+						'/indicator/NY.GDP.MKTP.CD?format=json&date=2024';
+					if (!sources.gdp) sources.gdp = { label: 'World Bank', url: worldBankUrl };
+				} catch (err) {
+					console.warn('WorldBank fetch failed, falling back to placeholder GDP', err);
+					gdp = -1;
+				}
+			}
+
 			const data: CountryData = {
 				cca2ID: cca2ID ?? 'UNKNOWN',
 				officialName: officialName ?? 'UNKNOWN',
@@ -399,12 +432,12 @@
 				independent: independent ?? false,
 				region: region ?? 'UNKNOWN',
 				subregion: subregion ?? 'UNKNOWN',
-				area: area ?? 0,
+				area: area ?? -1,
 				languages: languages ?? [],
 				capital: capital ?? '—',
-				population: population ?? 0,
-				gini: gini ?? 0,
-				gdp: localEntry?.gdp ?? 0,
+				population: population ?? -1,
+				gini: gini ?? -1,
+				gdp: gdp ?? -1,
 				summary: summary ?? '—',
 				politics: localEntry?.politics ?? 'Data not provided.',
 				economics: localEntry?.economics ?? 'Data not provided.',
