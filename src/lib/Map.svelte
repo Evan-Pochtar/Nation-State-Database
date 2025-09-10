@@ -879,9 +879,14 @@
 						<div class="flex items-start gap-2">
 							<button
 								on:click={toggleSources}
+								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								title="Toggle source attribution"
-								class="flex cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] px-2 py-2 text-[12px] text-[rgba(255,255,255,0.7)] backdrop-blur-[10px] transition-transform duration-200"
+								class={`transition-color flex h-10 cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${
+									showSources
+										? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-[#00ffff]'
+										: 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'
+								}`}
 							>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
 									<path
@@ -893,7 +898,7 @@
 							<button
 								on:click={closePanel}
 								aria-label="Close info panel"
-								class="h-10 cursor-pointer rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
+								class="flex h-10 cursor-pointer items-center justify-center rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
 								>✕</button
 							>
 						</div>
