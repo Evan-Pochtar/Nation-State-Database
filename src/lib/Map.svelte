@@ -359,20 +359,41 @@
 
 					if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 					const json = await res.json();
-					console.log(json[0]);
+					
+					let restData: any = null;
+					if (json.length === 1) {
+						restData = json[0];
+					} else if (json.length > 1) {
+						const exactMatch = json.find(
+							(c: any) =>
+								(c.name.common && c.name.common.toLowerCase() === name.toLowerCase()) ||
+								(c.name.official && c.name.official.toLowerCase() === name.toLowerCase()) ||
+								(c.altSpellings &&
+									Array.isArray(c.altSpellings) &&
+									c.altSpellings.some(
+										(s: string) => s.toLowerCase() === name.toLowerCase()
+									))
+						);
+						if (exactMatch) {
+							restData = exactMatch;
+						}
+					} else {
+						throw new Error('no country data returned');
+					}
+					console.log(restData);
 
-					cca2ID = json[0].cca2 ?? 'UNKNOWN';
-					officialName = json[0].name.official ?? 'UNKNOWN';
-					flag = json[0].flags.svg ?? 'UNKNOWN';
-					coatOfArms = json[0].coatOfArms.svg ?? 'UNKNOWN';
-					capital = json[0].capital ? json[0].capital[0] : '—';
-					independent = json[0].independent ?? false;
-					region = json[0].region ?? 'UNKNOWN';
-					subregion = json[0].subregion ?? 'UNKNOWN';
-					area = json[0].area ?? -1;
-					languages = json[0].languages ?? [];
-					population = json[0].population ?? -1;
-					gini = json[0].gini ? (json[0].gini[Object.keys(json[0].gini ?? {})[0]] ?? 0) : -1;
+					cca2ID = restData.cca2 ?? 'UNKNOWN';
+					officialName = restData.name.official ?? 'UNKNOWN';
+					flag = restData.flags.svg ?? 'UNKNOWN';
+					coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
+					capital = restData.capital ? restData.capital[0] : '—';
+					independent = restData.independent ?? false;
+					region = restData.region ?? 'UNKNOWN';
+					subregion = restData.subregion ?? 'UNKNOWN';
+					area = restData.area ?? -1;
+					languages = restData.languages ?? [];
+					population = restData.population ?? -1;
+					gini = restData.gini ? (restData.gini[Object.keys(restData.gini ?? {})[0]] ?? 0) : -1;
 
 					const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
 					if (!sources.flag) sources.flag = { label: 'REST Countries', url: restUrl };
