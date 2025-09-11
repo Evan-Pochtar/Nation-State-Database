@@ -8,61 +8,53 @@
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
 	let selectedName: string | null = null;
+	let activeTab: string = 'overview';
 
-	let leftPct = 0.36;
-	let tempLeftPct = leftPct;
-	let leftWidth = 0;
-	let tempLeftWidth = 0;
-	const MIN_PCT = 0.2;
-	const MAX_PCT = 0.75;
-	const MIN_LEFT_PX = 450;
-	const MAX_LEFT_PX = 900;
+	let leftPct = 0.36,
+		tempLeftPct = leftPct,
+		leftWidth = 0,
+		tempLeftWidth = 0;
+	const MIN_PCT = 0.2,
+		MAX_PCT = 0.75,
+		MIN_LEFT_PX = 450,
+		MAX_LEFT_PX = 900,
+		COMPACT_THRESHOLD = 700,
+		HANDLE_WIDTH = 6;
 	let dragging = false;
-	const COMPACT_THRESHOLD = 700;
 	$: compact = leftWidth <= COMPACT_THRESHOLD;
-	const HANDLE_WIDTH = 6;
 
-	let outerWidth = 1600;
-	let outerHeight = 900;
-	let rightWidth = outerWidth;
-	let rightHeight = outerHeight;
+	let outerWidth = 1600,
+		outerHeight = 900,
+		rightWidth = outerWidth,
+		rightHeight = outerHeight;
 
-	let projection: d3.GeoProjection;
-	let pathGenerator: d3.GeoPath<any, GeoFeature>;
+	let projection: d3.GeoProjection, pathGenerator: d3.GeoPath<any, GeoFeature>;
+	let focusProjection: d3.GeoProjection | undefined,
+		focusPathGenerator: d3.GeoPath<any, GeoFeature> | null = null;
 
-	let focusProjection: d3.GeoProjection | undefined;
-	let focusPathGenerator: d3.GeoPath<any, GeoFeature> | null = null;
-
-	let animHandle: number | null = null;
-	let isAnimating = false;
-
-	let now = new Date();
-	let clockTimer: number;
+	let animHandle: number | null = null,
+		isAnimating = false;
+	let now = new Date(),
+		clockTimer: number;
 	const CLOCK_TICK = 50;
 
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
+	let svgEl: SVGSVGElement | null = null,
+		mapGroup: SVGGElement | null = null;
 
-	let svgEl: SVGSVGElement | null = null;
-	let mapGroup: SVGGElement | null = null;
 	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
-	let activeTab: 'overview' | 'politics' | 'economics' = 'overview';
-
-	let resizeTimeout: number;
-	let currentTransform = d3.zoomIdentity;
-	let isZooming = false;
-
-	let showSources = false;
+	let resizeTimeout: number,
+		currentTransform = d3.zoomIdentity,
+		isZooming = false,
+		showSources = false;
 
 	function throttledResize() {
 		if (resizeTimeout) clearTimeout(resizeTimeout);
-		resizeTimeout = window.setTimeout(() => {
-			handleResize();
-		}, 100);
+		resizeTimeout = window.setTimeout(handleResize, 100);
 	}
 
 	onMount(async () => {
 		clockTimer = window.setInterval(() => (now = new Date()), CLOCK_TICK);
-
 		try {
 			const resp = await fetch('/data/countries-map.json');
 			if (!resp.ok) {
@@ -70,7 +62,6 @@
 				return;
 			}
 			const topo = await resp.json();
-
 			const objects = topo.objects;
 			const objectKey = Object.keys(objects)[0];
 			const geo = feature(topo as any, objects[objectKey]) as
@@ -78,16 +69,13 @@
 				| GeoJSON.Feature
 				| null;
 
-			if (geo && geo.type === 'FeatureCollection') {
-				countries = geo.features as GeoFeature[];
-			} else if (geo) {
-				countries = [geo as GeoFeature];
-			} else {
-				countries = [];
-			}
-
+			countries =
+				geo?.type === 'FeatureCollection'
+					? (geo.features as GeoFeature[])
+					: geo
+						? [geo as GeoFeature]
+						: [];
 			console.log(`Loaded ${countries.length} countries`);
-
 			handleResize();
 			window.addEventListener('resize', throttledResize);
 		} catch (error) {
@@ -109,7 +97,6 @@
 	function handleResize() {
 		outerWidth = window.innerWidth;
 		outerHeight = window.innerHeight;
-
 		const desired = Math.round(
 			Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)))
 		);
@@ -117,7 +104,6 @@
 		const effectiveLeft = dragging
 			? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired))
 			: leftWidth;
-
 		rightWidth = selectedFeature
 			? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH)
 			: outerWidth;
@@ -128,43 +114,33 @@
 				type: 'FeatureCollection',
 				features: countries
 			};
-
 			projection = d3.geoNaturalEarth1();
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
-
-			if (selectedFeature) {
-				setupFocusProjection();
-			}
+			if (selectedFeature) setupFocusProjection();
 		}
-
 		initZoom();
 	}
 
 	function setupFocusProjection() {
 		if (!selectedFeature) return;
-
 		try {
 			const bounds = d3.geoBounds(selectedFeature as any);
 			if (!bounds || bounds[0][0] === undefined || bounds[1][0] === undefined) {
 				console.error('Invalid bounds for selected feature');
 				return;
 			}
-
-			let proj: d3.GeoProjection;
-			proj = d3.geoMercator();
+			let proj = d3.geoMercator();
 
 			const currentRightWidth = dragging
 				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
 				: rightWidth;
 			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
 			const paddingPx = Math.max(20, Math.min(80, Math.round(minDim * 0.06)));
-
-			const left = paddingPx;
-			const top = paddingPx;
+			const left = paddingPx,
+				top = paddingPx;
 			const right = Math.max(currentRightWidth - paddingPx, left + 10);
 			const bottom = Math.max(rightHeight - paddingPx, top + 10);
-
 			proj.fitExtent(
 				[
 					[left, top],
@@ -175,11 +151,9 @@
 
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
-
 			console.log('Focus projection setup complete for', getCountryName(selectedFeature));
 		} catch (error) {
 			console.error('Error setting up focus projection:', error);
-
 			const fallback = d3.geoMercator();
 			const currentRightWidth = dragging
 				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
@@ -191,21 +165,16 @@
 			focusProjection = fallback;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 		}
-
-		if (!isZooming) {
-			initZoom();
-		}
+		if (!isZooming) initZoom();
 	}
 
 	function getCountryName(f: GeoFeature): string {
-		const p = f.properties ?? {};
-		return (p.name as string) ?? 'Unknown Country';
+		return f.properties?.name ?? 'Unknown Country';
 	}
 
 	function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
 		const out: DataSources = {};
 		if (!raw || typeof raw !== 'object') return out;
-
 		const entries = Object.entries(raw) as [keyof DataSources, any][];
 		for (const [k, v] of entries) {
 			if (typeof v === 'string') {
@@ -232,9 +201,7 @@
 	}
 
 	async function fetchCountryInfoByName(name: string | '') {
-		if (!name) return;
-		if (infoCache[name]?.data || infoCache[name]?.loading) return;
-
+		if (!name || infoCache[name]?.data || infoCache[name]?.loading) return;
 		infoCache[name] = { loading: true };
 
 		try {
@@ -243,65 +210,40 @@
 				const localResp = await fetch('/data/countries-data.json');
 				if (localResp.ok) {
 					const localJson = await localResp.json();
-
-					if (Array.isArray(localJson)) {
-						localEntry = localJson.find((e) => e.name === name) ?? null;
-					} else if (localJson && typeof localJson === 'object') {
-						localEntry = localJson[name] ?? null;
-						if (!localEntry) {
-							localEntry = Object.values(localJson).find((e: any) => e.name === name) ?? null;
-						}
-					}
+					localEntry = Array.isArray(localJson)
+						? (localJson.find((e) => e.name === name) ?? null)
+						: (localJson[name] ??
+							Object.values(localJson).find((e: any) => e.name === name) ??
+							null);
 				} else {
 					console.warn('No local countries-data.json accessible:', localResp.status);
 				}
 			} catch (err) {
 				console.warn('Error loading /data/countries-data.json', err);
-				localEntry = null;
 			}
 
 			console.log('Local entry for', name, localEntry);
 
-			let cca2ID: string | null = null;
-			let officialName: string | null = null;
-			let summary: string | null = null;
-			let flag: string | null = null;
-			let coatOfArms: string | null = null;
-			let capital: string | null = null;
-			let independent: boolean | null = null;
-			let region: string | null = null;
-			let subregion: string | null = null;
-			let area: number | null = null;
-			let languages: string[] | null = null;
-			let population: number | null = null;
-			let gini: number | null = null;
-			let gdp: number | null = null;
-			let sources: DataSources = {};
+			let cca2ID = localEntry?.cca2ID ?? null;
+			let officialName = localEntry?.officialName ?? null;
+			let summary = localEntry?.summary ?? null;
+			let flag = localEntry?.flag ?? null;
+			let coatOfArms = localEntry?.coatOfArms ?? null;
+			let capital = localEntry?.capital ?? null;
+			let independent = localEntry?.independent ?? null;
+			let region = localEntry?.region ?? null;
+			let subregion = localEntry?.subregion ?? null;
+			let area = localEntry?.area ?? null;
+			let languages = localEntry?.languages ?? null;
+			let population = localEntry?.population ?? null;
+			let gini = localEntry?.gini ?? null;
+			let gdp = localEntry?.gdp ?? null;
+			let sources = normalizeSources(localEntry?.sources ?? {}, name);
 
-			if (localEntry) {
-				cca2ID = localEntry.cca2ID ?? null;
-				officialName = localEntry.officialName ?? null;
-				summary = localEntry.summary ?? null;
-				flag = localEntry.flag ?? null;
-				coatOfArms = localEntry.coatOfArms ?? null;
-				capital = localEntry.capital ?? null;
-				independent = localEntry.independent ?? null;
-				region = localEntry.region ?? null;
-				subregion = localEntry.subregion ?? null;
-				area = localEntry.area ?? null;
-				languages = localEntry.languages ?? null;
-				population = localEntry.population ?? null;
-				gini = localEntry.gini ?? null;
-				gdp = localEntry.gdp ?? null;
-				sources = normalizeSources(localEntry.sources ?? {}, name);
-			}
-
-			let wikiExtract: string | null = null;
 			if (!summary) {
 				try {
 					const controller = new AbortController();
 					const timeoutId = setTimeout(() => controller.abort(), 5000);
-
 					const endpoint = 'https://en.wikipedia.org/w/api.php';
 					const params = new URLSearchParams({
 						action: 'query',
@@ -323,17 +265,13 @@
 					const json = await res.json();
 					const pages = json?.query?.pages;
 					if (!pages) throw new Error('no page data returned');
-
 					const page = Object.values(pages)[0] as any;
-					if (!page || page.missing) {
-						wikiExtract = 'No summary available.';
-					} else {
-						wikiExtract = page.extract || 'No summary available.';
-					}
 
-					summary = wikiExtract;
+					summary = page?.missing
+						? 'No summary available.'
+						: page?.extract || 'No summary available.';
 					sources = {
-						...(sources || {}),
+						...sources,
 						summary: {
 							label: 'Wikipedia',
 							url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
@@ -349,63 +287,53 @@
 				try {
 					const controller = new AbortController();
 					const timeoutId = setTimeout(() => controller.abort(), 5000);
-
 					const res = await fetch(
 						'https://restcountries.com/v3.1/name/' + encodeURIComponent(name),
-						{
-							signal: controller.signal
-						}
+						{ signal: controller.signal }
 					);
 					clearTimeout(timeoutId);
-
 					if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 					const json = await res.json();
-					let restData: any = null;
-					if (json.length === 1) {
-						restData = json[0];
-					} else if (json.length > 1) {
-						const exactMatch = json.find(
-							(c: any) =>
-								(c.name.common && c.name.common.toLowerCase() === name.toLowerCase()) ||
-								(c.name.official && c.name.official.toLowerCase() === name.toLowerCase()) ||
-								(c.altSpellings &&
-									Array.isArray(c.altSpellings) &&
-									c.altSpellings.some((s: string) => s.toLowerCase() === name.toLowerCase()))
-						);
-						if (exactMatch) {
-							restData = exactMatch;
-						}
-					} else {
-						throw new Error('no country data returned');
-					}
+					let restData =
+						json.length === 1
+							? json[0]
+							: json.find(
+									(c: any) =>
+										c.name.common?.toLowerCase() === name.toLowerCase() ||
+										c.name.official?.toLowerCase() === name.toLowerCase() ||
+										c.altSpellings?.some((s: string) => s.toLowerCase() === name.toLowerCase())
+								);
+					if (!restData) throw new Error('no country data returned');
 					console.log(restData);
 
 					cca2ID = restData.cca2 ?? 'UNKNOWN';
 					officialName = restData.name.official ?? 'UNKNOWN';
 					flag = restData.flags.svg ?? 'UNKNOWN';
 					coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
-					capital = restData.capital ? restData.capital[0] : '—';
+					capital = restData.capital?.[0] ?? '—';
 					independent = restData.independent ?? false;
 					region = restData.region ?? 'UNKNOWN';
 					subregion = restData.subregion ?? 'UNKNOWN';
 					area = restData.area ?? -1;
 					languages = restData.languages ?? [];
 					population = restData.population ?? -1;
-					gini = restData.gini ? (restData.gini[Object.keys(restData.gini ?? {})[0]] ?? 0) : -1;
+					gini = restData.gini ? (restData.gini[Object.keys(restData.gini)[0]] ?? 0) : -1;
 
 					const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
-					if (!sources.flag) sources.flag = { label: 'REST Countries', url: restUrl };
-					if (!sources.coatOfArms) sources.coatOfArms = { label: 'REST Countries', url: restUrl };
-					if (!sources.officialName)
-						sources.officialName = { label: 'REST Countries', url: restUrl };
-					if (!sources.capital) sources.capital = { label: 'REST Countries', url: restUrl };
-					if (!sources.independent) sources.independent = { label: 'REST Countries', url: restUrl };
-					if (!sources.region) sources.region = { label: 'REST Countries', url: restUrl };
-					if (!sources.subregion) sources.subregion = { label: 'REST Countries', url: restUrl };
-					if (!sources.area) sources.area = { label: 'REST Countries', url: restUrl };
-					if (!sources.languages) sources.languages = { label: 'REST Countries', url: restUrl };
-					if (!sources.population) sources.population = { label: 'REST Countries', url: restUrl };
-					if (!sources.gini) sources.gini = { label: 'REST Countries', url: restUrl };
+					const restSource = { label: 'REST Countries', url: restUrl };
+					Object.assign(sources, {
+						...(!sources.flag && { flag: restSource }),
+						...(!sources.coatOfArms && { coatOfArms: restSource }),
+						...(!sources.officialName && { officialName: restSource }),
+						...(!sources.capital && { capital: restSource }),
+						...(!sources.independent && { independent: restSource }),
+						...(!sources.region && { region: restSource }),
+						...(!sources.subregion && { subregion: restSource }),
+						...(!sources.area && { area: restSource }),
+						...(!sources.languages && { languages: restSource }),
+						...(!sources.population && { population: restSource }),
+						...(!sources.gini && { gini: restSource })
+					});
 				} catch (err) {
 					console.warn('RestCountries fetch failed, falling back to placeholder information', err);
 				}
@@ -415,16 +343,10 @@
 				try {
 					const controller = new AbortController();
 					const timeoutId = setTimeout(() => controller.abort(), 10000);
-
 					const res = await fetch(
-						'https://api.worldbank.org/v2/country/' +
-							encodeURIComponent(cca2ID) +
-							'/indicator/NY.GDP.MKTP.CD?format=json&date=2024',
-						{
-							signal: controller.signal
-						}
+						`https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/NY.GDP.MKTP.CD?format=json&date=2024`,
+						{ signal: controller.signal }
 					);
-
 					clearTimeout(timeoutId);
 
 					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
@@ -432,11 +354,7 @@
 					console.log(json[1][0]);
 
 					gdp = json[1][0].value ?? -1;
-
-					const worldBankUrl =
-						'https://api.worldbank.org/v2/country/' +
-						encodeURIComponent(cca2ID) +
-						'/indicator/NY.GDP.MKTP.CD?format=json&date=2024';
+					const worldBankUrl = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/NY.GDP.MKTP.CD?format=json&date=2024`;
 					if (!sources.gdp) sources.gdp = { label: 'World Bank', url: worldBankUrl };
 				} catch (err) {
 					console.warn('WorldBank fetch failed, falling back to placeholder GDP', err);
@@ -461,17 +379,19 @@
 				summary: summary ?? '—',
 				politics: localEntry?.politics ?? 'Data not provided.',
 				economics: localEntry?.economics ?? 'Data not provided.',
-				sources: sources
+				sources
 			};
 
 			Promise.resolve().then(async () => {
 				try {
-					if (!localEntry) {
+					const shouldPersist =
+						!localEntry || (!localEntry.summary && !localEntry.cca2ID && summary);
+					if (shouldPersist) {
 						await fetch('/api', {
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json' },
 							body: JSON.stringify({
-								name,
+								name: localEntry?.name ?? name,
 								summary,
 								cca2ID,
 								officialName,
@@ -489,33 +409,6 @@
 								sources
 							})
 						});
-					} else {
-						const hadSummary = localEntry.summary;
-						const hadcca2ID = localEntry.cca2ID;
-						if (!hadSummary && !hadcca2ID && summary) {
-							await fetch('/api', {
-								method: 'POST',
-								headers: { 'Content-Type': 'application/json' },
-								body: JSON.stringify({
-									name: localEntry.name ?? name,
-									summary,
-									cca2ID,
-									officialName,
-									flag,
-									coatOfArms,
-									independent,
-									region,
-									subregion,
-									area,
-									languages,
-									capital,
-									population,
-									gini,
-									gdp,
-									sources
-								})
-							});
-						}
 					}
 				} catch (err) {
 					console.warn('Failed to persist country summary to /api/countries', err);
@@ -531,15 +424,11 @@
 
 	function onCountryClick(f: GeoFeature) {
 		if (!f || isAnimating) return;
-
 		selectedFeature = f;
 		selectedName = getCountryName(f);
-
 		setupFocusProjection();
 		handleResize();
-
 		fetchCountryInfoByName(selectedName);
-
 		isAnimating = true;
 		setTimeout(() => {
 			isAnimating = false;
@@ -551,10 +440,8 @@
 		selectedName = null;
 		focusProjection = undefined;
 		focusPathGenerator = null;
-
 		await tick();
 		handleResize();
-
 		resetZoom();
 		initZoom();
 	}
@@ -620,35 +507,21 @@
 			})
 			.on('zoom', (event: any) => {
 				if (!mapGroup || !svgEl) return;
-
 				const t = event.transform;
 				currentTransform = t;
 				const k = t.k;
-				let tx = t.x;
-				let ty = t.y;
-
+				let tx = t.x,
+					ty = t.y;
 				const bbox = mapGroup.getBBox();
 				const vb = svgEl.viewBox.baseVal;
-				const viewW = vb && vb.width ? vb.width : svgEl.clientWidth;
-				const viewH = vb && vb.height ? vb.height : svgEl.clientHeight;
-
+				const viewW = vb?.width || svgEl.clientWidth;
+				const viewH = vb?.height || svgEl.clientHeight;
 				const txMin = viewW - (bbox.x + bbox.width) * k;
 				const txMax = -bbox.x * k;
 				const tyMin = viewH - (bbox.y + bbox.height) * k;
 				const tyMax = -bbox.y * k;
-
-				if (txMin > txMax) {
-					tx = (txMin + txMax) / 2;
-				} else {
-					tx = Math.min(Math.max(tx, txMin), txMax);
-				}
-
-				if (tyMin > tyMax) {
-					ty = (tyMin + tyMax) / 2;
-				} else {
-					ty = Math.min(Math.max(ty, tyMin), tyMax);
-				}
-
+				tx = txMin > txMax ? (txMin + txMax) / 2 : Math.min(Math.max(tx, txMin), txMax);
+				ty = tyMin > tyMax ? (tyMin + tyMax) / 2 : Math.min(Math.max(ty, tyMin), tyMax);
 				mapGroup.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${k})`;
 			})
 			.on('end', () => {
@@ -659,39 +532,30 @@
 	function initZoom() {
 		if (!svgEl || !mapGroup) return;
 		d3.select(svgEl).on('.zoom', null);
-
 		zoomBehavior = buildZoomBehavior();
 		d3.select(svgEl).call(zoomBehavior as any);
-
-		d3.select(svgEl).on('dblclick.zoom', () => {
-			resetZoom();
-		});
+		d3.select(svgEl).on('dblclick.zoom', resetZoom);
 	}
 
 	function resetZoom() {
 		if (!svgEl || !zoomBehavior || !mapGroup) return;
-
 		const vb = svgEl.viewBox.baseVal;
-		const viewW = vb && vb.width ? vb.width : svgEl.clientWidth;
-		const viewH = vb && vb.height ? vb.height : svgEl.clientHeight;
+		const viewW = vb?.width || svgEl.clientWidth;
+		const viewH = vb?.height || svgEl.clientHeight;
 		const bbox = mapGroup.getBBox();
-
 		const sx = viewW / (bbox.width || viewW);
 		const sy = viewH / (bbox.height || viewH);
 		const s = Math.min(1, Math.max(0.4, Math.min(sx, sy)));
-
 		const tx = (viewW - (bbox.x + bbox.width) * s + -bbox.x * s) / 2;
 		const ty = (viewH - (bbox.y + bbox.height) * s + -bbox.y * s) / 2;
-
 		currentTransform = d3.zoomIdentity.translate(tx, ty).scale(s);
-
 		d3.select(svgEl)
 			.transition()
 			.duration(350)
 			.call((zoomBehavior as any).transform, currentTransform);
 	}
 
-	function setTab(t: 'overview' | 'politics' | 'economics') {
+	function setTab(t: string) {
 		activeTab = t;
 		requestAnimationFrame(() => {
 			const rp = document.querySelector('.read-panel');
@@ -724,13 +588,33 @@
 	}
 
 	function getSource(field: keyof DataSources): SourceValue | null {
-		if (!selectedInfo?.sources) return null;
-		return (selectedInfo.sources as any)[field] || null;
+		return selectedInfo?.sources?.[field] || null;
 	}
 
-	function toggleSources() {
-		showSources = !showSources;
+	function renderSource(source: SourceValue | null) {
+		if (!source || !showSources) return '';
+		const sourceText = typeof source === 'string' ? source : source.label;
+		const sourceUrl = typeof source === 'string' ? '#' : source.url;
+		return typeof source === 'string'
+			? `(${sourceText})`
+			: `(<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="ml-1 font-semibold text-[#bfefff] underline">${sourceText}</a>)`;
 	}
+
+	function isSourceString(s: unknown) {
+		return typeof s === 'string';
+	}
+	function sourceLabel(s: any) {
+		return typeof s === 'string' ? s : (s?.label ?? '');
+	}
+	function sourceUrl(s: any) {
+		return typeof s === 'string' ? null : (s?.url ?? '#');
+	}
+
+	const cardClass =
+		'rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]';
+	const buttonClass =
+		'cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160';
+	const labelClass = 'mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase';
 </script>
 
 <div
@@ -768,25 +652,21 @@
 									alt="{selectedName} flag"
 								/>
 								{#if showSources && getSource('flag')}
-									{#if typeof getSource('flag') === 'string'}
-										<div
-											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-										>
-											{getSource('flag')}
-										</div>
-									{:else}
-										<div
-											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-										>
-											<a
-												href={(getSource('flag') as any).url ?? '#'}
+									<div
+										class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+									>
+										{#if isSourceString(getSource('flag'))}
+											({sourceLabel(getSource('flag'))})
+										{:else}
+											(<a
+												href={sourceUrl(getSource('flag'))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="font-semibold text-[#bfefff] underline"
-												>{(getSource('flag') as any).label}</a
-											>
-										</div>
-									{/if}
+												class="ml-1 font-semibold text-[#bfefff] underline"
+												>{sourceLabel(getSource('flag'))}</a
+											>)
+										{/if}
+									</div>
 								{/if}
 							</div>
 							{#if selectedInfo.coatOfArms !== 'UNKNOWN'}
@@ -797,25 +677,21 @@
 										alt="{selectedName} coat of arms"
 									/>
 									{#if showSources && getSource('coatOfArms')}
-										{#if typeof getSource('coatOfArms') === 'string'}
-											<div
-												class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-											>
-												{getSource('coatOfArms')}
-											</div>
-										{:else}
-											<div
-												class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-											>
-												<a
-													href={(getSource('coatOfArms') as any).url ?? '#'}
+										<div
+											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										>
+											{#if isSourceString(getSource('coatOfArms'))}
+												({sourceLabel(getSource('coatOfArms'))})
+											{:else}
+												(<a
+													href={sourceUrl(getSource('coatOfArms'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="font-semibold text-[#bfefff] underline"
-													>{(getSource('coatOfArms') as any).label}</a
-												>
-											</div>
-										{/if}
+													class="ml-1 font-semibold text-[#bfefff] underline"
+													>{sourceLabel(getSource('coatOfArms'))}</a
+												>)
+											{/if}
+										</div>
 									{/if}
 								</div>
 							{/if}
@@ -825,22 +701,19 @@
 							<div class="text-[20px] leading-tight font-extrabold text-[#e6ffff]">
 								{selectedInfo.officialName ?? selectedName}
 								{#if showSources && getSource('officialName')}
-									<span class="ml-1 text-[0.8em] font-normal opacity-60"
-										>(
-										{#if typeof getSource('officialName') === 'string'}
-											{getSource('officialName')}
+									<span class="ml-1 text-[0.8em] font-normal opacity-60">
+										{#if isSourceString(getSource('officialName'))}
+											({sourceLabel(getSource('officialName'))})
 										{:else}
-											<a
-												href={(getSource('officialName') as any).url ?? '#'}
+											(<a
+												href={sourceUrl(getSource('officialName'))}
 												target="_blank"
 												rel="noopener noreferrer"
 												class="ml-1 font-semibold text-[#bfefff] underline"
-											>
-												{(getSource('officialName') as any).label}
-											</a>
+												>{sourceLabel(getSource('officialName'))}</a
+											>)
 										{/if}
-										)</span
-									>
+									</span>
 								{/if}
 							</div>
 
@@ -852,21 +725,20 @@
 									{#if showSources && getSource('region')}
 										<span class="ml-1 font-normal opacity-70"
 											>·
-											{#if typeof getSource('region') === 'string'}
-												{getSource('region')}
+											{#if isSourceString(getSource('region'))}
+												({sourceLabel(getSource('region'))})
 											{:else}
-												<a
-													href={(getSource('region') as any).url ?? '#'}
+												(<a
+													href={sourceUrl(getSource('region'))}
 													target="_blank"
 													rel="noopener noreferrer"
 													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('region') as any).label}</a
-												>
+													>{sourceLabel(getSource('region'))}</a
+												>)
 											{/if}
 										</span>
 									{/if}
 								</span>
-
 								{#if selectedInfo.subregion}
 									<span
 										class="rounded-full border border-[rgba(255,255,255,0.04)] bg-transparent px-2 py-1 text-[12px] text-[#bfc9d1] opacity-60"
@@ -875,61 +747,55 @@
 										{#if showSources && getSource('subregion')}
 											<span class="ml-1 font-normal opacity-70"
 												>·
-												{#if typeof getSource('subregion') === 'string'}
-													{getSource('subregion')}
+												{#if isSourceString(getSource('subregion'))}
+													({sourceLabel(getSource('subregion'))})
 												{:else}
-													<a
-														href={(getSource('subregion') as any).url ?? '#'}
+													(<a
+														href={sourceUrl(getSource('subregion'))}
 														target="_blank"
 														rel="noopener noreferrer"
 														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{(getSource('subregion') as any).label}</a
-													>
+														>{sourceLabel(getSource('subregion'))}</a
+													>)
 												{/if}
 											</span>
 										{/if}
 									</span>
 								{/if}
-
 								<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
 									Capital: {selectedInfo.capital}
 									{#if showSources && getSource('capital')}
-										<span class="ml-1 text-[0.8em] font-normal opacity-60"
-											>(
-											{#if typeof getSource('capital') === 'string'}
-												{getSource('capital')}
+										<span class="ml-1 text-[0.8em] font-normal opacity-60">
+											{#if isSourceString(getSource('capital'))}
+												({sourceLabel(getSource('capital'))})
 											{:else}
-												<a
-													href={(getSource('capital') as any).url ?? '#'}
+												(<a
+													href={sourceUrl(getSource('capital'))}
 													target="_blank"
 													rel="noopener noreferrer"
 													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('capital') as any).label}</a
-												>
+													>{sourceLabel(getSource('capital'))}</a
+												>)
 											{/if}
-											)</span
-										>
+										</span>
 									{/if}
 								</span>
-
 								<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
 									Population: {formatNumber(selectedInfo.population)}
 									{#if showSources && getSource('population')}
-										<span class="ml-1 text-[0.8em] font-normal opacity-60"
-											>(
-											{#if typeof getSource('population') === 'string'}
-												{getSource('population')}
+										<span class="ml-1 text-[0.8em] font-normal opacity-60">
+											{#if isSourceString(getSource('population'))}
+												({sourceLabel(getSource('population'))})
 											{:else}
-												<a
-													href={(getSource('population') as any).url ?? '#'}
+												(<a
+													href={sourceUrl(getSource('population'))}
 													target="_blank"
 													rel="noopener noreferrer"
 													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('population') as any).label}</a
-												>
+													>{sourceLabel(getSource('population'))}</a
+												>)
 											{/if}
-											)</span
-										>
+										</span>
 									{/if}
 								</span>
 							</div>
@@ -939,15 +805,11 @@
 							class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}
 						>
 							<button
-								on:click={toggleSources}
+								on:click={() => (showSources = !showSources)}
 								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								title="Toggle source attribution"
-								class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${
-									showSources
-										? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-[#00ffff]'
-										: 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'
-								}`}
+								class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-[#00ffff]' : 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'}`}
 							>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
 									<path
@@ -955,7 +817,6 @@
 									/>
 								</svg>
 							</button>
-
 							<button
 								on:click={closePanel}
 								aria-label="Close info panel"
@@ -967,150 +828,41 @@
 
 					<section class="mt-3" aria-label="Key facts">
 						<div class="grid grid-cols-2 gap-2">
-							<div
-								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
-							>
-								<div
-									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
-								>
-									Area
-									{#if showSources && getSource('area')}
-										<span class="ml-1 text-[10px] font-normal opacity-60"
-											>(
-											{#if typeof getSource('area') === 'string'}
-												{getSource('area')}
-											{:else}
-												<a
-													href={(getSource('area') as any).url ?? '#'}
-													target="_blank"
-													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('area') as any).label}</a
-												>
-											{/if}
-											)</span
-										>
-									{/if}
+							{#each [['Area', formatNumber(selectedInfo.area) + ' km²', getSource('area')], ['GDP (USD)', formatGDP(selectedInfo.gdp), getSource('gdp')], ['Gini', selectedInfo.gini ?? '—', getSource('gini')], ['Languages', formatLanguages(selectedInfo.languages), getSource('languages')]] as [label, value, source]}
+								<div class={cardClass}>
+									<div class={labelClass}>
+										{label}
+										{#if showSources && source}
+											<span class="ml-1 text-[10px] font-normal opacity-60">
+												{#if isSourceString(source)}
+													({sourceLabel(source)})
+												{:else}
+													(<a
+														href={sourceUrl(source)}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="ml-1 font-semibold text-[#bfefff] underline"
+														>{sourceLabel(source)}</a
+													>)
+												{/if}
+											</span>
+										{/if}
+									</div>
+									<div class="text-[14px] font-extrabold text-white">{value}</div>
 								</div>
-								<div class="text-[14px] font-extrabold text-white">
-									{formatNumber(selectedInfo.area)} km²
-								</div>
-							</div>
-
-							<div
-								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
-							>
-								<div
-									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
-								>
-									GDP (USD)
-									{#if showSources && getSource('gdp')}
-										<span class="ml-1 text-[10px] font-normal opacity-60"
-											>(
-											{#if typeof getSource('gdp') === 'string'}
-												{getSource('gdp')}
-											{:else}
-												<a
-													href={(getSource('gdp') as any).url ?? '#'}
-													target="_blank"
-													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('gdp') as any).label}</a
-												>
-											{/if}
-											)</span
-										>
-									{/if}
-								</div>
-								<div class="text-[14px] font-extrabold text-white">
-									{formatGDP(selectedInfo.gdp)}
-								</div>
-							</div>
-
-							<div
-								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
-							>
-								<div
-									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
-								>
-									Gini
-									{#if showSources && getSource('gini')}
-										<span class="ml-1 text-[10px] font-normal opacity-60"
-											>(
-											{#if typeof getSource('gini') === 'string'}
-												{getSource('gini')}
-											{:else}
-												<a
-													href={(getSource('gini') as any).url ?? '#'}
-													target="_blank"
-													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('gini') as any).label}</a
-												>
-											{/if}
-											)</span
-										>
-									{/if}
-								</div>
-								<div class="text-[14px] font-extrabold text-white">{selectedInfo.gini ?? '—'}</div>
-							</div>
-
-							<div
-								class="rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]"
-							>
-								<div
-									class="mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase"
-								>
-									Languages
-									{#if showSources && getSource('languages')}
-										<span class="ml-1 text-[10px] font-normal opacity-60"
-											>(
-											{#if typeof getSource('languages') === 'string'}
-												{getSource('languages')}
-											{:else}
-												<a
-													href={(getSource('languages') as any).url ?? '#'}
-													target="_blank"
-													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{(getSource('languages') as any).label}</a
-												>
-											{/if}
-											)</span
-										>
-									{/if}
-								</div>
-								<div class="text-[14px] font-extrabold text-white">
-									{formatLanguages(selectedInfo.languages)}
-								</div>
-							</div>
+							{/each}
 						</div>
 					</section>
 
 					<nav class="mt-2 flex gap-2" aria-label="Country sections">
-						<button
-							role="tab"
-							aria-selected={activeTab === 'overview'}
-							on:click={() => setTab('overview')}
-							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
-							>Overview</button
-						>
-
-						<button
-							role="tab"
-							aria-selected={activeTab === 'politics'}
-							on:click={() => setTab('politics')}
-							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
-							>Politics</button
-						>
-
-						<button
-							role="tab"
-							aria-selected={activeTab === 'economics'}
-							on:click={() => setTab('economics')}
-							class="cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160"
-							>Economy</button
-						>
+						{#each [['overview', 'Overview'], ['politics', 'Politics'], ['economics', 'Economy']] as [tab, label]}
+							<button
+								role="tab"
+								aria-selected={activeTab === tab}
+								on:click={() => setTab(tab)}
+								class={buttonClass}>{label}</button
+							>
+						{/each}
 					</nav>
 
 					<section
@@ -1118,91 +870,37 @@
 						aria-live="polite"
 					>
 						<div class="pr-1">
-							{#if activeTab === 'overview'}
-								<div class="rounded-xl bg-transparent p-0">
-									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
-										Overview
-										{#if showSources && getSource('summary')}
-											<span class="ml-1 text-[10px] font-normal opacity-60"
-												>(
-												{#if typeof getSource('summary') === 'string'}
-													{getSource('summary')}
-												{:else}
-													<a
-														href={(getSource('summary') as any).url ?? '#'}
-														target="_blank"
-														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{(getSource('summary') as any).label}</a
-													>
-												{/if}
-												)</span
-											>
-										{/if}
+							{#each [['overview', selectedInfo.summary, getSource('summary')], ['politics', selectedInfo.politics, getSource('politics')], ['economics', selectedInfo.economics, getSource('economics')]] as [tab, content, source]}
+								{#if activeTab === tab}
+									<div class="rounded-xl bg-transparent p-0">
+										<div
+											class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase"
+										>
+											{tab.charAt(0).toUpperCase() + tab.slice(1)}
+											{#if showSources && source}
+												<span class="ml-1 text-[10px] font-normal opacity-60">
+													{#if isSourceString(source)}
+														({sourceLabel(source)})
+													{:else}
+														(<a
+															href={sourceUrl(source)}
+															target="_blank"
+															rel="noopener noreferrer"
+															class="ml-1 font-semibold text-[#bfefff] underline"
+															>{sourceLabel(source)}</a
+														>)
+													{/if}
+												</span>
+											{/if}
+										</div>
+										<p
+											class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
+										>
+											{content}
+										</p>
 									</div>
-									<p
-										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
-									>
-										{selectedInfo.summary}
-									</p>
-								</div>
-							{:else if activeTab === 'politics'}
-								<div class="rounded-xl bg-transparent p-0">
-									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
-										Politics
-										{#if showSources && getSource('politics')}
-											<span class="ml-1 text-[10px] font-normal opacity-60"
-												>(
-												{#if typeof getSource('politics') === 'string'}
-													{getSource('politics')}
-												{:else}
-													<a
-														href={(getSource('politics') as any).url ?? '#'}
-														target="_blank"
-														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{(getSource('politics') as any).label}</a
-													>
-												{/if}
-												)</span
-											>
-										{/if}
-									</div>
-									<p
-										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
-									>
-										{selectedInfo.politics}
-									</p>
-								</div>
-							{:else}
-								<div class="rounded-xl bg-transparent p-0">
-									<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
-										Economy
-										{#if showSources && getSource('economics')}
-											<span class="ml-1 text-[10px] font-normal opacity-60"
-												>(
-												{#if typeof getSource('economics') === 'string'}
-													{getSource('economics')}
-												{:else}
-													<a
-														href={(getSource('economics') as any).url ?? '#'}
-														target="_blank"
-														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{(getSource('economics') as any).label}</a
-													>
-												{/if}
-												)</span
-											>
-										{/if}
-									</div>
-									<p
-										class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
-									>
-										{selectedInfo.economics}
-									</p>
-								</div>
-							{/if}
+								{/if}
+							{/each}
 						</div>
 					</section>
 				{:else}
@@ -1263,7 +961,6 @@
 					{/if}
 				</g>
 			</svg>
-
 			<div
 				class="absolute bottom-5 left-5 z-50 rounded-md border border-[rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(16,16,16,0.8),rgba(8,8,8,0.9))] px-3 py-2 text-[12px] text-[rgba(255,255,255,0.6)] backdrop-blur-[10px]"
 			>
@@ -1296,7 +993,6 @@
 								/>
 							{/if}
 						{/each}
-
 						<path
 							d={focusPathGenerator(selectedFeature as any)}
 							class="animate-pulse fill-[rgba(0,255,255,0.08)] stroke-[rgba(0,255,255,0.95)] stroke-[3px] filter-[drop-shadow(0_0_20px_rgba(0,255,255,0.6))]"
@@ -1327,7 +1023,6 @@
 			border-left-color: rgba(0, 255, 255, 0.8);
 		}
 	}
-
 	.svelte-slide-out {
 		opacity: 0;
 		transform-origin: left center;
