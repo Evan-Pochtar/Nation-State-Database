@@ -264,7 +264,7 @@
 
 					summary = page?.missing
 						? 'No summary available.'
-						: page?.extract || 'No summary available.';
+						: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
 					sources = {
 						...sources,
 						summary: {
@@ -830,7 +830,7 @@
 					</nav>
 
 					<section
-						class="mt-3 max-h-[46vh] overflow-auto rounded-xl border border-[rgba(0,255,255,0.03)] bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
+						class="mt-3 overflow-auto rounded-xl border border-[rgba(0,255,255,0.03)] bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
 						aria-live="polite"
 					>
 						<div class="pr-1">
