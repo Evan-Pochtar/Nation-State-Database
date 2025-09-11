@@ -591,15 +591,6 @@
 		return selectedInfo?.sources?.[field] || null;
 	}
 
-	function renderSource(source: SourceValue | null) {
-		if (!source || !showSources) return '';
-		const sourceText = typeof source === 'string' ? source : source.label;
-		const sourceUrl = typeof source === 'string' ? '#' : source.url;
-		return typeof source === 'string'
-			? `(${sourceText})`
-			: `(<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="ml-1 font-semibold text-[#bfefff] underline">${sourceText}</a>)`;
-	}
-
 	function isSourceString(s: unknown) {
 		return typeof s === 'string';
 	}
