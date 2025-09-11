@@ -34,9 +34,6 @@
 
 	let animHandle: number | null = null,
 		isAnimating = false;
-	let now = new Date(),
-		clockTimer: number;
-	const CLOCK_TICK = 50;
 
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
 	let svgEl: SVGSVGElement | null = null,
@@ -54,7 +51,6 @@
 	}
 
 	onMount(async () => {
-		clockTimer = window.setInterval(() => (now = new Date()), CLOCK_TICK);
 		try {
 			const resp = await fetch('/data/countries-map.json');
 			if (!resp.ok) {
@@ -86,7 +82,6 @@
 	onDestroy(() => {
 		window.removeEventListener('resize', throttledResize);
 		if (resizeTimeout) clearTimeout(resizeTimeout);
-		clearInterval(clockTimer);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
 		if (svgEl && zoomBehavior) {
 			d3.select(svgEl).on('.zoom', null);
@@ -475,28 +470,6 @@
 
 	$: selectedLoading = selectedName ? (infoCache[selectedName]?.loading ?? false) : false;
 	$: selectedInfo = selectedName ? (infoCache[selectedName]?.data ?? null) : null;
-
-	function formatClock(d: Date) {
-		const pad2 = (n: number) => String(n).padStart(2, '0');
-		const pad3 = (n: number) => String(n).padStart(3, '0');
-		const Y = d.getFullYear();
-		const M = pad2(d.getMonth() + 1);
-		const D = pad2(d.getDate());
-		const hh = pad2(d.getHours());
-		const mm = pad2(d.getMinutes());
-		const ss = pad2(d.getSeconds());
-		const ms = pad3(d.getMilliseconds());
-		return `${Y}-${M}-${D} ${hh}:${mm}:${ss}.${ms} UTC${getOffsetString(d)}`;
-	}
-
-	function getOffsetString(d: Date) {
-		const off = -d.getTimezoneOffset();
-		const sign = off >= 0 ? '+' : '-';
-		const abs = Math.abs(off);
-		const hh = String(Math.floor(abs / 60)).padStart(2, '0');
-		const mm = String(abs % 60).padStart(2, '0');
-		return `${sign}${hh}:${mm}`;
-	}
 
 	function buildZoomBehavior() {
 		return d3
@@ -992,13 +965,6 @@
 				</g>
 			</svg>
 		{/if}
-
-		<div
-			class="absolute top-5 right-5 z-50 rounded-lg border border-[rgba(255,255,255,0.2)] bg-[linear-gradient(135deg,rgba(16,16,16,0.9),rgba(8,8,8,0.95))] px-4 py-3 font-mono text-[14px] text-white shadow-[0_0_30px_rgba(255,255,255,0.1)] backdrop-blur-[15px] select-none"
-			aria-hidden="false"
-		>
-			{formatClock(now)}
-		</div>
 	</div>
 </div>
 
