@@ -15,10 +15,11 @@
 	let tempLeftWidth = 0;
 	const MIN_PCT = 0.2;
 	const MAX_PCT = 0.75;
-	const MIN_LEFT_PX = 320;
+	const MIN_LEFT_PX = 450;
 	const MAX_LEFT_PX = 900;
 	let dragging = false;
-
+	const COMPACT_THRESHOLD = 700;
+	$: compact = leftWidth <= COMPACT_THRESHOLD;
 	const HANDLE_WIDTH = 6;
 
 	let outerWidth = 1600;
@@ -359,7 +360,6 @@
 
 					if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 					const json = await res.json();
-					
 					let restData: any = null;
 					if (json.length === 1) {
 						restData = json[0];
@@ -370,9 +370,7 @@
 								(c.name.official && c.name.official.toLowerCase() === name.toLowerCase()) ||
 								(c.altSpellings &&
 									Array.isArray(c.altSpellings) &&
-									c.altSpellings.some(
-										(s: string) => s.toLowerCase() === name.toLowerCase()
-									))
+									c.altSpellings.some((s: string) => s.toLowerCase() === name.toLowerCase()))
 						);
 						if (exactMatch) {
 							restData = exactMatch;
@@ -759,11 +757,13 @@
 						</div>
 					</div>
 				{:else if selectedInfo}
-					<header class="flex flex-wrap items-start gap-4">
-						<div class="flex items-center gap-3">
+					<header
+						class={`relative ${compact ? 'flex flex-col items-start gap-2' : 'flex flex-wrap items-start gap-4'}`}
+					>
+						<div class={`flex ${compact ? 'w-full items-start gap-3' : 'items-center gap-3'}`}>
 							<div class="relative inline-block">
 								<img
-									class="h-[140px] w-[240px] rounded-lg object-cover contrast-[1.02] saturate-[0.95] filter"
+									class="h-32 w-auto rounded-lg object-contain contrast-[1.02] saturate-[0.95]"
 									src={selectedInfo.flag}
 									alt="{selectedName} flag"
 								/>
@@ -789,43 +789,44 @@
 									{/if}
 								{/if}
 							</div>
-
-							<div class="relative inline-block">
-								<img
-									class="h-[140px] w-[140px] self-center rounded-lg bg-[rgba(0,0,0,0.02)] object-contain p-2"
-									src={selectedInfo.coatOfArms}
-									alt="{selectedName} coat of arms"
-								/>
-								{#if showSources && getSource('coatOfArms')}
-									{#if typeof getSource('coatOfArms') === 'string'}
-										<div
-											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-										>
-											{getSource('coatOfArms')}
-										</div>
-									{:else}
-										<div
-											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
-										>
-											<a
-												href={(getSource('coatOfArms') as any).url ?? '#'}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="font-semibold text-[#bfefff] underline"
-												>{(getSource('coatOfArms') as any).label}</a
+							{#if selectedInfo.coatOfArms !== 'UNKNOWN'}
+								<div class="relative inline-block">
+									<img
+										class="h-32 w-auto rounded-lg bg-[rgba(0,0,0,0.02)] object-contain p-2"
+										src={selectedInfo.coatOfArms}
+										alt="{selectedName} coat of arms"
+									/>
+									{#if showSources && getSource('coatOfArms')}
+										{#if typeof getSource('coatOfArms') === 'string'}
+											<div
+												class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
 											>
-										</div>
+												{getSource('coatOfArms')}
+											</div>
+										{:else}
+											<div
+												class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+											>
+												<a
+													href={(getSource('coatOfArms') as any).url ?? '#'}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="font-semibold text-[#bfefff] underline"
+													>{(getSource('coatOfArms') as any).label}</a
+												>
+											</div>
+										{/if}
 									{/if}
-								{/if}
-							</div>
+								</div>
+							{/if}
 						</div>
 
-						<div class="flex min-w-0 flex-1 flex-col gap-2">
+						<div class={`${compact ? 'mt-1 w-full pr-12' : 'flex min-w-0 flex-1 flex-col gap-2'}`}>
 							<div class="text-[20px] leading-tight font-extrabold text-[#e6ffff]">
 								{selectedInfo.officialName ?? selectedName}
 								{#if showSources && getSource('officialName')}
-									<span class="ml-1 text-[0.8em] font-normal opacity-60">
-										(
+									<span class="ml-1 text-[0.8em] font-normal opacity-60"
+										>(
 										{#if typeof getSource('officialName') === 'string'}
 											{getSource('officialName')}
 										{:else}
@@ -834,11 +835,12 @@
 												target="_blank"
 												rel="noopener noreferrer"
 												class="ml-1 font-semibold text-[#bfefff] underline"
-												>{(getSource('officialName') as any).label}</a
 											>
+												{(getSource('officialName') as any).label}
+											</a>
 										{/if}
-										)
-									</span>
+										)</span
+									>
 								{/if}
 							</div>
 
@@ -933,13 +935,15 @@
 							</div>
 						</div>
 
-						<div class="flex items-start gap-2">
+						<div
+							class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}
+						>
 							<button
 								on:click={toggleSources}
 								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								title="Toggle source attribution"
-								class={`transition-color flex h-10 cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${
+								class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${
 									showSources
 										? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-[#00ffff]'
 										: 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'
@@ -955,7 +959,7 @@
 							<button
 								on:click={closePanel}
 								aria-label="Close info panel"
-								class="flex h-10 cursor-pointer items-center justify-center rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
+								class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
 								>✕</button
 							>
 						</div>
