@@ -520,9 +520,9 @@
 	}
 
 	const cardClass =
-		'rounded-xl border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]';
+		'rounded-xl border border-darkCyan bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.03))] p-2 shadow-[0_6px_18px_rgba(0,255,255,0.02)] backdrop-blur-[6px]';
 	const buttonClass =
-		'cursor-pointer rounded-lg border border-[rgba(0,255,255,0.04)] bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-[#dffbff] transition-transform duration-160';
+		'cursor-pointer rounded-lg border border-darkCyan bg-[linear-gradient(90deg,rgba(255,255,255,0.01),rgba(0,0,0,0.02))] px-3 py-2 font-extrabold text-cyan-50 transition-transform duration-160';
 	const labelClass = 'mb-1 text-[11px] tracking-[0.6px] text-[rgba(255,255,255,0.6)] uppercase';
 </script>
 
@@ -534,7 +534,7 @@
 		<div
 			in:slide={{ duration: 260 }}
 			out:slide={{ duration: 220 }}
-			class="z-20 min-w-[320px] border-r border-[rgba(0,255,255,0.2)] bg-[linear-gradient(135deg,rgba(16,16,30,0.95),rgba(8,8,16,0.98))] shadow-[0_0_50px_rgba(0,255,255,0.1)] backdrop-blur-[20px] transition-[width] duration-400 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+			class="z-20 min-w-[320px] border-r border-darkCyan bg-[linear-gradient(135deg,rgba(16,16,30,0.95),rgba(8,8,16,0.98))] shadow-[0_0_50px_rgba(0,255,255,0.1)] backdrop-blur-[20px] transition-[width] duration-400 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
 			style="width: {leftWidth}px;"
 			aria-hidden="false"
 		>
@@ -562,7 +562,7 @@
 								/>
 								{#if showSources && getSource('flag')}
 									<div
-										class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+										class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
 									>
 										{#if isSourceString(getSource('flag'))}
 											({sourceLabel(getSource('flag'))})
@@ -571,7 +571,7 @@
 												href={sourceUrl(getSource('flag'))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('flag'))}</a
+												class="font-semibold text-lightBlue underline">{sourceLabel(getSource('flag'))}</a
 											>)
 										{/if}
 									</div>
@@ -586,7 +586,7 @@
 									/>
 									{#if showSources && getSource('coatOfArms')}
 										<div
-											class="absolute right-1 bottom-1 rounded border border-[rgba(0,255,255,0.3)] bg-[rgba(0,0,0,0.8)] px-2 py-[2px] text-[10px] font-medium text-[rgba(255,255,255,0.9)] shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+											class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
 										>
 											{#if isSourceString(getSource('coatOfArms'))}
 												({sourceLabel(getSource('coatOfArms'))})
@@ -595,7 +595,7 @@
 													href={sourceUrl(getSource('coatOfArms'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('coatOfArms'))}</a
+													class="font-semibold text-lightBlue underline">{sourceLabel(getSource('coatOfArms'))}</a
 												>)
 											{/if}
 										</div>
@@ -605,7 +605,7 @@
 						</div>
 
 						<div class={`${compact ? 'mt-1 w-full pr-12' : 'flex min-w-0 flex-1 flex-col gap-2'}`}>
-							<div class="text-[20px] leading-tight font-extrabold text-[#e6ffff]">
+							<div class="text-[20px] leading-tight font-extrabold text-slate-100">
 								{selectedInfo.officialName ?? selectedName}
 								{#if showSources && getSource('officialName')}
 									<span class="ml-1 text-[0.8em] font-normal opacity-60">
@@ -616,7 +616,7 @@
 												href={sourceUrl(getSource('officialName'))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('officialName'))}</a
+												class="font-semibold text-lightBlue underline">{sourceLabel(getSource('officialName'))}</a
 											>)
 										{/if}
 									</span>
@@ -625,7 +625,7 @@
 
 							<div class="mt-1 flex flex-wrap items-center gap-2">
 								<span
-									class="rounded-full border border-[rgba(0,255,255,0.06)] bg-[linear-gradient(135deg,rgba(0,255,255,0.06),rgba(0,200,255,0.02))] px-2 py-1 text-[12px] text-[#ccfbff] opacity-95"
+									class="rounded-full border border-darkCyan bg-[linear-gradient(135deg,rgba(0,255,255,0.06),rgba(0,200,255,0.02))] px-2 py-1 text-[12px] text-lightBlue opacity-95"
 								>
 									{selectedInfo.region}
 									{#if showSources && getSource('region')}
@@ -638,7 +638,7 @@
 													href={sourceUrl(getSource('region'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('region'))}</a
+													class="font-semibold text-lightBlue underline">{sourceLabel(getSource('region'))}</a
 												>)
 											{/if}
 										</span>
@@ -659,7 +659,7 @@
 														href={sourceUrl(getSource('subregion'))}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('subregion'))}</a
+														class="font-semibold text-lightBlue underline">{sourceLabel(getSource('subregion'))}</a
 													>)
 												{/if}
 											</span>
@@ -677,7 +677,7 @@
 													href={sourceUrl(getSource('capital'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('capital'))}</a
+													class="font-semibold text-lightBlue underline">{sourceLabel(getSource('capital'))}</a
 												>)
 											{/if}
 										</span>
@@ -694,7 +694,7 @@
 													href={sourceUrl(getSource('population'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('population'))}</a
+													class="font-semibold text-lightBlue underline">{sourceLabel(getSource('population'))}</a
 												>)
 											{/if}
 										</span>
@@ -709,7 +709,7 @@
 								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								title="Toggle source attribution"
-								class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-[#00ffff]' : 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'}`}
+								class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-cyan-300' : 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'}`}
 							>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
 									<path
@@ -720,7 +720,7 @@
 							<button
 								on:click={closePanel}
 								aria-label="Close info panel"
-								class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(0,255,255,0.3)] bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-[#00ffff] backdrop-blur-[10px] transition-transform duration-200"
+								class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200"
 								>✕</button
 							>
 						</div>
@@ -741,7 +741,7 @@
 														href={sourceUrl(source)}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(source)}</a
+														class="font-semibold text-lightBlue underline">{sourceLabel(source)}</a
 													>)
 												{/if}
 											</span>
@@ -762,14 +762,14 @@
 					</nav>
 
 					<section
-						class="mt-3 overflow-auto rounded-xl border border-[rgba(0,255,255,0.03)] bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
+						class="mt-3 overflow-auto rounded-xl border border-darkCyan bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
 						aria-live="polite"
 					>
 						<div class="pr-1">
 							{#each [['overview', selectedInfo.summary, getSource('summary')], ['politics', selectedInfo.politics, getSource('politics')], ['economics', selectedInfo.economics, getSource('economics')]] as [tab, content, source]}
 								{#if activeTab === tab}
 									<div class="rounded-xl bg-transparent p-0">
-										<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
+										<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-cyan-200 uppercase">
 											{tab.charAt(0).toUpperCase() + tab.slice(1)}
 											{#if showSources && source}
 												<span class="ml-1 text-[10px] font-normal opacity-60">
@@ -780,13 +780,13 @@
 															href={sourceUrl(source)}
 															target="_blank"
 															rel="noopener noreferrer"
-															class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(source)}</a
+															class="font-semibold text-lightBlue underline">{sourceLabel(source)}</a
 														>)
 													{/if}
 												</span>
 											{/if}
 										</div>
-										<p class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]">
+										<p class="text-[14px] leading-[1.7] whitespace-pre-wrap text-white">
 											{content}
 										</p>
 									</div>
@@ -795,7 +795,7 @@
 						</div>
 					</section>
 				{:else}
-					<div class="p-4 text-[rgba(255,255,255,0.9)]">
+					<div class="p-4 text-white">
 						<div class="font-bold">No Extended Data</div>
 						<div class="text-[rgba(255,255,255,0.7)]">
 							Additional information for this country is not yet available.
@@ -886,7 +886,7 @@
 						{/each}
 						<path
 							d={focusPathGenerator(selectedFeature as any)}
-							class="animate-pulse fill-[rgba(0,255,255,0.08)] stroke-[rgba(0,255,255,0.95)] stroke-[3px] filter-[drop-shadow(0_0_20px_rgba(0,255,255,0.6))]"
+							class="animate-pulse fill-darkCyan stroke-[rgba(0,255,255,0.95)] stroke-[3px] filter-[drop-shadow(0_0_20px_rgba(0,255,255,0.6))]"
 						/>
 					{/if}
 				</g>
