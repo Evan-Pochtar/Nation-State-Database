@@ -2,6 +2,7 @@
 	import { onMount, onDestroy, tick } from 'svelte';
 	import { slide } from 'svelte/transition';
 	import type { GeoFeature, SourceValue, DataSources, CountryData } from '$lib/types';
+	import { formatNumber, formatGDP, formatLanguages, isSourceString, sourceLabel, sourceUrl } from '$lib/utils/format';
 	import * as d3 from 'd3';
 	import { feature } from 'topojson-client';
 
@@ -60,17 +61,9 @@
 			const topo = await resp.json();
 			const objects = topo.objects;
 			const objectKey = Object.keys(objects)[0];
-			const geo = feature(topo as any, objects[objectKey]) as
-				| GeoJSON.FeatureCollection
-				| GeoJSON.Feature
-				| null;
+			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
 
-			countries =
-				geo?.type === 'FeatureCollection'
-					? (geo.features as GeoFeature[])
-					: geo
-						? [geo as GeoFeature]
-						: [];
+			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 			console.log(`Loaded ${countries.length} countries`);
 			handleResize();
 			window.addEventListener('resize', throttledResize);
@@ -92,16 +85,10 @@
 	function handleResize() {
 		outerWidth = window.innerWidth;
 		outerHeight = window.innerHeight;
-		const desired = Math.round(
-			Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)))
-		);
+		const desired = Math.round(Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth))));
 		leftWidth = desired;
-		const effectiveLeft = dragging
-			? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired))
-			: leftWidth;
-		rightWidth = selectedFeature
-			? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH)
-			: outerWidth;
+		const effectiveLeft = dragging ? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired)) : leftWidth;
+		rightWidth = selectedFeature ? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH) : outerWidth;
 		rightHeight = outerHeight;
 
 		if (countries.length > 0) {
@@ -127,9 +114,7 @@
 			}
 			let proj = d3.geoMercator();
 
-			const currentRightWidth = dragging
-				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
-				: rightWidth;
+			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
 			const paddingPx = Math.max(20, Math.min(80, Math.round(minDim * 0.06)));
 			const left = paddingPx,
@@ -150,9 +135,7 @@
 		} catch (error) {
 			console.error('Error setting up focus projection:', error);
 			const fallback = d3.geoMercator();
-			const currentRightWidth = dragging
-				? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH)
-				: rightWidth;
+			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			fallback.fitSize(
 				[Math.max(100, currentRightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
 				selectedFeature as any
@@ -207,9 +190,7 @@
 					const localJson = await localResp.json();
 					localEntry = Array.isArray(localJson)
 						? (localJson.find((e) => e.name === name) ?? null)
-						: (localJson[name] ??
-							Object.values(localJson).find((e: any) => e.name === name) ??
-							null);
+						: (localJson[name] ?? Object.values(localJson).find((e: any) => e.name === name) ?? null);
 				} else {
 					console.warn('No local countries-data.json accessible:', localResp.status);
 				}
@@ -282,10 +263,9 @@
 				try {
 					const controller = new AbortController();
 					const timeoutId = setTimeout(() => controller.abort(), 5000);
-					const res = await fetch(
-						'https://restcountries.com/v3.1/name/' + encodeURIComponent(name),
-						{ signal: controller.signal }
-					);
+					const res = await fetch('https://restcountries.com/v3.1/name/' + encodeURIComponent(name), {
+						signal: controller.signal
+					});
 					clearTimeout(timeoutId);
 					if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 					const json = await res.json();
@@ -379,8 +359,7 @@
 
 			Promise.resolve().then(async () => {
 				try {
-					const shouldPersist =
-						!localEntry || (!localEntry.summary && !localEntry.cca2ID && summary);
+					const shouldPersist = !localEntry || (!localEntry.summary && !localEntry.cca2ID && summary);
 					if (shouldPersist) {
 						await fetch('/api', {
 							method: 'POST',
@@ -536,42 +515,8 @@
 		});
 	}
 
-	function formatNumber(n: number | undefined) {
-		if (!n && n !== 0) return '—';
-		const abs = Math.abs(Math.round(n));
-		if (abs >= 1_000_000_000) return (abs / 1_000_000_000).toFixed(2) + 'B';
-		if (abs >= 1_000_000) return (abs / 1_000_000).toFixed(2) + 'M';
-		if (abs >= 1_000) return (abs / 1_000).toFixed(2) + 'K';
-		return String(abs);
-	}
-
-	function formatGDP(val: number | undefined) {
-		if (!val && val !== 0) return '—';
-		const full = Number(val).toLocaleString('en-US', { maximumFractionDigits: 0 });
-		const abbr = formatNumber(val);
-		return `$${full} · ${abbr}`;
-	}
-
-	function formatLanguages(langs: unknown): string {
-		if (!langs) return '—';
-		if (Array.isArray(langs)) return langs.join(', ');
-		if (typeof langs === 'string') return langs;
-		if (typeof langs === 'object') return Object.values(langs as Record<string, any>).join(', ');
-		return String(langs);
-	}
-
 	function getSource(field: keyof DataSources): SourceValue | null {
 		return selectedInfo?.sources?.[field] || null;
-	}
-
-	function isSourceString(s: unknown) {
-		return typeof s === 'string';
-	}
-	function sourceLabel(s: any) {
-		return typeof s === 'string' ? s : (s?.label ?? '');
-	}
-	function sourceUrl(s: any) {
-		return typeof s === 'string' ? null : (s?.url ?? '#');
 	}
 
 	const cardClass =
@@ -626,8 +571,7 @@
 												href={sourceUrl(getSource('flag'))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="ml-1 font-semibold text-[#bfefff] underline"
-												>{sourceLabel(getSource('flag'))}</a
+												class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('flag'))}</a
 											>)
 										{/if}
 									</div>
@@ -651,8 +595,7 @@
 													href={sourceUrl(getSource('coatOfArms'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{sourceLabel(getSource('coatOfArms'))}</a
+													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('coatOfArms'))}</a
 												>)
 											{/if}
 										</div>
@@ -673,8 +616,7 @@
 												href={sourceUrl(getSource('officialName'))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="ml-1 font-semibold text-[#bfefff] underline"
-												>{sourceLabel(getSource('officialName'))}</a
+												class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('officialName'))}</a
 											>)
 										{/if}
 									</span>
@@ -696,8 +638,7 @@
 													href={sourceUrl(getSource('region'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{sourceLabel(getSource('region'))}</a
+													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('region'))}</a
 												>)
 											{/if}
 										</span>
@@ -718,8 +659,7 @@
 														href={sourceUrl(getSource('subregion'))}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{sourceLabel(getSource('subregion'))}</a
+														class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('subregion'))}</a
 													>)
 												{/if}
 											</span>
@@ -737,8 +677,7 @@
 													href={sourceUrl(getSource('capital'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{sourceLabel(getSource('capital'))}</a
+													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('capital'))}</a
 												>)
 											{/if}
 										</span>
@@ -755,8 +694,7 @@
 													href={sourceUrl(getSource('population'))}
 													target="_blank"
 													rel="noopener noreferrer"
-													class="ml-1 font-semibold text-[#bfefff] underline"
-													>{sourceLabel(getSource('population'))}</a
+													class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(getSource('population'))}</a
 												>)
 											{/if}
 										</span>
@@ -765,9 +703,7 @@
 							</div>
 						</div>
 
-						<div
-							class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}
-						>
+						<div class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}>
 							<button
 								on:click={() => (showSources = !showSources)}
 								aria-pressed={showSources}
@@ -805,8 +741,7 @@
 														href={sourceUrl(source)}
 														target="_blank"
 														rel="noopener noreferrer"
-														class="ml-1 font-semibold text-[#bfefff] underline"
-														>{sourceLabel(source)}</a
+														class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(source)}</a
 													>)
 												{/if}
 											</span>
@@ -820,11 +755,8 @@
 
 					<nav class="mt-2 flex gap-2" aria-label="Country sections">
 						{#each [['overview', 'Overview'], ['politics', 'Politics'], ['economics', 'Economy']] as [tab, label]}
-							<button
-								role="tab"
-								aria-selected={activeTab === tab}
-								on:click={() => setTab(tab)}
-								class={buttonClass}>{label}</button
+							<button role="tab" aria-selected={activeTab === tab} on:click={() => setTab(tab)} class={buttonClass}
+								>{label}</button
 							>
 						{/each}
 					</nav>
@@ -837,9 +769,7 @@
 							{#each [['overview', selectedInfo.summary, getSource('summary')], ['politics', selectedInfo.politics, getSource('politics')], ['economics', selectedInfo.economics, getSource('economics')]] as [tab, content, source]}
 								{#if activeTab === tab}
 									<div class="rounded-xl bg-transparent p-0">
-										<div
-											class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase"
-										>
+										<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-[#eaffff] uppercase">
 											{tab.charAt(0).toUpperCase() + tab.slice(1)}
 											{#if showSources && source}
 												<span class="ml-1 text-[10px] font-normal opacity-60">
@@ -850,16 +780,13 @@
 															href={sourceUrl(source)}
 															target="_blank"
 															rel="noopener noreferrer"
-															class="ml-1 font-semibold text-[#bfefff] underline"
-															>{sourceLabel(source)}</a
+															class="ml-1 font-semibold text-[#bfefff] underline">{sourceLabel(source)}</a
 														>)
 													{/if}
 												</span>
 											{/if}
 										</div>
-										<p
-											class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]"
-										>
+										<p class="text-[14px] leading-[1.7] whitespace-pre-wrap text-[rgba(255,255,255,0.9)]">
 											{content}
 										</p>
 									</div>
