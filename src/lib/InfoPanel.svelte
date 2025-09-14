@@ -33,7 +33,7 @@
 <div
 	in:slide={{ duration: 260 }}
 	out:slide={{ duration: 220 }}
-	class="z-20 min-w-[320px] border-r border-darkCyan bg-[linear-gradient(135deg,rgba(16,16,30,0.95),rgba(8,8,16,0.98))] shadow-[0_0_50px_rgba(0,255,255,0.1)] backdrop-blur-[20px] transition-[width] duration-400 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px] transition-[width] duration-400"
 	style="width: {leftWidth}px;"
 	aria-hidden="false"
 >
@@ -41,10 +41,10 @@
 		{#if loading}
 			<div class="flex items-center gap-3 px-2 py-8">
 				<div
-					class="h-9 w-9 animate-spin rounded-full border-4 border-[rgba(255,255,255,0.06)] border-t-[rgba(0,255,255,0.7)]"
+					class="h-9 w-9 animate-spin rounded-full border-4 border-white/5 border-t-teal-300"
 					aria-hidden="true"
 				></div>
-				<div class="font-semibold text-[rgba(255,255,255,0.75)]">
+				<div class="font-semibold text-white/75">
 					Fetching data for {selectedName}…
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 						/>
 						{#if showSources && getSource('flag')}
 							<div
-								class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+								class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px] shadow-black/50 backdrop-blur-[10px]"
 							>
 								{#if isSourceString(getSource('flag'))}
 									({sourceLabel(getSource('flag'))})
@@ -77,13 +77,13 @@
 					{#if selectedInfo.coatOfArms !== 'UNKNOWN'}
 						<div class="relative inline-block">
 							<img
-								class="h-32 w-auto rounded-lg bg-[rgba(0,0,0,0.02)] object-contain p-2"
+								class="h-32 w-auto rounded-lg bg-black/[0.02] object-contain p-2"
 								src={selectedInfo.coatOfArms}
 								alt="{selectedName} coat of arms"
 							/>
 							{#if showSources && getSource('coatOfArms')}
 								<div
-									class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px_rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+									class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px] shadow-black/50 backdrop-blur-[10px]"
 								>
 									{#if isSourceString(getSource('coatOfArms'))}
 										({sourceLabel(getSource('coatOfArms'))})
@@ -122,7 +122,7 @@
 
 					<div class="mt-1 flex flex-wrap items-center gap-2">
 						<span
-							class="rounded-full border border-darkCyan bg-[linear-gradient(135deg,rgba(0,255,255,0.06),rgba(0,200,255,0.02))] px-2 py-1 text-[12px] text-lightBlue opacity-95"
+							class="rounded-full border border-darkCyan bg-gradient-to-br from-cyan-400/[0.06] to-sky-400/[0.02] px-2 py-1 text-xs text-lightBlue opacity-95"
 						>
 							{selectedInfo.region}
 							{#if showSources && getSource('region')}
@@ -143,7 +143,7 @@
 						</span>
 						{#if selectedInfo.subregion}
 							<span
-								class="rounded-full border border-[rgba(255,255,255,0.04)] bg-transparent px-2 py-1 text-[12px] text-[#bfc9d1] opacity-60"
+								class="rounded-full border border-white/[0.04] bg-transparent px-2 py-1 text-xs text-slate-300 opacity-60"
 							>
 								{selectedInfo.subregion}
 								{#if showSources && getSource('subregion')}
@@ -163,7 +163,7 @@
 								{/if}
 							</span>
 						{/if}
-						<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
+						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
 							Capital: {selectedInfo.capital}
 							{#if showSources && getSource('capital')}
 								<span class="ml-1 text-[0.8em] font-normal opacity-60">
@@ -180,7 +180,7 @@
 								</span>
 							{/if}
 						</span>
-						<span class="ml-1 text-[14px] text-[#cccccc] opacity-70">
+						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
 							Population: {formatNumber(selectedInfo.population)}
 							{#if showSources && getSource('population')}
 								<span class="ml-1 text-[0.8em] font-normal opacity-60">
@@ -206,7 +206,7 @@
 						aria-pressed={showSources}
 						aria-label="Toggle source attribution"
 						title="Toggle source attribution"
-						class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-[rgba(255,255,255,0.15)] px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] text-cyan-300' : 'bg-[linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.1))] text-[rgba(255,255,255,0.7)]'}`}
+						class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-white/15 px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-gradient-to-br from-cyan-400/10 to-sky-400/20 text-cyan-300' : 'bg-gradient-to-br from-white/5 to-white/10 text-white/70'}`}
 					>
 						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
 							<path
@@ -217,7 +217,7 @@
 					<button
 						on:click={onClose}
 						aria-label="Close info panel"
-						class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-[linear-gradient(135deg,rgba(0,255,255,0.1),rgba(0,200,255,0.2))] px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200"
+						class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-gradient-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200"
 						>✕</button
 					>
 				</div>
@@ -259,7 +259,7 @@
 			</nav>
 
 			<section
-				class="mt-3 overflow-auto rounded-xl border border-darkCyan bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01))] p-3 shadow-[0_8px_30px_rgba(0,255,255,0.02)]"
+				class="mt-3 overflow-auto rounded-xl border border-darkCyan bg-gradient-to-b from-black/[0.02] to-white/[0.01] p-3 shadow-[0_8px_30px] shadow-cyan-400/[0.02]"
 				aria-live="polite"
 			>
 				<div class="pr-1">
@@ -294,7 +294,7 @@
 		{:else}
 			<div class="p-4 text-white">
 				<div class="font-bold">No Extended Data</div>
-				<div class="text-[rgba(255,255,255,0.7)]">Additional information for this country is not yet available.</div>
+				<div class="text-white/70">Additional information for this country is not yet available.</div>
 			</div>
 		{/if}
 	</div>

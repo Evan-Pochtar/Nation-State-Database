@@ -508,7 +508,7 @@
 </script>
 
 <div
-	class="fixed inset-0 flex h-screen w-screen overflow-hidden bg-[radial-gradient(ellipse_at_center,_#1a1a2e_0%,_#0a0a0a_100%)] font-sans text-white"
+	class="bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden from-slate-800 to-black font-sans text-white"
 	tabindex="-1"
 >
 	{#if selectedFeature}
@@ -526,14 +526,14 @@
 		/>
 
 		<div
-			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-[linear-gradient(180deg,rgba(0,255,255,0.3),rgba(0,200,255,0.5))] shadow-[0_0_10px_rgba(0,255,255,0.3)] transition-all duration-300"
+			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 shadow-[0_0_10px] shadow-cyan-400/30 transition-all duration-300"
 			on:pointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
 		>
 			{#if dragging}
 				<div
-					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-[rgba(0,255,255,0.8)] bg-[rgba(255,255,255,0.8)] shadow-[0_0_10px_rgba(0,255,255,0.5)]"
+					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-teal-300 bg-white/80 shadow-[0_0_10px] shadow-cyan-400/50"
 					style="left: {tempLeftWidth - leftWidth}px; animation: dash 1s linear infinite;"
 				></div>
 			{/if}
@@ -556,7 +556,7 @@
 						{#each countries as c (getCountryName(c))}
 							<path
 								d={pathGenerator(c as any)}
-								class="cursor-pointer fill-[rgba(255,255,255,0.08)] stroke-[rgba(255,255,255,0.4)] stroke-[0.5px] filter-[drop-shadow(0_0_2px_rgba(255,255,255,0.2))] transition-all duration-300 will-change-transform hover:fill-[rgba(255,255,255,0.2)] hover:stroke-[rgba(255,255,255,0.8)] hover:stroke-[1.5px] hover:filter-[drop-shadow(0_0_10px_rgba(255,255,255,0.4))]"
+								class="cursor-pointer fill-white/[0.08] stroke-white/40 stroke-[0.5px] drop-shadow-[0_0_2px_rgba(255,255,255,0.2)] transition-all duration-300 will-change-transform hover:fill-white/20 hover:stroke-white/80 hover:stroke-[1.5px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
 								on:click={() => onCountryClick(c)}
 								role="button"
 								tabindex="0"
@@ -573,7 +573,7 @@
 				</g>
 			</svg>
 			<div
-				class="absolute bottom-5 left-5 z-50 rounded-md border border-[rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(16,16,16,0.8),rgba(8,8,8,0.9))] px-3 py-2 text-[12px] text-[rgba(255,255,255,0.6)] backdrop-blur-[10px]"
+				class="absolute bottom-5 left-5 z-50 rounded-md border border-white/10 bg-gradient-to-br from-gray-900/80 to-black/90 px-3 py-2 text-xs text-white/60 backdrop-blur-[10px]"
 			>
 				Click on any country to zoom in and view details
 			</div>
@@ -590,7 +590,7 @@
 							{#if c !== selectedFeature}
 								<path
 									d={focusPathGenerator(c as any)}
-									class="cursor-pointer fill-[rgba(255,255,255,0.02)] stroke-[rgba(255,255,255,0.15)] stroke-[0.3px] will-change-transform"
+									class="cursor-pointer fill-white/[0.02] stroke-white/15 stroke-[0.3px] will-change-transform"
 									on:click={() => onCountryClick(c)}
 									role="button"
 									tabindex="0"
@@ -606,7 +606,7 @@
 						{/each}
 						<path
 							d={focusPathGenerator(selectedFeature as any)}
-							class="animate-pulse fill-darkCyan stroke-[rgba(0,255,255,0.95)] stroke-[3px] filter-[drop-shadow(0_0_20px_rgba(0,255,255,0.6))]"
+							class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
 						/>
 					{/if}
 				</g>
