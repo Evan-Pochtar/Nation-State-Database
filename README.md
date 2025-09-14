@@ -8,17 +8,17 @@ Currently, the JSON file containing finalized country descriptions is not includ
 
 ## Features
 
-* Fullscreen topojson and GeoJSON SVG map.
-* D3 zoom/pan with constrained bounds.
-* Resizable left info panel with keyboard access.
-* Country data from local JSON, Wikipedia, RestCountries, World Bank.
-* Local caching and optional POST persistence to `/api`.
+- Fullscreen topojson and GeoJSON SVG map.
+- D3 zoom/pan with constrained bounds.
+- Resizable left info panel with keyboard access.
+- Country data from local JSON, Wikipedia, RestCountries, World Bank.
+- Local caching and optional POST persistence to `/api`.
 
 ## Required files
 
-* `data/countries-map.json` (topojson) - required, included in repository.
-* `data/countries-data.json` - optional local metadata/descriptions, will be created automatically by the server
-* Optional server endpoint to accept `POST /api` if persistence is desired.
+- `data/countries-map.json` (topojson) - required, included in repository.
+- `data/countries-data.json` - optional local metadata/descriptions, will be created automatically by the server
+- Optional server endpoint to accept `POST /api` if persistence is desired.
 
 ## Run
 
