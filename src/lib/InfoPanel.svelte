@@ -201,19 +201,32 @@
 				</div>
 
 				<div class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}>
-					<button
-						on:click={onToggleSources}
-						aria-pressed={showSources}
-						aria-label="Toggle source attribution"
-						title="Toggle source attribution"
-						class={`transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-white/15 px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-gradient-to-br from-cyan-400/10 to-sky-400/20 text-cyan-300' : 'bg-gradient-to-br from-white/5 to-white/10 text-white/70'}`}
-					>
-						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-							<path
-								d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-							/>
-						</svg>
-					</button>
+					<div class="relative">
+						<button
+							on:click={onToggleSources}
+							aria-pressed={showSources}
+							aria-label="Toggle source attribution"
+							aria-describedby="toggle-sources-tooltip"
+							class={`peer transition-color flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-white/15 px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-gradient-to-br from-cyan-400/10 to-sky-400/20 text-cyan-300' : 'bg-gradient-to-br from-white/5 to-white/10 text-white/70'}`}
+						>
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path
+									d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+								/>
+							</svg>
+						</button>
+
+						<div
+							id="toggle-sources-tooltip"
+							role="tooltip"
+							class="pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs translate-y-1 scale-95 transform rounded-md border border-white/10 bg-gradient-to-br from-black/80 to-slate-900/80 px-3 py-1.5 text-sm font-medium text-white/90 opacity-0 shadow-[0_6px_30px] shadow-cyan-500/10 backdrop-blur-[6px] transition-all duration-180 will-change-transform
+								peer-hover:translate-y-0 peer-hover:scale-100 peer-hover:opacity-100 peer-focus-visible:translate-y-0 peer-focus-visible:scale-100 peer-focus-visible:opacity-100"
+							aria-hidden="false"
+						>
+							Toggle source attribution
+						</div>
+					</div>
+
 					<button
 						on:click={onClose}
 						aria-label="Close info panel"
