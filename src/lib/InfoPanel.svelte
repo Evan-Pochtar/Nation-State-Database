@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
-	import type { SourceValue, DataSources, CountryData } from '$lib/types';
+	import type { SourceValue, DataSources, CountryData } from '$lib/utils/types';
 	import { formatNumber, formatGDP, formatLanguages, isSourceString, sourceLabel, sourceUrl } from '$lib/utils/format';
-	import { cardClass, buttonClass, labelClass } from '$lib/styles';
+	import { cardClass, buttonClass, labelClass } from '$lib/utils/styles';
 
 	export let selectedInfo: CountryData | null = null;
 	export let selectedName: string | null = null;
