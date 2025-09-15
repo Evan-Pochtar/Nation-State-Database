@@ -97,7 +97,7 @@ export async function fetchCountryInfoByName(
 				clearTimeout(timeoutId);
 				if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
 				const json = await res.json();
-				let restData =
+				const restData =
 					json.length === 1
 						? json[0]
 						: json.find(
