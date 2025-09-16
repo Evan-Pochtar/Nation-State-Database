@@ -1,5 +1,6 @@
-export function formatNumber(n: number | undefined) {
+export function formatNumber(n: number | undefined): string {
 	if (!n && n !== 0) return '—';
+	if (n < 0) return '-' + formatNumber(-n);
 	const abs = Math.abs(Math.round(n));
 	if (abs >= 1_000_000_000) return (abs / 1_000_000_000).toFixed(2) + 'B';
 	if (abs >= 1_000_000) return (abs / 1_000_000).toFixed(2) + 'M';
@@ -20,6 +21,31 @@ export function formatLanguages(langs: unknown): string {
 	if (typeof langs === 'string') return langs;
 	if (typeof langs === 'object') return Object.values(langs as Record<string, any>).join(', ');
 	return String(langs);
+}
+
+export function formatValue(value: number, type: string): string {
+	if (value === null || value === undefined) return 'N/A';
+
+	switch (type) {
+		case 'gdpPerCapita':
+			return `$${formatNumber(Math.round(value))}`;
+		case 'gdpGrowth':
+		case 'inflation':
+		case 'unemployment':
+		case 'govExpenditure':
+		case 'researchDev':
+		case 'internetUsers':
+		case 'healthExpenditure':
+			return `${value.toFixed(1)}%`;
+		case 'exports':
+		case 'imports':
+		case 'currentAccount':
+		case 'fdi':
+		case 'tradeBalance':
+			return `${formatGDP(value)}`;
+		default:
+			return formatNumber(value);
+	}
 }
 
 export function isSourceString(s: unknown) {

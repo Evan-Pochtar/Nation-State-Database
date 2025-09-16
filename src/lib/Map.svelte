@@ -274,6 +274,7 @@
 			{showSources}
 			{activeTab}
 			{leftWidth}
+			{infoCache}
 			onToggleSources={() => (showSources = !showSources)}
 			onClose={closePanel}
 			onChangeTab={(t) => (activeTab = t)}

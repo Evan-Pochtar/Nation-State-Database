@@ -42,6 +42,7 @@ export async function fetchCountryInfoByName(
 		let population = localEntry?.population ?? null;
 		let gini = localEntry?.gini ?? null;
 		let gdp = localEntry?.gdp ?? null;
+		const economics = localEntry?.economics ?? null;
 		let sources = normalizeSources(localEntry?.sources ?? {}, name);
 
 		if (!summary) {
@@ -166,6 +167,7 @@ export async function fetchCountryInfoByName(
 		}
 
 		const data: CountryData = {
+			name,
 			cca2ID: cca2ID ?? 'UNKNOWN',
 			officialName: officialName ?? 'UNKNOWN',
 			flag: flag ?? 'UNKNOWN',
@@ -181,7 +183,7 @@ export async function fetchCountryInfoByName(
 			gdp: gdp ?? -1,
 			summary: summary ?? '—',
 			politics: localEntry?.politics ?? 'Data not provided.',
-			economics: localEntry?.economics ?? 'Data not provided.',
+			economics: economics ?? 'Data not provided.',
 			sources
 		};
 
@@ -208,6 +210,7 @@ export async function fetchCountryInfoByName(
 							population,
 							gini,
 							gdp,
+							economics,
 							sources
 						})
 					});
@@ -226,7 +229,7 @@ export async function fetchCountryInfoByName(
 	return infoCache;
 }
 
-function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
+export function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
 	const out: DataSources = {};
 	if (!raw || typeof raw !== 'object') return out;
 	const entries = Object.entries(raw) as [keyof DataSources, any][];

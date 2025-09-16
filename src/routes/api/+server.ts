@@ -9,30 +9,15 @@ const DATA_FILE = path.join(DATA_DIR, 'countries-data.json');
 async function ensureDir(dir: string) {
 	try {
 		await fs.mkdir(dir, { recursive: true });
-	} catch {}
+	} catch (err) {
+		console.error('Failed to create directory for JSON', err);
+	}
 }
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const body = await request.json();
-		const {
-			name,
-			summary,
-			cca2ID,
-			officialName,
-			flag,
-			coatOfArms,
-			independent,
-			region,
-			subregion,
-			area,
-			languages,
-			capital,
-			population,
-			gini,
-			gdp,
-			sources
-		} = body ?? {};
+		const name = body?.name;
 
 		if (!name || typeof name !== 'string') {
 			return json({ error: 'missing name' }, { status: 400 });
@@ -53,29 +38,41 @@ export const POST: RequestHandler = async ({ request }) => {
 		const idx = fileJson.findIndex((e: any) => e.name === name);
 		const now = new Date().toISOString();
 
-		const base = {
-			name,
-			cca2ID: cca2ID ?? null,
-			officialName: officialName ?? null,
-			flag: flag ?? null,
-			coatOfArms: coatOfArms ?? null,
-			independent: independent ?? null,
-			region: region ?? null,
-			subregion: subregion ?? null,
-			area: area ?? null,
-			languages: languages ?? null,
-			capital: capital ?? null,
-			population: population ?? null,
-			gini: gini ?? null,
-			gdp: gdp ?? null,
-			summary: summary ?? null,
-			sources: sources ?? null
-		};
+		const allowedFields = [
+			'summary',
+			'cca2ID',
+			'officialName',
+			'flag',
+			'coatOfArms',
+			'independent',
+			'region',
+			'subregion',
+			'area',
+			'languages',
+			'capital',
+			'population',
+			'gini',
+			'gdp',
+			'economics',
+			'sources'
+		];
+
+		const updateFields: Record<string, any> = {};
+		for (const key of allowedFields) {
+			if (Object.prototype.hasOwnProperty.call(body, key)) {
+				if (key === 'sources' && idx >= 0 && fileJson[idx]?.sources && typeof fileJson[idx].sources === 'object') {
+					updateFields.sources = { ...fileJson[idx].sources, ...(body.sources ?? {}) };
+				} else {
+					updateFields[key] = body[key];
+				}
+			}
+		}
 
 		if (idx >= 0) {
-			fileJson[idx] = { ...fileJson[idx], ...base, updatedAt: now };
+			fileJson[idx] = { ...fileJson[idx], ...updateFields, updatedAt: now };
 		} else {
-			fileJson.push({ ...base, createdAt: now, updatedAt: now });
+			const newEntry = { name, ...updateFields, createdAt: now, updatedAt: now };
+			fileJson.push(newEntry);
 		}
 
 		await fs.writeFile(DATA_FILE, JSON.stringify(fileJson, null, 2), 'utf8');

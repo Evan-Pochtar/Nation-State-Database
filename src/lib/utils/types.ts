@@ -20,6 +20,7 @@ export type DataSources = {
 };
 
 export type CountryData = {
+	name: string;
 	officialName: string;
 	cca2ID: string;
 	flag: string;
@@ -35,6 +36,6 @@ export type CountryData = {
 	gdp: number;
 	summary: string;
 	politics: string;
-	economics: string;
+	economics: any;
 	sources?: DataSources;
 };
