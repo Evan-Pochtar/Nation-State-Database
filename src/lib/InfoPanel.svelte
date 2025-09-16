@@ -35,7 +35,7 @@
 		currentAccount: 'BN.CAB.XOKA.CD',
 		fdi: 'BX.KLT.DINV.CD.WD',
 		tradeBalance: 'NE.RSB.GNFS.CD',
-		govExpenditure: 'NE.CON.GOVT.ZS',
+		militaryExpenditure: 'MS.MIL.XPND.GD.ZS',
 		researchDev: 'GB.XPD.RSDV.GD.ZS',
 		internetUsers: 'IT.NET.USER.ZS',
 		schoolEnrollment: 'SE.TER.ENRR',
@@ -48,7 +48,7 @@
 		indicators.currentAccount,
 		indicators.fdi,
 		indicators.tradeBalance,
-		indicators.govExpenditure,
+		indicators.militaryExpenditure,
 		indicators.researchDev,
 		indicators.internetUsers,
 		indicators.healthExpenditure
@@ -126,11 +126,7 @@
 			const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlyMap.has(id));
 			const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlyMap.has(id));
 			if (timeSeriesIndicators.length > 0) {
-				const timeSeriesBatches = [
-					['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG'],
-					['FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS']
-				];
-
+				const timeSeriesBatches = [['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS']];
 				for (const batch of timeSeriesBatches) {
 					const indicatorString = batch.join(';');
 					const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
@@ -691,7 +687,7 @@
 								</div>
 
 								<div class="flex flex-wrap gap-3">
-									{#each [['exports', 'Exports'], ['imports', 'Imports'], ['currentAccount', 'Current Account'], ['fdi', 'Foreign Investment'], ['govExpenditure', 'Govt. Spending'], ['researchDev', 'R&D Spending'], ['internetUsers', 'Internet Users'], ['healthExpenditure', 'Health Spending']] as [key, label]}
+									{#each [['exports', 'Exports'], ['imports', 'Imports'], ['currentAccount', 'Current Account'], ['fdi', 'Foreign Investment'], ['militaryExpenditure', 'Military Spending as % of GDP'], ['researchDev', 'R&D Spending as % of GDP'], ['internetUsers', 'Internet Users'], ['healthExpenditure', 'Health Spending as % of GDP']] as [key, label]}
 										{@const latest = getLatestValue((indicators as any)[key])}
 										{#if latest}
 											<div

@@ -32,7 +32,7 @@ export function formatValue(value: number, type: string): string {
 		case 'gdpGrowth':
 		case 'inflation':
 		case 'unemployment':
-		case 'govExpenditure':
+		case 'militaryExpenditure':
 		case 'researchDev':
 		case 'internetUsers':
 		case 'healthExpenditure':
