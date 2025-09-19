@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import type { CountryData } from '$lib/utils/types';
 	import { formatValue } from '$lib/utils/helpers';
 
@@ -56,6 +57,14 @@
 
 	function setEconomicChart(chart: string) {
 		activeEconomicChart = chart;
+		updateChartData();
+	}
+
+	onMount(() => {
+		updateChartData();
+	});
+
+	$: if (selectedInfo || selectedName || activeEconomicChart || infoCache) {
 		updateChartData();
 	}
 </script>
