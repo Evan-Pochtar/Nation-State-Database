@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { CountryData } from '$lib/utils/types';
-	import { formatValue } from '$lib/utils/format';
+	import { formatValue } from '$lib/utils/helpers';
 
 	export let selectedInfo: CountryData | null = null;
 	export let selectedName: string | null = '';
@@ -199,7 +199,6 @@
 				class="mt-3 rounded-lg border border-emerald-700/30 bg-gradient-to-br from-emerald-900/20 to-blue-900/20 p-4"
 			>
 				<div class="mb-2 flex items-center gap-2">
-					<span>⚖️</span>
 					<span class="font-semibold text-white">Trade Balance</span>
 				</div>
 				<div class="text-lg font-bold text-white">

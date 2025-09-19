@@ -1,3 +1,5 @@
+import type { SourceValue, DataSources, CountryData } from '$lib/utils/types';
+
 export function formatNumber(n: number | undefined): string {
 	if (!n && n !== 0) return '—';
 	if (n < 0) return '-' + formatNumber(-n);
@@ -56,4 +58,7 @@ export function sourceLabel(s: any) {
 }
 export function sourceUrl(s: any) {
 	return typeof s === 'string' ? null : (s?.url ?? '#');
+}
+export function getSource(field: keyof DataSources, selectedInfo: CountryData | null): SourceValue | null {
+	return selectedInfo?.sources?.[field] || null;
 }

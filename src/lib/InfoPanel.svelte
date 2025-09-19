@@ -6,13 +6,15 @@
 		formatNumber,
 		formatGDP,
 		formatLanguages,
-		formatValue,
 		isSourceString,
 		sourceLabel,
-		sourceUrl
-	} from '$lib/utils/format';
+		sourceUrl,
+		getSource
+	} from '$lib/utils/helpers';
 	import { cardClass, buttonClass, labelClass } from '$lib/utils/styles';
 	import EconomicsTab from './components/EconomicsTab.svelte';
+	import PoliticsTab from './components/PoliticsTab.svelte';
+	import OverviewTab from './components/OverviewTab.svelte';
 
 	export let selectedInfo: CountryData | null = null;
 	export let selectedName: string | null = '';
@@ -54,10 +56,6 @@
 		indicators.internetUsers,
 		indicators.healthExpenditure
 	]);
-
-	function getSource(field: keyof DataSources): SourceValue | null {
-		return selectedInfo?.sources?.[field] || null;
-	}
 
 	export let onToggleSources: (() => void) | undefined;
 	export let onClose: (() => void) | undefined;
@@ -307,18 +305,18 @@
 							src={selectedInfo.flag}
 							alt="{selectedName} flag"
 						/>
-						{#if showSources && getSource('flag')}
+						{#if showSources && getSource('flag', selectedInfo)}
 							<div
 								class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px] shadow-black/50 backdrop-blur-[10px]"
 							>
-								{#if isSourceString(getSource('flag'))}
-									({sourceLabel(getSource('flag'))})
+								{#if isSourceString(getSource('flag', selectedInfo))}
+									({sourceLabel(getSource('flag', selectedInfo))})
 								{:else}
 									(<a
-										href={sourceUrl(getSource('flag'))}
+										href={sourceUrl(getSource('flag', selectedInfo))}
 										target="_blank"
 										rel="noopener noreferrer"
-										class="font-semibold text-lightBlue underline">{sourceLabel(getSource('flag'))}</a
+										class="font-semibold text-lightBlue underline">{sourceLabel(getSource('flag', selectedInfo))}</a
 									>)
 								{/if}
 							</div>
@@ -331,18 +329,19 @@
 								src={selectedInfo.coatOfArms}
 								alt="{selectedName} coat of arms"
 							/>
-							{#if showSources && getSource('coatOfArms')}
+							{#if showSources && getSource('coatOfArms', selectedInfo)}
 								<div
 									class="absolute right-1 bottom-1 rounded border border-teal-800 bg-stone-950 px-2 py-[2px] text-[10px] font-medium text-white shadow-[0_2px_8px] shadow-black/50 backdrop-blur-[10px]"
 								>
-									{#if isSourceString(getSource('coatOfArms'))}
-										({sourceLabel(getSource('coatOfArms'))})
+									{#if isSourceString(getSource('coatOfArms', selectedInfo))}
+										({sourceLabel(getSource('coatOfArms', selectedInfo))})
 									{:else}
 										(<a
-											href={sourceUrl(getSource('coatOfArms'))}
+											href={sourceUrl(getSource('coatOfArms', selectedInfo))}
 											target="_blank"
 											rel="noopener noreferrer"
-											class="font-semibold text-lightBlue underline">{sourceLabel(getSource('coatOfArms'))}</a
+											class="font-semibold text-lightBlue underline"
+											>{sourceLabel(getSource('coatOfArms', selectedInfo))}</a
 										>)
 									{/if}
 								</div>
@@ -354,16 +353,17 @@
 				<div class={`${compact ? 'mt-1 w-full pr-12' : 'flex min-w-0 flex-1 flex-col gap-2'}`}>
 					<div class="text-[20px] leading-tight font-extrabold text-slate-100">
 						{selectedInfo.officialName ?? selectedName}
-						{#if showSources && getSource('officialName')}
+						{#if showSources && getSource('officialName', selectedInfo)}
 							<span class="ml-1 text-[0.8em] font-normal opacity-60">
-								{#if isSourceString(getSource('officialName'))}
-									({sourceLabel(getSource('officialName'))})
+								{#if isSourceString(getSource('officialName', selectedInfo))}
+									({sourceLabel(getSource('officialName', selectedInfo))})
 								{:else}
 									(<a
-										href={sourceUrl(getSource('officialName'))}
+										href={sourceUrl(getSource('officialName', selectedInfo))}
 										target="_blank"
 										rel="noopener noreferrer"
-										class="font-semibold text-lightBlue underline">{sourceLabel(getSource('officialName'))}</a
+										class="font-semibold text-lightBlue underline"
+										>{sourceLabel(getSource('officialName', selectedInfo))}</a
 									>)
 								{/if}
 							</span>
@@ -375,17 +375,17 @@
 							class="rounded-full border border-darkCyan bg-gradient-to-br from-cyan-400/[0.06] to-sky-400/[0.02] px-2 py-1 text-xs text-lightBlue opacity-95"
 						>
 							{selectedInfo.region}
-							{#if showSources && getSource('region')}
+							{#if showSources && getSource('region', selectedInfo)}
 								<span class="ml-1 font-normal opacity-70"
 									>·
-									{#if isSourceString(getSource('region'))}
-										({sourceLabel(getSource('region'))})
+									{#if isSourceString(getSource('region', selectedInfo))}
+										({sourceLabel(getSource('region', selectedInfo))})
 									{:else}
 										(<a
-											href={sourceUrl(getSource('region'))}
+											href={sourceUrl(getSource('region', selectedInfo))}
 											target="_blank"
 											rel="noopener noreferrer"
-											class="font-semibold text-lightBlue underline">{sourceLabel(getSource('region'))}</a
+											class="font-semibold text-lightBlue underline">{sourceLabel(getSource('region', selectedInfo))}</a
 										>)
 									{/if}
 								</span>
@@ -396,17 +396,18 @@
 								class="rounded-full border border-white/[0.04] bg-transparent px-2 py-1 text-xs text-slate-300 opacity-60"
 							>
 								{selectedInfo.subregion}
-								{#if showSources && getSource('subregion')}
+								{#if showSources && getSource('subregion', selectedInfo)}
 									<span class="ml-1 font-normal opacity-70"
 										>·
-										{#if isSourceString(getSource('subregion'))}
-											({sourceLabel(getSource('subregion'))})
+										{#if isSourceString(getSource('subregion', selectedInfo))}
+											({sourceLabel(getSource('subregion', selectedInfo))})
 										{:else}
 											(<a
-												href={sourceUrl(getSource('subregion'))}
+												href={sourceUrl(getSource('subregion', selectedInfo))}
 												target="_blank"
 												rel="noopener noreferrer"
-												class="font-semibold text-lightBlue underline">{sourceLabel(getSource('subregion'))}</a
+												class="font-semibold text-lightBlue underline"
+												>{sourceLabel(getSource('subregion', selectedInfo))}</a
 											>)
 										{/if}
 									</span>
@@ -415,16 +416,17 @@
 						{/if}
 						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
 							Capital: {selectedInfo.capital}
-							{#if showSources && getSource('capital')}
+							{#if showSources && getSource('capital', selectedInfo)}
 								<span class="ml-1 text-[0.8em] font-normal opacity-60">
-									{#if isSourceString(getSource('capital'))}
-										({sourceLabel(getSource('capital'))})
+									{#if isSourceString(getSource('capital', selectedInfo))}
+										({sourceLabel(getSource('capital', selectedInfo))})
 									{:else}
 										(<a
-											href={sourceUrl(getSource('capital'))}
+											href={sourceUrl(getSource('capital', selectedInfo))}
 											target="_blank"
 											rel="noopener noreferrer"
-											class="font-semibold text-lightBlue underline">{sourceLabel(getSource('capital'))}</a
+											class="font-semibold text-lightBlue underline"
+											>{sourceLabel(getSource('capital', selectedInfo))}</a
 										>)
 									{/if}
 								</span>
@@ -432,16 +434,17 @@
 						</span>
 						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
 							Population: {formatNumber(selectedInfo.population)}
-							{#if showSources && getSource('population')}
+							{#if showSources && getSource('population', selectedInfo)}
 								<span class="ml-1 text-[0.8em] font-normal opacity-60">
-									{#if isSourceString(getSource('population'))}
-										({sourceLabel(getSource('population'))})
+									{#if isSourceString(getSource('population', selectedInfo))}
+										({sourceLabel(getSource('population', selectedInfo))})
 									{:else}
 										(<a
-											href={sourceUrl(getSource('population'))}
+											href={sourceUrl(getSource('population', selectedInfo))}
 											target="_blank"
 											rel="noopener noreferrer"
-											class="font-semibold text-lightBlue underline">{sourceLabel(getSource('population'))}</a
+											class="font-semibold text-lightBlue underline"
+											>{sourceLabel(getSource('population', selectedInfo))}</a
 										>)
 									{/if}
 								</span>
@@ -488,7 +491,7 @@
 
 			<section class="mt-3" aria-label="Key facts">
 				<div class="grid grid-cols-2 gap-2">
-					{#each [['Area', formatNumber(selectedInfo.area) + ' km²', getSource('area')], ['GDP (USD)', formatGDP(selectedInfo.gdp), getSource('gdp')], ['Gini', selectedInfo.gini ?? '—', getSource('gini')], ['Languages', formatLanguages(selectedInfo.languages), getSource('languages')]] as [label, value, source]}
+					{#each [['Area', formatNumber(selectedInfo.area) + ' km²', getSource('area', selectedInfo)], ['GDP (USD)', formatGDP(selectedInfo.gdp), getSource('gdp', selectedInfo)], ['Gini', selectedInfo.gini ?? '—', getSource('gini', selectedInfo)], ['Languages', formatLanguages(selectedInfo.languages), getSource('languages', selectedInfo)]] as [label, value, source]}
 						<div class={cardClass}>
 							<div class={labelClass}>
 								{label}
@@ -527,51 +530,9 @@
 			>
 				<div class="pr-1">
 					{#if activeTab === 'overview'}
-						<div class="rounded-xl bg-transparent p-0">
-							<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-cyan-200 uppercase">
-								Overview
-								{#if showSources && getSource('summary')}
-									<span class="ml-1 text-[10px] font-normal opacity-60">
-										{#if isSourceString(getSource('summary'))}
-											({sourceLabel(getSource('summary'))})
-										{:else}
-											(<a
-												href={sourceUrl(getSource('summary'))}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="font-semibold text-lightBlue underline">{sourceLabel(getSource('summary'))}</a
-											>)
-										{/if}
-									</span>
-								{/if}
-							</div>
-							<p class="text-[14px] leading-[1.7] whitespace-pre-wrap text-white">
-								{selectedInfo.summary}
-							</p>
-						</div>
+						<OverviewTab {selectedInfo} {showSources} />
 					{:else if activeTab === 'politics'}
-						<div class="rounded-xl bg-transparent p-0">
-							<div class="mb-2 text-[13px] font-bold tracking-[0.5px] text-cyan-200 uppercase">
-								Politics
-								{#if showSources && getSource('politics')}
-									<span class="ml-1 text-[10px] font-normal opacity-60">
-										{#if isSourceString(getSource('politics'))}
-											({sourceLabel(getSource('politics'))})
-										{:else}
-											(<a
-												href={sourceUrl(getSource('politics'))}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="font-semibold text-lightBlue underline">{sourceLabel(getSource('politics'))}</a
-											>)
-										{/if}
-									</span>
-								{/if}
-							</div>
-							<p class="text-[14px] leading-[1.7] whitespace-pre-wrap text-white">
-								{selectedInfo.politics}
-							</p>
-						</div>
+						<PoliticsTab {selectedInfo} {showSources} />
 					{:else if activeTab === 'economics'}
 						<EconomicsTab {selectedInfo} {selectedName} {showSources} {infoCache} />
 					{/if}
