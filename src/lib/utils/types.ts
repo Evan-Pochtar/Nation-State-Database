@@ -33,7 +33,6 @@ export type CountryData = {
 	population: number;
 	languages: string[];
 	gini: number;
-	gdp: number;
 	summary: string;
 	politics: string;
 	economics: any;

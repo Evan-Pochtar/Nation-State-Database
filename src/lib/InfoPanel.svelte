@@ -174,10 +174,10 @@
 								{/if}
 							</span>
 						{/if}
-						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
+						<span class="ml-1 text-xs text-gray-300 opacity-70">
 							Capital: {selectedInfo.capital}
 							{#if showSources && getSource('capital', selectedInfo)}
-								<span class="ml-1 text-[0.8em] font-normal opacity-60">
+								<span class="ml-1 text-[0.75em] font-normal opacity-60">
 									{#if isSourceString(getSource('capital', selectedInfo))}
 										({sourceLabel(getSource('capital', selectedInfo))})
 									{:else}
@@ -187,24 +187,6 @@
 											rel="noopener noreferrer"
 											class="font-semibold text-lightBlue underline"
 											>{sourceLabel(getSource('capital', selectedInfo))}</a
-										>)
-									{/if}
-								</span>
-							{/if}
-						</span>
-						<span class="ml-1 text-[14px] text-gray-300 opacity-70">
-							Population: {formatNumber(selectedInfo.population)}
-							{#if showSources && getSource('population', selectedInfo)}
-								<span class="ml-1 text-[0.8em] font-normal opacity-60">
-									{#if isSourceString(getSource('population', selectedInfo))}
-										({sourceLabel(getSource('population', selectedInfo))})
-									{:else}
-										(<a
-											href={sourceUrl(getSource('population', selectedInfo))}
-											target="_blank"
-											rel="noopener noreferrer"
-											class="font-semibold text-lightBlue underline"
-											>{sourceLabel(getSource('population', selectedInfo))}</a
 										>)
 									{/if}
 								</span>
@@ -251,7 +233,7 @@
 
 			<section class="mt-3" aria-label="Key facts">
 				<div class="grid grid-cols-2 gap-2">
-					{#each [['Area', formatNumber(selectedInfo.area) + ' km²', getSource('area', selectedInfo)], ['GDP (USD)', formatGDP(selectedInfo.gdp), getSource('gdp', selectedInfo)], ['Gini', selectedInfo.gini ?? '—', getSource('gini', selectedInfo)], ['Languages', formatLanguages(selectedInfo.languages), getSource('languages', selectedInfo)]] as [label, value, source]}
+					{#each [['Area', formatNumber(selectedInfo.area) + ' km²', getSource('area', selectedInfo)], ['Population', formatNumber(selectedInfo.population), getSource('population', selectedInfo)], ['Gini', selectedInfo.gini ?? '—', getSource('gini', selectedInfo)], ['Languages', formatLanguages(selectedInfo.languages), getSource('languages', selectedInfo)]] as [label, value, source]}
 						<div class={cardClass}>
 							<div class={labelClass}>
 								{label}

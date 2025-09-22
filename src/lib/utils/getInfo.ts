@@ -73,7 +73,6 @@ export async function fetchCountryInfoByName(
 		let languages = localEntry?.languages ?? null;
 		let population = localEntry?.population ?? null;
 		let gini = localEntry?.gini ?? null;
-		let gdp = localEntry?.gdp ?? null;
 		const economics = localEntry?.economics ?? null;
 		let sources = normalizeSources(localEntry?.sources ?? {}, name);
 
@@ -175,29 +174,6 @@ export async function fetchCountryInfoByName(
 			}
 		}
 
-		if (!gdp && cca2ID && cca2ID !== 'UNKNOWN') {
-			try {
-				const controller = new AbortController();
-				const timeoutId = setTimeout(() => controller.abort(), 10000);
-				const res = await fetch(
-					`https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/NY.GDP.MKTP.CD?format=json&date=2024`,
-					{ signal: controller.signal }
-				);
-				clearTimeout(timeoutId);
-
-				if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
-				const json = await res.json();
-				console.log(json[1][0]);
-
-				gdp = json[1][0].value ?? -1;
-				const worldBankUrl = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/NY.GDP.MKTP.CD?format=json&date=2024`;
-				if (!sources.gdp) sources.gdp = { label: 'World Bank', url: worldBankUrl };
-			} catch (err) {
-				console.warn('WorldBank fetch failed, falling back to placeholder GDP', err);
-				gdp = -1;
-			}
-		}
-
 		const data: CountryData = {
 			name,
 			cca2ID: cca2ID ?? 'UNKNOWN',
@@ -212,7 +188,6 @@ export async function fetchCountryInfoByName(
 			capital: capital ?? '—',
 			population: population ?? -1,
 			gini: gini ?? -1,
-			gdp: gdp ?? -1,
 			summary: summary ?? '—',
 			politics: localEntry?.politics ?? 'Data not provided.',
 			economics: economics ?? 'Data not provided.',
@@ -241,7 +216,6 @@ export async function fetchCountryInfoByName(
 							capital,
 							population,
 							gini,
-							gdp,
 							economics,
 							sources
 						})
