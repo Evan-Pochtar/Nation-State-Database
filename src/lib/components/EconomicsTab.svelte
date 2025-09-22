@@ -22,15 +22,15 @@
 	}
 
 	function fetchEconomicData(cca2ID: string) {
-    return fetchEconomicDataModule({
-      cca2ID,
-      selectedInfo,
-      getInfoCache: () => infoCache,
-      setInfoCache: (newCache) => (infoCache = newCache),
-      setSelectedInfo: (newSelected) => (selectedInfo = newSelected),
-      persist: true
-    });
-  }
+		return fetchEconomicDataModule({
+			cca2ID,
+			selectedInfo,
+			getInfoCache: () => infoCache,
+			setInfoCache: (newCache) => (infoCache = newCache),
+			setSelectedInfo: (newSelected) => (selectedInfo = newSelected),
+			persist: true
+		});
+	}
 
 	function updateChartData() {
 		if (!selectedInfo?.cca2ID) {
@@ -58,7 +58,7 @@
 
 	onMount(() => {
 		updateChartData();
-		fetchEconomicData(selectedInfo ? selectedInfo.cca2ID : "UNKNOWN");
+		fetchEconomicData(selectedInfo ? selectedInfo.cca2ID : 'UNKNOWN');
 	});
 
 	$: if (selectedInfo || selectedName || activeEconomicChart || infoCache) {

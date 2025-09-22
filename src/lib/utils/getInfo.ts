@@ -20,15 +20,15 @@ export const indicators = {
 const inFlight = new Map<string, Promise<void>>();
 
 const latestOnlySet = new Set([
-  indicators.exports,
-  indicators.imports,
-  indicators.currentAccount,
-  indicators.fdi,
-  indicators.tradeBalance,
-  indicators.militaryExpenditure,
-  indicators.researchDev,
-  indicators.internetUsers,
-  indicators.healthExpenditure
+	indicators.exports,
+	indicators.imports,
+	indicators.currentAccount,
+	indicators.fdi,
+	indicators.tradeBalance,
+	indicators.militaryExpenditure,
+	indicators.researchDev,
+	indicators.internetUsers,
+	indicators.healthExpenditure
 ]);
 
 export async function fetchCountryInfoByName(
@@ -261,186 +261,196 @@ export async function fetchCountryInfoByName(
 }
 
 export async function fetchEconomicDataModule(params: {
-  cca2ID: string;
-  selectedInfo: CountryData | null;
-  getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
-  setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
-  setSelectedInfo?: (newInfo: CountryData) => void;
-  persist?: boolean;
+	cca2ID: string;
+	selectedInfo: CountryData | null;
+	getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
+	setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
+	setSelectedInfo?: (newInfo: CountryData) => void;
+	persist?: boolean;
 }) {
-  const { cca2ID, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = true } = params;
-  if (!cca2ID || cca2ID === 'UNKNOWN') return;
+	const { cca2ID, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = true } = params;
+	if (!cca2ID || cca2ID === 'UNKNOWN') return;
 
-  const entryName = selectedInfo?.name ?? selectedInfo?.officialName ?? cca2ID;
-  if (inFlight.has(entryName)) return inFlight.get(entryName)!;
+	const entryName = selectedInfo?.name ?? selectedInfo?.officialName ?? cca2ID;
+	if (inFlight.has(entryName)) return inFlight.get(entryName)!;
 
-  const job = (async () => {
-    try {
-      // mark loading true
-      setInfoCache((() => {
-        const prev = getInfoCache();
-        const next = { ...prev };
-        next[entryName] = { ...(next[entryName] ?? { loading: false }), loading: true };
-        return next;
-      })());
+	const job = (async () => {
+		try {
+			setInfoCache(
+				(() => {
+					const prev = getInfoCache();
+					const next = { ...prev };
+					next[entryName] = { ...(next[entryName] ?? { loading: false }), loading: true };
+					return next;
+				})()
+			);
 
-      const cache = getInfoCache();
-      if (cache[entryName]?.data?.economics && cache[entryName].data.economics !== 'Data not provided.') {
-        setInfoCache((() => {
-          const prev = getInfoCache();
-          const next = { ...prev };
-          next[entryName] = { ...(next[entryName] ?? {}), loading: false };
-          return next;
-        })());
-        return;
-      }
+			const cache = getInfoCache();
+			if (cache[entryName]?.data?.economics && cache[entryName].data.economics !== 'Data not provided.') {
+				setInfoCache(
+					(() => {
+						const prev = getInfoCache();
+						const next = { ...prev };
+						next[entryName] = { ...(next[entryName] ?? {}), loading: false };
+						return next;
+					})()
+				);
+				return;
+			}
 
-      let localEntry: any = null;
-      let sources: DataSources = {};
-      try {
-        const localResp = await fetch('/data/countries-data.json');
-        if (localResp.ok) {
-          const localJson = await localResp.json();
-          localEntry = Array.isArray(localJson)
-            ? (localJson.find((e: any) => e.name === entryName) ?? null)
-            : (localJson[entryName] ?? Object.values(localJson).find((e: any) => e.name === entryName) ?? null);
-        }
-      } catch (err) {
-        console.warn('Error loading /data/countries-data.json', err);
-      }
+			let localEntry: any = null;
+			let sources: DataSources = {};
+			try {
+				const localResp = await fetch('/data/countries-data.json');
+				if (localResp.ok) {
+					const localJson = await localResp.json();
+					localEntry = Array.isArray(localJson)
+						? (localJson.find((e: any) => e.name === entryName) ?? null)
+						: (localJson[entryName] ?? Object.values(localJson).find((e: any) => e.name === entryName) ?? null);
+				}
+			} catch (err) {
+				console.warn('Error loading /data/countries-data.json', err);
+			}
 
-      sources = normalizeSources(localEntry?.sources ?? {}, entryName);
+			sources = normalizeSources(localEntry?.sources ?? {}, entryName);
 
-      if (localEntry && Object.prototype.hasOwnProperty.call(localEntry, 'economics') && localEntry.economics) {
-        setInfoCache((() => {
-          const prev = getInfoCache();
-          const next = { ...prev };
+			if (localEntry && Object.prototype.hasOwnProperty.call(localEntry, 'economics') && localEntry.economics) {
+				setInfoCache(
+					(() => {
+						const prev = getInfoCache();
+						const next = { ...prev };
+						next[entryName] = {
+							...(next[entryName] ?? {}),
+							data: {
+								...(next[entryName]?.data ?? selectedInfo ?? {}),
+								economics: localEntry.economics
+							} as CountryData,
+							loading: false
+						};
+						return next;
+					})()
+				);
+
+				if (setSelectedInfo && selectedInfo) {
+					setSelectedInfo({ ...selectedInfo, economics: localEntry.economics });
+				}
+				return;
+			}
+
+			const allData: Record<string, any[]> = {};
+			const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlySet.has(id));
+			const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlySet.has(id));
+
+			if (timeSeriesIndicators.length > 0) {
+				const batch = ['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS'];
+				const indicatorString = batch.join(';');
+				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
+				try {
+					const res = await fetch(url);
+					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
+					const json = await res.json();
+					if (!Array.isArray(json) || !json[1]) throw new Error('No data returned');
+					json[1].forEach((item: any) => {
+						const id = item.indicator.id;
+						if (item.value !== null) {
+							if (!allData[id]) allData[id] = [];
+							allData[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
+						}
+					});
+				} catch (err) {
+					console.warn(`Failed time series batch ${indicatorString}`, err);
+				}
+			}
+
+			if (latestOnlyIndicators.length > 0) {
+				const indicatorString = latestOnlyIndicators.join(';');
+				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2022:2024`;
+				try {
+					const res = await fetch(url);
+					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
+					const json = await res.json();
+					if (!Array.isArray(json) || !json[1]) throw new Error('No data returned');
+					const bucket: Record<string, any[]> = {};
+					json[1].forEach((item: any) => {
+						const id = item.indicator.id;
+						if (!bucket[id]) bucket[id] = [];
+						if (item.value !== null) {
+							bucket[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
+						}
+					});
+					for (const id of Object.keys(bucket)) {
+						const arr = bucket[id];
+						if (!arr.length) continue;
+						arr.sort((a, b) => a.year - b.year);
+						const latest = arr[arr.length - 1];
+						allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
+					}
+				} catch (err) {
+					console.warn('Failed to fetch latest-only indicators', err);
+				}
+			}
+
+			Object.keys(allData).forEach((k) => allData[k].sort((a: any, b: any) => a.year - b.year));
+
+			setInfoCache(
+				(() => {
+					const prev = getInfoCache();
+					const next = { ...prev };
 					next[entryName] = {
 						...(next[entryName] ?? {}),
-						data: ({ ...(next[entryName]?.data ?? (selectedInfo ?? {})), economics: localEntry.economics } as CountryData),
+						data: { ...(next[entryName]?.data ?? selectedInfo ?? {}), economics: allData } as CountryData,
 						loading: false
 					};
-          return next;
-        })());
+					return next;
+				})()
+			);
 
-        if (setSelectedInfo && selectedInfo) {
-          setSelectedInfo({ ...selectedInfo, economics: localEntry.economics });
-        }
-        return;
-      }
+			if (setSelectedInfo && selectedInfo) {
+				setSelectedInfo({ ...selectedInfo, economics: allData });
+			}
 
-      const allData: Record<string, any[]> = {};
-      const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlySet.has(id));
-      const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlySet.has(id));
+			if (persist) {
+				(async () => {
+					try {
+						const shouldPersist = !localEntry || (!localEntry.economics && Object.keys(allData).length > 0);
+						if (!shouldPersist) return;
+						const econSource = {
+							label: 'World Bank',
+							url: `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator`
+						};
+						Object.assign(sources, { ...(!sources.economics ? { economics: econSource } : {}) });
 
-      if (timeSeriesIndicators.length > 0) {
-        const batches = [['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS']]; // keep same batching strategy
-        for (const batch of batches) {
-          const indicatorString = batch.join(';');
-          const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
-          try {
-            const res = await fetch(url);
-            if (!res.ok) continue;
-            const json = await res.json();
-            if (!Array.isArray(json) || !json[1]) continue;
-            json[1].forEach((item: any) => {
-              const id = item.indicator.id;
-              if (item.value !== null) {
-                if (!allData[id]) allData[id] = [];
-                allData[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
-              }
-            });
-          } catch (err) {
-            console.warn(`Failed time series batch ${indicatorString}`, err);
-          }
-        }
-      }
+						await fetch('/api', {
+							method: 'POST',
+							headers: { 'Content-Type': 'application/json' },
+							body: JSON.stringify({
+								name: entryName,
+								economics: allData,
+								sources
+							})
+						});
+					} catch (err) {
+						console.warn('Failed to persist economic data', err);
+					}
+				})();
+			}
+		} catch (err) {
+			console.error('Economic data fetch error:', err);
+			setInfoCache(
+				(() => {
+					const prev = getInfoCache();
+					const next = { ...prev };
+					next[entryName] = { ...(next[entryName] ?? {}), loading: false, error: 'Failed to load economic data' };
+					return next;
+				})()
+			);
+		} finally {
+			inFlight.delete(entryName);
+		}
+	})();
 
-      if (latestOnlyIndicators.length > 0) {
-        const indicatorString = latestOnlyIndicators.join(';');
-        const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2022:2024`;
-        try {
-          const res = await fetch(url);
-          if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
-          const json = await res.json();
-          if (!Array.isArray(json) || !json[1]) throw new Error('No data returned');
-          const bucket: Record<string, any[]> = {};
-          json[1].forEach((item: any) => {
-            const id = item.indicator.id;
-            if (!bucket[id]) bucket[id] = [];
-            if (item.value !== null) {
-              bucket[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
-            }
-          });
-          for (const id of Object.keys(bucket)) {
-            const arr = bucket[id];
-            if (!arr.length) continue;
-            arr.sort((a, b) => a.year - b.year);
-            const latest = arr[arr.length - 1];
-            allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
-          }
-        } catch (err) {
-          console.warn('Failed to fetch latest-only indicators', err);
-        }
-      }
-
-      Object.keys(allData).forEach((k) => allData[k].sort((a: any, b: any) => a.year - b.year));
-
-      setInfoCache((() => {
-        const prev = getInfoCache();
-        const next = { ...prev };
-        next[entryName] = {
-					...(next[entryName] ?? {}),
-					data: ({ ...(next[entryName]?.data ?? (selectedInfo ?? {})), economics: allData } as CountryData),
-					loading: false
-				};
-        return next;
-      })());
-
-      if (setSelectedInfo && selectedInfo) {
-        setSelectedInfo({ ...selectedInfo, economics: allData });
-      }
-
-      if (persist) {
-        (async () => {
-          try {
-            const shouldPersist = !localEntry || (!localEntry.economics && Object.keys(allData).length > 0);
-            if (!shouldPersist) return;
-            const econSource = {
-              label: 'World Bank',
-              url: `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator`
-            };
-            Object.assign(sources, { ...(!sources.economics ? { economics: econSource } : {}) });
-
-            await fetch('/api', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                name: entryName,
-                economics: allData,
-                sources
-              })
-            });
-          } catch (err) {
-            console.warn('Failed to persist economic data', err);
-          }
-        })();
-      }
-    } catch (err) {
-      console.error('Economic data fetch error:', err);
-      setInfoCache((() => {
-        const prev = getInfoCache();
-        const next = { ...prev };
-        next[entryName] = { ...(next[entryName] ?? {}), loading: false, error: 'Failed to load economic data' };
-        return next;
-      })());
-    } finally {
-      inFlight.delete(entryName);
-    }
-  })();
-
-  inFlight.set(entryName, job);
-  return job;
+	inFlight.set(entryName, job);
+	return job;
 }
 
 export function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
