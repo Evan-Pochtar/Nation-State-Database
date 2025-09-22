@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { indicators } from '$lib/utils/getInfo';
+	import { fetchEconomicDataModule, indicators } from '$lib/utils/getInfo';
 	import type { CountryData } from '$lib/utils/types';
 	import { formatValue } from '$lib/utils/helpers';
 
@@ -20,6 +20,17 @@
 		const data = cachedData.economics[indicatorId];
 		return data && data.length ? data[data.length - 1] : null;
 	}
+
+	function fetchEconomicData(cca2ID: string) {
+    return fetchEconomicDataModule({
+      cca2ID,
+      selectedInfo,
+      getInfoCache: () => infoCache,
+      setInfoCache: (newCache) => (infoCache = newCache),
+      setSelectedInfo: (newSelected) => (selectedInfo = newSelected),
+      persist: true
+    });
+  }
 
 	function updateChartData() {
 		if (!selectedInfo?.cca2ID) {
@@ -47,6 +58,7 @@
 
 	onMount(() => {
 		updateChartData();
+		fetchEconomicData(selectedInfo ? selectedInfo.cca2ID : "UNKNOWN");
 	});
 
 	$: if (selectedInfo || selectedName || activeEconomicChart || infoCache) {
