@@ -1,4 +1,5 @@
-import type { SourceValue, DataSources, CountryData } from '$lib/utils/types';
+import type { DataSources, CountryData } from '$lib/utils/types';
+import { normalizeSources } from '$lib/utils/helpers';
 
 export const indicators = {
 	gdpPerCapita: 'NY.GDP.PCAP.CD',
@@ -451,32 +452,4 @@ export async function fetchEconomicDataModule(params: {
 
 	inFlight.set(entryName, job);
 	return job;
-}
-
-export function normalizeSources(raw: any, nameForWikipediaHint?: string): DataSources {
-	const out: DataSources = {};
-	if (!raw || typeof raw !== 'object') return out;
-	const entries = Object.entries(raw) as [keyof DataSources, any][];
-	for (const [k, v] of entries) {
-		if (typeof v === 'string') {
-			if (v === 'Wikipedia' || v.toLowerCase().includes('wiki')) {
-				out[k] = {
-					label: v,
-					url: `https://en.wikipedia.org/wiki/${encodeURIComponent(nameForWikipediaHint ?? '')}`
-				};
-			} else if (v.toLowerCase().includes('rest')) {
-				out[k] = {
-					label: v,
-					url: `https://restcountries.com/v3.1/name/${encodeURIComponent(nameForWikipediaHint ?? '')}`
-				};
-			} else {
-				out[k] = v;
-			}
-		} else if (v && typeof v === 'object' && ('label' in v || 'url' in v)) {
-			out[k] = v as SourceValue;
-		} else {
-			out[k] = String(v);
-		}
-	}
-	return out;
 }
