@@ -1,5 +1,22 @@
 import type { SourceValue, DataSources, CountryData } from '$lib/utils/types';
 
+export const indicators = {
+	gdpPerCapita: 'NY.GDP.PCAP.CD',
+	gdpGrowth: 'NY.GDP.MKTP.KD.ZG',
+	inflation: 'FP.CPI.TOTL.ZG',
+	unemployment: 'SL.UEM.TOTL.ZS',
+	exports: 'NE.EXP.GNFS.CD',
+	imports: 'NE.IMP.GNFS.CD',
+	currentAccount: 'BN.CAB.XOKA.CD',
+	fdi: 'BX.KLT.DINV.CD.WD',
+	tradeBalance: 'NE.RSB.GNFS.CD',
+	militaryExpenditure: 'MS.MIL.XPND.GD.ZS',
+	researchDev: 'GB.XPD.RSDV.GD.ZS',
+	internetUsers: 'IT.NET.USER.ZS',
+	schoolEnrollment: 'SE.TER.ENRR',
+	healthExpenditure: 'SH.XPD.CHEX.GD.ZS'
+};
+
 export async function fetchCountryInfoByName(
 	name: string | '',
 	infoCache:
