@@ -5,11 +5,14 @@
 	import type { GeoFeature, CountryData } from '$lib/utils/types';
 	import { fetchCountryInfoByName } from '$lib/utils/getInfo';
 	import InfoPanel from '$lib/InfoPanel.svelte';
+	import MapSettings from '$lib/components/MapSettings.svelte';
 
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
 	let selectedName: string | null = null;
 	let activeTab: string = 'overview';
+	let currentProjection: string = 'naturalEarth1';
+	let settingsOpen = false;
 
 	let leftPct = 0.36,
 		tempLeftPct = leftPct,
@@ -47,6 +50,28 @@
 		currentTransform = d3.zoomIdentity,
 		isZooming = false,
 		showSources = false;
+
+	function getProjection(type: string): d3.GeoProjection {
+		switch (type) {
+			case 'mercator':
+				return d3.geoMercator();
+			case 'equalEarth':
+				return d3.geoEqualEarth();
+			case 'naturalEarth1':
+			default:
+				return d3.geoNaturalEarth1();
+		}
+	}
+
+	function handleProjectionChange(projection: string) {
+		currentProjection = projection;
+		handleResize();
+		if (selectedFeature) {
+			setupFocusProjection();
+		}
+		resetZoom();
+		initZoom();
+	}
 
 	function throttledResize() {
 		if (resizeTimeout) clearTimeout(resizeTimeout);
@@ -98,7 +123,7 @@
 				type: 'FeatureCollection',
 				features: countries
 			};
-			projection = d3.geoNaturalEarth1();
+			projection = getProjection(currentProjection);
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
 			if (selectedFeature) setupFocusProjection();
@@ -114,7 +139,7 @@
 				console.error('Invalid bounds for selected feature');
 				return;
 			}
-			let proj = d3.geoMercator();
+			let proj = getProjection(currentProjection === 'orthographic' ? 'mercator' : currentProjection);
 
 			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
@@ -300,6 +325,12 @@
 		style="width: {selectedFeature ? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)` : '100%'};"
 	>
 		{#if !selectedFeature}
+			<MapSettings
+				{settingsOpen}
+				{currentProjection}
+				onProjectionChange={handleProjectionChange}
+				onToggle={() => (settingsOpen = !settingsOpen)}
+			/>
 			<svg
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"

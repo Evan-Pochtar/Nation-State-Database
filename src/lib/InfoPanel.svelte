@@ -1,15 +1,7 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import type { CountryData } from '$lib/utils/types';
-	import {
-		formatNumber,
-		formatGDP,
-		formatLanguages,
-		isSourceString,
-		sourceLabel,
-		sourceUrl,
-		getSource
-	} from '$lib/utils/helpers';
+	import { formatNumber, formatLanguages, isSourceString, sourceLabel, sourceUrl, getSource } from '$lib/utils/helpers';
 	import { cardClass, buttonClass, labelClass } from '$lib/utils/styles';
 	import EconomicsTab from './components/EconomicsTab.svelte';
 	import PoliticsTab from './components/PoliticsTab.svelte';

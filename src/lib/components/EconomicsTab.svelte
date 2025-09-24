@@ -81,26 +81,36 @@
 		{/if}
 	</div>
 	{#if selectedName ? infoCache[selectedName]?.loading : false}
-		<div class="relative rounded-xl border border-cyan-500/20 bg-gradient-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm overflow-hidden">
-			<div class="absolute inset-0 opacity-10 pointer-events-none">
-				<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-white/5 to-transparent animate-pulse-slow"></div>
-				<div class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:4px_4px]"></div>
+		<div
+			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
+		>
+			<div class="pointer-events-none absolute inset-0 opacity-10">
+				<div
+					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent via-white/5 to-transparent"
+				></div>
+				<div
+					class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:4px_4px]"
+				></div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center py-12 relative z-10">
+			<div class="relative z-10 flex flex-col items-center justify-center py-12">
 				<div class="relative">
-					<div class="w-22 h-22 border-2 border-cyan-400/30 rounded-full animate-spin-slow"></div>
-					<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center">
-						<div class="w-10 h-10 border-t-2 border-cyan-300 rounded-full animate-spin"></div>
+					<div class="animate-spin-slow h-22 w-22 rounded-full border-2 border-cyan-400/30"></div>
+					<div
+						class="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-cyan-500/20"
+					>
+						<div class="h-10 w-10 animate-spin rounded-full border-t-2 border-cyan-300"></div>
 					</div>
 				</div>
 
 				<div class="mt-3 text-center">
-					<div class="text-cyan-300 font-mono text-sm mb-1 animate-pulse">FETCHING ECONOMIC DATA...</div>
+					<div class="mb-1 animate-pulse font-mono text-sm text-cyan-300">FETCHING ECONOMIC DATA...</div>
 				</div>
 
-				<div class="absolute -top-4 -left-4 text-cyan-400/30 text-xs font-mono animate-bounce-slow">$ECO_LOAD</div>
-				<div class="absolute -bottom-4 -right-4 text-emerald-400/30 text-xs font-mono animate-bounce-slow">> WorldBank V2.1</div>
+				<div class="animate-bounce-slow absolute -top-4 -left-4 font-mono text-xs text-cyan-400/30">$ECO_LOAD</div>
+				<div class="animate-bounce-slow absolute -right-4 -bottom-4 font-mono text-xs text-emerald-400/30">
+					> WorldBank V2.1
+				</div>
 			</div>
 		</div>
 	{:else if selectedName ? infoCache[selectedName]?.error : true}
@@ -240,20 +250,41 @@
 		</div>
 	{/if}
 </div>
+
 <style>
 	@keyframes pulse-slow {
-		0%, 100% { opacity: 0.5; }
-		50% { opacity: 0.8; }
+		0%,
+		100% {
+			opacity: 0.5;
+		}
+		50% {
+			opacity: 0.8;
+		}
 	}
 	@keyframes spin-slow {
-		from { transform: rotate(0deg); }
-		to { transform: rotate(360deg); }
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
 	}
 	@keyframes bounce-slow {
-		0%, 100% { transform: translateY(0); }
-		50% { transform: translateY(-4px); }
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-4px);
+		}
 	}
-	.animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
-	.animate-spin-slow { animation: spin-slow 8s linear infinite; }
-	.animate-bounce-slow { animation: bounce-slow 4s ease-in-out infinite; }
+	.animate-pulse-slow {
+		animation: pulse-slow 3s ease-in-out infinite;
+	}
+	.animate-spin-slow {
+		animation: spin-slow 8s linear infinite;
+	}
+	.animate-bounce-slow {
+		animation: bounce-slow 4s ease-in-out infinite;
+	}
 </style>
