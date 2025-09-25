@@ -120,6 +120,8 @@
 			d3.select(svgEl).on('.zoom', null);
 			zoomBehavior = null;
 		}
+		document.body.style.userSelect = '';
+		(document.body as any).style.webkitUserSelect = '';
 	});
 
 	function handleResize() {
@@ -227,8 +229,12 @@
 		dragging = true;
 		tempLeftPct = leftPct;
 		tempLeftWidth = leftWidth;
+		document.body.style.userSelect = 'none';
+		(document.body as any).style.webkitUserSelect = 'none';
+
 		window.addEventListener('pointermove', handlePointerMove);
 		window.addEventListener('pointerup', handlePointerUp, { once: true });
+		window.addEventListener('pointercancel', handlePointerUp, { once: true });
 	}
 
 	function handlePointerMove(e: PointerEvent) {
@@ -246,6 +252,8 @@
 		leftWidth = tempLeftWidth;
 		rightWidth = Math.max(300, outerWidth - leftWidth - HANDLE_WIDTH);
 		setupFocusProjection();
+		document.body.style.userSelect = '';
+		(document.body as any).style.webkitUserSelect = '';
 		window.removeEventListener('pointermove', handlePointerMove);
 	}
 
@@ -362,7 +370,7 @@
 		/>
 
 		<div
-			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 shadow-[0_0_10px] transition-all duration-300"
+			class="relative z-25 w-[5px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 opacity-50 shadow-[0_0_10px] transition-all duration-300"
 			on:pointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
