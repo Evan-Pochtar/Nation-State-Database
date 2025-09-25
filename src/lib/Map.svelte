@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
-	import { feature } from 'topojson-client';
+	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
 	import type { GeoFeature, CountryData } from '$lib/utils/types';
 	import { fetchCountryInfoByName } from '$lib/utils/getInfo';
@@ -13,6 +13,8 @@
 	let activeTab: string = 'overview';
 	let currentProjection: string = 'naturalEarth1';
 	let settingsOpen = false;
+
+	let currentTheme: 'dark' | 'light' | 'colorful' = 'dark';
 
 	let leftPct = 0.36,
 		tempLeftPct = leftPct,
@@ -51,6 +53,10 @@
 		isZooming = false,
 		showSources = false;
 
+	let topoData: any = null;
+	let topoObjectKey: string | null = null;
+	let countryColorMap: string[] = [];
+
 	function getProjection(type: string): d3.GeoProjection {
 		switch (type) {
 			case 'mercator':
@@ -66,11 +72,16 @@
 	function handleProjectionChange(projection: string) {
 		currentProjection = projection;
 		handleResize();
-		if (selectedFeature) {
-			setupFocusProjection();
-		}
+		if (selectedFeature) setupFocusProjection();
 		resetZoom();
 		initZoom();
+	}
+
+	function handleThemeChange(theme: 'dark' | 'light' | 'colorful') {
+		currentTheme = theme;
+		if (theme === 'colorful' && topoData && topoObjectKey) {
+			buildColorfulPalette();
+		}
 	}
 
 	function throttledResize() {
@@ -86,12 +97,14 @@
 				return;
 			}
 			const topo = await resp.json();
+			topoData = topo;
 			const objects = topo.objects;
 			const objectKey = Object.keys(objects)[0];
+			topoObjectKey = objectKey;
 			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
-			console.log(`Loaded ${countries.length} countries`);
+			buildColorfulPalette();
 			handleResize();
 			window.addEventListener('resize', throttledResize);
 		} catch (error) {
@@ -134,11 +147,6 @@
 	function setupFocusProjection() {
 		if (!selectedFeature) return;
 		try {
-			const bounds = d3.geoBounds(selectedFeature as any);
-			if (!bounds || bounds[0][0] === undefined || bounds[1][0] === undefined) {
-				console.error('Invalid bounds for selected feature');
-				return;
-			}
 			let proj = getProjection(currentProjection === 'orthographic' ? 'mercator' : currentProjection);
 
 			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
@@ -158,9 +166,7 @@
 
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
-			console.log('Focus projection setup complete for', getCountryName(selectedFeature));
 		} catch (error) {
-			console.error('Error setting up focus projection:', error);
 			const fallback = d3.geoMercator();
 			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			fallback.fitSize(
@@ -175,6 +181,21 @@
 
 	function getCountryName(f: GeoFeature): string {
 		return f.properties?.name ?? 'Unknown Country';
+	}
+
+	function getCountryIndex(f: GeoFeature) {
+		for (let i = 0; i < countries.length; i++) {
+			if (countries[i] === f) return i;
+			if (
+				countries[i]?.properties?.iso_a3 &&
+				f?.properties?.iso_a3 &&
+				countries[i].properties.iso_a3 === f.properties.iso_a3
+			)
+				return i;
+			if (countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name)
+				return i;
+		}
+		return -1;
 	}
 
 	async function onCountryClick(f: GeoFeature) {
@@ -231,7 +252,7 @@
 	function buildZoomBehavior() {
 		return d3
 			.zoom<SVGSVGElement, unknown>()
-			.scaleExtent([1, 15])
+			.scaleExtent([1, 100])
 			.on('start', () => {
 				isZooming = true;
 			})
@@ -284,10 +305,45 @@
 			.duration(350)
 			.call((zoomBehavior as any).transform, currentTransform);
 	}
+
+	function buildColorfulPalette() {
+		if (!topoData || !topoObjectKey) {
+			countryColorMap = new Array(countries.length).fill('#E6EEF8');
+			return;
+		}
+		try {
+			const geoms = topoData.objects[topoObjectKey].geometries;
+			const neigh = neighbors(geoms);
+			const palette = ['#FBF0E6', '#E7F5EF', '#E7F0FF', '#F4ECF8', '#FFF0F6', '#EBF9FF', '#FFF8E6', '#F3FBF3'];
+
+			const assigned: string[] = new Array(geoms.length).fill('#E6EEF8');
+
+			for (let i = 0; i < geoms.length; i++) {
+				const used = new Set<string>();
+				const nbs = neigh[i] || [];
+				for (const nb of nbs) {
+					if (assigned[nb]) used.add(assigned[nb]);
+				}
+				let pick = palette.find((c) => !used.has(c));
+				if (!pick) pick = palette[i % palette.length];
+				assigned[i] = pick;
+			}
+
+			countryColorMap = assigned.slice(0, countries.length);
+		} catch (e) {
+			console.error('Failed to build colorful palette', e);
+			countryColorMap = new Array(countries.length).fill('#E6EEF8');
+		}
+	}
 </script>
 
 <div
-	class="bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden from-slate-800 to-black font-sans text-white"
+	class={`bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden font-sans ` +
+		(currentTheme === 'dark'
+			? 'from-slate-800 to-black text-white'
+			: currentTheme === 'light'
+				? 'from-slate-50 to-white text-slate-900'
+				: 'from-sky-900 to-sky-800 text-white')}
 	tabindex="-1"
 >
 	{#if selectedFeature}
@@ -306,14 +362,14 @@
 		/>
 
 		<div
-			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 shadow-[0_0_10px] shadow-cyan-400/30 transition-all duration-300"
+			class="relative z-25 w-[6px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 shadow-[0_0_10px] transition-all duration-300"
 			on:pointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
 		>
 			{#if dragging}
 				<div
-					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-teal-300 bg-white/80 shadow-[0_0_10px] shadow-cyan-400/50"
+					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-teal-300 bg-white/80"
 					style="left: {tempLeftWidth - leftWidth}px; animation: dash 1s linear infinite;"
 				></div>
 			{/if}
@@ -321,43 +377,85 @@
 	{/if}
 
 	<div
-		class="relative flex-1 overflow-hidden bg-black text-white"
+		class="relative flex-1 overflow-hidden"
 		style="width: {selectedFeature ? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)` : '100%'};"
 	>
 		{#if !selectedFeature}
 			<MapSettings
 				{settingsOpen}
 				{currentProjection}
+				{currentTheme}
 				onProjectionChange={handleProjectionChange}
 				onToggle={() => (settingsOpen = !settingsOpen)}
+				onThemeChange={handleThemeChange}
 			/>
 			<svg
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full transition-all duration-[800ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+				class="block h-full w-full transition-all duration-[800ms]"
 				bind:this={svgEl}
 			>
+				{#if currentTheme === 'colorful' || currentTheme === 'light'}
+					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(82.8% 0.111 230.318)" opacity="0.75"
+					></rect>
+				{/if}
+
 				<g bind:this={mapGroup} style="will-change: transform;">
 					{#if countries.length && pathGenerator}
-						{#each countries as c (getCountryName(c))}
-							<path
-								d={pathGenerator(c as any)}
-								class="cursor-pointer fill-white/[0.08] stroke-white/40 stroke-[0.5px] drop-shadow-[0_0_2px_rgba(255,255,255,0.2)] transition-all duration-300 will-change-transform hover:fill-white/20 hover:stroke-white/80 hover:stroke-[1.5px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
-								on:click={() => onCountryClick(c)}
-								role="button"
-								tabindex="0"
-								aria-label={getCountryName(c)}
-								on:keydown={(e) => {
-									if (e.key === 'Enter' || e.key === ' ') {
-										e.preventDefault();
-										onCountryClick(c);
-									}
-								}}
-							/>
+						{#each countries as c, i (getCountryName(c))}
+							{#if currentTheme === 'colorful'}
+								<path
+									d={pathGenerator(c as any)}
+									style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.2; stroke-linejoin: round;`}
+									on:click={() => onCountryClick(c)}
+									on:keydown={(e) => {
+										if (e.key === 'Enter' || e.key === ' ') {
+											e.preventDefault();
+											onCountryClick(c);
+										}
+									}}
+									tabindex="0"
+									role="button"
+									aria-label={getCountryName(c)}
+									class="cursor-pointer transition-all duration-150"
+								/>
+							{:else if currentTheme === 'light'}
+								<path
+									d={pathGenerator(c as any)}
+									style="fill: #E6EEF8; stroke: #000; stroke-width: 1.0; stroke-linejoin: round;"
+									on:click={() => onCountryClick(c)}
+									on:keydown={(e) => {
+										if (e.key === 'Enter' || e.key === ' ') {
+											e.preventDefault();
+											onCountryClick(c);
+										}
+									}}
+									tabindex="0"
+									role="button"
+									aria-label={getCountryName(c)}
+									class="cursor-pointer transition-all duration-150"
+								/>
+							{:else}
+								<path
+									d={pathGenerator(c as any)}
+									class="cursor-pointer fill-white/[0.08] stroke-white/40 stroke-[0.5px] drop-shadow-[0_0_2px_rgba(255,255,255,0.2)] transition-all duration-300 will-change-transform hover:fill-white/20 hover:stroke-white/80 hover:stroke-[1.5px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
+									on:click={() => onCountryClick(c)}
+									on:keydown={(e) => {
+										if (e.key === 'Enter' || e.key === ' ') {
+											e.preventDefault();
+											onCountryClick(c);
+										}
+									}}
+									tabindex="0"
+									role="button"
+									aria-label={getCountryName(c)}
+								/>
+							{/if}
 						{/each}
 					{/if}
 				</g>
 			</svg>
+
 			<div
 				class="absolute bottom-5 left-5 z-50 rounded-md border border-white/10 bg-gradient-to-br from-gray-900/80 to-black/90 px-3 py-2 text-xs text-white/60 backdrop-blur-[10px]"
 			>
@@ -367,33 +465,119 @@
 			<svg
 				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full transition-all duration-[800ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+				class="block h-full w-full transition-all duration-[800ms]"
 				bind:this={svgEl}
 			>
+				{#if currentTheme === 'colorful' || currentTheme === 'light'}
+					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
+					></rect>
+				{/if}
+
 				<g bind:this={mapGroup} style="will-change: transform;">
 					{#if countries.length && focusPathGenerator}
-						{#each countries as c (getCountryName(c))}
+						{#each countries as c, i (getCountryName(c))}
 							{#if c !== selectedFeature}
-								<path
-									d={focusPathGenerator(c as any)}
-									class="cursor-pointer fill-white/[0.02] stroke-white/15 stroke-[0.3px] will-change-transform"
-									on:click={() => onCountryClick(c)}
-									role="button"
-									tabindex="0"
-									aria-label={getCountryName(c)}
-									on:keydown={(e) => {
-										if (e.key === 'Enter' || e.key === ' ') {
-											e.preventDefault();
-											onCountryClick(c);
-										}
-									}}
-								/>
+								{#if currentTheme === 'colorful'}
+									<path
+										d={focusPathGenerator(c as any)}
+										style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.0; stroke-linejoin: round;`}
+										on:click={() => onCountryClick(c)}
+										on:keydown={(e) => {
+											if (e.key === 'Enter' || e.key === ' ') {
+												e.preventDefault();
+												onCountryClick(c);
+											}
+										}}
+										tabindex="0"
+										role="button"
+										aria-label={getCountryName(c)}
+										class="cursor-pointer transition-all duration-150"
+									/>
+								{:else if currentTheme === 'light'}
+									<path
+										d={focusPathGenerator(c as any)}
+										style="fill: #E6EEF8; stroke: #000; stroke-width: 0.8; stroke-linejoin: round;"
+										on:click={() => onCountryClick(c)}
+										on:keydown={(e) => {
+											if (e.key === 'Enter' || e.key === ' ') {
+												e.preventDefault();
+												onCountryClick(c);
+											}
+										}}
+										tabindex="0"
+										role="button"
+										aria-label={getCountryName(c)}
+										class="cursor-pointer transition-all duration-150"
+									/>
+								{:else}
+									<path
+										d={focusPathGenerator(c as any)}
+										class="cursor-pointer fill-white/[0.02] stroke-white/15 stroke-[0.3px] will-change-transform"
+										on:click={() => onCountryClick(c)}
+										on:keydown={(e) => {
+											if (e.key === 'Enter' || e.key === ' ') {
+												e.preventDefault();
+												onCountryClick(c);
+											}
+										}}
+										tabindex="0"
+										role="button"
+										aria-label={getCountryName(c)}
+									/>
+								{/if}
 							{/if}
 						{/each}
-						<path
-							d={focusPathGenerator(selectedFeature as any)}
-							class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
-						/>
+
+						{#if selectedFeature}
+							{#key getCountryIndex(selectedFeature)}
+								{@const idx = getCountryIndex(selectedFeature)}
+								{#if idx >= 0}
+									{#if currentTheme === 'colorful'}
+										<path
+											d={focusPathGenerator(selectedFeature as any)}
+											style={`fill: ${countryColorMap[idx] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; filter: drop-shadow(0 0 8px rgba(0,0,0,0.28));`}
+											on:click={() => selectedFeature && onCountryClick(selectedFeature)}
+											on:keydown={(e) => {
+												if (e.key === 'Enter' || e.key === ' ') {
+													e.preventDefault();
+													selectedFeature && onCountryClick(selectedFeature);
+												}
+											}}
+											tabindex="0"
+											role="button"
+											aria-label={getCountryName(selectedFeature)}
+											class="cursor-pointer transition-all duration-150"
+										/>
+									{:else if currentTheme === 'light'}
+										<path
+											d={focusPathGenerator(selectedFeature as any)}
+											style="fill: #DCEAF6; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; filter: drop-shadow(0 0 6px rgba(0,0,0,0.18));"
+											on:click={() => selectedFeature && onCountryClick(selectedFeature)}
+											on:keydown={(e) => {
+												if (e.key === 'Enter' || e.key === ' ') {
+													e.preventDefault();
+													selectedFeature && onCountryClick(selectedFeature);
+												}
+											}}
+											tabindex="0"
+											role="button"
+											aria-label={getCountryName(selectedFeature)}
+											class="cursor-pointer transition-all duration-150"
+										/>
+									{:else}
+										<path
+											d={focusPathGenerator(selectedFeature as any)}
+											class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
+										/>
+									{/if}
+								{:else}
+									<path
+										d={focusPathGenerator(selectedFeature as any)}
+										class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
+									/>
+								{/if}
+							{/key}
+						{/if}
 					{/if}
 				</g>
 			</svg>

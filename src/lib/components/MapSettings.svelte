@@ -1,11 +1,16 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
+	import ColorfulPreview from '$lib/assets/img/colorful.png';
+	import LightPreview from '$lib/assets/img/light.png';
+	import DarkPreview from '$lib/assets/img/dark.png';
 
 	export let settingsOpen = false;
 	export let currentProjection = 'naturalEarth1';
+	export let currentTheme: 'dark' | 'light' | 'colorful' = 'dark';
 
 	export let onToggle: (() => void) | undefined;
 	export let onProjectionChange: ((projection: string) => void) | undefined;
+	export let onThemeChange: ((theme: 'dark' | 'light' | 'colorful') => void) | undefined;
 
 	const projections = [
 		{ id: 'naturalEarth1', name: 'Natural Earth', description: 'Balanced world view' },
@@ -16,6 +21,11 @@
 	function selectProjection(projectionId: string) {
 		currentProjection = projectionId;
 		onProjectionChange?.(projectionId);
+	}
+
+	function setTheme(t: 'dark' | 'light' | 'colorful') {
+		currentTheme = t;
+		onThemeChange?.(t);
 	}
 
 	function handleKeydown(event: KeyboardEvent) {
@@ -58,38 +68,86 @@
 
 	{#if settingsOpen}
 		<div
-			class="absolute top-0 left-[60px] w-80 overflow-hidden rounded-2xl border border-sky-400/30 bg-gradient-to-br from-slate-900/95 to-black/98 shadow-[0_20px_40px_rgba(0,0,0,0.6),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-[20px]"
-			transition:fly={{ x: -20, duration: 300, opacity: 0 }}
+			class="absolute top-0 left-[72px] w-96 overflow-hidden rounded-3xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
+			transition:fly={{ x: -20, duration: 300 }}
 		>
-			<div class="flex items-center gap-3 border-b border-sky-400/20 px-6 py-5 pb-4">
-				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/40 to-transparent"></div>
-				<h3 class="m-0 text-[11px] font-semibold tracking-[0.1em] whitespace-nowrap text-sky-400/90">MAP PROJECTION</h3>
-				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/40 to-transparent"></div>
+			<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
+				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">MAP PROJECTION</h3>
+				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 			</div>
 
-			<div class="flex flex-col gap-0.5 p-2">
+			<div class="mb-3 flex flex-col gap-1">
 				{#each projections as projection}
 					<button
-						class="relative flex cursor-pointer items-center gap-3 overflow-hidden rounded-lg border-none bg-transparent px-4 py-3 text-left transition-all duration-200 hover:bg-sky-400/8"
-						class:projection-selected={currentProjection === projection.id}
+						type="button"
+						class="flex cursor-pointer items-center gap-3 rounded-lg px-4 py-3 text-left transition hover:bg-sky-400/6 focus:outline-none"
 						on:click={() => selectProjection(projection.id)}
+						aria-pressed={currentProjection === projection.id}
 					>
-						<div
-							class="flex h-2 w-2 flex-shrink-0 items-center justify-center rounded-full border-2 border-slate-400/40 transition-all duration-200"
-							class:option-indicator-selected={currentProjection === projection.id}
-						>
+						<div class="flex h-2 w-2 items-center justify-center rounded-full border-2 border-slate-400/40">
 							<div
-								class="h-1 w-1 rounded-full bg-emerald-500/80 opacity-0 transition-opacity duration-200"
-								class:opacity-100={currentProjection === projection.id}
+								class={`h-1 w-1 rounded-full ${currentProjection === projection.id ? 'bg-emerald-400/90' : 'opacity-0'}`}
 							></div>
 						</div>
 						<div class="flex-1">
-							<div class="mb-0.5 text-[13px] font-medium text-slate-50/90">{projection.name}</div>
-							<div class="text-[11px] font-normal text-slate-400/70">{projection.description}</div>
+							<div class="text-sm font-medium text-slate-50/90">{projection.name}</div>
+							<div class="text-xs text-slate-400/70">{projection.description}</div>
 						</div>
-						<div class="option-glow"></div>
 					</button>
 				{/each}
+			</div>
+
+			<div class="border-t border-slate-700/30 pt-4">
+				<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
+					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+					<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">MAP COLORS</h3>
+					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				</div>
+
+				<div class="flex items-center justify-center gap-6">
+					<button
+						type="button"
+						class="flex cursor-pointer flex-col items-center gap-2 focus:outline-none"
+						on:click={() => setTheme('dark')}
+						aria-pressed={currentTheme === 'dark'}
+					>
+						<img
+							src={DarkPreview}
+							alt="dark preview"
+							class="h-20 w-20 rounded-md border border-white/10 object-cover shadow-md"
+						/>
+						<div class={`text-sm ${currentTheme === 'dark' ? 'text-white' : 'text-slate-400'}`}>Dark</div>
+					</button>
+
+					<button
+						type="button"
+						class="flex cursor-pointer flex-col items-center gap-2 focus:outline-none"
+						on:click={() => setTheme('light')}
+						aria-pressed={currentTheme === 'light'}
+					>
+						<img
+							src={LightPreview}
+							alt="light preview"
+							class="h-20 w-20 rounded-md border border-slate-300/20 object-cover shadow-md"
+						/>
+						<div class={`text-sm ${currentTheme === 'light' ? 'text-white' : 'text-slate-400'}`}>Light</div>
+					</button>
+
+					<button
+						type="button"
+						class="flex cursor-pointer flex-col items-center gap-2 focus:outline-none"
+						on:click={() => setTheme('colorful')}
+						aria-pressed={currentTheme === 'colorful'}
+					>
+						<img
+							src={ColorfulPreview}
+							alt="colorful preview"
+							class="h-20 w-20 rounded-md border border-white/10 object-cover shadow-md"
+						/>
+						<div class={`text-sm ${currentTheme === 'colorful' ? 'text-white' : 'text-slate-400'}`}>Colorful</div>
+					</button>
+				</div>
 			</div>
 		</div>
 	{/if}
@@ -149,26 +207,12 @@
 		transition: opacity 0.3s ease;
 	}
 
-	.projection-selected .option-glow {
-		opacity: 1;
-	}
-
 	@keyframes rotate {
 		from {
 			transform: rotate(0deg);
 		}
 		to {
 			transform: rotate(360deg);
-		}
-	}
-
-	@keyframes scan {
-		0%,
-		100% {
-			opacity: 0.3;
-		}
-		50% {
-			opacity: 1;
 		}
 	}
 </style>

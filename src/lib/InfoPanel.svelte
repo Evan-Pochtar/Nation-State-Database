@@ -31,8 +31,8 @@
 </script>
 
 <div
-	in:slide={{ duration: 260 }}
-	out:slide={{ duration: 220 }}
+	in:slide={{ duration: 300 }}
+	out:slide={{ duration: 260 }}
 	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px] transition-[width] duration-400"
 	style="width: {leftWidth}px;"
 	aria-hidden="false"
