@@ -1,0 +1,568 @@
+[
+  {
+    "name": "Ecuador",
+    "overview": "Ecuador's history spans thousands of years, from ancient indigenous civilizations to Spanish colonization and eventual independence. The country takes its name from the equator, which runs through it. Ecuador has experienced periods of political instability, military rule, and democratic governance, while developing a diverse economy based on oil, agriculture, and exports.",
+    "source": {
+      "label": "Manually Curated",
+      "url": "https://en.wikipedia.org/wiki/History_of_Ecuador"
+    },
+    "keyFacts": [
+      {
+        "label": "Independence",
+        "value": "May 24, 1822"
+      },
+      {
+        "label": "Capital Established",
+        "value": "Quito (1534)"
+      },
+      {
+        "label": "Government Type",
+        "value": "Presidential Republic"
+      },
+      {
+        "label": "Currency Adoption",
+        "value": "US Dollar (2000)"
+      },
+      {
+        "label": "UNESCO Sites",
+        "value": "5 World Heritage Sites"
+      },
+      {
+        "label": "Official Languages",
+        "value": "Spanish, Kichwa, Shuar"
+      }
+    ],
+    "ancient": {
+      "period": "c. 3500 BCE - 1533 CE",
+      "description": "Before Spanish conquest, Ecuador was home to numerous advanced indigenous civilizations. The Valdivia culture (3500-1800 BCE) is one of the oldest pottery-making cultures in the Americas. The region later saw the rise of sophisticated cultures including the Quitu, Cañari, and Manteño-Huancavilca peoples. In the late 15th century, the Inca Empire expanded into Ecuador, incorporating it into Tawantinsuyu under the rule of Túpac Inca Yupanqui and his son Huayna Capac.",
+      "keyEvents": [
+        {
+          "year": "c. 3500 BCE",
+          "title": "Valdivia Culture Emerges",
+          "description": "One of the oldest settled cultures in the Americas develops advanced pottery techniques"
+        },
+        {
+          "year": "c. 500 CE",
+          "title": "Regional Kingdoms Form",
+          "description": "Distinct kingdoms including the Quitu and Cañari establish organized societies"
+        },
+        {
+          "year": "1463",
+          "title": "Inca Conquest Begins",
+          "description": "Túpac Inca Yupanqui begins the incorporation of northern territories into the Inca Empire"
+        },
+        {
+          "year": "1493-1525",
+          "title": "Huayna Capac's Rule",
+          "description": "The Inca Empire reaches its greatest extent, with Quito serving as a northern capital"
+        }
+      ],
+      "notableFigures": [
+        "Túpac Inca Yupanqui",
+        "Huayna Capac",
+        "Rumiñahui",
+        "Atahualpa"
+      ]
+    },
+    "colonial": {
+      "period": "1534 - 1820",
+      "description": "Spanish conquistador Sebastián de Benalcázar founded Quito in 1534, establishing Spanish colonial rule. Ecuador became part of the Viceroyalty of Peru initially, then the Viceroyalty of New Granada in 1717. The colonial period saw the exploitation of indigenous populations through the encomienda and mita systems, forced labor in textile workshops (obrajes), and the introduction of African slaves. The Catholic Church played a dominant role in colonial society. Quito became a major center of art and culture, with the Quito School of art gaining international recognition.",
+      "keyEvents": [
+        {
+          "year": "1534",
+          "title": "Foundation of Quito",
+          "description": "Sebastián de Benalcázar establishes Spanish colonial control and founds the city of Quito"
+        },
+        {
+          "year": "1563",
+          "title": "Royal Audience of Quito",
+          "description": "The Real Audiencia de Quito is established as an administrative and judicial district"
+        },
+        {
+          "year": "1736-1744",
+          "title": "French Geodesic Mission",
+          "description": "Scientists measure the equator near Quito, later inspiring the country's name"
+        },
+        {
+          "year": "1809",
+          "title": "First Cry of Independence",
+          "description": "The Quito Uprising marks the beginning of independence movements in Spanish America"
+        }
+      ],
+      "notableFigures": [
+        "Sebastián de Benalcázar",
+        "Eugenio Espejo",
+        "Manuela Cañizares",
+        "Juan Pío Montúfar"
+      ]
+    },
+    "independence": {
+      "period": "1820 - 1830",
+      "description": "Ecuador's path to independence was complex and protracted. The first revolutionary junta was established in Quito in 1809, but it was quickly suppressed. The independence movement gained momentum after 1820 when Guayaquil declared independence. The decisive Battle of Pichincha on May 24, 1822, led by Antonio José de Sucre, secured Ecuador's liberation from Spanish rule. Ecuador initially became part of Gran Colombia, a federation that included present-day Colombia, Venezuela, Panama, and Ecuador, under the leadership of Simón Bolívar. However, regional tensions led to Ecuador's separation from Gran Colombia in 1830.",
+      "keyEvents": [
+        {
+          "year": "1820",
+          "title": "Guayaquil Independence",
+          "description": "Guayaquil declares independence from Spain on October 9"
+        },
+        {
+          "year": "1822",
+          "title": "Battle of Pichincha",
+          "description": "General Antonio José de Sucre defeats Spanish forces, securing independence for Ecuador"
+        },
+        {
+          "year": "1822",
+          "title": "Joins Gran Colombia",
+          "description": "Ecuador becomes part of the Republic of Gran Colombia"
+        },
+        {
+          "year": "1830",
+          "title": "Full Independence",
+          "description": "Ecuador separates from Gran Colombia and becomes a fully independent republic"
+        }
+      ],
+      "notableFigures": [
+        "Simón Bolívar",
+        "Antonio José de Sucre",
+        "Juan José Flores",
+        "Vicente Rocafuerte"
+      ]
+    },
+    "modern": {
+      "period": "1830 - Present",
+      "description": "Independent Ecuador has experienced significant political instability, with periods of civilian and military rule alternating throughout its history. The country faced territorial disputes with Peru, losing significant Amazon territory in conflicts in 1941 and 1995. Ecuador's economy has been historically based on agricultural exports (cacao, bananas) and later oil. The country adopted the US dollar as its official currency in 2000 to combat hyperinflation. The 21st century has seen the rise of indigenous movements and left-wing politics, notably during Rafael Correa's presidency (2007-2017). Ecuador continues to face challenges including economic inequality, environmental concerns, and political polarization.",
+      "keyEvents": [
+        {
+          "year": "1895-1912",
+          "title": "Liberal Revolution",
+          "description": "Eloy Alfaro leads liberal reforms including separation of church and state"
+        },
+        {
+          "year": "1941",
+          "title": "Ecuadorian-Peruvian War",
+          "description": "Territorial conflict with Peru results in loss of Amazon territories"
+        },
+        {
+          "year": "1972",
+          "title": "Oil Boom Begins",
+          "description": "Major oil discoveries transform Ecuador's economy"
+        },
+        {
+          "year": "2000",
+          "title": "Dollarization",
+          "description": "Ecuador adopts the US dollar to stabilize the economy after financial crisis"
+        },
+        {
+          "year": "2007",
+          "title": "Citizens' Revolution",
+          "description": "Rafael Correa begins presidency, implementing significant constitutional and economic reforms"
+        },
+        {
+          "year": "2008",
+          "title": "New Constitution",
+          "description": "Ecuador adopts a new constitution recognizing rights of nature and indigenous peoples"
+        }
+      ],
+      "notableFigures": [
+        "Eloy Alfaro",
+        "José María Velasco Ibarra",
+        "Jaime Roldós Aguilera",
+        "Rafael Correa",
+        "Lenín Moreno"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "c. 3500 BCE",
+        "era": "Ancient",
+        "title": "Valdivia Culture",
+        "description": "One of the earliest settled cultures in the Americas develops sophisticated pottery and coastal communities"
+      },
+      {
+        "year": "1463",
+        "era": "Ancient",
+        "title": "Inca Expansion",
+        "description": "The Inca Empire begins conquering territories in present-day Ecuador"
+      },
+      {
+        "year": "1534",
+        "era": "Colonial",
+        "title": "Spanish Conquest",
+        "description": "Sebastián de Benalcázar founds Quito, establishing Spanish colonial rule"
+      },
+      {
+        "year": "1809",
+        "era": "Independence",
+        "title": "First Independence Movement",
+        "description": "The Quito Uprising marks the first cry of independence in Spanish South America"
+      },
+      {
+        "year": "1822",
+        "era": "Independence",
+        "title": "Battle of Pichincha",
+        "description": "Decisive victory secures independence from Spain"
+      },
+      {
+        "year": "1830",
+        "era": "Modern",
+        "title": "Republic Founded",
+        "description": "Ecuador separates from Gran Colombia and becomes an independent nation"
+      },
+      {
+        "year": "1895",
+        "era": "Modern",
+        "title": "Liberal Revolution",
+        "description": "Eloy Alfaro initiates major social and political reforms"
+      },
+      {
+        "year": "1941",
+        "era": "Modern",
+        "title": "War with Peru",
+        "description": "Territorial conflict results in significant loss of Amazon territories"
+      },
+      {
+        "year": "1972",
+        "era": "Modern",
+        "title": "Oil Era Begins",
+        "description": "Discovery of significant oil reserves transforms the national economy"
+      },
+      {
+        "year": "2000",
+        "era": "Modern",
+        "title": "Dollarization",
+        "description": "Ecuador abandons the sucre and adopts the US dollar as official currency"
+      },
+      {
+        "year": "2008",
+        "era": "Modern",
+        "title": "Constitutional Reform",
+        "description": "New constitution establishes rights of nature and expands indigenous rights"
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "overview": "France has one of the richest and most influential histories in the world, spanning from ancient Gaul through medieval kingdoms, absolute monarchy, revolutionary republic, and empire to its current status as a leading democratic nation. French culture, philosophy, art, and political thought have profoundly shaped Western civilization. The nation has played a central role in European affairs for centuries and remains a major global power.",
+    "source": {
+      "label": "Manually Curated",
+      "url": "https://en.wikipedia.org/wiki/History_of_France"
+    },
+    "keyFacts": [
+      {
+        "label": "Foundation of French State",
+        "value": "843 CE (Treaty of Verdun)"
+      },
+      {
+        "label": "French Republic Established",
+        "value": "September 22, 1792"
+      },
+      {
+        "label": "Current Republic",
+        "value": "Fifth Republic (1958)"
+      },
+      {
+        "label": "Capital",
+        "value": "Paris (since 987 CE)"
+      },
+      {
+        "label": "UNESCO Sites",
+        "value": "49 World Heritage Sites"
+      },
+      {
+        "label": "Revolutionary Motto",
+        "value": "Liberté, Égalité, Fraternité"
+      }
+    ],
+    "ancient": {
+      "period": "c. 600 BCE - 486 CE",
+      "description": "Ancient France was inhabited by Celtic peoples known as Gauls. The region became increasingly important to Mediterranean civilizations, with Greek colonies established along the southern coast around 600 BCE, including Massalia (modern Marseille). Julius Caesar's conquest of Gaul (58-50 BCE) brought the region under Roman control, leading to centuries of Romanization. Gallo-Roman culture flourished with the development of cities, roads, aqueducts, and the spread of Latin. Christianity arrived in the 2nd century CE. The decline of the Western Roman Empire in the 5th century saw Germanic tribes, particularly the Franks, gradually taking control of the territory.",
+      "keyEvents": [
+        {
+          "year": "c. 600 BCE",
+          "title": "Greek Colonization",
+          "description": "Greeks establish Massalia (Marseille), creating important Mediterranean trade connections"
+        },
+        {
+          "year": "52 BCE",
+          "title": "Battle of Alesia",
+          "description": "Julius Caesar defeats Vercingetorix, completing the Roman conquest of Gaul"
+        },
+        {
+          "year": "c. 250 CE",
+          "title": "Christianity Spreads",
+          "description": "Christian communities establish themselves in major Gallo-Roman cities"
+        },
+        {
+          "year": "486 CE",
+          "title": "Clovis Defeats Romans",
+          "description": "Frankish king Clovis I defeats the last Roman forces, marking the end of Roman Gaul"
+        }
+      ],
+      "notableFigures": [
+        "Vercingetorix",
+        "Julius Caesar",
+        "Saint Denis",
+        "Clovis I"
+      ]
+    },
+    "colonial": {
+      "period": "486 - 1789",
+      "description": "The medieval and early modern period saw France transform from a collection of Frankish kingdoms into one of Europe's most powerful centralized monarchies. The Carolingian Empire under Charlemagne (768-814) briefly united much of Western Europe. After the Treaty of Verdun (843), West Francia emerged as the precursor to modern France. The Capetian dynasty established lasting royal authority from 987 onwards. The Hundred Years' War (1337-1453) with England tested French unity but ultimately strengthened national identity. The Renaissance brought cultural flourishing, while religious wars between Catholics and Protestants wracked the nation in the 16th century. Louis XIV (1643-1715) epitomized absolute monarchy, making France the dominant European power. The Enlightenment in the 18th century produced revolutionary philosophical ideas that would transform France and the world.",
+      "keyEvents": [
+        {
+          "year": "800",
+          "title": "Charlemagne Crowned Emperor",
+          "description": "Charlemagne is crowned Holy Roman Emperor, creating a vast Carolingian Empire"
+        },
+        {
+          "year": "843",
+          "title": "Treaty of Verdun",
+          "description": "Division of Carolingian Empire creates West Francia, foundation of modern France"
+        },
+        {
+          "year": "987",
+          "title": "Capetian Dynasty Begins",
+          "description": "Hugh Capet crowned king, establishing a dynasty that would rule for centuries"
+        },
+        {
+          "year": "1337-1453",
+          "title": "Hundred Years' War",
+          "description": "Protracted conflict with England shapes French national identity"
+        },
+        {
+          "year": "1431",
+          "title": "Joan of Arc Executed",
+          "description": "National heroine burned at the stake by the English and their French allies"
+        },
+        {
+          "year": "1572",
+          "title": "St. Bartholomew's Day Massacre",
+          "description": "Religious violence between Catholics and Huguenots reaches its peak"
+        },
+        {
+          "year": "1643-1715",
+          "title": "Reign of Louis XIV",
+          "description": "The Sun King establishes absolute monarchy and makes France the dominant European power"
+        },
+        {
+          "year": "1685",
+          "title": "Revocation of Edict of Nantes",
+          "description": "Louis XIV revokes religious tolerance, forcing Protestants to flee or convert"
+        }
+      ],
+      "notableFigures": [
+        "Charlemagne",
+        "Joan of Arc",
+        "Louis XIV",
+        "Cardinal Richelieu",
+        "Voltaire",
+        "Jean-Jacques Rousseau"
+      ]
+    },
+    "independence": {
+      "period": "1789 - 1815",
+      "description": "The French Revolution (1789-1799) was one of the most significant events in world history, overthrowing the absolute monarchy and establishing principles of liberty, equality, and popular sovereignty. The storming of the Bastille on July 14, 1789, marked the beginning of revolutionary fervor. The Declaration of the Rights of Man and of the Citizen proclaimed universal human rights. The Revolution descended into the Reign of Terror (1793-1794) under Robespierre before giving way to the Directory. Napoleon Bonaparte emerged from this chaos, staging a coup in 1799 and crowning himself Emperor in 1804. Napoleon's military genius expanded French control across Europe, spreading revolutionary ideals and modernizing legal systems. His defeat at Waterloo in 1815 ended the revolutionary era, but the ideals of the French Revolution continued to inspire democratic movements worldwide.",
+      "keyEvents": [
+        {
+          "year": "1789",
+          "title": "Storming of the Bastille",
+          "description": "Revolutionary mob storms the Bastille fortress on July 14, beginning the French Revolution"
+        },
+        {
+          "year": "1789",
+          "title": "Declaration of Rights",
+          "description": "Declaration of the Rights of Man and of the Citizen establishes revolutionary principles"
+        },
+        {
+          "year": "1792",
+          "title": "First Republic Proclaimed",
+          "description": "Monarchy abolished and First Republic declared on September 22"
+        },
+        {
+          "year": "1793-1794",
+          "title": "Reign of Terror",
+          "description": "Radical phase of revolution sees mass executions including King Louis XVI and Marie Antoinette"
+        },
+        {
+          "year": "1799",
+          "title": "Napoleon's Coup",
+          "description": "Napoleon Bonaparte overthrows the Directory in the Coup of 18 Brumaire"
+        },
+        {
+          "year": "1804",
+          "title": "Napoleon Crowned Emperor",
+          "description": "Napoleon crowns himself Emperor of the French at Notre-Dame Cathedral"
+        },
+        {
+          "year": "1815",
+          "title": "Battle of Waterloo",
+          "description": "Napoleon's final defeat ends French dominance of Europe"
+        }
+      ],
+      "notableFigures": [
+        "Maximilien Robespierre",
+        "Napoleon Bonaparte",
+        "Georges Danton",
+        "Louis XVI",
+        "Marie Antoinette",
+        "Marquis de Lafayette"
+      ]
+    },
+    "modern": {
+      "period": "1815 - Present",
+      "description": "Post-Napoleonic France experienced political instability, alternating between monarchy, republic, and empire. The Second Republic (1848) and Second Empire under Napoleon III (1852-1870) preceded the enduring Third Republic (1870-1940). France suffered devastating losses in World War I but emerged victorious. World War II saw France defeated and occupied by Nazi Germany, with the Vichy regime collaborating and the Free French Forces resisting under Charles de Gaulle. Post-war France rebuilt as a founding member of the European Union. The Fourth Republic gave way to de Gaulle's Fifth Republic in 1958, which continues today. France underwent decolonization, losing its empire in Indochina and Algeria. May 1968 saw massive student and worker protests that transformed French society. Modern France is a nuclear power, permanent UN Security Council member, and leading voice in European and world affairs, while grappling with issues of immigration, secularism, and its role in a globalized world.",
+      "keyEvents": [
+        {
+          "year": "1870-1871",
+          "title": "Franco-Prussian War",
+          "description": "Defeat by Prussia leads to fall of Second Empire and establishment of Third Republic"
+        },
+        {
+          "year": "1894-1906",
+          "title": "Dreyfus Affair",
+          "description": "Political scandal over false treason conviction of Jewish officer exposes deep social divisions"
+        },
+        {
+          "year": "1914-1918",
+          "title": "World War I",
+          "description": "France suffers immense casualties but emerges victorious; Verdun becomes symbol of sacrifice"
+        },
+        {
+          "year": "1940",
+          "title": "Fall of France",
+          "description": "Nazi Germany conquers France in six weeks; Vichy regime established"
+        },
+        {
+          "year": "1944",
+          "title": "Liberation of Paris",
+          "description": "Allied and Free French forces liberate Paris on August 25"
+        },
+        {
+          "year": "1954-1962",
+          "title": "Algerian War",
+          "description": "Brutal colonial war ends with Algerian independence and mass migration to France"
+        },
+        {
+          "year": "1958",
+          "title": "Fifth Republic Founded",
+          "description": "Charles de Gaulle establishes new constitution with stronger presidential powers"
+        },
+        {
+          "year": "1968",
+          "title": "May 1968 Protests",
+          "description": "Student and worker uprisings nearly topple government, transform French society"
+        },
+        {
+          "year": "1981",
+          "title": "Mitterrand Elected",
+          "description": "François Mitterrand becomes first Socialist president of the Fifth Republic"
+        },
+        {
+          "year": "2015-2016",
+          "title": "Paris Terror Attacks",
+          "description": "Series of terrorist attacks shock nation and lead to ongoing security measures"
+        }
+      ],
+      "notableFigures": [
+        "Charles de Gaulle",
+        "Georges Clemenceau",
+        "Philippe Pétain",
+        "François Mitterrand",
+        "Simone de Beauvoir",
+        "Jean-Paul Sartre"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "52 BCE",
+        "era": "Ancient",
+        "title": "Roman Conquest Complete",
+        "description": "Caesar defeats Vercingetorix at Alesia, bringing all of Gaul under Roman control"
+      },
+      {
+        "year": "486 CE",
+        "era": "Medieval",
+        "title": "Frankish Kingdom",
+        "description": "Clovis I defeats last Roman forces, establishing Frankish dominance"
+      },
+      {
+        "year": "800",
+        "era": "Medieval",
+        "title": "Charlemagne's Empire",
+        "description": "Charlemagne crowned Holy Roman Emperor, ruling vast European territory"
+      },
+      {
+        "year": "843",
+        "era": "Medieval",
+        "title": "Birth of France",
+        "description": "Treaty of Verdun creates West Francia, foundation of modern France"
+      },
+      {
+        "year": "1337",
+        "era": "Medieval",
+        "title": "Hundred Years' War Begins",
+        "description": "Start of prolonged conflict with England over French throne"
+      },
+      {
+        "year": "1431",
+        "era": "Medieval",
+        "title": "Joan of Arc Martyred",
+        "description": "French heroine executed by the English, becomes enduring national symbol"
+      },
+      {
+        "year": "1643",
+        "era": "Early Modern",
+        "title": "Louis XIV Begins Reign",
+        "description": "The Sun King establishes absolute monarchy and French cultural dominance"
+      },
+      {
+        "year": "1789",
+        "era": "Revolutionary",
+        "title": "French Revolution",
+        "description": "Storming of Bastille launches revolution that transforms France and inspires world"
+      },
+      {
+        "year": "1804",
+        "era": "Revolutionary",
+        "title": "Napoleon Crowned",
+        "description": "Napoleon Bonaparte becomes Emperor, beginning period of French European dominance"
+      },
+      {
+        "year": "1815",
+        "era": "Modern",
+        "title": "Waterloo",
+        "description": "Napoleon's final defeat ends revolutionary and Napoleonic era"
+      },
+      {
+        "year": "1870",
+        "era": "Modern",
+        "title": "Third Republic",
+        "description": "Republican government established after defeat in Franco-Prussian War"
+      },
+      {
+        "year": "1914-1918",
+        "era": "Modern",
+        "title": "World War I",
+        "description": "France endures massive casualties but emerges victorious from Great War"
+      },
+      {
+        "year": "1940-1944",
+        "era": "Modern",
+        "title": "Nazi Occupation",
+        "description": "France occupied by Germany; Resistance fights while Vichy collaborates"
+      },
+      {
+        "year": "1958",
+        "era": "Modern",
+        "title": "Fifth Republic",
+        "description": "Charles de Gaulle establishes new constitution still in force today"
+      },
+      {
+        "year": "1968",
+        "era": "Modern",
+        "title": "May 1968",
+        "description": "Massive protests and strikes transform French society and culture"
+      }
+    ]
+  }
+]

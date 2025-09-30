@@ -19,6 +19,7 @@ export const indicators = {
 };
 
 const inFlight = new Map<string, Promise<void>>();
+const historyInFlight = new Map<string, Promise<void>>();
 
 const latestOnlySet = new Set([
 	indicators.exports,
@@ -425,5 +426,129 @@ export async function fetchEconomicDataModule(params: {
 	})();
 
 	inFlight.set(entryName, job);
+	return job;
+}
+
+export async function fetchHistoryDataModule(params: {
+	name: string;
+	selectedInfo: CountryData | null;
+	getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
+	setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
+	setSelectedInfo?: (newInfo: CountryData) => void;
+	persist?: boolean;
+}) {
+	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = false } = params;
+	
+	if (!name) return;
+
+	if (historyInFlight.has(name)) return historyInFlight.get(name)!;
+
+	const job = (async () => {
+		try {
+			setInfoCache(
+				(() => {
+					const prev = getInfoCache();
+					const next = { ...prev };
+					next[name] = { ...(next[name] ?? { loading: false }), loading: true };
+					return next;
+				})()
+			);
+
+			const cache = getInfoCache();
+			if (cache[name]?.data?.history && cache[name].data.history !== 'Data not provided.') {
+				setInfoCache(
+					(() => {
+						const prev = getInfoCache();
+						const next = { ...prev };
+						next[name] = { ...(next[name] ?? {}), loading: false };
+						return next;
+					})()
+				);
+				return;
+			}
+
+			let historyEntry: any = null;
+
+			try {
+				const localResp = await fetch('/data/countries-history.json');
+				if (localResp.ok) {
+					const localJson = await localResp.json();
+					historyEntry = Array.isArray(localJson)
+						? (localJson.find((e: any) => e.name === name) ?? null)
+						: (localJson[name] ?? null);
+				} else {
+					console.warn('No local countries-history.json accessible:', localResp.status);
+				}
+			} catch (err) {
+				console.warn('Error loading /data/countries-history.json', err);
+			}
+
+			if (historyEntry) {
+				setInfoCache(
+					(() => {
+						const prev = getInfoCache();
+						const next = { ...prev };
+						next[name] = {
+							...(next[name] ?? {}),
+							data: {
+								...(next[name]?.data ?? selectedInfo ?? {}),
+								history: historyEntry
+							} as any,
+							loading: false
+						};
+						return next;
+					})()
+				);
+
+				if (setSelectedInfo && selectedInfo) {
+					setSelectedInfo({ ...selectedInfo, history: historyEntry } as any);
+				}
+
+				if (persist) {
+					Promise.resolve().then(async () => {
+						try {
+							await fetch('/api/history', {
+								method: 'POST',
+								headers: { 'Content-Type': 'application/json' },
+								body: JSON.stringify({
+									name,
+									history: historyEntry
+								})
+							});
+						} catch (err) {
+							console.warn('Failed to persist history data', err);
+						}
+					});
+				}
+			} else {
+				setInfoCache(
+					(() => {
+						const prev = getInfoCache();
+						const next = { ...prev };
+						next[name] = {
+							...(next[name] ?? {}),
+							loading: false,
+							error: 'No history data available for this country'
+						};
+						return next;
+					})()
+				);
+			}
+		} catch (err) {
+			console.error('History data fetch error:', err);
+			setInfoCache(
+				(() => {
+					const prev = getInfoCache();
+					const next = { ...prev };
+					next[name] = { ...(next[name] ?? {}), loading: false, error: 'Failed to load history data' };
+					return next;
+				})()
+			);
+		} finally {
+			historyInFlight.delete(name);
+		}
+	})();
+
+	historyInFlight.set(name, job);
 	return job;
 }

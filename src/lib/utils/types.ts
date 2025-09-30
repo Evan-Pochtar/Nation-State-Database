@@ -35,6 +35,66 @@ export type CountryData = {
 	gini: number;
 	summary: string;
 	politics: string;
-	economics: any;
+	economics?: any;
+	history?: any;
 	sources?: DataSources;
 };
+
+export interface HistoryData {
+	name: string;
+	overview?: string;
+	source?: {
+		label: string;
+		url: string;
+	};
+	keyFacts?: Array<{
+		label: string;
+		value: string;
+	}>;
+	ancient?: {
+		period: string;
+		description: string;
+		keyEvents?: Array<{
+			year: string;
+			title: string;
+			description?: string;
+		}>;
+		notableFigures?: string[];
+	};
+	colonial?: {
+		period: string;
+		description: string;
+		keyEvents?: Array<{
+			year: string;
+			title: string;
+			description?: string;
+		}>;
+		notableFigures?: string[];
+	};
+	independence?: {
+		period: string;
+		description: string;
+		keyEvents?: Array<{
+			year: string;
+			title: string;
+			description?: string;
+		}>;
+		notableFigures?: string[];
+	};
+	modern?: {
+		period: string;
+		description: string;
+		keyEvents?: Array<{
+			year: string;
+			title: string;
+			description?: string;
+		}>;
+		notableFigures?: string[];
+	};
+	timeline?: Array<{
+		year: string;
+		era: string;
+		title: string;
+		description: string;
+	}>;
+}

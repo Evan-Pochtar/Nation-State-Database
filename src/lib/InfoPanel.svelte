@@ -6,6 +6,7 @@
 	import EconomicsTab from './components/EconomicsTab.svelte';
 	import PoliticsTab from './components/PoliticsTab.svelte';
 	import OverviewTab from './components/OverviewTab.svelte';
+	import HistoryTab from './components/HistoryTab.svelte';
 
 	export let selectedInfo: CountryData | null = null;
 	export let selectedName: string | null = '';
@@ -251,7 +252,7 @@
 			</section>
 
 			<nav class="mt-2 flex gap-2" aria-label="Country sections">
-				{#each [['overview', 'Overview'], ['politics', 'Politics'], ['economics', 'Economy']] as [tab, label]}
+				{#each [['overview', 'Overview'], ['politics', 'Politics'], ['economics', 'Economy'], ['history', 'History']] as [tab, label]}
 					<button role="tab" aria-selected={activeTab === tab} on:click={() => setTab(tab)} class={buttonClass}
 						>{label}</button
 					>
@@ -269,6 +270,8 @@
 						<PoliticsTab {selectedInfo} {showSources} />
 					{:else if activeTab === 'economics'}
 						<EconomicsTab {selectedInfo} {selectedName} {showSources} {infoCache} />
+					{:else if activeTab === 'history'}
+						<HistoryTab {selectedName} {showSources} />
 					{/if}
 				</div>
 			</section>
