@@ -47,6 +47,10 @@
 		}
 	});
 
+	$: if (selectedName) {
+		fetchHistoryData(selectedName);
+	}
+
 	$: if (selectedInfo || selectedName || infoCache) {
 		updateHistoryData();
 	}
