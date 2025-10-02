@@ -564,5 +564,299 @@
         "description": "Massive protests and strikes transform French society and culture"
       }
     ]
+  },
+  {
+    "name": "Russia",
+    "overview": "Russia's history stretches from early East Slavic principalities through the expansion of the Tsardom and Russian Empire, a revolutionary 20th century that produced the Soviet Union, and the post-Soviet Russian Federation. It has repeatedly reshaped Eurasian politics, culture, and institutions over a millennium.",
+    "source": {
+      "label": "Manually Curated",
+      "url": "https://en.wikipedia.org/wiki/History_of_Russia"
+    },
+    "keyFacts": [
+      { "label": "Early State Formation", "value": "Kievan Rus (c. 9th century)" },
+      { "label": "Tsardom Declared", "value": "1547 (Ivan IV crowned Tsar)" },
+      { "label": "Empire Declared", "value": "1721 (Peter the Great)" },
+      { "label": "Soviet Period", "value": "1922–1991 (Union of Soviet Socialist Republics)" },
+      { "label": "Current State", "value": "Russian Federation (since 1991)" },
+      { "label": "Capital", "value": "Moscow (various periods; Saint Petersburg was imperial capital 1712–1918)" }
+    ],
+    "ancient": {
+      "period": "c. 8th century CE - 1240",
+      "description": "Early East Slavic tribes coalesced into principalities centered on trade routes. Norse (Varangian) influence and trade with Byzantium shaped Kievan Rus. Christianity arrived from Byzantium in 988, anchoring Orthodox identity.",
+      "keyEvents": [
+        { "year": "c. 800-900", "title": "Formation of Principalities", "description": "East Slavic tribes form principalities along rivers and trade routes" },
+        { "year": "882", "title": "Kiev Unified", "description": "Oleg of Novgorod captures Kiev, forming the nucleus of Kievan Rus" },
+        { "year": "988", "title": "Christianization of Rus'", "description": "Prince Vladimir I adopts Orthodox Christianity from Byzantium" },
+        { "year": "c. 11th century", "title": "Cultural Peak", "description": "Kievan Rus flourishes culturally and economically before decline" }
+      ],
+      "notableFigures": [
+        "Rurik",
+        "Oleg of Novgorod",
+        "Vladimir I",
+        "Yaroslav the Wise"
+      ]
+    },
+    "colonial": {
+      "period": "1240 - 1547",
+      "description": "Mongol conquest and the 'Tatar Yoke' fragmented the region. Centers shifted north to Vladimir and Moscow. Muscovy gradually consolidated power, collecting tribute and expanding influence while nominally acknowledging Mongol overlords.",
+      "keyEvents": [
+        { "year": "1240", "title": "Mongol Invasion", "description": "Mongol armies sack Kiev; principalities become vassals of the Golden Horde" },
+        { "year": "1380", "title": "Battle of Kulikovo", "description": "Dmitry Donskoy defeats a Mongol-led force; symbolic step toward independence" },
+        { "year": "1480", "title": "End of Mongol Overlordship", "description": "Grand Prince Ivan III refuses to pay tribute, consolidating Muscovite autonomy" }
+      ],
+      "notableFigures": [
+        "Ivan I (Kalita)",
+        "Dmitry Donskoy",
+        "Ivan III (the Great)",
+        "Ivan IV (the Terrible)"
+      ]
+    },
+    "independence": {
+      "period": "1547 - 1917",
+      "description": "Muscovy became the Tsardom of Russia and then the Russian Empire. Centralized autocratic rule expanded territory across Eurasia. Westernizing reforms under Peter the Great transformed institutions and created an empire-state that was a major European power by the 19th century.",
+      "keyEvents": [
+        { "year": "1547", "title": "Ivan IV Crowned Tsar", "description": "Ivan IV (the Terrible) adopts the title 'Tsar of All Rus'" },
+        { "year": "1613", "title": "Romanov Dynasty Begins", "description": "After the Time of Troubles, Michael Romanov becomes tsar, restoring stability" },
+        { "year": "1703", "title": "Founding of Saint Petersburg", "description": "Peter the Great establishes a new western-oriented capital" },
+        { "year": "1721", "title": "Russian Empire Proclaimed", "description": "Peter the Great declares Russia an empire following victories in the Great Northern War" },
+        { "year": "1861", "title": "Emancipation of the Serfs", "description": "Tsar Alexander II frees serfs, beginning major social reforms" }
+      ],
+      "notableFigures": [
+        "Ivan IV",
+        "Peter the Great",
+        "Catherine the Great",
+        "Alexander II",
+        "Nicholas II"
+      ]
+    },
+    "modern": {
+      "period": "1917 - Present",
+      "description": "The 1917 revolutions ended imperial rule and produced the Soviet Union, a global superpower from mid-20th century through the Cold War. The USSR collapsed in 1991 and Russia underwent political and economic transformation. Contemporary Russia asserts regional influence while facing internal and external challenges.",
+      "keyEvents": [
+        { "year": "1917", "title": "February and October Revolutions", "description": "Abdication of Nicholas II; Bolsheviks seize power in October" },
+        { "year": "1922", "title": "Soviet Union Formed", "description": "Union of Soviet Socialist Republics established under Bolshevik rule" },
+        { "year": "1941-1945", "title": "Great Patriotic War", "description": "Soviet Union defeats Nazi Germany at enormous cost; emerges as superpower" },
+        { "year": "1991", "title": "Dissolution of the USSR", "description": "Soviet republics declare independence; Russian Federation emerges under Boris Yeltsin" },
+        { "year": "2000", "title": "Vladimir Putin Becomes President", "description": "Beginning of long political dominance and reassertion of centralized authority" }
+      ],
+      "notableFigures": [
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Mikhail Gorbachev",
+        "Boris Yeltsin",
+        "Vladimir Putin"
+      ]
+    },
+    "timeline": [
+      { "year": "882", "era": "Ancient", "title": "Kievan Rus Formed", "description": "Oleg unites Novgorod and Kiev forming the early Rus state" },
+      { "year": "988", "era": "Ancient", "title": "Christianization", "description": "Vladimir I adopts Byzantine Christianity for Kievan Rus" },
+      { "year": "1240", "era": "Medieval", "title": "Kiev Falls", "description": "Mongol invasions destroy Kiev; center shifts north" },
+      { "year": "1613", "era": "Early Modern", "title": "Romanov Dynasty", "description": "Michael Romanov becomes tsar ending the Time of Troubles" },
+      { "year": "1703", "era": "Imperial", "title": "Saint Petersburg Founded", "description": "Peter the Great builds a new western capital" },
+      { "year": "1861", "era": "Imperial", "title": "Serf Emancipation", "description": "Alexander II frees serfs and initiates reforms" },
+      { "year": "1917", "era": "Revolutionary", "title": "Russian Revolutions", "description": "Tsarist regime collapses; Bolsheviks seize power" },
+      { "year": "1945", "era": "Modern", "title": "Superpower Status", "description": "USSR emerges as a principal victor and global power" },
+      { "year": "1991", "era": "Contemporary", "title": "USSR Dissolves", "description": "End of Soviet Union; modern Russian Federation formed" }
+    ]
+  },
+  {
+    "name": "United States",
+    "overview": "The United States was formed from British colonies in North America and developed into a federal republic. Its history includes westward expansion, civil war over slavery, rapid industrialization, emergence as a 20th-century global power, and ongoing social and political evolution.",
+    "source": {
+      "label": "Manually Curated",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_United_States"
+    },
+    "keyFacts": [
+      { "label": "Independence Declared", "value": "July 4, 1776" },
+      { "label": "Constitution Ratified", "value": "June 21, 1788" },
+      { "label": "Civil War", "value": "1861–1865" },
+      { "label": "Industrial Power", "value": "Late 19th - early 20th century" },
+      { "label": "Global Superpower", "value": "From World War II onward" },
+      { "label": "Capital", "value": "Washington, D.C." }
+    ],
+    "ancient": {
+      "period": "Pre-Contact - 1607",
+      "description": "Numerous indigenous nations inhabited North America for millennia with complex societies, trade networks, and diverse cultures. European exploration and early settlements began in the 16th century, leading to sustained colonial presence by the 17th century.",
+      "keyEvents": [
+        { "year": "Pre-1500s", "title": "Native Civilizations", "description": "Complex indigenous societies across the continent with regional variation" },
+        { "year": "1492", "title": "Columbus Arrives", "description": "European contact accelerates Atlantic exchanges and colonization" },
+        { "year": "1607", "title": "Jamestown Founded", "description": "First permanent English settlement in North America" }
+      ],
+      "notableFigures": [
+        "Powhatan",
+        "Pueblo peoples",
+        "Various indigenous leaders"
+      ]
+    },
+    "colonial": {
+      "period": "1607 - 1776",
+      "description": "English, Spanish, French, and Dutch colonies expanded across North America. British colonial society grew diverse economically and religiously. Tensions over governance, taxation, and rights developed between colonists and the British Crown.",
+      "keyEvents": [
+        { "year": "1620", "title": "Mayflower Compact", "description": "Pilgrims establish early self-government in Plymouth" },
+        { "year": "French and Indian War 1754-1763", "title": "Colonial Conflict", "description": "War shifts imperial balance and leads to British debt and new taxes" },
+        { "year": "1765-1775", "title": "Taxation and Protest", "description": "Colonists resist British taxes; events like the Boston Tea Party escalate tensions" }
+      ],
+      "notableFigures": [
+        "John Smith",
+        "Benjamin Franklin",
+        "George Washington",
+        "Thomas Jefferson"
+      ]
+    },
+    "independence": {
+      "period": "1776 - 1815",
+      "description": "Thirteen colonies declared independence and fought a war that produced a new nation. The Articles of Confederation gave way to a federal constitution that balanced state and national power. Early republic periods established institutions and navigated domestic and international challenges.",
+      "keyEvents": [
+        { "year": "1776", "title": "Declaration of Independence", "description": "Thirteen colonies declare independence from Britain on July 4" },
+        { "year": "1787", "title": "Constitutional Convention", "description": "U.S. Constitution drafted to create federal government structure" },
+        { "year": "1791", "title": "Bill of Rights", "description": "First ten amendments protect individual liberties" },
+        { "year": "1812-1815", "title": "War of 1812", "description": "Conflict with Britain affirms American sovereignty" }
+      ],
+      "notableFigures": [
+        "George Washington",
+        "James Madison",
+        "Alexander Hamilton",
+        "Thomas Jefferson"
+      ]
+    },
+    "modern": {
+      "period": "1815 - Present",
+      "description": "The United States expanded west, industrialized, and underwent a civil war that ended slavery and preserved the union. It rose to global prominence in the 20th century, playing central roles in two world wars and leading global institutions during the Cold War era. Domestically it advanced civil rights and social reforms while facing political polarization and economic change.",
+      "keyEvents": [
+        { "year": "1861-1865", "title": "Civil War", "description": "Confederate secession sparks civil war; Union victory preserves the United States and leads to abolition of slavery" },
+        { "year": "1865-1900", "title": "Reconstruction and Industrialization", "description": "Postwar reconstruction, rapid industrial growth, and social change" },
+        { "year": "1917-1918", "title": "World War I", "description": "U.S. participation helps tip balance in favor of Allies" },
+        { "year": "1941-1945", "title": "World War II", "description": "U.S. mobilization defeats Axis powers and establishes international leadership" },
+        { "year": "1947-1991", "title": "Cold War", "description": "Geopolitical rivalry with the Soviet Union shapes foreign and domestic policy" },
+        { "year": "1954-1968", "title": "Civil Rights Movement", "description": "Major legal and social advances toward racial equality" },
+        { "year": "2001", "title": "September 11 Attacks", "description": "Terrorist attacks lead to major shifts in security and foreign policy" }
+      ],
+      "notableFigures": [
+        "Abraham Lincoln",
+        "Theodore Roosevelt",
+        "Franklin D. Roosevelt",
+        "Martin Luther King Jr.",
+        "Dwight D. Eisenhower"
+      ]
+    },
+    "timeline": [
+      { "year": "1607", "era": "Colonial", "title": "Jamestown Founded", "description": "First permanent English settlement" },
+      { "year": "1776", "era": "Independence", "title": "Declaration of Independence", "description": "Colonies declare independence from Britain" },
+      { "year": "1789", "era": "Independence", "title": "Washington Inaugurated", "description": "George Washington becomes first U.S. president" },
+      { "year": "1861", "era": "Modern", "title": "Civil War Begins", "description": "Conflict over slavery and union divides the nation" },
+      { "year": "1865", "era": "Modern", "title": "Slavery Abolished", "description": "13th Amendment ends slavery in the United States" },
+      { "year": "1917", "era": "Modern", "title": "U.S. Enters World War I", "description": "America joins Allies in the First World War" },
+      { "year": "1941", "era": "Modern", "title": "Pearl Harbor", "description": "Attack draws U.S. fully into World War II" },
+      { "year": "1964-1965", "era": "Modern", "title": "Civil Rights Legislation", "description": "Civil Rights Act and Voting Rights Act expand legal protections" },
+      { "year": "2001", "era": "Contemporary", "title": "September 11", "description": "Terrorist attacks trigger global security campaigns" }
+    ]
+  },
+  {
+    "name": "China",
+    "overview": "China's history spans prehistoric societies, the formation of dynastic states on the North China Plain, a long imperial era of alternating unity and fragmentation, and dramatic political transformation in the 20th century that produced the modern People's Republic. The record mixes archaeological evidence, written records dating back millennia, and later historiographic tradition. Major transitions include the emergence of bronze-age state-level societies, imperial unification under Qin, the long cycles of dynastic rise and fall, foreign conquest and restoration, foreign incursions and internal reform in the 19th century, the 1911 revolution that ended imperial rule, and the 20th-century civil war followed by the founding of the PRC in 1949.",
+    "source": {
+      "label": "Manually Curated and Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/history-of-China"
+    },
+    "keyFacts": [
+      { "label": "Earliest state-level society (Erlitou / Xia association)", "value": "c. 2100–1600 BCE (Erlitou culture correlates to traditional Xia in some scholarship)" },
+      { "label": "Shang dynasty (archaeologically attested)", "value": "c. 1600–1046 BCE" },
+      { "label": "Zhou and the Warring States", "value": "c. 1046–221 BCE (Eastern Zhou: Spring & Autumn and Warring States periods)" },
+      { "label": "Imperial unification (Qin)", "value": "221 BCE (Qin centralization, standardization of script, weights, measures)" },
+      { "label": "Major imperial dynasties", "value": "Han, Tang, Song, Yuan, Ming, Qing (each transformed institutions and society)" },
+      { "label": "End of imperial rule", "value": "1911–1912 (Xinhai Revolution; Qing abdication 1912)" },
+      { "label": "People's Republic of China founded", "value": "October 1, 1949" },
+      { "label": "Major 20th-century policy shifts", "value": "Land reform and collectivization; Great Leap Forward (late 1950s); Cultural Revolution (1966–1976); Reform and opening under Deng Xiaoping from 1978" }
+    ],
+    "ancient": {
+      "period": "Paleolithic to Shang (up to c. 1046 BCE)",
+      "description": "Human presence in what is now China extends deep into prehistory. By the late Neolithic a number of regional cultures (Yangshao, Longshan, Erlitou) show increasing social complexity. The Erlitou archaeological horizon (often associated with later narratives of the Xia) displays palatial remains, bronze production, and urban traits. The Shang dynasty is the first firmly attested state in the region through oracle-bone inscriptions, bronze finds, and identifiable capitals in the Yellow River basin.",
+      "keyEvents": [
+        { "year": "c. 3000–2000 BCE", "title": "Neolithic regional cultures", "description": "Yangshao and Longshan cultures develop pottery, agriculture, and proto-urban settlements" },
+        { "year": "c. 1900–1500 BCE", "title": "Erlitou culture", "description": "Archaeological complex with bronze, urban planning; often associated with the Xia tradition." },
+        { "year": "c. 1600–1046 BCE", "title": "Shang dynasty", "description": "Bronze-era polity with writing on oracle bones, complex ritual, and state centers near Anyang" }
+      ],
+      "notableFigures": [
+        "Legendary: Yu the Great (associated with flood control and Xia foundation)",
+        "Archaeological leaders are not named in same way as later dynastic rulers"
+      ]
+    },
+    "colonial": {
+      "period": "Zhou, Spring and Autumn, Warring States (c. 1046–221 BCE)",
+      "description": "The Zhou dynasty introduced the concept of a 'Mandate of Heaven' and a feudal-like order that gradually fragmented. The later Eastern Zhou splits into the Spring and Autumn period and the Warring States, an era of intense interstate competition, institutional innovation, and intellectual ferment that produced Confucianism, Daoism, Legalism, and other schools.",
+      "keyEvents": [
+        { "year": "c. 1046 BCE", "title": "Zhou replace Shang", "description": "Zhou establish a ruling house and ritual-political order" },
+        { "year": "c. 770–476 BCE", "title": "Spring and Autumn period", "description": "Fragmentation of Zhou power; rise of regional hegemonies and early schools of thought" },
+        { "year": "c. 475–221 BCE", "title": "Warring States period", "description": "Seven major states contest for supremacy; administrative and military reforms accelerate" }
+      ],
+      "notableFigures": [
+        "Confucius (Kongzi)",
+        "Laozi (traditionally associated with Daoist thought)",
+        "Statesmen and strategists: Sun Wu (Sun Tzu)", 
+        "Reformers in Qin and other states"
+      ]
+    },
+    "independence": {
+      "period": "Imperial unification and classical empires (Qin to Tang, 221 BCE–907 CE)",
+      "description": "Qin Shi Huang's short Qin dynasty unified the core Chinese states in 221 BCE, standardized script, weights and measures, and began large infrastructure projects. The subsequent Han dynasty consolidated imperial institutions, expanded territory, and established patterns of governance, bureaucracy, and Confucian state ideology that shaped later imperial order. Periods of fragmentation alternate with reunification; the Sui and Tang dynasties reunified China and in the Tang era (618–907) China reached high levels of cosmopolitan culture, commerce, and state capacity.",
+      "keyEvents": [
+        { "year": "221 BCE", "title": "Qin unification", "description": "Qin state unites China under central rule; legalist reforms; beginnings of the Great Wall projects" },
+        { "year": "206 BCE–220 CE", "title": "Han dynasty", "description": "Imperial consolidation, expansion into Central Asia, development of the Silk Road, and long-lasting bureaucratic frameworks" },
+        { "year": "581–618", "title": "Sui reunification", "description": "Short Sui dynasty reunifies China after centuries of division and builds Grand Canal infrastructure" },
+        { "year": "618–907", "title": "Tang dynasty", "description": "Cultural and political apex with strong central government, cosmopolitan capital at Chang'an, and flourishing arts and scholarship" }
+      ],
+      "notableFigures": [
+        "Qin Shi Huang (First Emperor)",
+        "Han emperors and scholars (e.g., Emperor Wu of Han)",
+        "Tang poets and statesmen (e.g., Li Bai, Du Fu, Emperor Taizong)"
+      ]
+    },
+    "modern": {
+      "period": "Song to present (960 CE–present), with focus 13th–21st centuries",
+      "description": "The Song dynasty refined commercial and technological innovation but faced military pressure from northern peoples. The Mongol Yuan dynasty (13th century) incorporated China into a larger Eurasian empire. The Ming and Qing dynasties restored native rule and controlled vast territories while managing trade and tributary relations. European contact, the Opium Wars, unequal treaties, internal rebellions (Taiping), and imperial decline in the 19th century exposed the Qing state. The 1911 Xinhai Revolution ended imperial rule and created the Republic of China. Warlord fragmentation and the Sino-Japanese War weakened the republic, followed by a civil war between the Kuomintang (KMT) and the Chinese Communist Party (CCP). The CCP declared the People's Republic of China on October 1, 1949. The PRC experienced land reform and collectivization, the Great Leap Forward and famine, the Cultural Revolution, then major economic reforms and opening beginning in 1978 that shifted policy toward market mechanisms while retaining party control.",
+      "keyEvents": [
+        { "year": "960–1279", "title": "Song dynasty", "description": "Commercialization, technological innovation (printing, compass), urban growth, and scholarly culture" },
+        { "year": "1271–1368", "title": "Yuan dynasty (Mongol)", "description": "Kublai Khan establishes Yuan; China incorporated into a trans-Eurasian empire" },
+        { "year": "1368–1644", "title": "Ming dynasty", "description": "Native Chinese rule restored; maritime expeditions and consolidation of bureaucracy" },
+        { "year": "1644–1912", "title": "Qing dynasty", "description": "Manchu-led empire expands and governs until internal crises and foreign pressures in the 19th century" },
+        { "year": "1839–1842", "title": "First Opium War", "description": "Military defeat opens treaty ports and begins 'unequal treaties' era" },
+        { "year": "1850–1864", "title": "Taiping Rebellion", "description": "Large-scale civil war that weakens the Qing and causes immense casualties" },
+        { "year": "1911–1912", "title": "Xinhai Revolution", "description": "Qing abdicates; Republic of China established" },
+        { "year": "1937–1945", "title": "Second Sino-Japanese War", "description": "Full-scale Japanese invasion; massive destruction and civilian suffering" },
+        { "year": "1945–1949", "title": "Civil War resumes", "description": "Communists defeat many Nationalist forces on the mainland" },
+        { "year": "1949", "title": "People's Republic proclaimed", "description": "Mao Zedong proclaims the PRC from Tiananmen on October 1, 1949" },
+        { "year": "1958–1962", "title": "Great Leap Forward", "description": "Rapid industrialization and collectivization campaign that led to widespread famine and millions of deaths" },
+        { "year": "1966–1976", "title": "Cultural Revolution", "description": "Political campaign that disrupted institutions, education, and economy and caused social upheaval" },
+        { "year": "1978 onward", "title": "Reform and opening", "description": "Deng Xiaoping initiates market-oriented reforms and opening to foreign investment leading to sustained economic growth" }
+      ],
+      "notableFigures": [
+        "Kublai Khan (Yuan founder)",
+        "Zhu Yuanzhang (Hongwu Emperor, Ming founder)",
+        "Empress Dowager Cixi (late Qing power figure)",
+        "Sun Yat-sen (revolutionary leader, Republic founder)",
+        "Mao Zedong",
+        "Deng Xiaoping",
+        "Contemporary leaders shaping policy and reform"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 2100–1600 BCE", "era": "Ancient", "title": "Erlitou / Xia horizon", "description": "Early state-level archaeology in the Central Plains often associated with Xia tradition" },
+      { "year": "c. 1600–1046 BCE", "era": "Ancient", "title": "Shang dynasty (bronze age state)", "description": "Oracle bones and bronze ritual apparatus provide clear historical record" },
+      { "year": "c. 1046–256 BCE", "era": "Colonial", "title": "Zhou dynasty and ideological formation", "description": "Mandate of Heaven concept and emergence of major philosophical schools" },
+      { "year": "221 BCE", "era": "Independence", "title": "Qin unifies China", "description": "First imperial centralization, script standardization, and legalist institutions" },
+      { "year": "206 BCE–220 CE", "era": "Independence", "title": "Han dynasty", "description": "Institutional consolidation and Silk Road connections" },
+      { "year": "618–907", "era": "Independence", "title": "Tang dynasty", "description": "Cosmopolitan golden age of culture and governance" },
+      { "year": "960–1279", "era": "Modern", "title": "Song innovations", "description": "Economic and technological advances that reshape society" },
+      { "year": "1271–1368", "era": "Modern", "title": "Yuan (Mongol) rule", "description": "China integrated into a Eurasian imperial system" },
+      { "year": "1368–1644", "era": "Modern", "title": "Ming restoration", "description": "Maritime expeditions and cultural consolidation" },
+      { "year": "1644–1912", "era": "Modern", "title": "Qing dynasty", "description": "Last imperial dynasty, territorial peak and later crisis" },
+      { "year": "1839–1842", "era": "Modern", "title": "Opium War", "description": "Foreign military defeats expose Qing weakness" },
+      { "year": "1911", "era": "Modern", "title": "Xinhai Revolution", "description": "End of imperial rule; republic declared 1912" },
+      { "year": "1937–1945", "era": "Modern", "title": "War with Japan", "description": "Devastating invasion and occupation across eastern China" },
+      { "year": "1949", "era": "Contemporary", "title": "PRC founded", "description": "Communist victory establishes the People's Republic on October 1, 1949" },
+      { "year": "1958–1962", "era": "Contemporary", "title": "Great Leap Forward", "description": "Economic campaign with catastrophic human cost" },
+      { "year": "1966–1976", "era": "Contemporary", "title": "Cultural Revolution", "description": "Mass political movement that disrupted social and institutional life" },
+      { "year": "1978", "era": "Contemporary", "title": "Reform and opening begins", "description": "Market reforms and integration into the global economy" }
+    ]
   }
 ]
