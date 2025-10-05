@@ -438,7 +438,7 @@ export async function fetchHistoryDataModule(params: {
 	persist?: boolean;
 }) {
 	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = false } = params;
-	
+
 	if (!name) return;
 
 	if (historyInFlight.has(name)) return historyInFlight.get(name)!;

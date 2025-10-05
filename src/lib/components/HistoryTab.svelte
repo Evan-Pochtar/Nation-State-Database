@@ -155,7 +155,7 @@
 									class="absolute inset-0 translate-y-full bg-gradient-to-t from-cyan-500/10 to-transparent transition-transform duration-500 group-hover:translate-y-0"
 								></div>
 								<div class="relative z-10">
-									<div class="mb-1 text-xs font-semibold uppercase tracking-wide text-cyan-400">{fact.label}</div>
+									<div class="mb-1 text-xs font-semibold tracking-wide text-cyan-400 uppercase">{fact.label}</div>
 									<div class="text-sm text-white/90">{fact.value}</div>
 								</div>
 							</div>
@@ -165,10 +165,12 @@
 			</div>
 		{:else if activeSection === 'timeline' && historyData.timeline}
 			<div class="relative space-y-4">
-				<div class="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-500/50 via-cyan-500/20 to-transparent"></div>
+				<div
+					class="absolute top-0 bottom-0 left-4 w-px bg-gradient-to-b from-cyan-500/50 via-cyan-500/20 to-transparent"
+				></div>
 				{#each historyData.timeline as event, i}
-					<div class="relative pl-10 animate-fade-in" style="animation-delay: {i * 0.1}s">
-						<div class="absolute left-2 top-2 h-5 w-5 rounded-full border-2 border-cyan-500 bg-black">
+					<div class="animate-fade-in relative pl-10" style="animation-delay: {i * 0.1}s">
+						<div class="absolute top-2 left-2 h-5 w-5 rounded-full border-2 border-cyan-500 bg-black">
 							<div class="absolute inset-1 animate-ping rounded-full bg-cyan-400 opacity-75"></div>
 						</div>
 						<div
@@ -196,12 +198,12 @@
 					></div>
 				</div>
 				<div class="relative z-10">
-					<h3 class="mb-3 text-lg font-bold capitalize text-cyan-300">{activeSection} Period</h3>
+					<h3 class="mb-3 text-lg font-bold text-cyan-300 capitalize">{activeSection} Period</h3>
 					{#if historyData[activeSection].period}
 						<div class="mb-3 font-mono text-sm text-cyan-400">{historyData[activeSection].period}</div>
 					{/if}
 					<p class="mb-4 leading-relaxed text-white/80">{historyData[activeSection].description}</p>
-					
+
 					{#if historyData[activeSection].keyEvents}
 						<div class="space-y-3">
 							<div class="text-sm font-semibold text-cyan-300">Key Events</div>

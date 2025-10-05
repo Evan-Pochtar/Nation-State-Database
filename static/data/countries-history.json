@@ -756,7 +756,11 @@
     "overview": "China's history spans prehistoric societies, the formation of dynastic states on the North China Plain, a long imperial era of alternating unity and fragmentation, and dramatic political transformation in the 20th century that produced the modern People's Republic. The record mixes archaeological evidence, written records dating back millennia, and later historiographic tradition. Major transitions include the emergence of bronze-age state-level societies, imperial unification under Qin, the long cycles of dynastic rise and fall, foreign conquest and restoration, foreign incursions and internal reform in the 19th century, the 1911 revolution that ended imperial rule, and the 20th-century civil war followed by the founding of the PRC in 1949.",
     "source": {
       "label": "Manually Curated and Encyclopaedia Britannica",
-      "url": "https://www.britannica.com/topic/history-of-China"
+      "url": "https://www.britannica.com/topic/history-of-China",
+      "urls": [
+        "https://www.britannica.com/topic/history-of-China",
+        "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      ]
     },
     "keyFacts": [
       { "label": "Earliest state-level society (Erlitou / Xia association)", "value": "c. 2100–1600 BCE (Erlitou culture correlates to traditional Xia in some scholarship)" },
@@ -857,6 +861,195 @@
       { "year": "1958–1962", "era": "Contemporary", "title": "Great Leap Forward", "description": "Economic campaign with catastrophic human cost" },
       { "year": "1966–1976", "era": "Contemporary", "title": "Cultural Revolution", "description": "Mass political movement that disrupted social and institutional life" },
       { "year": "1978", "era": "Contemporary", "title": "Reform and opening begins", "description": "Market reforms and integration into the global economy" }
+    ]
+  },
+  {
+    "name": "United Kingdom",
+    "overview": "The United Kingdom formed through the political union of England and Scotland (1707), later including Ireland (1801) before most of Ireland left the union in 1922. Its history includes prehistoric settlement, Roman and Anglo-Saxon eras, Norman conquest, the development of parliamentary monarchy, industrial and imperial expansion, world wars, decolonization, European integration, and the recent political realignments around Brexit and constitutional questions in Scotland and Northern Ireland.",
+    "source": {
+      "label": "Manually Curated; primary references: Britannica;",
+      "url": "https://www.britannica.com/place/United-Kingdom/Sports-and-recreation#ref214519",
+      "urls": [
+        "https://www.britannica.com/place/United-Kingdom/Sports-and-recreation#ref214519",
+        "https://www.parliament.uk/about/living-heritage/evolutionofparliament/legislativescrutiny/act-of-union-1707/"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Acts of Union (England & Scotland)", "value": "May 1, 1707" },
+      { "label": "Act of Union (Great Britain & Ireland)", "value": "Jan 1, 1801" },
+      { "label": "Industrial Revolution", "value": "late 18th – 19th century" },
+      { "label": "World Wars", "value": "1914–1918; 1939–1945" },
+      { "label": "Decolonization", "value": "mid-20th century" },
+      { "label": "Brexit referendum", "value": "June 23, 2016; UK left EU Jan 31, 2020 (transition ended Dec 31, 2020)" },
+      { "label": "Constituent nations", "value": "England, Scotland, Wales, Northern Ireland" },
+      { "label": "Capital", "value": "London" }
+    ],
+    "ancient": {
+      "period": "Prehistory to Roman Britain (up to c. 410 CE)",
+      "description": "Human groups occupied the British Isles from the Paleolithic. Neolithic and Bronze Age cultures produced monuments and regional chiefdoms. Roman conquest (43 CE) integrated southern Britain into the Roman Empire for centuries, leaving infrastructure and urban centers.",
+      "keyEvents": [
+        { "year": "c. 2500 BCE", "title": "Neolithic monuments", "description": "Construction of large communal monuments such as Stonehenge" },
+        { "year": "43 CE", "title": "Roman invasion", "description": "Roman forces under Claudius begin conquest of southern Britain" },
+        { "year": "c. 410", "title": "Roman withdrawal", "description": "Roman administration collapses as legions withdraw" }
+      ],
+      "notableFigures": [
+        "Prehistoric and Roman-era leaders are not consistently named in later chronicles"
+      ]
+    },
+    "colonial": {
+      "period": "Anglo-Saxon, Viking, Norman to Late Middle Ages (c. 5th century–15th century)",
+      "description": "Post-Roman migrations saw Anglo-Saxon kingdoms emerge. Viking incursions and settlements reshaped parts of the isles. The 1066 Norman Conquest transformed aristocratic structures and governance. Over centuries monarchs consolidated authority and developed institutions that would later evolve into parliamentary systems.",
+      "keyEvents": [
+        { "year": "c. 597", "title": "Christian mission", "description": "Augustine of Canterbury begins mission to Anglo-Saxon kingdoms" },
+        { "year": "793", "title": "Viking raids begin", "description": "Norse raiders attack Lindisfarne and establish settlements" },
+        { "year": "1066", "title": "Norman Conquest", "description": "William of Normandy defeats Harold at Hastings and reshapes English governance" },
+        { "year": "1215", "title": "Magna Carta", "description": "Baronial pressure forces King John to accept limits on royal power" }
+      ],
+      "notableFigures": [
+        "Alfred the Great",
+        "William the Conqueror",
+        "Henry II",
+        "Magna Carta barons"
+      ]
+    },
+    "independence": {
+      "period": "Late Middle Ages to early modern (15th–17th centuries)",
+      "description": "England and later Britain developed stronger centralized monarchy and legal institutions. Religious conflict and constitutional struggles culminated in the Stuart conflicts, Civil War, execution of Charles I, the Interregnum under Cromwell, and a restored but constitutionally limited monarchy after the Glorious Revolution of 1688.",
+      "keyEvents": [
+        { "year": "1534", "title": "English Reformation", "description": "Henry VIII breaks with Rome and establishes royal supremacy over the Church of England" },
+        { "year": "1642–1651", "title": "English Civil Wars", "description": "Conflict between king and parliament leads to temporary abolition of the monarchy" },
+        { "year": "1688–1689", "title": "Glorious Revolution", "description": "William and Mary accept constitutional monarchy and the Bill of Rights" },
+        { "year": "1707", "title": "Union of England and Scotland", "description": "Acts of Union create the Kingdom of Great Britain." }
+      ],
+      "notableFigures": [
+        "Henry VIII",
+        "Oliver Cromwell",
+        "William III and Mary II",
+        "John Locke (intellectual influence)"
+      ]
+    },
+    "modern": {
+      "period": "18th century to present",
+      "description": "The Industrial Revolution began in Great Britain and drove urbanization, economic change, and global empire. Britain led an expansive colonial empire in the 18th and 19th centuries. The 20th century included two world wars, postwar welfare-state development, decolonization, the establishment of the NHS, entry into and later exit from the European Union, and ongoing constitutional debates within the union.",
+      "keyEvents": [
+        { "year": "1760s–19th century", "title": "Industrial Revolution", "description": "Transformative technological and economic changes centered in Britain" },
+        { "year": "1801", "title": "United Kingdom of Great Britain and Ireland", "description": "Act of Union merges Great Britain and Ireland into a single polity" },
+        { "year": "1914–1918", "title": "World War I", "description": "Mass mobilization with deep social and political impacts" },
+        { "year": "1939–1945", "title": "World War II", "description": "Defeat of Axis powers; Britain emerges with altered imperial role" },
+        { "year": "1947–1960s", "title": "Decolonization", "description": "Independence for many colonies and transition to Commonwealth" },
+        { "year": "1973", "title": "EEC membership", "description": "UK joins the European Economic Community (later EU)" },
+        { "year": "2016", "title": "Brexit referendum", "description": "Voters choose to leave the EU; political realignments follow" }
+      ],
+      "notableFigures": [
+        "Winston Churchill",
+        "Margaret Thatcher",
+        "Queen Victoria",
+        "Clement Attlee",
+        "Contemporary prime ministers and union leaders"
+      ]
+    },
+    "timeline": [
+      { "year": "43", "era": "Ancient", "title": "Roman conquest begins", "description": "Roman invasion and provincial rule in southern Britain" },
+      { "year": "878", "era": "Medieval", "title": "Alfred and the Anglo-Saxon polity", "description": "Alfred the Great resists Viking advances and consolidates Anglo-Saxon rule" },
+      { "year": "1066", "era": "Medieval", "title": "Norman Conquest", "description": "William of Normandy defeats Harold and remakes English society" },
+      { "year": "1215", "era": "Medieval", "title": "Magna Carta", "description": "Early constraint on royal power" },
+      { "year": "1707", "era": "Early Modern", "title": "Acts of Union", "description": "England and Scotland unite as Great Britain" },
+      { "year": "1801", "era": "Modern", "title": "United Kingdom created", "description": "Great Britain and Ireland form a union under one parliament" },
+      { "year": "1914–1918", "era": "Modern", "title": "World War I", "description": "Massive imperial and domestic mobilization" },
+      { "year": "1939–1945", "era": "Modern", "title": "World War II", "description": "Global conflict with major national impacts" },
+      { "year": "2016", "era": "Contemporary", "title": "Brexit referendum", "description": "UK votes to leave the European Union" }
+    ]
+  },
+  {
+    "name": "Ireland",
+    "overview": "Ireland's history moves from ancient Gaelic kingdoms and monastic scholarship through Viking and Norman influence to centuries of English and later British rule, a catastrophic 19th-century famine, nationalist movements, partition in the early 20th century, and independent statehood for most of the island with Northern Ireland remaining in the UK. The late 20th century saw political violence in Northern Ireland followed by peace processes culminating in the 1998 Good Friday Agreement.",
+    "source": {
+      "label": "Manually Curated; primary references: Britannica;",
+      "url": "https://www.britannica.com/place/Ireland/Sports-and-recreation#ref800525",
+      "urls": [
+        "https://www.britannica.com/place/Ireland/Sports-and-recreation#ref800525",
+        "https://www.britannica.com/topic/Good-Friday-Agreement"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Viking settlements", "value": "from late 8th century" },
+      { "label": "Norman arrival", "value": "12th century (Strongbow and Anglo-Norman incursions)" },
+      { "label": "Act of Union (with Great Britain)", "value": "Jan 1, 1801" },
+      { "label": "Great Famine", "value": "1845–1852 (mass starvation, disease, and emigration)" },
+      { "label": "Easter Rising", "value": "April 1916" },
+      { "label": "Partition and Irish Free State", "value": "1921–1922" },
+      { "label": "Republic declared", "value": "April 18, 1949 (Republic of Ireland Act 1948 took effect)" },
+      { "label": "Good Friday Agreement", "value": "April 10, 1998; ratified May 22, 1998" }
+    ],
+    "ancient": {
+      "period": "Prehistoric to early medieval (up to c. 800 CE)",
+      "description": "Ireland developed distinct Celtic languages and culture. Early medieval Ireland is noted for monastic centers that produced scholarship, art, and missionary activity across Europe.",
+      "keyEvents": [
+        { "year": "c. 400–800", "title": "Early Christian monasticism", "description": "Monasteries such as Clonmacnoise and Skellig Michael become centers of learning and art" },
+        { "year": "c. 800s", "title": "Viking raids and settlements", "description": "Norsemen raid and later found coastal towns including Dublin" }
+      ],
+      "notableFigures": [
+        "Saint Patrick (missionary figure associated with early conversion)",
+        "Saint Columba (Colum Cille)"
+      ]
+    },
+    "colonial": {
+      "period": "Norman invasion to 17th century (12th–17th centuries)",
+      "description": "Anglo-Norman lords established footholds and later English crown efforts sought greater control. Tudor and Stuart policies accelerated plantation, confiscation of land, and religious and political subordination of much of the native Gaelic elite.",
+      "keyEvents": [
+        { "year": "1169–1171", "title": "Norman invasion begins", "description": "Arrival of Anglo-Norman forces under figures such as Richard de Clare (Strongbow)" },
+        { "year": "16th–17th centuries", "title": "Plantations and conquest", "description": "English and Scottish plantations, especially in Ulster, alter landholding and demographics" },
+        { "year": "1690", "title": "Battle of the Boyne", "description": "Williamite victory consolidates Protestant ascendancy" }
+      ],
+      "notableFigures": [
+        "Strongbow (Richard de Clare)",
+        "Hugh O'Neill (Irish leader of resistance)",
+        "Oliver Cromwell (led brutal 17th-century campaigns in Ireland)"
+      ]
+    },
+    "independence": {
+      "period": "19th – early 20th centuries (nationalism, famine, and revolution)",
+      "description": "The 19th century saw agitation for Catholic emancipation, land reform, and Irish self-government. The Great Famine caused demographic collapse and radicalized politics. The early 20th century witnessed cultural revival and militant republicanism culminating in the 1916 Easter Rising and a war for independence that led to partition.",
+      "keyEvents": [
+        { "year": "1801", "title": "Act of Union", "description": "Irish parliament abolished; Ireland part of the United Kingdom" },
+        { "year": "1845–1852", "title": "Great Famine", "description": "Potato blight causes mass death and emigration; long-term social change" },
+        { "year": "1916", "title": "Easter Rising", "description": "Armed insurrection in Dublin sparks renewed republican momentum" },
+        { "year": "1919–1921", "title": "War of Independence", "description": "IRA campaigns and negotiations lead to Anglo-Irish Treaty" },
+        { "year": "1921–1922", "title": "Partition and Free State", "description": "Island partitioned; Irish Free State established for 26 counties; Northern Ireland remains in UK" }
+      ],
+      "notableFigures": [
+        "Charles Stewart Parnell",
+        "Daniel O'Connell",
+        "Michael Collins",
+        "Eamon de Valera"
+      ]
+    },
+    "modern": {
+      "period": "20th century to present",
+      "description": "The Irish Free State evolved into the modern Republic of Ireland. Northern Ireland experienced decades of sectarian conflict known as the Troubles from the late 1960s until a negotiated settlement. The 1998 Good Friday Agreement created a power-sharing devolved government in Northern Ireland and established frameworks for British-Irish cooperation. The Republic of Ireland has become a modern EU member state with substantial economic transformation since the late 20th century.",
+      "keyEvents": [
+        { "year": "1922", "title": "Irish Free State established", "description": "Dominion status within the British Commonwealth for 26 counties" },
+        { "year": "1937", "title": "New constitution", "description": "Ireland adopts a new constitution as Éire with greater sovereignty" },
+        { "year": "1949", "title": "Republic of Ireland declared", "description": "Ireland formally leaves the British Commonwealth as a republic" },
+        { "year": "1969–1998", "title": "The Troubles", "description": "Protracted sectarian and political conflict in Northern Ireland with violence and political deadlock" },
+        { "year": "1998", "title": "Good Friday Agreement", "description": "Multi-party agreement establishing power-sharing and cross-border institutions" }
+      ],
+      "notableFigures": [
+        "Michael Collins",
+        "Eamon de Valera",
+        "Bertie Ahern (Irish Taoiseach involved in peace talks)"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 400–800", "era": "Ancient", "title": "Early Christian Ireland", "description": "Monastic scholarship and missionary activity" },
+      { "year": "c. 800s", "era": "Medieval", "title": "Viking settlements", "description": "Foundation of coastal towns and trade centers" },
+      { "year": "1169", "era": "Colonial", "title": "Norman invasion", "description": "Beginning of sustained Anglo-Norman presence" },
+      { "year": "1801", "era": "Modern", "title": "Act of Union", "description": "Ireland incorporated into the United Kingdom" },
+      { "year": "1845–1852", "era": "Modern", "title": "Great Famine", "description": "Demographic collapse and mass emigration" },
+      { "year": "1916", "era": "Modern", "title": "Easter Rising", "description": "Pivotal rebellion leading to radicalization of Irish nationalism" },
+      { "year": "1922", "era": "Modern", "title": "Partition and Free State", "description": "Creation of Irish Free State and separate Northern Ireland" },
+      { "year": "1969–1998", "era": "Contemporary", "title": "The Troubles", "description": "Conflict in Northern Ireland ending with peace accords" },
+      { "year": "1998", "era": "Contemporary", "title": "Good Friday Agreement", "description": "Peace settlement and political framework for Northern Ireland" }
     ]
   }
 ]
