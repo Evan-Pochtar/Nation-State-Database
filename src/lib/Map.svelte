@@ -177,7 +177,7 @@
 
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
-			pathCache.clear(); // Clear cache for focus view
+			pathCache.clear();
 		} catch (error) {
 			const fallback = d3.geoMercator();
 			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
@@ -266,6 +266,7 @@
 		focusPathGenerator = null;
 		pathCache.clear();
 
+		await tick();
 		handleResize();
 		resetZoom();
 		initZoom();
