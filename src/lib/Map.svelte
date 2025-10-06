@@ -404,8 +404,20 @@
 				bind:this={svgEl}
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
-					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(82.8% 0.111 230.318)" opacity="0.75"
-					></rect>
+					<defs>
+						<linearGradient id="waterBase" x1="0%" y1="0%" x2="0%" y2="100%">
+							{#if currentTheme === 'colorful'}
+								<stop offset="0%" stop-color="oklch(84% 0.12 235)" />
+								<stop offset="50%" stop-color="oklch(81% 0.115 232)" />
+								<stop offset="100%" stop-color="oklch(77% 0.11 228)" />
+							{:else}
+								<stop offset="0%" stop-color="oklch(87% 0.08 235)" />
+								<stop offset="50%" stop-color="oklch(84% 0.09 232)" />
+								<stop offset="100%" stop-color="oklch(80% 0.10 230)" />
+							{/if}
+						</linearGradient>
+					</defs>
+					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill={"url(#waterBase)"}></rect>
 				{/if}
 
 				<g bind:this={mapGroup} style="will-change: transform;">
