@@ -266,7 +266,7 @@
 				<div class="pr-1">
 					{#if activeTab === 'overview'}
 						<OverviewTab {selectedInfo} {showSources} />
-					<!-- {:else if activeTab === 'politics'}
+						<!-- {:else if activeTab === 'politics'}
 						<PoliticsTab {selectedInfo} {showSources} /> -->
 					{:else if activeTab === 'economics'}
 						<EconomicsTab {selectedInfo} {selectedName} {showSources} {infoCache} />

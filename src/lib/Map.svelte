@@ -57,6 +57,10 @@
 	let topoObjectKey: string | null = null;
 	let countryColorMap: string[] = [];
 
+	let pathCache = new Map<string, string>();
+	let hoveredCountry: number | null = null;
+	let zoomRAF: number | null = null;
+
 	function getProjection(type: string): d3.GeoProjection {
 		switch (type) {
 			case 'mercator':
@@ -71,6 +75,7 @@
 
 	function handleProjectionChange(projection: string) {
 		currentProjection = projection;
+		pathCache.clear();
 		handleResize();
 		if (selectedFeature) setupFocusProjection();
 		resetZoom();
@@ -104,6 +109,7 @@
 			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
+
 			buildColorfulPalette();
 			handleResize();
 			window.addEventListener('resize', throttledResize);
@@ -116,12 +122,14 @@
 		window.removeEventListener('resize', throttledResize);
 		if (resizeTimeout) clearTimeout(resizeTimeout);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
+		if (zoomRAF) cancelAnimationFrame(zoomRAF);
 		if (svgEl && zoomBehavior) {
 			d3.select(svgEl).on('.zoom', null);
 			zoomBehavior = null;
 		}
 		document.body.style.userSelect = '';
 		(document.body as any).style.webkitUserSelect = '';
+		pathCache.clear();
 	});
 
 	function handleResize() {
@@ -141,6 +149,7 @@
 			projection = getProjection(currentProjection);
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
+			pathCache.clear();
 			if (selectedFeature) setupFocusProjection();
 		}
 		initZoom();
@@ -168,6 +177,7 @@
 
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
+			pathCache.clear(); // Clear cache for focus view
 		} catch (error) {
 			const fallback = d3.geoMercator();
 			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
@@ -200,6 +210,42 @@
 		return -1;
 	}
 
+	function getPath(country: GeoFeature, generator: d3.GeoPath<any, GeoFeature>, index: number): string {
+		const key = `${index}-${generator === pathGenerator ? 'main' : 'focus'}`;
+		if (!pathCache.has(key)) {
+			pathCache.set(key, generator(country as any) || '');
+		}
+		return pathCache.get(key)!;
+	}
+
+	function handleMapClick(e: MouseEvent) {
+		if (isAnimating || !e.target || !(e.target instanceof SVGPathElement)) return;
+		const index = parseInt(e.target.dataset.index || '-1');
+		if (index >= 0 && index < countries.length) {
+			onCountryClick(countries[index]);
+		}
+	}
+
+	function handleMapKeydown(e: KeyboardEvent) {
+		if ((e.key === 'Enter' || e.key === ' ') && e.target instanceof SVGPathElement) {
+			e.preventDefault();
+			const index = parseInt(e.target.dataset.index || '-1');
+			if (index >= 0 && index < countries.length) {
+				onCountryClick(countries[index]);
+			}
+		}
+	}
+
+	function handleMapHover(e: PointerEvent) {
+		const target = e.target as Element | null;
+		if (target instanceof SVGPathElement) {
+			const index = parseInt(target.dataset.index || '-1');
+			hoveredCountry = index >= 0 ? index : null;
+		} else {
+			hoveredCountry = null;
+		}
+	}
+
 	async function onCountryClick(f: GeoFeature) {
 		if (!f || isAnimating) return;
 		selectedFeature = f;
@@ -218,7 +264,8 @@
 		selectedName = null;
 		focusProjection = undefined;
 		focusPathGenerator = null;
-		await tick();
+		pathCache.clear();
+
 		handleResize();
 		resetZoom();
 		initZoom();
@@ -266,25 +313,37 @@
 			})
 			.on('zoom', (event: any) => {
 				if (!mapGroup || !svgEl) return;
-				const t = event.transform;
-				currentTransform = t;
-				const k = t.k;
-				let tx = t.x,
-					ty = t.y;
-				const bbox = mapGroup.getBBox();
-				const vb = svgEl.viewBox.baseVal;
-				const viewW = vb?.width || svgEl.clientWidth;
-				const viewH = vb?.height || svgEl.clientHeight;
-				const txMin = viewW - (bbox.x + bbox.width) * k;
-				const txMax = -bbox.x * k;
-				const tyMin = viewH - (bbox.y + bbox.height) * k;
-				const tyMax = -bbox.y * k;
-				tx = txMin > txMax ? (txMin + txMax) / 2 : Math.min(Math.max(tx, txMin), txMax);
-				ty = tyMin > tyMax ? (tyMin + tyMax) / 2 : Math.min(Math.max(ty, tyMin), tyMax);
-				mapGroup.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${k})`;
+
+				if (zoomRAF) cancelAnimationFrame(zoomRAF);
+
+				zoomRAF = requestAnimationFrame(() => {
+					const t = event.transform;
+					currentTransform = t;
+					const k = t.k;
+					let tx = t.x,
+						ty = t.y;
+					if (mapGroup) {
+						const bbox = mapGroup.getBBox();
+						const vb = svgEl!.viewBox.baseVal;
+						const viewW = vb?.width || svgEl!.clientWidth;
+						const viewH = vb?.height || svgEl!.clientHeight;
+						const txMin = viewW - (bbox.x + bbox.width) * k;
+						const txMax = -bbox.x * k;
+						const tyMin = viewH - (bbox.y + bbox.height) * k;
+						const tyMax = -bbox.y * k;
+						tx = txMin > txMax ? (txMin + txMax) / 2 : Math.min(Math.max(tx, txMin), txMax);
+						ty = tyMin > tyMax ? (tyMin + tyMax) / 2 : Math.min(Math.max(ty, tyMin), tyMax);
+					}
+
+					mapGroup!.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale3d(${k}, ${k}, 1)`;
+				});
 			})
 			.on('end', () => {
 				isZooming = false;
+				if (zoomRAF) {
+					cancelAnimationFrame(zoomRAF);
+					zoomRAF = null;
+				}
 			});
 	}
 
@@ -388,6 +447,7 @@
 		class="relative flex-1 overflow-hidden"
 		style="width: {selectedFeature ? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)` : '100%'};"
 	>
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		{#if !selectedFeature}
 			<MapSettings
 				{settingsOpen}
@@ -400,8 +460,14 @@
 			<svg
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full transition-all duration-[800ms]"
+				class="block h-full w-full"
 				bind:this={svgEl}
+				on:click={handleMapClick}
+				on:keydown={handleMapKeydown}
+				on:pointerover={handleMapHover}
+				on:focus={() => (hoveredCountry = null)}
+				on:mouseleave={() => (hoveredCountry = null)}
+				style="contain: layout style paint;"
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
 					<defs>
@@ -417,55 +483,38 @@
 							{/if}
 						</linearGradient>
 					</defs>
-					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill={"url(#waterBase)"}></rect>
+					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill={'url(#waterBase)'}></rect>
 				{/if}
 
-				<g bind:this={mapGroup} style="will-change: transform;">
+				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
 					{#if countries.length && pathGenerator}
-						{#each countries as c, i (getCountryName(c))}
+						{#each countries as c, i (i)}
 							{#if currentTheme === 'colorful'}
 								<path
-									d={pathGenerator(c as any)}
-									style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.2; stroke-linejoin: round;`}
-									on:click={() => onCountryClick(c)}
-									on:keydown={(e) => {
-										if (e.key === 'Enter' || e.key === ' ') {
-											e.preventDefault();
-											onCountryClick(c);
-										}
-									}}
+									d={getPath(c, pathGenerator, i)}
+									data-index={i}
+									style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1.2}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
 									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
-									class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[2px]"
+									class="cursor-pointer"
 								/>
 							{:else if currentTheme === 'light'}
 								<path
-									d={pathGenerator(c as any)}
-									style="fill: #E6EEF8; stroke: #000; stroke-width: 1.0; stroke-linejoin: round;"
-									on:click={() => onCountryClick(c)}
-									on:keydown={(e) => {
-										if (e.key === 'Enter' || e.key === ' ') {
-											e.preventDefault();
-											onCountryClick(c);
-										}
-									}}
+									d={getPath(c, pathGenerator, i)}
+									data-index={i}
+									style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
 									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
-									class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[2px]"
+									class="cursor-pointer"
 								/>
 							{:else}
 								<path
-									d={pathGenerator(c as any)}
-									class="cursor-pointer fill-white/[0.08] stroke-white/40 stroke-[0.5px] drop-shadow-[0_0_2px_rgba(255,255,255,0.2)] transition-all duration-300 will-change-transform hover:fill-white/20 hover:stroke-white/80 hover:stroke-[1.5px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
-									on:click={() => onCountryClick(c)}
-									on:keydown={(e) => {
-										if (e.key === 'Enter' || e.key === ' ') {
-											e.preventDefault();
-											onCountryClick(c);
-										}
-									}}
+									d={getPath(c, pathGenerator, i)}
+									data-index={i}
+									class="cursor-pointer stroke-white/40"
+									style={`fill: ${hoveredCountry === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)'}; stroke-width: ${hoveredCountry === i ? 1.5 : 0.5}px;`}
 									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
@@ -483,63 +532,52 @@
 			</div>
 		{:else}
 			<svg
-				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
+				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full transition-all duration-[800ms]"
+				class="block h-full w-full"
 				bind:this={svgEl}
+				on:click={handleMapClick}
+				on:keydown={handleMapKeydown}
+				on:pointerover={handleMapHover}
+				on:focus={() => (hoveredCountry = null)}
+				on:mouseleave={() => (hoveredCountry = null)}
+				style="contain: layout style paint;"
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
 					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
 					></rect>
 				{/if}
 
-				<g bind:this={mapGroup} style="will-change: transform;">
+				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
 					{#if countries.length && focusPathGenerator}
-						{#each countries as c, i (getCountryName(c))}
+						{#each countries as c, i (i)}
 							{#if c !== selectedFeature}
 								{#if currentTheme === 'colorful'}
 									<path
-										d={focusPathGenerator(c as any)}
-										style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.0; stroke-linejoin: round;`}
-										on:click={() => onCountryClick(c)}
-										on:keydown={(e) => {
-											if (e.key === 'Enter' || e.key === ' ') {
-												e.preventDefault();
-												onCountryClick(c);
-											}
-										}}
+										d={getPath(c, focusPathGenerator, i)}
+										data-index={i}
+										style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
 										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
-										class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[1.5px]"
+										class="cursor-pointer"
 									/>
 								{:else if currentTheme === 'light'}
 									<path
-										d={focusPathGenerator(c as any)}
-										style="fill: #E6EEF8; stroke: #000; stroke-width: 0.8; stroke-linejoin: round;"
-										on:click={() => onCountryClick(c)}
-										on:keydown={(e) => {
-											if (e.key === 'Enter' || e.key === ' ') {
-												e.preventDefault();
-												onCountryClick(c);
-											}
-										}}
+										d={getPath(c, focusPathGenerator, i)}
+										data-index={i}
+										style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 0.8}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
 										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
-										class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[1.5px]"
+										class="cursor-pointer"
 									/>
 								{:else}
 									<path
-										d={focusPathGenerator(c as any)}
-										class="cursor-pointer fill-white/[0.02] stroke-white/15 stroke-[0.3px] will-change-transform"
-										on:click={() => onCountryClick(c)}
-										on:keydown={(e) => {
-											if (e.key === 'Enter' || e.key === ' ') {
-												e.preventDefault();
-												onCountryClick(c);
-											}
-										}}
+										d={getPath(c, focusPathGenerator, i)}
+										data-index={i}
+										class="cursor-pointer stroke-white/15"
+										style={`fill: rgba(255,255,255,0.02); stroke-width: 0.3px;`}
 										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
@@ -549,54 +587,40 @@
 						{/each}
 
 						{#if selectedFeature}
-							{#key getCountryIndex(selectedFeature)}
-								{@const idx = getCountryIndex(selectedFeature)}
-								{#if idx >= 0}
-									{#if currentTheme === 'colorful'}
-										<path
-											d={focusPathGenerator(selectedFeature as any)}
-											style={`fill: ${countryColorMap[idx] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; filter: drop-shadow(0 0 8px rgba(0,0,0,0.28));`}
-											on:click={() => selectedFeature && onCountryClick(selectedFeature)}
-											on:keydown={(e) => {
-												if (e.key === 'Enter' || e.key === ' ') {
-													e.preventDefault();
-													selectedFeature && onCountryClick(selectedFeature);
-												}
-											}}
-											tabindex="0"
-											role="button"
-											aria-label={getCountryName(selectedFeature)}
-											class="cursor-pointer transition-all duration-150"
-										/>
-									{:else if currentTheme === 'light'}
-										<path
-											d={focusPathGenerator(selectedFeature as any)}
-											style="fill: #DCEAF6; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; filter: drop-shadow(0 0 6px rgba(0,0,0,0.18));"
-											on:click={() => selectedFeature && onCountryClick(selectedFeature)}
-											on:keydown={(e) => {
-												if (e.key === 'Enter' || e.key === ' ') {
-													e.preventDefault();
-													selectedFeature && onCountryClick(selectedFeature);
-												}
-											}}
-											tabindex="0"
-											role="button"
-											aria-label={getCountryName(selectedFeature)}
-											class="cursor-pointer transition-all duration-150"
-										/>
-									{:else}
-										<path
-											d={focusPathGenerator(selectedFeature as any)}
-											class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
-										/>
-									{/if}
+							{@const idx = getCountryIndex(selectedFeature)}
+							{#if idx >= 0}
+								{#if currentTheme === 'colorful'}
+									<path
+										d={getPath(selectedFeature, focusPathGenerator, idx)}
+										data-index={idx}
+										style={`fill: ${countryColorMap[idx] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; opacity: 0.95;`}
+										tabindex="0"
+										role="button"
+										aria-label={getCountryName(selectedFeature)}
+										class="cursor-pointer"
+									/>
+								{:else if currentTheme === 'light'}
+									<path
+										d={getPath(selectedFeature, focusPathGenerator, idx)}
+										data-index={idx}
+										style="fill: #DCEAF6; stroke: #000; stroke-width: 1.8; stroke-linejoin: round;"
+										tabindex="0"
+										role="button"
+										aria-label={getCountryName(selectedFeature)}
+										class="cursor-pointer"
+									/>
 								{:else}
 									<path
-										d={focusPathGenerator(selectedFeature as any)}
-										class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px] drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
+										d={getPath(selectedFeature, focusPathGenerator, idx)}
+										class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px]"
 									/>
 								{/if}
-							{/key}
+							{:else}
+								<path
+									d={getPath(selectedFeature, focusPathGenerator, -1)}
+									class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px]"
+								/>
+							{/if}
 						{/if}
 					{/if}
 				</g>
@@ -616,5 +640,15 @@
 		100% {
 			border-left-color: rgba(0, 255, 255, 0.8);
 		}
+	}
+
+	svg {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+
+	svg g {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 	}
 </style>
