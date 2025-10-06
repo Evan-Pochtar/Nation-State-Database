@@ -316,15 +316,15 @@
 
 	function buildColorfulPalette() {
 		if (!topoData || !topoObjectKey) {
-			countryColorMap = new Array(countries.length).fill('#E6EEF8');
+			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 			return;
 		}
 		try {
 			const geoms = topoData.objects[topoObjectKey].geometries;
 			const neigh = neighbors(geoms);
-			const palette = ['#FBF0E6', '#E7F5EF', '#E7F0FF', '#F4ECF8', '#FFF0F6', '#EBF9FF', '#FFF8E6', '#F3FBF3'];
+			const palette = ['#E8D4C0', '#C8E6D7', '#C8DEFF', '#E0D4E8', '#FFD8EA', '#D0F0FF', '#FFE8C0', '#D8F0D8'];
 
-			const assigned: string[] = new Array(geoms.length).fill('#E6EEF8');
+			const assigned: string[] = new Array(geoms.length).fill('#D0DCE8');
 
 			for (let i = 0; i < geoms.length; i++) {
 				const used = new Set<string>();
@@ -340,7 +340,7 @@
 			countryColorMap = assigned.slice(0, countries.length);
 		} catch (e) {
 			console.error('Failed to build colorful palette', e);
-			countryColorMap = new Array(countries.length).fill('#E6EEF8');
+			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 		}
 	}
 </script>
@@ -425,7 +425,7 @@
 									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
-									class="cursor-pointer transition-all duration-150"
+									class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[2px]"
 								/>
 							{:else if currentTheme === 'light'}
 								<path
@@ -441,7 +441,7 @@
 									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
-									class="cursor-pointer transition-all duration-150"
+									class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[2px]"
 								/>
 							{:else}
 								<path
@@ -499,7 +499,7 @@
 										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
-										class="cursor-pointer transition-all duration-150"
+										class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[1.5px]"
 									/>
 								{:else if currentTheme === 'light'}
 									<path
@@ -515,7 +515,7 @@
 										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
-										class="cursor-pointer transition-all duration-150"
+										class="cursor-pointer transition-all duration-150 hover:brightness-90 hover:stroke-[1.5px]"
 									/>
 								{:else}
 									<path
