@@ -1239,5 +1239,281 @@
       { "year": 1974, "era": "Contemporary", "title": "Carnation Revolution", "description": "End of Estado Novo and transition to democracy" },
       { "year": 1986, "era": "Contemporary", "title": "EU accession", "description": "Portugal joins the European Community" }
     ]
+  },
+  {
+    "name": "Belgium",
+    "overview": "Belgium emerged in the 19th century from the southern Low Countries, after periods under Burgundian, Spanish, Austrian, French, and Dutch rule. A revolution in 1830 created an independent constitutional monarchy. Belgium industrialized rapidly, had colonial ambitions (notably in Africa), suffered occupation in both World Wars, and evolved into a federal state to manage cultural and linguistic divisions.",
+    "source": {
+      "label": "Manually Curated; References: Encyclopaedia Britannica, Belgian Government",
+      "url": "https://www.britannica.com/topic/history-of-Belgium",
+      "urls": [
+        "https://www.britannica.com/topic/history-of-Belgium",
+        "https://www.belgium.be/en/about_belgium/country/history/belgium_from_1830"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Belgian Revolution", "value": "1830" },
+      { "label": "Constitution adopted", "value": "1831" },
+      { "label": "Treaty of London recognized Belgian independence", "value": "1839" },
+      { "label": "Industrial power", "value": "mid-19th century" },
+      { "label": "Colonial in Congo", "value": "late 19th to early 20th century (Leopold II)" },
+      { "label": "Occupation in World Wars", "value": "1914-18; 1940-44/45" },
+      { "label": "Federalization", "value": "1970s-1990s" },
+      { "label": "Capital", "value": "Brussels" }
+    ],
+    "ancient": {
+      "period": "Pre-Roman through Burgundian period (up to 16th century)",
+      "description": "The region of modern Belgium was part of the Roman Empire, inhabited earlier by Celtic tribes (Belgae). After Rome, Germanic migrations (Franks) took place. It later formed part of the Carolingian empire, then under local counts and dukes; in later medieval times the Burgundian dukes controlled the area, bringing prosperity via trade, cities, and cloth industry.",
+      "keyEvents": [
+        { "year": "c. 57-50 BCE", "title": "Roman conquest of the Belgae", "description": "Julius Caesar conquers tribes in northern Gaul including Belgae" },
+        { "year": "5th-9th centuries CE", "title": "Frankish rule & Carolingian Empire", "description": "Integration into the Frankish realm; formation of feudal structures" },
+        { "year": "14th-15th centuries", "title": "Burgundian Netherlands", "description": "Dukes of Burgundy bring political centralization and cultural flourishing; trade and cities prosper" }
+      ],
+      "notableFigures": [
+        "Duke Philip the Bold",
+        "Philip the Good",
+        "Charles the Bold"
+      ]
+    },
+    "colonial": {
+      "period": "16th-18th centuries / Spanish & Austrian rule",
+      "description": "After Burgundian rule, the territory passed to Habsburg Spain, then Austria. During this time, the southern provinces had religious, political, and economic tensions with northern provinces (which would become the Netherlands). The Reformation, the Eighty-Years’ War, and shifting European power all affected the region.",
+      "keyEvents": [
+        { "year": "1568-1648", "title": "Eighty Years’ War", "description": "War of independence in the northern provinces; south (Belgium area) remained under Spanish control" },
+        { "year": "1713-1714", "title": "Treaty of Utrecht / Austrian rule", "description": "After War of Spanish Succession, southern Netherlands come under Habsburg Austria" }
+      ],
+      "notableFigures": [
+        "Philip II of Spain",
+        "Charles V",
+        "Maria Theresa of Austria"
+      ]
+    },
+    "independence": {
+      "period": "Early 19th century",
+      "description": "After the Napoleonic Wars, the Congress of Vienna (1815) merged the southern provinces with the United Netherlands under King William I. Rising discontent among French‐speaking elites, Catholics, and liberals led to a revolution in 1830. Belgium declared independence, adopted a constitution in 1831, got recognition in the 1839 Treaty of London, establishing permanent neutrality (later violated in wars).",
+      "keyEvents": [
+        { "year": "1815", "title": "Creation of United Kingdom of the Netherlands", "description": "Southern and northern Low Countries united under William I" },
+        { "year": "1830", "title": "Belgian Revolution", "description": "Revolt begins in Brussels; provisional government formed" },
+        { "year": "1831", "title": "Constitution and Leopold I", "description": "Belgium becomes constitutional monarchy; Leopold I takes throne" },
+        { "year": "1839", "title": "Treaty of London", "description": "International recognition of Belgian borders & neutrality" }
+      ],
+      "notableFigures": [
+        "Leopold I",
+        "Leopold II",
+        "Charles Rogier"
+      ]
+    },
+    "modern": {
+      "period": "20th century – present",
+      "description": "Belgium suffered occupation in both world wars. After WWII, the country rebuilt, industrialized further, joined European integration (EU, NATO). Internal tensions among Flemish, Walloons, German‐speaking community led to federalization reforms. Belgium’s international role includes hosting EU institutions. It also faces linguistic and regional political challenges.",
+      "keyEvents": [
+        { "year": "1914-1918", "title": "World War I occupation", "description": "German troops occupy Belgium; major battles on Western Front" },
+        { "year": "1940-1944", "title": "World War II occupation", "description": "Germany invades; liberation in 1944-45" },
+        { "year": "1944-1945", "title": "Founding of Benelux", "description": "Belgium, Netherlands, Luxembourg cooperation begins" },
+        { "year": "1970s-1990s", "title": "Federalization reforms", "description": "Constitution changes to give autonomy to regions & communities" },
+        { "year": "1950s-present", "title": "European integration", "description": "Member state of EU; host of EU institutions; active international diplomacy" }
+      ],
+      "notableFigures": [
+        "King Leopold III",
+        "Paul van Zeeland",
+        "Jean Monnet (in EU context)",
+        "Contemporary political leaders balancing regional divides"
+      ]
+    },
+    "timeline": [
+      { "year": "1568", "era": "Colonial", "title": "Start of Eighty Years’ War", "description": "Northern provinces rebel against Spain, southern remain under control" },
+      { "year": "1713", "era": "Colonial", "title": "Austrian Netherlands", "description": "Southern Netherlands under Habsburg Austria after Spanish rule ends" },
+      { "year": "1795-1815", "era": "Colonial / Napoleonic", "title": "French control", "description": "French Republic and Empire rule the region; administrative changes" },
+      { "year": "1830", "era": "Independence", "title": "Belgian Revolution", "description": "Revolt and declaration of independence" },
+      { "year": "1839", "era": "Independence", "title": "Treaty of London", "description": "Formal recognition & neutrality" },
+      { "year": "1914-18", "era": "Modern", "title": "World War I", "description": "Occupation and suffering" },
+      { "year": "1940-44", "era": "Modern", "title": "World War II", "description": "German occupation, atrocities, liberation" },
+      { "year": "1970s–1990s", "era": "Modern", "title": "Federal reforms", "description": "Regions and communities gain constitutional status" },
+      { "year": "1951-present", "era": "Modern", "title": "EU involvement", "description": "Belgium hosts many European institutions" }
+    ]
+  },
+  {
+    "name": "Netherlands",
+    "overview": "The Netherlands trace their statehood to the Dutch Revolt against Spanish Habsburg rule in the 16th-17th centuries, forming the Dutch Republic (the United Provinces). There followed a Golden Age of trade, art, and colonial expansion. Later Napoleonic occupation, monarchy under the House of Orange, industrialization, neutrality in WWI, occupation in WWII, post-war reconstruction, decolonization, and role in European integration.",
+    "source": {
+      "label": "Manually Curated; References: Britannica",
+      "url": "https://www.britannica.com/topic/history-of-the-Netherlands"
+    },
+    "keyFacts": [
+      { "label": "Dutch Revolt begins", "value": "1568" },
+      { "label": "Union of Utrecht", "value": "1579" },
+      { "label": "Independence from Spain", "value": "1648 (Treaty of Westphalia)" },
+      { "label": "Golden Age", "value": "17th century" },
+      { "label": "Kingdom formed under Napoleon’s fall", "value": "1815" },
+      { "label": "Neutral in WWI", "value": "1914-1918" },
+      { "label": "Occupied in WWII", "value": "1940-1945" },
+      { "label": "Decolonization", "value": "mid-20th century (Indonesia, Suriname etc.)" },
+      { "label": "EU founding member", "value": "1958 (EEC)" },
+      { "label": "Capital", "value": "Amsterdam (though government seat in The Hague)" }
+    ],
+    "ancient": {
+      "period": "Pre-Roman through medieval Low Countries",
+      "description": "Region inhabited by various Germanic tribes. Under Roman rule, then later part of Frankish realms, then weakened central authority. Medieval counties, duchies develop (Holland, Zeeland etc.). Low Countries become wealthy through trade, cloth, rivers, ports.",
+      "keyEvents": [
+        { "year": "c. 1st-5th centuries CE", "title": "Roman period & Germanic migrations", "description": "Roman provinces; then Franks, Burgundians etc." },
+        { "year": "10th-13th centuries", "title": "Feudal counties emerge", "description": "Counties such as Holland, Flanders, Zeeland consolidate" }
+      ],
+      "notableFigures": [
+        "Counts of Holland",
+        "William of Orange (later)"
+      ]
+    },
+    "colonial": {
+      "period": "16th-17th centuries under Spanish rule / early independence",
+      "description": "Northern provinces resist Spanish Catholic rule, heavy taxation, suppression of Protestantism. Revolt includes iconoclasm, war. Union of Utrecht (1579) unites northern provinces. South remains under Spanish control until later. The Dutch Republic emerges and begins colonial ventures, shipping, culture, finance in its Golden Age.",
+      "keyEvents": [
+        { "year": "1566", "title": "Iconoclastic Fury", "description": "Protestants destroy Catholic images; tensions rise" },
+        { "year": "1572", "title": "Sea Beggars & early revolts", "description": "Rebels take control of parts of coast; growth of the revolt" },
+        { "year": "1579", "title": "Union of Utrecht", "description": "Northern provinces form a political and military alliance" },
+        { "year": "1648", "title": "Treaty of Westphalia", "description": "Formal recognition of independence from Spain" }
+      ],
+      "notableFigures": [
+        "William I of Orange",
+        "Maurice of Nassau",
+        "Baruch Spinoza (intellectual figure)",
+        "Rembrandt (cultural figure) during Golden Age"
+      ]
+    },
+    "independence": {
+      "period": "17th century / formation of Republic",
+      "description": "After decades of revolt against Spain, the northern Low Countries establish the Dutch Republic. It becomes a maritime and trading power. Later, after Napoleonic Wars, the southern provinces are separated, and in 1815, the Kingdom of the Netherlands is established, including Belgium and Luxembourg initially.",
+      "keyEvents": [
+        { "year": "1648", "title": "Independence recognized", "description": "Treaty of Westphalia ends the Dutch struggle" },
+        { "year": "1815", "title": "Congress of Vienna & Kingdom of the Netherlands", "description": "Post-Napoleon arrangement unites northern and southern Netherlands" }
+      ],
+      "notableFigures": [
+        "William of Orange (William the Silent)",
+        "Johan van Oldenbarnevelt",
+        "Stadtholders (Maurice, Frederick Henry, etc.)"
+      ]
+    },
+    "modern": {
+      "period": "19th century – present",
+      "description": "Industrialization, colonial empire in Asia, Africa, and Americas, liberal & constitutional government development, neutrality in WWI, occupation in WWII, post-war reconstruction, decolonization, welfare state and strong international/ EU role, current challenges including immigration, climate change, political fragmentation.",
+      "keyEvents": [
+        { "year": "1815", "title": "Kingdom of the Netherlands established", "description": "William I becomes king; encompasses modern Netherlands, Belgium, Luxembourg" },
+        { "year": "1830", "title": "Belgian Revolution", "description": "Southern provinces separate; Netherlands lose Belgium" },
+        { "year": "1914-1918", "title": "World War I neutrality", "description": "Netherlands remains neutral" },
+        { "year": "1940-1945", "title": "German occupation", "description": "Invasion by Nazi Germany; liberation 1945" },
+        { "year": "1948-1958", "title": "Formation of Benelux / EEC", "description": "Economic union with Belgium & Luxembourg; then European Economic Community" },
+        { "year": "1949 onwards", "title": "Decolonization", "description": "Indonesia (officially 1949), Suriname etc." }
+      ],
+      "notableFigures": [
+        "Queen Wilhelmina",
+        "Willem Drees",
+        "P.C. Hooft (cultural)",
+        "Contemporary political leaders"
+      ]
+    },
+    "timeline": [
+      { "year": "1568", "era": "Colonial", "title": "Dutch Revolt begins", "description": "Sparked by religious, economic, and political tensions under Spanish Habsburg rule" },
+      { "year": "1579", "era": "Colonial", "title": "Union of Utrecht", "description": "Northern provinces form a federation" },
+      { "year": "1648", "era": "Independence", "title": "Westphalia treaty", "description": "Independence formally recognized" },
+      { "year": "1815", "era": "Modern", "title": "Kingdom established", "description": "Formation under House of Orange at Congress of Vienna" },
+      { "year": "1830", "era": "Modern", "title": "Belgian Revolution", "description": "Loss of southern provinces" },
+      { "year": "1914-1918", "era": "Modern", "title": "World War I", "description": "Neutral stance; German violation" },
+      { "year": "1940-1945", "era": "Modern", "title": "WWII occupation", "description": "Invasion, resistance, liberation" },
+      { "year": "1958", "era": "Modern", "title": "EEC founding member", "description": "Netherlands as part of the first European Communities" }
+    ]
+  },
+  {
+    "name": "Luxembourg",
+    "overview": "Luxembourg began as a small medieval county that grew via inheritance and strategic marriage. It passed through Burgundian, Spanish, Austrian, French rule. After 1815 it was in personal union with the Netherlands. In 1867 its full independence and neutrality were guaranteed. It was occupied in both World Wars, later abandoned neutrality, joined Benelux and European institutions, and developed into a prosperous financial center and founding EU member.",
+    "source": {
+      "label": "Manually Curated; References: Britannica",
+      "url": "https://www.britannica.com/topic/history-of-Luxembourg",
+      "urls": [
+        "https://www.britannica.com/topic/history-of-Luxembourg",
+        "https://www.bbc.com/news/world-europe-17548474"
+      ]
+    },
+    "keyFacts": [
+      { "label": "County founded", "value": "963" },
+      { "label": "Duchy status", "value": "1354" },
+      { "label": "Habsburg / Burgundian inheritances", "value": "15th-16th centuries" },
+      { "label": "Personal union with Netherlands", "value": "1815-1890" },
+      { "label": "Treaty of London grants independence & neutrality", "value": "1867" },
+      { "label": "German occupations", "value": "1914-1918; 1940-1944" },
+      { "label": "Benelux founding", "value": "1944" },
+      { "label": "Active EU and financial center role", "value": "mid-20th century to present" },
+      { "label": "Capital", "value": "Luxembourg City" }
+    ],
+    "ancient": {
+      "period": "Pre-Roman to Middle Ages",
+      "description": "Territory inhabited by Celtic tribes (Treveri, Mediomatrici), incorporated into Roman empire. After Roman collapse, under Frankish rule. Christianization in early medieval period. In 963 Siegfried establishes a castle at Luxembourg, thereby founding the county that evolves gradually by expansion and inheritance.",
+      "keyEvents": [
+        { "year": "c. 450-50 BCE", "title": "Belgae tribes inhabiting region", "description": "Treveri and Mediomatrici" },
+        { "year": "53 BCE", "title": "Roman conquest", "description": "Roman rule begins" },
+        { "year": "5th-9th centuries CE", "title": "Frankish rule & Christianization", "description": "Integration into Frankish kingdoms; Echternach monastery founded" },
+        { "year": "963", "title": "County of Luxembourg founded", "description": "Siegfried acquires castle of Lucilinburhuc; counts begin rule" }
+      ],
+      "notableFigures": [
+        "Siegfried, Count of Ardennes",
+        "Ermesinde of Luxembourg"
+      ]
+    },
+    "colonial": {
+      "period": "15th-18th centuries / under Burgundian / Habsburg / French control",
+      "description": "Luxembourg passes through Burgundian inheritance, then Spanish then Austrian Habsburgs. Later occupied by France during Revolutionary/Napoleonic era. The territory fragmented politically, strategic fortress city contested by powers (notably France, Prussia).",
+      "keyEvents": [
+        { "year": "1477", "title": "Duchy comes under Burgundy", "description": "Philip the Good of Burgundy acquires Luxembourg" },
+        { "year": "1555-56", "title": "Habsburg inheritance divides", "description": "After Charles V’s abdication, lands distributed to Spanish/Austrian branches" },
+        { "year": "1795-1815", "title": "French Revolutionary/Napoleonic occupation", "description": "French rule, administrative changes" }
+      ],
+      "notableFigures": [
+        "House of Burgundy",
+        "Charles V",
+        "Mary of Burgundy"
+      ]
+    },
+    "independence": {
+      "period": "19th century",
+      "description": "After the Napoleonic Wars, in the Congress of Vienna (1815) Luxembourg is made a Grand Duchy, in personal union with Netherlands. After a crisis in 1867 (Luxembourg Crisis), the Treaty of London confirms its full independence and permanent neutrality; fortress dismantled; Prussian garrisons withdrawn. In 1890, on death of King William III, personal union ends as Luxembourg passes to a different branch.",
+      "keyEvents": [
+        { "year": "1815", "title": "Congress of Vienna", "description": "Luxembourg made a Grand Duchy; personal union with Netherlands" },
+        { "year": "1839", "title": "Belgium partition", "description": "Western part of Luxembourg goes to Belgium; remainder keeps Grand Duchy status" },
+        { "year": "1867", "title": "Treaty of London", "description": "Independence and neutrality guaranteed" },
+        { "year": "1890", "title": "End of personal union", "description": "House of Nassau-Weilburg assumes Luxembourg monarchy independent of Dutch crown" }
+      ],
+      "notableFigures": [
+        "William I of the Netherlands",
+        "House of Nassau-Weilburg members"
+      ]
+    },
+    "modern": {
+      "period": "20th century – present",
+      "description": "Luxembourg is occupied during both World Wars despite neutrality. After WWII it abandons neutrality, becomes founding member of Benelux, NATO, European Coal & Steel Community, later EEC/EU. Develops industrial and financial economy, high GDP per capita, diversified, with strong multilingual identity and EU institutional roles.",
+      "keyEvents": [
+        { "year": "1914-1918", "title": "WWI occupation", "description": "German forces occupy Luxembourg" },
+        { "year": "1940-1944", "title": "WWII occupation", "description": "German occupation" },
+        { "year": "1944", "title": "Benelux founded", "description": "Luxembourg partners with Belgium & Netherlands for economic cooperation" },
+        { "year": "1948", "title": "NATO membership / end of neutrality", "description": "Luxembourg joins alliance; political alignment shifts" },
+        { "year": "1957", "title": "EEC founding member", "description": "One of founding members of European Economic Community" },
+        { "year": "Late 20th – early 21st century", "title": "Financial / EU institutional role", "description": "Luxembourg becomes global financial center; EU institutions; high standard of living" }
+      ],
+      "notableFigures": [
+        "Grand Duchess Charlotte",
+        "Jean, Grand Duke",
+        "Jean-Claude Juncker"
+      ]
+    },
+    "timeline": [
+      { "year": "963", "era": "Ancient / Early Medieval", "title": "County founded", "description": "Siegfried acquires castle giving name to Luxembourg" },
+      { "year": "1354", "era": "Colonial", "title": "County becomes Duchy", "description": "Status upgraded; more political clout" },
+      { "year": "1477", "era": "Colonial", "title": "Under Burgundy", "description": "Integration into Burgundian territories" },
+      { "year": "1795", "era": "Colonial", "title": "French occupation", "description": "Revolutionary France controls Luxembourg" },
+      { "year": "1815", "era": "Independence", "title": "Grand Duchy in union with Netherlands", "description": "Post-Napoleon arrangement" },
+      { "year": "1839", "era": "Independence", "title": "Belgium partition", "description": "Parts ceded to Belgium" },
+      { "year": "1867", "era": "Independence", "title": "Treaty of London", "description": "Neutrality & full independence assured" },
+      { "year": "1890", "era": "Independence", "title": "End of personal union with Netherlands", "description": "Own dynasty begins" },
+      { "year": "1914-1918", "era": "Modern", "title": "WWI occupation", "description": "Luxembourg occupied by Germany" },
+      { "year": "1940-1944", "era": "Modern", "title": "WWII occupation", "description": "Again invaded" },
+      { "year": "1957", "era": "Modern", "title": "EEC founding", "description": "Integration with European institutions" }
+    ]
   }
 ]
