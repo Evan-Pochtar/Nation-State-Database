@@ -85,7 +85,7 @@
 	function handleThemeChange(theme: 'dark' | 'light' | 'colorful') {
 		currentTheme = theme;
 		if (theme === 'colorful' && topoData && topoObjectKey) {
-			buildColorfulPalette();
+			scheduleColorfulPalette();
 		}
 	}
 
@@ -95,6 +95,7 @@
 	}
 
 	onMount(async () => {
+		initZoom();
 		try {
 			const resp = await fetch('/data/countries-map.json');
 			if (!resp.ok) {
@@ -110,7 +111,7 @@
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
-			buildColorfulPalette();
+			scheduleColorfulPalette();
 			handleResize();
 			window.addEventListener('resize', throttledResize);
 		} catch (error) {
@@ -152,7 +153,6 @@
 			pathCache.clear();
 			if (selectedFeature) setupFocusProjection();
 		}
-		initZoom();
 	}
 
 	function setupFocusProjection() {
@@ -188,7 +188,6 @@
 			focusProjection = fallback;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 		}
-		if (!isZooming) initZoom();
 	}
 
 	function getCountryName(f: GeoFeature): string {
@@ -256,7 +255,7 @@
 		isAnimating = true;
 		setTimeout(() => {
 			isAnimating = false;
-		}, 800);
+		}, 400);
 	}
 
 	async function closePanel() {
@@ -374,7 +373,7 @@
 			.call((zoomBehavior as any).transform, currentTransform);
 	}
 
-	function buildColorfulPalette() {
+	function buildColorfulPaletteImmediate() {
 		if (!topoData || !topoObjectKey) {
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 			return;
@@ -403,6 +402,17 @@
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 		}
 	}
+
+	function scheduleColorfulPalette() {
+		if (typeof (window as any).requestIdleCallback === 'function') {
+			(window as any).requestIdleCallback(buildColorfulPaletteImmediate);
+		} else {
+			setTimeout(buildColorfulPaletteImmediate, 50);
+		}
+	}
+
+	function toggleSettings() { settingsOpen = !settingsOpen; }
+	function hoverReset() { hoveredCountry = null; }
 </script>
 
 <div
@@ -412,7 +422,6 @@
 			: currentTheme === 'light'
 				? 'from-slate-50 to-white text-slate-900'
 				: 'from-sky-900 to-sky-800 text-white')}
-	tabindex="-1"
 >
 	{#if selectedFeature}
 		<InfoPanel
@@ -455,7 +464,7 @@
 				{currentProjection}
 				{currentTheme}
 				onProjectionChange={handleProjectionChange}
-				onToggle={() => (settingsOpen = !settingsOpen)}
+				onToggle={toggleSettings}
 				onThemeChange={handleThemeChange}
 			/>
 			<svg
@@ -466,9 +475,9 @@
 				on:click={handleMapClick}
 				on:keydown={handleMapKeydown}
 				on:pointerover={handleMapHover}
-				on:focus={() => (hoveredCountry = null)}
-				on:mouseleave={() => (hoveredCountry = null)}
-				style="contain: layout style paint;"
+				on:focus={hoverReset}
+				on:mouseleave={hoverReset}
+				style="contain: paint layout;"
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
 					<defs>
@@ -495,7 +504,6 @@
 									d={getPath(c, pathGenerator, i)}
 									data-index={i}
 									style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1.2}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
 									class="cursor-pointer"
@@ -505,7 +513,6 @@
 									d={getPath(c, pathGenerator, i)}
 									data-index={i}
 									style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
 									class="cursor-pointer"
@@ -516,7 +523,6 @@
 									data-index={i}
 									class="cursor-pointer stroke-white/40"
 									style={`fill: ${hoveredCountry === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)'}; stroke-width: ${hoveredCountry === i ? 1.5 : 0.5}px;`}
-									tabindex="0"
 									role="button"
 									aria-label={getCountryName(c)}
 								/>
@@ -540,9 +546,9 @@
 				on:click={handleMapClick}
 				on:keydown={handleMapKeydown}
 				on:pointerover={handleMapHover}
-				on:focus={() => (hoveredCountry = null)}
-				on:mouseleave={() => (hoveredCountry = null)}
-				style="contain: layout style paint;"
+				on:focus={hoverReset}
+				on:mouseleave={hoverReset}
+				style="contain: paint layout;"
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
 					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
@@ -558,7 +564,6 @@
 										d={getPath(c, focusPathGenerator, i)}
 										data-index={i}
 										style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
 										class="cursor-pointer"
@@ -568,7 +573,6 @@
 										d={getPath(c, focusPathGenerator, i)}
 										data-index={i}
 										style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 0.8}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
 										class="cursor-pointer"
@@ -579,7 +583,6 @@
 										data-index={i}
 										class="cursor-pointer stroke-white/15"
 										style={`fill: rgba(255,255,255,0.02); stroke-width: 0.3px;`}
-										tabindex="0"
 										role="button"
 										aria-label={getCountryName(c)}
 									/>
@@ -595,7 +598,6 @@
 										d={getPath(selectedFeature, focusPathGenerator, idx)}
 										data-index={idx}
 										style={`fill: ${countryColorMap[idx] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; opacity: 0.95;`}
-										tabindex="0"
 										role="button"
 										aria-label={getCountryName(selectedFeature)}
 										class="cursor-pointer"
@@ -605,7 +607,6 @@
 										d={getPath(selectedFeature, focusPathGenerator, idx)}
 										data-index={idx}
 										style="fill: #DCEAF6; stroke: #000; stroke-width: 1.8; stroke-linejoin: round;"
-										tabindex="0"
 										role="button"
 										aria-label={getCountryName(selectedFeature)}
 										class="cursor-pointer"
@@ -651,5 +652,11 @@
 	svg g {
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
+	}
+
+	svg path {
+		vector-effect: non-scaling-stroke;
+		will-change: transform, opacity;
+		transition: none;
 	}
 </style>
