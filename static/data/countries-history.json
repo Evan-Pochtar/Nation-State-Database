@@ -1304,7 +1304,7 @@
       ]
     },
     "modern": {
-      "period": "20th century – present",
+      "period": "20th century - present",
       "description": "Belgium suffered occupation in both world wars. After WWII, the country rebuilt, industrialized further, joined European integration (EU, NATO). Internal tensions among Flemish, Walloons, German‐speaking community led to federalization reforms. Belgium’s international role includes hosting EU institutions. It also faces linguistic and regional political challenges.",
       "keyEvents": [
         { "year": "1914-1918", "title": "World War I occupation", "description": "German troops occupy Belgium; major battles on Western Front" },
@@ -1328,7 +1328,7 @@
       { "year": "1839", "era": "Independence", "title": "Treaty of London", "description": "Formal recognition & neutrality" },
       { "year": "1914-18", "era": "Modern", "title": "World War I", "description": "Occupation and suffering" },
       { "year": "1940-44", "era": "Modern", "title": "World War II", "description": "German occupation, atrocities, liberation" },
-      { "year": "1970s–1990s", "era": "Modern", "title": "Federal reforms", "description": "Regions and communities gain constitutional status" },
+      { "year": "1970s-1990s", "era": "Modern", "title": "Federal reforms", "description": "Regions and communities gain constitutional status" },
       { "year": "1951-present", "era": "Modern", "title": "EU involvement", "description": "Belgium hosts many European institutions" }
     ]
   },
@@ -1393,7 +1393,7 @@
       ]
     },
     "modern": {
-      "period": "19th century – present",
+      "period": "19th century - present",
       "description": "Industrialization, colonial empire in Asia, Africa, and Americas, liberal & constitutional government development, neutrality in WWI, occupation in WWII, post-war reconstruction, decolonization, welfare state and strong international/ EU role, current challenges including immigration, climate change, political fragmentation.",
       "keyEvents": [
         { "year": "1815", "title": "Kingdom of the Netherlands established", "description": "William I becomes king; encompasses modern Netherlands, Belgium, Luxembourg" },
@@ -1486,7 +1486,7 @@
       ]
     },
     "modern": {
-      "period": "20th century – present",
+      "period": "20th century - present",
       "description": "Luxembourg is occupied during both World Wars despite neutrality. After WWII it abandons neutrality, becomes founding member of Benelux, NATO, European Coal & Steel Community, later EEC/EU. Develops industrial and financial economy, high GDP per capita, diversified, with strong multilingual identity and EU institutional roles.",
       "keyEvents": [
         { "year": "1914-1918", "title": "WWI occupation", "description": "German forces occupy Luxembourg" },
@@ -1494,7 +1494,7 @@
         { "year": "1944", "title": "Benelux founded", "description": "Luxembourg partners with Belgium & Netherlands for economic cooperation" },
         { "year": "1948", "title": "NATO membership / end of neutrality", "description": "Luxembourg joins alliance; political alignment shifts" },
         { "year": "1957", "title": "EEC founding member", "description": "One of founding members of European Economic Community" },
-        { "year": "Late 20th – early 21st century", "title": "Financial / EU institutional role", "description": "Luxembourg becomes global financial center; EU institutions; high standard of living" }
+        { "year": "Late 20th - early 21st century", "title": "Financial / EU institutional role", "description": "Luxembourg becomes global financial center; EU institutions; high standard of living" }
       ],
       "notableFigures": [
         "Grand Duchess Charlotte",
@@ -1514,6 +1514,221 @@
       { "year": "1914-1918", "era": "Modern", "title": "WWI occupation", "description": "Luxembourg occupied by Germany" },
       { "year": "1940-1944", "era": "Modern", "title": "WWII occupation", "description": "Again invaded" },
       { "year": "1957", "era": "Modern", "title": "EEC founding", "description": "Integration with European institutions" }
+    ]
+  },
+  {
+    "name": "Germany",
+    "overview": "Central European region shaped by centuries of political fragmentation, confessional conflict, industrialization, nationalism, two world wars, division during the Cold War, and reunification in 1990. Modern Germany is a federal parliamentary republic and a leading economy and EU actor.",
+    "source": {
+      "label": "Manually Curated; References: Encyclopaedia Britannica, Oxford histories",
+      "url": "https://www.britannica.com/place/Germany/History",
+      "urls": [
+        "https://www.britannica.com/place/Germany/History",
+        "https://www.oxfordreference.com",
+        "https://www.bundesarchiv.de"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Holy Roman Empire (approx.)", "value": "962-1806" },
+      { "label": "Reformation begins", "value": "1517 (Martin Luther's Ninety-Five Theses)" },
+      { "label": "Thirty Years' War", "value": "1618-1648" },
+      { "label": "Dissolution of HRE / Napoleonic era", "value": "1806" },
+      { "label": "German unification", "value": "January 18, 1871 (German Empire proclaimed at Versailles)" },
+      { "label": "German Empire ends / Weimar Republic", "value": "1918-1919" },
+      { "label": "Nazi Germany / Third Reich", "value": "1933-1945" },
+      { "label": "Postwar division", "value": "1949 (FRG and GDR established)" },
+      { "label": "Reunification", "value": "October 3, 1990" },
+      { "label": "Capital", "value": "Berlin since 1990" }
+    ],
+    "ancient": {
+      "period": "Pre-Roman to early medieval (pre-5th century - 10th century)",
+      "description": "Territory inhabited by diverse Celtic and Germanic tribes. Roman rule extended into parts of western and southern regions (e.g., Germania Inferior, Raetia). With Rome's decline, migrating Germanic kingdoms, Frankish consolidation, and Christianization shaped early medieval political geography, setting foundations for later German polities.",
+      "keyEvents": [
+        { "year": "1st century BCE-1st century CE", "title": "Roman frontier and contact", "description": "Roman campaigns, frontier fortifications, trade; many tribes remain outside full Roman control" },
+        { "year": "5th-8th centuries", "title": "Migration Period & Frankish rule", "description": "Germanic kingdoms form; Franks under Merovingians and later Carolingians dominate much of the region" },
+        { "year": "800", "title": "Charlemagne crowned", "description": "Imperial idea strengthens continuity between Roman/Christian authority and later German polities" }
+      ],
+      "notableFigures": [
+        "Charlemagne (Carolus Magnus)",
+        "Early Frankish rulers"
+      ]
+    },
+    "colonial": {
+      "period": "High Middle Ages to early modern (10th-17th centuries)",
+      "description": "The medieval German lands coalesced into the Holy Roman Empire, a complex assemblage of duchies, principalities, bishoprics, imperial cities, and free estates. Economic growth, town law, and Hanseatic trade shaped northern regions. The late medieval and early modern period saw dynastic politics, imperial reform attempts, the imperial diet, and growing confessional divides that culminated in the Reformation and the Thirty Years' War.",
+      "keyEvents": [
+        { "year": "962", "title": "Ottonian consolidation", "description": "Otto I crowned emperor; institutional basis for the Holy Roman Empire" },
+        { "year": "13th-15th centuries", "title": "Urban growth & Hanseatic League", "description": "Cities and trade networks (Hanse) grow importance in northern Germany" },
+        { "year": "1517", "title": "Reformation", "description": "Martin Luther's theses lead to widespread religious, political, and social change" },
+        { "year": "1618-1648", "title": "Thirty Years' War", "description": "Devastating pan-European conflict that reshaped population, economy, and sovereignty" }
+      ],
+      "notableFigures": [
+        "Frederick I (Barbarossa)",
+        "Charles IV",
+        "Martin Luther",
+        "Maximilian I"
+      ]
+    },
+    "independence": {
+      "period": "Napoleonic to unification (late 18th century - 1871)",
+      "description": "Napoleonic wars dismantled old imperial structures. The Confederation of the Rhine and later the German Confederation (1815) were interim frameworks. Economic integration, cultural nationalism, liberal movements, and Prussian state modernization under figures like Otto von Bismarck culminated in unification through war and diplomacy. Prussia led unification creating the German Empire under Kaiser Wilhelm I and Chancellor Bismarck in 1871.",
+      "keyEvents": [
+        { "year": "1806", "title": "Dissolution of Holy Roman Empire", "description": "Francis II abdicates the imperial title after Napoleonic defeats" },
+        { "year": "1815", "title": "German Confederation formed", "description": "Congress of Vienna sets loose confederation of German states" },
+        { "year": "1848-1849", "title": "Revolutions of 1848", "description": "Liberal and national uprisings; Frankfurt Parliament attempts constitution but fails" },
+        { "year": "1864-1871", "title": "Wars of unification", "description": "Prussia defeats Denmark, Austria, and France; German Empire proclaimed at Versailles 1871" }
+      ],
+      "notableFigures": [
+        "Otto von Bismarck",
+        "Kaiser Wilhelm I",
+        "German nationalists and liberal reformers"
+      ]
+    },
+    "modern": {
+      "period": "1871 - present",
+      "description": "The German Empire industrialized rapidly and became a major European power. Imperial ambitions and alliances contributed to World War I. Defeat in 1918 produced the Weimar Republic, economic turmoil, and political extremism. Adolf Hitler's Nazi regime (1933-1945) led to aggressive expansion, genocide, and World War II. After 1945 Germany was occupied and divided. The Federal Republic of Germany (FRG, West) and German Democratic Republic (GDR, East) followed divergent paths during the Cold War. West Germany's economic recovery, integration in NATO and European institutions, and Ostpolitik contrast with the GDR's socialist planned economy and Soviet alignment. The Berlin Wall fell in 1989 and Germany reunified in 1990. Since reunification Germany has been a central EU leader, a major economy, and active in international diplomacy.",
+      "keyEvents": [
+        { "year": "1871", "title": "German Empire proclaimed", "description": "Second Reich founded under Prussian hegemony" },
+        { "year": "1914-1918", "title": "World War I", "description": "Total war, defeat, and political revolution at home" },
+        { "year": "1919", "title": "Weimar Republic established", "description": "Democratic constitution; political polarization and economic crises" },
+        { "year": "1933", "title": "Nazi seizure of power", "description": "Hitler appointed chancellor; dictatorship and aggressive expansion follow" },
+        { "year": "1939-1945", "title": "World War II & Holocaust", "description": "Global war and systematic genocide; devastation across Europe" },
+        { "year": "1949", "title": "FRG and GDR founded", "description": "Federal Republic (West) and German Democratic Republic (East) established" },
+        { "year": "1955", "title": "FRG joins NATO", "description": "Western alignment; GDR enters Warsaw Pact (1956)" },
+        { "year": "1961", "title": "Berlin Wall erected", "description": "Physical symbol of Cold War division" },
+        { "year": "1989-1990", "title": "Fall of Berlin Wall and reunification", "description": "Peaceful revolution in GDR; formal reunification on October 3, 1990" },
+        { "year": "1999-2002", "title": "Euro adoption", "description": "Germany joins the eurozone and adopts euro currency" }
+      ],
+      "notableFigures": [
+        "Otto von Bismarck",
+        "Kaiser Wilhelm II",
+        "Friedrich Ebert",
+        "Adolf Hitler",
+        "Konrad Adenauer",
+        "Willy Brandt",
+        "Helmut Kohl",
+        "Angela Merkel"
+      ]
+    },
+    "timeline": [
+      { "year": "962", "era": "Medieval", "title": "Ottonian Empire / HRE roots", "description": "Imperial institutions form under Otto I" },
+      { "year": "1517", "era": "Early Modern", "title": "Reformation begins", "description": "Luther's theses spark religious and political upheaval" },
+      { "year": "1618", "era": "Early Modern", "title": "Thirty Years' War begins", "description": "Widespread destruction and state system change" },
+      { "year": "1806", "era": "Napoleonic", "title": "Holy Roman Empire dissolved", "description": "End of medieval imperial order" },
+      { "year": "1871", "era": "Nation-state", "title": "German Empire formed", "description": "Unified Germany under Prussian leadership" },
+      { "year": "1918", "era": "20th century", "title": "Empire collapses", "description": "Armistice, revolution, and republican government" },
+      { "year": "1933", "era": "20th century", "title": "Nazi dictatorship begins", "description": "End of Weimar democracy" },
+      { "year": "1945", "era": "20th century", "title": "Defeat and occupation", "description": "Allied occupation; denazification and reconstruction" },
+      { "year": "1949", "era": "Cold War", "title": "Divided Germany", "description": "FRG and GDR established" },
+      { "year": "1989", "era": "Contemporary", "title": "Berlin Wall falls", "description": "Collapse of communist control in East Germany" },
+      { "year": "1990", "era": "Contemporary", "title": "German reunification", "description": "Formal unification of East and West" }
+    ]
+  },
+  {
+    "name": "Italy",
+    "overview": "Italian history centers on the peninsula that produced the Roman Republic and Empire, followed by fragmentation, medieval city-states and Papal power, the Renaissance, early modern rivalries, Napoleonic upheaval, and the 19th-century Risorgimento that created a unified kingdom. The 20th century saw two world wars, a Fascist dictatorship, a postwar republic, economic modernization, and deep involvement in European integration.",
+    "source": {
+      "label": "Manually Curated; References: Encyclopaedia Britannica, Treccani, Italian state archives",
+      "url": "https://www.britannica.com/place/Italy/History",
+      "urls": [
+        "https://www.britannica.com/place/Italy/History",
+        "https://www.treccani.it"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Roman civilization peak (Republic/Empire)", "value": "c. 5th century BCE - 476 CE" },
+      { "label": "Medieval fragmentation & Papal States", "value": "c. 5th - 15th centuries" },
+      { "label": "Renaissance", "value": "14th-17th centuries (cultural, artistic, scientific flowering)" },
+      { "label": "Risorgimento / Unification", "value": "1859-1871 (Kingdom of Italy proclaimed March 17, 1861; Rome annexed 1870)" },
+      { "label": "Fascist dictatorship", "value": "1922-1943 (Mussolini era)" },
+      { "label": "Italian Republic", "value": "June 2, 1946 (referendum); constitution effective January 1, 1948" },
+      { "label": "Capital", "value": "Rome" }
+    ],
+    "ancient": {
+      "period": "Prehistory - Late Antiquity (pre-1st millennium BCE - 5th century CE)",
+      "description": "The Italian peninsula hosted Paleolithic and Neolithic societies, later Italic tribes (Latins, Etruscans, Samnites). Rome arose from a collection of Latin settlements and became a republic c. 509 BCE. Roman expansion created a Mediterranean empire. The imperial period shaped law, language, infrastructure, and urban life across Europe and the Mediterranean. The Western Roman Empire fell in 476 CE, after which various barbarian kingdoms and the Byzantine presence vied for control.",
+      "keyEvents": [
+        { "year": "753 BCE (traditional)", "title": "Foundation of Rome (legendary date)", "description": "Romulus and Remus myth; archaeological growth into city-state" },
+        { "year": "509 BCE", "title": "Roman Republic established", "description": "Overthrow of the monarchy; republican institutions develop" },
+        { "year": "27 BCE", "title": "Roman Empire begins", "description": "Augustus becomes first emperor; imperial structures consolidate" },
+        { "year": "c. 3rd-5th centuries CE", "title": "Late antiquity & collapse", "description": "Internal crisis, invasions, and eventual fall of Western Roman Empire" }
+      ],
+      "notableFigures": [
+        "Julius Caesar",
+        "Augustus (Octavian)",
+        "Marcus Aurelius",
+        "Other Roman statesmen, generals, and emperors"
+      ]
+    },
+    "colonial": {
+      "period": "Early Middle Ages - Renaissance (5th - 16th centuries)",
+      "description": "After Rome's fall, the peninsula fragmented into Ostrogothic, Lombard, Byzantine, and later Frankish domains. By the High Middle Ages a patchwork of communes, maritime republics (Venice, Genoa, Pisa), principalities, and the Papal States defined Italian politics. The Renaissance emerged in city-states like Florence and Venice. In the early modern period Italy became a battleground for European powers, especially during the Italian Wars (1494-1559), resulting in Spanish and later Austrian Habsburg dominance over large parts of the peninsula.",
+      "keyEvents": [
+        { "year": "568", "title": "Lombard invasion", "description": "Germanic Lombards establish kingdoms in northern and central Italy" },
+        { "year": "9th-13th centuries", "title": "Rise of communes & maritime powers", "description": "City-state autonomy, trade networks, and republican institutions in some cities" },
+        { "year": "14th-16th centuries", "title": "Renaissance", "description": "Economic, artistic, and intellectual flourishing centered in Italian cities" },
+        { "year": "1494-1559", "title": "Italian Wars", "description": "France, Spain, and Habsburgs contest Italian territories" }
+      ],
+      "notableFigures": [
+        "Dante Alighieri",
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Lorenzo de' Medici",
+        "Venetian and Genoese mercantile elites"
+      ]
+    },
+    "independence": {
+      "period": "Napoleonic era to unification (late 18th century - 1871)",
+      "description": "Napoleon reorganized much of Italy into client states, spreading legal and administrative reforms. After 1815 the peninsula was redivided under conservative arrangements. The 19th century saw rising nationalism, liberal movements, and the Risorgimento led by statesmen and revolutionaries (Cavour, Garibaldi, Mazzini). Piedmont-Sardinia under the House of Savoy led diplomatic and military efforts that produced the Kingdom of Italy in 1861 and the final incorporation of Rome in 1870.",
+      "keyEvents": [
+        { "year": "1796-1815", "title": "Napoleonic period", "description": "French conquest brings administrative reforms and nationalist currents" },
+        { "year": "1815", "title": "Congress of Vienna", "description": "Restoration of pre-Napoleonic rulers; repression of nationalism" },
+        { "year": "1848-1849", "title": "Revolutions and uprisings", "description": "Waves of revolt across Italian states; limited successes" },
+        { "year": "1861", "title": "Kingdom of Italy proclaimed", "description": "Victor Emmanuel II declared king on March 17, 1861" },
+        { "year": "1870", "title": "Capture of Rome", "description": "Rome annexed and becomes capital in 1871 (after Papal resistance)" }
+      ],
+      "notableFigures": [
+        "Giuseppe Mazzini",
+        "Count Camillo di Cavour",
+        "Giuseppe Garibaldi",
+        "Victor Emmanuel II"
+      ]
+    },
+    "modern": {
+      "period": "1871 - present",
+      "description": "Unified Italy pursued colonial ventures and industrialization with regional disparities. World War I (1915-1918) and postwar social turmoil contributed to the rise of Benito Mussolini and Fascism in 1922. Mussolini's regime allied with Nazi Germany in WWII and collapsed in 1943. After liberation, Italians voted in 1946 to abolish the monarchy and establish the Italian Republic. The postwar period saw reconstruction, the 'economic miracle' of the 1950s-60s, membership in NATO and the European Communities, internal political fragmentation and frequent government changes, and enduring regional economic divides. Italy remains a founding EU member and a major cultural and economic actor in Europe.",
+      "keyEvents": [
+        { "year": "1915-1918", "title": "World War I (Italy joins Allies)", "description": "Territorial gains and heavy casualties; postwar discontent" },
+        { "year": "1922", "title": "March on Rome", "description": "Mussolini becomes prime minister; Fascist dictatorship consolidates" },
+        { "year": "1935-1936", "title": "Abyssinia (Ethiopia) invasion", "description": "Colonial aggression and international isolation" },
+        { "year": "1943-1945", "title": "Fall of Fascism & WWII", "description": "Allied invasion, armistice, civil war between Italian Social Republic (German puppet) and co-belligerent south; liberation 1945" },
+        { "year": "1946", "title": "Republic proclaimed", "description": "June 2 referendum abolishes monarchy; republic established" },
+        { "year": "1948", "title": "Constitution comes into force", "description": "Parliamentary democratic framework established January 1, 1948" },
+        { "year": "1950s-1960s", "title": "Economic miracle", "description": "Rapid industrial growth, internal migration, and rising living standards" },
+        { "year": "1957", "title": "Treaty of Rome", "description": "Italy signs founding treaty of the European Economic Community" },
+        { "year": "1992", "title": "Mani Pulite & political crisis", "description": "Widespread corruption investigations reshape party system" }
+      ],
+      "notableFigures": [
+        "Giuseppe Garibaldi",
+        "Camillo di Cavour",
+        "Benito Mussolini",
+        "Alcide De Gasperi",
+        "Palmiro Togliatti",
+        "Enrico Berlinguer",
+        "Contemporary prime ministers and presidents"
+      ]
+    },
+    "timeline": [
+      { "year": "753 BCE", "era": "Ancient", "title": "Rome founded", "description": "Origins of the city that will become a Mediterranean power" },
+      { "year": "509 BCE", "era": "Ancient", "title": "Roman Republic established", "description": "Republican institutions develop" },
+      { "year": "27 BCE", "era": "Ancient", "title": "Roman Empire begins", "description": "Imperial system under Augustus" },
+      { "year": "476 CE", "era": "Early Medieval", "title": "Fall of Western Roman Empire", "description": "End of imperial rule in the west" },
+      { "year": "14th-16th centuries", "era": "Medieval/Renaissance", "title": "Renaissance", "description": "Key cultural and scientific flowering in Italian city-states" },
+      { "year": "1796-1815", "era": "Napoleonic", "title": "French revolutionary & Napoleonic period", "description": "Modernizing reforms and political change" },
+      { "year": "1861", "era": "Unification", "title": "Kingdom of Italy proclaimed", "description": "Major step in Italian nation building" },
+      { "year": "1922", "era": "20th century", "title": "Fascist takeover", "description": "Authoritarian regime under Mussolini" },
+      { "year": "1946", "era": "Contemporary", "title": "Republic declared", "description": "Monarchy abolished after referendum" },
+      { "year": "1957", "era": "Contemporary", "title": "Treaty of Rome signed", "description": "Italy a founding member of the EEC" }
     ]
   }
 ]

@@ -85,7 +85,7 @@
 	function handleThemeChange(theme: 'dark' | 'light' | 'colorful') {
 		currentTheme = theme;
 		if (theme === 'colorful' && topoData && topoObjectKey) {
-			scheduleColorfulPalette();
+			buildColorfulPalette();
 		}
 	}
 
@@ -111,7 +111,6 @@
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
-			scheduleColorfulPalette();
 			handleResize();
 			window.addEventListener('resize', throttledResize);
 		} catch (error) {
@@ -373,7 +372,7 @@
 			.call((zoomBehavior as any).transform, currentTransform);
 	}
 
-	function buildColorfulPaletteImmediate() {
+	function buildColorfulPalette() {
 		if (!topoData || !topoObjectKey) {
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 			return;
@@ -400,14 +399,6 @@
 		} catch (e) {
 			console.error('Failed to build colorful palette', e);
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
-		}
-	}
-
-	function scheduleColorfulPalette() {
-		if (typeof (window as any).requestIdleCallback === 'function') {
-			(window as any).requestIdleCallback(buildColorfulPaletteImmediate);
-		} else {
-			setTimeout(buildColorfulPaletteImmediate, 50);
 		}
 	}
 
