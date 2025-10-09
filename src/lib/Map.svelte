@@ -402,8 +402,12 @@
 		}
 	}
 
-	function toggleSettings() { settingsOpen = !settingsOpen; }
-	function hoverReset() { hoveredCountry = null; }
+	function toggleSettings() {
+		settingsOpen = !settingsOpen;
+	}
+	function hoverReset() {
+		hoveredCountry = null;
+	}
 </script>
 
 <div

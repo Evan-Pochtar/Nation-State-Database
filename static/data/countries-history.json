@@ -1730,5 +1730,205 @@
       { "year": "1946", "era": "Contemporary", "title": "Republic declared", "description": "Monarchy abolished after referendum" },
       { "year": "1957", "era": "Contemporary", "title": "Treaty of Rome signed", "description": "Italy a founding member of the EEC" }
     ]
+  },
+  {
+    "name": "Norway",
+    "overview": "A North Atlantic kingdom shaped by fjords, maritime culture, and a Viking expansion that emphasized seafaring colonization. Early medieval Norway consolidated from competing chieftains into a monarchy. Norwegian power projected westward into the North Atlantic. Later medieval unions, Reformation, economic shifts, and 19th-20th century nationalism produce the modern constitutional kingdom.",
+    "source": {
+      "label": "Manually Curated; References: Britannica",
+      "url": "https://www.britannica.com/place/Norway/History",
+      "urls": [
+        "https://www.britannica.com/place/Norway/History",
+        "https://www.britannica.com/topic/Viking-age"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Viking Age (Norwegian outward expansion)", "value": "c. 790-1066 CE" },
+      { "label": "Traditional unification under Harald Fairhair", "value": "c. 872 CE" },
+      { "label": "Christianization intensifies", "value": "late 10th-11th centuries (Olaf Tryggvason, St. Olaf)" },
+      { "label": "Kalmar Union membership (with Denmark & Sweden)", "value": "1397-1523 (later forms of union influence Norway)" },
+      { "label": "Union with Denmark (Dano-Norwegian realm)", "value": "c. 1380/1537-1814" },
+      { "label": "Constitution & union with Sweden", "value": "1814 (constitution); personal union with Sweden 1814-1905" },
+      { "label": "Full independence", "value": "1905 (dissolution of union with Sweden)" },
+      { "label": "Capital", "value": "Oslo" }
+    ],
+    "ancient": {
+      "period": "Prehistory - early medieval (to c. 790)",
+      "description": "Mesolithic and Neolithic coastal communities develop maritime economies. Iron Age social stratification and petty kingdoms form in fjord regions. Long-distance Baltic and North Sea contacts precede the Viking burst of activity.",
+      "keyEvents": [
+        { "year": "c. 3000-500 BCE", "title": "Neolithic to Bronze Age coastal settlements", "description": "Development of long-distance trade and local elites" },
+        { "year": "c. 1st millennium BCE-early 1st millennium CE", "title": "Germanic cultural developments", "description": "Regional chiefdoms and increasing social complexity" }
+      ],
+      "notableFigures": [
+        "Local chieftains and legendary ancestral leaders (saga tradition preserves names later)"
+      ]
+    },
+    "colonial": {
+      "period": "Viking Age and outward expansion (c. 790-1066)",
+      "description": "Norwegian Vikings specialized in long-distance colonization and maritime settlement. They combined raiding with permanent settlement. Norwegian activity concentrated west and northwest of Scandinavia. Key features included advanced clinker-built longships, seasonal raid circuits, and creation of Norse-Gaelic mixed societies in the Irish Sea. Norwegian settlers established enduring polities in the North Atlantic and took part in exploration to North America.",
+      "vikingDetails": {
+        "maritimeProfile": "Ships suited for open Atlantic voyages (longships and knarrs). Expertise in coastal navigation and seasonal patterns allowed sustained long-range travel.",
+        "settlementPattern": "Focus on permanent colonization: Orkney, Shetland, Hebrides, Isle of Man, western Scotland, Iceland (settled c. 870s), Greenland (c. 985), short-lived Norse presence in Vinland (Newfoundland c. 1000).",
+        "socialStructure": "Local jarls and powerful chieftains controlled regional resources. Many voyages were organized by chieftain-led retinues rather than centralized royal fleets in early period.",
+        "economy": "Combination of raiding, tribute, trade in walrus ivory, fish, and slaves; later emphasis on fisheries and Atlantic resources.",
+        "religion": "Norse pagan cults with local gods and rites; conversion to Christianity occurs through royal patronage and missionary activity in late 10th-11th centuries."
+      },
+      "keyEvents": [
+        { "year": "c. 793", "title": "Lindisfarne raid (context)", "description": "Traditional marker for Viking Age; Norwegian seafarers join wider Scandinavian activity" },
+        { "year": "c. 870-930", "title": "Settlement of Iceland", "description": "Large numbers of Norwegian settlers establish Norse polity in Iceland" },
+        { "year": "c. 985", "title": "Greenland settlement", "description": "Erik the Red leads settlers to Greenland" },
+        { "year": "c. 1000", "title": "Vinland voyages", "description": "Exploratory voyages to North America (Leif Erikson and others)" }
+      ],
+      "notableFigures": [
+        "Harald Fairhair (traditional unifier)",
+        "Erik the Red",
+        "Leif Erikson",
+        "Olaf Tryggvason",
+        "Olaf Haraldsson (St. Olaf)"
+      ]
+    },
+    "independence": {
+      "period": "State formation to late medieval (c. 9th-14th centuries)",
+      "description": "Consolidation of regional chieftains into royal authority progresses across the 9th-11th centuries. Christianization and the emergence of kingship under figures such as Harald Fairhair and later Olaf Tryggvason and St. Olaf strengthen centralized claims. Norway becomes a maritime kingdom with strong ties to Atlantic islands and occasional influence in British affairs. Over time internal aristocratic networks and dynastic ties link Norway to Denmark and Sweden.",
+      "keyEvents": [
+        { "year": "c. 872", "title": "Trad. Battle of Hafrsfjord / Harald Fairhair", "description": "Saga tradition places consolidation of kingship under Harald Fairhair" },
+        { "year": "995-1030", "title": "Christianizing monarchs", "description": "Olaf Tryggvason and Olaf Haraldsson promote conversion and church organization" },
+        { "year": "1030", "title": "Battle of Stiklestad", "description": "Death of St. Olaf; later sainted; symbol of Christian monarchy" },
+        { "year": "12th-13th centuries", "title": "Civil wars and consolidation", "description": "Period of internecine conflict followed by centralization under stronger royal institutions" }
+      ],
+      "notableFigures": [
+        "Harald Fairhair",
+        "Olaf Tryggvason",
+        "St. Olaf (Olaf II)",
+        "Magnus the Good"
+      ]
+    },
+    "modern": {
+      "period": "Late medieval - present",
+      "description": "Norway enters periods of union and foreign dominance. The Kalmar Union and later dynastic ties produce a long union with Denmark, during which Norway's overseas Atlantic colonies remain important but Norwegian autonomy diminishes. The Napoleonic wars lead to 1814 constitutional moment and then union with Sweden until full independence in 1905. The 20th century brings industrialization, oil wealth after 1960s, occupation in WWII, and development of a social democratic welfare state. Norway retains a distinct maritime culture and active international role.",
+      "keyEvents": [
+        { "year": "1380/1397", "title": "Union with Denmark begins (personal/unions)", "description": "Dynastic union then Kalmar Union links Scandinavian crowns" },
+        { "year": "1537", "title": "Reformation and integration with Denmark", "description": "Norwegian church reorganized under Danish crown; greater administrative integration" },
+        { "year": "1814", "title": "Constitution at Eidsvoll; union with Sweden", "description": "Norway declares independence but enters personal union under Swedish king" },
+        { "year": "1905", "title": "Dissolution of union with Sweden", "description": "Norway gains full independence; constitutional monarchy restored" },
+        { "year": "1940-1945", "title": "German occupation", "description": "World War II occupation and resistance" },
+        { "year": "1960s-present", "title": "Oil discovery & welfare state", "description": "North Sea oil transforms economy and finances welfare systems" }
+      ],
+      "notableFigures": [
+        "King Harald Fairhair (traditional)",
+        "St. Olaf",
+        "King Haakon VII (post-1905)",
+        "Einar Gerhardsen (postwar leader)"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 793", "era": "Viking Age", "title": "Lindisfarne context", "description": "Beginning of wider Viking raiding era" },
+      { "year": "c. 872", "era": "State formation", "title": "Traditional unification under Harald", "description": "Saga-based consolidation of coastal chieftains" },
+      { "year": "c. 870s-930", "era": "Viking Age", "title": "Iceland settled", "description": "Major Norse migration westward" },
+      { "year": "c. 985", "era": "Viking Age", "title": "Greenland colonized", "description": "Erik the Red's expedition" },
+      { "year": "1066", "era": "Late Viking Age", "title": "Battle of Stamford Bridge", "description": "Harald Hardrada's defeat; often treated as Viking Age endpoint" },
+      { "year": "1814", "era": "Modern", "title": "Constitution & union with Sweden", "description": "Key constitutional moment" },
+      { "year": "1905", "era": "Modern", "title": "Full independence", "description": "Dissolution of union with Sweden" }
+    ]
+  },
+  {
+    "name": "Denmark",
+    "overview": "A Jutland and Baltic-centered kingdom that developed strong early kingship. Danish Vikings combined raiding with sustained political engagement in England and continental Europe. Denmark later expanded control into southern Scandinavia and the Baltic. Over centuries Denmark built centralized monarchy, maritime commerce, and control over the straits between North and Baltic Seas. Modern Denmark is a constitutional monarchy with a welfare state and overseas territories.",
+    "source": {
+      "label": "Manually Curated; References: Britannica",
+      "url": "https://www.britannica.com/place/Denmark/History",
+      "urls": [
+        "https://www.britannica.com/place/Denmark/History",
+        "https://www.britannica.com/topic/Viking-age"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Viking Age (Danish activity)", "value": "c. 790-1066 CE" },
+      { "label": "Jelling monuments (Christianization)", "value": "10th century (Gorm the Old, Harald Bluetooth)" },
+      { "label": "Danelaw and English kingdoms influence", "value": "9th-11th centuries (Sweyn, Cnut)" },
+      { "label": "Kalmar Union membership", "value": "1397-1523" },
+      { "label": "Denmark-Norway union", "value": "c. 1523/1536-1814 (Dano-Norwegian realm)" },
+      { "label": "Constitutional monarchy established", "value": "1849" },
+      { "label": "Modern welfare state and EU member", "value": "20th-21st century" },
+      { "label": "Capital", "value": "Copenhagen" }
+    ],
+    "ancient": {
+      "period": "Prehistory - early medieval (to c. 790)",
+      "description": "Jutland and surrounding islands have long agricultural societies, Bronze and Iron Age elites, and trade links across the North Sea and Baltic. Coastal communities develop seafaring skills that will feed Viking mobilization.",
+      "keyEvents": [
+        { "year": "Bronze Age-Iron Age", "title": "Cultural formation", "description": "Regional elites, trade networks, and seafaring develop" },
+        { "year": "c. 6th-8th centuries", "title": "Formation of petty kingdoms", "description": "Early dynasties and chieftaincies consolidate power in Jutland and islands" }
+      ],
+      "notableFigures": [
+        "Local chieftains; later dynasts like Gorm the Old"
+      ]
+    },
+    "colonial": {
+      "period": "Viking Age (c. 790-1066) and continental engagement",
+      "description": "Danish Vikings are notable for raids, large-scale migrations, and direct political domination on the English east coast and parts of northern France. Denmark produced powerful kings early in the Viking period who increasingly directed expeditions and sought territorial rule abroad. Danish control in England culminated in the Danelaw and later the North Sea Empire under Cnut. Denmark also developed major trading centers like Hedeby (Haithabu) and Ribe that tied the North Sea and Baltic economies.",
+      "vikingDetails": {
+        "maritimeProfile": "Skilled in both longship raids and larger merchant vessels. Hedeby and Ribe were key emporia linking Baltic and North Sea trade.",
+        "expansionPattern": "Frequent raids and settlement in eastern England, northern France, and Baltic coasts. Stronger tendency toward political conquest and dynasty building on continental coasts compared with Norwegian westward colonization.",
+        "politicalProfile": "Earlier concentration of royal authority in southern Scandinavia. Danish kings like Gorm, Harald Bluetooth, Sweyn Forkbeard, and Cnut became central figures with cross-regional power.",
+        "religion": "Early conversion episodes are visible in Jelling runestones and royal patronage of Christianity under Harald Bluetooth."
+      },
+      "keyEvents": [
+        { "year": "c. 8th-9th centuries", "title": "Raiding and trading intensify", "description": "Danish fleets active across North Sea and Baltic" },
+        { "year": "c. 870s-900s", "title": "Danelaw established", "description": "Large parts of eastern England under Danish control and settlement influence" },
+        { "year": "10th century", "title": "Jelling monuments & Christian kings", "description": "Gorm the Old and Harald Bluetooth mark Christianization and royal legitimacy" },
+        { "year": "1016-1035", "title": "Cnut's North Sea Empire", "description": "Cnut the Great rules England, Denmark, Norway and parts of the North Sea littoral" }
+      ],
+      "notableFigures": [
+        "Gorm the Old",
+        "Harald Bluetooth",
+        "Sweyn Forkbeard",
+        "Cnut the Great",
+        "Rollo (Norse leader in Frankish lands; founder of Normandy)"
+      ]
+    },
+    "independence": {
+      "period": "State consolidation to late medieval (c. 10th-15th centuries)",
+      "description": "Danish monarchy consolidates power through control of trade, territorial expansion in southern Scandinavia and Baltic regions, and integration of church and royal administration. Denmark is often a maritime and mercantile power with intermittent continental ambitions. The Kalmar Union later unites Scandinavian crowns under a single monarch, with shifting degrees of dominance among Denmark, Sweden, and Norway.",
+      "keyEvents": [
+        { "year": "10th century", "title": "Consolidation under first historical kings", "description": "Royal dynasties centralize power in Jutland and Zealand" },
+        { "year": "1397", "title": "Kalmar Union", "description": "Union with Norway and Sweden under a single monarch" },
+        { "year": "15th-17th centuries", "title": "Control over Baltic trade & territories", "description": "Danish involvement in Baltic politics and occasional wars with Hanseatic cities" }
+      ],
+      "notableFigures": [
+        "Harald Bluetooth",
+        "Cnut the Great",
+        "Valdemar the Great",
+        "Margaret I (architect of Kalmar Union)"
+      ]
+    },
+    "modern": {
+      "period": "Early modern - present",
+      "description": "Denmark remains a consolidated kingdom. It loses and gains territories over centuries (including brief control over Norway until 1814). The Reformation under the crown, early modern state building, involvement in European wars, and later constitutional development shape Danish modernity. The 19th century brings nationalism, loss of Schleswig and Holstein conflicts, and liberal reforms culminating in the 1849 constitution. Denmark is occupied in WWII but retains a strong postwar welfare state and participates in European and transatlantic institutions.",
+      "keyEvents": [
+        { "year": "1536", "title": "Reformation and state church", "description": "Denmark adopts Lutheranism; crown consolidates ecclesiastical power" },
+        { "year": "1814", "title": "Cession of Norway to Sweden", "description": "After Napoleonic wars Denmark loses Norway" },
+        { "year": "1849", "title": "Constitution of Denmark", "description": "Move toward constitutional monarchy and civil rights" },
+        { "year": "1864", "title": "Second Schleswig War", "description": "Loss of Schleswig and Holstein to Prussia/Austria; territorial and identity impact" },
+        { "year": "1940-1945", "title": "German occupation", "description": "WWII occupation with complex resistance and collaboration narratives" },
+        { "year": "20th century", "title": "Welfare state development & EU cooperation", "description": "Denmark builds comprehensive social welfare and engages in European cooperation while retaining distinct policy choices" }
+      ],
+      "notableFigures": [
+        "Gorm the Old",
+        "Harald Bluetooth",
+        "Margaret I",
+        "Christian IV (early modern monarch)",
+        "Modern prime ministers shaping welfare and EU policy"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 793", "era": "Viking Age", "title": "Raid wave begins", "description": "Danish seafarers active in North Sea raids and later settlement" },
+      { "year": "c. 900-1000", "era": "Viking Age", "title": "Jelling monuments & royal Christianity", "description": "Material markers of conversion and state legitimacy" },
+      { "year": "c. 870s-11th century", "era": "Viking Age", "title": "Danelaw and English connections", "description": "Danish settlement and political influence in England" },
+      { "year": "1016-1035", "era": "Viking Age", "title": "Cnut's rule", "description": "Height of Danish continental influence" },
+      { "year": "1397", "era": "Medieval/Early Modern", "title": "Kalmar Union", "description": "Union of Scandinavian crowns" },
+      { "year": "1536", "era": "Early Modern", "title": "Reformation", "description": "Lutheran church established under crown authority" },
+      { "year": "1849", "era": "Modern", "title": "Constitution adopted", "description": "Denmark becomes constitutional monarchy" },
+      { "year": "1864", "era": "Modern", "title": "Schleswig war", "description": "Major territorial loss to Prussia/Austria" }
+    ]
   }
 ]
