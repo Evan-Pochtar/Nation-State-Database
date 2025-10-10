@@ -2,9 +2,7 @@
 
 This repository contains a lightweight, high-performance SvelteKit prototype that renders a fullscreen, black-and-white SVG world map. Selecting a country opens a resizable information panel on the left and triggers a smooth D3-driven zoom on the right, highlighting the chosen nation while preserving its geographic context. The project serves as a proof-of-concept for a modern, static-asset-only nation information UI. No database. No server-side geometry processing. Map rendering is fully client-side.
 
-The prototype currently retrieves basic country information from several APIs, including Wikipedia, RestCountries, and the World Bank for economic data. Future development will expand this with better visualizations, descriptive content, and historical context.
-
-Currently, the JSON file containing finalized country descriptions is not included in the repository but will be added once completed.
+The prototype currently retrieves basic country information from several APIs, including Wikipedia, RestCountries, and the World Bank for economic data. Future development will expand this with better visualizations, descriptive content, and historical context. The JSON file containing country information is included in the repository, but some information is missing, and will in the future be filled in and updated automatically.
 
 ## Features
 
