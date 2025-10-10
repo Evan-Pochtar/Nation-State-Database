@@ -1,4 +1,3 @@
-// src/lib/utils/gatherAll.ts
 import type { CountryData } from '$lib/utils/types';
 import { fetchCountryInfoByName, fetchEconomicDataModule } from './getInfo';
 
@@ -40,7 +39,7 @@ function hasEconomics(entry: any) {
 	if (!entry.economics) return false;
 	if (typeof entry.economics === 'object' && Object.keys(entry.economics).length > 0) {
 		// ensure there's at least one numeric / year entry under an indicator
-		return Object.values(entry.economics).some((v: any) => Array.isArray(v) ? v.length > 0 : Boolean(v));
+		return Object.values(entry.economics).some((v: any) => (Array.isArray(v) ? v.length > 0 : Boolean(v)));
 	}
 	return false;
 }
@@ -102,7 +101,11 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 
 			const localEntry = findLocalEntryByName(name, localJson);
 
-			const needSummary = !localEntry || !localEntry.summary || localEntry.summary === 'No summary available.' || localEntry.summary === '—';
+			const needSummary =
+				!localEntry ||
+				!localEntry.summary ||
+				localEntry.summary === 'No summary available.' ||
+				localEntry.summary === '—';
 			const needCca2 = !localEntry || !localEntry.cca2ID || localEntry.cca2ID === 'UNKNOWN';
 			const needEconomics = !hasEconomics(localEntry);
 
@@ -135,7 +138,9 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 							const afterEntry = findLocalEntryByName(name, afterJson);
 							if (afterEntry?.cca2ID && afterEntry.cca2ID !== 'UNKNOWN') cca2ID = afterEntry.cca2ID;
 						}
-					} catch { /* empty */ }
+					} catch {
+						/* empty */
+					}
 				}
 
 				if (cca2ID && cca2ID !== 'UNKNOWN') {
