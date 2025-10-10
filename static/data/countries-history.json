@@ -1277,9 +1277,9 @@
     },
     "colonial": {
       "period": "16th-18th centuries / Spanish & Austrian rule",
-      "description": "After Burgundian rule, the territory passed to Habsburg Spain, then Austria. During this time, the southern provinces had religious, political, and economic tensions with northern provinces (which would become the Netherlands). The Reformation, the Eighty-Years’ War, and shifting European power all affected the region.",
+      "description": "After Burgundian rule, the territory passed to Habsburg Spain, then Austria. During this time, the southern provinces had religious, political, and economic tensions with northern provinces (which would become the Netherlands). The Reformation, the Eighty-Years' War, and shifting European power all affected the region.",
       "keyEvents": [
-        { "year": "1568-1648", "title": "Eighty Years’ War", "description": "War of independence in the northern provinces; south (Belgium area) remained under Spanish control" },
+        { "year": "1568-1648", "title": "Eighty Years' War", "description": "War of independence in the northern provinces; south (Belgium area) remained under Spanish control" },
         { "year": "1713-1714", "title": "Treaty of Utrecht / Austrian rule", "description": "After War of Spanish Succession, southern Netherlands come under Habsburg Austria" }
       ],
       "notableFigures": [
@@ -1305,7 +1305,7 @@
     },
     "modern": {
       "period": "20th century - present",
-      "description": "Belgium suffered occupation in both world wars. After WWII, the country rebuilt, industrialized further, joined European integration (EU, NATO). Internal tensions among Flemish, Walloons, German‐speaking community led to federalization reforms. Belgium’s international role includes hosting EU institutions. It also faces linguistic and regional political challenges.",
+      "description": "Belgium suffered occupation in both world wars. After WWII, the country rebuilt, industrialized further, joined European integration (EU, NATO). Internal tensions among Flemish, Walloons, German‐speaking community led to federalization reforms. Belgium's international role includes hosting EU institutions. It also faces linguistic and regional political challenges.",
       "keyEvents": [
         { "year": "1914-1918", "title": "World War I occupation", "description": "German troops occupy Belgium; major battles on Western Front" },
         { "year": "1940-1944", "title": "World War II occupation", "description": "Germany invades; liberation in 1944-45" },
@@ -1321,7 +1321,7 @@
       ]
     },
     "timeline": [
-      { "year": "1568", "era": "Colonial", "title": "Start of Eighty Years’ War", "description": "Northern provinces rebel against Spain, southern remain under control" },
+      { "year": "1568", "era": "Colonial", "title": "Start of Eighty Years' War", "description": "Northern provinces rebel against Spain, southern remain under control" },
       { "year": "1713", "era": "Colonial", "title": "Austrian Netherlands", "description": "Southern Netherlands under Habsburg Austria after Spanish rule ends" },
       { "year": "1795-1815", "era": "Colonial / Napoleonic", "title": "French control", "description": "French Republic and Empire rule the region; administrative changes" },
       { "year": "1830", "era": "Independence", "title": "Belgian Revolution", "description": "Revolt and declaration of independence" },
@@ -1344,7 +1344,7 @@
       { "label": "Union of Utrecht", "value": "1579" },
       { "label": "Independence from Spain", "value": "1648 (Treaty of Westphalia)" },
       { "label": "Golden Age", "value": "17th century" },
-      { "label": "Kingdom formed under Napoleon’s fall", "value": "1815" },
+      { "label": "Kingdom formed under Napoleon's fall", "value": "1815" },
       { "label": "Neutral in WWI", "value": "1914-1918" },
       { "label": "Occupied in WWII", "value": "1940-1945" },
       { "label": "Decolonization", "value": "mid-20th century (Indonesia, Suriname etc.)" },
@@ -1462,7 +1462,7 @@
       "description": "Luxembourg passes through Burgundian inheritance, then Spanish then Austrian Habsburgs. Later occupied by France during Revolutionary/Napoleonic era. The territory fragmented politically, strategic fortress city contested by powers (notably France, Prussia).",
       "keyEvents": [
         { "year": "1477", "title": "Duchy comes under Burgundy", "description": "Philip the Good of Burgundy acquires Luxembourg" },
-        { "year": "1555-56", "title": "Habsburg inheritance divides", "description": "After Charles V’s abdication, lands distributed to Spanish/Austrian branches" },
+        { "year": "1555-56", "title": "Habsburg inheritance divides", "description": "After Charles V's abdication, lands distributed to Spanish/Austrian branches" },
         { "year": "1795-1815", "title": "French Revolutionary/Napoleonic occupation", "description": "French rule, administrative changes" }
       ],
       "notableFigures": [
@@ -1929,6 +1929,188 @@
       { "year": "1536", "era": "Early Modern", "title": "Reformation", "description": "Lutheran church established under crown authority" },
       { "year": "1849", "era": "Modern", "title": "Constitution adopted", "description": "Denmark becomes constitutional monarchy" },
       { "year": "1864", "era": "Modern", "title": "Schleswig war", "description": "Major territorial loss to Prussia/Austria" }
+    ]
+  },
+  {
+    "name": "Sweden",
+    "overview": "Sweden's history runs from tribal and regional divisions in early Scandinavia through the Viking Age, medieval consolidation, empire building in the Baltic, loss of great power status, and modern democracy. Its geographic position between East and West shaped trade, war, and culture.",
+    "source": {
+      "label": "Manually Curated; References: Britannica, Swedish Government",
+      "url": "https://www.britannica.com/topic/history-of-Sweden",
+      "urls": [
+        "https://www.britannica.com/topic/history-of-Sweden",
+        "https://sweden.se/culture/history/history-of-sweden"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Viking Age", "value": "c. 8th - 11th centuries CE" },
+      { "label": "Unification of provinces", "value": "12th century (Svealand + Götaland)" },
+      { "label": "Christianization", "value": "late 10th - early 12th centuries" },
+      { "label": "Kalmar Union membership", "value": "1397 - 1523" },
+      { "label": "Great Power Era", "value": "17th century" },
+      { "label": "Loss of Finland & other territories", "value": "1809" },
+      { "label": "Constitutional monarchy & parliamentary rule", "value": "19th - early 20th century" },
+      { "label": "Neutrality in 20th century", "value": "World Wars and Cold War" },
+      { "label": "EU membership", "value": "1995" },
+      { "label": "Capital", "value": "Stockholm" }
+    ],
+    "ancient": {
+      "period": "Pre-Viking & Viking (before ~8th century - 11th century)",
+      "description": "Populations in Uppland, Svealand, Götaland; tribal divisions; important regional elites around Uppsala. Swedish Vikings (“Rus”) oriented east more than west; trade along rivers toward the Baltic and the interior of what is now Russia. Raiding, trading, settlement by Swedes into Eastern Baltic and Russian river-network (e.g. Novgorod routes). Unlike Norwegian Vikings who focused westward (islands, Atlantic), Swedish Vikings had greater involvement in overland trade and interaction with Slavic and Finnic peoples. Christianization gradually adopted via missions and royal patronage.",
+      "vikingDetails": {
+        "maritimeProfile": "Longships and cargo craft; navigation across Baltic and rivers rather than long Atlantic voyages dominating Norwegian route.",
+        "expansionPattern": "Swedes engaged in trade, tribute, and sometimes raids to the east; they founded or influenced trade settlements (e.g. Birka), and part of eastern Baltic politics; less colonization westwards compared to Norway.",
+        "religion": "Norse paganism dominant early; local cults (e.g. at Uppsala). Conversion in 11th-12th centuries via kings and clergy, establishment of church hierarchy (Archbishopric of Uppsala).",
+        "socialStructure": "Regional magnates; assembly law (“things”) in provinces; later increasing royal authority."
+      },
+      "keyEvents": [
+        { "year": "c. 800-900", "title": "Sweden in Viking network", "description": "Swedish Vikings engage in trade, raids, and interaction eastwards (Baltic, Russia)" },
+        { "year": "c. 970-1000", "title": "Christianizing rulers appear", "description": "Official adoption of Christian kings; gradual church building" },
+        { "year": "c. 1060-1100", "title": "Loose federation", "description": "Provinces like Svealand and Götaland loosely allied; no full centralized monarchy yet" }
+      ],
+      "notableFigures": [
+        "King Erik Jedvardsson (St. Erik)",
+        "Kings from the Svea & Götar magnate families"
+      ]
+    },
+    "independence": {
+      "period": "Medieval consolidation & empire (12th - 17th centuries)",
+      "description": "Sweden unifies provincially, strengthens monarchy, participates in Northern crusades eastwards. It becomes a major Baltic power under Gustav II Adolf, fights wars with Denmark, Russia, Poland. The Kalmar Union collapses when Sweden exits. The Age of Great Power yields territorial expansion, but also overextension.",
+      "keyEvents": [
+        { "year": "1164", "title": "Archbishopric of Uppsala", "description": "Sweden gains ecclesiastical independence; indication of growing state structures" },
+        { "year": "1397", "title": "Kalmar Union formed", "description": "Sweden, Denmark, Norway under one monarch" },
+        { "year": "1523", "title": "Gustav Vasa becomes king", "description": "Sweden breaks from Union; consolidates centralized power; introduces Protestant Reformation" },
+        { "year": "1611-1721", "title": "Great Power Era", "description": "Sweden contests Baltic dominance; involvement in Thirty Years' War; peace treaties expand/contract territory" }
+      ],
+      "notableFigures": [
+        "Gustav Vasa",
+        "Gustavus Adolphus (Gustav II Adolf)",
+        "Queen Christina",
+        "Charles XII"
+      ]
+    },
+    "modern": {
+      "period": "18th century - present",
+      "description": "After defeats (Great Northern War) Sweden loses territories, including much of Finland. In Napoleonic period, loses Finland to Russia (1809), enters union with Norway briefly. 19th century sees political reform, parliamentary development. 20th century Sweden remains neutral in WWI and WWII. Post-WWII economic growth, welfare state, democratic consolidation. Joins EU, later NATO (if applicable, depending on date).",
+      "keyEvents": [
+        { "year": "1700-1721", "title": "Great Northern War", "description": "Defeat by Russia-led coalition; loss of Baltic territories" },
+        { "year": "1809", "title": "Finland ceded to Russia", "description": "Treaty of Fredrikshamn (Hamina); Finland becomes Grand Duchy under Russia" },
+        { "year": "1814", "title": "Union with Norway", "description": "Sweden gains Norway after Napoleonic Wars; union lasts until 1905" },
+        { "year": "1905", "title": "Norway's independence", "description": "Peaceful dissolution of union" },
+        { "year": "1914-1918", "title": "World War I neutrality", "description": "Sweden remains neutral" },
+        { "year": "1939-1945", "title": "World War II", "description": "Neutral officially; complex trade and diplomatic balancing" },
+        { "year": "1950s--1990s", "title": "Welfare state & modernization", "description": "Industrialization, social reforms, labour movements" },
+        { "year": "1995", "title": "EU membership", "description": "Sweden joins European Union" }
+      ],
+      "notableFigures": [
+        "Gustav II Adolf",
+        "Charles XII",
+        "Gustaf V",
+        "Olof Palme",
+        "Dag Hammarskjöld",
+        "Contemporary leaders"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 800", "era": "Viking Age", "title": "Swedes engage in eastern trade/raids", "description": "Swedes active in Baltic & towards Rus" },
+      { "year": "c. 1060-1100", "era": "Medieval", "title": "Christianization & church establishment", "description": "Archbishopric in Uppsala" },
+      { "year": "1397", "era": "Medieval", "title": "Kalmar Union", "description": "Sweden enters union of crowns with Denmark and Norway" },
+      { "year": "1523", "era": "Early Modern", "title": "Break from Kalmar Union", "description": "Gustav Vasa crowned" },
+      { "year": "1700-1721", "era": "Modern", "title": "Great Northern War", "description": "Decline of Swedish Baltic power" },
+      { "year": "1809", "era": "Modern", "title": "Finland lost to Russia", "description": "Major territorial shift" },
+      { "year": "1905", "era": "Modern", "title": "Norway becomes independent from union", "description": "Sweden-Norway union ends" },
+      { "year": "1995", "era": "Contemporary", "title": "Sweden joins EU", "description": "Integration into European structures" }
+    ]
+  },
+  {
+    "name": "Finland",
+    "overview": "Finland's history includes indigenous Finno-Ugric people, gradual incorporation into Swedish realm, rule under Russia as autonomous Grand Duchy, struggle for independence, civil war, and modern welfare state. Finland's identity reflects both Eastern and Nordic influences, Swedish legal/cultural legacy, and Russian/Soviet interactions.",
+    "source": {
+      "label": "Manually Curated; References: Britannica, Wikipedia",
+      "url": "https://www.britannica.com/topic/history-of-Finland",
+      "urls": [
+        "https://www.britannica.com/topic/history-of-Finland",
+        "https://en.wikipedia.org/wiki/Finland_under_Swedish_rule"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Viking Age border-trade and interaction", "value": "c. 8th-11th centuries" },
+      { "label": "Swedish rule begins", "value": "12th-13th centuries" },
+      { "label": "Treaty of Pähkinäsaari (Nöteborg)", "value": "1323" },
+      { "label": "Sweden loses Finland", "value": "1809 (Treaty of Hamina / Fredrikshamn)" },
+      { "label": "Autonomous Grand Duchy under Russia", "value": "1809-1917" },
+      { "label": "Parliamentary reform", "value": "1906" },
+      { "label": "Declaration of Independence", "value": "6 December 1917" },
+      { "label": "Republic established", "value": "1919" },
+      { "label": "Capital", "value": "Helsinki" }
+    ],
+    "ancient": {
+      "period": "Prehistory - early medieval (before ~8th-9th centuries)",
+      "description": "Inhabited by Finnic tribes (Finns proper, Tavastians, Karelians) and the Sami in the north. Settlement largely in south and along coastlines. Bör major trade routes via Baltic Sea; early contact with Swedes, Norse, Baltic and Slavic tribes. No large Viking raids or recorded large-scale Viking settlement by Finns; rather Finns served often as suppliers (furs etc.) or intermediaries.",
+      "keyEvents": [
+        { "year": "c. 1st millennium CE", "title": "Finnic tribal societies", "description": "Tavastians, Karelians, etc., with chiefs; sparse population; animistic and pagan belief systems" },
+        { "year": "8th-11th centuries", "title": "Viking Age interactions", "description": "Swedes traverse Finnish coastal waters; Finland part of Swedish trade and crusade-like missions; Finns less active as Vikings themselves" }
+      ],
+      "notableFigures": [
+        "No well-documented rulers in pre-Swedish Finnish tribal polities"
+      ]
+    },
+    "colonial": {
+      "period": "Swedish expansion & rule (12th century - 1809)",
+      "description": "Swedish kings see Finland as integral territory. Missions/crusades, fortification, settlement, church establishment, legal and administrative integration. Finnish language and culture develop under Swedish governance, Swedish law and ecclesiastical structures are imposed; Swedish settlers move in especially to coastal areas. Finnish territories frontier with Novgorod / Russia; repeated border wars.",
+      "keyEvents": [
+        { "year": "c. 1150s", "title": "Traditional First Swedish Crusade", "description": "Christianization and Swedish influence begin (somewhat legendary in sources)" },
+        { "year": "1293", "title": "Fortress at Viipuri", "description": "Efforts to strengthen eastern frontier" },
+        { "year": "1323", "title": "Treaty of Pähkinäsaari", "description": "Treaty with Novgorod sets eastern boundary" },
+        { "year": "1596-1597", "title": "The Club War", "description": "Peasant revolt in Finland over burdens, legal status, and Swedish crown policies" }
+      ],
+      "notableFigures": [
+        "Mikael Agricola (Lutheran reformer, author of Finnish literary works)",
+        "Birger Jarl",
+        "Swedish administrators (various kings John III, Charles IX etc.)"
+      ]
+    },
+    "independence": {
+      "period": "Russian rule & national awakening to independence (1809-1917)",
+      "description": "After Finland is ceded to Russia, it becomes the Grand Duchy of Finland with wide local autonomy. A Finnish national identity gradually forms (language movements, culture, politics). Political reforms towards universal suffrage. During Russian turmoil (WWI, revolutions), Finland declares independence. Civil war between Reds and Whites arises immediately after, then stability builds.",
+      "keyEvents": [
+        { "year": "1809", "title": "Treaty of Hamina (Fredrikshamn)", "description": "Sweden cedes Finland to Russia; Grand Duchy established" },
+        { "year": "1906", "title": "Parliament Act & universal suffrage", "description": "Major political reform; unicameral parliament; women's suffrage" },
+        { "year": "6 December 1917", "title": "Declaration of Independence", "description": "Finland declares independence from Russia" },
+        { "year": "1918", "title": "Finnish Civil War", "description": "Conflict between Reds and Whites; White victory leads to conservative government" }
+      ],
+      "notableFigures": [
+        "Pehr Evind Svinhufvud",
+        "C.G.E. Mannerheim",
+        "K.J. Ståhlberg",
+        "Mikael Agricola"
+      ]
+    },
+    "modern": {
+      "period": "1919 - present",
+      "description": "Finland becomes a republic. It navigates precarious location next to Soviet Union / Russia; fights Winter War, Continuation War in WWII. Postwar neutrality, then a shift to cooperation with Western and Nordic nations. Build welfare state, strong education, codified civil liberties. Joined United Nations, later EU. Increasing involvement in international affairs and defense agreements.",
+      "keyEvents": [
+        { "year": "1939-1940", "title": "Winter War", "description": "Soviet invasion; Finnish resistance; eventual territorial losses" },
+        { "year": "1941-1944", "title": "Continuation War", "description": "Alliance of interests with Germany vs Soviet Union; more losses at peace" },
+        { "year": "1945", "title": "Post-war peace and neutrality", "description": "Finland cedes territory; retains independence; pursues neutral/non-aligned foreign policy" },
+        { "year": "1955", "title": "Nordic Council & UN membership", "description": "Integration into multilateral Nordic and global institutions" },
+        { "year": "1995", "title": "EU membership", "description": "Finland joins European Union" }
+      ],
+      "notableFigures": [
+        "C.G.E. Mannerheim",
+        "Urho Kekkonen",
+        "Tarja Halonen",
+        "Modern presidents & prime ministers"
+      ]
+    },
+    "timeline": [
+      { "year": "c. 800-900", "era": "Viking Age", "title": "Swedish-Finnish coastal interaction", "description": "Swedes travel across seas and rivers; Finns serve as trade partners or frontier contacts" },
+      { "year": "c. 1150s", "era": "Colonial", "title": "First Swedish Crusade (traditional)", "description": "Legendary but indicates penetration of Swedish state and Christianization" },
+      { "year": "1323", "era": "Colonial", "title": "Treaty of Pähkinäsaari", "description": "Boundary with Novgorod defined" },
+      { "year": "1596-1597", "era": "Colonial", "title": "Club War", "description": "Peasant uprising in Finland under Swedish rule" },
+      { "year": "1809", "era": "Independence", "title": "Finland ceded to Russia", "description": "Major political shift" },
+      { "year": "1906", "era": "Independence", "title": "Parliamentary reform", "description": "Universal suffrage; foundation of modern political system" },
+      { "year": "1917", "era": "Independence", "title": "Declaration of Independence", "description": "Finland becomes independent from Russia" }
     ]
   }
 ]
