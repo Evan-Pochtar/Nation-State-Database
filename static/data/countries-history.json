@@ -3708,5 +3708,426 @@
 				"description": "Finland becomes independent from Russia"
 			}
 		]
+	},
+	{
+		"name": "Canada",
+		"overview": "Canada's history stretches from millennia of Indigenous habitation through European colonization by the French and British to Confederation and modern nationhood. The country evolved from a set of colonies into a parliamentary constitutional monarchy with a strong federal structure. Natural resources, migration, and regional identities shaped economic and political development. Canada balances bilingual federalism and Indigenous rights while playing an active role in international institutions.",
+		"source": {
+			"label": "Manually Curated; References: Britannica, Wikipedia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Canada"
+		},
+		"keyFacts": [
+			{
+				"label": "Confederation",
+				"value": "July 1, 1867"
+			},
+			{
+				"label": "Capital Established",
+				"value": "Ottawa (1857 designated, 1867 capital)"
+			},
+			{
+				"label": "Government Type",
+				"value": "Constitutional Monarchy, Parliamentary Federation"
+			},
+			{
+				"label": "Currency",
+				"value": "Canadian Dollar (1858 modern decimal system later)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "20+ World Heritage Sites"
+			},
+			{
+				"label": "Official Languages",
+				"value": "English, French"
+			}
+		],
+		"ancient": {
+			"period": "c. 10,000 BCE - 1500 CE",
+			"description": "Indigenous peoples established diverse cultures across present-day Canada. Societies ranged from nomadic hunter-gatherers in the Arctic and Subarctic to complex sedentary agricultural communities in parts of the east. Trade networks, seasonal migrations, and sophisticated knowledge of local ecologies defined life before sustained European contact.",
+			"keyEvents": [
+				{
+					"year": "c. 10,000 BCE",
+					"title": "First Human Occupation",
+					"description": "Paleo-Indigenous peoples inhabit regions exposed after the last Ice Age"
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Norse Contact",
+					"description": "Norse expeditions reach Newfoundland (Vinland), leaving archaeological traces at L'Anse aux Meadows"
+				},
+				{
+					"year": "c. 1000-1500",
+					"title": "Complex Indigenous Societies",
+					"description": "Established cultures, especially in the Eastern Woodlands and Pacific Northwest, develop social hierarchies and trade networks"
+				}
+			],
+			"notableFigures": [
+				"Various Indigenous chiefs",
+				"Leif Erikson"
+			]
+		},
+		"colonial": {
+			"period": "1500 - 1867",
+			"description": "European exploration and colonization began with fishing and trading visits by French, English and other mariners. France established New France focused on fur trade and missionary activity. Britain gained control of eastern North America after the Seven Years' War. Colonial rivalry, settlement, and accommodation with Indigenous peoples set the stage for later political arrangements. Loyalists, settlement of the Prairies, and economic integration transformed the colonies in the 19th century.",
+			"keyEvents": [
+				{
+					"year": "1534",
+					"title": "Jacques Cartier's Voyages",
+					"description": "French exploration of the St. Lawrence sets early claims for France"
+				},
+				{
+					"year": "1608",
+					"title": "Founding of Quebec",
+					"description": "Samuel de Champlain establishes a permanent French presence at Quebec"
+				},
+				{
+					"year": "1763",
+					"title": "Treaty of Paris",
+					"description": "France cedes most North American territories to Britain after the Seven Years' War"
+				},
+				{
+					"year": "1791",
+					"title": "Constitutional Act",
+					"description": "Lower and Upper Canada created, shaping colonial governance"
+				}
+			],
+			"notableFigures": [
+				"Samuel de Champlain",
+				"Pierre Le Moyne d'Iberville",
+				"Sir John A. Macdonald",
+				"Loyalist leaders"
+			]
+		},
+		"independence": {
+			"period": "1867 - 1931",
+			"description": "Canadian Confederation in 1867 united several British North American colonies into the Dominion of Canada. Over decades Canada gained self-government, expanded westward, and negotiated increasing legislative autonomy from Britain. Nation-building involved railway projects, settlement policies, and conflicts with and displacement of Indigenous peoples. World War I and interwar constitutional developments advanced Canadian autonomy.",
+			"keyEvents": [
+				{
+					"year": "1867",
+					"title": "Confederation",
+					"description": "British North America Act creates the Dominion of Canada on July 1"
+				},
+				{
+					"year": "1870",
+					"title": "Red River Resistance",
+					"description": "Louis Riel leads Métis resistance in what becomes Manitoba"
+				},
+				{
+					"year": "1885",
+					"title": "Northwest Rebellion",
+					"description": "Métis and Indigenous resistance to federal policies suppressed"
+				},
+				{
+					"year": "1914-1918",
+					"title": "World War I",
+					"description": "Canadian forces fight overseas, boosting national identity and international standing"
+				},
+				{
+					"year": "1931",
+					"title": "Statute of Westminster",
+					"description": "Legislative independence from Britain affirmed for dominions including Canada"
+				}
+			],
+			"notableFigures": ["John A. Macdonald", "Louis Riel", "Wilfrid Laurier", "Robert Borden"]
+		},
+		"modern": {
+			"period": "1931 - Present",
+			"description": "Canada matured into a fully sovereign state with a liberal welfare state and diversified economy. Post-World War II immigration and social programs reshaped society. The late 20th century saw constitutional debates, bilingualism and multicultural policy, and advances in Indigenous rights and self-government. Canada is an active middle power in diplomacy and multilateral institutions while addressing regional economic differences and reconciliation with Indigenous peoples.",
+			"keyEvents": [
+				{
+					"year": "1949",
+					"title": "Newfoundland Joins Confederation",
+					"description": "Newfoundland becomes Canada's tenth province"
+				},
+				{
+					"year": "1960s",
+					"title": "Medicare and Social Programs",
+					"description": "Public healthcare and social welfare programs expand nationwide"
+				},
+				{
+					"year": "1982",
+					"title": "Constitution Act and Charter",
+					"description": "Canada patriates its constitution and enacts the Charter of Rights and Freedoms"
+				},
+				{
+					"year": "1999",
+					"title": "Creation of Nunavut",
+					"description": "Territorial reorganization recognizes Inuit self-governance in the eastern Arctic"
+				}
+			],
+			"notableFigures": [
+				"Lester B. Pearson",
+				"Pierre Elliott Trudeau",
+				"Brian Mulroney",
+				"Indigenous leaders and activists"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 10,000 BCE",
+				"era": "Ancient",
+				"title": "First Peoples",
+				"description": "Human settlement in post-glacial North America begins"
+			},
+			{
+				"year": "1000",
+				"era": "Ancient",
+				"title": "Norse Presence",
+				"description": "Norse expeditions reach Newfoundland"
+			},
+			{
+				"year": "1608",
+				"era": "Colonial",
+				"title": "Quebec Founded",
+				"description": "Samuel de Champlain establishes a permanent French colony"
+			},
+			{
+				"year": "1763",
+				"era": "Colonial",
+				"title": "France Cedes Canada",
+				"description": "Treaty of Paris transfers French North America to Britain"
+			},
+			{
+				"year": "1867",
+				"era": "Independence",
+				"title": "Confederation",
+				"description": "Dominion of Canada formed by federal union of provinces"
+			},
+			{
+				"year": "1914-1918",
+				"era": "Modern",
+				"title": "World War I",
+				"description": "Canadian participation shapes national identity"
+			},
+			{
+				"year": "1931",
+				"era": "Modern",
+				"title": "Statute of Westminster",
+				"description": "Canada gains legislative autonomy from Britain"
+			},
+			{
+				"year": "1982",
+				"era": "Modern",
+				"title": "Constitution Act",
+				"description": "Canada patriates its constitution and adopts the Charter"
+			},
+			{
+				"year": "1999",
+				"era": "Modern",
+				"title": "Nunavut Established",
+				"description": "New territory created to recognize Inuit governance"
+			}
+		]
+	},
+	{
+		"name": "Mexico",
+		"overview": "Mexico's history covers advanced pre-Columbian civilizations, Spanish conquest and colonial rule, a vigorous 19th-century independence struggle, and turbulent nation-building in the 20th century. Mexico's culture blends Indigenous, Spanish and other influences. The country has experienced foreign intervention, revolution, single-party dominance and later democratic transitions. Its economy ties to both Latin American and North American markets.",
+		"source": {
+			"label": "Manually Curated; References: Britannica, Wikipedia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Mexico"
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "September 27, 1821 (consummation); September 16, 1810 (insurrection begins)"
+			},
+			{
+				"label": "Capital Established",
+				"value": "Mexico City (1524 as colonial capital; Aztec capital earlier)"
+			},
+			{
+				"label": "Government Type",
+				"value": "Federal Presidential Republic"
+			},
+			{
+				"label": "Currency",
+				"value": "Mexican Peso"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "30+ World Heritage Sites"
+			},
+			{
+				"label": "Official Language",
+				"value": "Spanish (plus many Indigenous languages)"
+			}
+		],
+		"ancient": {
+			"period": "c. 2500 BCE - 1519 CE",
+			"description": "Mesoamerica hosted some of the Americas' most complex civilizations. The Olmec are often seen as a formative culture, followed by major centers such as Teotihuacan, the Maya polities, Zapotecs and, later, the Aztec Empire. These societies developed monumental architecture, writing or calendrical systems, sophisticated agriculture and expansive trade networks long before European arrival.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 BCE",
+					"title": "Olmec Flourish",
+					"description": "Olmec culture emerges along the Gulf coast influencing later Mesoamerican civilizations"
+				},
+				{
+					"year": "c. 1-700 CE",
+					"title": "Teotihuacan Peak",
+					"description": "Teotihuacan becomes a major political and economic center in the Basin of Mexico"
+				},
+				{
+					"year": "c. 250-900 CE",
+					"title": "Classic Maya Civilization",
+					"description": "Maya city-states reach high cultural and scientific achievements"
+				},
+				{
+					"year": "1428",
+					"title": "Triple Alliance",
+					"description": "Aztec Triple Alliance consolidates power in the Valley of Mexico"
+				}
+			],
+			"notableFigures": [
+				"Olmec cultural leaders (unnamed)",
+				"Classic Maya rulers (various city-states)",
+				"Aztec rulers such as Moctezuma II"
+			]
+		},
+		"colonial": {
+			"period": "1521 - 1821",
+			"description": "Spanish conquest led by Hernán Cortés toppled the Aztec Empire and established the Viceroyalty of New Spain. Colonial society revolved around extractive economies, Catholic missionary activity, and a complex racial caste system. Silver mining and plantation agriculture shaped the economy. Indigenous communities persisted while adapting institutions to colonial rule. Colonial administration tied the region into Atlantic and Pacific trade routes.",
+			"keyEvents": [
+				{
+					"year": "1519-1521",
+					"title": "Spanish Conquest",
+					"description": "Hernán Cortés and allied Indigenous groups capture Tenochtitlan and end Aztec imperial rule"
+				},
+				{
+					"year": "1524",
+					"title": "Mexico City Colonial Capital",
+					"description": "Spanish rebuild and repurpose the Aztec capital as the administrative center of New Spain"
+				},
+				{
+					"year": "1545",
+					"title": "Silver Boom",
+					"description": "Major silver deposits at places like Zacatecas and Taxco drive colonial economy"
+				},
+				{
+					"year": "1810",
+					"title": "Growing Unrest",
+					"description": "Social and economic pressures set the stage for independence movements"
+				}
+			],
+			"notableFigures": ["Hernán Cortés", "Viceroys of New Spain", "Indigenous leaders and colonial-era clergy"]
+		},
+		"independence": {
+			"period": "1810 - 1821",
+			"description": "Independence began with Miguel Hidalgo's 1810 proclamation and evolved through a decade of insurgency, shifting coalitions and conservative agreement. Popular, regional, clerical and elite forces all played roles. The Plan of Iguala and the entry of the Army of the Three Guarantees into Mexico City in 1821 finalized independence from Spain and established a short-lived monarchy before republican experiments.",
+			"keyEvents": [
+				{
+					"year": "1810",
+					"title": "Grito de Dolores",
+					"description": "Miguel Hidalgo y Costilla issues a call for revolt on September 16, widely seen as the start of the independence movement"
+				},
+				{
+					"year": "1813",
+					"title": "Morelos and Congress of Chilpancingo",
+					"description": "José María Morelos advances the insurgent cause and outlines republican goals"
+				},
+				{
+					"year": "1821",
+					"title": "Plan of Iguala and Independence",
+					"description": "Iturbide and insurgent leaders agree on independence; Spanish rule ends with the Treaty of Córdoba"
+				}
+			],
+			"notableFigures": ["Miguel Hidalgo", "José María Morelos", "Agustín de Iturbide", "Vicente Guerrero"]
+		},
+		"modern": {
+			"period": "1821 - Present",
+			"description": "Post-independence Mexico faced political fragmentation, foreign interventions and territorial loss in the 19th century. The late 19th century saw the Porfiriato modernize infrastructure while concentrating power. The Mexican Revolution (1910-1920) transformed landholding, politics and the state. The Institutional Revolutionary Party dominated much of the 20th century. Late-century economic reforms integrated Mexico into global markets culminating in NAFTA. Recent decades feature democratic transitions, security challenges and renewed emphasis on social and economic inclusion.",
+			"keyEvents": [
+				{
+					"year": "1846-1848",
+					"title": "Mexican-American War",
+					"description": "War with the United States results in Mexico ceding large northern territories"
+				},
+				{
+					"year": "1876-1911",
+					"title": "Porfiriato",
+					"description": "Porfirio Díaz's long rule brings economic growth alongside political repression"
+				},
+				{
+					"year": "1910-1920",
+					"title": "Mexican Revolution",
+					"description": "Broad social and political upheaval leads to major land, labor and constitutional reforms"
+				},
+				{
+					"year": "1994",
+					"title": "NAFTA Goes Into Effect",
+					"description": "North American Free Trade Agreement deepens economic ties with the U.S. and Canada"
+				},
+				{
+					"year": "2000",
+					"title": "Democratic Transition",
+					"description": "End of uninterrupted PRI presidential rule with a peaceful electoral turnover"
+				}
+			],
+			"notableFigures": [
+				"Benito Juárez",
+				"Porfirio Díaz",
+				"Francisco I. Madero",
+				"Emiliano Zapata",
+				"Pancho Villa",
+				"Venustiano Carranza",
+				"More recent political leaders"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1200 BCE",
+				"era": "Ancient",
+				"title": "Olmec Influence",
+				"description": "Formative culture shapes later Mesoamerican religious and artistic traditions"
+			},
+			{
+				"year": "c. 200-600",
+				"era": "Ancient",
+				"title": "Teotihuacan Flourishes",
+				"description": "Major urban center and cultural influence in central Mexico"
+			},
+			{
+				"year": "1428",
+				"era": "Ancient",
+				"title": "Aztec Triple Alliance",
+				"description": "Aztec power consolidates in the Valley of Mexico"
+			},
+			{
+				"year": "1521",
+				"era": "Colonial",
+				"title": "Fall of Tenochtitlan",
+				"description": "Spanish conquest ends Aztec imperial rule"
+			},
+			{
+				"year": "1810",
+				"era": "Independence",
+				"title": "Grito de Dolores",
+				"description": "Insurrection against Spanish rule begins"
+			},
+			{
+				"year": "1821",
+				"era": "Independence",
+				"title": "Independence Achieved",
+				"description": "End of colonial rule and emergence of independent Mexico"
+			},
+			{
+				"year": "1910",
+				"era": "Modern",
+				"title": "Mexican Revolution Begins",
+				"description": "Revolutionary struggle reshapes Mexican politics and society"
+			},
+			{
+				"year": "1994",
+				"era": "Modern",
+				"title": "NAFTA",
+				"description": "Economic integration with North America expands trade and investment"
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "Electoral Transition",
+				"description": "Peaceful transfer of presidential power ends seven decades of single-party dominance"
+			}
+		]
 	}
 ]
