@@ -3762,10 +3762,7 @@
 					"description": "Established cultures, especially in the Eastern Woodlands and Pacific Northwest, develop social hierarchies and trade networks"
 				}
 			],
-			"notableFigures": [
-				"Various Indigenous chiefs",
-				"Leif Erikson"
-			]
+			"notableFigures": ["Various Indigenous chiefs", "Leif Erikson"]
 		},
 		"colonial": {
 			"period": "1500 - 1867",
@@ -4127,6 +4124,2362 @@
 				"era": "Modern",
 				"title": "Electoral Transition",
 				"description": "Peaceful transfer of presidential power ends seven decades of single-party dominance"
+			}
+		]
+	},
+	{
+		"name": "Argentina",
+		"overview": "Argentina's history encompasses thousands of years of indigenous civilizations, Spanish colonial rule, a dramatic struggle for independence, and emergence as one of Latin America's most prosperous nations. From the advanced societies of the Diaguita and Guaraní to the gauchos of the pampas, from the revolutionary leadership of San Martín to the complex legacy of Perón, Argentina has developed a unique identity blending European immigration with Latin American culture. The nation has experienced dramatic economic booms and busts, military dictatorships and democratic renewals, while maintaining a rich cultural heritage in literature, music, and the arts that has influenced the world.",
+		"source": {
+			"label": "Wikipedia - History of Argentina",
+			"url": "https://en.wikipedia.org/wiki/History_of_Argentina",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Argentina",
+				"https://www.britannica.com/place/Argentina",
+				"https://www.argentina.gob.ar/interior/historia"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "July 9, 1816"
+			},
+			{
+				"label": "Constitution Adopted",
+				"value": "May 1, 1853"
+			},
+			{
+				"label": "Capital",
+				"value": "Buenos Aires (founded 1580)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From Latin 'argentum' (silver)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "11 World Heritage Sites"
+			},
+			{
+				"label": "National Day",
+				"value": "May 25 (May Revolution, 1810)"
+			}
+		],
+		"ancient": {
+			"period": "c. 11,000 BCE - 1516 CE",
+			"description": "Long before European contact, the territory of modern Argentina was home to diverse indigenous peoples who developed sophisticated cultures adapted to varied environments from the Andean highlands to the Pampas grasslands and Patagonian steppes. The earliest evidence of human habitation dates to approximately 11,000 BCE, with hunter-gatherer societies gradually developing more complex social structures. In the northwest Andean region, cultures like the Diaguita, Calchaquí, and others developed advanced agricultural systems, metallurgy, terraced farming, and impressive stone architecture, influenced by and sometimes incorporated into the Inca Empire during its expansion in the 15th century. These peoples cultivated maize, potatoes, and quinoa, created intricate ceramics and textiles, and established extensive trade networks. The Guaraní people of the northeast developed sophisticated agricultural societies in the river valleys, cultivating manioc and other crops while maintaining complex kinship systems. In the Pampas, semi-nomadic peoples like the Querandí hunted guanaco and rhea, while in Patagonia, the Tehuelche and Mapuche developed cultures adapted to the harsh southern climate. The Mapuche, originally from Chile, expanded eastward across the Andes, establishing a strong presence that would resist European colonization for centuries. These diverse peoples spoke numerous languages, maintained distinct spiritual traditions, and developed technologies suited to their environments, from the bolas of the Pampas hunters to the irrigation systems of northwestern agriculturalists. The arrival of Europeans in 1516 would devastate these populations through disease, warfare, and forced labor, though indigenous resistance and cultural persistence continued throughout the colonial period and beyond.",
+			"keyEvents": [
+				{
+					"year": "c. 11,000 BCE",
+					"title": "First Human Settlement",
+					"description": "Earliest evidence of human presence in Argentine territory, with hunter-gatherer groups establishing themselves across diverse regions"
+				},
+				{
+					"year": "c. 500 BCE - 500 CE",
+					"title": "Condorhuasi-Alamito Culture",
+					"description": "Northwestern cultures develop advanced ceramics, metallurgy, and agricultural techniques in the Andean foothills"
+				},
+				{
+					"year": "c. 850 - 1450 CE",
+					"title": "Diaguita Confederation",
+					"description": "Complex agricultural societies flourish in northwestern valleys with fortified settlements, terraced fields, and extensive trade networks"
+				},
+				{
+					"year": "c. 1480",
+					"title": "Inca Expansion",
+					"description": "Inca Empire extends into northwestern Argentina, incorporating local peoples and establishing the Collasuyu province, bringing Andean influence"
+				},
+				{
+					"year": "c. 1500",
+					"title": "Mapuche Expansion",
+					"description": "Mapuche people cross the Andes from Chile, establishing dominance in northern Patagonia and central Argentina"
+				},
+				{
+					"year": "1516",
+					"title": "First European Contact",
+					"description": "Spanish explorer Juan Díaz de Solís reaches Río de la Plata, encountering indigenous peoples; killed by Charrúa or Querandí warriors"
+				}
+			],
+			"notableFigures": [
+				"Viltipoco (Diaguita leader who resisted Inca expansion)",
+				"Calchaquí chiefs (resistance leaders)",
+				"Querandí caciques (early resisters of Spanish colonization)"
+			]
+		},
+		"colonial": {
+			"period": "1516 - 1810",
+			"description": "Spanish colonization of Argentina began tentatively with failed early settlements due to indigenous resistance and lack of precious metals. Buenos Aires was first founded in 1536 by Pedro de Mendoza but abandoned in 1541 after Querandí attacks and starvation. Successful colonization came from the north and west, with settlements established from Peru and Chile in the mid-16th century, including Santiago del Estero (1553), the oldest continuous city in Argentina. Buenos Aires was permanently refounded in 1580 by Juan de Garay. Unlike mineral-rich Peru or Mexico, Argentina's economy developed around agriculture, livestock, and contraband trade. The Spanish established the encomienda system, forcing indigenous peoples into labor, though many groups fiercely resisted. The Jesuit missions (1609-1767) in the northeast created semi-autonomous communities protecting Guaraní peoples while converting them to Christianity. The vast Pampas remained largely beyond Spanish control, dominated by indigenous groups who adopted the horse and became formidable mounted warriors. The northwest was integrated into the Viceroyalty of Peru, with mining and agriculture supporting the silver route to Potosí. Buenos Aires, initially a backwater, grew through contraband trade despite Spanish mercantile restrictions. In 1776, Spain created the Viceroyalty of Río de la Plata with Buenos Aires as capital, recognizing the region's growing importance. The late colonial period saw increased tensions between Spanish-born peninsulares and American-born criollos, who resented exclusion from high positions. The Bourbon Reforms attempted to tighten control and increase revenue, further alienating criollos. Indigenous peoples continued resisting through the 'Arauco War' in the south and periodic uprisings in the northwest. By 1810, Napoleon's invasion of Spain created a power vacuum that independence-minded criollos would exploit, though indigenous peoples remained marginalized in the emerging independent nation.",
+			"keyEvents": [
+				{
+					"year": "1536",
+					"title": "First Buenos Aires Founded",
+					"description": "Pedro de Mendoza establishes Buenos Aires, but settlement fails due to indigenous resistance and starvation, abandoned in 1541"
+				},
+				{
+					"year": "1553",
+					"title": "Santiago del Estero Founded",
+					"description": "First permanent Spanish settlement in Argentina established, becoming base for northwestern colonization"
+				},
+				{
+					"year": "1580",
+					"title": "Buenos Aires Refounded",
+					"description": "Juan de Garay permanently establishes Buenos Aires, which slowly grows as port and commercial center"
+				},
+				{
+					"year": "1609",
+					"title": "Jesuit Missions Begin",
+					"description": "Jesuits establish missions in northeast, creating autonomous Guaraní communities with unique social organization"
+				},
+				{
+					"year": "1633-1659",
+					"title": "Calchaquí Wars",
+					"description": "Major indigenous uprisings in northwest against Spanish rule, led by various Diaguita chiefs, ultimately suppressed"
+				},
+				{
+					"year": "1767",
+					"title": "Jesuit Expulsion",
+					"description": "Spanish Crown expels Jesuits from all territories, dismantling missions and disrupting indigenous communities"
+				},
+				{
+					"year": "1776",
+					"title": "Viceroyalty Created",
+					"description": "Spain establishes Viceroyalty of Río de la Plata with Buenos Aires as capital, elevating region's status"
+				},
+				{
+					"year": "1806-1807",
+					"title": "British Invasions",
+					"description": "British forces attack Buenos Aires twice, repelled by local militias, boosting criollo confidence and military experience"
+				}
+			],
+			"notableFigures": [
+				"Pedro de Mendoza",
+				"Juan de Garay",
+				"Calchaquí chiefs (Chalimín, Juan Calchaquí)",
+				"Viceroy Juan José de Vértiz"
+			]
+		},
+		"independence": {
+			"period": "1810 - 1861",
+			"description": "Argentina's path to independence was long and complex, marked by internal conflicts and regional divisions. The May Revolution of 1810, sparked by Napoleon's invasion of Spain, saw Buenos Aires criollos establish a junta claiming to govern in the name of the Spanish king while effectively beginning self-rule. Independence was formally declared on July 9, 1816, in Tucumán, as the United Provinces of the Río de la Plata. José de San Martín emerged as the great military liberator, leading the Army of the Andes across the mountains to liberate Chile (1818) and Peru (1821), helping secure independence for much of South America. However, Argentina itself descended into decades of civil war between Unitarians (centralists favoring Buenos Aires leadership) and Federalists (supporting provincial autonomy). The period from 1820-1852 saw fragmentation with various provinces operating almost independently. Juan Manuel de Rosas, governor of Buenos Aires (1829-1832, 1835-1852), established authoritarian rule while defending federalism, using secret police and propaganda to maintain control. His regime, though brutal, unified much of the country against foreign threats and internal opposition. Rosas was overthrown in 1852 by a coalition led by Justo José de Urquiza. The Constitution of 1853 established a federal republic, though Buenos Aires initially refused to join. The conflict between Buenos Aires and the provinces continued until 1861, when Buenos Aires was integrated into the unified nation. This period established lasting tensions between the capital and the interior that would shape Argentine politics for generations.",
+			"keyEvents": [
+				{
+					"year": "1810",
+					"title": "May Revolution",
+					"description": "May 25, criollo leaders in Buenos Aires establish First Junta, beginning process of independence from Spain"
+				},
+				{
+					"year": "1812-1813",
+					"title": "San Martín Returns",
+					"description": "José de San Martín arrives from Spain, organizes military forces, and creates the Regiment of Mounted Grenadiers"
+				},
+				{
+					"year": "1816",
+					"title": "Declaration of Independence",
+					"description": "July 9, Congress of Tucumán formally declares independence as United Provinces of the Río de la Plata"
+				},
+				{
+					"year": "1817-1818",
+					"title": "Liberation of Chile",
+					"description": "San Martín leads Army of the Andes across mountains, defeating Spanish forces and liberating Chile"
+				},
+				{
+					"year": "1820",
+					"title": "Year of Anarchy",
+					"description": "Central government collapses, beginning period of provincial autonomy and civil war between Unitarians and Federalists"
+				},
+				{
+					"year": "1829",
+					"title": "Rosas Takes Power",
+					"description": "Juan Manuel de Rosas becomes governor of Buenos Aires, establishing authoritarian federalist regime"
+				},
+				{
+					"year": "1838-1840",
+					"title": "French Blockade",
+					"description": "France blockades Buenos Aires in 'Pastry War,' Rosas resists foreign intervention, boosting his popular support"
+				},
+				{
+					"year": "1845-1850",
+					"title": "Anglo-French Blockade",
+					"description": "Britain and France blockade Buenos Aires over trade disputes, Rosas again resists, strengthening nationalist sentiment"
+				},
+				{
+					"year": "1852",
+					"title": "Battle of Caseros",
+					"description": "Urquiza defeats Rosas, ending his regime and opening path to constitutional organization"
+				},
+				{
+					"year": "1853",
+					"title": "Constitution Adopted",
+					"description": "May 1, federal constitution modeled on US Constitution adopted, though Buenos Aires refuses to join initially"
+				},
+				{
+					"year": "1859-1861",
+					"title": "Buenos Aires Integration",
+					"description": "Military conflicts between Buenos Aires and Confederation end with Buenos Aires joining unified Argentina under Constitution"
+				}
+			],
+			"notableFigures": [
+				"José de San Martín",
+				"Manuel Belgrano",
+				"Martín Miguel de Güemes",
+				"Juan Manuel de Rosas",
+				"Justo José de Urquiza",
+				"Domingo Faustino Sarmiento"
+			]
+		},
+		"modern": {
+			"period": "1861 - Present",
+			"description": "Unified Argentina embarked on remarkable transformation. The Generation of '80 (1880-1916) pursued modernization through European immigration, foreign investment, and agricultural exports, making Argentina one of the world's wealthiest nations by 1913. Buenos Aires became a sophisticated cosmopolitan capital. However, this prosperity excluded rural workers, indigenous peoples, and immigrants from political power. The Radical Party under Hipólito Yrigoyen (1916-1922, 1928-1930) expanded democracy but failed to address structural economic issues. The 1930 military coup began a pattern of military intervention that would plague Argentina for decades. Juan Domingo Perón, elected president in 1946, implemented populist policies and nationalist economics, backed by his charismatic wife Eva 'Evita' Perón, creating a mass political movement that dominated Argentine politics even after his overthrow in 1955. The subsequent decades saw oscillation between weak civilian governments and military regimes. The 'Dirty War' (1976-1983) under the military junta saw systematic repression, with an estimated 30,000 people 'disappeared,' tortured, or killed. The disastrous Falklands/Malvinas War (1982) against Britain discredited the military, leading to restoration of democracy in 1983. Democratic governments have since grappled with economic instability, including hyperinflation in the 1980s, the 2001 economic collapse, and ongoing struggles with debt, inequality, and corruption. The Mothers of the Plaza de Mayo became international symbols of human rights advocacy. Despite challenges, Argentina maintains vibrant democratic institutions, rich cultural production, and continues to address its traumatic past through trials of military officers and memorialization efforts.",
+			"keyEvents": [
+				{
+					"year": "1869",
+					"title": "First National Census",
+					"description": "Census records 1.8 million inhabitants, beginning era of statistical nation-building and modernization planning"
+				},
+				{
+					"year": "1879-1880",
+					"title": "Conquest of the Desert",
+					"description": "Military campaign under Julio Roca brutally conquers Pampas and Patagonia, devastating indigenous populations and opening lands for agriculture"
+				},
+				{
+					"year": "1880-1916",
+					"title": "Generation of '80",
+					"description": "Period of dramatic economic growth, massive European immigration, and oligarchic political control transforming Argentina into wealthy nation"
+				},
+				{
+					"year": "1912",
+					"title": "Electoral Reform",
+					"description": "Sáenz Peña Law establishes universal male suffrage and secret ballot, democratizing political system"
+				},
+				{
+					"year": "1916",
+					"title": "Yrigoyen Elected",
+					"description": "Hipólito Yrigoyen of Radical Party becomes first president elected under democratic reforms, representing middle classes"
+				},
+				{
+					"year": "1930",
+					"title": "First Military Coup",
+					"description": "Military overthrows Yrigoyen, beginning the 'Infamous Decade' and establishing pattern of military intervention"
+				},
+				{
+					"year": "1943",
+					"title": "Military Coup Brings Perón",
+					"description": "Military coup brings Colonel Juan Perón to prominence as Secretary of Labor, building working-class support"
+				},
+				{
+					"year": "1946",
+					"title": "Perón Elected President",
+					"description": "Perón wins presidency with Eva Perón as First Lady, implementing nationalist, populist policies and creating Peronist movement"
+				},
+				{
+					"year": "1952",
+					"title": "Death of Eva Perón",
+					"description": "July 26, Eva 'Evita' Perón dies of cancer at 33, becoming enduring icon of Argentine politics and social justice"
+				},
+				{
+					"year": "1955",
+					"title": "Perón Overthrown",
+					"description": "Military coup overthrows Perón, beginning decades of political instability and conflict between Peronists and anti-Peronists"
+				},
+				{
+					"year": "1973-1974",
+					"title": "Perón Returns",
+					"description": "Perón returns from exile, elected president again, but dies in 1974, succeeded by wife Isabel Perón, first female president in Americas"
+				},
+				{
+					"year": "1976",
+					"title": "Military Junta Takes Power",
+					"description": "March 24, military overthrows Isabel Perón, beginning 'Process of National Reorganization' and the brutal Dirty War"
+				},
+				{
+					"year": "1976-1983",
+					"title": "Dirty War",
+					"description": "Military systematically 'disappears,' tortures, and murders estimated 30,000 people, targeting leftists, students, and activists"
+				},
+				{
+					"year": "1977",
+					"title": "Mothers of Plaza de Mayo",
+					"description": "Mothers of disappeared begin weekly protests in Buenos Aires, becoming international symbol of human rights movement"
+				},
+				{
+					"year": "1982",
+					"title": "Falklands/Malvinas War",
+					"description": "Argentina invades Falkland Islands, brief war with Britain ends in Argentine defeat, discrediting military regime"
+				},
+				{
+					"year": "1983",
+					"title": "Democracy Restored",
+					"description": "December 10, Raúl Alfonsín inaugurated as president, restoring democracy and beginning trials of military officers"
+				},
+				{
+					"year": "1989-1991",
+					"title": "Hyperinflation Crisis",
+					"description": "Economy suffers devastating hyperinflation reaching 3,000%, leading to early transition to Carlos Menem presidency"
+				},
+				{
+					"year": "1994",
+					"title": "AMIA Bombing",
+					"description": "Terrorist bombing of Jewish community center kills 85, remains Argentina's deadliest terrorist attack, still unsolved"
+				},
+				{
+					"year": "2001-2002",
+					"title": "Economic Collapse",
+					"description": "Worst economic crisis in Argentine history, government defaults on debt, five presidents in two weeks, widespread poverty"
+				},
+				{
+					"year": "2003",
+					"title": "Kirchner Era Begins",
+					"description": "Néstor Kirchner elected president, implementing leftist policies, succeeded by wife Cristina Fernández de Kirchner (2007-2015)"
+				},
+				{
+					"year": "2010",
+					"title": "Same-Sex Marriage",
+					"description": "Argentina becomes first Latin American country to legalize same-sex marriage nationwide"
+				}
+			],
+			"notableFigures": [
+				"Juan Domingo Perón",
+				"Eva 'Evita' Perón",
+				"Jorge Luis Borges",
+				"Julio Cortázar",
+				"Adolfo Pérez Esquivel",
+				"Mothers of Plaza de Mayo",
+				"Raúl Alfonsín",
+				"Carlos Gardel",
+				"Diego Maradona"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 11,000 BCE",
+				"era": "Ancient",
+				"title": "First Inhabitants",
+				"description": "Earliest human settlements established across diverse regions of Argentine territory"
+			},
+			{
+				"year": "c. 1480",
+				"era": "Ancient",
+				"title": "Inca Expansion",
+				"description": "Inca Empire extends into northwestern Argentina, incorporating indigenous peoples"
+			},
+			{
+				"year": "1516",
+				"era": "Colonial",
+				"title": "European Contact",
+				"description": "Spanish explorer Juan Díaz de Solís reaches Río de la Plata, first European contact"
+			},
+			{
+				"year": "1580",
+				"era": "Colonial",
+				"title": "Buenos Aires Founded",
+				"description": "Permanent establishment of Buenos Aires by Juan de Garay becomes future capital"
+			},
+			{
+				"year": "1776",
+				"era": "Colonial",
+				"title": "Viceroyalty Established",
+				"description": "Spain creates Viceroyalty of Río de la Plata with Buenos Aires as capital"
+			},
+			{
+				"year": "1810",
+				"era": "Independence",
+				"title": "May Revolution",
+				"description": "Buenos Aires criollos establish First Junta, beginning independence process"
+			},
+			{
+				"year": "1816",
+				"era": "Independence",
+				"title": "Independence Declared",
+				"description": "July 9, formal declaration of independence from Spain in Tucumán"
+			},
+			{
+				"year": "1853",
+				"era": "Independence",
+				"title": "Constitution Adopted",
+				"description": "Federal constitution establishes framework for unified Argentine nation"
+			},
+			{
+				"year": "1880-1916",
+				"era": "Modern",
+				"title": "Golden Age",
+				"description": "Massive immigration and agricultural exports make Argentina one of world's wealthiest nations"
+			},
+			{
+				"year": "1946",
+				"era": "Modern",
+				"title": "Perón Era Begins",
+				"description": "Juan Perón elected president, creating lasting political movement with Eva Perón"
+			},
+			{
+				"year": "1976-1983",
+				"era": "Modern",
+				"title": "Dirty War",
+				"description": "Military dictatorship disappears 30,000 people in brutal repression"
+			},
+			{
+				"year": "1982",
+				"era": "Modern",
+				"title": "Falklands War",
+				"description": "Brief war with Britain over Falkland Islands ends in defeat, discrediting military"
+			},
+			{
+				"year": "1983",
+				"era": "Modern",
+				"title": "Democracy Restored",
+				"description": "Return to democratic government after seven years of military dictatorship"
+			},
+			{
+				"year": "2001",
+				"era": "Modern",
+				"title": "Economic Crisis",
+				"description": "Worst economic collapse in Argentine history leads to debt default and social upheaval"
+			}
+		]
+	},
+	{
+		"name": "Colombia",
+		"overview": "Colombia's history spans thousands of years of indigenous cultures, Spanish colonial rule as part of the Viceroyalty of New Granada, its role in Gran Colombia, and then its evolution through civil wars, liberal‐conservative conflict, and into a modern republic shaped by its geography, economy (especially coffee, oil, ports), and its diversity of people and ecosystems.",
+		"source": {
+			"label": "Britannica ‐ History of Colombia",
+			"url": "https://www.britannica.com/topic/history-of-Colombia",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Colombia",
+				"https://en.wikipedia.org/wiki/History_of_Colombia",
+				"https://www.history.state.gov/countries/colombia"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "July 20, 1810"
+			},
+			{
+				"label": "Battle of Boyacá",
+				"value": "August 7, 1819"
+			},
+			{
+				"label": "Constitution Adopted (current)",
+				"value": "July 4, 1991"
+			},
+			{
+				"label": "Capital",
+				"value": "Bogotá (founded 1538)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From New Granada region; named after Christopher Columbus (‘Colombia' for Cristóbal Colón)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "Multiple including San Agustín Archaeological Park, Chiribiquete National Park etc."
+			},
+			{
+				"label": "National Day",
+				"value": "July 20 (Independence Day, 1810)"
+			}
+		],
+		"ancient": {
+			"period": "c. 12,000 BCE ‐ 1538 CE",
+			"description": "The territory of modern Colombia was inhabited by hunter‐gatherer groups since at least the late Pleistocene (c. 12,000 BCE). Over millennia many indigenous cultures developed sophisticated agriculture, ceramics, weaving, metallurgy, and political organization. Notable among them are the Muisca in the Andean highlands, San Agustín culture in the south with large stone statuary and ceremonial centers, the Zenú in the Caribbean lowlands with drainage works, and the Tairona in the Sierra Nevada de Santa Marta with advanced stone architecture and goldwork.",
+			"keyEvents": [
+				{
+					"year": "c. 12,500 BCE",
+					"title": "Early Human Presence (El Abra, Tequendama)",
+					"description": "Sites such as El Abra and Tequendama show human habitation during Pleistocene/Holocene transition."
+				},
+				{
+					"year": "c. 600-1600 CE",
+					"title": "Muisca Confederation Flourishes",
+					"description": "Agrarian, goldworking, and political structures centering on the Altiplano; origin of the El Dorado myth."
+				},
+				{
+					"year": "c. 400 BCE ‐ 1600 CE",
+					"title": "Zenú Civilization's Peak",
+					"description": "Zenú build irrigation & drainage works in Caribbean valleys; produce ornamented gold work."
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "San Agustín Culture Monumental Sculpture",
+					"description": "Large ceremonial centers, monolithic statues, tombs, sophisticated art and ritual sites."
+				}
+			],
+			"notableFigures": [
+				"Zipa and Zaque leaders of the Muisca",
+				"Guaquéchiga (Muisca cacique)",
+				"Unknown stone sculptors of San Agustín",
+				"Zenú chiefs (pre‐colonial leaders)"
+			]
+		},
+		"colonial": {
+			"period": "1538 ‐ 1810",
+			"description": "Spanish conquest began in early 16th century. Cities like Bogotá (1538), Cartagena, Santa Marta established. Region formed part of the Viceroyalty of Peru, later New Granada. Colonial economy based on mining, agriculture, and trade. Indigenous populations decimated by disease, forced labor; mixed populations emerged. The Bourbon reforms increased tensions. Local elites (criollos) began pushing for autonomy when Spain was weakened by Napoleonic wars.",
+			"keyEvents": [
+				{
+					"year": "1538",
+					"title": "Founding of Bogotá",
+					"description": "Gonzalo Jiménez de Quesada establishes Bogotá as part of Spanish exploration and conquest of interior highlands."
+				},
+				{
+					"year": "1717",
+					"title": "Creation of the Viceroyalty of New Granada",
+					"description": "Spanish Crown reorganizes colonial administration; Bogotá becomes important capital."
+				},
+				{
+					"year": "1781",
+					"title": "Comuneros' Revolt",
+					"description": "Rebellion in New Granada against high taxes and royal authority; suppressed but indicative of rising discontent."
+				}
+			],
+			"notableFigures": [
+				"Gonzalo Jiménez de Quesada",
+				"Sebastián de Belalcázar",
+				"Viceroy Antonio Caballero y Góngora",
+				"Criollo elites like Camilo Torres"
+			]
+		},
+		"independence": {
+			"period": "1810 ‐ 1830",
+			"description": "Beginning with the July 20, 1810 uprising in Bogotá. Multiple provinces declared autonomy. Battles led by Simón Bolívar, Francisco de Paula Santander and others. After victory at Boyacá (1819), Gran Colombia formed (includes Colombia, Venezuela, Ecuador, Panama). Constitution of Cúcuta formalizes Gran Colombia. Internal divisions lead to dissolution by 1830.",
+			"keyEvents": [
+				{
+					"year": "1810",
+					"title": "July 20 Uprising",
+					"description": "Bogotá and other provinces declare independence from Spain."
+				},
+				{
+					"year": "1819",
+					"title": "Battle of Boyacá",
+					"description": "Bolívar defeats Spanish forces; turning point in independence."
+				},
+				{
+					"year": "1821",
+					"title": "Congress of Cúcuta and Constitution of Gran Colombia",
+					"description": "Formal organization of Gran Colombia."
+				},
+				{
+					"year": "1830",
+					"title": "Dissolution of Gran Colombia",
+					"description": "Venezuela and Ecuador break away; Colombia becomes Republic of New Granada (later Colombia)."
+				}
+			],
+			"notableFigures": ["Simón Bolívar", "Francisco de Paula Santander", "Antonio Nariño", "José María Córdova"]
+		},
+		"modern": {
+			"period": "1830 ‐ Present",
+			"description": "After dissolution of Gran Colombia Colombia went through cycles of civil strife between Conservative and Liberal parties, periods of centralized vs federalist governance. 20th century saw rise of populist movements, labor conflicts, communist and guerrilla warfare (e.g. FARC), drug trafficking, and recent efforts at peace, democratic reforms, and economic diversification plus challenges of inequality and regional disparity.",
+			"keyEvents": [
+				{
+					"year": "1899-1903",
+					"title": "War of a Thousand Days",
+					"description": "Major civil war between Liberals and Conservatives; heavy casualties, economic disruption."
+				},
+				{
+					"year": "1903",
+					"title": "Panama Separates",
+					"description": "Panama secedes from Colombia with U.S. involvement."
+				},
+				{
+					"year": "1948",
+					"title": "Bogotazo",
+					"description": "Massive unrest after assassination of Jorge Eliécer Gaitán; marks onset of La Violencia."
+				},
+				{
+					"year": "1991",
+					"title": "New Constitution",
+					"description": "Constitution created major decentralization, recognition of indigenous rights etc."
+				}
+			],
+			"notableFigures": ["Gustavo Rojas Pinilla", "Alberto Lleras Camargo", "Álvaro Uribe", "Juan Manuel Santos"]
+		},
+		"timeline": [
+			{
+				"year": "c. 12,500 BCE",
+				"era": "Ancient",
+				"title": "Early Human Settlement",
+				"description": "El Abra, Tequendama sites indicate human presence in Pleistocene/Holocene eras."
+			},
+			{
+				"year": "c. 600 CE",
+				"era": "Ancient",
+				"title": "Muisca Civilization Peak",
+				"description": "Muisca develop advanced agriculture, gold work, and political institutions."
+			},
+			{
+				"year": "1538",
+				"era": "Colonial",
+				"title": "Founding of Bogotá",
+				"description": "Spanish establish Bogotá; gradually colonial administration builds out."
+			},
+			{
+				"year": "1810",
+				"era": "Independence",
+				"title": "July 20 Uprising",
+				"description": "Colonial authorities challenged; independence movement begins."
+			},
+			{
+				"year": "1819",
+				"era": "Independence",
+				"title": "Battle of Boyacá",
+				"description": "Decisive victory for independence."
+			},
+			{
+				"year": "1830",
+				"era": "Modern",
+				"title": "Dissolution of Gran Colombia",
+				"description": "Colombia becomes independent nation after Gran Colombia splits."
+			}
+		]
+	},
+	{
+		"name": "Venezuela",
+		"overview": "Venezuela's history includes ancient indigenous societies in its coast, lowlands and highlands, Spanish colonization as part of the Captaincy General of Venezuela, its role in independence and Gran Colombia, the era of caudillos, the rise of the oil economy, and its political transformations in the 20th‐21st centuries.",
+		"source": {
+			"label": "Britannica ‐ History of Venezuela",
+			"url": "https://www.britannica.com/topic/history-of-Venezuela",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Venezuela",
+				"https://en.wikipedia.org/wiki/History_of_Venezuela",
+				"https://www.history.state.gov/countries/venezuela"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence Declaration",
+				"value": "July 5, 1811"
+			},
+			{
+				"label": "Revolution of April 19, 1810",
+				"value": "April 19, 1810"
+			},
+			{
+				"label": "Battle of Carabobo",
+				"value": "June 24, 1821"
+			},
+			{
+				"label": "Separation from Gran Colombia",
+				"value": "1830"
+			},
+			{
+				"label": "Capital",
+				"value": "Caracas (founded 1567)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From native name 'Veneciuela' (‘Little Venice'), given by Columbus for houses over water in Orinoco delta."
+			},
+			{
+				"label": "National Day",
+				"value": "July 5 (1811 Declaration of Independence)"
+			}
+		],
+		"ancient": {
+			"period": "c. 2000 BCE ‐ 1520 CE",
+			"description": "Before Europeans, the region had many native groups with diverse ways of life: sedentary agriculturalists, riverine societies, fishermen, and hunter‐gatherers. Cultures such as the Saladoid along the Orinoco with advanced ceramics, the coastal Arawak and Carib peoples, highland Andean groups like the Timoto‐Cuica with terrace agriculture, and forest groups like Warao in the delta shaped by water‐adapted lifestyles.",
+			"keyEvents": [
+				{
+					"year": "c. 500 BCE ‐ 1 CE",
+					"title": "Saladoid Culture Flourishes",
+					"description": "Ceramic producing coastal and Orinoco River cultures spread; agriculture and sedentary villages."
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Timoto‐Cuica Societies",
+					"description": "Highland Andean groups with terrace agriculture and stable villages, stone housing."
+				},
+				{
+					"year": "pre-Columbian",
+					"title": "Warao in Orinoco Delta",
+					"description": "Water‐based dwellings, canoe travel, riverine adaptation. Surviving indigenous group."
+				}
+			],
+			"notableFigures": ["Guaicaipuro (native resistence leader)", "Chiefs of the Timoto-Cuica", "Warao elders"]
+		},
+		"colonial": {
+			"period": "1498 ‐ 1810",
+			"description": "Christopher Columbus first sighted portions of Venezuelan coast in 1498. Permanent settlement begins with Cumaná (1523). Spanish colonial rule organizes territory; German Welser banking house briefly took colonization rights. Economy based on cattle, cocoa, pearls and later cacao export. Indigenous populations decimated; missionization and encomienda imposed. Caracas founded 1567. Colonial society stratified by race and origin. Late colonial reforms and creole elite discontent feed independence movements.",
+			"keyEvents": [
+				{
+					"year": "1523",
+					"title": "Founding of Cumaná",
+					"description": "First permanent European settlement in what is now Venezuela."
+				},
+				{
+					"year": "1567",
+					"title": "Foundation of Caracas",
+					"description": "Diego de Losada establishes Santiago de León de Caracas."
+				},
+				{
+					"year": "1717-1723",
+					"title": "Creation of Captaincy General of Venezuela",
+					"description": "Colonial administrative reorganization under Spanish Crown."
+				}
+			],
+			"notableFigures": ["Diego de Losada", "Guaicaipuro", "Criollo landowners and colonial officials"]
+		},
+		"independence": {
+			"period": "1810 ‐ 1830",
+			"description": "Revolution begins April 19, 1810 in Caracas with removal of Spanish captain general. On July 5, 1811, Venezuela declares independence. Spanish war continued. Bolívar, with allies, wins at Carabobo in 1821. Becomes part of Gran Colombia. In 1830, Venezuelan provinces secede and form independent Republic of Venezuela.",
+			"keyEvents": [
+				{
+					"year": "April 19, 1810",
+					"title": "Revolution of Caracas",
+					"description": "Local junta removes Spanish authority; first act of struggle."
+				},
+				{
+					"year": "July 5, 1811",
+					"title": "Declaration of Independence",
+					"description": "Congress votes for independence; First Republic of Venezuela begins."
+				},
+				{
+					"year": "June 24, 1821",
+					"title": "Battle of Carabobo",
+					"description": "Decisive victory securing Venezuelan independence from Spanish rule."
+				},
+				{
+					"year": "1830",
+					"title": "Separation from Gran Colombia",
+					"description": "Venezuela becomes fully sovereign republic."
+				}
+			],
+			"notableFigures": ["Simón Bolívar", "Francisco de Miranda", "José Antonio Páez"]
+		},
+		"modern": {
+			"period": "1830 ‐ Present",
+			"description": "After 1830 Venezuela undergoes periods of authoritarian and democratic governance. In late 19th / early 20th century caudillo rule consolidates under leaders like José Antonio Páez, followed by long dictatorship under Juan Vicente Gómez. Discovery and export of oil in early 20th century transforms economy and society. Mid‐20th century democratic shifts, periods of instability, and recent decades of political, economic and social crisis.",
+			"keyEvents": [
+				{
+					"year": "1908-1935",
+					"title": "Gómez Dictatorship",
+					"description": "Long authoritarian rule under Juan Vicente Gómez, consolidating oil wealth and central power."
+				},
+				{
+					"year": "1945",
+					"title": "Trienio Adeco (Democratic Interlude)",
+					"description": "Short lived democratic period under Acción Democrática."
+				},
+				{
+					"year": "1958",
+					"title": "Overthrow of Pérez Jiménez / Return to Democracy",
+					"description": "Military dictator Marcos Pérez Jiménez ousted; democracy restored."
+				},
+				{
+					"year": "Late 20th-21st Century",
+					"title": "Oil Oil Boom and Crisis",
+					"description": "Petroleum becomes central; economic fluctuations, political polarization, humanitarian challenges."
+				}
+			],
+			"notableFigures": [
+				"Juan Vicente Gómez",
+				"Rómulo Betancourt",
+				"Carlos Andrés Pérez",
+				"Hugo Chávez",
+				"Nicolás Maduro"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 500 BCE",
+				"era": "Ancient",
+				"title": "Saladoid culture spread",
+				"description": "Early ceramic riverine/coastal culture in Orinoco lowlands."
+			},
+			{
+				"year": "Pre-Columbian (c. 1000 CE)",
+				"era": "Ancient",
+				"title": "Timoto-Cuica societies ascend",
+				"description": "Highland Andean agricultural groups with terraces and stable settlements."
+			},
+			{
+				"year": "1523",
+				"era": "Colonial",
+				"title": "Founding of Cumaná",
+				"description": "First permanent European settlement in Venezuela."
+			},
+			{
+				"year": "1567",
+				"era": "Colonial",
+				"title": "Caracas Founded",
+				"description": "Diego de Losada establishes the city."
+			},
+			{
+				"year": "1810",
+				"era": "Independence",
+				"title": "Revolution of April 19, 1810",
+				"description": "Caracas junta formed, removes Spanish captain general."
+			},
+			{
+				"year": "1821",
+				"era": "Independence",
+				"title": "Battle of Carabobo",
+				"description": "Bolívar's troops secure independence for Venezuela."
+			},
+			{
+				"year": "1830",
+				"era": "Modern",
+				"title": "Venezuela Emerges as Sovereign Republic",
+				"description": "Breaks from Gran Colombia."
+			}
+		]
+	},
+	{
+		"name": "Brazil",
+		"overview": "Brazil's history spans millennia of indigenous societies, Portuguese colonization, a unique imperial path to independence, and modern struggles with inequality, democracy, and development. Indigenous populations across the Amazon, the coast, and the interior shaped local ecologies and social systems. Under Portuguese rule, Brazil evolved a plantation economy based on sugar, then coffee, fueled by enslaved African labor. In 1822 it became an independent empire rather than a republic. The republic was established in 1889. Throughout the 20th and 21st centuries Brazil has oscillated between authoritarian regimes and democratic governance, experienced dramatic economic growth, faced social challenges, and become a regional power.",
+		"source": {
+			"label": "Britannica ‐ History of Brazil",
+			"url": "https://www.britannica.com/topic/history-of-Brazil",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Brazil",
+				"https://en.wikipedia.org/wiki/History_of_Brazil",
+				"https://kids.britannica.com/kids/article/Brazil/345654"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "September 7, 1822"
+			},
+			{
+				"label": "Empire Overthrown",
+				"value": "November 15, 1889"
+			},
+			{
+				"label": "First Constitution of Empire",
+				"value": "1824"
+			},
+			{
+				"label": "Abolition of Slavery",
+				"value": "May 13, 1888"
+			},
+			{
+				"label": "Capital (Republic)",
+				"value": "Brasília (inaugurated 1960)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From brazilwood (pau-brasil), a tree valued by early Portuguese settlers"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "Many including Amazonia, Historic Town of Ouro Preto, Brasília, etc."
+			}
+		],
+		"ancient": {
+			"period": "prehistory - c. 1500 CE",
+			"description": "Before European contact, the region of modern Brazil was occupied by a great diversity of indigenous societies adapted to many environments (coastal zones, rainforests, cerrado, river basins). Some groups practiced agriculture (manioc, maize, tubers), fishing, hunting, and gathering; others formed semi-sedentary villages. Estimates suggest 2 to 6 million indigenous people at contact. (Brazil was long theorized to have between two and six million indigenous inhabitants at contact.) Brazil's indigenous languages were extremely varied. Large-scale complex empires did not arise as in the Andes, but regional polities and trade networks existed. Social and ecological adaptation was key in Amazonian and cerrado zones, with shifting cultivation, forest management, and riverine settlement.",
+			"keyEvents": [
+				{
+					"year": "c. pre-3000 BCE",
+					"title": "Early human occupation",
+					"description": "Hunter-gatherer groups inhabit areas such as Amazonia and coastal Brazil."
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Tupi expansion",
+					"description": "Tupi-speaking groups expand along the Atlantic coast, influencing coastal linguistics and culture."
+				},
+				{
+					"year": "c. 1000-1500 CE",
+					"title": "Regional chiefdoms and village networks",
+					"description": "Various polities, including coastal and riverine chiefdoms, trade networks, and social complexity in parts of Amazon and along Atlantic"
+				}
+			],
+			"notableFigures": [
+				"Unnamed indigenous chiefs and leaders (pre-contact)",
+				"Early Tupinambá and Tupi-Guarani leaders",
+				"Indigenous leaders later manifesting resistance during colonization"
+			]
+		},
+		"colonial": {
+			"period": "1500 - 1822",
+			"description": "Pedro Álvares Cabral landed in 1500, claiming the land for Portugal. Settlement began in the early 16th century along the northeast coast and in São Vicente (near modern São Paulo). Sugar plantations dominated the early colonial economy, using enslaved African labor. The Portuguese crown gradually asserted control, creating captaincies, then centralizing authority. The bandeiras (expeditions from São Paulo) penetrated the interior, capturing indigenous people and seeking mineral wealth. In 1640 a viceroyalty was established; Rio de Janeiro became capital in 1763. In 1808, when Napoleon invaded Portugal, the royal court relocated to Rio de Janeiro, elevating Brazil's status. The Brazilian colony became the center of the Portuguese empire until independence. (Sources: “Brazil - Colonialism, Independence, Republic” in Britannica; “People, Highlands, and History of Brazil”)",
+			"keyEvents": [
+				{
+					"year": "1500",
+					"title": "Claim by Portugal",
+					"description": "Pedro Álvares Cabral lands and claims Brazilian land."
+				},
+				{
+					"year": "1530s",
+					"title": "Early Portuguese settlements",
+					"description": "Colonists begin settlements along coast, especially in Pernambuco and Bahia."
+				},
+				{
+					"year": "1640",
+					"title": "Viceroyalty created",
+					"description": "Portuguese crown reorganizes colonial administration."
+				},
+				{
+					"year": "1763",
+					"title": "Capital moved to Rio de Janeiro",
+					"description": "Reflects growing importance of southeastern Brazil."
+				},
+				{
+					"year": "1808",
+					"title": "Royal court moves to Brazil",
+					"description": "John VI of Portugal retreats to Brazil, making Rio the seat of the empire."
+				}
+			],
+			"notableFigures": [
+				"Pedro Álvares Cabral",
+				"Portuguese colonial governors",
+				"Leaders of bandeiras expeditions (Paulistas)"
+			]
+		},
+		"independence": {
+			"period": "1822 - 1889",
+			"description": "Brazil's independence was less violent than many Spanish colonies. In 1822, Prince Pedro declared Brazil's independence (the ‘Cry of Ipiranga') and became Emperor Pedro I. Portugal recognized independence in 1825 under treaty. The empire maintained monarchical rule through Pedro II. Slavery persisted; Brazil agreed to a treaty abolishing the slave trade in 1826 but enforced it slowly. Internal rebellions occurred (e.g. provinces resisting central authority). The abolition of slavery in 1888 (Golden Law) and a coup in 1889 ended the monarchy and established the republic.",
+			"keyEvents": [
+				{
+					"year": "1822",
+					"title": "Declaration of Independence",
+					"description": "Pedro I proclaims independence on September 7."
+				},
+				{
+					"year": "1824",
+					"title": "First Constitution of Empire",
+					"description": "Establishes constitutional monarchy and civil institutions."
+				},
+				{
+					"year": "1825",
+					"title": "Portugal recognizes independence",
+					"description": "Treaty of Rio de Janeiro signed."
+				},
+				{
+					"year": "1888",
+					"title": "Abolition of slavery",
+					"description": "Brazil becomes last American country to abolish slavery."
+				},
+				{
+					"year": "1889",
+					"title": "Overthrow of monarchy",
+					"description": "Republic proclaimed; Pedro II exiled."
+				}
+			],
+			"notableFigures": ["Pedro I", "Pedro II", "José Bonifácio de Andrada", "Rebel leaders in provinces"]
+		},
+		"modern": {
+			"period": "1889 - Present",
+			"description": "The First Brazilian Republic (1889-1930) was dominated by regional oligarchies (coffee interests in São Paulo, cattle in Minas). In 1930 Getúlio Vargas rose to power, later establishing the Estado Novo dictatorship (1937-45). After World War II Brazil oscillated between democracy and military dictatorship (1964-1985). The return to civilian rule saw a new constitution in 1988, economic reforms, social programs, and expansion of democracy. Brazil has become a major global actor, but faces persistent challenges: inequality, corruption, environmental pressures (especially in the Amazon), urbanization, and balancing development with sustainability.",
+			"keyEvents": [
+				{
+					"year": "1937",
+					"title": "Start of Estado Novo",
+					"description": "Vargas establishes authoritarian regime."
+				},
+				{
+					"year": "1945",
+					"title": "End of Estado Novo",
+					"description": "Democratic period resumes."
+				},
+				{
+					"year": "1964",
+					"title": "Military coup",
+					"description": "Civilian government replaced by military regime."
+				},
+				{
+					"year": "1985",
+					"title": "Return to democracy",
+					"description": "Transition to civilian rule begins."
+				},
+				{
+					"year": "1988",
+					"title": "New constitution",
+					"description": "Establishes social rights, democracy, federalism."
+				},
+				{
+					"year": "2000s-2020s",
+					"title": "Modern challenges and growth",
+					"description": "Economic ups and downs, environmental concerns, social programs, political polarization."
+				}
+			],
+			"notableFigures": [
+				"Getúlio Vargas",
+				"Juscelino Kubitschek",
+				"João Goulart",
+				"Military regime leaders",
+				"Tancredo Neves",
+				"Luiz Inácio Lula da Silva",
+				"Dilma Rousseff"
+			]
+		},
+		"timeline": [
+			{
+				"year": "1500",
+				"era": "Colonial",
+				"title": "Claim by Portugal",
+				"description": "Pedro Álvares Cabral lands and claims Brazil for Portugal."
+			},
+			{
+				"year": "1808",
+				"era": "Colonial",
+				"title": "Royal court in Brazil",
+				"description": "Portuguese king relocates to Rio de Janeiro."
+			},
+			{
+				"year": "1822",
+				"era": "Independence",
+				"title": "Declaration of Independence",
+				"description": "Pedro I proclaims independence."
+			},
+			{
+				"year": "1888",
+				"era": "Independence/Modern",
+				"title": "Slavery Abolished",
+				"description": "Brazil abolishes slavery."
+			},
+			{
+				"year": "1889",
+				"era": "Modern",
+				"title": "Republic Proclaimed",
+				"description": "Monarchy ends; republic begins."
+			},
+			{
+				"year": "1937",
+				"era": "Modern",
+				"title": "Estado Novo begins",
+				"description": "Vargas establishes dictatorship."
+			},
+			{
+				"year": "1964",
+				"era": "Modern",
+				"title": "Military Coup",
+				"description": "Military takes power."
+			},
+			{
+				"year": "1988",
+				"era": "Modern",
+				"title": "New Constitution",
+				"description": "Democratic constitution adopted."
+			}
+		]
+	},
+	{
+		"name": "Peru",
+		"overview": "Peru's history is deeply shaped by the rise, expansion, and fall of the Inca Empire, a powerful pre-Columbian civilization that transformed Andean society. After Spanish conquest in the 16th century and nearly 300 years as a colonial center in the Viceroyalty of Peru, the country emerged as a republic in the 19th century and has since experienced cycles of political instability, economic booms (especially from guano, minerals, and fishing), military rule, and democratic restoration. Its diverse geography (Andes, Amazon, coast) and rich archaeological heritage make it a cultural and economic crossroads in South America.",
+		"source": {
+			"label": "Britannica ‐ History of Peru",
+			"url": "https://www.britannica.com/place/Peru/History",
+			"urls": [
+				"https://www.britannica.com/place/Peru/History",
+				"https://en.wikipedia.org/wiki/History_of_Peru",
+				"https://www.britannica.com/place/Peru"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "July 28, 1821"
+			},
+			{
+				"label": "Battle of Ayacucho (sealing independence)",
+				"value": "December 9, 1824"
+			},
+			{
+				"label": "Constitution Adopted (current)",
+				"value": "1993"
+			},
+			{
+				"label": "Capital",
+				"value": "Lima (founded 1535)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Possibly from Quechua root ‘birú / Peru', meaning land of abundance"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "Many including Machu Picchu, Chan Chan, Nazca Lines"
+			}
+		],
+		"ancient": {
+			"period": "c. 13,000 BCE - 1532 CE",
+			"description": "Peru's earliest human presence dates to over 13,000 years ago. Over millennia multiple complex cultures developed: Caral (one of the earliest urban societies), Chavín, Paracas, Nazca, Moche, Wari, Tiwanaku, Chimú, and eventually the Inca. These cultures built monumental architecture, complex irrigation systems, ceramics, textiles, social stratification, and regional trade networks. The Inca emerged in the 11th-12th centuries around Cuzco and between 1438 and 1533 expanded rapidly to dominate much of western South America with sophisticated administrative, road, and agricultural systems.",
+			"keyEvents": [
+				{
+					"year": "c. 3000-1800 BCE",
+					"title": "Caral civilization",
+					"description": "One of the earliest urban civilizations in the Americas in Supe Valley."
+				},
+				{
+					"year": "c. 900 BCE - 200 CE",
+					"title": "Chavín Period",
+					"description": "Religious center and artistic influence spreading over Andean highlands."
+				},
+				{
+					"year": "c. 200-700 CE",
+					"title": "Moche & Nazca cultures",
+					"description": "Complex irrigation, ceramics, geoglyphs (Nazca Lines), coastal and northern highland civilizations."
+				},
+				{
+					"year": "c. 600-1000 CE",
+					"title": "Wari (Huari) Empire",
+					"description": "Highland polity spreading cultural influence and administrative patterns across central Peru."
+				},
+				{
+					"year": "c. 1000-1470 CE",
+					"title": "Chimú Kingdom",
+					"description": "Coastal empire with capital at Chan Chan; later conquered by the Incas."
+				},
+				{
+					"year": "c. 1438 CE",
+					"title": "Beginning of Inca expansion",
+					"description": "Under Pachacuti Inca Yupanqui, the Inca begin rapid territorial expansion."
+				}
+			],
+			"notableFigures": [
+				"Pachacuti Inca Yupanqui",
+				"Topa Inca Yupanqui",
+				"Huayna Capac",
+				"Atahualpa",
+				"Founders of Caral, Chavín, Moche, Wari, Chimú cultures"
+			]
+		},
+		"colonial": {
+			"period": "1532 - 1821",
+			"description": "Francisco Pizarro and his expedition conquered the Inca in 1532, capturing Atahualpa in Cajamarca. Over years the Spanish suppressed revolts (notably Cuzco siege in 1536). Spanish founded Lima in 1535 as Ciudad de los Reyes and made it the colonial capital, favored over Cuzco. The Spanish reshaped settlement patterns, created mining economies (especially silver in Potosí, though outside modern Peru), and forced indigenous populations into mita labor. Indigenous decline followed epidemics and suppression. Over time creole and mestizo elites gained economic power; the Bourbon reforms in the 18th century increased tensions. (Sources: “Spanish conquest,” “Colonial patterns of Peru” in Britannica) ",
+			"keyEvents": [
+				{
+					"year": "1532",
+					"title": "Capture of Atahualpa",
+					"description": "Pizarro surprises and arrests Atahualpa at Cajamarca."
+				},
+				{
+					"year": "1535",
+					"title": "Foundation of Lima",
+					"description": "Pizarro establishes Lima to serve colonial administration."
+				},
+				{
+					"year": "1536",
+					"title": "Siege of Cuzco",
+					"description": "Indigenous rebellion surrounds Spanish forces in Cuzco; eventually lifted."
+				},
+				{
+					"year": "1780-1781",
+					"title": "Túpac Amaru II rebellion",
+					"description": "Large indigenous uprising against colonial rule; suppressed harshly."
+				}
+			],
+			"notableFigures": [
+				"Francisco Pizarro",
+				"Diego de Almagro",
+				"Manco Inca",
+				"Túpac Amaru II",
+				"Viceroys and colonial administrators"
+			]
+		},
+		"independence": {
+			"period": "1821 - 1824",
+			"description": "Peru's independence was declared by José de San Martín in Lima on July 28, 1821, but Spanish royalist forces remained strong in the interior. Bolívar joined the campaign later. The decisive victories at Junín (August 6, 1824) and Ayacucho (December 9, 1824) crushed Spanish power in the region, finalizing independence. (Sources: “Achievement of independence in Peru” Britannica) Peru, though initially conservative and slow to rise in revolt, became a symbol of residual Spanish power that needed removal.",
+			"keyEvents": [
+				{
+					"year": "July 28, 1821",
+					"title": "Declaration of Independence",
+					"description": "San Martín proclaims independence in Lima."
+				},
+				{
+					"year": "August 6, 1824",
+					"title": "Battle of Junín",
+					"description": "Bolívar's forces defeat Spanish cavalry in central highlands."
+				},
+				{
+					"year": "December 9, 1824",
+					"title": "Battle of Ayacucho",
+					"description": "Final decisive battle; Spanish capitulate, independence secured."
+				}
+			],
+			"notableFigures": ["José de San Martín", "Simón Bolívar", "Antonio José de Sucre"]
+		},
+		"modern": {
+			"period": "1824 - Present",
+			"description": "After independence Peru faced political instability, regionalism, and economic dependence on exports (guano in 19th century, mining, fishmeal). The War of the Pacific (1879-1883) with Chile cost territory. The 20th century saw reform movements, military coups, authoritarian regimes, and counter-insurgency (against Shining Path, Túpac Amaru). The 1990s under Fujimori saw economic stabilization, joining of markets, but also autocratic maneuvers and human rights abuses. Since then Peru has attempted democratic governance, though corruption, social inequality, and indigenous demands remain central. (Sources: “Peru from 1884 to 1930,” “Peru - geographic regions & history”)",
+			"keyEvents": [
+				{
+					"year": "1879-1883",
+					"title": "War of the Pacific",
+					"description": "Peru and Bolivia fight Chile; Peru loses territory."
+				},
+				{
+					"year": "1968",
+					"title": "Military coup",
+					"description": "Military government takes control, leading to agrarian reform and nationalizations."
+				},
+				{
+					"year": "1980",
+					"title": "Return to democracy",
+					"description": "Elections resume, civilian governance returns."
+				},
+				{
+					"year": "1992",
+					"title": "Autogolpe (Fujimori)",
+					"description": "Fujimori dissolves Congress, rewrites Constitution (1993)."
+				},
+				{
+					"year": "2000",
+					"title": "Fujimori resignation and crisis",
+					"description": "Scandal forces Fujimori's exit; transitional governments follow."
+				},
+				{
+					"year": "2001-present",
+					"title": "Democratic consolidation and challenges",
+					"description": "Alternating presidencies, efforts against corruption and insurgency, social and economic inequality remain salient."
+				}
+			],
+			"notableFigures": [
+				"Augusto B. Leguía",
+				"Óscar R. Benavides",
+				"Manuel A. Odría",
+				"Alberto Fujimori",
+				"Alan García",
+				"Ollanta Humala",
+				"Pedro Pablo Kuczynski",
+				"Martín Vizcarra"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 3000 BCE",
+				"era": "Ancient",
+				"title": "Caral civilization",
+				"description": "One of Americas' earliest urban civilizations in Supe Valley."
+			},
+			{
+				"year": "c. 600 CE",
+				"era": "Ancient",
+				"title": "Wari Empire expansion",
+				"description": "Wari polity spreads across highland Peru."
+			},
+			{
+				"year": "1438",
+				"era": "Ancient",
+				"title": "Inca expansion begins",
+				"description": "Pachacuti begins territorial consolidation and conquest."
+			},
+			{
+				"year": "1532",
+				"era": "Colonial",
+				"title": "Capture of Atahualpa",
+				"description": "Spanish surprise and seize Inca ruler at Cajamarca."
+			},
+			{
+				"year": "1535",
+				"era": "Colonial",
+				"title": "Founding of Lima",
+				"description": "Spanish establish Lima as colonial capital."
+			},
+			{
+				"year": "1821",
+				"era": "Independence",
+				"title": "Declaration of Independence",
+				"description": "San Martín proclaims independence in Lima."
+			},
+			{
+				"year": "1824",
+				"era": "Independence",
+				"title": "Battle of Ayacucho",
+				"description": "Victory ends Spanish rule."
+			},
+			{
+				"year": "1879",
+				"era": "Modern",
+				"title": "War of the Pacific begins",
+				"description": "Conflict with Chile over territory and resources."
+			},
+			{
+				"year": "1968",
+				"era": "Modern",
+				"title": "Military coup",
+				"description": "Peru enters period of military government."
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "Fujimori's self-coup",
+				"description": "Congress dissolved; new constitution drafted."
+			}
+		]
+	},
+	{
+		"name": "Bolivia",
+		"overview": "Bolivia's history spans ancient indigenous civilizations, Inca conquest, Spanish colonial rule, a turbulent independence process, and repeated cycles of political instability and reform. Its geography—high Andes, Altiplano plateau, Amazon lowlands—helped shape diverse societies such as the Tiwanaku, Aymara, Quechua, and others. During colonial times it was part of the Audiencia of Charcas (Upper Peru), heavily exploited for silver (notably Potosí). After independence, Bolivia faced internal divisions, resource struggles, territorial losses (especially to Chile), military coups, and social mobilization, culminating in the plurinational state concept in the 21st century.",
+		"source": {
+			"label": "Wikipedia - History of Bolivia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Bolivia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Bolivia",
+				"https://en.wikipedia.org/wiki/Bolivia",
+				"https://en.wikipedia.org/wiki/History_of_Bolivia_%281920%E2%80%931964%29",
+				"https://en.wikipedia.org/wiki/Bolivian_War_of_Independence"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "August 6, 1825"
+			},
+			{
+				"label": "Constitution of Plurinational State",
+				"value": "2009"
+			},
+			{
+				"label": "Capital (constitutional / administrative)",
+				"value": "Sucre (constitutional), La Paz (executive/administrative)"
+			},
+			{
+				"label": "Highest Peak",
+				"value": "Nevado Sajama (~6,542 m)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From “Bolívar” (after Simón Bolívar)"
+			}
+		],
+		"ancient": {
+			"period": "c. 1500 BCE - 1450 CE",
+			"description": "The Lake Titicaca basin and the high Andean plateau (Altiplano) were centers of early civilization. The Tiwanaku (Tiahuanaco) culture (c. 300-1000 CE) developed agricultural terraces, raised fields, monumental architecture, and complex social organization. They traded across the Andes and exerted influence over neighboring regions. After Tiwanaku's decline, regional Aymara and other groups continued. By the 15th century, the Inca empire expanded southward from Cusco, incorporating much of Bolivian territory into the Collasuyu region, imposing administrative, agricultural, and road systems.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 BCE",
+					"title": "Early Andean Settlement",
+					"description": "First agro-pastoral communities in the highlands begin domesticating crops and herding camelids."
+				},
+				{
+					"year": "c. 300 CE",
+					"title": "Rise of Tiwanaku Culture",
+					"description": "Tiwanaku becomes a major regional power centered near Lake Titicaca, with trade, irrigation, and religious architecture."
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Collapse of Tiwanaku",
+					"description": "Political fragmentation and drought pressures lead to decline, giving room to local polities."
+				},
+				{
+					"year": "c. 1450",
+					"title": "Inca Incorporation",
+					"description": "Inca conquest under Tupac Yupanqui or his successors brings large parts of modern Bolivia into the Inca Empire."
+				}
+			],
+			"notableFigures": [
+				"Leaders of Tiwanaku (unknown names in the archaeological record)",
+				"Aymara local chieftains in the late prehispanic period",
+				"Inca governors appointed over Collasuyu"
+			]
+		},
+		"colonial": {
+			"period": "1532 - 1809",
+			"description": "Spanish conquest began in the early 1530s. The region known as Upper Peru (Alto Perú) was organized under the Audiencia of Charcas, subordinate to Lima and later to the Viceroyalty of Río de la Plata after 1776. The silver mines at Potosí became foundational to the Spanish empire's wealth. The mita labor draft forced indigenous labor in harsh conditions. Frequent indigenous rebellions arose, including Túpac Katari's siege of La Paz (1781). Criollo dissatisfaction, Bourbon Reforms, and weakening Spanish authority set the stage for independence movements.",
+			"keyEvents": [
+				{
+					"year": "1545",
+					"title": "Foundation of Potosí",
+					"description": "Silver discovered; Potosí becomes a mining boom city and one of the largest in the colonial world."
+				},
+				{
+					"year": "1781",
+					"title": "Siege of La Paz",
+					"description": "Túpac Katari and indigenous rebels besiege La Paz for months, highlighting colonial tension."
+				},
+				{
+					"year": "1776",
+					"title": "Transfer to Río de la Plata",
+					"description": "Upper Peru integrated into the Viceroyalty of the Río de la Plata to improve administrative control."
+				}
+			],
+			"notableFigures": [
+				"Túpac Katari",
+				"Bartolina Sisa",
+				"Criollo elites such as Pedro Domingo Murillo",
+				"Spanish colonial officials such as Viceroys"
+			]
+		},
+		"independence": {
+			"period": "1809 - 1825",
+			"description": "Coterminous with the broader Spanish American wars. The Chuquisaca (Sucre) revolution in 1809 and La Paz revolt were early steps. After initial defeats, patriot forces with support from Simón Bolívar and Antonio José de Sucre pushed Spanish forces out. The final Act of Independence was issued August 6, 1825. The state was named Bolivia in honor of Bolívar. Early years saw instability, conflicts with neighboring countries, and internal dissent over regionalism.",
+			"keyEvents": [
+				{
+					"year": "1809",
+					"title": "Chuquisaca Revolution",
+					"description": "First major uprising in Upper Peru, a symbolic precursor to independence."
+				},
+				{
+					"year": "1824",
+					"title": "Battle of Junín / Ayacucho",
+					"description": "Decisive battles in Peru weaken Spanish hold on the Andes."
+				},
+				{
+					"year": "1825",
+					"title": "Declaration of Independence",
+					"description": "August 6, Bolivia declared independent via the Act of Independence."
+				}
+			],
+			"notableFigures": ["Antonio José de Sucre", "Simón Bolívar", "José Mariano Serrano", "Pedro Domingo Murillo"]
+		},
+		"modern": {
+			"period": "1825 - Present",
+			"description": "Post-independence Bolivia has endured political fragmentation, territorial losses (notably in the War of the Pacific vs. Chile), military coups, social struggles over land and indigenous rights, nationalization of resources (tin, gas), and periods of authoritarianism and democracy. The 1952 Revolution nationalized mines and expanded suffrage. The 1980s-1990s saw hyperinflation and neoliberal reforms. From 2006, Evo Morales became the first indigenous president, introducing constitutional reform and an era of leftist governance. In 2009, the new constitution re-defined Bolivia as a “Plurinational State,” recognizing multiple indigenous nations. Coups and contestation have persisted, but social movements remain influential.",
+			"keyEvents": [
+				{
+					"year": "1839",
+					"title": "Battle of Yungay",
+					"description": "Defeat of Peru-Bolivian confederation, ending confederation project."
+				},
+				{
+					"year": "1879-1883",
+					"title": "War of the Pacific",
+					"description": "Bolivia loses its coastal territory to Chile, becoming landlocked."
+				},
+				{
+					"year": "1952",
+					"title": "Bolivian National Revolution",
+					"description": "MNR government nationalizes mines, enacts agrarian reform, extends voting rights."
+				},
+				{
+					"year": "1982",
+					"title": "Return to Democracy",
+					"description": "Civilian rule restored after years of military dictatorship."
+				},
+				{
+					"year": "2006",
+					"title": "Morales Elected",
+					"description": "Evo Morales becomes first indigenous president."
+				},
+				{
+					"year": "2009",
+					"title": "New Constitution",
+					"description": "Bolivia declares itself a Plurinational State with expanded rights for indigenous groups."
+				}
+			],
+			"notableFigures": [
+				"Andrés de Santa Cruz",
+				"Víctor Paz Estenssoro",
+				"Hernán Siles Zuazo",
+				"Hugo Banzer",
+				"Evo Morales",
+				"Carlos Mesa",
+				"Luis Arce"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 300 CE",
+				"era": "Ancient",
+				"title": "Tiwanaku Peak",
+				"description": "Tiwanaku civilization flourishes around Lake Titicaca region."
+			},
+			{
+				"year": "c. 1450",
+				"era": "Ancient",
+				"title": "Inca Conquest",
+				"description": "Inca empire expands into Bolivian highlands."
+			},
+			{
+				"year": "1545",
+				"era": "Colonial",
+				"title": "Potosí Founded",
+				"description": "Major silver mining city emerges under Spanish rule."
+			},
+			{
+				"year": "1781",
+				"era": "Colonial",
+				"title": "Siege of La Paz",
+				"description": "Major indigenous rebellion led by Túpac Katari."
+			},
+			{
+				"year": "1809",
+				"era": "Independence",
+				"title": "Chuquisaca Revolution",
+				"description": "Early uprising in Upper Peru."
+			},
+			{
+				"year": "1825",
+				"era": "Independence",
+				"title": "Independence Declared",
+				"description": "Bolivia proclaims independence on August 6."
+			},
+			{
+				"year": "1879",
+				"era": "Modern",
+				"title": "War of the Pacific Begins",
+				"description": "Bolivia's coastal territory lost to Chile."
+			},
+			{
+				"year": "1952",
+				"era": "Modern",
+				"title": "National Revolution",
+				"description": "Radical reforms in mining, land, and suffrage launched."
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "Morales Elected",
+				"description": "First indigenous president inaugurated."
+			},
+			{
+				"year": "2009",
+				"era": "Modern",
+				"title": "New Constitution",
+				"description": "Bolivia becomes Plurinational State."
+			}
+		]
+	},
+	{
+		"name": "Chile",
+		"overview": "Chile's history begins with ancient coastal and Andean societies, followed by Inca expansion into the north, Spanish colonization, a long struggle for independence, and modern consolidation marked by ideological conflicts, economic transformations, and periods of authoritarian rule. Chile's geographical extremes—Atacama Desert to the north, Patagonia to the south—shaped distinct regional patterns of settlement, indigenous resistance (especially Mapuche), resource exploitation (nitrates, copper), and eventual modernization under competitive politics.",
+		"source": {
+			"label": "Wikipedia - History of Chile",
+			"url": "https://en.wikipedia.org/wiki/History_of_Chile",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Chile",
+				"https://en.wikipedia.org/wiki/Chile",
+				"https://en.wikipedia.org/wiki/Prehispanic_history_of_Chile",
+				"https://en.wikipedia.org/wiki/Colonial_Chile",
+				"https://en.wikipedia.org/wiki/Military_dictatorship_of_Chile"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Proclaimed",
+				"value": "February 12, 1818"
+			},
+			{
+				"label": "Constitution Adopted (Portales)",
+				"value": "1833"
+			},
+			{
+				"label": "Capital",
+				"value": "Santiago (founded c. 1541)"
+			},
+			{
+				"label": "National Day",
+				"value": "September 18 (First Government Junta, 1810)"
+			}
+		],
+		"ancient": {
+			"period": "pre-3000 BCE - c. 1450 CE",
+			"description": "Archaeological sites such as Monte Verde (c. 14,500 BCE) attest to very early human presence in southern Chile. Coastal and valley societies developed fishing, shell middens, and horticulture. In the north, the Atacameños and Aymara cultivated terraces and canals under influence from Andean civilizations. By the 15th century, the Inca empire had pushed south to the Maule River, integrating northern Chile into their administrative networks. In central and southern Chile, the Mapuche people maintained independent polities, resisting Inca and later Spanish encroachments. Far to the south, small mobile groups adapted to extreme environments (e.g. Chonos, Kawésqar, Selk'nam).",
+			"keyEvents": [
+				{
+					"year": "c. 14,500 BCE",
+					"title": "Monte Verde Settlement",
+					"description": "One of the earliest well-dated human sites in the Americas, located in southern Chile."
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Development of Agrarian Societies",
+					"description": "In the north, irrigation and terrace cultivation expand among Atacameño/Aymara groups."
+				},
+				{
+					"year": "c. 1450",
+					"title": "Inca Advance",
+					"description": "Inca incorporate northern Chile to Maule River."
+				}
+			],
+			"notableFigures": [
+				"Local Mapuche lonkos and chiefs (pre-colonial leaders)",
+				"Aymara community leaders",
+				"Inca administrators in Chile"
+			]
+		},
+		"colonial": {
+			"period": "1540 - 1810",
+			"description": "After initial Spanish expeditions (e.g. Pedro de Valdivia's founding of Santiago, 1541), Chile became the Captaincy General of Chile under the Viceroy of Peru. The northern regions were integrated into mining circuits, while conquest of the Mapuche south triggered the long conflict known as the Arauco War (lasting centuries). Spanish settlement was concentrated in central valleys. Jesuits, Franciscans, and other orders established missions. Chile was a peripheral colony relative to Peru but gradually developed agricultural exports. In the later colonial period, creole elites resented trade constraints and political exclusion, especially as Spanish power weakened.",
+			"keyEvents": [
+				{
+					"year": "1541",
+					"title": "Founding of Santiago",
+					"description": "Pedro de Valdivia establishes Santiago as colonial capital."
+				},
+				{
+					"year": "1598-1604",
+					"title": "Destruction of Seven Cities",
+					"description": "Mapuche uprising leads to collapse of Spanish settlements south of Bío-Bío."
+				},
+				{
+					"year": "1600 onward",
+					"title": "Arauco War Intensifies",
+					"description": "Conflict between Spaniards and Mapuche continues for generations."
+				}
+			],
+			"notableFigures": [
+				"Pedro de Valdivia",
+				"Lautaro (Mapuche military leader)",
+				"Martín García Óñez de Loyola",
+				"Jesuit priests and colonial governors"
+			]
+		},
+		"independence": {
+			"period": "1810 - 1826",
+			"description": "After 1810, Chilean patriots formed a junta, then oscillated between war and Spanish reconquest. Leaders like José Miguel Carrera, Bernardo O'Higgins, and later Manuel Rodríguez guided the struggle. The Battle of Maipú in 1818 secured Chilean independence. Post-independence was marked by constitutional experiments, civil wars, and the institutional consolidation under Diego Portales in the 1830s.",
+			"keyEvents": [
+				{
+					"year": "1810",
+					"title": "First Government Junta",
+					"description": "September 18, Chile forms an autonomous government."
+				},
+				{
+					"year": "1814",
+					"title": "Disaster of Rancagua",
+					"description": "Spanish royalists reconquer Santiago, patriots exile to Argentina."
+				},
+				{
+					"year": "1818",
+					"title": "Battle of Maipú",
+					"description": "Patriots defeat royalists, securing Chilean independence."
+				}
+			],
+			"notableFigures": ["Bernardo O'Higgins", "José Miguel Carrera", "Manuel Rodríguez", "Diego Portales"]
+		},
+		"modern": {
+			"period": "1826 - Present",
+			"description": "Chile consolidated a strong central state under the 1833 Constitution. The 19th century saw territorial expansion northward via the War of the Pacific, growth through nitrate exploitation, and political liberalism conflicts. In the 20th century, Chile experienced socialist and populist movements, the election of Salvador Allende in 1970, the 1973 military coup and Pinochet dictatorship (1973-1990), and the return to democracy in 1990. Since then Chile has undergone economic reforms, social protests, constitutional debates (notably in the 21st century), and evolving inequality challenges.",
+			"keyEvents": [
+				{
+					"year": "1833",
+					"title": "Constitution of 1833",
+					"description": "Establishes strong presidential system, dominant for many decades."
+				},
+				{
+					"year": "1879-1883",
+					"title": "War of the Pacific",
+					"description": "Chile conquers nitrate-rich territories from Peru and Bolivia."
+				},
+				{
+					"year": "1938",
+					"title": "Popular Front Government",
+					"description": "Leftist coalition gains power, social reforms instituted."
+				},
+				{
+					"year": "1973",
+					"title": "Military Coup",
+					"description": "Coup overthrows Allende; Pinochet regime begins."
+				},
+				{
+					"year": "1990",
+					"title": "Democracy Restored",
+					"description": "Transition from military rule to civilian government."
+				},
+				{
+					"year": "2019",
+					"title": "Social Protests (Estallido)",
+					"description": "Widespread demonstrations demand constitutional and social change."
+				}
+			],
+			"notableFigures": [
+				"Diego Portales",
+				"José Manuel Balmaceda",
+				"Emiliano Figueroa",
+				"Pedro Aguirre Cerda",
+				"Salvador Allende",
+				"Augusto Pinochet",
+				"Patricio Aylwin",
+				"Michelle Bachelet"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 14,500 BCE",
+				"era": "Ancient",
+				"title": "Monte Verde Settlement",
+				"description": "One of earliest dated human occupations in southern Chile."
+			},
+			{
+				"year": "c. 1450",
+				"era": "Ancient",
+				"title": "Inca Reach Maule",
+				"description": "Northern Chile incorporated into Inca sphere."
+			},
+			{
+				"year": "1541",
+				"era": "Colonial",
+				"title": "Santiago Founded",
+				"description": "Spanish colony established in central valley."
+			},
+			{
+				"year": "1598",
+				"era": "Colonial",
+				"title": "Destruction of Cities",
+				"description": "Mapuche uprising topples southern Spanish settlements."
+			},
+			{
+				"year": "1810",
+				"era": "Independence",
+				"title": "First Junta",
+				"description": "Chile begins formal push for independence."
+			},
+			{
+				"year": "1818",
+				"era": "Independence",
+				"title": "Battle of Maipú",
+				"description": "Patriot victory secures independence."
+			},
+			{
+				"year": "1833",
+				"era": "Modern",
+				"title": "Constitution of 1833",
+				"description": "Strong presidential regime consolidated."
+			},
+			{
+				"year": "1879",
+				"era": "Modern",
+				"title": "War of the Pacific Begins",
+				"description": "Chile clashes with Peru and Bolivia over coastal territory."
+			},
+			{
+				"year": "1973",
+				"era": "Modern",
+				"title": "Coup d'état",
+				"description": "Military regime under Pinochet begins."
+			},
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Return to Democracy",
+				"description": "Civilian government restored."
+			}
+		]
+	},
+	{
+		"name": "Uruguay",
+		"overview": "Uruguay's history includes ancient hunter-gatherer peoples, nomadic indigenous tribes (Charrúa, Chaná, Arachán, Guaraní), Spanish and Portuguese colonial rivalry, struggles for independence, nation-building, and modernization. Weak indigenous institutional power but strong colonial influence shaped land ownership, social stratification, and political culture. Uruguay developed stable democracy earlier than many neighbors but faced economic dependency and social tensions throughout its history.",
+		"source": {
+			"label": "Wikipedia - History of Uruguay",
+			"url": "https://en.wikipedia.org/wiki/History_of_Uruguay",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Uruguay",
+				"https://www.britannica.com/place/Uruguay",
+				"https://en.wikipedia.org/wiki/Indigenous_peoples_in_Uruguay"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Recognized",
+				"value": "August 27, 1828"
+			},
+			{
+				"label": "First Constitution",
+				"value": "1830"
+			},
+			{
+				"label": "Capital",
+				"value": "Montevideo (founded c. 1724)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "2"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From a Guaraní word, likely 'uruguá' (river of painted birds) or 'urú guay' (river of urus)"
+			}
+		],
+		"ancient": {
+			"period": "c. 10,000 BCE - c. 1500 CE",
+			"description": "Very early human presence (hunter-gatherers) around 10,000 years BCE. Cultures such as Catalanense and Cuareim. The Chamangá rock art. About 4,000 years ago arrival or presence of Charrúa, Chaná, and Guaraní tribes. These groups were semi-nomadic, living by hunting, fishing, gathering; some practiced rudimentary agriculture. They left no large centralized states. Knowledge of their spiritual systems, material culture is fragmentary due to early decline following European contact. The Charrúa were distinctive in resisting colonization partly until the 19th century.",
+			"keyEvents": [
+				{
+					"year": "c. 10,000 BCE",
+					"title": "Earliest Human Traces",
+					"description": "Hunters/gatherers in the area now Uruguay (Catalanense, Cuareim cultures)."
+				},
+				{
+					"year": "c. 4,000 years ago",
+					"title": "Arrival / Presence of Charrúa, Chaná, Guaraní",
+					"description": "These tribes establish presence in Uruguay, with semi-nomadic lifestyles."
+				},
+				{
+					"year": "c. before 1500 CE",
+					"title": "Indigenous Societies",
+					"description": "Small tribal societies persist with culture adapted to grasslands, coasts, rivers."
+				}
+			],
+			"notableFigures": ["Leaders of the Charrúa (few named in records)", "Indigenous chaná and arachán elders"]
+		},
+		"colonial": {
+			"period": "1516 - 1815",
+			"description": "Territory contested by Spanish and Portuguese. Spanish colonization centered around cattle ranching, estancias. Montevideo founded by Spanish in early 18th century to counter Portuguese expansion. Jesuit missions had influence in regions. Colonists brought livestock, European landholding systems. Indigenous populations decline from disease, warfare, encroachment. The region known as the Banda Oriental. Influence of Spanish colonial administrative orders and Portuguese claims from Brazil shaped culture and border dynamics.",
+			"keyEvents": [
+				{
+					"year": "1724",
+					"title": "Founding of Montevideo",
+					"description": "Spanish establish Montevideo to guard against Portuguese expansion."
+				},
+				{
+					"year": "mid-1700s",
+					"title": "Border Disputes with Brazil",
+					"description": "Portuguese settlement pressing eastwards; Spanish respond with military and political action."
+				}
+			],
+			"notableFigures": ["Colonial governors", "Jesuit missionaries", "Local indigenous leaders resisting encroachment"]
+		},
+		"independence": {
+			"period": "1811 - 1828",
+			"description": "Revolts begin 1811; Uruguay becomes part of Brazil (Empire of Brazil) after 1821; wars followed; Cisplatine War (1825-1828) between Brazil and United Provinces of the Río de la Plata leads to British-mediated treaty recognizing Uruguay's independence in 1828. José Gervasio Artigas appears as emblem of resistance though fragmented power. Early governance shaped by competing external interests (Portugal/Brazil, Buenos Aires) and internal regional leadership.",
+			"keyEvents": [
+				{
+					"year": "1811",
+					"title": "Revolution Begins",
+					"description": "Revolts against Spanish rule start in Banda Oriental."
+				},
+				{
+					"year": "1825",
+					"title": "Thirty-Three Orientals Invade",
+					"description": "Group led by Juan Antonio Lavalleja crosses to initiate revolt against Brazilian control."
+				},
+				{
+					"year": "1828",
+					"title": "Treaty of Montevideo",
+					"description": "Independence of Uruguay formally recognized."
+				}
+			],
+			"notableFigures": ["José Gervasio Artigas", "Juan Antonio Lavalleja", "Fructuoso Rivera"]
+		},
+		"modern": {
+			"period": "1828 - Present",
+			"description": "After independence Uruguay becomes a constitutional republic (1830). Political life marked by rivalry between Blanco and Colorado parties. Late 19th-early 20th centuries: social reforms, welfare state beginnings, expanding schooling. Economic dependence on agriculture, livestock, wool. Twentieth century: periods of authoritarian rule (e.g. 1973-1985 military dictatorship), return to democracy, social stability. Uruguay often considered one of the most secular and socially progressive in Latin America (early female suffrage etc.). Contemporary issues: inequality, globalization, environmental concerns.",
+			"keyEvents": [
+				{
+					"year": "1830",
+					"title": "First Constitution",
+					"description": "Promulgation of Uruguay's first constitution."
+				},
+				{
+					"year": "1831",
+					"title": "Massacre of Salsipuedes",
+					"description": "Killing of many Charrúa men; decisive blow to indigenous resistance. :contentReference[oaicite:0]{index=0}"
+				},
+				{
+					"year": "1973",
+					"title": "Military Coup",
+					"description": "Civic-military dictatorship begins."
+				},
+				{
+					"year": "1985",
+					"title": "Return to Democracy",
+					"description": "Military rule ends; civilian government restored."
+				}
+			],
+			"notableFigures": [
+				"Fructuoso Rivera",
+				"José Batlle y Ordóñez",
+				"Luis Alberto Lacalle",
+				"Tabaré Vázquez",
+				"José Mujica"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 10,000 BCE",
+				"era": "Ancient",
+				"title": "Earliest Human Presence",
+				"description": "Hunter-gatherers cultures (Catalanense, Cuareim) in what is now Uruguay."
+			},
+			{
+				"year": "c. 4,000 BCE",
+				"era": "Ancient",
+				"title": "Rise of Charrúa / Guaraní / Chaná Tribes",
+				"description": "Seminomadic indigenous tribes inhabit territory."
+			},
+			{
+				"year": "1724",
+				"era": "Colonial",
+				"title": "Montevideo Founded",
+				"description": "Spanish establish key colonial city."
+			},
+			{
+				"year": "1825",
+				"era": "Independence",
+				"title": "Thirty-Three Orientals Landing",
+				"description": "Move to wrest control from Brazil."
+			},
+			{
+				"year": "1828",
+				"era": "Independence",
+				"title": "Independence Recognized",
+				"description": "Uruguay becomes independent nation."
+			},
+			{
+				"year": "1973",
+				"era": "Modern",
+				"title": "Military Rule Begins",
+				"description": "Dictatorship established."
+			},
+			{
+				"year": "1985",
+				"era": "Modern",
+				"title": "Democracy Restored",
+				"description": "Civic rule returns."
+			}
+		]
+	},
+	{
+		"name": "Paraguay",
+		"overview": "Paraguay's history includes pre-colonial Guaraní culture, Spanish colonization under frontier conditions, independence in 1811, isolation after wars, political instability, then 20th-century authoritarianism and modern democratic consolidation. The Guaraní language and cultural influence remain strong. The country's geography (rivers, rainforest, Chaco plains) shaped internal divisions, colonial labor relations, and post-war restitution issues.",
+		"source": {
+			"label": "Britannica - History of Paraguay",
+			"url": "https://www.britannica.com/topic/history-of-Paraguay",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Paraguay",
+				"https://en.wikipedia.org/wiki/History_of_Paraguay",
+				"https://en.wikipedia.org/wiki/Jesuit_Missions_of_Trinidad_and_Jesus"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "May 14, 1811"
+			},
+			{
+				"label": "Constitution Adopted",
+				"value": "1813"
+			},
+			{
+				"label": "Capital",
+				"value": "Asunción (founded 1537)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "1"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From a Guaraní word meaning 'river of the Paraguay' or 'parallel water'"
+			}
+		],
+		"ancient": {
+			"period": "c. before 1000 CE - c. 1500 CE",
+			"description": "The Guaraní people inhabited much of what is now Paraguay prior to European arrival. They practiced slash-and-burn agriculture (manioc, maize), fishing, hunting. Lived in villages with social and spiritual life centered on nature. No large state empire comparable to the Incas, but strong cultural coherence, linguistic unity, and matrilineal / communal land practices. Material culture included ceramics, basketry, weaving, woodwork. Europan arrival greatly altered them socially and demographically but Guaraní culture proved resilient.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 CE",
+					"title": "Peak Guaraní Cultural Flourishing",
+					"description": "Guaraní agricultural societies well-established; networked villages; pre-colonial trade among tribes."
+				}
+			],
+			"notableFigures": ["Guaraní elders and chiefs (pre-colonial)", "Spiritual leaders of the Guaraní"]
+		},
+		"colonial": {
+			"period": "1537 - early 1800s",
+			"description": "Spanish explorers arrive early (Alejo García, Sebastián Cabot). Settlers under Domingo Martínez de Irala from mid-16th century establish Asunción and expand colonial control. The Spanish did not heavily mine gold; economy relied on agriculture, livestock and Guaraní labor. Jesuit missions (reducciones) created with Guaraní populations mixing Christian faith and local governance, education. Large intermarriage yields mixed population. Colonial administration weaker than in mining regions; local culture retains Guaraní customs and language. Catholic church and encomienda systems impose obligations. After 1767 Jesuits expelled; missions decline.",
+			"keyEvents": [
+				{
+					"year": "1537",
+					"title": "Founding of Asunción",
+					"description": "Early Spanish settlement established, becomes colonial hub."
+				},
+				{
+					"year": "1600s-1700s",
+					"title": "Jesuit Reductions Flourish",
+					"description": "Missions like Trinidad and Jesús serve as centers integrating Guaraní and colonial system."
+				},
+				{
+					"year": "1767",
+					"title": "Expulsion of Jesuits",
+					"description": "Jesuit order expelled from Spanish territories, affecting missions."
+				}
+			],
+			"notableFigures": ["Domingo Martínez de Irala", "Jesuit priests", "Guaraní leaders"]
+		},
+		"independence": {
+			"period": "1811 - 1813",
+			"description": "Paraguay declares independence on May 14, 1811; early governance under José Gaspar Rodríguez de Francia consolidates power in isolation; 1813 constitution adopted. Francia limits foreign influence, suppresses secondary powers. After his rule, Paraguay opens more to trade and diplomacy but damaged by the War of the Triple Alliance later in the 19th century.",
+			"keyEvents": [
+				{
+					"year": "1811",
+					"title": "Independence Proclaimed",
+					"description": "Paraguay declares independence from Spain."
+				},
+				{
+					"year": "1813",
+					"title": "Constitution Adopted",
+					"description": "Founding legal framework for the new state."
+				},
+				{
+					"year": "1814-1820s",
+					"title": "Rule of Francia",
+					"description": "Autocratic national consolidation under Dr. Francia."
+				}
+			],
+			"notableFigures": [
+				"José Gaspar Rodríguez de Francia",
+				"Manuel Belgrano (indirectly via regional politics)",
+				"Juan Bautista Gill"
+			]
+		},
+		"modern": {
+			"period": "1826 - Present",
+			"description": "After early isolation Paraguay suffers enormous losses in the War of the Triple Alliance (1864-1870) against Brazil, Argentina, Uruguay. Wars devastate population and economy. Late 19th-early 20th century recovery; liberal and authoritarian regimes alternate. Mid-20th century: Stroessner dictatorship (1954-1989) marked by repression. Return to democracy in 1989. Recent decades: economic reforms, social inequality, corruption issues, indigenous rights movement, environmental concerns, regional integration.",
+			"keyEvents": [
+				{
+					"year": "1864-1870",
+					"title": "War of the Triple Alliance",
+					"description": "Paraguay fights Brazil, Argentina, Uruguay; suffers massive population loss, territorial consequences."
+				},
+				{
+					"year": "1954",
+					"title": "Stroessner Takes Power",
+					"description": "Alfredo Stroessner establishes long dictatorship."
+				},
+				{
+					"year": "1989",
+					"title": "Return to Democracy",
+					"description": "Stroessner ousted; democratic era begins."
+				}
+			],
+			"notableFigures": ["Alfredo Stroessner", "Fernando Lugo", "Horacio Cartes", "Mario Abdo Benítez"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500 CE",
+				"era": "Ancient",
+				"title": "Established Guaraní Societies",
+				"description": "Guaraní culture widespread in region."
+			},
+			{
+				"year": "1537",
+				"era": "Colonial",
+				"title": "Founding of Asunción",
+				"description": "Spanish colonial center established."
+			},
+			{
+				"year": "1600s",
+				"era": "Colonial",
+				"title": "Jesuit Reductions Period",
+				"description": "Missions established among Guaraní."
+			},
+			{
+				"year": "1811",
+				"era": "Independence",
+				"title": "Independence Declared",
+				"description": "Paraguay breaks from Spain."
+			},
+			{
+				"year": "1864",
+				"era": "Modern",
+				"title": "War of the Triple Alliance Begins",
+				"description": "Major war with neighbors causing huge losses."
+			},
+			{
+				"year": "1954",
+				"era": "Modern",
+				"title": "Stroessner Dictatorship Begins",
+				"description": "Long authoritarian regime starts."
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Democracy Restored",
+				"description": "Stroessner's overthrow ends dictatorship."
+			}
+		]
+	},
+	{
+		"name": "Guyana",
+		"overview": "Guyana's history begins with ancient indigenous societies (Arawak, Carib, Warao, among others) that developed in the coastal plains, rainforests, and highlands. European arrival (Spanish, Dutch, British) introduced plantation slavery, indentured labor, and colonial rivalry. After long political struggle, British Guiana gained independence in 1966 and became a republic in 1970. Post-independence challenges include ethnic tension, border disputes, resource exploitation (gold, bauxite, oil), and balancing rainforest conservation with development.",
+		"source": {
+			"label": "Britannica - History of Guyana",
+			"url": "https://www.britannica.com/place/Guyana/History",
+			"urls": [
+				"https://www.britannica.com/place/Guyana/History",
+				"https://en.wikipedia.org/wiki/History_of_Guyana",
+				"https://www.ntg.gov.gy/monument/aishalton-petroglyphs/",
+				"https://www.ntg.gov.gy/wonders-of-guyana/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "May 26, 1966"
+			},
+			{
+				"label": "Republic Day",
+				"value": "February 23, 1970"
+			},
+			{
+				"label": "Capital",
+				"value": "Georgetown"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From an Amerindian word meaning 'land of many waters'"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "1"
+			}
+		],
+		"ancient": {
+			"period": "c. before 1000 BCE - c. 1500 CE",
+			"description": "Indigenous peoples such as the Arawak (Lokono), Carib (Kalina), Warao, Macushi, Akawaio, Patamona, Wapishana and others inhabited Guyana long before Europeans. They lived in riverine, forest, savannah environments, practiced shifting cultivation (manioc, maize), fishing, hunting, gathering. Societies were organized around kinship, spiritual systems tied to nature, and local trade along rivers. Archaeological evidence includes petroglyphs dating older than 5,000 years (e.g. Aishalton, Rupununi) showing geometric, plant, animal, human forms reflecting cosmology and environment. These groups left no large centralized empire but rich, varied cultures that adapted to diverse ecologies.",
+			"keyEvents": [
+				{
+					"year": "c. 5000 BCE",
+					"title": "Early Petroglyphs at Aishalton",
+					"description": "Rock art in Rupununi (Aishalton) predates 5000 BCE, among earliest in Guyana, showing symbolic and environmental motifs."
+				}
+			],
+			"notableFigures": [
+				"Kings or elders of the Lokono / Arawak and Kalina communities (names often not preserved in colonial sources)"
+			]
+		},
+		"colonial": {
+			"period": "late 15th century - 1966",
+			"description": "After European sighting (Spanish, Columbus 1498), settlement was slow. The Dutch established colonies of Essequibo (early 17th c.), Berbice (1627), and Demerara later. These colonies made sugar, coffee, cotton plantations using enslaved Africans. Slave revolts occurred (e.g. Berbice Rebellion 1763). After abolition, indentured laborers from India were brought in. The British took control during Napoleonic wars and consolidated control formally by Congress of Vienna. Economy centered on sugar, timber, bauxite, gold. Colonial governance mixed plantation oligarchs, colonial officials, and indigenous marginalization.",
+			"keyEvents": [
+				{
+					"year": "1616",
+					"title": "Founding of Essequibo Colony",
+					"description": "Dutch establish settlement along Essequibo River"
+				},
+				{
+					"year": "1627",
+					"title": "Berbice Established",
+					"description": "Dutch expand plantation colonies in Berbice region"
+				},
+				{
+					"year": "1763",
+					"title": "Berbice Rebellion",
+					"description": "Cuffy leads major slave uprising against plantation system; seen as early anti-colonial event."
+				},
+				{
+					"year": "1838",
+					"title": "Slavery Abolished",
+					"description": "British abolition ends enslavement; freed Africans leave plantations or continue labor under restrictive contracts"
+				}
+			],
+			"notableFigures": [
+				"Cuffy (Kofi), leader of the Berbice Rebellion",
+				"European colonial governors",
+				"Plantation elite"
+			]
+		},
+		"independence": {
+			"period": "1950s - 1966",
+			"description": "Political mobilization builds after WWII. Parties form (e.g. PPP, PNC). Constitutional changes increase self-government. Negotiations with Britain lead to full independence on May 26, 1966. After independence, Guyana becomes a republic in 1970. Early years marked by internal political tensions, border disputes (especially with Venezuela), economic dependence, and challenges integrating diverse ethnic groups (Afro-Guyanese, Indo-Guyanese, Indigenous, European descent).",
+			"keyEvents": [
+				{
+					"year": "1953",
+					"title": "New Constitution / First Elections",
+					"description": "Partial self-government under British colonial rule"
+				},
+				{
+					"year": "1966",
+					"title": "Independence Declared",
+					"description": "Guyana becomes independent state from Britain"
+				},
+				{
+					"year": "1970",
+					"title": "Republic Proclaimed",
+					"description": "Guyana becomes a republic, ending royal ties"
+				}
+			],
+			"notableFigures": ["Cheddi Jagan", "Forbes Burnham"]
+		},
+		"modern": {
+			"period": "1970 - Present",
+			"description": "Post-independence Guyana pursued socialist and mixed economic policies under Burnham, nationalizing resources. In later decades moved toward more market oriented reforms. Oil discoveries in 2010s have created new economic potential and challenges around governance and environmental protection. Border dispute with Venezuela over Essequibo remains unresolved. Indigenous rights and forest conservation are increasingly central. Guyana ratified the UNESCO Convention on Underwater Cultural Heritage in 2014.",
+			"keyEvents": [
+				{
+					"year": "1970",
+					"title": "Republic Established",
+					"description": "Guyana becomes a Republic of Guyana"
+				},
+				{
+					"year": "1969",
+					"title": "Rupununi Uprising",
+					"description": "Short secessionist rebellion in the Rupununi region less than 3 years after independence"
+				},
+				{
+					"year": "1992-2000s",
+					"title": "Economic and political reforms",
+					"description": "Moves toward liberalization, democratic governance"
+				},
+				{
+					"year": "2015-2025",
+					"title": "Oil boom era",
+					"description": "Offshore oil discoveries change economic landscape; debates over environmental impact, revenue sharing"
+				}
+			],
+			"notableFigures": ["Cheddi Jagan", "Forbes Burnham", "Samuel Hinds", "Irfaan Ali"]
+		},
+		"timeline": [
+			{
+				"year": "c. 5000 BCE",
+				"era": "Ancient",
+				"title": "Aishalton Petroglyphs",
+				"description": "Early rock carvings in Rupununi carry symbolic images"
+			},
+			{
+				"year": "1763",
+				"era": "Colonial",
+				"title": "Berbice Rebellion",
+				"description": "Cuffy leads enslaved Africans in uprising"
+			},
+			{
+				"year": "1838",
+				"era": "Colonial",
+				"title": "Full emancipation of slaves",
+				"description": "Slavery abolished in British Guiana"
+			},
+			{
+				"year": "1966",
+				"era": "Independence",
+				"title": "Independence Day",
+				"description": "Guyana becomes an independent country"
+			},
+			{
+				"year": "1970",
+				"era": "Modern",
+				"title": "Becomes Republic",
+				"description": "Guyana breaks last colonial link"
+			}
+		]
+	},
+	{
+		"name": "Suriname",
+		"overview": "Suriname's history begins with pre-colonial Arawak, Carib, Warao, Wayana, Trio and other indigenous peoples managing forested coastlands, rivers, and interior jungle. European contact (Spanish, Portuguese, French, British, Dutch) led to colonial contestation. The Dutch established sugar, coffee, cacao and other plantations worked by enslaved Africans. After slavery was abolished in 1863, indentured labor from Asia (India, Java), Madeira, China replenished workforce. Nationalist movements grew mid-20th century; Suriname was granted internal autonomy, then full independence from the Netherlands in 1975. Post-independence era includes periods of military rule, civil conflict, economic swings, migration, and a challenge to balance multiculturalism and preservation of indigenous and Maroon traditions.",
+		"source": {
+			"label": "Britannica - History of Suriname",
+			"url": "https://www.britannica.com/place/Suriname/History",
+			"urls": [
+				"https://www.britannica.com/place/Suriname/History",
+				"https://en.wikipedia.org/wiki/History_of_Suriname",
+				"https://www.universiteitleiden.nl/binaries/content/assets/archeologie/publications/heritage-and-rights-of-indigenous-peoples-book.pdf",
+				"https://www.worldheritagesite.org/list/Jodensavanne"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Day",
+				"value": "November 25, 1975"
+			},
+			{
+				"label": "Capital",
+				"value": "Paramaribo"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From a Surinen or indigenous name (exact origin disputed)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "3"
+			}
+		],
+		"ancient": {
+			"period": "c. before 1000 BCE - early 1600s",
+			"description": "Indigenous peoples (Arawakan, Cariban, Warao, Wayana, Trio, Lokono, Kaliña, etc.) inhabited the region. They managed rivers, coastal forests, interior jungle. They fished, hunted, gathered, cultivated root crops and some fruits. Their societies had clan systems, ritual leadership, spiritual cosmologies tied to forest, water, ancestors. Some traded among tribes. Little evidence of large empires; more decentralized societies adapted to difficult tropical ecologies. European contact began in the 16th-17th centuries; indigenous resistance and adaptation persisted.",
+			"keyEvents": [
+				{
+					"year": "c. 1500s",
+					"title": "Early European Contact",
+					"description": "Spanish, Portuguese, French and Dutch explorers visit Suriname coast; initial brief contacts and mapping"
+				}
+			],
+			"notableFigures": [
+				"Indigenous village chiefs and ritual leaders (names largely lost in colonial history)",
+				"Surinen people (indigenous group from whom the name is derived)"
+			]
+		},
+		"colonial": {
+			"period": "1650 - 1950s",
+			"description": "In 1650 the English established a settlement; in 1667 the Dutch took control via the Treaty of Breda. Plantations for sugar, coffee, cacao, cotton, indigo developed, relying heavily on enslaved Africans. Slave rebellions and Maroon societies (escaped slaves living in interior) challenged colonial order. After abolition of slavery in 1863, a transition period (10 years) enforced labor contracts. Then indentured workers brought from India, Java, China, Madeira. Mixed populations (Creole, Maroon, Javanese, Indo-Surinamese, indigenous) result. Colonial administration by Dutch involved plantation elites, colonial governors, missionary activity. Economy augmented by mining (bauxite) in early 20th century. Infrastructure centered on Paramaribo, river transport, plantation infrastructure.",
+			"keyEvents": [
+				{
+					"year": "1667",
+					"title": "Dutch Acquire Suriname",
+					"description": "Treaty of Breda cedes Suriname to Netherlands; Dutch establish colonial rule"
+				},
+				{
+					"year": "1863",
+					"title": "Abolition of Slavery",
+					"description": "Slavery formally abolished; former slaves under contract labour for transition period"
+				},
+				{
+					"year": "1873-1916",
+					"title": "Indentured Labourers Arrive",
+					"description": "Workers from India, Java, China, Madeira brought to fill plantation labour shortages"
+				}
+			],
+			"notableFigures": [
+				"Colonial governors and planter class",
+				"Maroons leaders who resisted plantations",
+				"Indentured labour organizers"
+			]
+		},
+		"independence": {
+			"period": "1950s - 1975",
+			"description": "After WWII calls for decolonization grew. Suriname granted autonomy in internal affairs; political parties grew in influence. Movements for independence negotiated with the Netherlands. On November 25, 1975 Suriname became fully independent. Early independent government faced social, economic, ethnic tensions (especially among Creoles, Maroons, Indo-Surinamese, indigenous), issues of governance, and external economic dependencies.",
+			"keyEvents": [
+				{
+					"year": "1954",
+					"title": "Internal Self-Rule Established",
+					"description": "Suriname gains internal autonomy under Dutch Kingdom arrangements"
+				},
+				{
+					"year": "1975",
+					"title": "Full Independence",
+					"description": "Suriname becomes independent nation"
+				}
+			],
+			"notableFigures": ["Henck Arron", "Desi Bouterse"]
+		},
+		"modern": {
+			"period": "1975 - Present",
+			"description": "After independence, Suriname experienced periods of democratic rule interspersed with military coups. In 1980, a coup brought Desi Bouterse to power; human rights abuses (e.g. December murders 1982) marred the regime. In 1986-1992, civil war (Interior War) between Maroon rebels (led by Ronnie Brunswijk) and government forces in the eastern interior. Later, Suriname transitioned back to civilian government. Economic challenges include reliance on mining (bauxite, gold), oil exploration, agriculture, and exports, while balancing debt, migration (many emigrated), preserving rainforest and Indigenous & Maroon rights. Multicultural society remains characteristic. Heritage sites like Paramaribo historic inner city, Central Suriname Nature Reserve, Jodensavanne reflect colonial architecture, natural biodiversity, and colonial & African diaspora history.",
+			"keyEvents": [
+				{
+					"year": "1980",
+					"title": "Military Coup",
+					"description": "Desi Bouterse leads coup; military regime instituted"
+				},
+				{
+					"year": "1982",
+					"title": "December Murders",
+					"description": "15 opponents killed under military rule; major human rights crisis"
+				},
+				{
+					"year": "1986-1992",
+					"title": "Surinamese Interior War",
+					"description": "Conflict between Jungle Commando (Maroon rebels) and government forces"
+				}
+			],
+			"notableFigures": ["Desi Bouterse", "Ronnie Brunswijk", "Henck Arron"]
+		},
+		"timeline": [
+			{
+				"year": "c. before 1000 BCE",
+				"era": "Ancient",
+				"title": "Indigenous societies established",
+				"description": "Arawak, Carib, Warao, Wayana, Trio and many other groups inhabit Suriname's landscapes"
+			},
+			{
+				"year": "1667",
+				"era": "Colonial",
+				"title": "Dutch control solidified",
+				"description": "Suriname ceded to Netherlands by Treaty of Breda"
+			},
+			{
+				"year": "1863",
+				"era": "Colonial",
+				"title": "Slavery abolished",
+				"description": "End of legal slavery; transition labour contracts"
+			},
+			{
+				"year": "1873",
+				"era": "Colonial",
+				"title": "Start of large indentured labour influx",
+				"description": "Workers from India, Java etc arrive"
+			},
+			{
+				"year": "1975",
+				"era": "Independence",
+				"title": "Independence Day",
+				"description": "Suriname becomes sovereign from Netherlands"
+			},
+			{
+				"year": "1982",
+				"era": "Modern",
+				"title": "December Murders",
+				"description": "Paramilitary human rights abuses under Bouterse regime"
 			}
 		]
 	}
