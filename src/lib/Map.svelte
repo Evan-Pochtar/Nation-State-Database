@@ -589,7 +589,7 @@
 									d={getPath(c, pathGenerator, i)}
 									data-index={i}
 									class="cursor-pointer stroke-white/40"
-									style={`fill: ${hoveredCountry === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)'}; stroke-width: ${hoveredCountry === i ? 1.5 : 0.5}px;`}
+									style={`fill: ${hoveredCountry === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)'}; stroke-width: 0.5px;`}
 									role="button"
 									aria-label={getCountryName(c)}
 								/>
