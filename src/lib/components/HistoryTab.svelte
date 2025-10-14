@@ -140,7 +140,7 @@
 						></div>
 					</div>
 					<div class="relative z-10">
-						<h3 class="mb-3 text-lg font-bold text-cyan-300">Historical Overview</h3>
+						<h3 class="mb-3 text-lg font-bold text-center text-cyan-300">Historical Overview</h3>
 						<p class="leading-relaxed text-white/80">{historyData.overview}</p>
 					</div>
 				</div>
@@ -198,15 +198,15 @@
 					></div>
 				</div>
 				<div class="relative z-10">
-					<h3 class="mb-3 text-lg font-bold text-cyan-300 capitalize">{activeSection} Period</h3>
+					<h3 class="mb-3 text-lg font-bold text-cyan-300 text-center capitalize">{activeSection} Period</h3>
 					{#if historyData[activeSection].period}
-						<div class="mb-3 font-mono text-sm text-cyan-400">{historyData[activeSection].period}</div>
+						<div class="mb-3 font-mono text-center text-sm text-cyan-400">{historyData[activeSection].period}</div>
 					{/if}
-					<p class="mb-4 leading-relaxed text-white/80">{historyData[activeSection].description}</p>
+					<p class="mb-8 leading-relaxed text-white/80">{historyData[activeSection].description}</p>
 
 					{#if historyData[activeSection].keyEvents}
 						<div class="space-y-3">
-							<div class="text-sm font-semibold text-cyan-300">Key Events</div>
+							<div class="font-semibold text-center text-cyan-300">Key Events</div>
 							{#each historyData[activeSection].keyEvents as event}
 								<div class="rounded-lg border border-white/10 bg-black/30 p-3">
 									<div class="mb-1 font-mono text-xs text-cyan-400">{event.year}</div>
@@ -220,9 +220,9 @@
 					{/if}
 
 					{#if historyData[activeSection].notableFigures}
-						<div class="mt-4 space-y-2">
-							<div class="text-sm font-semibold text-cyan-300">Notable Figures</div>
-							<div class="flex flex-wrap gap-2">
+						<div class="mt-8 space-y-2">
+							<div class="font-semibold text-center text-cyan-300">Notable Figures</div>
+							<div class="flex flex-wrap justify-center gap-2">
 								{#each historyData[activeSection].notableFigures as figure}
 									<div class="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-300">
 										{figure}
