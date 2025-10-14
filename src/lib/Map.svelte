@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount, onDestroy, tick } from 'svelte';
+	import { onMount, onDestroy, tick, untrack } from 'svelte';
 	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
 	import type { GeoFeature, CountryData } from '$lib/utils/types';
@@ -61,16 +61,22 @@
 	let hoveredCountry: number | null = null;
 	let zoomRAF: number | null = null;
 
+	const projectionCache = new Map<string, () => d3.GeoProjection>();
 	function getProjection(type: string): d3.GeoProjection {
-		switch (type) {
-			case 'mercator':
-				return d3.geoMercator();
-			case 'equalEarth':
-				return d3.geoEqualEarth();
-			case 'naturalEarth1':
-			default:
-				return d3.geoNaturalEarth1();
+		if (!projectionCache.has(type)) {
+			projectionCache.set(type, () => {
+				switch (type) {
+					case 'mercator':
+						return d3.geoMercator();
+					case 'equalEarth':
+						return d3.geoEqualEarth();
+					case 'naturalEarth1':
+					default:
+						return d3.geoNaturalEarth1();
+				}
+			});
 		}
+		return projectionCache.get(type)!();
 	}
 
 	function handleProjectionChange(projection: string) {
@@ -84,14 +90,19 @@
 
 	function handleThemeChange(theme: 'dark' | 'light' | 'colorful') {
 		currentTheme = theme;
-		if (theme === 'colorful' && topoData && topoObjectKey) {
+		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
 			buildColorfulPalette();
 		}
 	}
 
+	let resizeRAF: number | null = null;
 	function throttledResize() {
 		if (resizeTimeout) clearTimeout(resizeTimeout);
-		resizeTimeout = window.setTimeout(handleResize, 100);
+		if (resizeRAF) cancelAnimationFrame(resizeRAF);
+
+		resizeRAF = requestAnimationFrame(() => {
+			resizeTimeout = window.setTimeout(handleResize, 100);
+		});
 	}
 
 	onMount(async () => {
@@ -112,7 +123,7 @@
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
 			handleResize();
-			window.addEventListener('resize', throttledResize);
+			window.addEventListener('resize', throttledResize, { passive: true });
 		} catch (error) {
 			console.error('Error loading map data:', error);
 		}
@@ -121,6 +132,7 @@
 	onDestroy(() => {
 		window.removeEventListener('resize', throttledResize);
 		if (resizeTimeout) clearTimeout(resizeTimeout);
+		if (resizeRAF) cancelAnimationFrame(resizeRAF);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
 		if (zoomRAF) cancelAnimationFrame(zoomRAF);
 		if (svgEl && zoomBehavior) {
@@ -130,16 +142,19 @@
 		document.body.style.userSelect = '';
 		(document.body as any).style.webkitUserSelect = '';
 		pathCache.clear();
+		projectionCache.clear();
 	});
 
+	let dimensionsCache = { leftWidth: 0, rightWidth: 0, rightHeight: 0 };
 	function handleResize() {
 		outerWidth = window.innerWidth;
 		outerHeight = window.innerHeight;
-		const desired = Math.round(Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth))));
+		const desired = Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)));
 		leftWidth = desired;
 		const effectiveLeft = dragging ? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired)) : leftWidth;
 		rightWidth = selectedFeature ? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH) : outerWidth;
 		rightHeight = outerHeight;
+		dimensionsCache = { leftWidth, rightWidth, rightHeight };
 
 		if (countries.length > 0) {
 			const worldFeature: GeoJSON.FeatureCollection = {
@@ -154,14 +169,32 @@
 		}
 	}
 
+	let lastFocusParams = { width: 0, height: 0, feature: null as GeoFeature | null };
 	function setupFocusProjection() {
 		if (!selectedFeature) return;
+
+		const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
+		if (
+			lastFocusParams.feature === selectedFeature &&
+			Math.abs(lastFocusParams.width - currentRightWidth) < 10 &&
+			Math.abs(lastFocusParams.height - rightHeight) < 10
+		) {
+			return;
+		}
+
+		lastFocusParams = { width: currentRightWidth, height: rightHeight, feature: selectedFeature };
+
 		try {
 			let proj = getProjection(currentProjection === 'orthographic' ? 'mercator' : currentProjection);
+			const worldFeature: GeoJSON.FeatureCollection = {
+				type: 'FeatureCollection',
+				features: countries
+			};
+			proj.fitSize([currentRightWidth, rightHeight], worldFeature as any);
+			const worldScale = proj.scale();
 
-			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
-			const paddingPx = Math.max(20, Math.min(80, Math.round(minDim * 0.06)));
+			const paddingPx = Math.max(20, Math.min(80, minDim * 0.06));
 			const left = paddingPx,
 				top = paddingPx;
 			const right = Math.max(currentRightWidth - paddingPx, left + 10);
@@ -174,12 +207,25 @@
 				selectedFeature as any
 			);
 
+			const countryScale = proj.scale();
+			if (countryScale < worldScale * 0.9) {
+				proj.scale(worldScale * 0.9);
+				const bounds = d3
+					.geoPath()
+					.projection(proj)
+					.bounds(selectedFeature as any);
+				const dx = (bounds[0][0] + bounds[1][0]) / 2;
+				const dy = (bounds[0][1] + bounds[1][1]) / 2;
+				const x = currentRightWidth / 2 - dx;
+				const y = rightHeight / 2 - dy;
+				proj.translate([x, y]);
+			}
+
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 			pathCache.clear();
 		} catch (error) {
 			const fallback = d3.geoMercator();
-			const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 			fallback.fitSize(
 				[Math.max(100, currentRightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
 				selectedFeature as any
@@ -189,21 +235,37 @@
 		}
 	}
 
+	const countryNameCache = new WeakMap<GeoFeature, string>();
 	function getCountryName(f: GeoFeature): string {
-		return f.properties?.name ?? 'Unknown Country';
+		if (!countryNameCache.has(f)) {
+			countryNameCache.set(f, f.properties?.name ?? 'Unknown Country');
+		}
+		return countryNameCache.get(f)!;
 	}
+	const countryIndexCache = new WeakMap<GeoFeature, number>();
 
 	function getCountryIndex(f: GeoFeature) {
+		if (countryIndexCache.has(f)) {
+			return countryIndexCache.get(f)!;
+		}
+
 		for (let i = 0; i < countries.length; i++) {
-			if (countries[i] === f) return i;
+			if (countries[i] === f) {
+				countryIndexCache.set(f, i);
+				return i;
+			}
 			if (
 				countries[i]?.properties?.iso_a3 &&
 				f?.properties?.iso_a3 &&
 				countries[i].properties.iso_a3 === f.properties.iso_a3
-			)
+			) {
+				countryIndexCache.set(f, i);
 				return i;
-			if (countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name)
+			}
+			if (countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name) {
+				countryIndexCache.set(f, i);
 				return i;
+			}
 		}
 		return -1;
 	}
@@ -250,7 +312,10 @@
 		selectedName = getCountryName(f);
 		setupFocusProjection();
 		handleResize();
-		infoCache = (await fetchCountryInfoByName(selectedName, infoCache)) ?? infoCache;
+		fetchCountryInfoByName(selectedName, infoCache).then((result) => {
+			if (result) infoCache = result;
+		});
+
 		isAnimating = true;
 		setTimeout(() => {
 			isAnimating = false;
@@ -263,6 +328,7 @@
 		focusProjection = undefined;
 		focusPathGenerator = null;
 		pathCache.clear();
+		lastFocusParams = { width: 0, height: 0, feature: null };
 
 		await tick();
 		handleResize();
@@ -278,7 +344,7 @@
 		document.body.style.userSelect = 'none';
 		(document.body as any).style.webkitUserSelect = 'none';
 
-		window.addEventListener('pointermove', handlePointerMove);
+		window.addEventListener('pointermove', handlePointerMove, { passive: true });
 		window.addEventListener('pointerup', handlePointerUp, { once: true });
 		window.addEventListener('pointercancel', handlePointerUp, { once: true });
 	}
@@ -377,6 +443,11 @@
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
 			return;
 		}
+
+		if (countryColorMap.length === countries.length && countryColorMap.some((c) => c !== '#D0DCE8')) {
+			return;
+		}
+
 		try {
 			const geoms = topoData.objects[topoObjectKey].geometries;
 			const neigh = neighbors(geoms);
@@ -405,6 +476,7 @@
 	function toggleSettings() {
 		settingsOpen = !settingsOpen;
 	}
+
 	function hoverReset() {
 		hoveredCountry = null;
 	}
@@ -488,7 +560,7 @@
 							{/if}
 						</linearGradient>
 					</defs>
-					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill={'url(#waterBase)'}></rect>
+					<rect x="0" y="0" width="100%" height="100%" fill={'url(#waterBase)'}></rect>
 				{/if}
 
 				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
@@ -526,15 +598,9 @@
 					{/if}
 				</g>
 			</svg>
-
-			<div
-				class="absolute bottom-5 left-5 z-50 rounded-md border border-white/10 bg-gradient-to-br from-gray-900/80 to-black/90 px-3 py-2 text-xs text-white/60 backdrop-blur-[10px]"
-			>
-				Click on any country to zoom in and view details
-			</div>
 		{:else}
 			<svg
-				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
+				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
 				preserveAspectRatio="xMidYMid meet"
 				class="block h-full w-full"
 				bind:this={svgEl}
@@ -546,7 +612,7 @@
 				style="contain: paint layout;"
 			>
 				{#if currentTheme === 'colorful' || currentTheme === 'light'}
-					<rect x="0" y="0" width={outerWidth} height={outerHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
+					<rect x="0" y="0" width={rightWidth} height={rightHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
 					></rect>
 				{/if}
 
@@ -576,7 +642,7 @@
 									<path
 										d={getPath(c, focusPathGenerator, i)}
 										data-index={i}
-										class="cursor-pointer stroke-white/15"
+										class="cursor-pointer stroke-white/50"
 										style={`fill: rgba(255,255,255,0.02); stroke-width: 0.3px;`}
 										role="button"
 										aria-label={getCountryName(c)}
