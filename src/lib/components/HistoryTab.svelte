@@ -113,7 +113,7 @@
 		</div>
 	{:else if historyData}
 		<div class="mb-4 flex flex-wrap gap-1">
-			{#each [['overview', 'Overview'], ['ancient', 'Ancient'], ['colonial', 'Colonial'], ['independence', 'Independence'], ['modern', 'Modern'], ['timeline', 'Timeline']] as [key, label]}
+			{#each [['overview', 'Overview'], ['ancient', 'Ancient'], ['medieval', 'Medieval'], ['feudal', 'Feudal'], ['isolation', 'Isolation'], ['pre-colonial', 'Pre-Colonial'], ['colonial', 'Colonial'], ['imperial', 'Imperial'], ['independence', 'Independence'], ['modern', 'Modern'], ['timeline', 'Timeline']] as [key, label]}
 				{#if historyData[key]}
 					<button
 						on:click={() => setSection(key)}

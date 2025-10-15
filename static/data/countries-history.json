@@ -5942,7 +5942,7 @@
 				{
 					"year": "1831",
 					"title": "Massacre of Salsipuedes",
-					"description": "Killing of many Charrúa men; decisive blow to indigenous resistance. :contentReference[oaicite:0]{index=0}"
+					"description": "Killing of many Charrúa men; decisive blow to indigenous resistance."
 				},
 				{
 					"year": "1973",
@@ -6478,6 +6478,554 @@
 				"era": "Modern",
 				"title": "December Murders",
 				"description": "Paramilitary human rights abuses under Bouterse regime"
+			}
+		]
+	},
+	{
+		"name": "Japan",
+		"overview": "Japan's history spans from Paleolithic hunter-gatherers through indigenous Jōmon and agricultural Yayoi societies, the formation of a centralized Yamato polity, a long classical and feudal era dominated by court culture and warrior governments, the Tokugawa isolationist order, rapid modernization and imperial expansion in the late 19th and early 20th centuries, catastrophic defeat in World War II, and postwar reconstruction into a constitutional democracy and major global economy. Japanese history is characterized by recurring patterns of cultural synthesis (borrowing from the Asian continent and adapting), strong regional variation, periods of intense centralization and decentralization, and a resilience of institutions and arts across major political breaks.",
+		"source": {
+			"label": "Wikipedia - History of Japan",
+			"url": "https://en.wikipedia.org/wiki/History_of_Japan",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Japan",
+				"https://www.britannica.com/place/Japan/History",
+				"https://www.ndl.go.jp/constitution/e/etc/c02.html",
+				"https://www.metmuseum.org/toah/hd/jpn1/hd_jpn1.htm",
+				"https://www.japan-guide.com/e/e2135.html"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Earliest pottery (Jōmon)", "value": "c. 14,000 BCE - 300 BCE" },
+			{ "label": "Yayoi agriculture and metallurgy", "value": "c. 900 BCE - 250 CE" },
+			{ "label": "Formation of Yamato state", "value": "c. 3rd-7th centuries CE" },
+			{ "label": "Classical capitals established", "value": "Nara (710), Heian-kyō (794)" },
+			{ "label": "First shogunate (military government)", "value": "Kamakura shogunate, 1192" },
+			{ "label": "Tokugawa (Edo) period", "value": "1603-1868" },
+			{ "label": "Meiji Restoration", "value": "1868 (political restoration leading to modernization)" },
+			{ "label": "Postwar constitution", "value": "Promulgated 1947" },
+			{ "label": "Modern capital", "value": "Tokyo (Edo renamed Tokyo, 1868)" },
+			{ "label": "UNESCO Sites", "value": "26 World Heritage Sites" }
+		],
+		"ancient": {
+			"period": "c. 14,000 BCE - 538 CE",
+			"description": "Paleolithic sites show human presence by the late Pleistocene. The Jōmon period (c. 14,000-300 BCE) produced some of the world's earliest pottery, semi-sedentary hunter-gatherer communities, complex ritual artifacts, and regional cultural variation. The subsequent Yayoi period (c. 900 BCE-250 CE) introduced wet-rice agriculture, bronze and iron metallurgy, new social hierarchies, and long-distance exchange. From the late Yayoi into the Kofun period (c. 250-538 CE) large keyhole burials and emerging elite lineages appear, culminating in the Yamato polity asserting suzerainty over much of the archipelago and beginning recorded relations with China and Korea.",
+			"keyEvents": [
+				{
+					"year": "c. 14,000 BCE",
+					"title": "Earliest Pottery and Settlement",
+					"description": "Prehistoric hunter-gatherer groups produce Jōmon pottery and inhabit coastal and interior sites."
+				},
+				{
+					"year": "c. 900 BCE",
+					"title": "Yayoi Agricultural Transition",
+					"description": "Introduction of wet-rice agriculture, irrigation, and metal tools from the continent reshapes society and settlement patterns."
+				},
+				{
+					"year": "c. 250 CE",
+					"title": "Kofun Period and State Formation",
+					"description": "Large burial mounds (kofun) mark emerging elite polities and proto-state organization centered on the Yamato court."
+				}
+			],
+			"notableFigures": [
+				"Legendary emperors (Jimmu traditionally dated 660 BCE) — foundational mythic figures",
+				"Local clan leaders and early Yamato elites"
+			]
+		},
+		"medieval": {
+			"period": "538 - 1185",
+			"description": "Buddhism, continental bureaucracy, writing, and new statecraft arrive from Korea and China. The Asuka (538-710) and Nara (710-794) periods see the adoption of a Chinese-style legal code, the codification of imperial institutions, and large Buddhist temples. The Heian period (794-1185) marks a flowering of court culture, Japanese vernacular literature and art, aristocratic politics, and gradual decentralization of military power to provincial families and emerging warrior households that will later form samurai culture.",
+			"keyEvents": [
+				{
+					"year": "538",
+					"title": "Introduction of Buddhism",
+					"description": "Buddhist schools and continental learning spread, influencing religion, law, and court life."
+				},
+				{
+					"year": "645",
+					"title": "Taika Reforms",
+					"description": "Major administrative reforms attempt to centralize authority under the emperor using continental models."
+				},
+				{
+					"year": "710",
+					"title": "Nara Capital",
+					"description": "Imperial court establishes a permanent capital at Heijō-kyō (Nara) and compiles the first national histories and law codes."
+				},
+				{
+					"year": "794",
+					"title": "Heian Capital Established",
+					"description": "Court moves to Heian-kyō (Kyoto), incubating a distinct Japanese court culture and literature."
+				}
+			],
+			"notableFigures": [
+				"Prince Shōtoku (regent and early patron of Buddhism and reforms)",
+				"Lady Murasaki Shikibu (author of The Tale of Genji)",
+				"Fujiwara clan (political and cultural power at court)"
+			]
+		},
+		"feudal": {
+			"period": "1185 - 1603",
+			"description": "After the Genpei War (1180-1185) a warrior government centered in Kamakura establishes the first shogunate and the samurai class becomes dominant. Power alternates between military regimes and fractious regional warlords. The Muromachi period sees Ashikaga shoguns preside over a fragmented polity, the rise of daimyo, and transformative cultural forms such as Noh and tea ceremony. The Sengoku or 'Warring States' era (c. 1467-1600) is a century of near-constant warfare among competing daimyo until Oda Nobunaga, Toyotomi Hideyoshi, and Tokugawa Ieyasu unify the country in sequence, the last founding the Tokugawa shogunate and ushering a long era of peace.",
+			"keyEvents": [
+				{
+					"year": "1185",
+					"title": "Genpei War and Rise of the Samurai",
+					"description": "Victory of Minamoto over Taira; emergence of warrior rule and the Kamakura shogunate."
+				},
+				{
+					"year": "1274-1281",
+					"title": "Mongol Invasions Repulsed",
+					"description": "Two Mongol invasion attempts fail; coastal defenses and samurai mobilization are decisive factors."
+				},
+				{
+					"year": "1467",
+					"title": "Ōnin War and Onset of Sengoku",
+					"description": "Court factionalism ignites decades of regional warfare and political decentralization."
+				},
+				{
+					"year": "1600",
+					"title": "Battle of Sekigahara",
+					"description": "Tokugawa Ieyasu's victory paves the way to unification and Tokugawa hegemony."
+				}
+			],
+			"notableFigures": [
+				"Minamoto no Yoritomo (founder of Kamakura shogunate)",
+				"Ashikaga Takauji (founder of Ashikaga shogunate)",
+				"Oda Nobunaga, Toyotomi Hideyoshi, Tokugawa Ieyasu (three unifiers)"
+			]
+		},
+		"isolation": {
+			"period": "1603 - 1868",
+			"description": "The Tokugawa shogunate establishes a hierarchical political order centered on Edo, enforces rigid social classes, restricts foreign contact through a policy often called sakoku, stabilizes internal governance, and fosters urbanization, commercial growth, and rich cultural developments including ukiyo-e and popular literature. Local domains retain autonomy under the bakufu's oversight. Christianity is suppressed after early missionary activity. Contact is largely limited to limited Dutch and Chinese trade at Nagasaki.",
+			"keyEvents": [
+				{
+					"year": "1639",
+					"title": "Formalization of Sakoku Policies",
+					"description": "Foreign travel forbidden and most European contacts restricted; limited trade permitted at specific ports."
+				},
+				{
+					"year": "1700s",
+					"title": "Urban and Commercial Growth",
+					"description": "Major cities expand; merchant classes gain economic power despite political restrictions."
+				}
+			],
+			"notableFigures": [
+				"Tokugawa Ieyasu and successive Tokugawa shoguns",
+				"Matsuo Bashō (haiku poet)",
+				"Ihara Saikaku (popular literature)"
+			]
+		},
+		"imperial": {
+			"period": "1868 - 1945",
+			"description": "Commodore Perry's arrival (1853-1854) and unequal treaties highlight Tokugawa weaknesses. The Meiji Restoration (1868) restores nominal imperial rule, centralizes power, and launches rapid, state-led modernization: abolition of domains, conscription, industrialization, legal reform, a constitution, and adoption of Western technology and institutions. Japan transforms into a modern imperial state, defeats China (1894-1895) and Russia (1904-1905), annexes Korea (1910), and expands influence in Asia. Domestic political life alternates between oligarchic genrō leadership, party politics, and militarist dominance. Militarism intensifies in the 1930s, leading to large-scale war in China and the Pacific that culminates in total defeat in 1945 after the atomic bombings and Soviet entry against Japan.",
+			"keyEvents": [
+				{
+					"year": "1853-1854",
+					"title": "Perry's Expedition and Unequal Treaties",
+					"description": "US naval pressure forces opening of ports and extraterritoriality under unequal treaties."
+				},
+				{
+					"year": "1868",
+					"title": "Meiji Restoration",
+					"description": "Restoration of imperial rule and program of rapid modernization and centralization."
+				},
+				{
+					"year": "1894-1895",
+					"title": "First Sino-Japanese War",
+					"description": "Japan defeats Qing China, claims influence in Korea and gains Taiwan."
+				},
+				{
+					"year": "1904-1905",
+					"title": "Russo-Japanese War",
+					"description": "Japan defeats a major European power, confirming its status as an industrialized empire."
+				},
+				{
+					"year": "1910",
+					"title": "Annexation of Korea",
+					"description": "Korean peninsula incorporated into the Japanese Empire."
+				},
+				{
+					"year": "1931",
+					"title": "Manchurian Incident and Expansion",
+					"description": "Military acts of aggression expand Japanese control in Manchuria and China."
+				},
+				{
+					"year": "1941-1945",
+					"title": "Pacific War",
+					"description": "War with Allied powers culminating in Japan's surrender in August 1945."
+				}
+			],
+			"notableFigures": [
+				"Emperor Meiji (symbol of modernization)",
+				"Yamagata Aritomo, Itō Hirobumi (Meiji statesmen)",
+				"Emperor Shōwa (Hirohito)",
+				"Hideki Tōjō (wartime prime minister)"
+			]
+		},
+		"modern": {
+			"period": "1945 - Present",
+			"description": "After unconditional surrender in 1945 and occupation (1945-1952), Japan adopts a pacifist constitution in 1947 limiting military forces and establishing parliamentary democracy. Land reform, zaibatsu dissolution, and US security ties shaped reconstruction. Japan pursued export-led industrialization to become the world's second-largest economy by the late 20th century. The 'economic miracle' brought rapid growth in the 1950s-1980s. The asset bubble burst in the early 1990s produced decades of slow growth and policy experimentation. Japan remains a technological leader, cultural exporter, and key US ally, while facing demographic aging, regional security challenges, and debates about constitutional revision and defense posture.",
+			"keyEvents": [
+				{
+					"year": "1947",
+					"title": "Postwar Constitution Promulgated",
+					"description": "New constitution establishes parliamentary system and renounces war (Article 9)."
+				},
+				{
+					"year": "1952",
+					"title": "End of Allied Occupation",
+					"description": "Treaty of San Francisco restores full sovereignty."
+				},
+				{
+					"year": "1950s-1980s",
+					"title": "Economic Miracle",
+					"description": "Rapid industrialization and export growth transform Japan into a global economic power."
+				},
+				{
+					"year": "1991",
+					"title": "Burst of Economic Bubble",
+					"description": "Asset price collapse initiates long period of economic stagnation and financial overhaul."
+				},
+				{
+					"year": "2011",
+					"title": "Tohoku Earthquake, Tsunami, and Fukushima",
+					"description": "Devastating natural disaster triggers nuclear accident and major policy responses."
+				}
+			],
+			"notableFigures": [
+				"Shigeru Yoshida (postwar leader shaping US relations)",
+				"Hayato Ikeda (economic policy maker)",
+				"Hayao Miyazaki, Yoko Ono (cultural figures)",
+				"Shinzo Abe (contemporary political leader)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 14,000 BCE",
+				"era": "Ancient",
+				"title": "Earliest Pottery (Jōmon)",
+				"description": "Jōmon pottery and settlements appear across the archipelago."
+			},
+			{
+				"year": "c. 300 BCE - 250 CE",
+				"era": "Ancient",
+				"title": "Yayoi Agricultural Expansion",
+				"description": "Rice cultivation and metallurgy reshape society."
+			},
+			{
+				"year": "538",
+				"era": "Classical",
+				"title": "Buddhism Introduced",
+				"description": "Buddhist institutions and continental culture influence state formation."
+			},
+			{
+				"year": "645",
+				"era": "Classical",
+				"title": "Taika Reforms",
+				"description": "Centralizing reforms modeled on China reorganize government."
+			},
+			{
+				"year": "794",
+				"era": "Classical",
+				"title": "Heian Capital Founded",
+				"description": "Heian period begins with distinct court culture."
+			},
+			{
+				"year": "1185",
+				"era": "Feudal",
+				"title": "Genpei War and Kamakura Shogunate",
+				"description": "Samurai ascendancy and first shogunate established."
+			},
+			{
+				"year": "1603",
+				"era": "Edo",
+				"title": "Tokugawa Shogunate",
+				"description": "Long peace, urbanization, and controlled foreign contact."
+			},
+			{
+				"year": "1853",
+				"era": "Late Tokugawa",
+				"title": "Perry Arrives",
+				"description": "External pressure forces opening of ports and crises of the bakufu."
+			},
+			{
+				"year": "1868",
+				"era": "Modern",
+				"title": "Meiji Restoration",
+				"description": "State modernization and industrialization accelerate."
+			},
+			{
+				"year": "1905",
+				"era": "Imperial",
+				"title": "Russo-Japanese War Victory",
+				"description": "Japan recognized as a modern military power."
+			},
+			{
+				"year": "1945",
+				"era": "Modern",
+				"title": "Defeat in World War II",
+				"description": "Surrender leads to occupation and major constitutional change."
+			},
+			{
+				"year": "1947",
+				"era": "Modern",
+				"title": "New Constitution",
+				"description": "Pacifist constitution shapes postwar identity."
+			},
+			{
+				"year": "1950s-1980s",
+				"era": "Modern",
+				"title": "Economic Rise",
+				"description": "Rapid growth creates global industrial leader."
+			}
+		]
+	},
+	{
+		"name": "India",
+		"overview": "India's history extends from Paleolithic and Neolithic communities through the urban Indus Valley Civilization, millennia of Vedic, classical and regional kingdoms, major imperial polities (Maurya, Gupta, Delhi Sultanate, Mughal), centuries of maritime and land trade, complex local and religious pluralism, prolonged European commercial and colonial presence culminating in British Raj, a broad nationalist movement that achieved independence with partition in 1947, and post-independence evolution into a multilingual, multiethnic constitutional republic and major regional power. Indian history is notable for early urbanization, philosophical and religious innovation, administrative sophistication in premodern empires, the synthesis of indigenous and external influences, and large-scale social and economic transformation in the 20th and 21st centuries.",
+		"source": {
+			"label": "Wikipedia - History of India",
+			"url": "https://en.wikipedia.org/wiki/History_of_India",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_India",
+				"https://www.britannica.com/place/India/History",
+				"https://www.nationalarchives.gov.uk/education/empire/g2/cs3/g2cs3s.htm",
+				"https://www.ancient.eu/India/",
+				"https://www.harappa.com"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Indus Valley Civilization (mature)", "value": "c. 2600-1900 BCE" },
+			{ "label": "Vedic Period", "value": "c. 1500-500 BCE" },
+			{ "label": "Maurya Empire (Ashoka)", "value": "c. 322-185 BCE; Ashoka c. 268-232 BCE" },
+			{ "label": "Gupta 'Golden Age'", "value": "c. 4th-6th centuries CE" },
+			{
+				"label": "Delhi Sultanate and Mughal periods",
+				"value": "c. 1206-1857 (successive Muslim regimes and Mughal apex c. 16th-17th c.)"
+			},
+			{ "label": "Colonial British Raj", "value": "1858-1947 (crown rule after 1858)" },
+			{ "label": "Independence", "value": "August 15, 1947 (partition into India and Pakistan)" },
+			{ "label": "Republic and Constitution", "value": "Constitution enacted January 26, 1950" },
+			{ "label": "Capital", "value": "New Delhi (capital since 1911 under British; Republic capital after 1947)" },
+			{ "label": "UNESCO Sites", "value": "44 World Heritage Sites" }
+		],
+		"ancient": {
+			"period": "c. 7000 BCE - 600 BCE",
+			"description": "South Asia's prehistory includes Neolithic villages, early agriculture, and pastoral systems. The mature Harappan or Indus Valley Civilization (c. 2600-1900 BCE) produced highly planned cities (Mohenjo-daro, Harappa), standardized weights and measures, long-distance trade networks, and undeciphered scripts. After the Harappan urban decline, the Vedic period saw the composition of the early Vedic texts, shifting socio-religious practices, the emergence of varna (social orders) and early polities, and major expansions in language and ritual that shaped later South Asian culture. By the first millennium BCE, states and kingdoms with organized administration and economies appear across the subcontinent.",
+			"keyEvents": [
+				{
+					"year": "c. 3300-1900 BCE",
+					"title": "Indus Valley (Harappan) Civilization",
+					"description": "Urban planning, baked brick architecture, drainage systems, craft specialization, and long-distance trade characterize the civilization."
+				},
+				{
+					"year": "c. 1500-500 BCE",
+					"title": "Vedic Age and Formation of Early Polities",
+					"description": "Composition of Vedic literature, pastoral and agrarian communities, and formation of early kingdoms."
+				}
+			],
+			"notableFigures": [
+				"Indus urban elites (Unnamed due to undeciphered script)",
+				"Early Vedic rishis and clan leaders"
+			]
+		},
+		"medieval": {
+			"period": "c. 600 BCE - 1200 CE",
+			"description": "This long span includes the rise of regional and pan-Indian empires, profound religious and intellectual developments, and expanding trade. The Mahajanapada era (c. 600 BCE) gives way to imperial unification under the Maurya Empire (c. 322-185 BCE). Emperor Ashoka's conversion to Buddhism and edicts promote new moral and administrative standards. The post-Mauryan era sees regional kingdoms and the flowering of classical Sanskrit literature. The Gupta period (c. 4th-6th centuries) is often seen as a high point of classical Indian culture with major achievements in science, mathematics, arts, and statecraft. From late antiquity into the early medieval period, complex regional polities, temple economies, and maritime connections with Southeast Asia develop.",
+			"keyEvents": [
+				{
+					"year": "c. 322-185 BCE",
+					"title": "Maurya Empire Established",
+					"description": "Chandragupta Maurya founds the empire; Ashoka expands and later embraces Buddhism, issuing edicts."
+				},
+				{
+					"year": "c. 320-550",
+					"title": "Gupta Era",
+					"description": "Political consolidation in northern India and a cultural golden age in science, arts, and religion."
+				}
+			],
+			"notableFigures": [
+				"Chandragupta Maurya, Ashoka the Great",
+				"Gupta rulers (e.g., Chandragupta I, Samudragupta), scholars such as Aryabhata"
+			]
+		},
+		"pre-colonial": {
+			"period": "c. 1200 - 1757",
+			"description": "From the 13th century the subcontinent sees major political realignments. The Delhi Sultanate establishes a sustained series of Muslim dynasties. The medieval period is marked by the spread of Islam in the north, synthesis of cultures, and the rise of regional kingdoms in the Deccan and South. The Mughal Empire (16th-18th centuries) brings vast territorial control, a sophisticated administrative system, monumental architecture, and a rich cultural synthesis. Regional polities such as the Marathas, Vijayanagara, and various sultanates shape a complex political map by the early modern era.",
+			"keyEvents": [
+				{
+					"year": "1192",
+					"title": "Ghurid Victory and Foundation of Muslim Rule",
+					"description": "Muhammad of Ghor's victories lead to the establishment of Muslim polities in northern India."
+				},
+				{
+					"year": "1526",
+					"title": "Founding of Mughal Empire",
+					"description": "Babur defeats Ibrahim Lodi at Panipat and establishes a dynasty that will shape much of Indian polity and culture."
+				},
+				{
+					"year": "1658-1707",
+					"title": "Apex of Mughal Power and Decline",
+					"description": "Akbar's consolidation and later Aurangzeb's expansion followed by decentralization and regional resurgence."
+				}
+			],
+			"notableFigures": [
+				"Akbar the Great, Shah Jahan (patron of Taj Mahal), Aurangzeb",
+				"Regional leaders: Shivaji (Maratha), Krishnadevaraya (Vijayanagara)"
+			]
+		},
+		"colonial": {
+			"period": "1757 - 1947",
+			"description": "European presence begins as trading posts and commercial networks. The British East India Company expands territorial control across the 18th and early 19th centuries, culminating in the Company's defeat in the 1857 revolt. The British Crown then governs India directly as the Raj from 1858. Colonial rule brings administrative modernization, railways, legal codification, and economic integration into global markets while also producing deindustrialization in some sectors, famines, land revenue changes, and social reforms. Indian nationalism grows from the late 19th century into a mass movement under political organizations such as the Indian National Congress and leaders like Gandhi who champion nonviolent resistance. Tensions of religion, regionalism, and colonial policy lead to partition in 1947 when British India becomes independent India and Pakistan.",
+			"keyEvents": [
+				{
+					"year": "1757",
+					"title": "Battle of Plassey",
+					"description": "East India Company victory begins its political dominance in Bengal and paves the way for territorial expansion."
+				},
+				{
+					"year": "1857",
+					"title": "Indian Rebellion (Sepoy Mutiny)",
+					"description": "Widespread uprising against Company rule; its suppression leads to direct Crown rule in 1858."
+				},
+				{
+					"year": "1885",
+					"title": "Indian National Congress Founded",
+					"description": "Organization later central to the nationalist movement."
+				},
+				{
+					"year": "1919",
+					"title": "Jallianwala Bagh Massacre",
+					"description": "Mass shooting in Amritsar intensifies nationalist sentiment."
+				},
+				{
+					"year": "1930-1942",
+					"title": "Gandhi's Civil Disobedience Campaigns",
+					"description": "Salt March (1930) and Quit India Movement (1942) mobilize mass support for independence."
+				},
+				{
+					"year": "1947",
+					"title": "Independence and Partition",
+					"description": "British India partitioned into India and Pakistan; communal violence and mass migrations follow."
+				}
+			],
+			"notableFigures": [
+				"Mahatma Gandhi, Jawaharlal Nehru, Sardar Vallabhbhai Patel, B. R. Ambedkar",
+				"Subhas Chandra Bose, Bal Gangadhar Tilak"
+			]
+		},
+		"modern": {
+			"period": "1947 - Present",
+			"description": "Independent India enacts a secular democratic constitution in 1950 establishing a federal republic. Early policy emphasized planned economy, land reform, and state intervention. India fought wars with Pakistan (1947-48, 1965, 1971, 1999) and China (1962). The Green Revolution of the 1960s-1970s increased food production. Political life includes the dominance of the Congress party into the 1970s, the Emergency period (1975-1977), the rise of regional parties, and coalition governments. Economic liberalization in 1991 opened markets and accelerated growth, technology expansion, and global integration. India has developed a large services sector, a growing manufacturing base, nuclear capabilities, and a complex social policy landscape addressing caste, communalism, and development disparities. Contemporary India is the world's largest democracy by population and a major geopolitical actor while facing persistent challenges in poverty reduction, infrastructure, health, and environmental pressures.",
+			"keyEvents": [
+				{
+					"year": "1950",
+					"title": "Constitution Comes into Force",
+					"description": "Republic of India established with detailed fundamental rights and governance structures."
+				},
+				{
+					"year": "1962",
+					"title": "Sino-Indian War",
+					"description": "Border conflict with China leading to military defeat and strategic reassessment."
+				},
+				{
+					"year": "1971",
+					"title": "Bangladesh Liberation War",
+					"description": "India intervenes; creation of Bangladesh after Pakistani defeat."
+				},
+				{
+					"year": "1975-1977",
+					"title": "The Emergency",
+					"description": "Prime Minister Indira Gandhi imposes state of emergency suspending many civil liberties."
+				},
+				{
+					"year": "1991",
+					"title": "Economic Liberalization",
+					"description": "Structural reforms open economy, catalyzing higher growth and investment."
+				},
+				{
+					"year": "1998",
+					"title": "Nuclear Tests",
+					"description": "India conducts underground nuclear tests, declaring nuclear weapons status."
+				}
+			],
+			"notableFigures": [
+				"Jawaharlal Nehru, Indira Gandhi, Atal Bihari Vajpayee, Narendra Modi",
+				"B. R. Ambedkar (architect of the Constitution), Amartya Sen (economist)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 7000 BCE",
+				"era": "Ancient",
+				"title": "Early Farming Communities",
+				"description": "Neolithic settlements in South Asia develop agriculture and domestication."
+			},
+			{
+				"year": "c. 2600-1900 BCE",
+				"era": "Ancient",
+				"title": "Indus Valley Civilization",
+				"description": "Urban centers, standardized crafts, and trade networks flourish."
+			},
+			{
+				"year": "c. 1500-500 BCE",
+				"era": "Ancient",
+				"title": "Vedic Period",
+				"description": "Composition of core Vedic texts and formation of early social orders."
+			},
+			{
+				"year": "c. 322-185 BCE",
+				"era": "Classical",
+				"title": "Maurya Empire and Ashoka",
+				"description": "Large pan-Indian empire; Ashoka promotes Buddhism and state edicts."
+			},
+			{
+				"year": "c. 320-550",
+				"era": "Classical",
+				"title": "Gupta Golden Age",
+				"description": "Flourishing of science, mathematics, literature, and arts."
+			},
+			{
+				"year": "1192",
+				"era": "Medieval",
+				"title": "Beginning of Muslim Polities",
+				"description": "Ghurid successes lead to Islamic rule in large parts of northern India."
+			},
+			{
+				"year": "1526",
+				"era": "Early Modern",
+				"title": "Mughal Empire Founded",
+				"description": "Imperial consolidation, cultural efflorescence, and administrative systems."
+			},
+			{
+				"year": "1757",
+				"era": "Early Modern",
+				"title": "Company Ascendancy",
+				"description": "Battle of Plassey enables East India Company political control."
+			},
+			{
+				"year": "1857",
+				"era": "Colonial",
+				"title": "Rebellion and Crown Rule",
+				"description": "Sepoy revolt leads to end of Company rule and start of British Raj."
+			},
+			{
+				"year": "1947",
+				"era": "Modern",
+				"title": "Independence and Partition",
+				"description": "End of British rule; partition into India and Pakistan; massive migrations and violence."
+			},
+			{
+				"year": "1950",
+				"era": "Modern",
+				"title": "Republic and Constitution",
+				"description": "Constitution establishes democratic republic and fundamental rights."
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Economic Reforms",
+				"description": "Liberalization accelerates integration into global economy."
 			}
 		]
 	}

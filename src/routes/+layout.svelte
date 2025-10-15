@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Clock from '$lib/Clock.svelte';
-	
+
 	let { children } = $props();
 </script>
 
