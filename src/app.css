@@ -5,6 +5,14 @@
 	--color-darkCyan: rgba(0, 255, 255, 0.1);
 }
 
+:root {
+	color-scheme: light;
+}
+:global(body) {
+	background: #000;
+	color: #fff;
+}
+
 html,
 body,
 #app {

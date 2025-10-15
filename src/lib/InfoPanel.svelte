@@ -16,10 +16,12 @@
 	export let activeTab: string = 'overview';
 	export let leftWidth: number = 350;
 	export let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
+	export let copyLinkSuccess: boolean = false;
 
 	export let onToggleSources: (() => void) | undefined;
 	export let onClose: (() => void) | undefined;
 	export let onChangeTab: ((t: string) => void) | undefined;
+	export let onCopyLink: (() => void) | undefined;
 
 	function setTab(t: typeof activeTab) {
 		if (t === activeTab) return;
@@ -215,10 +217,58 @@
 						</div>
 					</div>
 
+					<div class="relative">
+						<button
+							on:click={onCopyLink}
+							aria-label="Copy link to country"
+							aria-describedby="copy-link-tooltip"
+							class={`peer group flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border px-2 py-2 font-semibold backdrop-blur-[10px] transition-all duration-300 ${copyLinkSuccess ? 'border-emerald-500/50 bg-gradient-to-br from-emerald-400/20 to-emerald-500/10 text-emerald-300' : 'border-white/15 bg-gradient-to-br from-white/5 to-white/10 text-white/70 hover:border-cyan-400/30 hover:from-cyan-400/10 hover:to-sky-400/10 hover:text-cyan-300'}`}
+						>
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class={`transition-all duration-300 ${copyLinkSuccess ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+								aria-hidden="true"
+							>
+								<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+								<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+							</svg>
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class={`absolute transition-all duration-300 ${copyLinkSuccess ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
+								aria-hidden="true"
+							>
+								<polyline points="20 6 9 17 4 12" />
+							</svg>
+						</button>
+
+						<div
+							id="copy-link-tooltip"
+							role="tooltip"
+							class={`pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs rounded-md border px-3 py-1.5 text-sm font-medium shadow-[0_6px_30px] backdrop-blur-[6px] transition-all duration-300 will-change-transform ${copyLinkSuccess ? 'translate-y-0 scale-100 border-emerald-500/30 bg-gradient-to-br from-emerald-900/90 to-emerald-950/90 text-emerald-200 opacity-100 shadow-emerald-500/20' : 'translate-y-1 scale-95 border-white/10 bg-gradient-to-br from-black/80 to-slate-900/80 text-white/90 opacity-0 shadow-cyan-500/10 group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:scale-100 group-focus-visible:opacity-100'}`}
+							aria-hidden="false"
+						>
+							{copyLinkSuccess ? 'Link Copied!' : 'Copy link to country'}
+						</div>
+					</div>
+
 					<button
 						on:click={onClose}
 						aria-label="Close info panel"
-						class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-gradient-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200"
+						class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-gradient-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200 hover:scale-105"
 						>✕</button
 					>
 				</div>

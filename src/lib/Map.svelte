@@ -6,6 +6,8 @@
 	import { fetchCountryInfoByName } from '$lib/utils/getInfo';
 	import InfoPanel from '$lib/InfoPanel.svelte';
 	import MapSettings from '$lib/components/MapSettings.svelte';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
@@ -60,6 +62,9 @@
 	let pathCache = new Map<string, string>();
 	let hoveredCountry: number | null = null;
 	let zoomRAF: number | null = null;
+
+	let copyLinkSuccess = false;
+	let copyLinkTimeout: number | null = null;
 
 	const projectionCache = new Map<string, () => d3.GeoProjection>();
 	function getProjection(type: string): d3.GeoProjection {
@@ -122,6 +127,16 @@
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
+			const urlCountry = $page.params.country || $page.url.pathname.split('/')[1];
+			if (urlCountry) {
+				const decodedCountry = decodeURIComponent(urlCountry);
+				const matchingCountry = countries.find((c) => getCountryName(c).toLowerCase() === decodedCountry.toLowerCase());
+				if (matchingCountry) {
+					await tick();
+					onCountryClick(matchingCountry);
+				}
+			}
+
 			handleResize();
 			window.addEventListener('resize', throttledResize, { passive: true });
 		} catch (error) {
@@ -132,6 +147,7 @@
 	onDestroy(() => {
 		window.removeEventListener('resize', throttledResize);
 		if (resizeTimeout) clearTimeout(resizeTimeout);
+		if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
 		if (resizeRAF) cancelAnimationFrame(resizeRAF);
 		if (animHandle != null) cancelAnimationFrame(animHandle);
 		if (zoomRAF) cancelAnimationFrame(zoomRAF);
@@ -325,6 +341,7 @@
 	async function closePanel() {
 		selectedFeature = null;
 		selectedName = null;
+		updateURL(null);
 		focusProjection = undefined;
 		focusPathGenerator = null;
 		pathCache.clear();
@@ -480,6 +497,26 @@
 	function hoverReset() {
 		hoveredCountry = null;
 	}
+
+	function handleCopyLink() {
+		if (!selectedName) return;
+		const url = `${window.location.origin}/${encodeURIComponent(selectedName)}`;
+		navigator.clipboard.writeText(url).then(() => {
+			copyLinkSuccess = true;
+			if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
+			copyLinkTimeout = window.setTimeout(() => {
+				copyLinkSuccess = false;
+			}, 2000);
+		});
+	}
+
+	function updateURL(countryName: string | null) {
+		if (countryName) {
+			goto(`/${encodeURIComponent(countryName)}`, { replaceState: false, noScroll: true, keepFocus: true });
+		} else {
+			goto('/', { replaceState: false, noScroll: true, keepFocus: true });
+		}
+	}
 </script>
 
 <div
@@ -500,9 +537,11 @@
 			{activeTab}
 			{leftWidth}
 			{infoCache}
+			{copyLinkSuccess}
 			onToggleSources={() => (showSources = !showSources)}
 			onClose={closePanel}
 			onChangeTab={(t) => (activeTab = t)}
+			onCopyLink={handleCopyLink}
 		/>
 
 		<div
