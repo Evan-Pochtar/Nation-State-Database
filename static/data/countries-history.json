@@ -7028,5 +7028,1762 @@
 				"description": "Liberalization accelerates integration into global economy."
 			}
 		]
+	},
+	{
+		"name": "Vietnam",
+		"overview": "Vietnam's history spans prehistoric cultures, a millennium of Chinese domination and influence, independent Viet polities that expanded southward, the rise and fall of indigenous dynasties, French colonial rule and integration into French Indochina, mid-20th century wars of decolonization and Cold War-era partition, reunification under a communist government in 1976, and market-oriented reforms from 1986 onward that transformed the economy while the Communist Party retained single-party rule.",
+		"source": {
+			"label": "Britannica - History of Vietnam",
+			"url": "https://www.britannica.com/topic/history-of-Vietnam",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Vietnam",
+				"https://en.wikipedia.org/wiki/History_of_Vietnam",
+				"https://whc.unesco.org/en/statesparties/vn"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "September 2, 1945 (Democratic Republic of Vietnam declared)"
+			},
+			{
+				"label": "Capital",
+				"value": "Hanoi (ancient and modern political center; long-term capital of northern polities)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Việt Nam — 'Việt' (an ethnonym) + 'Nam' (south). Modern form used from 19th century."
+			},
+			{
+				"label": "Major UNESCO Sites (count)",
+				"value": "9 World Heritage Sites (cultural, natural, mixed) as of 2025"
+			},
+			{
+				"label": "Modern Political System",
+				"value": "Single-party socialist republic led by the Communist Party of Vietnam"
+			}
+		],
+		"ancient": {
+			"period": "c. 2500 BCE - 938 CE",
+			"description": "Early archaeological cultures (e.g., Phùng Nguyên, Đông Sơn) produced advanced wet-rice agriculture, bronze technology and complex chiefdoms. The Đông Sơn culture (c. 700 BCE-100 CE) is notable for sophisticated bronze drums and extensive trade. From the 1st century CE coastal polities and polities influenced by Indian Ocean trade emerged in the south (Óc Eo / Funan sphere). From 111 BCE to 938 CE most of the Red River delta and surrounding areas were under periods of direct Chinese rule or strong Sinic influence. Local elites periodically reasserted autonomy, culminating in full independence after the Battle of Bạch Đằng (938).",
+			"keyEvents": [
+				{
+					"year": "c. 2500-1500 BCE",
+					"title": "Early Neolithic Cultures",
+					"description": "Archaeological cultures including Phùng Nguyên and Bắc Sơn establish rice cultivation and settled villages in the Red River basin."
+				},
+				{
+					"year": "c. 700 BCE - 100 CE",
+					"title": "Đông Sơn Culture",
+					"description": "Bronze production, distinctive drums and advanced rice farming mark growing social complexity in northern Vietnam."
+				},
+				{
+					"year": "1st-6th centuries CE",
+					"title": "Maritime Trade and Óc Eo",
+					"description": "Southern Mekong ports connect to Indian Ocean trade networks; Indian cultural and religious influences spread to coastal polities."
+				},
+				{
+					"year": "111 BCE - 938 CE",
+					"title": "Chinese Rule and Influence",
+					"description": "Multiple periods of Chinese imperial administration alternate with brief native regimes; Chinese institutions, script and Buddhism/Confucianism heavily influence elites."
+				},
+				{
+					"year": "938",
+					"title": "Battle of Bạch Đằng",
+					"description": "Ngô Quyền defeats Chinese forces; regarded as the decisive event that secures independent Vietnamese polity centered on the Red River delta."
+				}
+			],
+			"notableFigures": [
+				"Ngô Quyền",
+				"Lý Nam Đế (early brief independent ruler)",
+				"leaders of Đông Sơn chiefdoms (unnamed in records)"
+			]
+		},
+		"medieval": {
+			"period": "938 - 1802",
+			"description": "An independent Vietnamese state (often called Đại Việt from the 11th century) consolidates under native dynasties. The Lý (1009-1225) and Trần (1225-1400) dynasties institutionalize Confucian bureaucracy, expand agrarian frontiers and repel Mongol invasions. Southward expansion (Nam tiến) gradually annexes Champa and parts of the Khmer sphere. The late medieval period sees intermittent civil war, the brief Hồ interregnum and Ming occupation (1407-1427), followed by Lê restoration and the powerful Lê-Trịnh and Nguyễn family divisions. Regional fragmentation and peasant rebellion in the 18th century (Tây Sơn) pave the way for Nguyễn unification.",
+			"keyEvents": [
+				{
+					"year": "1010",
+					"title": "Founding of Thăng Long (Hanoi)",
+					"description": "Emperor Lý Thái Tổ establishes Thăng Long as capital, a political and cultural center."
+				},
+				{
+					"year": "13th century",
+					"title": "Mongol Invasions Repelled",
+					"description": "Trần dynasty successfully resists multiple Mongol invasion attempts (notably 1258, 1285, 1288)."
+				},
+				{
+					"year": "15th century",
+					"title": "Lê Lợi and the Lê Restoration",
+					"description": "Lê Lợi leads Lam Sơn uprising, expels Ming occupation (1428) and establishes Later Lê dynasty."
+				},
+				{
+					"year": "15th-17th centuries",
+					"title": "Nam Tiến (Southward Expansion)",
+					"description": "Vietnamese polities expand into Champa territories and the Mekong Delta, absorbing diverse peoples."
+				},
+				{
+					"year": "1778-1802",
+					"title": "Tây Sơn Rebellions and Nguyễn Unification",
+					"description": "Tây Sơn brothers overthrow weakened Trịnh/Nguyễn orders; Nguyễn Ánh (Nguyễn dynasty) defeats Tây Sơn and unifies Vietnam in 1802."
+				}
+			],
+			"notableFigures": ["Lý Thái Tổ", "Trần Hưng Đạo", "Lê Lợi", "Nguyễn Ánh (Emperor Gia Long)"]
+		},
+		"colonial": {
+			"period": "1802 - 1945",
+			"description": "The Nguyễn dynasty (1802-1945) centralizes rule and interacts increasingly with European powers. French commercial penetration escalates into military intervention and formal colonization. Between the 1850s and 1887 the French established control over Cochinchina, Annam and Tonkin and integrated them as French Indochina. Colonial rule restructured the economy toward export agriculture, introduced railways and Western education for a small elite, and generated modern nationalist movements. Japanese occupation during World War II (1940-45) weakened French authority and set the stage for the August Revolution in 1945.",
+			"keyEvents": [
+				{
+					"year": "1887",
+					"title": "French Indochina Created",
+					"description": "France formalizes its colonial administration over Vietnam, Laos and Cambodia, consolidating political and economic control."
+				},
+				{
+					"year": "1900s-1930s",
+					"title": "Modern Nationalism Grows",
+					"description": "Intellectual reformers, Communist and non-Communist nationalists mobilize against colonial rule; Indochinese Communist Party forms in 1930."
+				},
+				{
+					"year": "1940-1945",
+					"title": "Japanese Occupation",
+					"description": "Japan occupies Indochina during WWII but permits limited French administration until Japanese coup in March 1945."
+				},
+				{
+					"year": "August 1945",
+					"title": "August Revolution",
+					"description": "Viet Minh under Hồ Chí Minh seizes power in Hanoi; Democratic Republic of Vietnam proclaimed September 2, 1945."
+				}
+			],
+			"notableFigures": ["Emperor Gia Long", "Phan Bội Châu", "Hồ Chí Minh", "Phan Đình Phùng (anti-colonial leader)"]
+		},
+		"independence": {
+			"period": "1945 - 1975",
+			"description": "France attempts to reassert control leading to the First Indochina War (1946-1954). The 1954 Geneva Accords partition Vietnam at the 17th parallel into North and South. The Republic of Vietnam in the south and the Democratic Republic in the north became Cold War proxies. Escalation under U.S. involvement produced the Vietnam War (often dated c.1955-1975) with massive military and civilian casualties. The fall of Saigon on April 30, 1975 ended the war and led to de facto reunification under northern leadership.",
+			"keyEvents": [
+				{
+					"year": "1946-1954",
+					"title": "First Indochina War",
+					"description": "Viet Minh guerrilla and conventional campaigns defeat French forces; Điện Biên Phủ (1954) is decisive."
+				},
+				{
+					"year": "1954",
+					"title": "Geneva Accords",
+					"description": "Temporary partition of Vietnam at the 17th parallel pending elections that never occur; sets stage for separate North and South states."
+				},
+				{
+					"year": "1955-1975",
+					"title": "Vietnam War (Second Indochina War)",
+					"description": "Conflict between communist North/Viet Cong and anti-communist South with major U.S. military intervention; widespread devastation and international controversy."
+				},
+				{
+					"year": "April 30, 1975",
+					"title": "Fall of Saigon",
+					"description": "Saigon (Ho Chi Minh City) falls to North Vietnamese forces; effective end of the large-scale war and start of reunification process."
+				}
+			],
+			"notableFigures": ["Hồ Chí Minh", "Vo Nguyen Giap", "Ngo Dinh Diem", "Nguyen Van Thieu"]
+		},
+		"modern": {
+			"period": "1976 - Present",
+			"description": "The Socialist Republic of Vietnam was officially established in 1976. The immediate postwar decades included reunification challenges, economic hardship, international isolation and conflicts (notably brief 1979 border war with China). Starting in 1986 the Communist Party launched Đổi Mới economic reforms moving from a centrally planned model toward a socialist-oriented market economy. Reforms spurred rapid GDP growth, poverty reduction and integration into global trade including WTO accession in 2007. Political liberalization remained limited; the Communist Party retains monopoly on power. Since the 2000s Vietnam has pursued active diplomacy, foreign investment, and export-led industrialization while managing environmental and social challenges.",
+			"keyEvents": [
+				{
+					"year": "1976",
+					"title": "Reunification",
+					"description": "North and South merged into the Socialist Republic of Vietnam with Hanoi as capital."
+				},
+				{
+					"year": "1979",
+					"title": "Border War with China",
+					"description": "Short but bloody conflict over northern border regions following tensions after Vietnam's intervention in Cambodia."
+				},
+				{
+					"year": "1986",
+					"title": "Đổi Mới Reforms",
+					"description": "Economic reforms liberalize markets, encourage foreign investment and reduce state controls, transforming the economy over ensuing decades."
+				},
+				{
+					"year": "2007",
+					"title": "WTO Accession",
+					"description": "Vietnam joins the World Trade Organization, accelerating trade and investment integration."
+				},
+				{
+					"year": "2010s-2020s",
+					"title": "Rapid Economic Growth and Urbanization",
+					"description": "Manufacturing and services expand; Vietnam becomes a regional manufacturing hub while facing governance, inequality and environmental pressures."
+				}
+			],
+			"notableFigures": ["Hồ Chí Minh", "Võ Nguyên Giáp", "Nguyễn Phú Trọng (Party General Secretary in 2010s-2020s)"]
+		},
+		"timeline": [
+			{
+				"year": "c. 700 BCE",
+				"era": "Ancient",
+				"title": "Đông Sơn Culture",
+				"description": "Bronze drums and wet-rice agriculture flourish in the Red River basin."
+			},
+			{
+				"year": "938",
+				"era": "Ancient",
+				"title": "Battle of Bạch Đằng",
+				"description": "Decisive victory securing Vietnamese independence from Chinese control."
+			},
+			{
+				"year": "1010",
+				"era": "Medieval",
+				"title": "Thăng Long Founded",
+				"description": "Capital established at present-day Hanoi."
+			},
+			{
+				"year": "1428",
+				"era": "Medieval",
+				"title": "Lê Dynasty Restored",
+				"description": "Lê Lợi establishes a long-lasting native dynasty after expelling Ming forces."
+			},
+			{
+				"year": "1802",
+				"era": "Medieval",
+				"title": "Nguyễn Dynasty Established",
+				"description": "Vietnam unified under Gia Long; later faces French encroachment."
+			},
+			{
+				"year": "1887",
+				"era": "Colonial",
+				"title": "French Indochina Formed",
+				"description": "French consolidate colonial rule over Vietnamese territories."
+			},
+			{
+				"year": "September 2, 1945",
+				"era": "Independence",
+				"title": "Proclamation of the Democratic Republic of Vietnam",
+				"description": "Hồ Chí Minh proclaims independence in Hanoi."
+			},
+			{
+				"year": "1954",
+				"era": "Cold War",
+				"title": "Geneva Accords",
+				"description": "Partition of Vietnam at 17th parallel after French defeat at Điện Biên Phủ."
+			},
+			{
+				"year": "1975",
+				"era": "Cold War",
+				"title": "Fall of Saigon",
+				"description": "End of major hostilities; pathway to reunification."
+			},
+			{
+				"year": "1986",
+				"era": "Modern",
+				"title": "Đổi Mới",
+				"description": "Economic reform program begins market-oriented transformation."
+			}
+		]
+	},
+	{
+		"name": "Cambodia",
+		"overview": "Cambodia's recorded history features early Indianized polities (Funan, Chenla), the Khmer Empire centered at Angkor that produced one of Southeast Asia's greatest classical civilizations, centuries of contraction and vassalage to neighbors, French colonial protectorate status from the 19th century, independence in 1953, mid-20th century instability culminating in the Khmer Rouge genocide (1975-1979), Vietnamese intervention and a socialist People's Republic in the 1980s, a UN-mediated peace process in the early 1990s, restoration of a constitutional monarchy, and decades of political consolidation under the long rule of Hun Sen followed by a generational leadership transition in 2023.",
+		"source": {
+			"label": "Britannica - History of Cambodia",
+			"url": "https://www.britannica.com/place/Cambodia",
+			"urls": [
+				"https://www.britannica.com/place/Cambodia",
+				"https://en.wikipedia.org/wiki/History_of_Cambodia",
+				"https://whc.unesco.org/en/statesparties/kh"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "November 9, 1953 (from France)"
+			},
+			{
+				"label": "Capital",
+				"value": "Phnom Penh (established as modern capital in 1866 under King Norodom)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Khmer term for the polity; 'Kampuchea' derives from Sanskrit 'Kambuja'."
+			},
+			{
+				"label": "Major UNESCO Sites (count)",
+				"value": "5 World Heritage Sites as of 2025 (including Angkor and newly listed Khmer Rouge memorial sites)"
+			},
+			{
+				"label": "Modern Political Note",
+				"value": "Long rule of Hun Sen (1985-2023) followed by his son Hun Manet's premiership beginning in 2023"
+			}
+		],
+		"ancient": {
+			"period": "1st century CE - 802 CE",
+			"description": "Early states in the lower Mekong and the Tonle Sap region were shaped by maritime trade and Indian cultural influence. Funan (c. 1st-6th centuries CE) and later Chenla controlled trade routes and established early Khmer polities. Indian religious, political and scriptural models infused local elites' institutions and monumental architecture traditions that would later find full expression in the Khmer Empire.",
+			"keyEvents": [
+				{
+					"year": "1st-6th centuries CE",
+					"title": "Funan",
+					"description": "A maritime, trade-oriented polity centered in the Mekong delta with Indian cultural links and early urban sites."
+				},
+				{
+					"year": "6th-8th centuries CE",
+					"title": "Chenla",
+					"description": "Successor polities to Funan with increasing inland power bases that prefigure the Khmer Empire."
+				}
+			],
+			"notableFigures": ["Early Funan and Chenla rulers (sparsely recorded by inscriptions and foreign sources)"]
+		},
+		"medieval": {
+			"period": "802 - c. 1431",
+			"description": "The Khmer Empire, founded by Jayavarman II in 802, developed a complex hydraulic agriculture, monumental temple architecture and a sophisticated court culture. The peak (9th-13th centuries) produced Angkor where monumental temple complexes including Angkor Wat and Bayon cemented Khmer artistic and religious achievement. The empire projected influence across mainland Southeast Asia but declined from the 13th century onward due to ecological, political, and regional pressures and rising Thai polities. Vietnamese incursions and internal shifts moved power away from Angkor in later centuries.",
+			"keyEvents": [
+				{
+					"year": "802",
+					"title": "Jayavarman II Declares Devaraja",
+					"description": "Foundation of the Khmer polity that evolves into the Angkor-centered empire."
+				},
+				{
+					"year": "12th century",
+					"title": "Angkor Wat Built",
+					"description": "King Suryavarman II commissions Angkor Wat, a monumental temple complex and symbol of classical Khmer civilization."
+				},
+				{
+					"year": "Late 13th-15th centuries",
+					"title": "Decline and Shift of Power",
+					"description": "Environmental stress, water management problems, warfare and regional dynamics contribute to Angkor's decline and the shift of political centers toward the south and coast."
+				}
+			],
+			"notableFigures": ["Jayavarman II", "Suryavarman II", "Jayavarman VII"]
+		},
+		"colonial": {
+			"period": "1431 - 1953",
+			"description": "After Angkor's decline Cambodia became more vulnerable to territorial pressures from Siam (Thailand) and Đại Việt (Vietnam). The polity contracted and moved its capital several times. In the 19th century Cambodian rulers accepted French protection (1863) to secure independence from neighbors. Under the French protectorate Cambodia retained the monarchy but experienced administrative reforms, archaeological interest in Angkor, and integration into the colonial economy.",
+			"keyEvents": [
+				{
+					"year": "1863",
+					"title": "French Protectorate Established",
+					"description": "King Norodom places Cambodia under French protection to ward off Siamese and Vietnamese encroachment."
+				},
+				{
+					"year": "1866",
+					"title": "Phnom Penh Chosen as Capital",
+					"description": "Modern administrative center established under the protectorate."
+				},
+				{
+					"year": "Early 20th century",
+					"title": "Archaeological and Cultural Revival",
+					"description": "French-led restoration and archaeological work at Angkor raise international awareness and tourism potential."
+				}
+			],
+			"notableFigures": ["King Norodom", "French colonial administrators and scholars"]
+		},
+		"independence": {
+			"period": "1953 - 1991",
+			"description": "Cambodia achieved formal independence in 1953 under King Norodom Sihanouk. The 1950s-60s were marked by Sihanouk's attempts at neutrality during Cold War pressures. In 1970 Lon Nol's coup abolished the monarchy and aligned the country with the U.S. in the Vietnam War theater. The Khmer Rouge seized Phnom Penh in 1975 and instituted radical social engineering that produced genocide, mass starvation and collapse of institutions (1975-1979). Vietnamese forces invaded in late 1978 and installed the People's Republic of Kampuchea. International isolation, civil conflict and regional Cold War dynamics continued until the UN-brokered peace process in the early 1990s.",
+			"keyEvents": [
+				{
+					"year": "November 9, 1953",
+					"title": "Independence from France",
+					"description": "King Norodom Sihanouk proclaims independence; Cambodia becomes a sovereign constitutional monarchy."
+				},
+				{
+					"year": "1970",
+					"title": "Lon Nol Coup",
+					"description": "Sihanouk is deposed; Khmer Republic established amidst escalating regional conflict."
+				},
+				{
+					"year": "1975",
+					"title": "Khmer Rouge Take Power",
+					"description": "Pol Pot's Khmer Rouge capture Phnom Penh and begin radical revolution that kills an estimated 1.7-2.2 million people."
+				},
+				{
+					"year": "1979",
+					"title": "Vietnamese Intervention / Fall of Khmer Rouge Regime",
+					"description": "Vietnamese forces oust the Khmer Rouge and establish a pro-Vietnamese government, ending the Pol Pot regime's rule."
+				},
+				{
+					"year": "1991",
+					"title": "Paris Peace Agreements",
+					"description": "Comprehensive peace accords and a UN mission (UNTAC) initiate transition to elections and political normalization."
+				}
+			],
+			"notableFigures": [
+				"Norodom Sihanouk",
+				"Lon Nol",
+				"Pol Pot (Khieu Samphan, Son Sen)",
+				"Hun Sen (emerges as a leader in post-1979 government)"
+			]
+		},
+		"modern": {
+			"period": "1992 - Present",
+			"description": "UN-supervised elections in 1993 restored a constitutional monarchy with Norodom Sihanouk as king and produced a coalition government. Over the 1990s and 2000s Hun Sen consolidated power through the Cambodian People's Party. Cambodia pursued reconstruction, economic liberalization and integration into ASEAN and global markets while facing persistent governance, human rights and land-rights challenges. In 2023 Hun Sen transferred premiership to his son Hun Manet following a tightly controlled election and parliamentary confirmation, marking a generational leadership change within the ruling party.",
+			"keyEvents": [
+				{
+					"year": "1993",
+					"title": "UN-Sponsored Elections and New Constitution",
+					"description": "UNTAC-administered elections lead to a restored monarchy and a constitution recognizing multi-party politics and the monarchy as a symbol of national unity."
+				},
+				{
+					"year": "1998-2010s",
+					"title": "Consolidation of CPP Rule",
+					"description": "Hun Sen and the Cambodian People's Party consolidate political control through elections, legal measures and suppression of opposition activity."
+				},
+				{
+					"year": "2023",
+					"title": "Hun Manet Succeeds Hun Sen as Prime Minister",
+					"description": "Parliament endorses Hun Manet as prime minister after a one-sided election and party-controlled transition, continuing CPP dominance."
+				},
+				{
+					"year": "2025",
+					"title": "UNESCO Listing of Khmer Rouge Memorial Sites",
+					"description": "UNESCO recognizes former Khmer Rouge sites as World Heritage entries focusing on memory and reflection."
+				}
+			],
+			"notableFigures": ["Norodom Sihanouk", "Hun Sen", "Hun Manet"]
+		},
+		"timeline": [
+			{
+				"year": "1st century CE",
+				"era": "Ancient",
+				"title": "Funan and Early Indianized States",
+				"description": "Early polities in the lower Mekong link to Indian trade and culture."
+			},
+			{
+				"year": "802",
+				"era": "Classical",
+				"title": "Founding of Khmer Polity",
+				"description": "Jayavarman II proclaims authority that leads to the Angkor-centered empire."
+			},
+			{
+				"year": "12th century",
+				"era": "Classical",
+				"title": "Angkor Wat Constructed",
+				"description": "Suryavarman II's temple complex becomes the apogee of Khmer architecture."
+			},
+			{
+				"year": "1863",
+				"era": "Colonial",
+				"title": "French Protectorate",
+				"description": "Cambodia becomes a French protectorate to preserve territorial integrity."
+			},
+			{
+				"year": "November 9, 1953",
+				"era": "Independence",
+				"title": "Independence from France",
+				"description": "Cambodia attains sovereignty and later struggles with Cold War pressures."
+			},
+			{
+				"year": "1975",
+				"era": "Crisis",
+				"title": "Khmer Rouge Seizes Power",
+				"description": "Radical regime begins catastrophic social transformation and mass killings."
+			},
+			{
+				"year": "1979",
+				"era": "Crisis",
+				"title": "Vietnamese Intervention",
+				"description": "Khmer Rouge is removed from power and a new government installed."
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Paris Peace Agreements",
+				"description": "Comprehensive peace accords set the stage for UN transition and elections."
+			},
+			{
+				"year": "1993",
+				"era": "Modern",
+				"title": "Restoration of Monarchy and Constitution",
+				"description": "Elections under UNTAC produce a constitutional framework and international reintegration."
+			},
+			{
+				"year": "2023",
+				"era": "Modern",
+				"title": "Leadership Transition to Hun Manet",
+				"description": "Parliament endorses Hun Manet as prime minister marking generational handover within the ruling party."
+			}
+		]
+	},
+	{
+		"name": "Thailand",
+		"overview": "Thailand (historically Siam) developed from Tai polities and Khmer-influenced states into powerful kingdoms such as Sukhothai and Ayutthaya, maintained independence through skilled diplomacy in the colonial era, transitioned from absolute monarchy to constitutional monarchy after 1932, and since the mid-20th century has experienced repeated military interventions, rapid economic development, and ongoing tensions between populist and establishment forces.",
+		"source": {
+			"label": "Britannica - History of Thailand",
+			"url": "https://www.britannica.com/topic/history-of-Thailand",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Thailand",
+				"https://en.wikipedia.org/wiki/History_of_Thailand",
+				"https://whc.unesco.org/en/statesparties/th",
+				"https://www.bbc.com/news/world-asia-15641745"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Foundational Kingdoms", "value": "Sukhothai (13th c.) and Ayutthaya (14th-18th c.)" },
+			{
+				"label": "End of Absolute Monarchy",
+				"value": "June 24, 1932 (bloodless coup establishing constitutional framework)"
+			},
+			{
+				"label": "Capital",
+				"value": "Bangkok (founded as capital 1782; earlier centers include Sukhothai, Ayutthaya)"
+			},
+			{ "label": "Name Change", "value": "Commonly called 'Siam' until 1939 (and briefly 1945-49)" },
+			{ "label": "UNESCO Sites (count)", "value": "6 World Heritage Sites (as of 2025)" }
+		],
+		"ancient": {
+			"period": "Prehistory - 13th century",
+			"description": "Early mainland Southeast Asia saw pre-Austroasiatic and Tai migrations, Mon and Khmer polities, and Indianized cultural influence. Dvaravati and Hariphunchai (Mon) and Khmer state presence shaped religion, art and administration in the Chao Phraya and northern basins prior to distinct Tai polities' rise.",
+			"keyEvents": [
+				{
+					"year": "c. 6th-11th c.",
+					"title": "Dvaravati and Hariphunchai",
+					"description": "Mon polities and Buddhist culture flourish in central and northern regions."
+				},
+				{
+					"year": "9th-13th c.",
+					"title": "Khmer Influence",
+					"description": "Khmer political and cultural expansion reaches parts of the Chao Phraya plain, leaving architectural and administrative legacies."
+				}
+			],
+			"notableFigures": ["Local Mon and Khmer rulers (various)", "early Tai chieftains"]
+		},
+		"medival": {
+			"period": "13th century - 1767",
+			"description": "Sukhothai is often cited as an early Thai polity that promoted Theravada Buddhism and Thai script reforms. Ayutthaya (founded c. 1350) became a major regional maritime and inland power, engaging in trade with China, Japan, Persia and European states. Ayutthaya's administrative systems and cosmology shaped later Thai monarchy. The Burmese sacking of Ayutthaya in 1767 precipitated political realignment and eventual Thonburi and Rattanakosin (Bangkok) centers.",
+			"keyEvents": [
+				{
+					"year": "c. 1238",
+					"title": "Sukhothai Emerges",
+					"description": "Local Tai rulers assert autonomy and promote a Thai identity centered on Theravada Buddhism."
+				},
+				{
+					"year": "1351",
+					"title": "Founding of Ayutthaya",
+					"description": "Ayutthaya grows into a dominant regional kingdom known for commerce and diplomacy."
+				},
+				{
+					"year": "1767",
+					"title": "Fall of Ayutthaya",
+					"description": "Burmese forces sack Ayutthaya; kingdom collapses and population disperses."
+				}
+			],
+			"notableFigures": ["Ramkhamhaeng (Sukhothai)", "King Naresuan (Ayutthaya)"]
+		},
+		"colonial": {
+			"period": "1767 - 1932",
+			"description": "After Ayutthaya, Taksin briefly reunified Siam from Thonburi then was replaced by the Chakri dynasty which established Bangkok (Rattanakosin). From the late 18th century Siam consolidated central control, modernized in the 19th century under leaders like Mongkut (Rama IV) and Chulalongkorn (Rama V), and preserved formal independence through skilled diplomatic concessions and selective reforms while neighboring polities were colonized.",
+			"keyEvents": [
+				{
+					"year": "1782",
+					"title": "Chakri Dynasty Founded",
+					"description": "Rama I establishes Bangkok as capital beginning the Rattanakosin era."
+				},
+				{
+					"year": "1855-1910",
+					"title": "Reforms of Mongkut and Chulalongkorn",
+					"description": "Modernizing reforms, legal and administrative reorganization, and treaty diplomacy preserve sovereignty."
+				}
+			],
+			"notableFigures": ["King Taksin", "King Mongkut (Rama IV)", "King Chulalongkorn (Rama V)"]
+		},
+		"modern": {
+			"period": "1932 - Present",
+			"description": "The 1932 bloodless coup ended absolute monarchy and introduced a constitutional framework. The 20th century saw oscillation between civilian rule and military governments, Japanese occupation during WWII, postwar political struggles, rapid economic growth from the 1960s, repeated coups (including 2006 and 2014), and powerful royal and military institutions that shape politics. Contemporary Thailand balances market development and globalization against periodic political polarization and protests.",
+			"keyEvents": [
+				{
+					"year": "1932",
+					"title": "Promoters' Revolution",
+					"description": "Peaceful coup by civilian and military elites ends absolute monarchy and begins constitutional era."
+				},
+				{
+					"year": "1939",
+					"title": "Name 'Thailand' Adopted",
+					"description": "Siam officially renamed Thailand, emphasizing ethnic Thai identity."
+				},
+				{
+					"year": "1941-1945",
+					"title": "Japanese Occupation (WWII)",
+					"description": "Japanese presence alters regional alignments and postwar politics."
+				},
+				{
+					"year": "1947-Present",
+					"title": "Military Influence and Coups",
+					"description": "Recurring military interventions shape governance; modern mass politics and polarized electoral movements emerge in the 21st century."
+				}
+			],
+			"notableFigures": ["Pridi Banomyong", "Plaek Phibunsongkhram", "Various prime ministers and military leaders"]
+		},
+		"timeline": [
+			{
+				"year": "c. 13th c.",
+				"era": "Classical",
+				"title": "Sukhothai Kingdom",
+				"description": "Emergence of early Thai political identity and Theravada Buddhist culture."
+			},
+			{
+				"year": "1351",
+				"era": "Classical",
+				"title": "Ayutthaya Founded",
+				"description": "Begins five centuries as a major Southeast Asian kingdom."
+			},
+			{
+				"year": "1767",
+				"era": "Transition",
+				"title": "Ayutthaya Falls",
+				"description": "Leads to Thonburi and then Rattanakosin consolidation."
+			},
+			{
+				"year": "1782",
+				"era": "Rattanakosin",
+				"title": "Bangkok Established as Capital",
+				"description": "Chakri dynasty begins."
+			},
+			{
+				"year": "1932",
+				"era": "Constitutional Era",
+				"title": "End of Absolute Monarchy",
+				"description": "Constitutional order begins."
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "Military Coup",
+				"description": "Thaksin government removed by military; political polarization rises."
+			}
+		]
+	},
+	{
+		"name": "Malaysia",
+		"overview": "Malaysia's history spans prehistoric settlement, Indianized and Malay sultanates, the rise of the Melaka (Malacca) maritime empire, European colonial control culminating in British administration of the Malay states and Borneo territories, Japanese occupation in World War II, postwar negotiations leading to independence of the Federation of Malaya (1957) and formation of Malaysia (1963), followed by nation-building, ethnic tensions culminating in the 1969 riots, affirmative economic policy in the 1970s, rapid industrialization under leaders like Mahathir Mohamad, and evolving competitive politics into the 21st century.",
+		"source": {
+			"label": "Britannica - History of Malaysia",
+			"url": "https://www.britannica.com/topic/history-of-Malaysia",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Malaysia",
+				"https://en.wikipedia.org/wiki/History_of_Malaysia",
+				"https://www.reuters.com/article/world/chronology-malaysia-fifty-years-of-independence-idUSSP246926/",
+				"https://www.aljazeera.com/news/2013/5/1/timeline-malaysias-history"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Early Habitation",
+				"value": "Archaeological sites show human presence back tens of thousands of years (e.g., Niah Cave)"
+			},
+			{ "label": "Malacca Sultanate Founded", "value": "c. 1400 — became a major maritime trading state" },
+			{ "label": "Independence (Malaya)", "value": "August 31, 1957 (Federation of Malaya independence from Britain)" },
+			{
+				"label": "Formation of Malaysia",
+				"value": "September 16, 1963 (Malaysia formed including Malaya, Sabah, Sarawak and Singapore; Singapore left 1965)"
+			},
+			{
+				"label": "Capital",
+				"value": "Kuala Lumpur (federal administrative structures expanded; Putrajaya later developed as administrative center)"
+			}
+		],
+		"ancient": {
+			"period": "Prehistory - 14th century",
+			"description": "Prehistoric hunter-gatherers and later agricultural communities occupied the Malay Peninsula and Borneo. Indianized polities and maritime trading networks produced early states such as Langkasuka, Srivijaya and later the Malacca sultanate, which linked the archipelago to the Indian Ocean trade system and spread Islam among elites.",
+			"keyEvents": [
+				{
+					"year": "c. 7th-13th c.",
+					"title": "Srivijaya Maritime Influence",
+					"description": "Srivijaya controls trade through Sumatra and influences the Malay world."
+				},
+				{
+					"year": "c. 1400",
+					"title": "Founding of Malacca",
+					"description": "Parameswara/Iskandar Shah founds Malacca which becomes the region's dominant trading entrepôt."
+				}
+			],
+			"notableFigures": ["Parameswara (founder of Malacca)", "Sultans of Malacca"]
+		},
+		"colonial": {
+			"period": "16th century - 1945",
+			"description": "Portuguese conquest of Malacca (1511) begins European presence. Dutch and later British influence expanded across the peninsula and northern Borneo. British commercial and administrative control consolidated in the 19th and early 20th centuries creating the Straits Settlements, Federated and Unfederated Malay States, and Borneo protectorates. Colonial rule restructured the economy around rubber and tin and encouraged large-scale migration of labor from China and India.",
+			"keyEvents": [
+				{
+					"year": "1511",
+					"title": "Portuguese Capture Malacca",
+					"description": "Begins European contest for control of regional trade nodes."
+				},
+				{
+					"year": "1826",
+					"title": "Straits Settlements Formed",
+					"description": "British administrative consolidation of Penang, Malacca and Singapore."
+				},
+				{
+					"year": "Late 19th c.",
+					"title": "British Residential System",
+					"description": "Indirect rule and economic integration deepen colonial structures."
+				}
+			],
+			"notableFigures": ["British colonial administrators", "local Malay sultans"]
+		},
+		"independence": {
+			"period": "1945 - 1965",
+			"description": "Japanese occupation destabilized colonial control. Postwar political movements, the Malayan Emergency against communist insurgency, and inter-ethnic political negotiations led to independence for the Federation of Malaya in 1957 under Tunku Abdul Rahman. In 1963 Malaya, Sabah, Sarawak and Singapore formed Malaysia. Singapore left the federation in 1965 after political and communal tensions.",
+			"keyEvents": [
+				{
+					"year": "1948-1960",
+					"title": "Malayan Emergency",
+					"description": "Communist insurgency and counterinsurgency shape security and political strategies."
+				},
+				{
+					"year": "August 31, 1957",
+					"title": "Independence of Malaya",
+					"description": "Federation of Malaya attains independence from Britain."
+				},
+				{
+					"year": "September 16, 1963",
+					"title": "Malaysia Formed",
+					"description": "Federation expands to include Sabah, Sarawak and Singapore (latter exits 1965)."
+				}
+			],
+			"notableFigures": ["Tunku Abdul Rahman", "Onn Jaafar"]
+		},
+		"modern": {
+			"period": "1965 - Present",
+			"description": "Malaysia pursued rapid economic development, industrialization, and nation-building while managing complex ethnic politics between Malay, Chinese and Indian communities. The 1969 racial riots prompted the New Economic Policy (1971) aimed at reducing economic disparities. Leaders like Mahathir Mohamad (prime minister 1981-2003 and 2018-2020) directed industrialization and modernization. The 21st century has seen alternating periods of dominant-party rule, political realignment (notably the 2018 Pakatan Harapan victory), and ongoing challenges including corruption scandals, economic diversification, and managing pluralism.",
+			"keyEvents": [
+				{
+					"year": "May 13, 1969",
+					"title": "Racial Riots",
+					"description": "Intercommunal violence in Kuala Lumpur with profound political consequences and emergency measures."
+				},
+				{
+					"year": "1971",
+					"title": "New Economic Policy (NEP)",
+					"description": "Affirmative action policies aimed at restructuring the economy and reducing Malay economic disparities."
+				},
+				{
+					"year": "1981-2003",
+					"title": "Mahathir Era",
+					"description": "Rapid industrialization and state-led development transform Malaysia's economy."
+				},
+				{
+					"year": "May 9, 2018",
+					"title": "Historic Election",
+					"description": "Pakatan Harapan wins national election ending six decades of uninterrupted rule by the Alliance/Barisan Nasional coalition; Mahathir returns as PM."
+				}
+			],
+			"notableFigures": ["Tunku Abdul Rahman", "Tun Abdul Razak", "Dr. Mahathir Mohamad", "Anwar Ibrahim"]
+		},
+		"timeline": [
+			{
+				"year": "c. 7th-13th c.",
+				"era": "Early",
+				"title": "Srivijaya Influence",
+				"description": "Maritime trade networks shape the Malay world."
+			},
+			{
+				"year": "c. 1400",
+				"era": "Classical",
+				"title": "Malacca Founded",
+				"description": "Becomes major entrepôt and Islamic cultural center."
+			},
+			{
+				"year": "1511",
+				"era": "Colonial",
+				"title": "Portuguese Take Malacca",
+				"description": "Start of European colonial era in the region."
+			},
+			{
+				"year": "1957",
+				"era": "Independence",
+				"title": "Malaya Independent",
+				"description": "Federation of Malaya achieves sovereignty from Britain."
+			},
+			{
+				"year": "1963",
+				"era": "Formation",
+				"title": "Malaysia Formed",
+				"description": "Union of Malaya, Sabah and Sarawak (and Singapore briefly)."
+			},
+			{
+				"year": "1969",
+				"era": "Modern",
+				"title": "Racial Riots",
+				"description": "Violence prompts policy shifts and the NEP."
+			},
+			{
+				"year": "2018",
+				"era": "Contemporary",
+				"title": "Change of Government",
+				"description": "Opposition coalition defeats long-ruling Barisan Nasional in national poll."
+			}
+		]
+	},
+	{
+		"name": "Indonesia",
+		"overview": "Indonesia's history spans Paleolithic settlement, Austronesian migrations, powerful Indianized thalassocracies, the rise of Majapahit as a maritime empire, centuries of Islamic sultanates, colonial domination by the Dutch, a violent 20th-century path to independence, authoritarian New Order rule under Suharto, and a democratic transition after 1998 that produced decentralization, rapid economic growth, and regional influence.",
+		"source": {
+			"label": "Britannica - History of Indonesia",
+			"url": "https://www.britannica.com/place/Indonesia",
+			"urls": [
+				"https://www.britannica.com/place/Indonesia",
+				"https://en.wikipedia.org/wiki/History_of_Indonesia",
+				"https://whc.unesco.org/en/statesparties/id"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Proclaimed", "value": "August 17, 1945 (Proclamation by Sukarno and Hatta)" },
+			{
+				"label": "Sovereignty Recognized by Netherlands",
+				"value": "December 27, 1949 (transfer of sovereignty after Dutch-Indonesian Round Table Conference)"
+			},
+			{ "label": "Capital", "value": "Jakarta (formerly Batavia under the Dutch)" },
+			{
+				"label": "Name Origin",
+				"value": "\"Indonesia\" from Greek 'Indos' (India) + 'nesos' (island); modern name in use from 19th century"
+			},
+			{
+				"label": "Modern System",
+				"value": "Unitary presidential republic with multi-party elections (post-1998 reforms)"
+			}
+		],
+		"ancient": {
+			"period": "c. 1.5 million years BCE (early hominins) — 1st millennium CE",
+			"description": "The archipelago shows deep prehistory with Homo erectus sites (e.g., Java). Austronesian-speaking peoples from Taiwan and mainland Southeast Asia colonized the islands after 2000 BCE, bringing wet-rice agriculture, seafaring technology and distinct material cultures. From the early centuries CE Indian Ocean trade integrated parts of the archipelago into maritime networks, producing local polities influenced by Indian religion, script and administrative forms.",
+			"keyEvents": [
+				{
+					"year": "c. 1,000,000-100,000 BCE",
+					"title": "Early Hominin Presence",
+					"description": "Fossil finds on Java attest to ancient hominin habitation."
+				},
+				{
+					"year": "c. 2000-500 BCE",
+					"title": "Austronesian Migrations",
+					"description": "Seafaring agriculturalists spread through the islands bringing new languages and technologies."
+				}
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "7th — 13th centuries",
+			"description": "Thalassocratic and agrarian states emerged. Srivijaya (centered in Sumatra) dominated maritime trade across the Straits of Malacca. In central Java Sailendra and subsequent courts produced monumental Buddhist architecture including Borobudur. Local polities combined Indianized court culture with indigenous institutions.",
+			"keyEvents": [
+				{
+					"year": "7th-13th c.",
+					"title": "Srivijaya Maritime Dominance",
+					"description": "Control of maritime routes and patronage of Buddhism linking Southeast Asia and India."
+				},
+				{
+					"year": "9th c.",
+					"title": "Borobudur Constructed",
+					"description": "Massive Buddhist monument on Java demonstrating centralized state capacity."
+				}
+			],
+			"notableFigures": []
+		},
+		"imperial": {
+			"period": "13th — 16th centuries",
+			"description": "The Majapahit kingdom (centered in East Java) consolidated large parts of the archipelago into a loose maritime empire often cited as its apogee. Majapahit's court culture and epigraphy shaped later political memory. Meanwhile, trading ports in Sumatra, Sulawesi and the eastern archipelago developed local autonomy and external ties.",
+			"keyEvents": [
+				{
+					"year": "c. 1293-1527",
+					"title": "Majapahit Era",
+					"description": "Expanded Javanese polity projecting influence across maritime Southeast Asia under leaders such as Gajah Mada."
+				}
+			],
+			"notableFigures": ["Gajah Mada (majapahit prime minister associated with 'unity' oath)"]
+		},
+		"pre-colonial": {
+			"period": "13th — 17th centuries",
+			"description": "Islam spread progressively via trade networks and Sufi missionaries, creating powerful Malay and Javanese sultanates (e.g., Malacca, Aceh, Mataram, Demak). Coastal polities became centers of commerce, Islamic learning and regional diplomacy while interior kingdoms maintained varied beliefs and structures.",
+			"keyEvents": [
+				{
+					"year": "15th century",
+					"title": "Rise of Malacca and Islamization",
+					"description": "Malacca becomes a major entrepôt and Islamic sultanate influential across the Malay world."
+				},
+				{
+					"year": "16th-17th c.",
+					"title": "Regional Sultanates",
+					"description": "Aceh, Johor, Demak and others contest trade and influence; local Javanese courts adapt new religious and political forms."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "1602 — 1942 (VOC and Dutch East Indies), 1942-1945 (Japanese occupation)",
+			"description": "The Dutch East India Company (VOC) established trading posts and monopolies in the 17th century, later replaced by the Dutch colonial state after VOC dissolution (1799). The Dutch consolidated control across the archipelago in the 19th century through treaties, military campaigns and administrative reforms. Colonial rule reoriented economy toward export commodities such as spices, sugar, coffee, rubber and oil, and introduced infrastructure and bureaucracy. Japanese occupation during World War II weakened Dutch legitimacy and energized nationalist forces.",
+			"keyEvents": [
+				{
+					"year": "1602",
+					"title": "VOC Founded",
+					"description": "Dutch company obtains monopoly rights and establishes bases across the archipelago."
+				},
+				{
+					"year": "1799",
+					"title": "VOC Dissolved",
+					"description": "Dutch state assumes colonial administration (Netherlands East Indies)."
+				},
+				{
+					"year": "1942-1945",
+					"title": "Japanese Occupation",
+					"description": "Imperial Japan occupies the archipelago, displacing Dutch authority and enabling nationalist mobilization."
+				}
+			],
+			"notableFigures": ["Sutan Sjahrir (later nationalist leader)", "Sukarno (independence leader)"]
+		},
+		"independence": {
+			"period": "1945 — 1950 (revolutionary period)",
+			"description": "Nationalist leaders Sukarno and Mohammad Hatta proclaimed independence on August 17, 1945 after Japan's surrender. A diplomatic and armed struggle with the returning Dutch followed. International pressure and Indonesian resistance led to transfer of sovereignty in December 1949, though disputes over territory continued into the 1950s.",
+			"keyEvents": [
+				{
+					"year": "August 17, 1945",
+					"title": "Proclamation of Independence",
+					"description": "Sukarno and Hatta declare the Republic of Indonesia in Jakarta."
+				},
+				{
+					"year": "1945-1949",
+					"title": "Indonesian National Revolution",
+					"description": "Guerrilla warfare, diplomacy and international mediation force Dutch recognition of sovereignty."
+				},
+				{
+					"year": "December 27, 1949",
+					"title": "Transfer of Sovereignty",
+					"description": "Dutch formally transfer sovereignty to the United States of Indonesia; unitary republic consolidated soon after."
+				}
+			],
+			"notableFigures": ["Sukarno", "Mohammad Hatta"]
+		},
+		"modern": {
+			"period": "1950 — Present",
+			"description": "Post-independence Indonesia experienced parliamentary democracy, Guided Democracy under Sukarno, and a violent anti-communist purge in 1965-66 which brought Suharto to power and the New Order authoritarian regime (1967-1998). Suharto's rule emphasized stability, foreign investment and development but was marked by repression and corruption. The 1998 Asian Financial Crisis precipitated Suharto's resignation and the Reformasi era. Since 1999 Indonesia has implemented democratic reforms, decentralization, and anti-corruption efforts. The country remains the world's largest Muslim-majority democracy with significant economic growth and regional influence in ASEAN.",
+			"keyEvents": [
+				{
+					"year": "1965-1966",
+					"title": "Anti-Communist Purge and New Order Rise",
+					"description": "A failed coup and ensuing violence lead to mass killings and political realignment under Suharto."
+				},
+				{
+					"year": "1967-1998",
+					"title": "Suharto's New Order",
+					"description": "Authoritarian stability, economic development and entrenched patronage networks."
+				},
+				{
+					"year": "1998",
+					"title": "Reformasi",
+					"description": "Mass protests and economic collapse force Suharto's resignation; democratization follows."
+				},
+				{
+					"year": "2004",
+					"title": "Direct Presidential Elections Introduced",
+					"description": "Deepens democratic accountability in post-authoritarian politics."
+				}
+			],
+			"notableFigures": ["Sukarno", "Suharto", "Megawati Sukarnoputri", "Joko Widodo"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE",
+				"era": "Ancient",
+				"title": "Austronesian Migrations",
+				"description": "Maritime peoples spread agriculture and language across the archipelago."
+			},
+			{
+				"year": "9th century",
+				"era": "Medieval",
+				"title": "Borobudur Constructed",
+				"description": "Large Buddhist monument built in central Java."
+			},
+			{
+				"year": "c. 1293",
+				"era": "Imperial",
+				"title": "Majapahit Founded",
+				"description": "Javanese polity expands influence across maritime Southeast Asia."
+			},
+			{ "year": "1602", "era": "Colonial", "title": "VOC Founded", "description": "Dutch commercial empire begins." },
+			{
+				"year": "August 17, 1945",
+				"era": "Independence",
+				"title": "Proclamation of Independence",
+				"description": "Republic of Indonesia proclaimed."
+			},
+			{
+				"year": "1998",
+				"era": "Modern",
+				"title": "Reformasi",
+				"description": "Transition to democracy after Suharto era."
+			}
+		]
+	},
+	{
+		"name": "Myanmar",
+		"overview": "Myanmar's history spans deep prehistory, early Indianized trading cities, the rise of the Pagan (Bagan) polity that consolidated Burmese language and Theravada Buddhism, successive cycles of imperial unification and fragmentation under dynasties such as Toungoo and Konbaung, the loss of sovereignty to the expanding British Empire in the 19th century, a turbulent 20th century of Japanese occupation, anti-colonial struggle and postwar independence in 1948, long periods of military rule beginning in 1962, intermittent openings and contested elections in the 1990s–2010s, a catastrophic ethnic and humanitarian crisis beginning with the 2017 Rohingya campaign, and a renewed nationwide uprising and intensifying civil war after the Tatmadaw's coup of February 1, 2021. Political authority in Myanmar has repeatedly centralized under charismatic military or royal leaders while complex ethnic politics, resource geography, and regional geopolitics shaped recurring cycles of violence and negotiated accommodation. Since 2021 the country faces large-scale displacement, fractured governance, severe economic contraction, and extensive human-rights abuses affecting millions.",
+		"source": {
+			"label": "Britannica - History of Myanmar",
+			"url": "https://www.britannica.com/place/Myanmar",
+			"urls": [
+				"https://www.britannica.com/place/Myanmar",
+				"https://en.wikipedia.org/wiki/Pagan_kingdom",
+				"https://www.cfr.org/backgrounder/myanmar-history-coup-military-rule-ethnic-conflict-rohingya",
+				"https://www.reuters.com/world/asia-pacific/myanmar-military-stepping-up-civilian-killings-arrests-says-un-report-2024-09-17/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Earliest urban settlements", "value": "Pyu city-states from 1st century CE" },
+			{ "label": "Pagan (Bagan) foundation", "value": "c. 9th century (consolidation under Anawrahta, mid-11th century)" },
+			{ "label": "Last precolonial monarchy defeated", "value": "Third Anglo-Burmese War and annexation, 1885 (full annexation by 1886)" },
+			{ "label": "Independence (Union of Burma)", "value": "January 4, 1948" },
+			{ "label": "Ne Win coup", "value": "March 2, 1962 (start of long military rule)" },
+			{ "label": "Military coup", "value": "February 1, 2021 (Tatmadaw seizes power from elected government)" },
+			{ "label": "Capital (current)", "value": "Nay Pyi Taw (administrative capital since 2005); Yangon remains largest city and commercial center" },
+			{ "label": "Major religions", "value": "Theravada Buddhism predominant; significant Christian, Muslim and animist communities" },
+			{ "label": "Contemporary crisis", "value": "Post-2021 civil conflict, mass displacement, and documented widespread human-rights abuses" }
+		],
+		"ancient": {
+			"period": "c. 1st century CE – 9th century",
+			"description": "The Pyu city-states in the upper Irrawaddy valley and Mon polities in Lower Burma established early urban centers, irrigation works and trade links to India and China. These Indianized polities adopted Indic scripts, Buddhism and statecraft models that provided the institutional substrate for later Burmese kingdoms. Archaeological remains at Pyu sites (Halin, Sri Ksetra) and coastal Mon centers show long-distance trade and urban complexity before the emergence of the Bamar-speaking polities.",
+			"keyEvents": [
+				{ "year": "1st–9th c.", "title": "Pyu city-states flourish", "description": "Urbanized Pyu polities control caravan and river routes; adopt Buddhism and Indian scripts." },
+				{ "year": "6th–9th c.", "title": "Mon polities in Lower Burma", "description": "Mon culture and trade centers influence coastal regions and port networks." }
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "9th century – 13th century",
+			"description": "A Bamar polity at Pagan (Bagan) grew from a small riverine settlement into the first Burmese state to unify much of the Irrawaddy valley. From the mid-11th century under King Anawrahta the state consolidated royal authority, built an extensive irrigation base, sponsored mass temple construction, and anchored Theravada Buddhism as state religion. Pagan's governmental, cultural and religious innovations shaped language, law and elite norms across later Burmese polities. Internal strains, excessive religious land endowments, and external pressure from the Mongol invasions in the late 13th century led to decline and fragmentation.",
+			"keyEvents": [
+				{ "year": "c. 849", "title": "Early Pagan settlement", "description": "Pagan appears in local records as a growing polity in the central Irrawaddy plain." },
+				{ "year": "1044–1077", "title": "Anawrahta's reign", "description": "Anawrahta unifies the Irrawaddy valley, reforms irrigation, and promotes Theravada Buddhism." },
+				{ "year": "1057–c. 13th c.", "title": "Temple-building and state consolidation", "description": "Construction of thousands of stupas and temples in Bagan and expansion of administrative reach." },
+				{ "year": "1287", "title": "Mongol pressure and Pagan collapse", "description": "Mongol campaigns and internal weaknesses precipitate fragmentation of the Pagan polity." }
+			],
+			"notableFigures": [
+				"Anawrahta (r. c.1044–1077)",
+				"Kyansittha (r. 1084–1112)",
+				"Sithu II (r. 1174–1211)"
+			]
+		},
+		"feudal": {
+			"period": "13th century – 16th century",
+			"description": "After Pagan's fall the region fragmented into successor states and competing centers such as Myinsaing, Pinya, Sagaing and the Mon Hanthawaddy kingdom in Lower Burma. Political authority was often localized and fractious. Over time new dynasties re-emerged and sought to reassert control over Irrawaddy trade routes and agrarian resources. This era saw shifting alliances, frequent warfare, and the emergence of Shan polities in the interior highlands that would remain politically significant.",
+			"keyEvents": [
+				{ "year": "14th–15th c.", "title": "Rise of regional polities", "description": "Ava (Inwa), Hanthawaddy Pegu and Shan states contest hegemony over central and lower Burma." },
+				{ "year": "15th c.", "title": "Mon cultural florescence in Lower Burma", "description": "Hanthawaddy Pegu becomes an economic and cultural center with strong maritime links." }
+			],
+			"notableFigures": [
+				"King Razadarit (Hanthawaddy, late 14th–early 15th c.)"
+			]
+		},
+		"imperial": {
+			"period": "16th century – 19th century (precolonial unification cycles)",
+			"description": "Two major precolonial imperial dynasties reshaped mainland Southeast Asia from Burmese cores. The Toungoo dynasty (16th century) briefly created the largest polity in mainland Southeast Asia under Tabinshwehti and Bayinnaung, projecting power across Siam, Lan Xang and parts of the Malay Peninsula. The later Konbaung dynasty (18th–19th centuries) again centralized Burma, enacted administrative and military reforms, and sought to modernize while expanding territorial control. Konbaung confrontations with an increasingly assertive British Empire culminated in three Anglo-Burmese wars that ended the monarchy's independence.",
+			"keyEvents": [
+				{ "year": "1531–1599", "title": "Toungoo reunification and expansion", "description": "Leaders such as Tabinshwehti and Bayinnaung reconquer and expand Burmese influence across mainland Southeast Asia." },
+				{ "year": "1752–1885", "title": "Konbaung consolidation", "description": "Alaungpaya and successors centralize the state, reform military institutions and face British imperial pressure." },
+				{ "year": "1824–1885", "title": "Three Anglo-Burmese Wars", "description": "Series of conflicts with Britain progressively annex Burmese territories, culminating in full colonial control." }
+			],
+			"notableFigures": [
+				"Bayinnaung (Toungoo, 16th century)",
+				"Alaungpaya (founder of Konbaung, 18th century)",
+				"Bodawpaya and other Konbaung rulers"
+			]
+		},
+		"colonial": {
+			"period": "1824/1885 — 1942 (early encounters) / 1945 (end of WWII influence) — 1948 (path to independence)",
+			"description": "British imperial expansion undermined monarchical Burma through military conquest, diplomatic pressure and economic reordering. After the final annexation in 1885 Burma was incorporated into British India and later became a separate colony in 1937. Colonial rule introduced new cash-crop economies, modern education for a small elite, infrastructure, administrative bureaucracy, and large-scale migration of Indian labor and merchants into Rangoon and frontier areas. Colonial policies also reshaped ethnic relations, land tenure and center–periphery dynamics, seeding many grievances that affected postcolonial politics. Japanese occupation during World War II (1942–1945) disrupted colonial governance and accelerated nationalist mobilization.",
+			"keyEvents": [
+				{ "year": "1824–26", "title": "First Anglo-Burmese War", "description": "Initial British incursions reshape coastal and border control." },
+				{ "year": "1852", "title": "Second Anglo-Burmese War", "description": "British annex lower Burma including Rangoon." },
+				{ "year": "1885", "title": "Third Anglo-Burmese War and fall of Mandalay", "description": "End of the Konbaung dynasty; Burma brought under full British administration." },
+				{ "year": "1937", "title": "Separation from British India", "description": "Burma established as a distinct crown colony with its own governor." },
+				{ "year": "1942–1945", "title": "Japanese occupation", "description": "Wartime occupation and shifting allegiances disrupt colonial order and empower nationalist leaders." }
+			],
+			"notableFigures": [
+				"Aung San (nationalist leader emerging during WWII era)",
+				"U Nu (postwar political leader)"
+			]
+		},
+		"independence": {
+			"period": "1945 — 1948 (transition and sovereign formation)",
+			"description": "After World War II Burmese leaders negotiated with the British for transfer of power. Aung San emerged as the dominant independence leader and secured the Aung San–Attlee agreement for scheduled independence, but his assassination in July 1947 removed a pivotal figure. The Union of Burma formally achieved independence on January 4, 1948. Early independence years were marked by fragile parliamentary democracy, insurgencies by ethnic armed groups and communist insurgents, and contested center–periphery relations.",
+			"keyEvents": [
+				{ "year": "July 19, 1947", "title": "Assassination of Aung San", "description": "Aung San and several colleagues murdered; pivotal blow to immediate postwar leadership." },
+				{ "year": "January 4, 1948", "title": "Independence", "description": "Union of Burma attains independence as a parliamentary democracy." },
+				{ "year": "Late 1940s", "title": "Early insurgencies", "description": "Communist and ethnic minority rebellions challenge central authority and stability." }
+			],
+			"notableFigures": [
+				"Aung San",
+				"U Nu"
+			]
+		},
+		"modern": {
+			"period": "1962 — Present",
+			"description": "A military coup on March 2, 1962 brought General Ne Win to power and initiated nearly five decades of military-dominated governance with socialist-oriented economic policies and strict political controls. The 1988 pro-democracy mass uprisings were violently suppressed, producing a new junta (SLORC/SPDC). The junta nullified the 1990 election won by the National League for Democracy. In the 2000s and 2010s limited political opening, constitutional changes and managed elections produced a quasi-civilian government and an NLD-led administration after 2015. International attention peaked during and after the 2017 military campaign in Rakhine State that triggered the mass exodus of Rohingya refugees and allegations of crimes against humanity. The February 1, 2021 coup by the Tatmadaw reversed the democratic opening, detained elected leaders, and precipitated widespread civil disobedience, the formation of parallel civilian and ethnic defense forces, nationwide armed conflict, and a severe humanitarian emergency. UN bodies, international NGOs and humanitarian agencies have documented extensive civilian casualties, detention, torture, forced displacement and attacks on civilian infrastructure since 2021.",
+			"keyEvents": [
+				{ "year": "March 2, 1962", "title": "Ne Win Coup", "description": "Military seizes power, dissolves parliamentary institutions and institutes 'Burmese Way to Socialism'." },
+				{ "year": "1988", "title": "Pro-democracy Uprisings (8888)", "description": "Mass protests crushed by military, leading to formation of State Law and Order Restoration Council (SLORC)." },
+				{ "year": "1990", "title": "General Election (annulled)", "description": "NLD wins large majority but junta refuses to cede power." },
+				{ "year": "2008", "title": "New constitution adopted (junta era)", "description": "Constitution reserved powerful roles for the military and set path for controlled political transition." },
+				{ "year": "2010–2015", "title": "Partial political opening", "description": "Steps toward limited civilian governance and 2015 NLD electoral victory." },
+				{ "year": "August 2017", "title": "Rakhine crisis", "description": "Large-scale military operations in Rakhine State force 700,000+ Rohingya to flee to Bangladesh amid allegations of atrocities." },
+				{ "year": "February 1, 2021", "title": "Tatmadaw coup d'état", "description": "Military detains civilian leaders and declares a year-long state of emergency; nationwide resistance ensues." },
+				{ "year": "2021–Present", "title": "Escalating civil war and humanitarian crisis", "description": "Armed resistance, ethnic group offensives and heavy military reprisals create massive displacement, casualties and economic collapse." }
+			],
+			"notableFigures": [
+				"General Ne Win",
+				"Aung San Suu Kyi",
+				"Aung San",
+				"Min Aung Hlaing",
+				"Thein Sein",
+				"U Nu",
+				"Bayinnaung (historical)"
+			]
+		},
+		"timeline": [
+			{ "year": "1st–9th c.", "era": "Ancient", "title": "Pyu city-states", "description": "Early urbanized polities in upper Irrawaddy adopt Buddhism and Indian scripts." },
+			{ "year": "c. 849–1287", "era": "Medieval", "title": "Pagan (Bagan) period", "description": "First major Burmese polity consolidates language, statecraft and Theravada Buddhism." },
+			{ "year": "16th c.", "era": "Imperial", "title": "Toungoo reunification and Bayinnaung's expansion", "description": "Burmese polity expands across mainland Southeast Asia." },
+			{ "year": "1752–1885", "era": "Imperial", "title": "Konbaung dynasty", "description": "Last great Burmese dynasty; later clashes with British imperial power." },
+			{ "year": "1885", "era": "Colonial", "title": "Annexation by Britain", "description": "Third Anglo-Burmese War ends Konbaung rule; Burma incorporated into British India." },
+			{ "year": "January 4, 1948", "era": "Independence", "title": "Union of Burma independent", "description": "Postwar negotiated independence amid internal insurgencies." },
+			{ "year": "March 2, 1962", "era": "Modern", "title": "Military coup", "description": "Ne Win seizes power and begins long military dominance." },
+			{ "year": "August 2017", "era": "Modern", "title": "Rakhine crisis and Rohingya exodus", "description": "Mass displacement and international condemnation." },
+			{ "year": "February 1, 2021", "era": "Modern", "title": "Tatmadaw coup", "description": "Military overthrow of elected government and start of intensified armed conflict." }
+		]
+	},
+	{
+		"name": "Philippines",
+		"overview": "The Philippines' history stretches from deep prehistory through layered waves of migration, trade and imperial encounter to a modern independent republic. Early hunter-gatherer and Neolithic communities settled the archipelago tens of thousands of years ago. Austronesian voyagers arriving millennia later brought agriculture, seafaring skills and languages that formed the backbone of local societies. From the first millennium CE coastal polities entered Indian Ocean trade networks and adopted Indianized court forms, while Islam spread in the southern islands from the 13th century onward. Spanish contact in the 16th century created three and a third centuries of colonial rule that reorganized religion, landholding and politics, integrated the islands into Pacific and global trade, and produced new social classes and nationalist ideas. The late 19th and early 20th centuries saw a powerful independence movement, a war with the United States, and a mid-20th century transition to full sovereignty. The postwar era has been defined by cycles of democratic and authoritarian rule, major social and economic change, large diaspora labor flows, and steady cultural creativity. Contemporary Philippines is a populous, linguistically diverse democracy facing development, governance and regional-security challenges while projecting strong regional influence and a dynamic civil society.",
+		"source": {
+			"label": "Britannica - History of the Philippines",
+			"url": "https://www.britannica.com/topic/history-of-Philippines",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Philippines",
+				"https://en.wikipedia.org/wiki/History_of_the_Philippines",
+				"https://whc.unesco.org/en/statesparties/ph"
+			]
+		},
+		"keyFacts": [
+			{ "label": "First Major Settlement Evidence", "value": "c. 50,000 years ago (Pleistocene hunter-gatherers)" },
+			{ "label": "Austronesian Arrival", "value": "c. 2000-500 BCE (maritime agriculturalists expand across islands)" },
+			{
+				"label": "Major Colonial Period",
+				"value": "Spanish rule c. 1565-1898; American rule 1898-1946 (commonwealth 1935-1946)"
+			},
+			{ "label": "Independence (proclaimed)", "value": "June 12, 1898 (Republic proclaimed in Manila)" },
+			{
+				"label": "Independence (recognized)",
+				"value": "July 4, 1946 (Philippine independence recognized by the United States); June 12 later adopted as national Independence Day"
+			},
+			{
+				"label": "Capital",
+				"value": "Manila (major historical and administrative center); national capital region: Metro Manila"
+			},
+			{ "label": "UNESCO Sites (count)", "value": "6 World Heritage Sites (cultural and natural) as of 2025" }
+		],
+		"ancient": {
+			"period": "c. 50,000 BCE - 1st millennium CE",
+			"description": "The archipelago was inhabited by Pleistocene hunter-gatherers, evidenced by archaeological finds on multiple islands. Later waves of Austronesian speakers brought wet-rice cultivation, pottery and advanced boat technology. By the 1st millennium CE local chiefdoms and trading entrepôts developed along coasts and river valleys. External contacts with India, China and other Southeast Asian polities brought new crops, ideas, scripts and religious practices that were adapted locally rather than simply copied.",
+			"keyEvents": [
+				{
+					"year": "c. 50,000 BCE",
+					"title": "Earliest Human Presence",
+					"description": "Stone tools and fossils show Pleistocene occupation on multiple islands."
+				},
+				{
+					"year": "c. 2000-500 BCE",
+					"title": "Austronesian Migrations",
+					"description": "Austronesian agriculturalists and mariners arrive, shaping language and subsistence patterns."
+				}
+			],
+			"notableFigures": []
+		},
+		"pre-colonial": {
+			"period": "1st millennium CE - 16th century",
+			"description": "A network of coastal polities, sultanates and inland chiefdoms emerged. Trading ports in Luzon, the Visayas and Mindanao participated in regional commerce with China, Srivijaya, Majapahit and later Islamic polities. Indianized court culture influenced elite ritual and administration in some polities, while Islam established strong centers in Sulu and Mindanao from the 13th century. Indigenous customary law and kinship systems remained central to daily life even as external influences reshaped religion and rulership among elites.",
+			"keyEvents": [
+				{
+					"year": "900",
+					"title": "Laguna Copperplate Inscription",
+					"description": "Earliest known written document from the Philippines, showing regional links and local polities using Indianized scripts."
+				},
+				{
+					"year": "13th-15th c.",
+					"title": "Islamic Sultanates Strengthen",
+					"description": "Sulu, Maguindanao and other southern polities become integrated into wider Islamic trade and political networks."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "1521 - 1898 (Spanish), 1898-1946 (American influence and administration)",
+			"description": "Ferdinand Magellan reached the islands in 1521 and Spanish colonization accelerated after Miguel López de Legazpi's expeditions in the 1560s. Spain established Manila as a colonial capital (1571) and integrated the islands into the Manila galleon trade linking Asia and the Americas. Spanish colonial rule transformed religion through mass Catholic conversion, reorganized land and labor, and established centralized institutions while leaving many local customs intact. The late 19th century saw the rise of a reformist and then revolutionary movement culminating in the 1896-1898 Philippine Revolution. The Spanish-American War, and subsequent Philippine-American War, transferred sovereignty to the United States and reshaped the archipelago's institutions, infrastructure and educational systems until full international recognition of independence in 1946.",
+			"keyEvents": [
+				{
+					"year": "1521",
+					"title": "Magellan Arrives",
+					"description": "First European contact; Magellan killed in Mactan."
+				},
+				{
+					"year": "1571",
+					"title": "Manila Founded",
+					"description": "Spanish establish Manila as colonial capital and hub of the galleon trade."
+				},
+				{
+					"year": "1896-1898",
+					"title": "Philippine Revolution",
+					"description": "Revolutionary movements challenge Spanish colonial rule; declaration of independence follows."
+				},
+				{
+					"year": "1898-1902",
+					"title": "Philippine-American War",
+					"description": "Conflict between Filipino republicans and U.S. forces after Spain cedes the islands to the United States."
+				},
+				{
+					"year": "1935",
+					"title": "Commonwealth Established",
+					"description": "Commonwealth government created to prepare for full independence."
+				},
+				{
+					"year": "1942-1945",
+					"title": "Japanese Occupation",
+					"description": "Japanese forces occupy the islands during World War II; resistance and collaboration occur in different regions."
+				}
+			],
+			"notableFigures": [
+				"José Rizal (reform advocate)",
+				"Andrés Bonifacio (Katipunan leader)",
+				"Emilio Aguinaldo (revolutionary president)",
+				"Apolinario Mabini"
+			]
+		},
+		"independence": {
+			"period": "1898 - 1946 (transition to recognized sovereignty)",
+			"description": "The Philippine declaration of independence on June 12, 1898 proclaimed a Filipino republic. International geopolitics following the Spanish-American War led to U.S. occupation and a protracted war against Filipino forces. The Commonwealth period (1935-1946) provided limited self-government under U.S. sovereignty and prepared institutions for full statehood. After liberation from Japanese occupation, the United States recognized Philippine independence on July 4, 1946. Post-recognition, the Philippines navigated nation-building amid social inequality, communist and Muslim insurgencies, and the legacy of colonial institutions.",
+			"keyEvents": [
+				{
+					"year": "June 12, 1898",
+					"title": "Declaration of Independence",
+					"description": "Revolutionary leaders proclaim the First Philippine Republic in Kawit, Cavite."
+				},
+				{
+					"year": "July 4, 1946",
+					"title": "Independence Recognized by United States",
+					"description": "Republic of the Philippines formally enters the international system as a sovereign state."
+				}
+			],
+			"notableFigures": ["Emilio Aguinaldo", "Sergio Osmeña", "Manuel Roxas"]
+		},
+		"modern": {
+			"period": "1946 - Present",
+			"description": "The Republic experienced alternating periods of democratic governance and authoritarian rule. Postwar reconstruction and land reform were central issues. Ferdinand Marcos' imposition of martial law in 1972 ushered in authoritarian rule marked by economic projects, cronyism and human rights abuses; Marcos was ousted in the 1986 People Power Revolution which restored democratic institutions. Subsequent decades have seen democratic consolidation challenges, efforts at decentralization, continued economic growth alongside persistent inequality, the importance of overseas Filipino workers to the national economy, the persistence of localized insurgencies, and expanding regional and global diplomatic roles. Cultural industries, diaspora networks and a vibrant civil society remain influential in shaping national debates.",
+			"keyEvents": [
+				{
+					"year": "1972-1981",
+					"title": "Martial Law Period (Marcos)",
+					"description": "Authoritarian rule with curtailment of civil liberties and centralization of power."
+				},
+				{
+					"year": "1986",
+					"title": "People Power Revolution",
+					"description": "Mass uprisings force Marcos into exile and restore democratic government under Corazon Aquino."
+				},
+				{
+					"year": "1990s-2020s",
+					"title": "Economic and Social Transformation",
+					"description": "Growth in services, BPO industry, remittances from overseas workers; ongoing governance reforms and challenges."
+				}
+			],
+			"notableFigures": [
+				"Ferdinand Marcos",
+				"Corazon Aquino",
+				"Fidel V. Ramos",
+				"Rodrigo Duterte",
+				"Benigno Aquino III"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 50,000 BCE",
+				"era": "Ancient",
+				"title": "Earliest Human Presence",
+				"description": "Pleistocene hunter-gatherer occupation attested on islands."
+			},
+			{
+				"year": "c. 2000-500 BCE",
+				"era": "Ancient",
+				"title": "Austronesian Expansion",
+				"description": "Maritime agriculturalists spread across the archipelago."
+			},
+			{
+				"year": "900",
+				"era": "Pre-Colonial",
+				"title": "Laguna Copperplate Inscription",
+				"description": "Earliest written record showing regional links."
+			},
+			{
+				"year": "1571",
+				"era": "Colonial",
+				"title": "Manila Established as Spanish Capital",
+				"description": "Manila becomes key node in trans-Pacific galleon trade."
+			},
+			{
+				"year": "June 12, 1898",
+				"era": "Independence",
+				"title": "Declaration of Independence (Aguinaldo)",
+				"description": "Proclamation of a Philippine republic."
+			},
+			{
+				"year": "July 4, 1946",
+				"era": "Independence",
+				"title": "Internationally Recognized Independence",
+				"description": "US recognizes Philippine sovereignty."
+			},
+			{
+				"year": "1986",
+				"era": "Modern",
+				"title": "People Power",
+				"description": "Restoration of democracy after authoritarian rule."
+			}
+		]
+	},
+	{
+		"name": "Laos",
+		"overview": "Laos' recorded history begins with the formation of powerful Tai-Lao states and the rise of Lan Xang in the 14th century. Over centuries the Lao heartland in the Mekong valley experienced periods of centralization, fragmentation and foreign suzerainty. Lan Xang (c. 1353-1707) established a distinct Lao political, religious and cultural identity centered on Buddhism and court ritual. Subsequent centuries brought decomposition into smaller kingdoms vulnerable to Siamese and Vietnamese pressure. French colonial protection in the late 19th century created a modern territorial framework but also reoriented the economy and society. In the 20th century Laos was enmeshed in wider Indochina conflicts, gained full independence from France in the 1950s, and after a prolonged civil war the Pathet Lao established the Lao People's Democratic Republic on December 2, 1975. Since then the single-party state has pursued gradual economic liberalization and regional integration while managing development, ethnic diversity and the legacies of war.",
+		"source": {
+			"label": "Britannica - History of Laos",
+			"url": "https://www.britannica.com/place/Laos/History",
+			"urls": [
+				"https://www.britannica.com/place/Laos/History",
+				"https://en.wikipedia.org/wiki/History_of_Laos",
+				"https://whc.unesco.org/en/statesparties/la"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Founding of Lan Xang",
+				"value": "c. 1353 (Fa Ngum establishes Lan Xang, 'Kingdom of a Million Elephants')"
+			},
+			{ "label": "Independence from France", "value": "October 22, 1953 (full independence as Kingdom of Laos)" },
+			{
+				"label": "Establishment of Lao PDR",
+				"value": "December 2, 1975 (Pathet Lao proclaims Lao People's Democratic Republic)"
+			},
+			{ "label": "Capital", "value": "Vientiane (historic and modern political center)" },
+			{
+				"label": "UNESCO Sites (count)",
+				"value": "4 World Heritage Sites as of 2025 (including Luang Prabang and the Plain of Jars)"
+			}
+		],
+		"ancient": {
+			"period": "1st millennium CE - 13th century",
+			"description": "Early urbanized communities such as the Mon and Khmer influenced lowland riverine cultures while Tai groups migrated south from southern China over centuries. These interactions produced irrigated agriculture, early state formation and adoption of Indianized religious and political models in parts of the region. Archaeological remains and inscriptions record the emergence of early polities that prefigure later Lao kingdoms.",
+			"keyEvents": [
+				{
+					"year": "1st-9th c.",
+					"title": "Mon and Khmer Influence",
+					"description": "Indianized culture and urban centers spread across Lower Mekong basins."
+				}
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "13th — 18th centuries",
+			"description": "The Lan Xang kingdom, founded by Fa Ngum in the mid-14th century, unified much of the Mekong valley and established Vientiane and Luang Prabang as important political and religious centers. Lan Xang fostered Theravada Buddhism, monumental architecture and a court culture that lasted several centuries. Internal succession disputes and external pressures gradually fractured the kingdom into smaller polities by the early 18th century.",
+			"keyEvents": [
+				{
+					"year": "c. 1353",
+					"title": "Lan Xang Founded",
+					"description": "Fa Ngum creates a large Lao polity with strong Buddhist legitimacy."
+				},
+				{
+					"year": "17th-18th c.",
+					"title": "Fragmentation into Regional Kingdoms",
+					"description": "Lan Xang splits into Luang Prabang, Vientiane and Champasak among other principalities."
+				}
+			],
+			"notableFigures": ["Fa Ngum"]
+		},
+		"feudal": {
+			"period": "18th — 19th centuries",
+			"description": "Smaller Lao kingdoms vied for survival between the rising powers of Siam (Thailand) and Vietnam. Vassalage, tribute relations and periodic warfare with neighbors shaped political life. The Laotian polity's reduced territorial reach and military capacity left it vulnerable to external suzerainty and shifting regional alignments.",
+			"keyEvents": [
+				{
+					"year": "1778-1893",
+					"title": "Siamese and Vietnamese Influence",
+					"description": "Laotian principalities come under varying degrees of Siamese and Vietnamese control."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "1893 — 1953",
+			"description": "Laos became a French protectorate in the late 19th century as part of French Indochina. French rule brought administrative consolidation, new economic linkages, missionary activity, and limited infrastructure while maintaining the monarchy as a symbolic institution. Colonial boundaries and administrative practices produced the modern territorial shape of Laos but left the country economically marginal within Indochina.",
+			"keyEvents": [
+				{
+					"year": "1893",
+					"title": "French Protectorate Formalized",
+					"description": "French control established after regional negotiations and coercion."
+				},
+				{
+					"year": "1941-1945",
+					"title": "World War II and Japanese Occupation",
+					"description": "Japanese presence disrupts colonial order and energizes nationalist movements."
+				}
+			],
+			"notableFigures": ["Prince Phetsarath (Laotian nationalist leader in mid-20th century)"]
+		},
+		"independence": {
+			"period": "1945 — 1975",
+			"description": "Laotian independence was contested and gradual. Anti-colonial movements formed after World War II, and the Lao Issara briefly declared independence in 1945. Negotiations and limited recognition followed in the early 1950s with France granting full independence in October 1953. The postcolonial period was dominated by Cold War rivalries, a civil conflict between royalist and communist forces, heavy involvement by external powers, and massive disruption from bombing campaigns during the Vietnam War era. The Pathet Lao's victory and the fall of regional client regimes culminated in the abolition of the monarchy and the founding of the Lao People's Democratic Republic on December 2, 1975.",
+			"keyEvents": [
+				{
+					"year": "October 22, 1953",
+					"title": "Full Independence from France",
+					"description": "Kingdom of Laos attains sovereignty after negotiations with France."
+				},
+				{
+					"year": "December 2, 1975",
+					"title": "Lao PDR Established",
+					"description": "Pathet Lao proclaims the Lao People's Democratic Republic; monarchy abolished."
+				}
+			],
+			"notableFigures": ["Prince Phetsarath", "Souvanna Phouma", "Souphanouvong", "Kaysone Phomvihane"]
+		},
+		"modern": {
+			"period": "1975 - Present",
+			"description": "Since 1975 Laos has been governed by the Lao People's Revolutionary Party. The state adopted socialist institutions and close ties with Vietnam. From the late 1980s and 1990s onward the government implemented market-oriented reforms, sought foreign investment and prioritized regional connectivity. Major infrastructure projects, hydropower development and integration into ASEAN have accelerated economic change. Persistent challenges include poverty reduction, land rights, unexploded ordnance remediation from the Indochina wars, ethnic minority inclusion, and balancing development with environmental conservation.",
+			"keyEvents": [
+				{
+					"year": "1977",
+					"title": "Treaty with Vietnam and Security Ties",
+					"description": "Formalized close military, political and economic cooperation with Vietnam."
+				},
+				{
+					"year": "1986-1990s",
+					"title": "Economic Reforms",
+					"description": "Market-oriented policy adjustments and opening to foreign investment begin."
+				}
+			],
+			"notableFigures": ["Kaysone Phomvihane", "Souphanouvong", "Choummaly Sayasone"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1353",
+				"era": "Medieval",
+				"title": "Lan Xang Founded",
+				"description": "Fa Ngum establishes the major Lao kingdom that shapes national identity."
+			},
+			{
+				"year": "17th-18th c.",
+				"era": "Feudal",
+				"title": "Fragmentation",
+				"description": "Lan Xang breaks into separate principalities vulnerable to neighbors."
+			},
+			{
+				"year": "1893",
+				"era": "Colonial",
+				"title": "French Protectorate",
+				"description": "Laos incorporated into French Indochina."
+			},
+			{
+				"year": "October 22, 1953",
+				"era": "Independence",
+				"title": "Independence from France",
+				"description": "Kingdom of Laos gains full sovereignty."
+			},
+			{
+				"year": "December 2, 1975",
+				"era": "Modern",
+				"title": "Lao PDR Proclaimed",
+				"description": "Communist government establishes the Lao People's Democratic Republic."
+			}
+		]
+	},
+	{
+		"name": "Brunei",
+		"overview": "Brunei Darussalam is a small, oil- and gas-rich sultanate on the north coast of Borneo with a recorded history that moves from early maritime trade and Indianized influence to a powerful 15th-16th century regional polity, dramatic territorial contraction, colonial-era protectorate status under Britain, and full sovereignty in 1984. The modern sultanate is defined by concentrated petrostate wealth, the central role of the monarchy, conservative Islamic law and the national ideology Melayu Islam Beraja (MIB). Brunei's contemporary governance combines an absolute-monarchical constitution with limited consultative institutions, large state revenues derived from hydrocarbons, generous public-sector benefits, and policy choices that emphasize social stability and regime durability over pluralist political reforms. The country faces medium-term economic and fiscal challenges tied to resource depletion and a strategic need to diversify, an aging ruling elite, and international scrutiny over human-rights and legal reforms tied to criminal law.",
+		"source": {
+			"label": "Britannica - History of Brunei",
+			"url": "https://www.britannica.com/topic/history-of-Brunei",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Brunei",
+				"https://en.wikipedia.org/wiki/History_of_Brunei",
+				"https://whc.unesco.org/en/statesparties/bn",
+				"https://history.state.gov/countries/brunei"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Proclamation of Independence (formal)",
+				"value": "January 1, 1984 (UK protectorate responsibilities end)"
+			},
+			{
+				"label": "National Day (celebrated)",
+				"value": "February 23 (first celebrated 1984; commemorates independence ceremonies)"
+			},
+			{ "label": "Capital", "value": "Bandar Seri Begawan (historic riverine port and modern administrative center)" },
+			{
+				"label": "Political System",
+				"value": "Islamic absolute monarchy (Sultan is head of state and head of government)"
+			},
+			{ "label": "Major Resource", "value": "Petroleum and natural gas (dominant source of GDP and state revenue)" },
+			{ "label": "UNESCO Sites", "value": "0 World Heritage Sites (no inscribed properties as of 2025)" }
+		],
+		"ancient": {
+			"period": "pre-7th century - 14th century",
+			"description": "Archaeological and documentary traces show north Borneo engaged in maritime trade with China, India and Southeast Asian polities from the early medieval period. Local polities participated in tribute and trade networks. Brunei's early elites adopted elements of Indianized court culture and Buddhism and later Islam through commercial and religious contacts.",
+			"keyEvents": [
+				{
+					"year": "6th-10th c.",
+					"title": "Early trade links",
+					"description": "Coastal settlements in north Borneo trade with China and mainland Southeast Asia and appear in external records."
+				}
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "14th — 17th centuries",
+			"description": "Brunei emerged as a prominent maritime polity and expanded influence across northern Borneo and parts of the southern Philippines. The conversion of the court to Islam and links to wider Islamic maritime networks reshaped Bruneian rulership. By the 15th and 16th centuries Brunei controlled important ports and an active trading network that connected the South China Sea to the wider region.",
+			"keyEvents": [
+				{
+					"year": "15th-16th c.",
+					"title": "Bruneian expansion",
+					"description": "Sultanate reaches peak influence across parts of Borneo and the Sulu archipelago; Islam consolidates in the court."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "17th — 1959 (protectorate arrangements formalized 1888) ",
+			"description": "European commercial pressure and regional rivals eroded Brunei's territorial reach over centuries. In the 19th century internal dynastic strains and expansion by neighboring powers led Brunei to accept British protection. The 1888 protectorate arrangement left the sultanate with internal autonomy while Britain handled foreign affairs and defense. A 1959 constitution began a gradual transition toward local administration while retaining the Sultan's central role.",
+			"keyEvents": [
+				{
+					"year": "1888",
+					"title": "British protectorate established",
+					"description": "Treaty places Brunei under British protection for foreign affairs and defense."
+				},
+				{
+					"year": "1959",
+					"title": "Constitution granting internal self-government",
+					"description": "New constitution formalizes internal institutions while Britain retains certain powers until 1984."
+				}
+			],
+			"notableFigures": [
+				"Sultan Omar Ali Saifuddien III (modernizing ruler who abdicated in 1967 in favor of Hassanal Bolkiah)"
+			]
+		},
+		"independence": {
+			"period": "1979 — 1984",
+			"description": "Negotiations with the United Kingdom and internal political preparation culminated in a phased transfer of responsibilities. On January 1, 1984 Brunei proclaimed full independence. The sultan assumed prime ministerial and other key cabinet roles, consolidating domestic authority while joining regional and international organizations including ASEAN and the UN later that year.",
+			"keyEvents": [
+				{
+					"year": "1979",
+					"title": "Anglo-Brunei agreements",
+					"description": "Treaties further define transfer of responsibilities and preparations for sovereignty."
+				},
+				{
+					"year": "January 1, 1984",
+					"title": "Proclamation of Independence",
+					"description": "Brunei becomes fully sovereign; Sultan assumes multiple executive offices."
+				},
+				{
+					"year": "1984",
+					"title": "UN and ASEAN membership",
+					"description": "Brunei joins ASEAN (Jan 7, 1984) and the UN (Sept 1984) as a newly sovereign state."
+				}
+			],
+			"notableFigures": ["Hassanal Bolkiah (Sultan since 1967; central political figure in modern Brunei)"]
+		},
+		"modern": {
+			"period": "1984 — Present",
+			"description": "Post-independence Brunei sustained high per-capita wealth due to hydrocarbons and maintained a state-led welfare model that funds public services and subsidies. Political liberalization has been limited. Since the late 20th century the government has emphasized Islamic identity within the Melayu Islam Beraja framework and has at times introduced sharia-based legal measures. Economic strategy centers on managing hydrocarbon revenues, modest diversification (petrochemicals, halal industries, services) and selective foreign investment. Strategic partnerships with the UK, US and regional neighbors coexist with increasing economic engagement from China.",
+			"keyEvents": [
+				{
+					"year": "1985",
+					"title": "First National Day celebrated (Feb 23)",
+					"description": "Annual national celebrations institutionalized following independence ceremonies."
+				},
+				{
+					"year": "1990s-2020s",
+					"title": "MIB and sharia measures",
+					"description": "State reaffirms Malay-Muslim identity; legal reforms enacted with international attention."
+				}
+			],
+			"notableFigures": ["Hassanal Bolkiah"]
+		},
+		"timeline": [
+			{
+				"year": "6th-10th c.",
+				"era": "Ancient",
+				"title": "Early maritime trade",
+				"description": "Coastal Borneo engages in long-distance commerce with China and Southeast Asia."
+			},
+			{
+				"year": "15th-16th c.",
+				"era": "Medieval",
+				"title": "Bruneian Sultanate reaches regional prominence",
+				"description": "Court Islamization and maritime expansion."
+			},
+			{
+				"year": "1888",
+				"era": "Colonial",
+				"title": "British protectorate begins",
+				"description": "Brunei accepts British protection for external affairs."
+			},
+			{
+				"year": "1959",
+				"era": "Colonial",
+				"title": "Constitution introduces internal self-government",
+				"description": "Foundation for later full sovereignty."
+			},
+			{
+				"year": "January 1, 1984",
+				"era": "Independence",
+				"title": "Full independence proclaimed",
+				"description": "Brunei assumes full sovereignty and joins international organizations."
+			}
+		]
+	},
+	{
+		"name": "Singapore",
+		"overview": "Singapore transformed from a sparsely populated island with episodic settlement into a critical entrepôt under British rule and then into a high-income, globally connected city-state. Its recorded history includes early references as Temasek and later Malay and Bugis settlement, the founding of a British trading post by Sir Stamford Raffles in 1819, rapid colonial-era growth as part of the Straits Settlements, Japanese occupation during World War II, a postwar trajectory through self-government and brief union with Malaysia, and abrupt separation and full independence on August 9, 1965. Under the leadership of Lee Kuan Yew and the People’s Action Party, Singapore pursued an authoritarian-leaning but technocratic developmental state model emphasizing rule-driven governance, export-oriented industrialization, property-led urban planning, and meritocratic public institutions. The city-state now serves as a global financial center, major port, and hub for high-value services. Ongoing policy debates center on demographic trends, social compact, political pluralism, and balancing sovereignty with deep economic integration in a volatile region.",
+		"source": {
+			"label": "Britannica - History of Singapore",
+			"url": "https://www.britannica.com/topic/history-of-Singapore",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Singapore",
+				"https://en.wikipedia.org/wiki/History_of_Singapore",
+				"https://whc.unesco.org/en/statesparties/sg"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Founding of British Trading Post",
+				"value": "1819 (Sir Stamford Raffles establishes a British trading settlement)"
+			},
+			{ "label": "Self-Government", "value": "1959 (internal self-government under the People’s Action Party)" },
+			{
+				"label": "Separation and Independence",
+				"value": "August 9, 1965 (Republic of Singapore becomes independent after separation from Malaysia)"
+			},
+			{ "label": "Capital/City-State", "value": "Singapore (city-state; no separate capital)" },
+			{
+				"label": "Political System",
+				"value": "Parliamentary republic with dominant-party governance (People’s Action Party major role since 1959)"
+			},
+			{ "label": "UNESCO Sites", "value": "1 World Heritage Site (Singapore Botanic Gardens, inscribed 2015)" }
+		],
+		"ancient": {
+			"period": "pre-14th century — 14th century",
+			"description": "Archaeological and textual sources indicate episodic settlement and maritime activity. Early external records (Chinese and Javanese inscriptions) refer to Temasek and coastal trading activity that connected the island to Srivijaya and regional networks. Local Malay polities and seafarers used the island intermittently as a trading and fishing base.",
+			"keyEvents": [
+				{
+					"year": "c. 14th c.",
+					"title": "Temasek in external records",
+					"description": "The island appears in Chinese and Javanese sources as a minor port and maritime node."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "1819 — 1942 (British era until Japanese occupation)",
+			"description": "Raffles' establishment of a British trading post in 1819 and the later creation of the Straits Settlements integrated Singapore into global commerce. The island's excellent harbor and free-trade policies propelled rapid population growth, migrant labor flows from China and India, and diverse commercial activity. Colonial administration built port infrastructure, municipal governance and legal frameworks that underpinned Singapore's role as an entrepôt. Social stratification and communal politics among immigrant communities emerged alongside commercial expansion.",
+			"keyEvents": [
+				{
+					"year": "1819",
+					"title": "Raffles establishes trading post",
+					"description": "Formal British presence begins a period of commercial expansion and colonial governance."
+				},
+				{
+					"year": "1826",
+					"title": "Straits Settlements formed",
+					"description": "Administrative grouping of Penang, Malacca and Singapore under British rule."
+				}
+			],
+			"notableFigures": ["Sir Stamford Raffles"]
+		},
+		"isolation_and_war": {
+			"period": "1942 — 1945",
+			"description": "Japanese conquest in 1942 and harsh wartime occupation traumatized the island, producing significant civilian suffering, reconfiguring colonial authority and energizing postwar nationalist and social movements. The occupation period marked a break in colonial legitimacy and contributed to demands for self-determination after 1945.",
+			"keyEvents": [
+				{
+					"year": "1942-1945",
+					"title": "Japanese occupation",
+					"description": "Surrender of British forces and occupation by Japan until 1945; wartime brutality and social disruption."
+				}
+			],
+			"notableFigures": []
+		},
+		"independence": {
+			"period": "1945 — 1965",
+			"description": "After WWII Singapore moved through reconstituted colonial administration, negotiated self-government and emergent party politics. Internal self-government in 1959 under the People’s Action Party established Lee Kuan Yew as Prime Minister. A contentious merger with Malaysia in 1963 was followed by communal tensions and political conflict that culminated in Singapore's forced separation and the proclamation of sovereign independence on August 9, 1965. Independence required rapid institution-building, social order, and an economic strategy to survive as a tiny, resource-poor state.",
+			"keyEvents": [
+				{
+					"year": "1959",
+					"title": "Self-government under PAP",
+					"description": "Internal self-government achieved; Lee Kuan Yew becomes prime minister."
+				},
+				{
+					"year": "September 16, 1963",
+					"title": "Merger into Malaysia",
+					"description": "Singapore joins the Federation of Malaysia with Malaya, Sabah and Sarawak."
+				},
+				{
+					"year": "August 9, 1965",
+					"title": "Separation and full independence",
+					"description": "Singapore becomes a sovereign republic after parliamentary vote and separation from Malaysia."
+				}
+			],
+			"notableFigures": ["Lee Kuan Yew"]
+		},
+		"modern": {
+			"period": "1965 — Present",
+			"description": "Singapore's post-independence story is one of rapid economic transformation guided by a developmental state model. The government prioritized rule-based administration, anti-corruption institutions, investment in education, infrastructure and port facilities, and attraction of foreign investment. Housing, healthcare and public order were provided through centralized planning. Politically the state has combined electoral processes with tight controls on media and civil society, producing long periods of single-party dominance with periodic political contestation. Singapore today is a global financial center, logistics hub and innovation node while confronting demographic aging, land scarcity, social cohesion, and geopolitical balancing between major powers.",
+			"keyEvents": [
+				{
+					"year": "1967",
+					"title": "Founding member of ASEAN",
+					"description": "Singapore helps found the Association of Southeast Asian Nations as a regional diplomatic actor."
+				},
+				{
+					"year": "2015",
+					"title": "50th anniversary of independence",
+					"description": "Nation marks half-century with reflection on development model and future challenges."
+				}
+			],
+			"notableFigures": ["Lee Kuan Yew", "Goh Chok Tong", "Lee Hsien Loong"]
+		},
+		"timeline": [
+			{
+				"year": "c. 14th c.",
+				"era": "Ancient",
+				"title": "Temasek in regional records",
+				"description": "Early references to settlement and maritime activity."
+			},
+			{
+				"year": "1819",
+				"era": "Colonial",
+				"title": "Raffles founds trading post",
+				"description": "Beginning of British colonial transformation."
+			},
+			{
+				"year": "1942",
+				"era": "Isolation/War",
+				"title": "Japanese occupation begins",
+				"description": "Colonial order collapsed under war."
+			},
+			{
+				"year": "1959",
+				"era": "Independence",
+				"title": "Self-government",
+				"description": "PAP forms government under Lee Kuan Yew."
+			},
+			{
+				"year": "August 9, 1965",
+				"era": "Independence",
+				"title": "Republic proclaimed",
+				"description": "Singapore becomes an independent sovereign state."
+			},
+			{
+				"year": "2015",
+				"era": "Modern",
+				"title": "50th anniversary",
+				"description": "Milestone reflecting development and future policy debates."
+			}
+		]
 	}
 ]
