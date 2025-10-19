@@ -8010,7 +8010,7 @@
 	},
 	{
 		"name": "Myanmar",
-		"overview": "Myanmar's history spans deep prehistory, early Indianized trading cities, the rise of the Pagan (Bagan) polity that consolidated Burmese language and Theravada Buddhism, successive cycles of imperial unification and fragmentation under dynasties such as Toungoo and Konbaung, the loss of sovereignty to the expanding British Empire in the 19th century, a turbulent 20th century of Japanese occupation, anti-colonial struggle and postwar independence in 1948, long periods of military rule beginning in 1962, intermittent openings and contested elections in the 1990s–2010s, a catastrophic ethnic and humanitarian crisis beginning with the 2017 Rohingya campaign, and a renewed nationwide uprising and intensifying civil war after the Tatmadaw's coup of February 1, 2021. Political authority in Myanmar has repeatedly centralized under charismatic military or royal leaders while complex ethnic politics, resource geography, and regional geopolitics shaped recurring cycles of violence and negotiated accommodation. Since 2021 the country faces large-scale displacement, fractured governance, severe economic contraction, and extensive human-rights abuses affecting millions.",
+		"overview": "Myanmar's history spans deep prehistory, early Indianized trading cities, the rise of the Pagan (Bagan) polity that consolidated Burmese language and Theravada Buddhism, successive cycles of imperial unification and fragmentation under dynasties such as Toungoo and Konbaung, the loss of sovereignty to the expanding British Empire in the 19th century, a turbulent 20th century of Japanese occupation, anti-colonial struggle and postwar independence in 1948, long periods of military rule beginning in 1962, intermittent openings and contested elections in the 1990s-2010s, a catastrophic ethnic and humanitarian crisis beginning with the 2017 Rohingya campaign, and a renewed nationwide uprising and intensifying civil war after the Tatmadaw's coup of February 1, 2021. Political authority in Myanmar has repeatedly centralized under charismatic military or royal leaders while complex ethnic politics, resource geography, and regional geopolitics shaped recurring cycles of violence and negotiated accommodation. Since 2021 the country faces large-scale displacement, fractured governance, severe economic contraction, and extensive human-rights abuses affecting millions.",
 		"source": {
 			"label": "Britannica - History of Myanmar",
 			"url": "https://www.britannica.com/place/Myanmar",
@@ -8023,57 +8023,110 @@
 		},
 		"keyFacts": [
 			{ "label": "Earliest urban settlements", "value": "Pyu city-states from 1st century CE" },
-			{ "label": "Pagan (Bagan) foundation", "value": "c. 9th century (consolidation under Anawrahta, mid-11th century)" },
-			{ "label": "Last precolonial monarchy defeated", "value": "Third Anglo-Burmese War and annexation, 1885 (full annexation by 1886)" },
+			{
+				"label": "Pagan (Bagan) foundation",
+				"value": "c. 9th century (consolidation under Anawrahta, mid-11th century)"
+			},
+			{
+				"label": "Last precolonial monarchy defeated",
+				"value": "Third Anglo-Burmese War and annexation, 1885 (full annexation by 1886)"
+			},
 			{ "label": "Independence (Union of Burma)", "value": "January 4, 1948" },
 			{ "label": "Ne Win coup", "value": "March 2, 1962 (start of long military rule)" },
 			{ "label": "Military coup", "value": "February 1, 2021 (Tatmadaw seizes power from elected government)" },
-			{ "label": "Capital (current)", "value": "Nay Pyi Taw (administrative capital since 2005); Yangon remains largest city and commercial center" },
-			{ "label": "Major religions", "value": "Theravada Buddhism predominant; significant Christian, Muslim and animist communities" },
-			{ "label": "Contemporary crisis", "value": "Post-2021 civil conflict, mass displacement, and documented widespread human-rights abuses" }
+			{
+				"label": "Capital (current)",
+				"value": "Nay Pyi Taw (administrative capital since 2005); Yangon remains largest city and commercial center"
+			},
+			{
+				"label": "Major religions",
+				"value": "Theravada Buddhism predominant; significant Christian, Muslim and animist communities"
+			},
+			{
+				"label": "Contemporary crisis",
+				"value": "Post-2021 civil conflict, mass displacement, and documented widespread human-rights abuses"
+			}
 		],
 		"ancient": {
-			"period": "c. 1st century CE – 9th century",
+			"period": "c. 1st century CE - 9th century",
 			"description": "The Pyu city-states in the upper Irrawaddy valley and Mon polities in Lower Burma established early urban centers, irrigation works and trade links to India and China. These Indianized polities adopted Indic scripts, Buddhism and statecraft models that provided the institutional substrate for later Burmese kingdoms. Archaeological remains at Pyu sites (Halin, Sri Ksetra) and coastal Mon centers show long-distance trade and urban complexity before the emergence of the Bamar-speaking polities.",
 			"keyEvents": [
-				{ "year": "1st–9th c.", "title": "Pyu city-states flourish", "description": "Urbanized Pyu polities control caravan and river routes; adopt Buddhism and Indian scripts." },
-				{ "year": "6th–9th c.", "title": "Mon polities in Lower Burma", "description": "Mon culture and trade centers influence coastal regions and port networks." }
+				{
+					"year": "1st-9th c.",
+					"title": "Pyu city-states flourish",
+					"description": "Urbanized Pyu polities control caravan and river routes; adopt Buddhism and Indian scripts."
+				},
+				{
+					"year": "6th-9th c.",
+					"title": "Mon polities in Lower Burma",
+					"description": "Mon culture and trade centers influence coastal regions and port networks."
+				}
 			],
 			"notableFigures": []
 		},
 		"medieval": {
-			"period": "9th century – 13th century",
+			"period": "9th century - 13th century",
 			"description": "A Bamar polity at Pagan (Bagan) grew from a small riverine settlement into the first Burmese state to unify much of the Irrawaddy valley. From the mid-11th century under King Anawrahta the state consolidated royal authority, built an extensive irrigation base, sponsored mass temple construction, and anchored Theravada Buddhism as state religion. Pagan's governmental, cultural and religious innovations shaped language, law and elite norms across later Burmese polities. Internal strains, excessive religious land endowments, and external pressure from the Mongol invasions in the late 13th century led to decline and fragmentation.",
 			"keyEvents": [
-				{ "year": "c. 849", "title": "Early Pagan settlement", "description": "Pagan appears in local records as a growing polity in the central Irrawaddy plain." },
-				{ "year": "1044–1077", "title": "Anawrahta's reign", "description": "Anawrahta unifies the Irrawaddy valley, reforms irrigation, and promotes Theravada Buddhism." },
-				{ "year": "1057–c. 13th c.", "title": "Temple-building and state consolidation", "description": "Construction of thousands of stupas and temples in Bagan and expansion of administrative reach." },
-				{ "year": "1287", "title": "Mongol pressure and Pagan collapse", "description": "Mongol campaigns and internal weaknesses precipitate fragmentation of the Pagan polity." }
+				{
+					"year": "c. 849",
+					"title": "Early Pagan settlement",
+					"description": "Pagan appears in local records as a growing polity in the central Irrawaddy plain."
+				},
+				{
+					"year": "1044-1077",
+					"title": "Anawrahta's reign",
+					"description": "Anawrahta unifies the Irrawaddy valley, reforms irrigation, and promotes Theravada Buddhism."
+				},
+				{
+					"year": "1057-c. 13th c.",
+					"title": "Temple-building and state consolidation",
+					"description": "Construction of thousands of stupas and temples in Bagan and expansion of administrative reach."
+				},
+				{
+					"year": "1287",
+					"title": "Mongol pressure and Pagan collapse",
+					"description": "Mongol campaigns and internal weaknesses precipitate fragmentation of the Pagan polity."
+				}
 			],
-			"notableFigures": [
-				"Anawrahta (r. c.1044–1077)",
-				"Kyansittha (r. 1084–1112)",
-				"Sithu II (r. 1174–1211)"
-			]
+			"notableFigures": ["Anawrahta (r. c.1044-1077)", "Kyansittha (r. 1084-1112)", "Sithu II (r. 1174-1211)"]
 		},
 		"feudal": {
-			"period": "13th century – 16th century",
+			"period": "13th century - 16th century",
 			"description": "After Pagan's fall the region fragmented into successor states and competing centers such as Myinsaing, Pinya, Sagaing and the Mon Hanthawaddy kingdom in Lower Burma. Political authority was often localized and fractious. Over time new dynasties re-emerged and sought to reassert control over Irrawaddy trade routes and agrarian resources. This era saw shifting alliances, frequent warfare, and the emergence of Shan polities in the interior highlands that would remain politically significant.",
 			"keyEvents": [
-				{ "year": "14th–15th c.", "title": "Rise of regional polities", "description": "Ava (Inwa), Hanthawaddy Pegu and Shan states contest hegemony over central and lower Burma." },
-				{ "year": "15th c.", "title": "Mon cultural florescence in Lower Burma", "description": "Hanthawaddy Pegu becomes an economic and cultural center with strong maritime links." }
+				{
+					"year": "14th-15th c.",
+					"title": "Rise of regional polities",
+					"description": "Ava (Inwa), Hanthawaddy Pegu and Shan states contest hegemony over central and lower Burma."
+				},
+				{
+					"year": "15th c.",
+					"title": "Mon cultural florescence in Lower Burma",
+					"description": "Hanthawaddy Pegu becomes an economic and cultural center with strong maritime links."
+				}
 			],
-			"notableFigures": [
-				"King Razadarit (Hanthawaddy, late 14th–early 15th c.)"
-			]
+			"notableFigures": ["King Razadarit (Hanthawaddy, late 14th-early 15th c.)"]
 		},
 		"imperial": {
-			"period": "16th century – 19th century (precolonial unification cycles)",
-			"description": "Two major precolonial imperial dynasties reshaped mainland Southeast Asia from Burmese cores. The Toungoo dynasty (16th century) briefly created the largest polity in mainland Southeast Asia under Tabinshwehti and Bayinnaung, projecting power across Siam, Lan Xang and parts of the Malay Peninsula. The later Konbaung dynasty (18th–19th centuries) again centralized Burma, enacted administrative and military reforms, and sought to modernize while expanding territorial control. Konbaung confrontations with an increasingly assertive British Empire culminated in three Anglo-Burmese wars that ended the monarchy's independence.",
+			"period": "16th century - 19th century (precolonial unification cycles)",
+			"description": "Two major precolonial imperial dynasties reshaped mainland Southeast Asia from Burmese cores. The Toungoo dynasty (16th century) briefly created the largest polity in mainland Southeast Asia under Tabinshwehti and Bayinnaung, projecting power across Siam, Lan Xang and parts of the Malay Peninsula. The later Konbaung dynasty (18th-19th centuries) again centralized Burma, enacted administrative and military reforms, and sought to modernize while expanding territorial control. Konbaung confrontations with an increasingly assertive British Empire culminated in three Anglo-Burmese wars that ended the monarchy's independence.",
 			"keyEvents": [
-				{ "year": "1531–1599", "title": "Toungoo reunification and expansion", "description": "Leaders such as Tabinshwehti and Bayinnaung reconquer and expand Burmese influence across mainland Southeast Asia." },
-				{ "year": "1752–1885", "title": "Konbaung consolidation", "description": "Alaungpaya and successors centralize the state, reform military institutions and face British imperial pressure." },
-				{ "year": "1824–1885", "title": "Three Anglo-Burmese Wars", "description": "Series of conflicts with Britain progressively annex Burmese territories, culminating in full colonial control." }
+				{
+					"year": "1531-1599",
+					"title": "Toungoo reunification and expansion",
+					"description": "Leaders such as Tabinshwehti and Bayinnaung reconquer and expand Burmese influence across mainland Southeast Asia."
+				},
+				{
+					"year": "1752-1885",
+					"title": "Konbaung consolidation",
+					"description": "Alaungpaya and successors centralize the state, reform military institutions and face British imperial pressure."
+				},
+				{
+					"year": "1824-1885",
+					"title": "Three Anglo-Burmese Wars",
+					"description": "Series of conflicts with Britain progressively annex Burmese territories, culminating in full colonial control."
+				}
 			],
 			"notableFigures": [
 				"Bayinnaung (Toungoo, 16th century)",
@@ -8083,44 +8136,102 @@
 		},
 		"colonial": {
 			"period": "1824/1885 — 1942 (early encounters) / 1945 (end of WWII influence) — 1948 (path to independence)",
-			"description": "British imperial expansion undermined monarchical Burma through military conquest, diplomatic pressure and economic reordering. After the final annexation in 1885 Burma was incorporated into British India and later became a separate colony in 1937. Colonial rule introduced new cash-crop economies, modern education for a small elite, infrastructure, administrative bureaucracy, and large-scale migration of Indian labor and merchants into Rangoon and frontier areas. Colonial policies also reshaped ethnic relations, land tenure and center–periphery dynamics, seeding many grievances that affected postcolonial politics. Japanese occupation during World War II (1942–1945) disrupted colonial governance and accelerated nationalist mobilization.",
+			"description": "British imperial expansion undermined monarchical Burma through military conquest, diplomatic pressure and economic reordering. After the final annexation in 1885 Burma was incorporated into British India and later became a separate colony in 1937. Colonial rule introduced new cash-crop economies, modern education for a small elite, infrastructure, administrative bureaucracy, and large-scale migration of Indian labor and merchants into Rangoon and frontier areas. Colonial policies also reshaped ethnic relations, land tenure and center-periphery dynamics, seeding many grievances that affected postcolonial politics. Japanese occupation during World War II (1942-1945) disrupted colonial governance and accelerated nationalist mobilization.",
 			"keyEvents": [
-				{ "year": "1824–26", "title": "First Anglo-Burmese War", "description": "Initial British incursions reshape coastal and border control." },
-				{ "year": "1852", "title": "Second Anglo-Burmese War", "description": "British annex lower Burma including Rangoon." },
-				{ "year": "1885", "title": "Third Anglo-Burmese War and fall of Mandalay", "description": "End of the Konbaung dynasty; Burma brought under full British administration." },
-				{ "year": "1937", "title": "Separation from British India", "description": "Burma established as a distinct crown colony with its own governor." },
-				{ "year": "1942–1945", "title": "Japanese occupation", "description": "Wartime occupation and shifting allegiances disrupt colonial order and empower nationalist leaders." }
+				{
+					"year": "1824-26",
+					"title": "First Anglo-Burmese War",
+					"description": "Initial British incursions reshape coastal and border control."
+				},
+				{
+					"year": "1852",
+					"title": "Second Anglo-Burmese War",
+					"description": "British annex lower Burma including Rangoon."
+				},
+				{
+					"year": "1885",
+					"title": "Third Anglo-Burmese War and fall of Mandalay",
+					"description": "End of the Konbaung dynasty; Burma brought under full British administration."
+				},
+				{
+					"year": "1937",
+					"title": "Separation from British India",
+					"description": "Burma established as a distinct crown colony with its own governor."
+				},
+				{
+					"year": "1942-1945",
+					"title": "Japanese occupation",
+					"description": "Wartime occupation and shifting allegiances disrupt colonial order and empower nationalist leaders."
+				}
 			],
-			"notableFigures": [
-				"Aung San (nationalist leader emerging during WWII era)",
-				"U Nu (postwar political leader)"
-			]
+			"notableFigures": ["Aung San (nationalist leader emerging during WWII era)", "U Nu (postwar political leader)"]
 		},
 		"independence": {
 			"period": "1945 — 1948 (transition and sovereign formation)",
-			"description": "After World War II Burmese leaders negotiated with the British for transfer of power. Aung San emerged as the dominant independence leader and secured the Aung San–Attlee agreement for scheduled independence, but his assassination in July 1947 removed a pivotal figure. The Union of Burma formally achieved independence on January 4, 1948. Early independence years were marked by fragile parliamentary democracy, insurgencies by ethnic armed groups and communist insurgents, and contested center–periphery relations.",
+			"description": "After World War II Burmese leaders negotiated with the British for transfer of power. Aung San emerged as the dominant independence leader and secured the Aung San-Attlee agreement for scheduled independence, but his assassination in July 1947 removed a pivotal figure. The Union of Burma formally achieved independence on January 4, 1948. Early independence years were marked by fragile parliamentary democracy, insurgencies by ethnic armed groups and communist insurgents, and contested center-periphery relations.",
 			"keyEvents": [
-				{ "year": "July 19, 1947", "title": "Assassination of Aung San", "description": "Aung San and several colleagues murdered; pivotal blow to immediate postwar leadership." },
-				{ "year": "January 4, 1948", "title": "Independence", "description": "Union of Burma attains independence as a parliamentary democracy." },
-				{ "year": "Late 1940s", "title": "Early insurgencies", "description": "Communist and ethnic minority rebellions challenge central authority and stability." }
+				{
+					"year": "July 19, 1947",
+					"title": "Assassination of Aung San",
+					"description": "Aung San and several colleagues murdered; pivotal blow to immediate postwar leadership."
+				},
+				{
+					"year": "January 4, 1948",
+					"title": "Independence",
+					"description": "Union of Burma attains independence as a parliamentary democracy."
+				},
+				{
+					"year": "Late 1940s",
+					"title": "Early insurgencies",
+					"description": "Communist and ethnic minority rebellions challenge central authority and stability."
+				}
 			],
-			"notableFigures": [
-				"Aung San",
-				"U Nu"
-			]
+			"notableFigures": ["Aung San", "U Nu"]
 		},
 		"modern": {
 			"period": "1962 — Present",
 			"description": "A military coup on March 2, 1962 brought General Ne Win to power and initiated nearly five decades of military-dominated governance with socialist-oriented economic policies and strict political controls. The 1988 pro-democracy mass uprisings were violently suppressed, producing a new junta (SLORC/SPDC). The junta nullified the 1990 election won by the National League for Democracy. In the 2000s and 2010s limited political opening, constitutional changes and managed elections produced a quasi-civilian government and an NLD-led administration after 2015. International attention peaked during and after the 2017 military campaign in Rakhine State that triggered the mass exodus of Rohingya refugees and allegations of crimes against humanity. The February 1, 2021 coup by the Tatmadaw reversed the democratic opening, detained elected leaders, and precipitated widespread civil disobedience, the formation of parallel civilian and ethnic defense forces, nationwide armed conflict, and a severe humanitarian emergency. UN bodies, international NGOs and humanitarian agencies have documented extensive civilian casualties, detention, torture, forced displacement and attacks on civilian infrastructure since 2021.",
 			"keyEvents": [
-				{ "year": "March 2, 1962", "title": "Ne Win Coup", "description": "Military seizes power, dissolves parliamentary institutions and institutes 'Burmese Way to Socialism'." },
-				{ "year": "1988", "title": "Pro-democracy Uprisings (8888)", "description": "Mass protests crushed by military, leading to formation of State Law and Order Restoration Council (SLORC)." },
-				{ "year": "1990", "title": "General Election (annulled)", "description": "NLD wins large majority but junta refuses to cede power." },
-				{ "year": "2008", "title": "New constitution adopted (junta era)", "description": "Constitution reserved powerful roles for the military and set path for controlled political transition." },
-				{ "year": "2010–2015", "title": "Partial political opening", "description": "Steps toward limited civilian governance and 2015 NLD electoral victory." },
-				{ "year": "August 2017", "title": "Rakhine crisis", "description": "Large-scale military operations in Rakhine State force 700,000+ Rohingya to flee to Bangladesh amid allegations of atrocities." },
-				{ "year": "February 1, 2021", "title": "Tatmadaw coup d'état", "description": "Military detains civilian leaders and declares a year-long state of emergency; nationwide resistance ensues." },
-				{ "year": "2021–Present", "title": "Escalating civil war and humanitarian crisis", "description": "Armed resistance, ethnic group offensives and heavy military reprisals create massive displacement, casualties and economic collapse." }
+				{
+					"year": "March 2, 1962",
+					"title": "Ne Win Coup",
+					"description": "Military seizes power, dissolves parliamentary institutions and institutes 'Burmese Way to Socialism'."
+				},
+				{
+					"year": "1988",
+					"title": "Pro-democracy Uprisings (8888)",
+					"description": "Mass protests crushed by military, leading to formation of State Law and Order Restoration Council (SLORC)."
+				},
+				{
+					"year": "1990",
+					"title": "General Election (annulled)",
+					"description": "NLD wins large majority but junta refuses to cede power."
+				},
+				{
+					"year": "2008",
+					"title": "New constitution adopted (junta era)",
+					"description": "Constitution reserved powerful roles for the military and set path for controlled political transition."
+				},
+				{
+					"year": "2010-2015",
+					"title": "Partial political opening",
+					"description": "Steps toward limited civilian governance and 2015 NLD electoral victory."
+				},
+				{
+					"year": "August 2017",
+					"title": "Rakhine crisis",
+					"description": "Large-scale military operations in Rakhine State force 700,000+ Rohingya to flee to Bangladesh amid allegations of atrocities."
+				},
+				{
+					"year": "February 1, 2021",
+					"title": "Tatmadaw coup d'état",
+					"description": "Military detains civilian leaders and declares a year-long state of emergency; nationwide resistance ensues."
+				},
+				{
+					"year": "2021-Present",
+					"title": "Escalating civil war and humanitarian crisis",
+					"description": "Armed resistance, ethnic group offensives and heavy military reprisals create massive displacement, casualties and economic collapse."
+				}
 			],
 			"notableFigures": [
 				"General Ne Win",
@@ -8133,15 +8244,60 @@
 			]
 		},
 		"timeline": [
-			{ "year": "1st–9th c.", "era": "Ancient", "title": "Pyu city-states", "description": "Early urbanized polities in upper Irrawaddy adopt Buddhism and Indian scripts." },
-			{ "year": "c. 849–1287", "era": "Medieval", "title": "Pagan (Bagan) period", "description": "First major Burmese polity consolidates language, statecraft and Theravada Buddhism." },
-			{ "year": "16th c.", "era": "Imperial", "title": "Toungoo reunification and Bayinnaung's expansion", "description": "Burmese polity expands across mainland Southeast Asia." },
-			{ "year": "1752–1885", "era": "Imperial", "title": "Konbaung dynasty", "description": "Last great Burmese dynasty; later clashes with British imperial power." },
-			{ "year": "1885", "era": "Colonial", "title": "Annexation by Britain", "description": "Third Anglo-Burmese War ends Konbaung rule; Burma incorporated into British India." },
-			{ "year": "January 4, 1948", "era": "Independence", "title": "Union of Burma independent", "description": "Postwar negotiated independence amid internal insurgencies." },
-			{ "year": "March 2, 1962", "era": "Modern", "title": "Military coup", "description": "Ne Win seizes power and begins long military dominance." },
-			{ "year": "August 2017", "era": "Modern", "title": "Rakhine crisis and Rohingya exodus", "description": "Mass displacement and international condemnation." },
-			{ "year": "February 1, 2021", "era": "Modern", "title": "Tatmadaw coup", "description": "Military overthrow of elected government and start of intensified armed conflict." }
+			{
+				"year": "1st-9th c.",
+				"era": "Ancient",
+				"title": "Pyu city-states",
+				"description": "Early urbanized polities in upper Irrawaddy adopt Buddhism and Indian scripts."
+			},
+			{
+				"year": "c. 849-1287",
+				"era": "Medieval",
+				"title": "Pagan (Bagan) period",
+				"description": "First major Burmese polity consolidates language, statecraft and Theravada Buddhism."
+			},
+			{
+				"year": "16th c.",
+				"era": "Imperial",
+				"title": "Toungoo reunification and Bayinnaung's expansion",
+				"description": "Burmese polity expands across mainland Southeast Asia."
+			},
+			{
+				"year": "1752-1885",
+				"era": "Imperial",
+				"title": "Konbaung dynasty",
+				"description": "Last great Burmese dynasty; later clashes with British imperial power."
+			},
+			{
+				"year": "1885",
+				"era": "Colonial",
+				"title": "Annexation by Britain",
+				"description": "Third Anglo-Burmese War ends Konbaung rule; Burma incorporated into British India."
+			},
+			{
+				"year": "January 4, 1948",
+				"era": "Independence",
+				"title": "Union of Burma independent",
+				"description": "Postwar negotiated independence amid internal insurgencies."
+			},
+			{
+				"year": "March 2, 1962",
+				"era": "Modern",
+				"title": "Military coup",
+				"description": "Ne Win seizes power and begins long military dominance."
+			},
+			{
+				"year": "August 2017",
+				"era": "Modern",
+				"title": "Rakhine crisis and Rohingya exodus",
+				"description": "Mass displacement and international condemnation."
+			},
+			{
+				"year": "February 1, 2021",
+				"era": "Modern",
+				"title": "Tatmadaw coup",
+				"description": "Military overthrow of elected government and start of intensified armed conflict."
+			}
 		]
 	},
 	{
@@ -8783,6 +8939,757 @@
 				"era": "Modern",
 				"title": "50th anniversary",
 				"description": "Milestone reflecting development and future policy debates."
+			}
+		]
+	},
+	{
+		"name": "Greece",
+		"overview": "Greece's history begins with some of Europe's earliest civilizations and develops through Classical city-states, Hellenistic empires, Roman and Byzantine rule, long Ottoman domination, and the 19th-century creation of the modern Greek state. Ancient Greek culture produced foundational contributions to philosophy, science, art, literature, and political ideas such as democracy. Alexander the Great expanded Greek language and institutions across the eastern Mediterranean and Near East, creating the Hellenistic world. After centuries as a Byzantine Christian heartland and then under Ottoman rule, Greeks mounted a successful independence struggle (1821-1830) and established a modern kingdom in the 1830s. The 20th century included territorial expansion, population exchanges, occupation and civil war, military rule in the 1960s-70s, restoration of democracy in 1974, and integration into European institutions.",
+		"source": {
+			"label": "Wikipedia - History of Greece",
+			"url": "[https://en.wikipedia.org/wiki/History_of_Greece](https://en.wikipedia.org/wiki/History_of_Greece)",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Greece",
+				"https://www.britannica.com/place/Greece/History",
+				"https://www.bbc.co.uk/history/ancient/greeks/",
+				"https://www.britannica.com/biography/Alexander-the-Great"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Earliest Major Civilization",
+				"value": "Minoan and Mycenaean cultures (Bronze Age, c. 3000-1100 BCE)"
+			},
+			{
+				"label": "Classical Peak",
+				"value": "5th-4th centuries BCE (Athens, Sparta, Persian Wars, Golden Age of Athens)"
+			},
+			{ "label": "Alexander the Great", "value": "Reign 336-323 BCE; spread Hellenistic culture across a vast area" },
+			{
+				"label": "Byzantine Era",
+				"value": "c. 4th century CE to 1453 CE (Eastern Roman Empire centered on Constantinople)"
+			},
+			{
+				"label": "Ottoman Rule",
+				"value": "Most Greek lands under Ottoman control from mid-15th century to early 19th century"
+			},
+			{ "label": "War of Independence", "value": "Launched 1821; modern state recognized in 1830" },
+			{
+				"label": "Capital (modern)",
+				"value": "Athens (ancient city with continuous habitation since Neolithic periods)"
+			},
+			{ "label": "EU Membership", "value": "Joined European Community (EU) in 1981" }
+		],
+		"ancient": {
+			"period": "c. 3000 BCE - 323 BCE",
+			"description": "Bronze Age civilizations on the Aegean islands and mainland produced the Minoan and Mycenaean cultures. The collapse of Mycenaean palatial centers around 1100 BCE led to a Dark Age followed by the rise of the polis (city-state). From the Archaic period through the Classical Age, Greek city-states such as Athens and Sparta developed distinctive political systems, literature, philosophy, and artistic traditions. Landmark events include the Persian Wars (c. 499-449 BCE) which preserved Greek independence and the 5th-century BCE Athenian Golden Age of Pericles. In the late 4th century BCE, Macedon under Philip II and his son Alexander unified much of the Greek world and launched conquests that created the Hellenistic era.",
+			"keyEvents": [
+				{
+					"year": "c. 3000-1450 BCE",
+					"title": "Minoan Civilization",
+					"description": "Advanced Bronze Age culture centered on Crete noted for palaces at Knossos and maritime trade."
+				},
+				{
+					"year": "c. 1600-1100 BCE",
+					"title": "Mycenaean Greece",
+					"description": "Mainland palatial kingdoms, Linear B administration, and the world of Homeric tradition."
+				},
+				{
+					"year": "c. 8th-6th centuries BCE",
+					"title": "Archaic Polis Formation",
+					"description": "City-states form, colonization spreads Greek language and culture across the Mediterranean."
+				},
+				{
+					"year": "490-479 BCE",
+					"title": "Persian Wars",
+					"description": "Greek city-states repel Persian invasions at Marathon, Salamis, and Plataea."
+				},
+				{
+					"year": "431-404 BCE",
+					"title": "Peloponnesian War",
+					"description": "Long war between Athens and Sparta that reshapes the Greek world."
+				},
+				{
+					"year": "336-323 BCE",
+					"title": "Alexander's Conquests",
+					"description": "Alexander the Great defeats Persian Empire and spreads Hellenistic culture."
+				}
+			],
+			"notableFigures": [
+				"Homer (traditional author of the Iliad and Odyssey)",
+				"Socrates",
+				"Plato",
+				"Aristotle",
+				"Pericles",
+				"Alexander the Great"
+			]
+		},
+		"medieval": {
+			"period": "c. 4th century CE - 1453 CE",
+			"description": "Greece became a core region of the Eastern Roman or Byzantine Empire after late antiquity. Greek language and Orthodox Christianity defined the culture and institutions. Byzantine rule produced significant art, law, scholarship, and urban life centered on Constantinople. Over centuries the region faced Slavic settlements, Norman raids, Crusader states after 1204, and gradual territorial loss to rising powers. The fall of Constantinople in 1453 and earlier conquests left most Greek lands vulnerable to Ottoman expansion."
+		},
+		"imperial": {
+			"period": "c. 4th century BCE - c. 1st century BCE",
+			"description": "The Macedonian kingdom under Philip II and Alexander formed a powerful imperial structure that united many Greek city-states and overthrew the Persian Empire. The resulting Hellenistic kingdoms blended Greek and local forms across the eastern Mediterranean and Near East. Later the Roman Republic and Empire absorbed the Hellenistic world but preserved and transmitted Greek culture, language, and scholarship throughout the Mediterranean."
+		},
+		"colonial": {
+			"period": "mid-15th century - early 19th century",
+			"description": "Most Greek territories fell under Ottoman rule after successive conquests from the 14th through 17th centuries. Ottoman administration varied by region and period. Some islands and coastal cities remained under Venetian or other Western control for centuries. Ottoman rule altered landholding, taxation, and religious institutions but Greek communal and Orthodox structures preserved linguistic and cultural identity leading up to modern national revival movements in the 18th and early 19th centuries.",
+			"keyEvents": [
+				{
+					"year": "1453",
+					"title": "Fall of Constantinople",
+					"description": "Ottomans capture Constantinople, signaling the end of the Byzantine Empire."
+				},
+				{
+					"year": "1699-1797",
+					"title": "Venetian and Western Presence",
+					"description": "Venetian control over many Aegean islands and Ionian coast; influenced trade and culture."
+				}
+			]
+		},
+		"independence": {
+			"period": "1821 - 1832",
+			"description": "A combination of revolutionary societies, local uprisings, and international intervention produced the Greek War of Independence, conventionally dated from the outbreak in 1821. Philhellenic support and naval contests attracted European attention. The London Protocol of 1830 recognized an independent Greek state and the Treaty of Constantinople in 1832 established the Kingdom of Greece under Otto of Bavaria. Independence involved population displacements and negotiated borders that expanded over the 19th and early 20th centuries.",
+			"keyEvents": [
+				{
+					"year": "1821",
+					"title": "Greek Revolution Begins",
+					"description": "Widespread uprisings across mainland and islands prompt the war for independence from Ottoman rule."
+				},
+				{
+					"year": "1827",
+					"title": "Battle of Navarino",
+					"description": "Combined British-French-Russian fleet defeats Ottoman-Egyptian fleet, a decisive turning point."
+				},
+				{
+					"year": "1830",
+					"title": "Recognition of Independence",
+					"description": "Great Powers recognize Greek autonomy leading to formal establishment of the modern state."
+				},
+				{
+					"year": "1832",
+					"title": "Kingdom Established",
+					"description": "Treaty of Constantinople confirms the Kingdom of Greece under a European monarch."
+				}
+			],
+			"notableFigures": [
+				"Rigas Feraios (intellectual precursor)",
+				"Theodoros Kolokotronis (military leader)",
+				"Markos Botsaris (klepht chieftain and hero)",
+				"Ioannis Kapodistrias (first head of state)",
+				"King Otto of Greece"
+			]
+		},
+		"modern": {
+			"period": "1832 - Present",
+			"description": "The modern Greek state consolidated territory through wars, treaties, and population exchanges in the 19th and early 20th centuries. The 20th century brought the Balkan Wars, World War I and II, Axis occupation, civil war, postwar reconstruction, a military junta (1967-1974), restoration of democracy in 1974, and admission to the European Economic Community in 1981. Greece faced economic and political crises in the 21st century including a sovereign-debt crisis after 2009 and subsequent austerity politics, while remaining a democratic republic and EU member.",
+			"keyEvents": [
+				{
+					"year": "1912-1913",
+					"title": "Balkan Wars",
+					"description": "Greece expands territory significantly in the Aegean and the Balkans."
+				},
+				{
+					"year": "1923",
+					"title": "Population Exchange with Turkey",
+					"description": "Lausanne Treaty mandates exchange of Greek Orthodox and Muslim populations, reshaping demographics."
+				},
+				{
+					"year": "1940-1944",
+					"title": "World War II and Occupation",
+					"description": "Italian and German occupation followed by resistance movements and heavy wartime losses."
+				},
+				{
+					"year": "1946-1949",
+					"title": "Greek Civil War",
+					"description": "Conflict between government forces and communist insurgents shapes postwar politics."
+				},
+				{
+					"year": "1967-1974",
+					"title": "Military Junta",
+					"description": "Authoritarian rule by a group of colonels until popular and institutional resistance restores democracy."
+				},
+				{
+					"year": "1981",
+					"title": "EEC Membership",
+					"description": "Greece joins the European Economic Community, deepening ties with Western Europe."
+				},
+				{
+					"year": "2009-2018",
+					"title": "Debt Crisis",
+					"description": "Severe sovereign debt crisis leads to international bailouts and austerity measures."
+				}
+			],
+			"notableFigures": [
+				"Ioannis Kapodistrias",
+				"Eleftherios Venizelos",
+				"Constantine Karamanlis",
+				"Konstantinos Tsatsos",
+				"Georgios Papandreou",
+				"Melina Mercouri (cultural figure)",
+				"Constantine Mitsotakis"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 3000-1450 BCE",
+				"era": "Ancient",
+				"title": "Minoan Civilization",
+				"description": "Palatial centers on Crete and expansive maritime trade."
+			},
+			{
+				"year": "c. 1600-1100 BCE",
+				"era": "Ancient",
+				"title": "Mycenaean Kingdoms",
+				"description": "Palatial culture on the mainland remembered in epic tradition."
+			},
+			{
+				"year": "490-479 BCE",
+				"era": "Ancient",
+				"title": "Persian Wars",
+				"description": "Greek city-states defend independence from Persian invasions."
+			},
+			{
+				"year": "431-404 BCE",
+				"era": "Ancient",
+				"title": "Peloponnesian War",
+				"description": "Inter-Greek rivalry reshapes power balance."
+			},
+			{
+				"year": "336-323 BCE",
+				"era": "Imperial",
+				"title": "Alexander the Great",
+				"description": "Macedonian conquests spread Greek culture."
+			},
+			{
+				"year": "330-1453 CE",
+				"era": "Medieval",
+				"title": "Byzantine Era",
+				"description": "Eastern Roman Empire with Greek language and Orthodox Christianity."
+			},
+			{
+				"year": "1453",
+				"era": "Colonial",
+				"title": "Fall of Constantinople",
+				"description": "Ottoman ascendancy marks a new era for Greek lands."
+			},
+			{
+				"year": "1821",
+				"era": "Independence",
+				"title": "Greek Revolution",
+				"description": "Revolution against Ottoman rule begins."
+			},
+			{
+				"year": "1830-1832",
+				"era": "Independence",
+				"title": "State Recognition and Kingdom",
+				"description": "Great Powers recognize Greek independence; monarchy established."
+			},
+			{
+				"year": "1974",
+				"era": "Modern",
+				"title": "Restoration of Democracy",
+				"description": "Military junta falls; republic and democratic institutions restored."
+			}
+		]
+	},
+	{
+		"name": "Egypt",
+		"overview": "Egypt's history spans from one of the world's earliest and most continuous civilizations along the Nile to a modern nation-state. Ancient pharaonic Egypt created monumental architecture, centralized administration, hieroglyphic writing, and a distinct religious and cultural system that influenced the Mediterranean and Near East for millennia. Conquests by Persians, Greeks (Alexander and the Ptolemies), and Romans changed rulership but preserved Egyptian culture in new forms. The Islamic conquest in the 7th century transformed Egypt into a major center of Arabic language, Islamic scholarship, and trade. Ottoman rule began in the 16th century, followed by increasing European influence in the 19th century and British occupation. The 20th century saw formal nominal independence, the 1952 revolution, nationalization of the Suez Canal, and Egypt's central role in modern Arab politics.",
+		"source": {
+			"label": "Wikipedia - History of Egypt",
+			"url": "https://en.wikipedia.org/wiki/History_of_Egypt",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Egypt",
+				"https://www.britannica.com/place/Egypt/History",
+				"https://whc.unesco.org/en/statesparties/eg",
+				"https://www.bbc.co.uk/history/ancient/egyptians/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Early Unification", "value": "c. 3100 BCE (traditional date for unification under Narmer/Menes)" },
+			{ "label": "Old Kingdom (Pyramid Age)", "value": "c. 2686-2181 BCE" },
+			{
+				"label": "New Kingdom (Imperial Period)",
+				"value": "c. 1550-1070 BCE (pharaohs like Hatshepsut, Akhenaten, Tutankhamun, Ramses II)"
+			},
+			{ "label": "Hellenistic Period", "value": "332-30 BCE (Ptolemaic dynasty founded after Alexander)" },
+			{ "label": "Islamic Cairo Founded", "value": "Cairo established as Fatimid capital in 969 CE" },
+			{ "label": "Modern Revolution", "value": "1952 Revolution ends monarchy; republic declared 1953" },
+			{ "label": "National Day", "value": "July 23 (1952 Revolution anniversary)" }
+		],
+		"ancient": {
+			"period": "c. 3100 BCE - c. 332 BCE",
+			"description": "Ancient Egypt developed a centralized pharaonic state along the Nile River. Dynastic rule, monumental architecture (pyramids and temples), complex religious systems, and administrative institutions characterized society. The Old Kingdom produced the great pyramids at Giza. The Middle Kingdom saw reunification and cultural flowering. The New Kingdom expanded Egyptian power into Nubia and the Levant. Egyptian art, religion, and written records in hieroglyphs provide a long continuous documentary record rare in the ancient world.",
+			"keyEvents": [
+				{
+					"year": "c. 3100 BCE",
+					"title": "Traditional Unification",
+					"description": "Upper and Lower Egypt united under an early dynasty often attributed to Narmer or Menes."
+				},
+				{
+					"year": "c. 2600-2500 BCE",
+					"title": "Giza Pyramids",
+					"description": "Construction of the Great Pyramid of Khufu and other large funerary complexes."
+				},
+				{
+					"year": "c. 1550-1070 BCE",
+					"title": "New Kingdom",
+					"description": "Egypt as an imperial power under pharaohs like Thutmose III and Ramses II."
+				},
+				{
+					"year": "c. 1353-1336 BCE",
+					"title": "Amarna Period",
+					"description": "Religious reforms under Akhenaten and subsequent restoration under Tutankhamun."
+				}
+			],
+			"notableFigures": [
+				"Narmer/Menes (traditional unifier)",
+				"Imhotep (architect, Old Kingdom official)",
+				"Hatshepsut",
+				"Akhenaten",
+				"Tutankhamun",
+				"Ramses II"
+			]
+		},
+		"medieval": {
+			"period": "c. 641 CE - 1517 CE",
+			"description": "Following the Islamic conquest in the 7th century, Egypt became part of successive Islamic caliphates. The Arab period established Arabic language and Islam as dominant cultural forces. The Fatimid dynasty founded Cairo in 969 CE and made it a major political and cultural capital. Later the Ayyubid and Mamluk dynasties ruled Egypt, with the Mamluks resisting Mongol expansion and dominating trade between Mediterranean and Indian Ocean markets. Cairo became an intellectual and commercial center with renowned religious and educational institutions."
+		},
+		"colonial": {
+			"period": "1517 - 1922 (and de facto British occupation until 1952)",
+			"description": "The Ottoman Empire incorporated Egypt in 1517. Ottoman control was often mediated by local elites. In the early 19th century Muhammad Ali Pasha established a semi-autonomous modernizing dynasty, pursued military and economic reforms, and extended Egyptian control into Sudan and the Levant. European economic penetration accelerated with Suez Canal construction (completed 1869) and rising British interests. British forces occupied Egypt in 1882 and exercised strong control over governance while the country remained nominally Ottoman then nominally independent as a kingdom after 1922.",
+			"keyEvents": [
+				{
+					"year": "1517",
+					"title": "Ottoman Conquest",
+					"description": "Egypt becomes a province of the Ottoman Empire following defeat of the Mamluks."
+				},
+				{
+					"year": "1805-1848",
+					"title": "Muhammad Ali's Rule",
+					"description": "Muhammad Ali Pasha builds a modernizing state and military, founding a dynasty that lasted into the 20th century."
+				},
+				{
+					"year": "1869",
+					"title": "Suez Canal Opens",
+					"description": "Canal dramatically shortens Europe-Asia shipping routes and draws intense European strategic interest."
+				},
+				{
+					"year": "1882",
+					"title": "British Occupation",
+					"description": "British forces occupy Egypt; effective control lasts until mid-20th century despite formal nominal sovereignty."
+				}
+			],
+			"notableFigures": ["Muhammad Ali Pasha", "Ismail Pasha (modernizing khan/khedive mid-19th century)"]
+		},
+		"independence": {
+			"period": "1922 - 1953",
+			"description": "After World War I domestic nationalist pressure and changing international politics led Britain to unilaterally recognize Egyptian independence in 1922 and the creation of the Kingdom of Egypt. Real sovereignty remained limited by British military presence and control over the Suez. Growing nationalist sentiment culminated in the Free Officers' Revolution of 1952 which overthrew the monarchy. The republic was declared in 1953 and Gamal Abdel Nasser emerged as a dominant leader who pursued land reform, nationalization of the Suez Canal in 1956, and a pan-Arab political role.",
+			"keyEvents": [
+				{
+					"year": "1922",
+					"title": "Formal Independence (Kingdom of Egypt)",
+					"description": "Britain recognizes Egyptian independence but retains military and strategic privileges."
+				},
+				{
+					"year": "1952",
+					"title": "Free Officers' Revolution",
+					"description": "Military-led coup ends the monarchy and begins republican era."
+				},
+				{
+					"year": "1956",
+					"title": "Suez Crisis",
+					"description": "Nasser nationalizes the Suez Canal; Anglo-French-Israeli intervention is forced to withdraw under international pressure."
+				}
+			],
+			"notableFigures": ["Saad Zaghloul (nationalist leader)", "Gamal Abdel Nasser", "Anwar Sadat"]
+		},
+		"modern": {
+			"period": "1953 - Present",
+			"description": "The post-1952 republic pursued agrarian reform, state-led industrialization, Arab nationalism under Nasser, then economic liberalization under Sadat and Mubarak. Egypt signed a peace treaty with Israel in 1979 which reshaped regional relations. The late 20th century saw both modernization and authoritarian governance. Popular uprisings in 2011 toppled long-time president Hosni Mubarak. Subsequent political instability led to the 2013 removal of Mohamed Morsi and the rise of Abdel Fattah el-Sisi. Egypt remains a regionally influential state with major economic, security, and cultural roles, but faces challenges in governance, human rights, economic development, and demographic pressures.",
+			"keyEvents": [
+				{
+					"year": "1956",
+					"title": "Suez Crisis and Nationalization",
+					"description": "Nasser nationalizes the Suez Canal, asserting Egyptian sovereignty and prompting international crisis."
+				},
+				{
+					"year": "1979",
+					"title": "Egypt-Israel Peace Treaty",
+					"description": "Camp David Accords lead to a formal peace treaty between Egypt and Israel."
+				},
+				{
+					"year": "2011",
+					"title": "January 25 Revolution",
+					"description": "Mass protests force resignation of Hosni Mubarak and initiate a period of political transition."
+				},
+				{
+					"year": "2013",
+					"title": "Military Removal of Morsi",
+					"description": "President Mohamed Morsi is removed by military amid protests; political transition leads to Sisi's presidency."
+				}
+			],
+			"notableFigures": [
+				"Gamal Abdel Nasser",
+				"Anwar Sadat",
+				"Hosni Mubarak",
+				"Mohamed Morsi",
+				"Abdel Fattah el-Sisi",
+				"Cleopatra VII (Ptolemaic period)",
+				"Ramses II (ancient pharaoh)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 3100 BCE",
+				"era": "Ancient",
+				"title": "Traditional Unification of Egypt",
+				"description": "Upper and Lower Egypt united under an early dynastic ruler."
+			},
+			{
+				"year": "c. 2600-2500 BCE",
+				"era": "Ancient",
+				"title": "Pyramid Building",
+				"description": "Construction of key pyramids including those at Giza."
+			},
+			{
+				"year": "c. 1550-1070 BCE",
+				"era": "Ancient",
+				"title": "New Kingdom",
+				"description": "Egyptian imperial expansion and cultural flourishing."
+			},
+			{
+				"year": "332 BCE",
+				"era": "Ancient/Imperial",
+				"title": "Alexander Conquers Egypt",
+				"description": "Beginning of Hellenistic Ptolemaic rule."
+			},
+			{
+				"year": "30 BCE",
+				"era": "Imperial",
+				"title": "Roman Egypt",
+				"description": "Egypt becomes a province of the Roman Empire after Cleopatra and Mark Antony's defeat."
+			},
+			{
+				"year": "641 CE",
+				"era": "Medieval",
+				"title": "Islamic Conquest",
+				"description": "Arab-Muslim armies incorporate Egypt into the Islamic world."
+			},
+			{
+				"year": "969 CE",
+				"era": "Medieval",
+				"title": "Cairo Founded (Fatimid)",
+				"description": "Cairo established as a major capital and cultural center."
+			},
+			{
+				"year": "1517",
+				"era": "Colonial",
+				"title": "Ottoman Rule Begins",
+				"description": "Mamluk state incorporated into Ottoman Empire."
+			},
+			{
+				"year": "1882",
+				"era": "Colonial",
+				"title": "British Occupation",
+				"description": "European domination and strategic control around Suez intensify."
+			},
+			{
+				"year": "1952",
+				"era": "Independence",
+				"title": "Revolution Ends Monarchy",
+				"description": "Free Officers overthrow monarchy and pave way for republic."
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Arab Spring Protests",
+				"description": "Mass uprisings lead to political change and prolonged instability."
+			}
+		]
+	},
+	{
+		"name": "Turkey",
+		"overview": "Turkey's history spans prehistoric Anatolian cultures, classical Greek and Roman periods, Byzantine continuity, emergence and expansion of the Ottoman Empire, and the radical secular republican reform under Mustafa Kemal Atatürk after World War I. The Republic of Turkey was proclaimed in 1923 following the Turkish War of Independence. The 20th century saw multiple military interventions, rapid urbanization, economic modernization, and contested debates over secularism, minority rights, and Turkey's regional role. In the 21st century Turkey has been a major regional actor with significant domestic political polarization and evolving foreign policy priorities.",
+		"source": {
+			"label": "Wikipedia - History of Turkey",
+			"url": "https://en.wikipedia.org/wiki/History_of_Turkey",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Turkey",
+				"https://www.britannica.com/place/Turkey/History",
+				"https://en.wikipedia.org/wiki/Turkish_War_of_Independence",
+				"https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
+				"https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Modern Republic Founded", "value": "October 29, 1923" },
+			{ "label": "Abolition of the Sultanate", "value": "November 1, 1922" },
+			{ "label": "Abolition of the Caliphate", "value": "March 3, 1924" },
+			{
+				"label": "Capital (modern)",
+				"value": "Ankara (declared 1923; earlier imperial capital Constantinople/Istanbul)"
+			},
+			{ "label": "Primary imperial state", "value": "Ottoman Empire (c. 1299-1922)" },
+			{ "label": "Primary language", "value": "Turkish (Latin alphabet adopted 1928)" }
+		],
+		"ancient": {
+			"period": "Paleolithic - 4th century CE",
+			"description": "Anatolia hosted early farming communities and Bronze Age civilizations such as the Hittites. Classical Greek city-states and kingdoms developed on the Aegean and western coasts. Successive Persian, Macedonian (Alexander), and Hellenistic successor states influenced the region. Roman rule integrated Anatolia into imperial structures; Greek language and civic institutions remained strong in many coastal cities."
+		},
+		"medieval": {
+			"period": "4th century CE - 13th century",
+			"description": "The Eastern Roman (Byzantine) Empire preserved Greek-speaking Christian rule centered on Constantinople. From the 11th century onward Turkic migrations and the establishment of Muslim principalities transformed central and eastern Anatolia. The Battle of Manzikert (1071) opened Anatolia to substantial Turkic settlement and the eventual rise of Turkic polities that preceded the Ottoman state."
+		},
+		"imperial": {
+			"period": "c. 1299 - 1922",
+			"description": "The Ottoman Empire emerged around the late 13th century and expanded into Southeast Europe, the Middle East, and North Africa, reaching its apogee in the 16th century under Suleiman the Magnificent. Ottoman institutions combined Islamic law, millet communal structures, and a powerful military-administrative system. The empire gradually entered a long period of transformation and territorial contraction from the 17th century onward, culminating in defeat in World War I and subsequent partitioning plans by Allied powers."
+		},
+		"independence": {
+			"period": "1919 - 1923",
+			"description": "Following World War I and the Allied occupation and partition plans for Anatolia, the Turkish National Movement led by Mustafa Kemal (Atatürk) organized military and diplomatic resistance. The Turkish War of Independence (1919-1923) defeated occupying forces and irregulars. The Treaty of Lausanne (signed July 24, 1923) established internationally recognized borders for the new republic. The Grand National Assembly declared the Republic of Turkey on October 29, 1923, with Atatürk as its first president.",
+			"keyEvents": [
+				{
+					"year": "1919",
+					"title": "Start of National Movement",
+					"description": "Mustafa Kemal lands at Samsun and begins organizing resistance."
+				},
+				{
+					"year": "1922",
+					"title": "Abolition of the Sultanate",
+					"description": "Ottoman sultanate abolished; last sultan leaves Istanbul."
+				},
+				{
+					"year": "1923",
+					"title": "Treaty of Lausanne",
+					"description": "Treaty recognizes sovereignty and borders of modern Turkey."
+				},
+				{
+					"year": "1923",
+					"title": "Republic Proclaimed",
+					"description": "Republic of Turkey declared on October 29, 1923."
+				}
+			],
+			"notableFigures": ["Mustafa Kemal Atatürk", "Ismet İnönü", "Fevzi Çakmak"]
+		},
+		"modern": {
+			"period": "1923 - Present",
+			"description": "Atatürk implemented radical secular and legal reforms, language reform, and state-led modernization. Turkey transitioned through single-party rule to multi-party democracy after 1946. The republic experienced several military coups (1960, 1971, 1980, 1997 interventions) that reshaped politics. In recent decades Turkey has undergone rapid urbanization, economic liberalization, and an assertive foreign policy. Political polarization increased in the 2000s and 2010s with debates over secularism, Kurdish rights, and democratic institutions. Turkey remains a significant NATO member and regional power.",
+			"keyEvents": [
+				{
+					"year": "1928",
+					"title": "Alphabet Reform",
+					"description": "Turkish Latin alphabet adopted, replacing Ottoman script."
+				},
+				{
+					"year": "1950",
+					"title": "Multi-party Elections",
+					"description": "Democratic transition with free elections and peaceful transfer of power."
+				},
+				{
+					"year": "1960",
+					"title": "First Military Coup",
+					"description": "Military coup removes government; subsequent constitutional change."
+				},
+				{
+					"year": "1974",
+					"title": "Cyprus Intervention",
+					"description": "Turkish military intervenes in Cyprus following intercommunal violence."
+				},
+				{
+					"year": "2002",
+					"title": "AKP Elected",
+					"description": "Justice and Development Party rises to power; long-term political transformation follows."
+				}
+			],
+			"notableFigures": [
+				"Mustafa Kemal Atatürk",
+				"İsmet İnönü",
+				"Adnan Menderes",
+				"Turgut Özal",
+				"Recep Tayyip Erdoğan"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000-1200 BCE",
+				"era": "Ancient",
+				"title": "Hittite Empire",
+				"description": "Major Bronze Age Anatolian power centered in Hattusa."
+			},
+			{
+				"year": "1071",
+				"era": "Medieval",
+				"title": "Battle of Manzikert",
+				"description": "Seljuk victory opens Anatolia to Turkic settlement."
+			},
+			{
+				"year": "1299",
+				"era": "Imperial",
+				"title": "Ottoman Principality Founded",
+				"description": "Foundation date traditionally associated with Osman I."
+			},
+			{
+				"year": "1453",
+				"era": "Imperial",
+				"title": "Fall of Constantinople",
+				"description": "Ottoman conquest ends Byzantine imperial capital."
+			},
+			{
+				"year": "1919-1923",
+				"era": "Independence",
+				"title": "Turkish War of Independence",
+				"description": "Nationalist resistance to partition and occupation."
+			},
+			{
+				"year": "1923",
+				"era": "Independence",
+				"title": "Republic Proclaimed",
+				"description": "Republic of Turkey declared, Atatürk as president."
+			}
+		]
+	},
+	{
+		"name": "Syria",
+		"overview": "Syria's history covers ancient urban civilizations on the Fertile Crescent, successive empires (Assyrian, Babylonian, Persian, Hellenistic, Roman, Byzantine), early Islamic and medieval periods, long Ottoman rule, French mandate and 20th-century independence, and a turbulent modern era marked by coups, Arab nationalism, the 1967 Arab-Israeli War, long Ba'athist rule and the 2011 uprising that escalated into a prolonged civil war with major regional and international involvement. The conflict has produced deep humanitarian crises and major territorial and governance shifts.",
+		"source": {
+			"label": "Wikipedia - History of Syria",
+			"url": "https://en.wikipedia.org/wiki/History_of_Syria",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Syria",
+				"https://www.britannica.com/place/Syria",
+				"https://www.britannica.com/event/Syrian-Civil-War",
+				"https://en.wikipedia.org/wiki/Modern_history_of_Syria"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Ancient City-States", "value": "Aleppo and Damascus among oldest continuously inhabited cities" },
+			{ "label": "Ottoman Rule", "value": "1516-1918 (part of Ottoman Syria)" },
+			{ "label": "French Mandate", "value": "1920-1946 (League of Nations mandate)" },
+			{ "label": "Independence Recognized", "value": "April 17, 1946" },
+			{
+				"label": "Modern Conflict",
+				"value": "Uprising began March 2011; conflict escalated into civil war with regional intervention"
+			}
+		],
+		"ancient": {
+			"period": "c. 4th millennium BCE - 7th century CE",
+			"description": "Syria lay at the crossroads of Mesopotamia, Anatolia and the Levant. City-states and kingdoms such as Ebla, Ugarit, Aram-Damascus, and later empires like Assyria, Babylon and Achaemenid Persia shaped early Syrian history. Hellenistic and Roman rule brought new urban developments and integration into Mediterranean trade networks. Cities such as Damascus and Aleppo gained prominence and long urban histories."
+		},
+		"medieval": {
+			"period": "7th century - 1516",
+			"description": "The Islamic conquests incorporated Syria into the Rashidun and Umayyad caliphates. The Umayyad Caliphate (661-750) had its capital at Damascus and positioned Syria as a central province of the early Islamic world. Crusader states, Ayyubid rule under Saladin, and Mamluk administration preceded Ottoman conquest in the early 16th century."
+		},
+		"colonial": {
+			"period": "1516 - 1946",
+			"description": "Ottoman rule began in 1516 and continued until World War I. Following the Ottoman defeat, the Sykes-Picot arrangements and League of Nations mandate placed Syria under French control from 1920. The French mandate period featured administrative reorganization, local resistance, and growing nationalist movements. World War II and changing geopolitics led to withdrawal of French forces and Syrian independence in 1946.",
+			"keyEvents": [
+				{
+					"year": "1916",
+					"title": "Sykes-Picot Agreement",
+					"description": "Secret wartime agreement dividing Ottoman Arab provinces into British and French zones of influence."
+				},
+				{
+					"year": "1920",
+					"title": "French Occupation",
+					"description": "France imposes mandate; Arab Kingdom of Syria dissolved."
+				},
+				{
+					"year": "1946",
+					"title": "End of French Mandate",
+					"description": "French troops withdraw; full independence recognized in April 1946."
+				}
+			],
+			"notableFigures": [
+				"King Faisal (briefly led Arab Kingdom of Syria, 1920)",
+				"Saadallah al-Jabiri (nationalist politician)"
+			]
+		},
+		"independence": {
+			"period": "1946 - 1963",
+			"description": "Post-independence Syria experienced political instability with frequent coups and short-lived governments. A period of parliamentary politics gave way to increasing military influence. Syria participated in regional conflicts including the 1948 Arab-Israeli War and later realignments that set the stage for Ba'athist takeover."
+		},
+		"modern": {
+			"period": "1963 - Present",
+			"description": "The Ba'ath Party came to power in 1963. Hafez al-Assad seized control in 1970 and established long-term authoritarian rule marked by centralized control and regional interventionism. His son Bashar al-Assad succeeded him in 2000. In 2011 nationwide protests during the Arab Spring escalated into armed conflict as the government used force and multiple armed opposition groups and extremist organizations emerged. The Syrian civil war attracted regional and global actors and produced large-scale displacement, humanitarian catastrophe, and territorial fragmentation. International diplomatic efforts and shifting military dynamics have resulted in complex local arrangements and changing control of territory.",
+			"keyEvents": [
+				{
+					"year": "1948",
+					"title": "Arab-Israeli War",
+					"description": "Syria participates in the 1948 war following Israeli declaration of independence."
+				},
+				{
+					"year": "1958-1961",
+					"title": "United Arab Republic",
+					"description": "Political union with Egypt under Nasser, later dissolved."
+				},
+				{
+					"year": "1963",
+					"title": "Ba'athist Coup",
+					"description": "Ba'ath Party seizes power, shaping Syrian politics for decades."
+				},
+				{
+					"year": "1970",
+					"title": "Hafez al-Assad's Corrective Movement",
+					"description": "Hafez al-Assad consolidates power and begins long presidency."
+				},
+				{
+					"year": "2011",
+					"title": "Uprising and Civil War",
+					"description": "Protests escalate into prolonged civil war with major humanitarian consequences."
+				}
+			],
+			"notableFigures": [
+				"Hafez al-Assad",
+				"Bashar al-Assad",
+				"Riyad al-Solh (early independence leader)",
+				"Faisal I (briefly King of Syria in 1920)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 2500-1200 BCE",
+				"era": "Ancient",
+				"title": "City-States and Kingdoms",
+				"description": "Ebla, Ugarit and other early urban polities flourish."
+			},
+			{
+				"year": "661-750",
+				"era": "Medieval",
+				"title": "Umayyad Caliphate",
+				"description": "Damascus serves as the Umayyad capital and a center of the early Islamic world."
+			},
+			{
+				"year": "1516",
+				"era": "Colonial",
+				"title": "Ottoman Conquest",
+				"description": "Syria incorporated into Ottoman imperial administration."
+			},
+			{
+				"year": "1920",
+				"era": "Colonial",
+				"title": "French Mandate Begins",
+				"description": "Syria placed under French League of Nations mandate."
+			},
+			{
+				"year": "1946",
+				"era": "Independence",
+				"title": "Full Independence Recognized",
+				"description": "End of French mandate and international recognition of sovereignty."
+			},
+			{
+				"year": "1963",
+				"era": "Modern",
+				"title": "Ba'ath Party Rule",
+				"description": "Ba'athists seize power and reshape state institutions."
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Uprising and Civil War",
+				"description": "Nationwide protests escalate into prolonged armed conflict."
 			}
 		]
 	}
