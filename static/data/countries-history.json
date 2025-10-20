@@ -9692,5 +9692,332 @@
 				"description": "Nationwide protests escalate into prolonged armed conflict."
 			}
 		]
+	},
+	{
+		"name": "South Africa",
+		"overview": "South Africa's history spans deep prehistoric occupation, multiple pre-colonial societies, European settlement and competing colonial claims, the rise of Afrikaner republics, British conquest, 20th-century institutionalized racial segregation under apartheid, and a negotiated transition to majority rule that produced a democratic constitutional state in 1994. The country is marked by economic integration into global commodity markets, intense internal conflicts over land and labor, and ongoing challenges with inequality, governance, and service delivery.",
+		"source": {
+			"label": "Wikipedia - History of South Africa",
+			"url": "https://en.wikipedia.org/wiki/History_of_South_Africa",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_South_Africa",
+				"https://www.britannica.com/place/South-Africa/History",
+				"https://whc.unesco.org/en/statesparties/za",
+				"https://www.sahistory.org.za"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Union formed", "value": "May 31, 1910 (Union of South Africa)" },
+			{ "label": "Republic proclaimed", "value": "May 31, 1961" },
+			{ "label": "First democratic elections", "value": "April 27, 1994" },
+			{ "label": "Capital(s)", "value": "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)" },
+			{ "label": "Major languages", "value": "11 official languages including Afrikaans, English, isiZulu, isiXhosa" },
+			{ "label": "UNESCO Sites", "value": "12 (as listed by UNESCO and national records, 2024)" }
+		],
+		"pre-colonial": {
+			"period": "c. 200,000 BP - 1652 CE",
+			"description": "Southern Africa contains some of humanity's oldest archaeological sites. San (Khoisan) hunter-gatherers and Khoikhoi pastoralists occupied the region for millennia. From the first millennium CE Bantu-speaking farming groups migrated into southern Africa, bringing new crops, ironworking, and settled chiefdoms. Complex societies developed in parts of the interior and north-eastern lowveld, exemplified by regional trade networks and state formations in southern Africa from the first millennium AD through the late medieval period. By the 18th century distinct polities such as the Xhosa and Zulu had formed in the southeast.",
+			"keyEvents": [
+				{
+					"year": "c. 200,000 BP-100,000 BP",
+					"title": "Early hominin and Middle Stone Age occupation",
+					"description": "Archaeological record in caves and sites across the region records early human activity and Middle Stone Age technology."
+				},
+				{
+					"year": "c. 1st millennium CE",
+					"title": "Bantu expansion",
+					"description": "Bantu-speaking agriculturalists spread into the area introducing farming, ironworking and new social structures."
+				},
+				{
+					"year": "c. 900-1300",
+					"title": "Regional chiefdoms and trade",
+					"description": "Trade networks link southern Africa to the Indian Ocean world and inland polities develop complex social systems."
+				}
+			],
+			"notableFigures": [
+				"San and Khoikhoi community leaders (unnamed in historical record)",
+				"Early Bantu-speaking chiefs and lineage heads"
+			]
+		},
+		"colonial": {
+			"period": "1652 - 1910",
+			"description": "European colonization began with the Dutch East India Company's provisioning station at the Cape (1652). Dutch settlers (later called Afrikaners or Boers) expanded inland. In the 19th century British imperial interests grew. Mineral discoveries including diamonds (1867) and gold (1886) transformed the economy and intensified competition between British authorities and Afrikaner republics (Orange Free State and South African Republic/Transvaal). The nineteenth century also saw the Mfecane upheavals and the Anglo-Zulu War (1879). Two Anglo-Boer wars (1880-1881; 1899-1902) culminated in British victory and set the stage for political union under British dominion.",
+			"keyEvents": [
+				{
+					"year": "1652",
+					"title": "Cape station founded",
+					"description": "Jan van Riebeeck establishes a Dutch VOC refreshment station at Table Bay."
+				},
+				{
+					"year": "1814",
+					"title": "British control of the Cape",
+					"description": "The Cape Colony is transferred to Britain after Napoleonic Wars."
+				},
+				{
+					"year": "1830s-1840s",
+					"title": "Great Trek",
+					"description": "Groups of Dutch-speaking settlers migrate inland to escape British rule, forming Boer republics."
+				},
+				{
+					"year": "1867-1886",
+					"title": "Diamond and gold discoveries",
+					"description": "Kimberley diamonds and Witwatersrand gold reshape economy and attract global capital."
+				},
+				{
+					"year": "1899-1902",
+					"title": "Second Anglo-Boer War",
+					"description": "War ends with British victory and concentration-camp policy; heavy civilian toll."
+				}
+			],
+			"notableFigures": ["Jan van Riebeeck", "Shaka Zulu", "Paul Kruger", "Cecil Rhodes"]
+		},
+		"independence": {
+			"period": "1910 - 1948",
+			"description": "The Union of South Africa was created in 1910 as a self-governing dominion of the British Empire by uniting the Cape, Natal, Transvaal and Orange River colonies. Political arrangements favored white minority rule. Segregationary legislation accumulated across the early 20th century culminating in expanded restrictions on land, labor and political rights for the black majority. These dynamics produced political movements of both settler and African origin that contested the shape of the state.",
+			"keyEvents": [
+				{
+					"year": "1913",
+					"title": "Native Land Act",
+					"description": "Legislation restricts African land ownership to reserves comprising a small fraction of territory, shaping racialized land distribution for decades."
+				},
+				{
+					"year": "1910",
+					"title": "Union of South Africa",
+					"description": "Four colonies are unified under the South Africa Act of 1909 into the Union."
+				}
+			],
+			"notableFigures": ["Sol Plaatje", "John Dube", "General Jan Smuts"]
+		},
+		"modern": {
+			"period": "1948 - Present",
+			"description": "The National Party's 1948 election victory inaugurated apartheid, a system of legally enforced racial segregation and political exclusion. Opposition grew through African, Coloured and Indian political movements and trade unions. Repression intensified mid-20th century. International isolation and internal resistance escalated in the 1970s-1980s. Negotiations in the late 1980s and early 1990s led to the release of political prisoners, unbanning of liberation movements and a negotiated transition. South Africa adopted a progressive constitution and held multiracial elections in 1994. Since then the country has pursued reconciliation, reconstruction and development while facing persistent inequality, high unemployment and governance challenges.",
+			"keyEvents": [
+				{
+					"year": "1948",
+					"title": "Apartheid begins",
+					"description": "National Party formalizes apartheid laws expanding segregation and creating Bantustans/homelands."
+				},
+				{
+					"year": "1960",
+					"title": "Sharpeville Massacre",
+					"description": "Police kill demonstrators; state repression increases and many anti-apartheid organizations are banned."
+				},
+				{
+					"year": "1964",
+					"title": "Rivonia Trial and Mandela imprisonment",
+					"description": "Nelson Mandela and others are sentenced to long imprisonment for sabotage and conspiracy."
+				},
+				{
+					"year": "1976",
+					"title": "Soweto Uprising",
+					"description": "Student protests against education policies trigger nationwide unrest."
+				},
+				{
+					"year": "1990",
+					"title": "Release of Nelson Mandela",
+					"description": "Mandela released after 27 years; negotiations begin for a democratic transition."
+				},
+				{
+					"year": "1994",
+					"title": "First democratic elections",
+					"description": "All-race elections bring Nelson Mandela and the African National Congress to power."
+				}
+			],
+			"notableFigures": ["Nelson Mandela", "Oliver Tambo", "Desmond Tutu", "FW de Klerk", "Hendrik Verwoerd"]
+		},
+		"timeline": [
+			{
+				"year": "1652",
+				"era": "Colonial",
+				"title": "Cape station founded",
+				"description": "Dutch VOC establishes supply station at Table Bay."
+			},
+			{
+				"year": "1838",
+				"era": "Colonial",
+				"title": "Battle of Blood River / Mfecane period",
+				"description": "Period of upheaval and the consolidation of Zulu power and Boer migrations inland."
+			},
+			{
+				"year": "1867",
+				"era": "Colonial",
+				"title": "Diamond discovery",
+				"description": "Diamonds at Kimberley spark mining boom."
+			},
+			{
+				"year": "1899-1902",
+				"era": "Colonial",
+				"title": "Second Anglo-Boer War",
+				"description": "War between British Empire and Boer republics ends in British victory."
+			},
+			{
+				"year": "1910",
+				"era": "Independence",
+				"title": "Union formed",
+				"description": "Four colonies unite under the Union of South Africa."
+			},
+			{
+				"year": "1948",
+				"era": "Modern",
+				"title": "Apartheid instituted",
+				"description": "National Party implements formal apartheid policies."
+			},
+			{
+				"year": "1994",
+				"era": "Modern",
+				"title": "Democratic transition",
+				"description": "First multiracial elections establish new constitutional order."
+			}
+		]
+	},
+	{
+		"name": "Ethiopia",
+		"overview": "Ethiopia has one of Africa's longest continuous histories. It is notable for ancient state formation in Aksum, early adoption of Christianity, medieval kingdoms, a long Solomonic imperial tradition, successful resistance to European colonization culminating at the Battle of Adwa (1896), brief Italian occupation (1936-1941), a 20th-century imperial modernization drive under Menelik II and Haile Selassie, a socialist military period under the Derg (1974-1991), and post-1991 federal restructuring. The country is a center of diverse languages, religions and archaeological importance for human evolution.",
+		"source": {
+			"label": "Wikipedia - History of Ethiopia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Ethiopia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Ethiopia",
+				"https://www.britannica.com/place/Ethiopia",
+				"https://whc.unesco.org/en/statesparties/et",
+				"https://www.battleofadwa.org"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Ancient kingdom", "value": "Kingdom of Aksum c. 1st-10th centuries CE" },
+			{ "label": "Adoption of Christianity", "value": "c. 4th century CE (King Ezana of Aksum)" },
+			{ "label": "Battle of Adwa", "value": "March 1, 1896 (defeat of Italian invasion forces)" },
+			{ "label": "Brief Italian occupation", "value": "1936-1941 (Italian East Africa)" },
+			{ "label": "Derg junta", "value": "1974-1991 (socialist military rule)" },
+			{ "label": "Capital", "value": "Addis Ababa (founded c. 1886; imperial and modern capital)" },
+			{ "label": "UNESCO Sites", "value": "12 (Ethiopia's UNESCO listings include Lalibela and Simien Mountains)" }
+		],
+		"ancient": {
+			"period": "c. 1st century BCE - 10th century CE",
+			"description": "The Kingdom of Aksum, centered in northern Ethiopia and Eritrea, was a regional power controlling Red Sea trade routes. Aksum adopted Christianity in the 4th century and left monumental stelae, coinage and written inscriptions. Aksumite civilization created a distinct Christian liturgical tradition and extensive ecclesiastical architecture. After Aksum's decline between the 7th and 10th centuries, successor polities and regional kingdoms continued Ethiopian state traditions.",
+			"keyEvents": [
+				{
+					"year": "c. 1st century BCE-1st century CE",
+					"title": "Aksumite rise",
+					"description": "Aksum becomes a major trading state linking Africa, Arabia and the Mediterranean."
+				},
+				{
+					"year": "c. 330-360",
+					"title": "Christianization under Ezana",
+					"description": "King Ezana adopts Christianity, establishing a lasting state religion and church institutions."
+				}
+			],
+			"notableFigures": ["King Ezana of Aksum", "Aksumite rulers and trading elites"]
+		},
+		"medieval": {
+			"period": "c. 12th - 16th centuries",
+			"description": "Medieval Ethiopia saw dynastic changes including the Zagwe dynasty and the reassertion of the Solomonic dynasty in the 13th century. Rock-hewn churches at Lalibela date to the Zagwe era. Ethiopia engaged in periodic conflicts with Muslim sultanates in the Horn, notably the wars with the Adal Sultanate in the 16th century that drew Portuguese military assistance to the Ethiopian emperors.",
+			"keyEvents": [
+				{
+					"year": "c. 1100s-1200s",
+					"title": "Zagwe dynasty and Lalibela",
+					"description": "Stone churches at Lalibela constructed as a 'New Jerusalem' pilgrimage site."
+				},
+				{
+					"year": "1529-1543",
+					"title": "Ethiopian-Adal war (Gama wars)",
+					"description": "Conflicts under Ahmad ibn Ibrahim al-Ghazi nearly destabilize the highland Christian kingdom; Portuguese assistance helps repel invaders."
+				}
+			],
+			"notableFigures": ["King Lalibela", "Emperors of the Solomonic line (various)"]
+		},
+		"imperial": {
+			"period": "c. 1855 - 1974",
+			"description": "In the late 19th century Emperor Menelik II expanded and modernized Ethiopia, incorporating much of the modern state and introducing limited modern institutions. Ethiopia defeated an Italian colonial expedition at Adwa in 1896, securing recognition of sovereignty. Haile Selassie (reigned 1930-1974, interrupted by Italian occupation) pursued modernization, international diplomacy and centralization, joining the League of Nations and later the United Nations. The imperial period combined modernization with feudal land relations and limited political reform.",
+			"keyEvents": [
+				{
+					"year": "1896",
+					"title": "Battle of Adwa",
+					"description": "Emperor Menelik II's forces decisively defeat Italian invasion, preserving Ethiopian sovereignty."
+				},
+				{
+					"year": "1935-1936",
+					"title": "Italian invasion and occupation",
+					"description": "Italy invades; Ethiopia is incorporated into Italian East Africa until liberation in 1941 with Allied assistance."
+				},
+				{
+					"year": "1930-1974",
+					"title": "Haile Selassie's reign",
+					"description": "Haile Selassie promotes centralization, modernization and international diplomacy; later overthrown by the Derg."
+				}
+			],
+			"notableFigures": ["Menelik II", "Emperor Haile Selassie I", "Empress Zewditu"]
+		},
+		"modern": {
+			"period": "1974 - Present",
+			"description": "The Derg military junta overthrew Haile Selassie in 1974, nationalized land and instituted socialist policies. The period saw internal repression, Red Terror campaigns, and devastating famines in the 1980s. In 1991 a coalition led by the Ethiopian People's Revolutionary Democratic Front (EPRDF) ousted the Derg. Ethiopia adopted an ethnically based federal constitution (1995). In the 21st century Ethiopia has pursued economic reforms and infrastructural projects while also experiencing internal conflicts and tensions over federal arrangements. In 2018 Abiy Ahmed became prime minister and initiated political reforms and a peace agreement with Eritrea that won the 2019 Nobel Peace Prize, but the country has also faced armed conflicts in the Tigray region from 2020 onward with complex humanitarian and political consequences.",
+			"keyEvents": [
+				{
+					"year": "1974",
+					"title": "Derg seizes power",
+					"description": "Emperor Haile Selassie is deposed; military committee (Derg) governs and later consolidates power under Mengistu."
+				},
+				{
+					"year": "1983-1985",
+					"title": "Famine and international response",
+					"description": "Widespread famine draws global attention and humanitarian aid; famine exacerbated by conflict and policy failures."
+				},
+				{
+					"year": "1991",
+					"title": "Derg overthrown",
+					"description": "EPRDF forces enter Addis Ababa; transition to federal republic begins."
+				},
+				{
+					"year": "2018",
+					"title": "Abiy Ahmed becomes prime minister",
+					"description": "Initiates political and economic reforms and signs peace with Eritrea; later faces internal security crises."
+				}
+			],
+			"notableFigures": ["Mengistu Haile Mariam", "Meles Zenawi", "Abiy Ahmed"]
+		},
+		"timeline": [
+			{
+				"year": "c. 4th century CE",
+				"era": "Ancient",
+				"title": "Christianization of Aksum",
+				"description": "Aksum adopts Christianity under King Ezana."
+			},
+			{
+				"year": "c. 12th-13th century",
+				"era": "Medieval",
+				"title": "Lalibela churches",
+				"description": "Monolithic rock-cut churches constructed under the Zagwe dynasty."
+			},
+			{
+				"year": "1896",
+				"era": "Imperial",
+				"title": "Battle of Adwa",
+				"description": "Ethiopian forces defeat Italy, securing independence from colonial rule."
+			},
+			{
+				"year": "1936-1941",
+				"era": "Imperial",
+				"title": "Italian occupation",
+				"description": "Italy occupies Ethiopia during Mussolini's campaign; liberation follows Allied operations."
+			},
+			{
+				"year": "1974",
+				"era": "Modern",
+				"title": "Derg revolution",
+				"description": "Military junta overthrows emperor and nationalizes property."
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "EPRDF takeover",
+				"description": "End of Derg rule and start of federal republic formation."
+			},
+			{
+				"year": "2018",
+				"era": "Modern",
+				"title": "Reform and regional tensions",
+				"description": "Abiy Ahmed begins reforms and peace with Eritrea; internal conflicts intensify in parts of the country."
+			}
+		]
 	}
 ]
