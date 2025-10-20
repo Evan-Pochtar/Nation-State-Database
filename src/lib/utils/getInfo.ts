@@ -1,4 +1,4 @@
-import type { DataSources, CountryData } from '$lib/utils/types';
+import type { DataSources, CountryData, GeoFeature } from '$lib/utils/types';
 import { normalizeSources } from '$lib/utils/helpers';
 
 export const indicators = {
@@ -551,4 +551,106 @@ export async function fetchHistoryDataModule(params: {
 
 	historyInFlight.set(name, job);
 	return job;
+}
+
+let loadingBatch = false;
+
+export async function batchLoadCountryData(
+	countries: GeoFeature[],
+	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
+): Promise<Record<string, { data?: CountryData; loading: boolean; error?: string }>> {
+	if (loadingBatch) {
+		console.log('Batch loading already in progress');
+		return infoCache;
+	}
+
+	loadingBatch = true;
+	const cache = { ...infoCache };
+
+	try {
+		const localResp = await fetch('/data/countries-data.json');
+		if (!localResp.ok) {
+			console.error('Failed to load countries-data.json');
+			return infoCache;
+		}
+		const localJson = await localResp.json();
+		
+		const dataMap = new Map<string, any>();
+		if (Array.isArray(localJson)) {
+			localJson.forEach((entry: any) => {
+				if (entry.name) {
+					dataMap.set(entry.name.toLowerCase(), entry);
+				}
+			});
+		} else {
+			Object.values(localJson).forEach((entry: any) => {
+				if (entry.name) {
+					dataMap.set(entry.name.toLowerCase(), entry);
+				}
+			});
+		}
+
+		let loaded = 0;
+		const total = countries.length;
+		countries.forEach((country) => {
+			const name = country.properties?.name;
+			if (!name) return;
+			if (cache[name]?.data) return;
+
+			const localEntry = dataMap.get(name.toLowerCase());
+			if (localEntry) {
+				const sources = normalizeSources(localEntry.sources ?? {}, name);
+				const data: CountryData = {
+					name: localEntry.name ?? name,
+					cca2ID: localEntry.cca2ID ?? 'UNKNOWN',
+					officialName: localEntry.officialName ?? 'UNKNOWN',
+					flag: localEntry.flag ?? 'UNKNOWN',
+					coatOfArms: localEntry.coatOfArms ?? 'UNKNOWN',
+					independent: localEntry.independent ?? false,
+					region: localEntry.region ?? 'UNKNOWN',
+					subregion: localEntry.subregion ?? 'UNKNOWN',
+					area: localEntry.area ?? -1,
+					languages: localEntry.languages ?? [],
+					capital: localEntry.capital ?? '—',
+					population: localEntry.population ?? -1,
+					gini: localEntry.gini ?? -1,
+					summary: localEntry.summary ?? '—',
+					politics: localEntry.politics ?? 'Data not provided.',
+					economics: localEntry.economics ?? 'Data not provided.',
+					sources
+				};
+				cache[name] = { data, loading: false };
+				loaded++;
+			} else {
+				cache[name] = { 
+					loading: false, 
+					error: 'No data available for this country' 
+				};
+			}
+		});
+		console.log(`Loaded data for ${loaded}/${total} countries from local JSON`);
+	} catch (err) {
+		console.error('Error batch loading country data:', err);
+	} finally {
+		loadingBatch = false;
+	}
+
+	return cache;
+}
+
+export function getLoadProgress(
+	countries: GeoFeature[],
+	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
+): { loaded: number; total: number; percentage: number } {
+	const total = countries.length;
+	const loaded = countries.filter(c => {
+		const name = c.properties?.name;
+		return name && infoCache[name]?.data;
+	}).length;
+
+	return {
+		loaded,
+		total,
+		percentage: total > 0 ? Math.round((loaded / total) * 100) : 0
+	};
 }

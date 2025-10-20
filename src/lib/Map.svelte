@@ -2,12 +2,16 @@
 	import { onMount, onDestroy, tick, untrack } from 'svelte';
 	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
-	import type { GeoFeature, CountryData } from '$lib/utils/types';
-	import { fetchCountryInfoByName } from '$lib/utils/getInfo';
+	import type { GeoFeature, CountryData, ChloroplethData, DataType } from '$lib/utils/types';
+	import { fetchCountryInfoByName, batchLoadCountryData, getLoadProgress } from '$lib/utils/getInfo';
 	import InfoPanel from '$lib/InfoPanel.svelte';
 	import MapSettings from '$lib/components/MapSettings.svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import ChloroplethLegend from '$lib/components/ChloroplethLegend.svelte';
+	import DataLoadingIndicator from '$lib/components/DataLoadingIndicator.svelte';
+	import ChloroplethTooltip from '$lib/components/ChloroplethTooltip.svelte';
+	import { buildChloroplethData, getChloroplethColor } from '$lib/utils/chloroplethUtils';
 
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
@@ -15,8 +19,6 @@
 	let activeTab: string = 'overview';
 	let currentProjection: string = 'naturalEarth1';
 	let settingsOpen = false;
-
-	let currentTheme: 'dark' | 'light' | 'colorful' = 'dark';
 
 	let leftPct = 0.36,
 		tempLeftPct = leftPct,
@@ -66,6 +68,17 @@
 	let copyLinkSuccess = false;
 	let copyLinkTimeout: number | null = null;
 
+	let currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita' = 'dark';
+	let chloroplethData: ChloroplethData | null = null;
+	let showLegend = false;
+	let dataLoading = false;
+	let dataLoadProgress = { loaded: 0, total: 0, percentage: 0 };
+	let tooltipVisible = false;
+	let tooltipCountry = '';
+	let tooltipValue: number | null = null;
+	let tooltipX = 0;
+	let tooltipY = 0;
+
 	const projectionCache = new Map<string, () => d3.GeoProjection>();
 	function getProjection(type: string): d3.GeoProjection {
 		if (!projectionCache.has(type)) {
@@ -93,7 +106,7 @@
 		initZoom();
 	}
 
-	function handleThemeChange(theme: 'dark' | 'light' | 'colorful') {
+	function handleThemeChange(theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
 		currentTheme = theme;
 		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
 			buildColorfulPalette();
@@ -317,8 +330,41 @@
 		if (target instanceof SVGPathElement) {
 			const index = parseInt(target.dataset.index || '-1');
 			hoveredCountry = index >= 0 ? index : null;
+
+			// Show tooltip in chloropleth mode
+			if (isChloroplethTheme && hoveredCountry !== null && hoveredCountry >= 0) {
+				const country = countries[hoveredCountry];
+				const name = getCountryName(country);
+				const cachedData = infoCache[name]?.data;
+
+				if (cachedData) {
+					tooltipCountry = name;
+					tooltipX = e.clientX;
+					tooltipY = e.clientY;
+
+					// Get the appropriate value based on current theme
+					if (currentTheme === 'gini') {
+						tooltipValue = cachedData.gini > 0 ? cachedData.gini : null;
+					} else if (currentTheme === 'gdpPerCapita') {
+						const gdpData = cachedData.economics?.['NY.GDP.PCAP.CD'];
+						if (gdpData && Array.isArray(gdpData) && gdpData.length > 0) {
+							const sorted = [...gdpData].sort((a, b) => b.year - a.year);
+							tooltipValue = sorted[0]?.value ?? null;
+						} else {
+							tooltipValue = null;
+						}
+					}
+
+					tooltipVisible = true;
+				} else {
+					tooltipVisible = false;
+				}
+			} else {
+				tooltipVisible = false;
+			}
 		} else {
 			hoveredCountry = null;
+			tooltipVisible = false;
 		}
 	}
 
@@ -496,6 +542,7 @@
 
 	function hoverReset() {
 		hoveredCountry = null;
+		tooltipVisible = false;
 	}
 
 	function handleCopyLink() {
@@ -517,8 +564,81 @@
 			goto('/', { replaceState: false, noScroll: true, keepFocus: true });
 		}
 	}
+
+	$: isChloroplethTheme = ['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme);
+
+	$: if (isChloroplethTheme && countries.length > 0) {
+		const progress = getLoadProgress(countries, infoCache);
+		dataLoadProgress = progress;
+
+		if (progress.percentage < 50 && !dataLoading) {
+			dataLoading = true;
+			batchLoadCountryData(countries, infoCache).then((newCache) => {
+				infoCache = newCache;
+				dataLoading = false;
+				chloroplethData = buildChloroplethData(countries, infoCache, currentTheme as DataType);
+			});
+		} else {
+			chloroplethData = buildChloroplethData(countries, infoCache, currentTheme as DataType);
+		}
+		showLegend = true;
+	} else {
+		chloroplethData = null;
+		showLegend = false;
+	}
+
+	function getCountryFillColor(index: number, isSelected: boolean = false, isHovered: boolean = false): string {
+		if (isChloroplethTheme && chloroplethData) {
+			const baseColor = getChloroplethColor(index, chloroplethData, '#475569');
+			return baseColor;
+		}
+
+		// Fall back to existing theme logic
+		if (currentTheme === 'colorful') {
+			return countryColorMap[index] ?? '#E6EEF8';
+		} else if (currentTheme === 'light') {
+			return isSelected ? '#DCEAF6' : '#E6EEF8';
+		} else {
+			// dark theme
+			return isHovered ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)';
+		}
+	}
+
+	function getCountryStroke(isSelected: boolean, isHovered: boolean): { color: string; width: number } {
+		if (isChloroplethTheme) {
+			return {
+				color: isSelected ? '#fbbf24' : isHovered ? '#fff' : '#1e293b',
+				width: isSelected ? 2.5 : isHovered ? 1.8 : 0.8
+			};
+		}
+
+		if (currentTheme === 'dark') {
+			return {
+				color: 'rgba(255,255,255,0.4)',
+				width: 0.5
+			};
+		} else if (currentTheme === 'colorful') {
+			return {
+				color: '#000',
+				width: isHovered ? 2 : 1.2
+			};
+		} else {
+			return {
+				color: '#000',
+				width: isHovered ? 2 : 1
+			};
+		}
+	}
+
+	function handleMouseMove(e: MouseEvent) {
+		if (tooltipVisible && isChloroplethTheme) {
+			tooltipX = e.clientX;
+			tooltipY = e.clientY;
+		}
+	}
 </script>
 
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class={`bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden font-sans ` +
 		(currentTheme === 'dark'
@@ -526,6 +646,7 @@
 			: currentTheme === 'light'
 				? 'from-slate-50 to-white text-slate-900'
 				: 'from-sky-900 to-sky-800 text-white')}
+	on:mousemove={handleMouseMove}
 >
 	{#if selectedFeature}
 		<InfoPanel
@@ -573,6 +694,27 @@
 				onToggle={toggleSettings}
 				onThemeChange={handleThemeChange}
 			/>
+			<DataLoadingIndicator
+				visible={dataLoading && isChloroplethTheme}
+				loaded={dataLoadProgress.loaded}
+				total={dataLoadProgress.total}
+				percentage={dataLoadProgress.percentage}
+			/>
+
+			<ChloroplethLegend
+				{chloroplethData}
+				dataType={currentTheme as DataType}
+				visible={showLegend && isChloroplethTheme && !selectedFeature}
+			/>
+
+			<ChloroplethTooltip
+				visible={tooltipVisible && isChloroplethTheme && !selectedFeature}
+				countryName={tooltipCountry}
+				value={tooltipValue}
+				dataType={currentTheme as DataType}
+				x={tooltipX}
+				y={tooltipY}
+			/>
 			<svg
 				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
 				preserveAspectRatio="xMidYMid meet"
@@ -585,7 +727,7 @@
 				on:mouseleave={hoverReset}
 				style="contain: paint layout;"
 			>
-				{#if currentTheme === 'colorful' || currentTheme === 'light'}
+				{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
 					<defs>
 						<linearGradient id="waterBase" x1="0%" y1="0%" x2="0%" y2="100%">
 							{#if currentTheme === 'colorful'}
@@ -602,37 +744,29 @@
 					<rect x="0" y="0" width="100%" height="100%" fill={'url(#waterBase)'}></rect>
 				{/if}
 
+				{#if isChloroplethTheme}
+					<rect x="0" y="0" width="100%" height="100%" fill="#0f172a"></rect>
+				{/if}
+
 				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
 					{#if countries.length && pathGenerator}
 						{#each countries as c, i (i)}
-							{#if currentTheme === 'colorful'}
-								<path
-									d={getPath(c, pathGenerator, i)}
-									data-index={i}
-									style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1.2}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-									role="button"
-									aria-label={getCountryName(c)}
-									class="cursor-pointer"
-								/>
-							{:else if currentTheme === 'light'}
-								<path
-									d={getPath(c, pathGenerator, i)}
-									data-index={i}
-									style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 2 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-									role="button"
-									aria-label={getCountryName(c)}
-									class="cursor-pointer"
-								/>
-							{:else}
-								<path
-									d={getPath(c, pathGenerator, i)}
-									data-index={i}
-									class="cursor-pointer stroke-white/40"
-									style={`fill: ${hoveredCountry === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)'}; stroke-width: 0.5px;`}
-									role="button"
-									aria-label={getCountryName(c)}
-								/>
-							{/if}
+							{@const fillColor = getCountryFillColor(i, false, hoveredCountry === i)}
+							{@const stroke = getCountryStroke(false, hoveredCountry === i)}
+
+							<path
+								d={getPath(c, pathGenerator, i)}
+								data-index={i}
+								fill={fillColor}
+								stroke={stroke.color}
+								stroke-width={stroke.width}
+								stroke-linejoin="round"
+								opacity={hoveredCountry === i ? 0.9 : 1}
+								role="button"
+								aria-label={getCountryName(c)}
+								class="cursor-pointer transition-all duration-200"
+								class:animate-pulse={isChloroplethTheme && hoveredCountry === i}
+							/>
 						{/each}
 					{/if}
 				</g>
@@ -650,73 +784,57 @@
 				on:mouseleave={hoverReset}
 				style="contain: paint layout;"
 			>
-				{#if currentTheme === 'colorful' || currentTheme === 'light'}
+				{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
 					<rect x="0" y="0" width={rightWidth} height={rightHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
 					></rect>
+				{/if}
+
+				{#if isChloroplethTheme}
+					<rect x="0" y="0" width={rightWidth} height={rightHeight} fill="#0f172a" opacity="0.3"></rect>
 				{/if}
 
 				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
 					{#if countries.length && focusPathGenerator}
 						{#each countries as c, i (i)}
 							{#if c !== selectedFeature}
-								{#if currentTheme === 'colorful'}
-									<path
-										d={getPath(c, focusPathGenerator, i)}
-										data-index={i}
-										style={`fill: ${countryColorMap[i] ?? '#E6EEF8'}; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 1}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-										role="button"
-										aria-label={getCountryName(c)}
-										class="cursor-pointer"
-									/>
-								{:else if currentTheme === 'light'}
-									<path
-										d={getPath(c, focusPathGenerator, i)}
-										data-index={i}
-										style={`fill: #E6EEF8; stroke: #000; stroke-width: ${hoveredCountry === i ? 1.5 : 0.8}; stroke-linejoin: round; opacity: ${hoveredCountry === i ? 0.9 : 1};`}
-										role="button"
-										aria-label={getCountryName(c)}
-										class="cursor-pointer"
-									/>
-								{:else}
-									<path
-										d={getPath(c, focusPathGenerator, i)}
-										data-index={i}
-										class="cursor-pointer stroke-white/50"
-										style={`fill: rgba(255,255,255,0.02); stroke-width: 0.3px;`}
-										role="button"
-										aria-label={getCountryName(c)}
-									/>
-								{/if}
+								{@const fillColor = getCountryFillColor(i, false, hoveredCountry === i)}
+								{@const stroke = getCountryStroke(false, hoveredCountry === i)}
+
+								<path
+									d={getPath(c, focusPathGenerator, i)}
+									data-index={i}
+									fill={fillColor}
+									stroke={stroke.color}
+									stroke-width={stroke.width}
+									stroke-linejoin="round"
+									opacity={hoveredCountry === i ? 0.9 : isChloroplethTheme ? 0.6 : 1}
+									role="button"
+									aria-label={getCountryName(c)}
+									class="cursor-pointer transition-all duration-200"
+								/>
 							{/if}
 						{/each}
 
 						{#if selectedFeature}
 							{@const idx = getCountryIndex(selectedFeature)}
 							{#if idx >= 0}
-								{#if currentTheme === 'colorful'}
-									<path
-										d={getPath(selectedFeature, focusPathGenerator, idx)}
-										data-index={idx}
-										style={`fill: ${countryColorMap[idx] ?? '#E6EEF8'}; stroke: #000; stroke-width: 1.8; stroke-linejoin: round; opacity: 0.95;`}
-										role="button"
-										aria-label={getCountryName(selectedFeature)}
-										class="cursor-pointer"
-									/>
-								{:else if currentTheme === 'light'}
-									<path
-										d={getPath(selectedFeature, focusPathGenerator, idx)}
-										data-index={idx}
-										style="fill: #DCEAF6; stroke: #000; stroke-width: 1.8; stroke-linejoin: round;"
-										role="button"
-										aria-label={getCountryName(selectedFeature)}
-										class="cursor-pointer"
-									/>
-								{:else}
-									<path
-										d={getPath(selectedFeature, focusPathGenerator, idx)}
-										class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px]"
-									/>
-								{/if}
+								{@const fillColor = getCountryFillColor(idx, true, false)}
+								{@const stroke = getCountryStroke(true, false)}
+
+								<path
+									d={getPath(selectedFeature, focusPathGenerator, idx)}
+									data-index={idx}
+									fill={fillColor}
+									stroke={stroke.color}
+									stroke-width={stroke.width}
+									stroke-linejoin="round"
+									opacity="0.95"
+									role="button"
+									aria-label={getCountryName(selectedFeature)}
+									class="cursor-pointer"
+									class:animate-pulse={!isChloroplethTheme}
+									class:drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]={isChloroplethTheme}
+								/>
 							{:else}
 								<path
 									d={getPath(selectedFeature, focusPathGenerator, -1)}

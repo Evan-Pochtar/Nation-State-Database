@@ -1,5 +1,6 @@
 export type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
 export type SourceValue = string | { label: string; url?: string };
+export type DataType = 'gini' | 'gdp' | 'gdpPerCapita';
 
 export type DataSources = {
 	flag?: SourceValue;
@@ -97,4 +98,11 @@ export interface HistoryData {
 		title: string;
 		description: string;
 	}>;
+}
+
+export interface ChloroplethData {
+	min: number;
+	max: number;
+	values: Map<string, number>;
+	colorScale: d3.ScaleSequential<string>;
 }
