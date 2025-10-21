@@ -574,7 +574,7 @@ export async function batchLoadCountryData(
 			return infoCache;
 		}
 		const localJson = await localResp.json();
-		
+
 		const dataMap = new Map<string, any>();
 		if (Array.isArray(localJson)) {
 			localJson.forEach((entry: any) => {
@@ -622,9 +622,9 @@ export async function batchLoadCountryData(
 				cache[name] = { data, loading: false };
 				loaded++;
 			} else {
-				cache[name] = { 
-					loading: false, 
-					error: 'No data available for this country' 
+				cache[name] = {
+					loading: false,
+					error: 'No data available for this country'
 				};
 			}
 		});
@@ -643,7 +643,7 @@ export function getLoadProgress(
 	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
 ): { loaded: number; total: number; percentage: number } {
 	const total = countries.length;
-	const loaded = countries.filter(c => {
+	const loaded = countries.filter((c) => {
 		const name = c.properties?.name;
 		return name && infoCache[name]?.data;
 	}).length;

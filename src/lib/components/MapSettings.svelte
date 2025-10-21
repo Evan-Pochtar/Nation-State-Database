@@ -13,7 +13,9 @@
 
 	export let onToggle: (() => void) | undefined;
 	export let onProjectionChange: ((projection: string) => void) | undefined;
-	export let onThemeChange: ((theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') => void) | undefined;
+	export let onThemeChange:
+		| ((theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') => void)
+		| undefined;
 
 	const projections = [
 		{ id: 'naturalEarth1', name: 'Natural Earth', description: 'Balanced world view' },
@@ -30,7 +32,12 @@
 	const dataThemes = [
 		{ id: 'gini', name: 'Gini Index', preview: GiniPreview, description: 'Income inequality' },
 		{ id: 'gdp', name: 'GDP', preview: GDPPreview, description: 'Total economic output' },
-		{ id: 'gdpPerCapita', name: 'GDP per Capita', preview: GDPPerCapitaPreview, description: 'Economic output per person' }
+		{
+			id: 'gdpPerCapita',
+			name: 'GDP per Capita',
+			preview: GDPPerCapitaPreview,
+			description: 'Economic output per person'
+		}
 	];
 
 	function selectProjection(projectionId: string) {
@@ -85,7 +92,7 @@
 
 	{#if settingsOpen}
 		<div
-			class="absolute top-0 left-[72px] w-[440px] max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden rounded-3xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
+			class="absolute top-0 left-[72px] max-h-[calc(100vh-80px)] w-[440px] overflow-x-hidden overflow-y-auto rounded-3xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
 			transition:fly={{ x: -20, duration: 300 }}
 		>
 			<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
@@ -122,11 +129,11 @@
 					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 				</div>
 
-				<div class="flex items-center justify-center gap-4 mb-4">
+				<div class="mb-4 flex items-center justify-center gap-4">
 					{#each baseThemes as theme}
 						<button
 							type="button"
-							class="group flex cursor-pointer flex-col items-center gap-2 focus:outline-none transition-transform hover:scale-105"
+							class="group flex cursor-pointer flex-col items-center gap-2 transition-transform hover:scale-105 focus:outline-none"
 							on:click={() => setTheme(theme.id as any)}
 							aria-pressed={currentTheme === theme.id}
 						>
@@ -134,17 +141,27 @@
 								<img
 									src={theme.preview}
 									alt="{theme.name} preview"
-									class="h-20 w-20 rounded-md border object-cover shadow-md transition-all border-emerald-400/80={currentTheme === theme.id} border-white/10={currentTheme !== theme.id} shadow-[0_0_20px_rgba(34,197,94,0.3)]={currentTheme === theme.id}"
+									class="h-20 w-20 rounded-md border object-cover shadow-md transition-all border-emerald-400/80={currentTheme ===
+										theme.id} border-white/10={currentTheme !==
+										theme.id} shadow-[0_0_20px_rgba(34,197,94,0.3)]={currentTheme === theme.id}"
 								/>
 								{#if currentTheme === theme.id}
-									<div class="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-emerald-400 flex items-center justify-center animate-scale-in">
-										<svg class="h-3 w-3 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+									<div
+										class="animate-scale-in absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400"
+									>
+										<svg
+											class="h-3 w-3 text-slate-900"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+											stroke-width="3"
+										>
 											<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
 										</svg>
 									</div>
 								{/if}
 							</div>
-							<div 
+							<div
 								class="text-sm transition-colors"
 								class:text-emerald-400={currentTheme === theme.id}
 								class:text-slate-400={currentTheme !== theme.id}
@@ -156,7 +173,7 @@
 					{/each}
 				</div>
 
-				<div class="border-t border-slate-700/30 pt-4 mt-4">
+				<div class="mt-4 border-t border-slate-700/30 pt-4">
 					<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
 						<div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
 						<h3 class="m-0 text-xs font-semibold tracking-wide text-purple-400/90">DATA VISUALIZATIONS</h3>
@@ -167,7 +184,8 @@
 						{#each dataThemes as theme}
 							<button
 								type="button"
-								class="group flex cursor-pointer items-start gap-3 rounded-lg p-3 text-left transition-all hover:bg-purple-400/6 focus:outline-none bg-purple-400/10={currentTheme === theme.id} border-purple-400/60={currentTheme === theme.id} border-l-2={currentTheme === theme.id}"
+								class="group flex cursor-pointer items-start gap-3 rounded-lg p-3 text-left transition-all hover:bg-purple-400/6 focus:outline-none bg-purple-400/10={currentTheme ===
+									theme.id} border-purple-400/60={currentTheme === theme.id} border-l-2={currentTheme === theme.id}"
 								on:click={() => setTheme(theme.id as any)}
 								aria-pressed={currentTheme === theme.id}
 							>
@@ -175,26 +193,36 @@
 									<img
 										src={theme.preview}
 										alt="{theme.name} preview"
-										class="h-16 w-16 rounded border object-cover shadow-sm transition-all border-purple-400/60={currentTheme === theme.id} border-slate-600/40={currentTheme !== theme.id}"
+										class="h-16 w-16 rounded border object-cover shadow-sm transition-all border-purple-400/60={currentTheme ===
+											theme.id} border-slate-600/40={currentTheme !== theme.id}"
 									/>
 									{#if currentTheme === theme.id}
-										<div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-purple-400 flex items-center justify-center animate-scale-in">
-											<svg class="h-2.5 w-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+										<div
+											class="animate-scale-in absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-purple-400"
+										>
+											<svg
+												class="h-2.5 w-2.5 text-white"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+												stroke-width="3"
+											>
 												<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
 											</svg>
 										</div>
 									{/if}
 								</div>
-								<div class="flex-1 min-w-0">
-									<div 
-										class="text-sm font-medium transition-colors mb-1 text-purple-400={currentTheme === theme.id} text-slate-50/90={currentTheme !== theme.id}"
+								<div class="min-w-0 flex-1">
+									<div
+										class="mb-1 text-sm font-medium transition-colors text-purple-400={currentTheme ===
+											theme.id} text-slate-50/90={currentTheme !== theme.id}"
 									>
 										{theme.name}
 									</div>
 									<div class="text-xs text-slate-400/70">{theme.description}</div>
 									{#if currentTheme === theme.id}
 										<div class="mt-2 flex items-center gap-1.5 text-xs text-purple-400/80">
-											<div class="h-1.5 w-1.5 rounded-full bg-purple-400/80 animate-pulse"></div>
+											<div class="h-1.5 w-1.5 animate-pulse rounded-full bg-purple-400/80"></div>
 											Active visualization
 										</div>
 									{/if}
@@ -204,12 +232,22 @@
 					</div>
 
 					{#if isDataTheme}
-						<div class="mt-4 rounded-lg bg-purple-400/5 border border-purple-400/20 p-3">
+						<div class="mt-4 rounded-lg border border-purple-400/20 bg-purple-400/5 p-3">
 							<div class="flex items-start gap-2">
-								<svg class="h-4 w-4 text-purple-400/80 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								<svg
+									class="mt-0.5 h-4 w-4 flex-shrink-0 text-purple-400/80"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
 								</svg>
-								<div class="text-xs text-slate-300/80 leading-relaxed">
+								<div class="text-xs leading-relaxed text-slate-300/80">
 									Data shown uses the most recent available year from World Bank and REST Countries APIs.
 								</div>
 							</div>

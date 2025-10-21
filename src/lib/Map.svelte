@@ -11,7 +11,13 @@
 	import ChloroplethLegend from '$lib/components/ChloroplethLegend.svelte';
 	import DataLoadingIndicator from '$lib/components/DataLoadingIndicator.svelte';
 	import ChloroplethTooltip from '$lib/components/ChloroplethTooltip.svelte';
-	import { buildChloroplethData, getChloroplethColor } from '$lib/utils/chloroplethUtils';
+	import {
+		buildChloroplethData,
+		getChloroplethColor,
+		getGDPPerCapita,
+		getGDP,
+		getGini
+	} from '$lib/utils/chloroplethUtils';
 
 	let countries: GeoFeature[] = [];
 	let selectedFeature: GeoFeature | null = null;
@@ -331,7 +337,6 @@
 			const index = parseInt(target.dataset.index || '-1');
 			hoveredCountry = index >= 0 ? index : null;
 
-			// Show tooltip in chloropleth mode
 			if (isChloroplethTheme && hoveredCountry !== null && hoveredCountry >= 0) {
 				const country = countries[hoveredCountry];
 				const name = getCountryName(country);
@@ -342,17 +347,18 @@
 					tooltipX = e.clientX;
 					tooltipY = e.clientY;
 
-					// Get the appropriate value based on current theme
-					if (currentTheme === 'gini') {
-						tooltipValue = cachedData.gini > 0 ? cachedData.gini : null;
-					} else if (currentTheme === 'gdpPerCapita') {
-						const gdpData = cachedData.economics?.['NY.GDP.PCAP.CD'];
-						if (gdpData && Array.isArray(gdpData) && gdpData.length > 0) {
-							const sorted = [...gdpData].sort((a, b) => b.year - a.year);
-							tooltipValue = sorted[0]?.value ?? null;
-						} else {
+					switch (currentTheme) {
+						case 'gini':
+							tooltipValue = getGini(cachedData);
+							break;
+						case 'gdpPerCapita':
+							tooltipValue = getGDPPerCapita(cachedData);
+							break;
+						case 'gdp':
+							tooltipValue = getGDP(cachedData);
+							break;
+						default:
 							tooltipValue = null;
-						}
 					}
 
 					tooltipVisible = true;
@@ -593,13 +599,11 @@
 			return baseColor;
 		}
 
-		// Fall back to existing theme logic
 		if (currentTheme === 'colorful') {
 			return countryColorMap[index] ?? '#E6EEF8';
 		} else if (currentTheme === 'light') {
 			return isSelected ? '#DCEAF6' : '#E6EEF8';
 		} else {
-			// dark theme
 			return isHovered ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)';
 		}
 	}
@@ -638,7 +642,6 @@
 	}
 </script>
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class={`bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden font-sans ` +
 		(currentTheme === 'dark'
@@ -647,6 +650,7 @@
 				? 'from-slate-50 to-white text-slate-900'
 				: 'from-sky-900 to-sky-800 text-white')}
 	on:mousemove={handleMouseMove}
+	role="application"
 >
 	{#if selectedFeature}
 		<InfoPanel
