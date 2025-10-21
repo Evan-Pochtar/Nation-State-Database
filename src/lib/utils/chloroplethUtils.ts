@@ -62,7 +62,12 @@ export function buildChloroplethData(
 				break;
 		}
 
-		if (value !== null && !isNaN(value)) {
+		if (value !== null && !isNaN(value) && value > 0) {
+			// Apply log transformation for GDP data
+			if (dataType === 'gdp' || dataType === 'gdpPerCapita') {
+				value = Math.log10(value);
+			}
+
 			values.set(idx.toString(), value);
 			if (value < min) min = value;
 			if (value > max) max = value;
@@ -72,7 +77,6 @@ export function buildChloroplethData(
 	if (min === Infinity) min = 0;
 	if (max === -Infinity) max = 100;
 	if (min === max) max = min + 1;
-
 	let colorScale: d3.ScaleSequential<string>;
 
 	switch (dataType) {
@@ -106,21 +110,26 @@ export function getChloroplethColor(
 	return chloroplethData.colorScale(value);
 }
 
-export function formatDataValue(value: number, dataType: DataType): string {
+export function formatDataValue(value: number, dataType: DataType, isLogScale: boolean = false): string {
+	let displayValue = value;
+	if (isLogScale && (dataType === 'gdp' || dataType === 'gdpPerCapita')) {
+		displayValue = Math.pow(10, value);
+	}
+
 	switch (dataType) {
 		case 'gdp':
-			if (value >= 1e12) {
-				return `$${(value / 1e12).toFixed(2)}T`;
-			} else if (value >= 1e9) {
-				return `$${(value / 1e9).toFixed(2)}B`;
-			} else if (value >= 1e6) {
-				return `$${(value / 1e6).toFixed(2)}M`;
+			if (displayValue >= 1e12) {
+				return `$${(displayValue / 1e12).toFixed(2)}T`;
+			} else if (displayValue >= 1e9) {
+				return `$${(displayValue / 1e9).toFixed(2)}B`;
+			} else if (displayValue >= 1e6) {
+				return `$${(displayValue / 1e6).toFixed(2)}M`;
 			}
-			return `$${value.toFixed(0)}`;
+			return `$${displayValue.toFixed(0)}`;
 		case 'gdpPerCapita':
-			return `$${value.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+			return `$${displayValue.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
 		case 'gini':
-			return value.toFixed(1);
+			return displayValue.toFixed(1);
 	}
 }
 

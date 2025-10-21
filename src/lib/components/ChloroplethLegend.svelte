@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import type { ChloroplethData, DataType } from '$lib/utils/types';
-	import { formatDataValue, getDataLabel } from '$lib/utils/chloroplethUtils';
+	import { getDataLabel } from '$lib/utils/chloroplethUtils';
 
 	export let chloroplethData: ChloroplethData | null = null;
 	export let dataType: DataType;
@@ -9,6 +9,7 @@
 
 	$: gradientStops = chloroplethData ? generateGradientStops(chloroplethData) : [];
 	$: legendValues = chloroplethData ? generateLegendValues(chloroplethData) : [];
+	$: isLogScale = dataType === 'gdp' || dataType === 'gdpPerCapita';
 
 	function generateGradientStops(data: ChloroplethData): Array<{ offset: string; color: string }> {
 		const stops = [];
@@ -26,11 +27,30 @@
 		return stops;
 	}
 
+	function formatValue(value: number): string {
+		const displayValue = isLogScale ? Math.pow(10, value) : value;
+
+		if (dataType === 'gdp') {
+			if (displayValue >= 1e12) {
+				return `$${(displayValue / 1e12).toFixed(2)}T`;
+			} else if (displayValue >= 1e9) {
+				return `$${(displayValue / 1e9).toFixed(2)}B`;
+			} else if (displayValue >= 1e6) {
+				return `$${(displayValue / 1e6).toFixed(2)}M`;
+			}
+			return `$${displayValue.toFixed(0)}`;
+		} else if (dataType === 'gdpPerCapita') {
+			return `$${displayValue.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+		} else {
+			return displayValue.toFixed(1);
+		}
+	}
+
 	function generateLegendValues(data: ChloroplethData): Array<{ value: number; label: string }> {
 		const values = [
-			{ value: data.min, label: formatDataValue(data.min, dataType) },
-			{ value: (data.min + data.max) / 2, label: formatDataValue((data.min + data.max) / 2, dataType) },
-			{ value: data.max, label: formatDataValue(data.max, dataType) }
+			{ value: data.min, label: formatValue(data.min) },
+			{ value: (data.min + data.max) / 2, label: formatValue((data.min + data.max) / 2) },
+			{ value: data.max, label: formatValue(data.max) }
 		];
 
 		return values;
@@ -45,6 +65,9 @@
 		<div class="flex items-center gap-4">
 			<div class="min-w-[120px] text-sm font-semibold text-slate-200">
 				{getDataLabel(dataType)}
+				{#if isLogScale}
+					<span class="block text-xs font-normal text-slate-400">(Log Scale)</span>
+				{/if}
 			</div>
 
 			<div class="relative flex flex-col gap-2">
@@ -80,15 +103,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-	@keyframes pulse-glow {
-		0%,
-		100% {
-			box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-		}
-		50% {
-			box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
-		}
-	}
-</style>
