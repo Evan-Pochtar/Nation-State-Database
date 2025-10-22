@@ -33,6 +33,35 @@ const latestOnlySet = new Set([
 	indicators.healthExpenditure
 ]);
 
+let countriesDataCache: any = null;
+let countriesDataPromise: Promise<any> | null = null;
+async function getCountriesData(): Promise<any> {
+	if (countriesDataCache) return countriesDataCache;
+	if (countriesDataPromise) return countriesDataPromise;
+
+	countriesDataPromise = (async () => {
+		try {
+			const localResp = await fetch('/data/countries-data.json');
+			if (!localResp.ok) {
+				console.warn('No local countries-data.json accessible:', localResp.status);
+				return null;
+			}
+			const localJson = await localResp.json();
+			countriesDataCache = localJson;
+			return localJson;
+		} catch (err) {
+			console.warn('Error loading /data/countries-data.json', err);
+			return null;
+		}
+	})();
+
+	return countriesDataPromise;
+}
+
+export async function preloadCountryData(): Promise<void> {
+	await getCountriesData();
+}
+
 export async function fetchCountryInfoByName(
 	name: string | '',
 	infoCache:
@@ -40,26 +69,19 @@ export async function fetchCountryInfoByName(
 		| undefined
 ) {
 	if (!infoCache) infoCache = {};
-	if (!name || infoCache[name]?.data || infoCache[name]?.loading) return;
+	if (!name || infoCache[name]?.data) return infoCache;
+	if (infoCache[name]?.loading) return infoCache;
+
 	infoCache[name] = { loading: true };
-
 	try {
+		const countriesData = await getCountriesData();
 		let localEntry: any = null;
-		try {
-			const localResp = await fetch('/data/countries-data.json');
-			if (localResp.ok) {
-				const localJson = await localResp.json();
-				localEntry = Array.isArray(localJson)
-					? (localJson.find((e) => e.name === name) ?? null)
-					: (localJson[name] ?? Object.values(localJson).find((e: any) => e.name === name) ?? null);
-			} else {
-				console.warn('No local countries-data.json accessible:', localResp.status);
-			}
-		} catch (err) {
-			console.warn('Error loading /data/countries-data.json', err);
-		}
 
-		console.log('Local entry for', name, localEntry);
+		if (countriesData) {
+			localEntry = Array.isArray(countriesData)
+				? (countriesData.find((e) => e.name === name) ?? null)
+				: (countriesData[name] ?? Object.values(countriesData).find((e: any) => e.name === name) ?? null);
+		}
 
 		let cca2ID = localEntry?.cca2ID ?? null;
 		let officialName = localEntry?.officialName ?? null;
@@ -77,101 +99,106 @@ export async function fetchCountryInfoByName(
 		const economics = localEntry?.economics ?? null;
 		let sources = normalizeSources(localEntry?.sources ?? {}, name);
 
-		if (!summary) {
-			try {
-				const controller = new AbortController();
-				const timeoutId = setTimeout(() => controller.abort(), 5000);
-				const endpoint = 'https://en.wikipedia.org/w/api.php';
-				const params = new URLSearchParams({
-					action: 'query',
-					format: 'json',
-					origin: '*',
-					prop: 'extracts',
-					titles: name,
-					exintro: '1',
-					explaintext: '1',
-					exsectionformat: 'plain'
-				});
+		if (!summary || !cca2ID) {
+			if (!summary) {
+				try {
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 3000);
+					const endpoint = 'https://en.wikipedia.org/w/api.php';
+					const params = new URLSearchParams({
+						action: 'query',
+						format: 'json',
+						origin: '*',
+						prop: 'extracts',
+						titles: name,
+						exintro: '1',
+						explaintext: '1',
+						exsectionformat: 'plain'
+					});
 
-				const res = await fetch(`${endpoint}?${params.toString()}`, {
-					signal: controller.signal
-				});
-				clearTimeout(timeoutId);
+					const res = await fetch(`${endpoint}?${params.toString()}`, {
+						signal: controller.signal
+					});
+					clearTimeout(timeoutId);
 
-				if (!res.ok) throw new Error(`Wikipedia API error ${res.status}`);
-				const json = await res.json();
-				const pages = json?.query?.pages;
-				if (!pages) throw new Error('no page data returned');
-				const page = Object.values(pages)[0] as any;
-
-				summary = page?.missing
-					? 'No summary available.'
-					: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
-				sources = {
-					...sources,
-					summary: {
-						label: 'Wikipedia',
-						url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
+					if (res.ok) {
+						const json = await res.json();
+						const pages = json?.query?.pages;
+						if (pages) {
+							const page = Object.values(pages)[0] as any;
+							summary = page?.missing
+								? 'No summary available.'
+								: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
+							sources = {
+								...sources,
+								summary: {
+									label: 'Wikipedia',
+									url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
+								}
+							};
+						}
 					}
-				};
-			} catch (err) {
-				console.warn('Wikipedia fetch failed, falling back to placeholder summary', err);
-				summary = 'No summary available.';
+				} catch (err) {
+					console.warn('Wikipedia fetch failed', err);
+					summary = 'No summary available.';
+				}
 			}
-		}
 
-		if (!cca2ID) {
-			try {
-				const controller = new AbortController();
-				const timeoutId = setTimeout(() => controller.abort(), 5000);
-				const res = await fetch('https://restcountries.com/v3.1/name/' + encodeURIComponent(name), {
-					signal: controller.signal
-				});
-				clearTimeout(timeoutId);
-				if (!res.ok) throw new Error(`RestCountries API error ${res.status}`);
-				const json = await res.json();
-				const restData =
-					json.length === 1
-						? json[0]
-						: json.find(
-								(c: any) =>
-									c.name.common?.toLowerCase() === name.toLowerCase() ||
-									c.name.official?.toLowerCase() === name.toLowerCase() ||
-									c.altSpellings?.some((s: string) => s.toLowerCase() === name.toLowerCase())
-							);
-				if (!restData) throw new Error('no country data returned');
-				console.log(restData);
+			if (!cca2ID) {
+				try {
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 3000);
+					const res = await fetch('https://restcountries.com/v3.1/name/' + encodeURIComponent(name), {
+						signal: controller.signal
+					});
+					clearTimeout(timeoutId);
 
-				cca2ID = restData.cca2 ?? 'UNKNOWN';
-				officialName = restData.name.official ?? 'UNKNOWN';
-				flag = restData.flags.svg ?? 'UNKNOWN';
-				coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
-				capital = restData.capital?.[0] ?? '—';
-				independent = restData.independent ?? false;
-				region = restData.region ?? 'UNKNOWN';
-				subregion = restData.subregion ?? 'UNKNOWN';
-				area = restData.area ?? -1;
-				languages = restData.languages ?? [];
-				population = restData.population ?? -1;
-				gini = restData.gini ? (restData.gini[Object.keys(restData.gini)[0]] ?? 0) : -1;
+					if (res.ok) {
+						const json = await res.json();
+						const restData =
+							json.length === 1
+								? json[0]
+								: json.find(
+										(c: any) =>
+											c.name.common?.toLowerCase() === name.toLowerCase() ||
+											c.name.official?.toLowerCase() === name.toLowerCase() ||
+											c.altSpellings?.some((s: string) => s.toLowerCase() === name.toLowerCase())
+									);
 
-				const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
-				const restSource = { label: 'REST Countries', url: restUrl };
-				Object.assign(sources, {
-					...(!sources.flag && { flag: restSource }),
-					...(!sources.coatOfArms && { coatOfArms: restSource }),
-					...(!sources.officialName && { officialName: restSource }),
-					...(!sources.capital && { capital: restSource }),
-					...(!sources.independent && { independent: restSource }),
-					...(!sources.region && { region: restSource }),
-					...(!sources.subregion && { subregion: restSource }),
-					...(!sources.area && { area: restSource }),
-					...(!sources.languages && { languages: restSource }),
-					...(!sources.population && { population: restSource }),
-					...(!sources.gini && { gini: restSource })
-				});
-			} catch (err) {
-				console.warn('RestCountries fetch failed, falling back to placeholder information', err);
+						if (restData) {
+							cca2ID = restData.cca2 ?? 'UNKNOWN';
+							officialName = restData.name.official ?? 'UNKNOWN';
+							flag = restData.flags.svg ?? 'UNKNOWN';
+							coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
+							capital = restData.capital?.[0] ?? '—';
+							independent = restData.independent ?? false;
+							region = restData.region ?? 'UNKNOWN';
+							subregion = restData.subregion ?? 'UNKNOWN';
+							area = restData.area ?? -1;
+							languages = restData.languages ?? [];
+							population = restData.population ?? -1;
+							gini = restData.gini ? (restData.gini[Object.keys(restData.gini)[0]] ?? 0) : -1;
+
+							const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
+							const restSource = { label: 'REST Countries', url: restUrl };
+							Object.assign(sources, {
+								...(!sources.flag && { flag: restSource }),
+								...(!sources.coatOfArms && { coatOfArms: restSource }),
+								...(!sources.officialName && { officialName: restSource }),
+								...(!sources.capital && { capital: restSource }),
+								...(!sources.independent && { independent: restSource }),
+								...(!sources.region && { region: restSource }),
+								...(!sources.subregion && { subregion: restSource }),
+								...(!sources.area && { area: restSource }),
+								...(!sources.languages && { languages: restSource }),
+								...(!sources.population && { population: restSource }),
+								...(!sources.gini && { gini: restSource })
+							});
+						}
+					}
+				} catch (err) {
+					console.warn('RestCountries fetch failed', err);
+				}
 			}
 		}
 
@@ -195,10 +222,9 @@ export async function fetchCountryInfoByName(
 			sources
 		};
 
-		Promise.resolve().then(async () => {
-			try {
-				const shouldPersist = !localEntry || (!localEntry.summary && !localEntry.cca2ID && summary);
-				if (shouldPersist) {
+		if (!localEntry || (!localEntry.summary && !localEntry.cca2ID && summary)) {
+			Promise.resolve().then(async () => {
+				try {
 					await fetch('/api', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/json' },
@@ -221,18 +247,16 @@ export async function fetchCountryInfoByName(
 							sources
 						})
 					});
+				} catch (err) {
+					console.warn('Failed to persist country data', err);
 				}
-			} catch (err) {
-				console.warn('Failed to persist country summary to /api/countries', err);
-			}
-		});
-
+			});
+		}
 		infoCache[name] = { data, loading: false };
 	} catch (err: any) {
 		infoCache[name] = { loading: false, error: String(err) };
 		console.error('Error fetching country info for', name, err);
 	}
-
 	return infoCache;
 }
 
@@ -274,18 +298,13 @@ export async function fetchEconomicDataModule(params: {
 				return;
 			}
 
+			const countriesData = await getCountriesData();
 			let localEntry: any = null;
 			let sources: DataSources = {};
-			try {
-				const localResp = await fetch('/data/countries-data.json');
-				if (localResp.ok) {
-					const localJson = await localResp.json();
-					localEntry = Array.isArray(localJson)
-						? (localJson.find((e: any) => e.name === entryName) ?? null)
-						: (localJson[entryName] ?? Object.values(localJson).find((e: any) => e.name === entryName) ?? null);
-				}
-			} catch (err) {
-				console.warn('Error loading /data/countries-data.json', err);
+			if (countriesData) {
+				localEntry = Array.isArray(countriesData)
+					? (countriesData.find((e: any) => e.name === entryName) ?? null)
+					: (countriesData[entryName] ?? Object.values(countriesData).find((e: any) => e.name === entryName) ?? null);
 			}
 
 			sources = normalizeSources(localEntry?.sources ?? {}, entryName);
@@ -316,7 +335,6 @@ export async function fetchEconomicDataModule(params: {
 			const allData: Record<string, any[]> = {};
 			const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlySet.has(id));
 			const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlySet.has(id));
-
 			if (timeSeriesIndicators.length > 0) {
 				const batch = ['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS'];
 				const indicatorString = batch.join(';');
@@ -568,22 +586,21 @@ export async function batchLoadCountryData(
 	const cache = { ...infoCache };
 
 	try {
-		const localResp = await fetch('/data/countries-data.json');
-		if (!localResp.ok) {
+		const countriesData = await getCountriesData();
+		if (!countriesData) {
 			console.error('Failed to load countries-data.json');
 			return infoCache;
 		}
-		const localJson = await localResp.json();
 
 		const dataMap = new Map<string, any>();
-		if (Array.isArray(localJson)) {
-			localJson.forEach((entry: any) => {
+		if (Array.isArray(countriesData)) {
+			countriesData.forEach((entry: any) => {
 				if (entry.name) {
 					dataMap.set(entry.name.toLowerCase(), entry);
 				}
 			});
 		} else {
-			Object.values(localJson).forEach((entry: any) => {
+			Object.values(countriesData).forEach((entry: any) => {
 				if (entry.name) {
 					dataMap.set(entry.name.toLowerCase(), entry);
 				}

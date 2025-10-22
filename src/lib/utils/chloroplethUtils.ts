@@ -44,12 +44,10 @@ export function buildChloroplethData(
 	countries.forEach((country, idx) => {
 		const name = country.properties?.name;
 		if (!name) return;
-
 		const cachedData = infoCache[name]?.data;
 		if (!cachedData) return;
 
 		let value: number | null = null;
-
 		switch (dataType) {
 			case 'gdpPerCapita':
 				value = getGDPPerCapita(cachedData);
@@ -63,7 +61,6 @@ export function buildChloroplethData(
 		}
 
 		if (value !== null && !isNaN(value) && value > 0) {
-			// Apply log transformation for GDP data
 			if (dataType === 'gdp' || dataType === 'gdpPerCapita') {
 				value = Math.log10(value);
 			}
@@ -77,8 +74,8 @@ export function buildChloroplethData(
 	if (min === Infinity) min = 0;
 	if (max === -Infinity) max = 100;
 	if (min === max) max = min + 1;
-	let colorScale: d3.ScaleSequential<string>;
 
+	let colorScale: d3.ScaleSequential<string>;
 	switch (dataType) {
 		case 'gini':
 			colorScale = d3.scaleSequential(d3.interpolateRdYlGn).domain([max, min]);
@@ -103,10 +100,8 @@ export function getChloroplethColor(
 	fallback: string = '#64748b'
 ): string {
 	if (!chloroplethData) return fallback;
-
 	const value = chloroplethData.values.get(index.toString());
 	if (value === undefined) return fallback;
-
 	return chloroplethData.colorScale(value);
 }
 

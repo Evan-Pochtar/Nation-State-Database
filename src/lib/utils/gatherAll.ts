@@ -10,11 +10,9 @@ function normalizeName(s?: string) {
 function findLocalEntryByName(name: string, localJson: any) {
 	if (!localJson) return null;
 	const n = normalizeName(name);
-	// array or object
 	const candidates = Array.isArray(localJson) ? localJson : Object.values(localJson);
 	for (const entry of candidates) {
 		if (!entry) continue;
-		// check various name fields
 		const checks = [
 			entry.name,
 			entry.officialName,
@@ -28,7 +26,6 @@ function findLocalEntryByName(name: string, localJson: any) {
 		for (const c of checks) {
 			if (normalizeName(String(c)) === n) return entry;
 		}
-		// fallback: compare by includes for longer names
 		if (normalizeName(entry.name).includes(n) || n.includes(normalizeName(entry.name))) return entry;
 	}
 	return null;
@@ -38,7 +35,6 @@ function hasEconomics(entry: any) {
 	if (!entry) return false;
 	if (!entry.economics) return false;
 	if (typeof entry.economics === 'object' && Object.keys(entry.economics).length > 0) {
-		// ensure there's at least one numeric / year entry under an indicator
 		return Object.values(entry.economics).some((v: any) => (Array.isArray(v) ? v.length > 0 : Boolean(v)));
 	}
 	return false;
@@ -48,7 +44,6 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 	const persist = opts.persist ?? true;
 	const delayMs = opts.delayMs ?? 0;
 
-	// load map file and extract names
 	const mapResp = await fetch('/data/countries-map.json');
 	if (!mapResp.ok) throw new Error('Failed to load /data/countries-map.json');
 	const mapJson: any = await mapResp.json();
@@ -72,7 +67,6 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 	}
 	mapNames = Array.from(new Set(mapNames)).sort();
 
-	// in-memory cache used by getInfo/fetchEconomicDataModule
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
 	const getInfoCache = () => infoCache;
 	const setInfoCache = (newCache: typeof infoCache) => {
@@ -87,10 +81,8 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 		errors: [] as { name: string; error: any }[]
 	};
 
-	// process sequentially
 	for (const name of mapNames) {
 		try {
-			// always re-load the local countries-data.json to get latest persisted state
 			let localJson: any = null;
 			try {
 				const dataResp = await fetch('/data/countries-data.json');
@@ -109,26 +101,21 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 			const needCca2 = !localEntry || !localEntry.cca2ID || localEntry.cca2ID === 'UNKNOWN';
 			const needEconomics = !hasEconomics(localEntry);
 
-			// if nothing to do skip
 			if (!needSummary && !needCca2 && !needEconomics) {
 				results.skippedFullyPopulated++;
 				continue;
 			}
 
-			// First, fetch summary / metadata. This call itself checks local file and will skip if present.
 			await fetchCountryInfoByName(name, infoCache);
 			results.fetchedSummaries++;
 
-			// determine the best selectedInfo and cca2ID for economics
 			const selectedInfo = infoCache[name]?.data ?? localEntry ?? null;
 			let cca2ID = selectedInfo?.cca2ID ?? localEntry?.cca2ID ?? null;
 
-			// If still missing cca2ID then try to derive from officialName or cca3 if present
 			if ((!cca2ID || cca2ID === 'UNKNOWN') && selectedInfo?.officialName) {
 				cca2ID = selectedInfo.cca2ID ?? null;
 			}
 
-			// Only fetch economics if needed and we have a usable cca2ID
 			if (needEconomics) {
 				if (!cca2ID || cca2ID === 'UNKNOWN') {
 					try {
@@ -153,12 +140,10 @@ export async function gatherAllCountriesData(opts: Options = {}) {
 					});
 					results.fetchedEconomics++;
 				} else {
-					// cannot fetch economics without a valid cca2ID
 					results.errors.push({ name, error: 'No valid cca2ID available for economic fetch' });
 				}
 			}
 
-			// small optional delay to reduce race conditions if user wants (defaults to 0)
 			if (delayMs > 0) await new Promise((r) => setTimeout(r, delayMs));
 		} catch (err) {
 			results.errors.push({ name, error: err });

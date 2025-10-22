@@ -1,9 +1,14 @@
 <script lang="ts">
-	import { onMount, onDestroy, tick, untrack } from 'svelte';
+	import { onMount, onDestroy, tick } from 'svelte';
 	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
 	import type { GeoFeature, CountryData, ChloroplethData, DataType } from '$lib/utils/types';
-	import { fetchCountryInfoByName, batchLoadCountryData, getLoadProgress } from '$lib/utils/getInfo';
+	import {
+		fetchCountryInfoByName,
+		batchLoadCountryData,
+		getLoadProgress,
+		preloadCountryData
+	} from '$lib/utils/getInfo';
 	import InfoPanel from '$lib/InfoPanel.svelte';
 	import MapSettings from '$lib/components/MapSettings.svelte';
 	import { goto } from '$app/navigation';
@@ -85,6 +90,8 @@
 	let tooltipX = 0;
 	let tooltipY = 0;
 
+	let panelAnimating = false;
+
 	const projectionCache = new Map<string, () => d3.GeoProjection>();
 	function getProjection(type: string): d3.GeoProjection {
 		if (!projectionCache.has(type)) {
@@ -145,6 +152,7 @@
 			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
+			infoCache = await batchLoadCountryData(countries, infoCache);
 
 			const urlCountry = $page.params.country || $page.url.pathname.split('/')[1];
 			if (urlCountry) {
@@ -314,7 +322,7 @@
 	}
 
 	function handleMapClick(e: MouseEvent) {
-		if (isAnimating || !e.target || !(e.target instanceof SVGPathElement)) return;
+		if (isAnimating || panelAnimating || !e.target || !(e.target instanceof SVGPathElement)) return;
 		const index = parseInt(e.target.dataset.index || '-1');
 		if (index >= 0 && index < countries.length) {
 			onCountryClick(countries[index]);
@@ -375,34 +383,47 @@
 	}
 
 	async function onCountryClick(f: GeoFeature) {
-		if (!f || isAnimating) return;
-		selectedFeature = f;
+		if (!f || isAnimating || panelAnimating) return;
+		panelAnimating = true;
 		selectedName = getCountryName(f);
-		setupFocusProjection();
-		handleResize();
-		fetchCountryInfoByName(selectedName, infoCache).then((result) => {
-			if (result) infoCache = result;
+		if (!infoCache[selectedName]?.data) {
+			infoCache = (await fetchCountryInfoByName(selectedName, infoCache)) || infoCache;
+		}
+		const tempFeature = f;
+		selectedFeature = tempFeature;
+
+		requestAnimationFrame(() => {
+			setupFocusProjection();
+			handleResize();
+			setTimeout(() => {
+				panelAnimating = false;
+			}, 250);
 		});
 
 		isAnimating = true;
 		setTimeout(() => {
 			isAnimating = false;
-		}, 400);
+		}, 300);
 	}
 
 	async function closePanel() {
-		selectedFeature = null;
-		selectedName = null;
-		updateURL(null);
-		focusProjection = undefined;
-		focusPathGenerator = null;
-		pathCache.clear();
-		lastFocusParams = { width: 0, height: 0, feature: null };
+		panelAnimating = true;
+		setTimeout(() => {
+			selectedFeature = null;
+			selectedName = null;
+			updateURL(null);
+			focusProjection = undefined;
+			focusPathGenerator = null;
+			pathCache.clear();
+			lastFocusParams = { width: 0, height: 0, feature: null };
 
-		await tick();
-		handleResize();
-		resetZoom();
-		initZoom();
+			tick().then(() => {
+				handleResize();
+				resetZoom();
+				initZoom();
+				panelAnimating = false;
+			});
+		}, 50);
 	}
 
 	function handlePointerDown() {
@@ -685,7 +706,7 @@
 	{/if}
 
 	<div
-		class="relative flex-1 overflow-hidden"
+		class="relative flex-1 overflow-hidden transition-all duration-200 ease-out"
 		style="width: {selectedFeature ? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)` : '100%'};"
 	>
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
