@@ -48,50 +48,50 @@
   - [ ] Austria
   - [ ] Azerbaijan
   - [ ] Belarus
-  - [X] Belgium
+  - [x] Belgium
   - [ ] Bosnia and Herzegovina
   - [ ] Bulgaria
   - [ ] Croatia
   - [ ] Cyprus
   - [ ] Czechia
-  - [X] Denmark
+  - [x] Denmark
   - [ ] Estonia
-  - [X] Finland
-  - [X] France
+  - [x] Finland
+  - [x] France
   - [ ] Georgia
-  - [X] Germany
-  - [X] Greece
+  - [x] Germany
+  - [x] Greece
   - [ ] Hungary
   - [ ] Iceland
-  - [X] Ireland
-  - [X] Italy
+  - [x] Ireland
+  - [x] Italy
   - [ ] Kazakhstan
   - [ ] Kosovo
   - [ ] Latvia
   - [ ] Liechtenstein
   - [ ] Lithuania
-  - [X] Luxembourg
+  - [x] Luxembourg
   - [ ] Malta
   - [ ] Moldova
   - [ ] Monaco
   - [ ] Montenegro
-  - [X] Netherlands
+  - [x] Netherlands
   - [ ] North Macedonia
-  - [X] Norway
+  - [x] Norway
   - [ ] Poland
   - [x] Portugal
   - [ ] Romania
-  - [X] Russia
+  - [x] Russia
   - [ ] San Marino
   - [ ] Serbia
   - [ ] Slovakia
   - [ ] Slovenia
   - [x] Spain
-  - [X] Sweden
+  - [x] Sweden
   - [ ] Switzerland
   - [ ] Turkey
   - [ ] Ukraine
-  - [X] United Kingdom
+  - [x] United Kingdom
   - [ ] Vatican City
   - [ ] Gibraltar
   - [ ] Isle of Man
@@ -114,11 +114,11 @@
   - [ ] Congo (Democratic Republic of the)
   - [ ] Côte d'Ivoire
   - [ ] Djibouti
-  - [X] Egypt
+  - [x] Egypt
   - [ ] Equatorial Guinea
   - [ ] Eritrea
   - [ ] Eswatini
-  - [X] Ethiopia
+  - [x] Ethiopia
   - [ ] Gabon
   - [ ] Gambia
   - [ ] Ghana
@@ -144,7 +144,7 @@
   - [ ] Seychelles
   - [ ] Sierra Leone
   - [ ] Somalia
-  - [X] South Africa
+  - [x] South Africa
   - [ ] South Sudan
   - [ ] Sudan
   - [ ] Tanzania
@@ -160,47 +160,47 @@
   - [ ] Bahrain
   - [ ] Bangladesh
   - [ ] Bhutan
-  - [X] Brunei
-  - [X] Cambodia
-  - [X] China
+  - [x] Brunei
+  - [x] Cambodia
+  - [x] China
   - [ ] Cyprus
-  - [X] India
-  - [X] Indonesia
+  - [x] India
+  - [x] Indonesia
   - [ ] Iran
   - [ ] Iraq
   - [ ] Israel
-  - [X] Japan
+  - [x] Japan
   - [ ] Jordan
   - [ ] Kazakhstan
   - [ ] Kuwait
   - [ ] Kyrgyzstan
-  - [X] Laos
+  - [x] Laos
   - [ ] Lebanon
-  - [X] Malaysia
+  - [x] Malaysia
   - [ ] Maldives
   - [ ] Mongolia
-  - [X] Myanmar
+  - [x] Myanmar
   - [ ] Nepal
   - [ ] North Korea
   - [ ] Oman
   - [ ] Pakistan
   - [ ] Palestine
-  - [X] Philippines
+  - [x] Philippines
   - [ ] Qatar
   - [ ] Saudi Arabia
-  - [X] Singapore
+  - [x] Singapore
   - [ ] South Korea
   - [ ] Sri Lanka
-  - [X] Syria
+  - [x] Syria
   - [ ] Taiwan
   - [ ] Tajikistan
-  - [X] Thailand
+  - [x] Thailand
   - [ ] Timor-Leste
-  - [X] Turkey
+  - [x] Turkey
   - [ ] Turkmenistan
   - [ ] United Arab Emirates
   - [ ] Uzbekistan
-  - [X] Vietnam
+  - [x] Vietnam
   - [ ] Yemen
   - [ ] Hong Kong
   - [ ] Macau

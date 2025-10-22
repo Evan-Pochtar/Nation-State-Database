@@ -3,15 +3,24 @@
 	import type { DataType } from '$lib/utils/types';
 	import { formatDataValue, getDataLabel } from '$lib/utils/chloroplethUtils';
 
-	export let visible: boolean = false;
-	export let countryName: string = '';
-	export let value: number | null = null;
-	export let dataType: DataType;
-	export let x: number = 0;
-	export let y: number = 0;
+	let {
+		visible = false,
+		countryName = '',
+		value = null,
+		dataType,
+		x = 0,
+		y = 0
+	}: {
+		visible: boolean;
+		countryName: string;
+		value: number | null;
+		dataType: DataType;
+		x: number;
+		y: number;
+	} = $props();
 
-	$: formattedValue = value !== null ? formatDataValue(value, dataType) : 'No data';
-	$: dataLabel = getDataLabel(dataType);
+	let formattedValue = $derived(value !== null ? formatDataValue(value, dataType) : 'No data');
+	let dataLabel = $derived(getDataLabel(dataType));
 </script>
 
 {#if visible && countryName}

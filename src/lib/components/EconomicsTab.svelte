@@ -4,13 +4,20 @@
 	import type { CountryData } from '$lib/utils/types';
 	import { formatValue } from '$lib/utils/helpers';
 
-	export let selectedInfo: CountryData | null = null;
-	export let selectedName: string | null = '';
-	export let showSources: boolean = false;
-	export let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
+	let {
+		selectedInfo = null,
+		selectedName = '',
+		showSources = false,
+		infoCache = {}
+	}: {
+		selectedInfo: CountryData | null;
+		selectedName: string | null;
+		showSources: boolean;
+		infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>;
+	} = $props();
 
-	let activeEconomicChart = 'gdpPerCapita';
-	let chartData: any[] = [];
+	let activeEconomicChart = $state('gdpPerCapita');
+	let chartData: any[] = $state([]);
 
 	function getLatestValue(indicatorId?: string): any {
 		if (!indicatorId || !selectedInfo?.cca2ID) return null;
@@ -61,9 +68,11 @@
 		fetchEconomicData(selectedInfo ? selectedInfo.cca2ID : 'UNKNOWN');
 	});
 
-	$: if (selectedInfo || selectedName || activeEconomicChart || infoCache) {
-		updateChartData();
-	}
+	$effect(() => {
+		if (selectedInfo || selectedName || activeEconomicChart || infoCache) {
+			updateChartData();
+		}
+	});
 </script>
 
 <div class="rounded-xl bg-transparent p-0">
@@ -124,7 +133,7 @@
 		<div class="mb-4 flex flex-wrap gap-1">
 			{#each [['gdpPerCapita', 'GDP/Capita'], ['gdpGrowth', 'GDP Growth'], ['inflation', 'Inflation'], ['unemployment', 'Unemployment']] as [key, label]}
 				<button
-					on:click={() => setEconomicChart(key)}
+					onclick={() => setEconomicChart(key)}
 					class={`rounded px-3 py-1 text-xs transition-all ${
 						activeEconomicChart === key
 							? 'border border-cyan-400/50 bg-cyan-400/20 text-cyan-300'

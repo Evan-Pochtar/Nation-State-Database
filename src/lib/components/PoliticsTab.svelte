@@ -2,8 +2,13 @@
 	import type { CountryData } from '$lib/utils/types';
 	import { isSourceString, sourceLabel, sourceUrl, getSource } from '$lib/utils/helpers';
 
-	export let selectedInfo: CountryData | null = null;
-	export let showSources: boolean = false;
+	let {
+		selectedInfo = null,
+		showSources = false
+	}: {
+		selectedInfo: CountryData | null;
+		showSources: boolean;
+	} = $props();
 </script>
 
 <div class="rounded-xl bg-transparent p-0">

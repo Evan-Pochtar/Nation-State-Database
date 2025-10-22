@@ -7,15 +7,21 @@
 	import GDPPreview from '$lib/assets/img/gdp-preview.png';
 	import GDPPerCapitaPreview from '$lib/assets/img/gdp-per-capita-preview.png';
 
-	export let settingsOpen = false;
-	export let currentProjection = 'naturalEarth1';
-	export let currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita' = 'dark';
-
-	export let onToggle: (() => void) | undefined;
-	export let onProjectionChange: ((projection: string) => void) | undefined;
-	export let onThemeChange:
-		| ((theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') => void)
-		| undefined;
+	let {
+		settingsOpen = false,
+		currentProjection = 'naturalEarth1',
+		currentTheme = 'dark',
+		onToggle,
+		onProjectionChange,
+		onThemeChange
+	}: {
+		settingsOpen: boolean;
+		currentProjection: string;
+		currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita';
+		onToggle: (() => void) | undefined;
+		onProjectionChange: ((projection: string) => void) | undefined;
+		onThemeChange: ((theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') => void) | undefined;
+	} = $props();
 
 	const projections = [
 		{ id: 'naturalEarth1', name: 'Natural Earth', description: 'Balanced world view' },
@@ -56,7 +62,7 @@
 		}
 	}
 
-	$: isDataTheme = ['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme);
+	const isDataTheme = $derived(['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme));
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -65,7 +71,7 @@
 	<button
 		class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-sky-400/30 bg-gradient-to-br from-slate-900/90 to-black/95 shadow-[0_4px_12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-[12px] transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400/60 hover:shadow-[0_8px_25px_rgba(0,0,0,0.5),0_0_20px_rgba(56,189,248,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]"
 		class:settings-btn-active={settingsOpen}
-		on:click={onToggle}
+		onclick={onToggle}
 		aria-label="Map Settings"
 		aria-expanded={settingsOpen}
 	>
@@ -106,7 +112,7 @@
 					<button
 						type="button"
 						class="flex cursor-pointer items-center gap-3 rounded-lg px-4 py-3 text-left transition hover:bg-sky-400/6 focus:outline-none"
-						on:click={() => selectProjection(projection.id)}
+						onclick={() => selectProjection(projection.id)}
 						aria-pressed={currentProjection === projection.id}
 					>
 						<div class="flex h-2 w-2 items-center justify-center rounded-full border-2 border-slate-400/40">
@@ -134,7 +140,7 @@
 						<button
 							type="button"
 							class="group flex cursor-pointer flex-col items-center gap-2 transition-transform hover:scale-105 focus:outline-none"
-							on:click={() => setTheme(theme.id as any)}
+							onclick={() => setTheme(theme.id as any)}
 							aria-pressed={currentTheme === theme.id}
 						>
 							<div class="relative">
@@ -186,7 +192,7 @@
 								type="button"
 								class="group flex cursor-pointer items-start gap-3 rounded-lg p-3 text-left transition-all hover:bg-purple-400/6 focus:outline-none bg-purple-400/10={currentTheme ===
 									theme.id} border-purple-400/60={currentTheme === theme.id} border-l-2={currentTheme === theme.id}"
-								on:click={() => setTheme(theme.id as any)}
+								onclick={() => setTheme(theme.id as any)}
 								aria-pressed={currentTheme === theme.id}
 							>
 								<div class="relative flex-shrink-0">

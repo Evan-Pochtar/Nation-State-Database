@@ -3,13 +3,20 @@
 	import { fetchHistoryDataModule } from '$lib/utils/getInfo';
 	import type { CountryData } from '$lib/utils/types';
 
-	export let selectedInfo: CountryData | null = null;
-	export let selectedName: string | null = '';
-	export let showSources: boolean = false;
-	export let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
+	let {
+		selectedInfo = null,
+		selectedName = '',
+		showSources = false,
+		infoCache = {}
+	}: {
+		selectedInfo: CountryData | null;
+		selectedName: string | null;
+		showSources: boolean;
+		infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>;
+	} = $props();
 
-	let activeSection = 'overview';
-	let historyData: any = null;
+	let activeSection = $state('overview');
+	let historyData: any = $state(null);
 
 	function fetchHistoryData(name: string) {
 		return fetchHistoryDataModule({
@@ -47,13 +54,17 @@
 		}
 	});
 
-	$: if (selectedName) {
-		fetchHistoryData(selectedName);
-	}
+	$effect(() => {
+		if (selectedName) {
+			fetchHistoryData(selectedName);
+		}
+	});
 
-	$: if (selectedInfo || selectedName || infoCache) {
-		updateHistoryData();
-	}
+	$effect(() => {
+		if (selectedInfo || selectedName || infoCache) {
+			updateHistoryData();
+		}
+	});
 </script>
 
 <div class="rounded-xl bg-transparent p-0">
@@ -116,7 +127,7 @@
 			{#each [['overview', 'Overview'], ['ancient', 'Ancient'], ['medieval', 'Medieval'], ['feudal', 'Feudal'], ['isolation', 'Isolation'], ['pre-colonial', 'Pre-Colonial'], ['colonial', 'Colonial'], ['imperial', 'Imperial'], ['independence', 'Independence'], ['modern', 'Modern'], ['timeline', 'Timeline']] as [key, label]}
 				{#if historyData[key]}
 					<button
-						on:click={() => setSection(key)}
+						onclick={() => setSection(key)}
 						class={`rounded px-3 py-1 text-xs transition-all ${
 							activeSection === key
 								? 'border border-cyan-400/50 bg-cyan-400/20 text-cyan-300'

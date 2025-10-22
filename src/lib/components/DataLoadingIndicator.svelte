@@ -1,10 +1,17 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	export let visible: boolean = false;
-	export let loaded: number = 0;
-	export let total: number = 0;
-	export let percentage: number = 0;
+	let {
+		visible = false,
+		loaded = 0,
+		total = 0,
+		percentage = 0
+	}: {
+		visible: boolean;
+		loaded: number;
+		total: number;
+		percentage: number;
+	} = $props();
 </script>
 
 {#if visible}

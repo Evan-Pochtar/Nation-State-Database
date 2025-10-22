@@ -3,13 +3,19 @@
 	import type { ChloroplethData, DataType } from '$lib/utils/types';
 	import { getDataLabel } from '$lib/utils/chloroplethUtils';
 
-	export let chloroplethData: ChloroplethData | null = null;
-	export let dataType: DataType;
-	export let visible: boolean = false;
+	let {
+		chloroplethData = null,
+		dataType,
+		visible = false
+	}: {
+		chloroplethData: ChloroplethData | null;
+		dataType: DataType;
+		visible: boolean;
+	} = $props();
 
-	$: gradientStops = chloroplethData ? generateGradientStops(chloroplethData) : [];
-	$: legendValues = chloroplethData ? generateLegendValues(chloroplethData) : [];
-	$: isLogScale = dataType === 'gdp' || dataType === 'gdpPerCapita';
+	const gradientStops = $derived(chloroplethData ? generateGradientStops(chloroplethData) : []);
+	const legendValues = $derived(chloroplethData ? generateLegendValues(chloroplethData) : []);
+	const isLogScale = $derived(dataType === 'gdp' || dataType === 'gdpPerCapita');
 
 	function generateGradientStops(data: ChloroplethData): Array<{ offset: string; color: string }> {
 		const stops = [];

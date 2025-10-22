@@ -9,20 +9,35 @@
 	import OverviewTab from './components/OverviewTab.svelte';
 	import HistoryTab from './components/HistoryTab.svelte';
 
-	export let selectedInfo: CountryData | null = null;
-	export let selectedName: string | null = '';
-	export let loading: boolean = false;
-	export let compact: boolean = false;
-	export let showSources: boolean = false;
-	export let activeTab: string = 'overview';
-	export let leftWidth: number = 350;
-	export let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {};
-	export let copyLinkSuccess: boolean = false;
-
-	export let onToggleSources: (() => void) | undefined;
-	export let onClose: (() => void) | undefined;
-	export let onChangeTab: ((t: string) => void) | undefined;
-	export let onCopyLink: (() => void) | undefined;
+	let {
+		selectedInfo = null,
+		selectedName = '',
+		loading = false,
+		compact = false,
+		showSources = false,
+		activeTab = 'overview',
+		leftWidth = 350,
+		infoCache = {},
+		copyLinkSuccess = false,
+		onToggleSources,
+		onClose,
+		onChangeTab,
+		onCopyLink
+	}: {
+		selectedInfo: CountryData | null;
+		selectedName: string | null;
+		loading: boolean;
+		compact: boolean;
+		showSources: boolean;
+		activeTab: string;
+		leftWidth: number;
+		infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>;
+		copyLinkSuccess: boolean;
+		onToggleSources: (() => void) | undefined;
+		onClose: (() => void) | undefined;
+		onChangeTab: ((t: string) => void) | undefined;
+		onCopyLink: (() => void) | undefined;
+	} = $props();
 
 	function setTab(t: typeof activeTab) {
 		if (t === activeTab) return;
@@ -35,15 +50,15 @@
 </script>
 
 <div
-	in:fly={{ x: -leftWidth, duration: 200, easing: cubicOut }}
-	out:fly={{ x: -leftWidth, duration: 180, easing: cubicOut }}
-	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px] will-change-transform"
-	style="width: {leftWidth}px; transform: translateZ(0);"
+	in:fly={{ x: -leftWidth, duration: 150, easing: cubicOut }}
+	out:fly={{ x: -leftWidth, duration: 120, easing: cubicOut }}
+	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px]"
+	style="width: {leftWidth}px; will-change: transform; transform: translateZ(0);"
 	aria-hidden="false"
 >
-	<div class="flex h-full flex-col gap-4 overflow-y-auto p-6">
+	<div class="flex h-full flex-col gap-4 overflow-y-auto p-6" style="will-change: contents;">
 		{#if loading}
-			<div class="flex items-center gap-3 px-2 py-8" in:fade={{ duration: 150 }}>
+			<div class="flex items-center gap-3 px-2 py-8" in:fade={{ duration: 100 }}>
 				<div
 					class="h-9 w-9 animate-spin rounded-full border-4 border-white/5 border-t-teal-300"
 					aria-hidden="true"
@@ -53,7 +68,7 @@
 				</div>
 			</div>
 		{:else if selectedInfo}
-			<div in:fade={{ duration: 200, delay: 50 }}>
+			<div in:fade={{ duration: 150 }}>
 				<header class={`relative ${compact ? 'flex flex-col items-start gap-2' : 'flex flex-wrap items-start gap-4'}`}>
 					<div class={`flex ${compact ? 'w-full items-start gap-3' : 'items-center gap-3'}`}>
 						<div class="relative inline-block">
@@ -198,7 +213,7 @@
 					<div class={`${compact ? 'absolute top-2 right-3 z-50 flex items-start gap-2' : 'flex items-start gap-2'}`}>
 						<div class="relative">
 							<button
-								on:click={onToggleSources}
+								onclick={onToggleSources}
 								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								aria-describedby="toggle-sources-tooltip"
@@ -224,7 +239,7 @@
 
 						<div class="relative">
 							<button
-								on:click={onCopyLink}
+								onclick={onCopyLink}
 								aria-label="Copy link to country"
 								aria-describedby="copy-link-tooltip"
 								class={`peer group flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border px-2 py-2 font-semibold backdrop-blur-[10px] transition-all duration-300 ${copyLinkSuccess ? 'border-emerald-500/50 bg-gradient-to-br from-emerald-400/20 to-emerald-500/10 text-emerald-300' : 'border-white/15 bg-gradient-to-br from-white/5 to-white/10 text-white/70 hover:border-cyan-400/30 hover:from-cyan-400/10 hover:to-sky-400/10 hover:text-cyan-300'}`}
@@ -271,7 +286,7 @@
 						</div>
 
 						<button
-							on:click={onClose}
+							onclick={onClose}
 							aria-label="Close info panel"
 							class="flex h-10 min-w-[40px] cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-gradient-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200 hover:scale-105"
 							>✕</button
@@ -308,7 +323,7 @@
 
 				<nav class="mt-2 flex gap-2" aria-label="Country sections">
 					{#each [['overview', 'Overview'], ['economics', 'Economy'], ['history', 'History']] as [tab, label]}
-						<button role="tab" aria-selected={activeTab === tab} on:click={() => setTab(tab)} class={buttonClass}
+						<button role="tab" aria-selected={activeTab === tab} onclick={() => setTab(tab)} class={buttonClass}
 							>{label}</button
 						>
 					{/each}
@@ -324,7 +339,7 @@
 						{:else if activeTab === 'economics'}
 							<EconomicsTab {selectedInfo} {selectedName} {showSources} {infoCache} />
 						{:else if activeTab === 'history'}
-							<HistoryTab {selectedName} {showSources} />
+							<HistoryTab {selectedInfo} {selectedName} {showSources} {infoCache} />
 						{/if}
 					</div>
 				</section>
