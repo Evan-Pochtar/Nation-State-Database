@@ -25,12 +25,12 @@
 
 {#if visible && countryName}
 	<div
-		class="pointer-events-none fixed z-[200]"
+		class="pointer-events-none fixed z-200"
 		style="left: {x}px; top: {y}px; transform: translate(-50%, -120%);"
 		transition:fade={{ duration: 150 }}
 	>
 		<div
-			class="min-w-[180px] rounded-xl border border-purple-400/40 bg-gradient-to-br from-slate-900/98 to-black px-4 py-3 shadow-2xl backdrop-blur-lg"
+			class="min-w-[180px] rounded-xl border border-purple-400/40 bg-linear-to-br from-slate-900/98 to-black px-4 py-3 shadow-2xl backdrop-blur-lg"
 		>
 			<div class="mb-1 text-sm font-semibold text-slate-100">
 				{countryName}

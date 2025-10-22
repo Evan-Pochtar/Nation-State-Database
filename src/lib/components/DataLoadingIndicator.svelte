@@ -16,11 +16,11 @@
 
 {#if visible}
 	<div
-		class="fixed top-20 left-1/2 z-50 min-w-[320px] -translate-x-1/2 rounded-2xl border border-purple-400/30 bg-gradient-to-br from-slate-900/95 to-black/98 p-6 shadow-2xl backdrop-blur-lg"
+		class="fixed top-20 left-1/2 z-50 min-w-[320px] -translate-x-1/2 rounded-2xl border border-purple-400/30 bg-linear-to-br from-slate-900/95 to-black/98 p-6 shadow-2xl backdrop-blur-lg"
 		transition:fly={{ y: -20, duration: 300 }}
 	>
 		<div class="flex items-center gap-4">
-			<div class="relative h-10 w-10 flex-shrink-0">
+			<div class="relative h-10 w-10 shrink-0">
 				<svg class="h-10 w-10 animate-spin text-purple-400" fill="none" viewBox="0 0 24 24">
 					<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
 					<path
@@ -42,7 +42,7 @@
 
 				<div class="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
 					<div
-						class="h-full rounded-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all duration-300 ease-out"
+						class="h-full rounded-full bg-linear-to-r from-purple-500 to-purple-400 transition-all duration-300 ease-out"
 						style="width: {percentage}%"
 					></div>
 				</div>

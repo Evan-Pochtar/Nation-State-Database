@@ -65,7 +65,7 @@
 
 {#if visible && chloroplethData}
 	<div
-		class="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-2xl border border-slate-700/40 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
+		class="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-2xl border border-slate-700/40 bg-linear-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
 		transition:fly={{ y: 20, duration: 300 }}
 	>
 		<div class="flex items-center gap-4">

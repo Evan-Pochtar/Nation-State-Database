@@ -91,14 +91,14 @@
 	</div>
 	{#if selectedName ? infoCache[selectedName]?.loading : false}
 		<div
-			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
+			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-linear-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
 		>
 			<div class="pointer-events-none absolute inset-0 opacity-10">
 				<div
-					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent via-white/5 to-transparent"
+					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-linear-to-b from-transparent via-white/5 to-transparent"
 				></div>
 				<div
-					class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:4px_4px]"
+					class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-size[4px_4px]"
 				></div>
 			</div>
 
@@ -219,7 +219,7 @@
 				{@const latest = getLatestValue((indicators as any)[key])}
 				{#if latest}
 					<div
-						class="w-[calc(50%-0.375rem)] flex-grow rounded-lg border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-3 sm:w-[calc(50%-0.375rem)]"
+						class="w-[calc(50%-0.375rem)] grow rounded-lg border border-white/10 bg-linear-to-br from-white/5 to-white/10 p-3 sm:w-[calc(50%-0.375rem)]"
 					>
 						<div class="mb-1 flex items-center gap-2">
 							<span class="text-xs font-medium text-white/80">{label}</span>
@@ -239,7 +239,7 @@
 		{@const imports = getLatestValue(indicators.imports)}
 		{#if exports && imports}
 			<div
-				class="mt-3 rounded-lg border border-emerald-700/30 bg-gradient-to-br from-emerald-900/20 to-blue-900/20 p-4"
+				class="mt-3 rounded-lg border border-emerald-700/30 bg-linear-to-br from-emerald-900/20 to-blue-900/20 p-4"
 			>
 				<div class="mb-2 flex items-center gap-2">
 					<span class="font-semibold text-white">Trade Balance</span>

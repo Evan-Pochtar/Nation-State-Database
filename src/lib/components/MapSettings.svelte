@@ -67,20 +67,20 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="fixed top-5 left-5 z-[100]">
+<div class="fixed top-5 left-5 z-100">
 	<button
-		class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-sky-400/30 bg-gradient-to-br from-slate-900/90 to-black/95 shadow-[0_4px_12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-[12px] transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400/60 hover:shadow-[0_8px_25px_rgba(0,0,0,0.5),0_0_20px_rgba(56,189,248,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]"
+		class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-sky-400/30 bg-linear-to-br from-slate-900/90 to-black/95 shadow-[0_4px_12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400/60 hover:shadow-[0_8px_25px_rgba(0,0,0,0.5),0_0_20px_rgba(56,189,248,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]"
 		class:settings-btn-active={settingsOpen}
 		onclick={onToggle}
 		aria-label="Map Settings"
 		aria-expanded={settingsOpen}
 	>
 		<div
-			class="relative z-[2] text-slate-400/90 transition-all duration-300 hover:text-sky-400/90"
+			class="relative z-2 text-slate-400/90 transition-all duration-300 hover:text-sky-400/90"
 			class:settings-icon-active={settingsOpen}
 		>
 			<div
-				class="transition-transform duration-[600ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+				class="transition-transform duration-600 ease-in-out"
 				class:rotate-240={settingsOpen}
 			>
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -98,13 +98,13 @@
 
 	{#if settingsOpen}
 		<div
-			class="absolute top-0 left-[72px] max-h-[calc(100vh-80px)] w-[440px] overflow-x-hidden overflow-y-auto rounded-3xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
+			class="absolute top-0 left-[72px] max-h-[calc(100vh-80px)] w-[440px] overflow-x-hidden overflow-y-auto rounded-3xl border border-sky-400/20 bg-linear-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
 			transition:fly={{ x: -20, duration: 300 }}
 		>
 			<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
 				<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">MAP PROJECTION</h3>
-				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
 			</div>
 
 			<div class="mb-3 flex flex-col gap-1">
@@ -130,9 +130,9 @@
 
 			<div class="border-t border-slate-700/30 pt-4">
 				<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+					<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
 					<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">BASE THEMES</h3>
-					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
+					<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
 				</div>
 
 				<div class="mb-4 flex items-center justify-center gap-4">
@@ -181,9 +181,9 @@
 
 				<div class="mt-4 border-t border-slate-700/30 pt-4">
 					<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-						<div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
+						<div class="h-px flex-1 bg-linear-to-r from-transparent via-purple-400/30 to-transparent"></div>
 						<h3 class="m-0 text-xs font-semibold tracking-wide text-purple-400/90">DATA VISUALIZATIONS</h3>
-						<div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
+						<div class="h-px flex-1 bg-linear-to-r from-transparent via-purple-400/30 to-transparent"></div>
 					</div>
 
 					<div class="flex flex-col gap-3">
@@ -195,7 +195,7 @@
 								onclick={() => setTheme(theme.id as any)}
 								aria-pressed={currentTheme === theme.id}
 							>
-								<div class="relative flex-shrink-0">
+								<div class="relative shrink-0">
 									<img
 										src={theme.preview}
 										alt="{theme.name} preview"
@@ -241,7 +241,7 @@
 						<div class="mt-4 rounded-lg border border-purple-400/20 bg-purple-400/5 p-3">
 							<div class="flex items-start gap-2">
 								<svg
-									class="mt-0.5 h-4 w-4 flex-shrink-0 text-purple-400/80"
+									class="mt-0.5 h-4 w-4 shrink-0 text-purple-400/80"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"

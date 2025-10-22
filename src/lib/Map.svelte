@@ -732,14 +732,14 @@
 		/>
 
 		<div
-			class="relative z-25 w-[5px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 opacity-50 shadow-[0_0_10px] transition-all duration-300"
+			class="relative z-25 w-[5px] cursor-ew-resize overflow-visible bg-linear-to-b from-cyan-400/30 to-sky-400/50 opacity-50 shadow-[0_0_10px] transition-all duration-300"
 			onpointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
 		>
 			{#if dragging}
 				<div
-					class="pointer-events-none absolute top-0 bottom-0 z-30 w-[2px] border-l-2 border-dashed border-teal-300 bg-white/80"
+					class="pointer-events-none absolute top-0 bottom-0 z-30 w-0.5 border-l-2 border-dashed border-teal-300 bg-white/80"
 					style="left: {tempLeftWidth - leftWidth}px; animation: dash 1s linear infinite;"
 				></div>
 			{/if}
