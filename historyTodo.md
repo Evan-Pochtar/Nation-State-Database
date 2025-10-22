@@ -1,0 +1,225 @@
+- [x] NORTH AMERICA
+  - [x] United States of America
+  - [x] Canada
+  - [x] Mexico
+
+- [ ] CENTRAL AMERICA
+  - [ ] Guatemala
+  - [ ] Belize
+  - [ ] El Salvador
+  - [ ] Nicaragua
+  - [ ] Honduras
+  - [ ] Costa Rica
+  - [ ] Panama
+
+- [ ] CARIBBEAN
+  - [ ] Antigua and Barbuda
+  - [ ] Bahamas
+  - [ ] Barbados
+  - [ ] Cuba
+  - [ ] Dominica
+  - [ ] Dominican Republic
+  - [ ] Grenada
+  - [ ] Haiti
+  - [ ] Jamaica
+  - [ ] Saint Kitts and Nevis
+  - [ ] Saint Lucia
+  - [ ] Saint Vincent and the Grenadines
+  - [ ] Trinidad and Tobago
+
+- [x] SOUTH AMERICA
+  - [x] Argentina
+  - [x] Bolivia
+  - [x] Brazil
+  - [x] Chile
+  - [x] Colombia
+  - [x] Ecuador
+  - [x] Guyana
+  - [x] Paraguay
+  - [x] Peru
+  - [x] Suriname
+  - [x] Uruguay
+  - [x] Venezuela
+
+- [ ] EUROPE
+  - [ ] Albania
+  - [ ] Andorra
+  - [ ] Armenia
+  - [ ] Austria
+  - [ ] Azerbaijan
+  - [ ] Belarus
+  - [X] Belgium
+  - [ ] Bosnia and Herzegovina
+  - [ ] Bulgaria
+  - [ ] Croatia
+  - [ ] Cyprus
+  - [ ] Czechia
+  - [X] Denmark
+  - [ ] Estonia
+  - [X] Finland
+  - [X] France
+  - [ ] Georgia
+  - [X] Germany
+  - [X] Greece
+  - [ ] Hungary
+  - [ ] Iceland
+  - [X] Ireland
+  - [X] Italy
+  - [ ] Kazakhstan
+  - [ ] Kosovo
+  - [ ] Latvia
+  - [ ] Liechtenstein
+  - [ ] Lithuania
+  - [X] Luxembourg
+  - [ ] Malta
+  - [ ] Moldova
+  - [ ] Monaco
+  - [ ] Montenegro
+  - [X] Netherlands
+  - [ ] North Macedonia
+  - [X] Norway
+  - [ ] Poland
+  - [x] Portugal
+  - [ ] Romania
+  - [X] Russia
+  - [ ] San Marino
+  - [ ] Serbia
+  - [ ] Slovakia
+  - [ ] Slovenia
+  - [x] Spain
+  - [X] Sweden
+  - [ ] Switzerland
+  - [ ] Turkey
+  - [ ] Ukraine
+  - [X] United Kingdom
+  - [ ] Vatican City
+  - [ ] Gibraltar
+  - [ ] Isle of Man
+  - [ ] Jersey
+  - [ ] Guernsey
+
+- [ ] AFRICA
+  - [ ] Algeria
+  - [ ] Angola
+  - [ ] Benin
+  - [ ] Botswana
+  - [ ] Burkina Faso
+  - [ ] Burundi
+  - [ ] Cabo Verde
+  - [ ] Cameroon
+  - [ ] Central African Republic
+  - [ ] Chad
+  - [ ] Comoros
+  - [ ] Congo (Republic of the)
+  - [ ] Congo (Democratic Republic of the)
+  - [ ] Côte d'Ivoire
+  - [ ] Djibouti
+  - [X] Egypt
+  - [ ] Equatorial Guinea
+  - [ ] Eritrea
+  - [ ] Eswatini
+  - [X] Ethiopia
+  - [ ] Gabon
+  - [ ] Gambia
+  - [ ] Ghana
+  - [ ] Guinea
+  - [ ] Guinea-Bissau
+  - [ ] Kenya
+  - [ ] Lesotho
+  - [ ] Liberia
+  - [ ] Libya
+  - [ ] Madagascar
+  - [ ] Malawi
+  - [ ] Mali
+  - [ ] Mauritania
+  - [ ] Mauritius
+  - [ ] Morocco
+  - [ ] Mozambique
+  - [ ] Namibia
+  - [ ] Niger
+  - [ ] Nigeria
+  - [ ] Rwanda
+  - [ ] São Tomé and Príncipe
+  - [ ] Senegal
+  - [ ] Seychelles
+  - [ ] Sierra Leone
+  - [ ] Somalia
+  - [X] South Africa
+  - [ ] South Sudan
+  - [ ] Sudan
+  - [ ] Tanzania
+  - [ ] Togo
+  - [ ] Tunisia
+  - [ ] Uganda
+  - [ ] Zambia
+  - [ ] Zimbabwe
+  - [ ] Western Sahara
+
+- [ ] ASIA
+  - [ ] Afghanistan
+  - [ ] Bahrain
+  - [ ] Bangladesh
+  - [ ] Bhutan
+  - [X] Brunei
+  - [X] Cambodia
+  - [X] China
+  - [ ] Cyprus
+  - [X] India
+  - [X] Indonesia
+  - [ ] Iran
+  - [ ] Iraq
+  - [ ] Israel
+  - [X] Japan
+  - [ ] Jordan
+  - [ ] Kazakhstan
+  - [ ] Kuwait
+  - [ ] Kyrgyzstan
+  - [X] Laos
+  - [ ] Lebanon
+  - [X] Malaysia
+  - [ ] Maldives
+  - [ ] Mongolia
+  - [X] Myanmar
+  - [ ] Nepal
+  - [ ] North Korea
+  - [ ] Oman
+  - [ ] Pakistan
+  - [ ] Palestine
+  - [X] Philippines
+  - [ ] Qatar
+  - [ ] Saudi Arabia
+  - [X] Singapore
+  - [ ] South Korea
+  - [ ] Sri Lanka
+  - [X] Syria
+  - [ ] Taiwan
+  - [ ] Tajikistan
+  - [X] Thailand
+  - [ ] Timor-Leste
+  - [X] Turkey
+  - [ ] Turkmenistan
+  - [ ] United Arab Emirates
+  - [ ] Uzbekistan
+  - [X] Vietnam
+  - [ ] Yemen
+  - [ ] Hong Kong
+  - [ ] Macau
+
+- [ ] OCEANIA / PACIFIC
+  - [ ] Australia
+  - [ ] New Zealand
+  - [ ] Fiji
+  - [ ] Papua New Guinea
+  - [ ] Solomon Islands
+  - [ ] Vanuatu
+  - [ ] Samoa
+  - [ ] Tonga
+  - [ ] Kiribati
+  - [ ] Marshall Islands
+  - [ ] Micronesia
+  - [ ] Nauru
+  - [ ] Palau
+  - [ ] Tuvalu
+
+- [ ] ANTARCTICA
+  - [ ] Antarctica
