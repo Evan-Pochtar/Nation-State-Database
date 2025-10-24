@@ -221,5 +221,5 @@
   - [ ] Palau
   - [ ] Tuvalu
 
-- [ ] ANTARCTICA
-  - [ ] Antarctica
+- [x] ANTARCTICA
+  - [x] Antarctica

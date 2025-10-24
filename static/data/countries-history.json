@@ -10019,5 +10019,631 @@
 				"description": "Abiy Ahmed begins reforms and peace with Eritrea; internal conflicts intensify in parts of the country."
 			}
 		]
+	},
+	{
+		"name": "Antarctica",
+		"overview": "Antarctica's history is unique among all continents, as it is the only landmass never inhabited by indigenous peoples and discovered only in the modern era. For millennia, Antarctica existed as a hypothetical 'Terra Australis Incognita' imagined by ancient Greek philosophers and Renaissance cartographers. The continent's actual discovery in 1820 marked the beginning of an extraordinary chapter in human exploration, driven initially by commercial sealing and whaling that nearly exterminated several species, followed by the 'Heroic Age' of polar exploration featuring dramatic races to the South Pole and legendary survival stories. Unlike other continents divided by territorial claims and conflicts, Antarctica became humanity's first experiment in international scientific cooperation through the visionary Antarctic Treaty of 1961, which designated the entire continent as a natural reserve devoted to peace and science. From the earliest sealers braving treacherous seas to modern researchers studying climate change at sophisticated year-round stations, from Roald Amundsen's triumphant arrival at the South Pole to Ernest Shackleton's miraculous survival story, Antarctica represents both the extremes of human ambition and the potential for global cooperation in the face of shared challenges.",
+		"source": {
+			"label": "Wikipedia - History of Antarctica",
+			"url": "https://en.wikipedia.org/wiki/History_of_Antarctica",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Antarctica",
+				"https://www.britannica.com/place/Antarctica/History",
+				"https://www.coolantarctica.com/Antarctica%20fact%20file/History/exploration-history.php",
+				"https://www.sciencelearn.org.nz/resources/1693-antarctica-early-discoveries-timeline",
+				"https://www.ats.aq/e/antarctictreaty.html"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Confirmed Sighting",
+				"value": "January 27, 1820 (Bellingshausen)"
+			},
+			{
+				"label": "First Landing (disputed)",
+				"value": "February 7, 1821 (John Davis)"
+			},
+			{
+				"label": "First South Pole Reached",
+				"value": "December 14, 1911 (Amundsen)"
+			},
+			{
+				"label": "Antarctic Treaty Signed",
+				"value": "December 1, 1959 (entered force June 23, 1961)"
+			},
+			{
+				"label": "Treaty Parties",
+				"value": "58 nations (as of 2024)"
+			},
+			{
+				"label": "Research Stations",
+				"value": "Over 70 permanent and seasonal stations"
+			},
+			{
+				"label": "Population",
+				"value": "No permanent residents; ~1,000-5,000 seasonal researchers"
+			},
+			{
+				"label": "Area",
+				"value": "14.2 million km² (5th largest continent)"
+			}
+		],
+		"pre-colonial": {
+			"period": "Antiquity - 1820 CE",
+			"description": "Antarctica's pre-discovery history is unique in that it consists entirely of speculation, myth, and gradual approach rather than actual human presence. Ancient Greek philosophers, including Aristotle and Ptolemy in the 1st century AD, theorized the existence of a vast southern landmass called 'Terra Australis Incognita' (Unknown Southern Land) to balance the known northern continents, believing Earth's geography must be symmetrical. Medieval and Renaissance cartographers continued this tradition, depicting enormous southern continents on their maps despite having no evidence of their existence. In the 7th century CE, Polynesian oral traditions suggest that Māori navigators including Ui-te-Rangiora may have reached Antarctic or sub-Antarctic waters, describing a frozen ocean and icy landscapes, though these accounts remain controversial among historians. European exploration gradually narrowed the possible location of any southern continent. In 1520, Ferdinand Magellan discovered the strait bearing his name at 54°S, opening a new route between oceans. In 1578, Francis Drake was blown south of Tierra del Fuego, possibly glimpsing what would later be called the Drake Passage. In 1599, Dutch navigator Dirck Gerritsz may have sighted the South Shetland Islands at 64°S after being blown off course, though accounts are disputed. Spanish explorer Gabriel de Castilla claimed to have seen snow-covered mountains beyond 64°S in 1603, but this too had no consequences for further exploration. The great voyages of Captain James Cook in 1772-1775 proved decisive in defining the limits of any southern continent. Cook circumnavigated the globe at high southern latitudes, becoming the first to cross the Antarctic Circle on January 17, 1773, reaching as far as 71°10'S. Though he never sighted Antarctica itself, he encountered the massive ice packs and reported islands teeming with seals and whales, inadvertently setting in motion the commercial exploitation that would soon follow. Cook's reports definitively disproved earlier exaggerated depictions of Terra Australis, proving that if a southern continent existed, it must lie within the Antarctic Circle in one of Earth's most inhospitable regions. His charts showed progressively less hypothetical land as he systematically explored southern waters. After Cook, the theoretical southern continent became an object of practical interest primarily for commercial sealers and whalers rather than scientific explorers, leading directly to the actual discovery of Antarctica in 1820.",
+			"keyEvents": [
+				{
+					"year": "c. 150 CE",
+					"title": "Ptolemy's Theory",
+					"description": "Greek-Egyptian geographer Ptolemy publishes 'Geographia,' noting Terra Australis Incognita as a hypothetical massive southern continent necessary to balance northern lands"
+				},
+				{
+					"year": "c. 650 CE",
+					"title": "Polynesian Exploration",
+					"description": "Rarotongan oral traditions describe Ui-te-Rangiora sailing south of New Zealand to frozen region, possibly becoming first humans to observe Antarctic waters"
+				},
+				{
+					"year": "1520",
+					"title": "Magellan's Strait",
+					"description": "Ferdinand Magellan navigates strait at 54°S during first circumnavigation, establishing southern limits of South America and proving passage between oceans"
+				},
+				{
+					"year": "1578",
+					"title": "Drake Passage Discovery",
+					"description": "Francis Drake blown south of Cape Horn, possibly discovering the open water passage between South America and Antarctica now bearing his name"
+				},
+				{
+					"year": "1599",
+					"title": "First Possible Sighting",
+					"description": "Dutch navigator Dirck Gerritsz possibly sights South Shetland Islands at 64°S after storm drives ship off course, though accounts remain disputed"
+				},
+				{
+					"year": "1603",
+					"title": "Castilla's Report",
+					"description": "Spanish explorer Gabriel de Castilla claims to observe snow-covered mountains beyond 64°S, another possible early Antarctic sighting with no follow-up"
+				},
+				{
+					"year": "1772-1775",
+					"title": "Cook's Circumnavigation",
+					"description": "Captain James Cook circles globe at high southern latitudes, crossing Antarctic Circle multiple times, reaching 71°10'S, proving any southern continent must lie within extreme latitudes"
+				},
+				{
+					"year": "January 17, 1773",
+					"title": "First Antarctic Circle Crossing",
+					"description": "Cook's expedition becomes first confirmed crossing of Antarctic Circle, encountering massive ice barriers but no land sighting"
+				},
+				{
+					"year": "1775",
+					"title": "South Georgia Discovery",
+					"description": "Cook discovers and charts South Georgia, reporting abundant seal populations that would drive commercial exploitation and eventual Antarctic discovery"
+				}
+			],
+			"notableFigures": [
+				"Ptolemy (Greek-Egyptian geographer)",
+				"Ui-te-Rangiora (Polynesian navigator, possibly legendary)",
+				"Ferdinand Magellan",
+				"Francis Drake",
+				"Captain James Cook"
+			]
+		},
+		"colonial": {
+			"period": "1820 - 1899",
+			"description": "Antarctica's 'colonial' period differs fundamentally from other continents, as the extreme climate made permanent settlement impossible and the continent was exploited primarily for marine resources rather than land. The actual discovery of Antarctica occurred in 1820, making it the last continent to be found. Three expeditions may have sighted Antarctica within days of each other: Russian explorer Fabian Gottlieb von Bellingshausen likely first glimpsed the continental ice shelf on January 27, 1820; British Royal Navy officer Edward Bransfield sighted Trinity Peninsula on January 30, 1820; and American sealer Nathaniel Palmer saw the Antarctic Peninsula in November 1820. The first undisputed landing on the Antarctic continent remains controversial, though American sealer Captain John Davis may have stepped ashore at Hughes Bay on February 7, 1821. The first confirmed landing was by Norwegian Carsten Borchgrevink at Cape Adare on January 24, 1895. Following these discoveries, commercial exploitation began immediately and brutally. Sealers, primarily from Britain and the United States, descended upon Antarctic beaches in a frenzied rush, methodically slaughtering fur seals and elephant seals. Before 1833, at least 7 million fur seals were killed in Antarctic and sub-Antarctic regions. Entire seal populations on island after island were driven to near extinction within years. On South Georgia alone, an estimated 1.2 million fur seals were killed by 1825. Sealers kept their hunting grounds secret to protect commercial interests, inadvertently also keeping geographic discoveries secret. Elephant seals were hunted for their blubber, which was rendered into oil; hunters would lance them through the heart or shoot them, drain their blood, and strip their blubber, leaving carcasses on beaches. By 1829, naturalist James Eights lamented the near-complete extermination of Antarctic fur seals. Whaling occurred sporadically in the 19th century, primarily hunting slower right whales and humpbacks, though intensive whaling would not begin until the early 20th century. Major exploration voyages characterized the mid-19th century. James Clark Ross's British expedition (1839-1843) discovered the Ross Sea, Ross Ice Shelf, Victoria Land, and the volcanoes Mount Erebus and Mount Terror, reaching 78°10'S. French explorer Jules Dumont d'Urville's expedition (1837-1840) discovered and claimed Adélie Land for France. American Charles Wilkes led a U.S. Naval expedition (1838-1842) that explored a large section of East Antarctica, becoming the first to recognize Antarctica as a continent rather than merely a collection of islands. These expeditions established a 'broken line of discovered lands along the coastline' but could not penetrate the interior. Despite these achievements, historian H.R. Mill called the following period 'the age of averted interest,' as James Clark Ross declared in 1841 that there were no scientific discoveries worth pursuing in the far south. For nearly two decades after Ross's return, international interest in Antarctic exploration waned considerably. The final decades of the 19th century saw renewed but limited activity, primarily driven by whaling interests and preliminary scientific curiosity that would explode into the 'Heroic Age' at century's end.",
+			"keyEvents": [
+				{
+					"year": "January 27, 1820",
+					"title": "Bellingshausen Sighting",
+					"description": "Russian explorer Fabian Gottlieb von Bellingshausen likely becomes first to sight Antarctic mainland ice shelf, two days after crossing Antarctic Circle"
+				},
+				{
+					"year": "January 30, 1820",
+					"title": "Bransfield Sighting",
+					"description": "British Royal Navy officer Edward Bransfield with pilot William Smith sights Trinity Peninsula, long considered first confirmed sighting of Antarctic continent"
+				},
+				{
+					"year": "November 17, 1820",
+					"title": "Palmer Sighting",
+					"description": "American sealing captain Nathaniel Palmer sights Antarctic Peninsula, later promoted as discoverer in United States"
+				},
+				{
+					"year": "1821",
+					"title": "Bellingshausen Islands Discovery",
+					"description": "Bellingshausen discovers Peter I Island (January 21) and Alexander Island (January 28), first confirmed Antarctic islands, proving land exists at extreme southern latitudes"
+				},
+				{
+					"year": "February 7, 1821",
+					"title": "First Landing (Disputed)",
+					"description": "American sealer Captain John Davis possibly makes first landing on continental Antarctica at Hughes Bay, though not acknowledged by all historians"
+				},
+				{
+					"year": "1821",
+					"title": "First Antarctic Wintering",
+					"description": "British sealing ship Lord Melville crew involuntarily becomes first to winter in Antarctica on King George Island after ship driven offshore"
+				},
+				{
+					"year": "1821",
+					"title": "South Orkney Islands Discovery",
+					"description": "British sealer George Powell and American Nathaniel Palmer co-discover South Orkney Islands, Powell annexes them for Britain"
+				},
+				{
+					"year": "1823",
+					"title": "Weddell Sea Discovery",
+					"description": "British sealer James Weddell discovers sea named after him, reaches farthest south point of 74°15'S, finding favorable ice conditions and open water"
+				},
+				{
+					"year": "1820s-1830s",
+					"title": "Great Sealing Devastation",
+					"description": "Intensive commercial sealing drives fur seal and elephant seal populations to near extinction; over 7 million fur seals killed before 1833 across Antarctic regions"
+				},
+				{
+					"year": "1829",
+					"title": "First Antarctic Fossil",
+					"description": "Piece of wood from South Shetland Islands becomes first fossil ever recorded from Antarctica during U.S. expedition commanded by Captain Benjamin Pendleton"
+				},
+				{
+					"year": "1838-1842",
+					"title": "Wilkes Expedition",
+					"description": "U.S. Navy Lt. Charles Wilkes leads exploring expedition charting extensive Antarctic coastline, first to recognize Antarctica as continent rather than islands"
+				},
+				{
+					"year": "1837-1840",
+					"title": "Dumont d'Urville Expedition",
+					"description": "French explorer Jules Dumont d'Urville discovers and claims Adélie Land for France, making significant geographical discoveries along East Antarctic coast"
+				},
+				{
+					"year": "1839-1843",
+					"title": "Ross Expedition",
+					"description": "British explorer James Clark Ross discovers Ross Sea, Ross Ice Shelf, Victoria Land, Mount Erebus and Mount Terror, reaching record farthest south 78°10'S on January 23, 1842"
+				},
+				{
+					"year": "1841",
+					"title": "Discovery of Mount Erebus",
+					"description": "Ross discovers active volcano Mount Erebus on Ross Island, naming it after his ship; also identifies 145 new fish species during expedition"
+				},
+				{
+					"year": "1841",
+					"title": "'Age of Averted Interest' Begins",
+					"description": "Ross declares no worthwhile scientific discoveries remain in Antarctic, beginning two-decade lull in exploration activity"
+				},
+				{
+					"year": "1872-1876",
+					"title": "Challenger Expedition",
+					"description": "HMS Challenger under Captain George Nares becomes first steamship to cross Antarctic Circle, reopening oceanographic study after 30-year gap"
+				},
+				{
+					"year": "January 24, 1895",
+					"title": "First Confirmed Landing",
+					"description": "Norwegian Carsten Borchgrevink leads party making first confirmed landing on Antarctic continent at Cape Adare, authenticated by all historians"
+				}
+			],
+			"notableFigures": [
+				"Fabian Gottlieb von Bellingshausen",
+				"Edward Bransfield",
+				"Nathaniel Palmer",
+				"James Weddell",
+				"Jules Dumont d'Urville",
+				"Charles Wilkes",
+				"James Clark Ross",
+				"Carsten Borchgrevink"
+			]
+		},
+		"modern": {
+			"period": "1899 - Present",
+			"description": "Antarctica's modern era encompasses the legendary 'Heroic Age' of exploration (1897-1922), the transition to scientific research, international cooperation through the Antarctic Treaty, and ongoing environmental challenges. The Heroic Age began with the Belgica expedition (1897-1899) becoming the first to overwinter south of the Antarctic Circle when trapped in pack ice, with crew including young Roald Amundsen. Carsten Borchgrevink's Southern Cross expedition (1898-1900) was first to intentionally winter on the Antarctic continent at Cape Adare. Robert Falcon Scott's Discovery expedition (1901-1904) established British presence and conducted extensive scientific work. Ernest Shackleton's Nimrod expedition (1907-1909) came within 97 miles of the South Pole, establishing a new farthest south record of 88°23'S. The dramatic race to the South Pole in 1911-1912 epitomized the era: Norwegian Roald Amundsen, a veteran polar explorer who had learned survival techniques from indigenous Arctic peoples, reached the South Pole on December 14, 1911, using dog sleds and skis with meticulous planning. Scott's British expedition, handicapped by poor transport choices (ponies and motorized sledges that failed) and inadequate nutrition, arrived on January 17, 1912, devastated to find Amundsen's tent and Norwegian flag. Scott and his four companions perished during the return journey, dying of exposure, starvation, and exhaustion just 11 miles from a supply depot. Their tragic story earned posthumous heroism in Britain. Shackleton's Imperial Trans-Antarctic Expedition (1914-1917) became legendary not for achievement but survival: his ship Endurance was crushed by pack ice in the Weddell Sea on November 21, 1915, forcing the crew to camp on ice floes for months before reaching Elephant Island. Shackleton and five men then sailed 800 miles across the treacherous Southern Ocean in the tiny lifeboat James Caird to South Georgia, then crossed the island's glaciated mountains to reach a whaling station. Shackleton returned to rescue his stranded men in August 1916; remarkably, all 28 men under his command survived, though the neglected Ross Sea Party lost three men. Douglas Mawson's Australasian expedition (1911-1914) faced its own horrors when companions died and Mawson barely survived alone. The 20th century saw intensive commercial whaling that nearly exterminated several whale species. Between 1904 and 1916, nearly 25,000 humpback whales were killed off South Georgia alone. Whaling became industrialized with factory ships and exploding harpoons, targeting massive blue whales and fast fin whales. By the 1960s, public awareness of whale intelligence and environmental concerns, combined with alternative materials, led most nations to cease Antarctic whaling. The International Geophysical Year (IGY) 1957-1958 revolutionized Antarctic science. Sixty-seven countries participated in unprecedented cooperation during the Cold War, establishing over 55 research stations including at the South Pole (Amundsen-Scott Station). The IGY demonstrated international scientific collaboration's potential and directly led to the Antarctic Treaty. Signed December 1, 1959, and entering force June 23, 1961, the Antarctic Treaty designated Antarctica as a natural reserve devoted to peace and science, the first arms control agreement of the Cold War. It froze territorial claims, banned military activity and nuclear testing, established freedom of scientific research, and mandated international cooperation. Original signatories were the 12 IGY-active nations; by 2024, 58 nations had joined. Subsequent agreements include the Convention for the Conservation of Antarctic Seals (1972), the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR, 1982), and the Madrid Protocol on Environmental Protection (1991) banning mining for 50 years. Modern Antarctica hosts over 70 research stations conducting crucial climate science, glaciology, and atmospheric research. Scientists have discovered evidence of anthropogenic climate change through ice cores revealing 800,000 years of climate history. The ozone hole over Antarctica, discovered in the 1980s, led to international action through the Montreal Protocol. Today, Antarctica faces challenges from climate change (ice shelf collapse, glacier retreat), increasing tourism (over 100,000 visitors annually), and debates over resource management and territorial claims that remain frozen but unresolved. The continent represents both humanity's capacity for international cooperation and the ongoing struggle to preserve Earth's last great wilderness.",
+			"keyEvents": [
+				{
+					"year": "1897-1899",
+					"title": "Belgica Expedition",
+					"description": "Belgian expedition commanded by Adrien de Gerlache, with Roald Amundsen aboard, becomes first to overwinter south of Antarctic Circle after ship trapped in pack ice; first scientific Antarctic expedition"
+				},
+				{
+					"year": "1898-1900",
+					"title": "Borchgrevink's Southern Cross",
+					"description": "Norwegian Carsten Borchgrevink leads British expedition, first to intentionally winter on Antarctic mainland at Cape Adare; party includes first confirmed continental landing"
+				},
+				{
+					"year": "1901-1904",
+					"title": "Scott's Discovery Expedition",
+					"description": "British National Antarctic Expedition led by Robert Falcon Scott generates valuable geographic and biological data; Scott, Shackleton, and Wilson reach 82°S, new southern record"
+				},
+				{
+					"year": "1902-1904",
+					"title": "Scottish National Expedition",
+					"description": "William Speirs Bruce leads Scotia expedition, discovers Coats Land, establishes first permanent meteorological station on Laurie Island in South Orkney Islands"
+				},
+				{
+					"year": "1907-1909",
+					"title": "Shackleton's Nimrod Expedition",
+					"description": "Ernest Shackleton leads British expedition reaching 88°23'S on January 9, 1909, just 97 geographical miles from South Pole; party forced to turn back to avoid death; first ascent of Mount Erebus"
+				},
+				{
+					"year": "1911-1914",
+					"title": "Mawson's Expedition",
+					"description": "Douglas Mawson leads Australasian Antarctic Expedition; after companions die, Mawson survives alone against extreme odds, returning to find Aurora departed, forcing second winter"
+				},
+				{
+					"year": "October 20, 1911",
+					"title": "Amundsen Departs for Pole",
+					"description": "Roald Amundsen and four companions begin dash to South Pole from Bay of Whales with 52 dogs, 60 miles closer to Pole than Scott's base"
+				},
+				{
+					"year": "November 1, 1911",
+					"title": "Scott Departs for Pole",
+					"description": "Robert Falcon Scott begins South Pole journey from McMurdo Sound with ponies, dogs, and motorized sledges; motor sledges soon fail"
+				},
+				{
+					"year": "December 14, 1911",
+					"title": "Amundsen Reaches South Pole",
+					"description": "Roald Amundsen and four companions become first humans to reach geographic South Pole; raise Norwegian flag, leave tent with message for Scott, depart December 18"
+				},
+				{
+					"year": "January 17, 1912",
+					"title": "Scott Reaches South Pole",
+					"description": "Scott's party reaches South Pole 34 days after Amundsen, devastated to find Norwegian tent and flag; 'Great God! This is an awful place' Scott writes in diary"
+				},
+				{
+					"year": "March 29, 1912",
+					"title": "Scott Expedition Perishes",
+					"description": "Scott makes final diary entry; he and two remaining companions die in tent just 11 miles from supply depot; Petty Officer Evans and Captain Oates died earlier during retreat"
+				},
+				{
+					"year": "1912-1913",
+					"title": "Filchner Expedition",
+					"description": "German expedition discovers Luitpold Coast and Filchner Ice Shelf; ship Deutschland trapped in ice for nine months"
+				},
+				{
+					"year": "August 8, 1914",
+					"title": "Endurance Departs",
+					"description": "Ernest Shackleton's Imperial Trans-Antarctic Expedition departs Plymouth for attempt to cross Antarctic continent; expedition approved by Winston Churchill despite WWI outbreak"
+				},
+				{
+					"year": "January 18, 1915",
+					"title": "Endurance Trapped",
+					"description": "Shackleton's ship Endurance becomes trapped in Weddell Sea pack ice; drifts for ten months unable to break free or reach planned landing"
+				},
+				{
+					"year": "October 27, 1915",
+					"title": "Endurance Crushed",
+					"description": "Pressure from ice crushes Endurance; crew abandons ship to Ocean Camp on ice; 'She's going, boys. It's time to get off'"
+				},
+				{
+					"year": "November 21, 1915",
+					"title": "Endurance Sinks",
+					"description": "Remnants of Endurance disappear beneath Weddell Sea; crew camps on drifting ice floes for months"
+				},
+				{
+					"year": "April 15, 1916",
+					"title": "Elephant Island Landing",
+					"description": "After harrowing journey in three lifeboats, Shackleton's 28 men reach Elephant Island, first solid ground in 497 days; remote island far from shipping lanes"
+				},
+				{
+					"year": "April 24, 1916",
+					"title": "James Caird Voyage Begins",
+					"description": "Shackleton and five men depart Elephant Island in 22-foot lifeboat James Caird for 800-mile journey across Southern Ocean to South Georgia"
+				},
+				{
+					"year": "May 10, 1916",
+					"title": "James Caird Reaches South Georgia",
+					"description": "After 16-day voyage through Force-9 gales and freezing conditions, James Caird lands on uninhabited south coast of South Georgia; crew survives one of history's greatest small-boat journeys"
+				},
+				{
+					"year": "May 19-20, 1916",
+					"title": "Crossing of South Georgia",
+					"description": "Shackleton, Worsley, and Crean make first crossing of South Georgia's glaciated mountains, reaching Stromness whaling station after 36-hour trek without proper equipment"
+				},
+				{
+					"year": "August 30, 1916",
+					"title": "Elephant Island Rescue",
+					"description": "After three failed attempts, Shackleton returns on Chilean tugboat Yelcho to rescue 22 men stranded on Elephant Island; all 28 Endurance crew members survive ordeal"
+				},
+				{
+					"year": "January 10, 1917",
+					"title": "Ross Sea Party Rescued",
+					"description": "Aurora rescues surviving Ross Sea Party members after their ship was blown from anchorage; three party members including commander Aeneas Mackintosh died; they successfully laid depots unaware Endurance had sunk"
+				},
+				{
+					"year": "1928-1930",
+					"title": "Byrd's First Expedition",
+					"description": "Richard Evelyn Byrd leads first American expedition, establishing Little America base; conducts first flight over South Pole on November 29, 1929"
+				},
+				{
+					"year": "1933-1935",
+					"title": "Byrd's Second Expedition",
+					"description": "Byrd spends first-ever solo winter in Antarctic interior at Advance Base, 120 miles south of Little America; nearly dies from carbon monoxide poisoning, rescued by three men"
+				},
+				{
+					"year": "1935",
+					"title": "Ellsworth's Trans-Antarctic Flight",
+					"description": "Lincoln Ellsworth flies Lockheed Gamma across Antarctic continent from Dundee Island to Ross Ice Shelf; stranded at Little America two months before rescue"
+				},
+				{
+					"year": "1943",
+					"title": "Operation Tabarin",
+					"description": "British establish first permanent Antarctic bases to report enemy naval activity during WWII; marks beginning of continuous scientific presence and modern research era"
+				},
+				{
+					"year": "1946-1947",
+					"title": "Operation Highjump",
+					"description": "United States sends largest military expedition ever to Antarctica: 13 ships, 4,700 men, multiple aircraft to train personnel, test equipment in extreme cold, and map coastline"
+				},
+				{
+					"year": "1949-1952",
+					"title": "Norwegian-British-Swedish Expedition",
+					"description": "First international Antarctic scientific collaboration; three expedition members die when vehicle plunges off ice cliff into sea; demonstrates need for international cooperation"
+				},
+				{
+					"year": "1952",
+					"title": "Hope Bay Incident",
+					"description": "Argentine military fires warning shots at British personnel on February 1, escalating territorial tensions; UK sends warship with marines; incident demonstrates need for international agreement"
+				},
+				{
+					"year": "July 1, 1957 - December 31, 1958",
+					"title": "International Geophysical Year",
+					"description": "67 nations participate in unprecedented scientific cooperation; 12 countries establish over 55 Antarctic research stations including at South Pole; revolutionizes Earth science during Cold War"
+				},
+				{
+					"year": "1957",
+					"title": "Amundsen-Scott South Pole Station",
+					"description": "United States establishes permanent research station at geographic South Pole during IGY; named for both explorers who reached pole, symbolizing international cooperation"
+				},
+				{
+					"year": "1957-1958",
+					"title": "First Commonwealth Crossing",
+					"description": "Sir Vivian Fuchs leads British Commonwealth Trans-Antarctic Expedition completing first overland crossing of Antarctica from Weddell Sea to Ross Sea via South Pole; Sir Edmund Hillary scouts route"
+				},
+				{
+					"year": "October 4, 1957",
+					"title": "Sputnik Launch",
+					"description": "Soviet Union launches first artificial satellite during IGY, inaugurating space age; followed by U.S. Explorer I on February 1, 1958; demonstrates potential of international scientific cooperation"
+				},
+				{
+					"year": "December 1, 1959",
+					"title": "Antarctic Treaty Signed",
+					"description": "12 nations sign Antarctic Treaty in Washington establishing continent as natural reserve for peace and science; first arms control agreement of Cold War era"
+				},
+				{
+					"year": "June 23, 1961",
+					"title": "Antarctic Treaty Enters Force",
+					"description": "Antarctic Treaty officially takes effect after ratification by 12 original signatories, establishing unprecedented international governance freezing territorial claims, banning military activity"
+				},
+				{
+					"year": "1972",
+					"title": "Convention for Conservation of Seals",
+					"description": "International agreement regulates seal hunting, establishing catch limits and protected species; prevents repeat of 19th century devastation though commercial sealing had already largely ceased"
+				},
+				{
+					"year": "1978",
+					"title": "First Antarctic Birth",
+					"description": "Emilio Marcos Palma born at Argentine Esperanza Base on January 7, becomes first person born on Antarctic continent; Argentina pursuing territorial claim through settlement"
+				},
+				{
+					"year": "1980",
+					"title": "Convention on Marine Living Resources",
+					"description": "CCAMLR enters force to conserve Antarctic marine ecosystem, particularly krill populations crucial to food web; establishes ecosystem-based fisheries management"
+				},
+				{
+					"year": "1985",
+					"title": "Ozone Hole Discovery",
+					"description": "British Antarctic Survey scientists discover massive seasonal ozone depletion over Antarctica caused by chlorofluorocarbons (CFCs); leads to Montreal Protocol banning ozone-depleting substances"
+				},
+				{
+					"year": "1989",
+					"title": "First Solo Antarctic Traverse",
+					"description": "Norwegian explorer Erling Kagge becomes first person to reach South Pole solo and unsupported, completing 870-mile journey in 50 days"
+				},
+				{
+					"year": "1991",
+					"title": "Madrid Protocol",
+					"description": "Protocol on Environmental Protection to Antarctic Treaty designates Antarctica as 'natural reserve devoted to peace and science,' bans mining for 50 years, establishes comprehensive environmental protection"
+				},
+				{
+					"year": "1994-1995",
+					"title": "First Women's South Pole Traverse",
+					"description": "Ann Bancroft and Liv Arnesen lead first all-women's expedition to reach South Pole on skis; demonstrates women's achievements in polar exploration"
+				},
+				{
+					"year": "1996",
+					"title": "Lake Vostok Discovery",
+					"description": "Russian and British scientists confirm existence of massive subglacial Lake Vostok beneath 4,000 meters of ice; largest of 400+ Antarctic subglacial lakes, isolated for 15-25 million years"
+				},
+				{
+					"year": "1998",
+					"title": "Antarctic Tourism Growth",
+					"description": "Tourist numbers exceed 10,000 annually for first time; raises concerns about environmental impact, safety, and governance of non-governmental activities"
+				},
+				{
+					"year": "2002",
+					"title": "Larsen B Ice Shelf Collapse",
+					"description": "3,250 km² Larsen B ice shelf disintegrates in just 35 days between January and March; dramatic evidence of rapid climate change impacts on Antarctic Peninsula"
+				},
+				{
+					"year": "2004",
+					"title": "Vostok Ice Core Results",
+					"description": "Analysis of ice core from Vostok Station reveals 420,000 years (later extended to 800,000 years) of climate history, proving correlation between CO2 and temperature"
+				},
+				{
+					"year": "2007-2009",
+					"title": "International Polar Year",
+					"description": "Fourth International Polar Year involves 50,000+ participants from 60+ nations conducting intensive polar research; documents rapid environmental changes in both polar regions"
+				},
+				{
+					"year": "2009",
+					"title": "Antarctic Treaty 50th Anniversary",
+					"description": "Treaty System celebrates 50 years as model of international cooperation; now includes 53 parties with 29 consultative members able to participate in decision-making"
+				},
+				{
+					"year": "2016",
+					"title": "Ross Sea Marine Protected Area",
+					"description": "CCAMLR establishes world's largest marine protected area covering 1.55 million km² of Ross Sea; prohibits commercial fishing in 1.12 million km² for 35 years"
+				},
+				{
+					"year": "2017",
+					"title": "Larsen C Iceberg Calving",
+					"description": "Trillion-ton iceberg (5,800 km²) breaks from Larsen C ice shelf on July 12, one of largest icebergs ever recorded; named A-68, highlights ice shelf instability"
+				},
+				{
+					"year": "2019",
+					"title": "Endurance Location Identified",
+					"description": "Researchers announce they have narrowed search area for Shackleton's ship Endurance to 10 nautical miles in Weddell Sea using historical records and modern technology"
+				},
+				{
+					"year": "2020",
+					"title": "Record High Temperature",
+					"description": "Argentine research base Esperanza records 18.3°C (64.9°F) on February 6, highest temperature ever recorded on Antarctic continent; later disputed but highlights warming trend"
+				},
+				{
+					"year": "2022",
+					"title": "Endurance Wreck Found",
+					"description": "March 5, Endurance22 expedition discovers wreck of Shackleton's ship in 3,008 meters of water, remarkably preserved after 107 years; exact location matches Captain Worsley's navigation records"
+				},
+				{
+					"year": "2023",
+					"title": "Record Low Sea Ice",
+					"description": "Antarctic sea ice extent reaches record low, 2.2 million km² below 1981-2010 average; scientists concerned about accelerating climate change impacts"
+				},
+				{
+					"year": "2024",
+					"title": "Thwaites Glacier Concerns",
+					"description": "International research confirms 'Doomsday Glacier' Thwaites losing ice at accelerating rate; potential collapse could raise global sea levels by 65 cm, threatening coastal cities worldwide"
+				}
+			],
+			"notableFigures": [
+				"Roald Amundsen (first to South Pole, 1911)",
+				"Robert Falcon Scott (South Pole expedition, died 1912)",
+				"Ernest Shackleton (legendary survival, Imperial Trans-Antarctic Expedition)",
+				"Douglas Mawson (Australasian expedition, solo survival)",
+				"Richard E. Byrd (American explorer, multiple expeditions)",
+				"Carsten Borchgrevink (first confirmed landing, first intentional wintering)",
+				"Vivian Fuchs (first overland crossing)",
+				"Edmund Hillary (supported Fuchs, reached South Pole overland)",
+				"Paul Siple (coined 'wind chill,' multiple Byrd expeditions)",
+				"Ann Bancroft (first women's expedition to South Pole)",
+				"Ranulph Fiennes (first to reach both poles and summit Everest)",
+				"Joe Farman (discovered ozone hole)",
+				"Claude Lorius (pioneering ice core climate research)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 150 CE",
+				"era": "Pre-Colonial",
+				"title": "Terra Australis Theory",
+				"description": "Ptolemy theorizes massive southern continent must exist to balance northern lands"
+			},
+			{
+				"year": "1772-1775",
+				"era": "Pre-Colonial",
+				"title": "Cook's Circumnavigation",
+				"description": "Captain James Cook circles Antarctica, crossing Antarctic Circle multiple times, proving any southern continent lies within extreme latitudes"
+			},
+			{
+				"year": "January 27, 1820",
+				"era": "Colonial",
+				"title": "Antarctica Discovered",
+				"description": "Bellingshausen likely first to sight Antarctic continent; Bransfield sights land January 30; last continent discovered"
+			},
+			{
+				"year": "February 7, 1821",
+				"era": "Colonial",
+				"title": "First Landing (Disputed)",
+				"description": "Captain John Davis possibly makes first landing on Antarctic continent at Hughes Bay"
+			},
+			{
+				"year": "1820s-1830s",
+				"era": "Colonial",
+				"title": "Sealing Devastation",
+				"description": "Commercial sealers kill over 7 million fur seals, driving species to near extinction"
+			},
+			{
+				"year": "1839-1843",
+				"era": "Colonial",
+				"title": "Ross Expedition",
+				"description": "James Clark Ross discovers Ross Sea, Ross Ice Shelf, reaches 78°10'S; greatest geographical discoveries of 19th century Antarctica"
+			},
+			{
+				"year": "January 24, 1895",
+				"era": "Colonial",
+				"title": "First Confirmed Landing",
+				"description": "Carsten Borchgrevink makes first universally confirmed landing on Antarctic continent at Cape Adare"
+			},
+			{
+				"year": "1897-1899",
+				"era": "Modern",
+				"title": "First Wintering",
+				"description": "Belgica expedition becomes first to winter south of Antarctic Circle, beginning Heroic Age"
+			},
+			{
+				"year": "January 9, 1909",
+				"era": "Modern",
+				"title": "Shackleton's Farthest South",
+				"description": "Shackleton reaches 88°23'S, just 97 miles from South Pole before turning back"
+			},
+			{
+				"year": "December 14, 1911",
+				"era": "Modern",
+				"title": "Amundsen Reaches South Pole",
+				"description": "Roald Amundsen and four companions become first humans to reach geographic South Pole"
+			},
+			{
+				"year": "January 17, 1912",
+				"era": "Modern",
+				"title": "Scott Reaches South Pole",
+				"description": "Scott's party reaches pole 34 days after Amundsen; entire party perishes on return journey"
+			},
+			{
+				"year": "1914-1916",
+				"era": "Modern",
+				"title": "Endurance Expedition",
+				"description": "Shackleton's ship crushed by ice; all 28 men survive through extraordinary leadership and 800-mile open boat journey"
+			},
+			{
+				"year": "November 29, 1929",
+				"era": "Modern",
+				"title": "First Flight Over South Pole",
+				"description": "Richard Byrd conducts first flight over South Pole, opening aerial exploration era"
+			},
+			{
+				"year": "1957-1958",
+				"era": "Modern",
+				"title": "International Geophysical Year",
+				"description": "67 nations cooperate in unprecedented scientific research; 12 establish permanent Antarctic presence"
+			},
+			{
+				"year": "December 1, 1959",
+				"era": "Modern",
+				"title": "Antarctic Treaty Signed",
+				"description": "12 nations sign treaty dedicating Antarctica to peace and science; first Cold War arms control agreement"
+			},
+			{
+				"year": "June 23, 1961",
+				"era": "Modern",
+				"title": "Antarctic Treaty Enters Force",
+				"description": "Treaty takes effect, establishing unprecedented international governance freezing territorial claims"
+			},
+			{
+				"year": "1985",
+				"era": "Modern",
+				"title": "Ozone Hole Discovered",
+				"description": "British scientists discover massive ozone depletion over Antarctica, leading to Montreal Protocol"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Madrid Protocol",
+				"description": "Environmental Protocol bans mining for 50 years, designates Antarctica as natural reserve"
+			},
+			{
+				"year": "2002",
+				"era": "Modern",
+				"title": "Larsen B Collapse",
+				"description": "Massive ice shelf disintegrates in 35 days, dramatic evidence of climate change"
+			},
+			{
+				"year": "March 5, 2022",
+				"era": "Modern",
+				"title": "Endurance Found",
+				"description": "Shackleton's ship discovered remarkably preserved 3,008 meters deep after 107 years"
+			}
+		]
 	}
 ]
