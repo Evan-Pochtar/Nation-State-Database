@@ -79,10 +79,7 @@
 			class="relative z-2 text-slate-400/90 transition-all duration-300 hover:text-sky-400/90"
 			class:settings-icon-active={settingsOpen}
 		>
-			<div
-				class="transition-transform duration-600 ease-in-out"
-				class:rotate-240={settingsOpen}
-			>
+			<div class="transition-transform duration-600 ease-in-out" class:rotate-240={settingsOpen}>
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 					<path
 						d="M19.4 13.5a7.97 7.97 0 000-3l2.1-1.6-2-3.4-2.4.6a8 8 0 00-2.6-1.5L14 2h-4l-.5 2.1a8 8 0 00-2.6 1.5L4.5 5.9 2.5 9.3 4.6 10.9a7.97 7.97 0 000 3L2.5 15.8l2 3.4 2.4-.6a8 8 0 002.6 1.5L10 22h4l.5-2.1a8 8 0 002.6-1.5l2.4.6 2-3.4-2.1-1.6z"

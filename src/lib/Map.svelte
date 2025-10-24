@@ -19,6 +19,7 @@
 		getGini
 	} from '$lib/utils/chloroplethUtils';
 
+	// === STATE MANAGEMENT ===
 	let countries: GeoFeature[] = $state([]);
 	let selectedFeature: GeoFeature | null = $state(null);
 	let selectedName: string | null = $state(null);
@@ -26,65 +27,89 @@
 	let currentProjection: string = $state('naturalEarth1');
 	let settingsOpen = $state(false);
 
-	let leftPct = 0.36,
-		tempLeftPct = leftPct,
-		leftWidth = $state(0),
-		tempLeftWidth = $state(0);
+	// Resizing state
+	let leftPct = 0.36;
+	let leftWidth = $state(0);
+	let tempLeftWidth = $state(0);
 	const MIN_PCT = 0.2,
-		MAX_PCT = 0.75,
-		MIN_LEFT_PX = 450,
-		MAX_LEFT_PX = 900,
-		COMPACT_THRESHOLD = 700,
+		MAX_PCT = 0.75;
+	const MIN_LEFT_PX = 450,
+		MAX_LEFT_PX = 900;
+	const COMPACT_THRESHOLD = 700,
 		HANDLE_WIDTH = 6;
 	let dragging = $state(false);
 
-	let outerWidth = $state(1600),
-		outerHeight = $state(900),
-		rightWidth = $state(1600),
-		rightHeight = $state(900);
+	// Dimensions
+	let outerWidth = $state(1600);
+	let outerHeight = $state(900);
+	let rightWidth = $state(1600);
+	let rightHeight = $state(900);
 
+	// D3 projections
 	let projection: d3.GeoProjection;
 	let pathGenerator: d3.GeoPath<any, GeoFeature> = $state(d3.geoPath<any, GeoFeature>());
-	let focusProjection: d3.GeoProjection | undefined,
-		focusPathGenerator: d3.GeoPath<any, GeoFeature> | null = $state(null);
+	let focusProjection: d3.GeoProjection | undefined;
+	let focusPathGenerator: d3.GeoPath<any, GeoFeature> | null = $state(null);
 
-	let animHandle: number | null = null,
-		isAnimating = false;
+	// Animation state
+	let isAnimating = false;
+	let panelAnimating = false;
 
+	// Cache
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = $state({});
-	let svgEl: SVGSVGElement | null = $state(null),
-		mapGroup: SVGGElement | null = $state(null);
-
-	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
-	let resizeTimeout: number,
-		currentTransform = d3.zoomIdentity,
-		isZooming = false,
-		showSources = $state(false);
-
-	let topoData: any = null;
-	let topoObjectKey: string | null = null;
-	let countryColorMap: string[] = [];
-
 	let pathCache = new Map<string, string>();
-	let hoveredCountry: number | null = $state(null);
+	const countryNameCache = new WeakMap<GeoFeature, string>();
+	const countryIndexCache = new WeakMap<GeoFeature, number>();
+	const projectionCache = new Map<string, () => d3.GeoProjection>();
+
+	// SVG refs
+	let svgEl: SVGSVGElement | null = $state(null);
+	let mapGroup: SVGGElement | null = $state(null);
+
+	// Zoom
+	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
+	let currentTransform = d3.zoomIdentity;
+	let isZooming = false;
 	let zoomRAF: number | null = null;
 
+	// UI state
+	let hoveredCountry: number | null = $state(null);
+	let showSources = $state(false);
 	let copyLinkSuccess = $state(false);
 	let copyLinkTimeout: number | null = null;
 
+	// Theme & chloropleth
 	let currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita' = $state('dark');
 	let chloroplethData: ChloroplethData | null = $state(null);
 	let showLegend = $state(false);
 	let dataLoading = $state(false);
 	let dataLoadProgress = $state({ loaded: 0, total: 0, percentage: 0 });
+
+	// Tooltip
 	let tooltipVisible = $state(false);
 	let tooltipCountry = $state('');
 	let tooltipValue: number | null = $state(null);
 	let tooltipX = $state(0);
 	let tooltipY = $state(0);
-	let panelAnimating = false;
 
-	const projectionCache = new Map<string, () => d3.GeoProjection>();
+	// Topology data
+	let topoData: any = null;
+	let topoObjectKey: string | null = null;
+	let countryColorMap: string[] = [];
+
+	// Timeouts
+	let resizeTimeout: number;
+	let resizeRAF: number | null = null;
+	let lastFocusParams = { width: 0, height: 0, feature: null as GeoFeature | null };
+	let dimensionsCache = { leftWidth: 0, rightWidth: 0, rightHeight: 0 };
+
+	// === DERIVED VALUES ===
+	const isChloroplethTheme = $derived(['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme));
+	const compact = $derived(leftWidth <= COMPACT_THRESHOLD);
+	const selectedLoading = $derived(selectedName ? (infoCache[selectedName]?.loading ?? false) : false);
+	const selectedInfo = $derived(selectedName ? (infoCache[selectedName]?.data ?? null) : null);
+
+	// === HELPER FUNCTIONS ===
 	function getProjection(type: string): d3.GeoProjection {
 		if (!projectionCache.has(type)) {
 			projectionCache.set(type, () => {
@@ -102,106 +127,81 @@
 		return projectionCache.get(type)!();
 	}
 
-	function handleProjectionChange(projection: string) {
-		currentProjection = projection;
-		pathCache.clear();
-		handleResize();
-		if (selectedFeature) setupFocusProjection();
-		resetZoom();
-		initZoom();
+	function getCountryName(f: GeoFeature): string {
+		if (!countryNameCache.has(f)) {
+			countryNameCache.set(f, f.properties?.name ?? 'Unknown Country');
+		}
+		return countryNameCache.get(f)!;
 	}
 
-	function handleThemeChange(theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
-		currentTheme = theme;
-		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
-			buildColorfulPalette();
+	function getCountryIndex(f: GeoFeature) {
+		if (countryIndexCache.has(f)) return countryIndexCache.get(f)!;
+
+		for (let i = 0; i < countries.length; i++) {
+			if (
+				countries[i] === f ||
+				(countries[i]?.properties?.iso_a3 &&
+					f?.properties?.iso_a3 &&
+					countries[i].properties.iso_a3 === f.properties.iso_a3) ||
+				(countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name)
+			) {
+				countryIndexCache.set(f, i);
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	function getPath(country: GeoFeature, generator: d3.GeoPath<any, GeoFeature>, index: number): string {
+		const key = `${index}-${generator === pathGenerator ? 'main' : 'focus'}`;
+		if (!pathCache.has(key)) {
+			pathCache.set(key, generator(country as any) || '');
+		}
+		return pathCache.get(key)!;
+	}
+
+	function getCountryFillColor(index: number, isSelected: boolean = false, isHovered: boolean = false): string {
+		if (isChloroplethTheme && chloroplethData) {
+			return getChloroplethColor(index, chloroplethData, '#475569');
+		}
+		if (currentTheme === 'colorful') {
+			return countryColorMap[index] ?? '#E6EEF8';
+		} else if (currentTheme === 'light') {
+			return isSelected ? '#DCEAF6' : '#E6EEF8';
+		} else {
+			return isHovered ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)';
 		}
 	}
 
-	let resizeRAF: number | null = null;
-	function throttledResize() {
-		if (resizeTimeout) clearTimeout(resizeTimeout);
-		if (resizeRAF) cancelAnimationFrame(resizeRAF);
-
-		resizeRAF = requestAnimationFrame(() => {
-			resizeTimeout = window.setTimeout(handleResize, 100);
-		});
-	}
-
-	onMount(async () => {
-		initZoom();
-		try {
-			const resp = await fetch('/data/countries-map.json');
-			if (!resp.ok) {
-				console.error('Failed to load topojson');
-				return;
-			}
-			const topo = await resp.json();
-			topoData = topo;
-			const objects = topo.objects;
-			const objectKey = Object.keys(objects)[0];
-			topoObjectKey = objectKey;
-			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
-
-			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
-
-			const doBackgroundLoad = () => {
-				void batchLoadCountryData(countries, infoCache)
-					.then((updated) => {
-						infoCache = updated;
-					})
-					.catch((err) => console.error('batchLoadCountryData failed:', err));
+	function getCountryStroke(isSelected: boolean, isHovered: boolean): { color: string; width: number } {
+		if (isChloroplethTheme) {
+			return {
+				color: isSelected ? '#fbbf24' : isHovered ? '#fff' : '#1e293b',
+				width: isSelected ? 2.5 : isHovered ? 1.8 : 0.8
 			};
-			if ('requestIdleCallback' in window) {
-				requestIdleCallback(doBackgroundLoad, { timeout: 2000 });
-			} else {
-				setTimeout(doBackgroundLoad, 50);
-			}
-
-			const urlCountry = page.params.country || page.url.pathname.split('/')[1];
-			if (urlCountry) {
-				const decodedCountry = decodeURIComponent(urlCountry);
-				const matchingCountry = countries.find((c) => getCountryName(c).toLowerCase() === decodedCountry.toLowerCase());
-				if (matchingCountry) {
-					await tick();
-					onCountryClick(matchingCountry);
-				}
-			}
-
-			handleResize();
-			window.addEventListener('resize', throttledResize, { passive: true });
-		} catch (error) {
-			console.error('Error loading map data:', error);
 		}
-	});
-
-	onDestroy(() => {
-		window.removeEventListener('resize', throttledResize);
-		if (resizeTimeout) clearTimeout(resizeTimeout);
-		if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
-		if (resizeRAF) cancelAnimationFrame(resizeRAF);
-		if (animHandle != null) cancelAnimationFrame(animHandle);
-		if (zoomRAF) cancelAnimationFrame(zoomRAF);
-		if (svgEl && zoomBehavior) {
-			d3.select(svgEl).on('.zoom', null);
-			zoomBehavior = null;
+		if (currentTheme === 'dark') {
+			return { color: 'rgba(255,255,255,0.4)', width: 0.5 };
+		} else if (currentTheme === 'colorful') {
+			return { color: '#000', width: isHovered ? 2 : 1.2 };
+		} else {
+			return { color: '#000', width: isHovered ? 2 : 1 };
 		}
-		document.body.style.userSelect = '';
-		(document.body as any).style.webkitUserSelect = '';
-		pathCache.clear();
-		projectionCache.clear();
-	});
+	}
 
-	let dimensionsCache = { leftWidth: 0, rightWidth: 0, rightHeight: 0 };
+	// === RESIZE HANDLING ===
 	function handleResize() {
 		outerWidth = window.innerWidth;
 		outerHeight = window.innerHeight;
+
 		const desired = Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)));
 		leftWidth = desired;
+
 		const effectiveLeft = dragging ? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired)) : leftWidth;
 		rightWidth = selectedFeature ? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH) : outerWidth;
 		rightHeight = outerHeight;
 
+		// Skip if dimensions haven't changed significantly
 		if (
 			Math.abs(dimensionsCache.leftWidth - leftWidth) < 5 &&
 			Math.abs(dimensionsCache.rightWidth - rightWidth) < 5 &&
@@ -213,32 +213,36 @@
 		dimensionsCache = { leftWidth, rightWidth, rightHeight };
 
 		if (countries.length > 0) {
-			const worldFeature: GeoJSON.FeatureCollection = {
-				type: 'FeatureCollection',
-				features: countries
-			};
+			const worldFeature: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: countries };
 			projection = getProjection(currentProjection);
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
 
-			const keysToDelete: string[] = [];
+			// Clear main projection paths from cache
 			pathCache.forEach((_, key) => {
-				if (key.includes('-main')) {
-					keysToDelete.push(key);
-				}
+				if (key.includes('-main')) pathCache.delete(key);
 			});
-			keysToDelete.forEach((key) => pathCache.delete(key));
 
 			if (selectedFeature) setupFocusProjection();
 		}
 	}
 
-	let lastFocusParams = { width: 0, height: 0, feature: null as GeoFeature | null };
+	function throttledResize() {
+		if (resizeTimeout) clearTimeout(resizeTimeout);
+		if (resizeRAF) cancelAnimationFrame(resizeRAF);
+
+		resizeRAF = requestAnimationFrame(() => {
+			resizeTimeout = window.setTimeout(handleResize, 100);
+		});
+	}
+
+	// === FOCUS PROJECTION ===
 	function setupFocusProjection() {
 		if (!selectedFeature) return;
 
 		const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
 
+		// Skip if nothing changed
 		if (
 			lastFocusParams.feature === selectedFeature &&
 			Math.abs(lastFocusParams.width - currentRightWidth) < 5 &&
@@ -251,10 +255,7 @@
 
 		try {
 			let proj = getProjection(currentProjection === 'orthographic' ? 'mercator' : currentProjection);
-			const worldFeature: GeoJSON.FeatureCollection = {
-				type: 'FeatureCollection',
-				features: countries
-			};
+			const worldFeature: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: countries };
 			proj.fitSize([currentRightWidth, rightHeight], worldFeature as any);
 			const worldScale = proj.scale();
 
@@ -264,6 +265,7 @@
 				top = paddingPx;
 			const right = Math.max(currentRightWidth - paddingPx, left + 10);
 			const bottom = Math.max(rightHeight - paddingPx, top + 10);
+
 			proj.fitExtent(
 				[
 					[left, top],
@@ -289,13 +291,10 @@
 			focusProjection = proj;
 			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
 
-			const keysToDelete: string[] = [];
+			// Clear focus paths from cache
 			pathCache.forEach((_, key) => {
-				if (key.includes('-focus')) {
-					keysToDelete.push(key);
-				}
+				if (key.includes('-focus')) pathCache.delete(key);
 			});
-			keysToDelete.forEach((key) => pathCache.delete(key));
 		} catch (error) {
 			const fallback = d3.geoMercator();
 			fallback.fitSize(
@@ -307,47 +306,53 @@
 		}
 	}
 
-	const countryNameCache = new WeakMap<GeoFeature, string>();
-	function getCountryName(f: GeoFeature): string {
-		if (!countryNameCache.has(f)) {
-			countryNameCache.set(f, f.properties?.name ?? 'Unknown Country');
-		}
-		return countryNameCache.get(f)!;
-	}
-	const countryIndexCache = new WeakMap<GeoFeature, number>();
+	// === INTERACTION HANDLERS ===
+	async function onCountryClick(f: GeoFeature) {
+		if (!f || isAnimating || panelAnimating) return;
+		isAnimating = true;
+		panelAnimating = true;
+		selectedName = getCountryName(f);
+		selectedFeature = f;
 
-	function getCountryIndex(f: GeoFeature) {
-		if (countryIndexCache.has(f)) {
-			return countryIndexCache.get(f)!;
+		if (!infoCache[selectedName]?.data) {
+			fetchCountryInfoByName(selectedName, infoCache).then((cache) => {
+				infoCache = cache || infoCache;
+			});
 		}
 
-		for (let i = 0; i < countries.length; i++) {
-			if (countries[i] === f) {
-				countryIndexCache.set(f, i);
-				return i;
-			}
-			if (
-				countries[i]?.properties?.iso_a3 &&
-				f?.properties?.iso_a3 &&
-				countries[i].properties.iso_a3 === f.properties.iso_a3
-			) {
-				countryIndexCache.set(f, i);
-				return i;
-			}
-			if (countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name) {
-				countryIndexCache.set(f, i);
-				return i;
-			}
-		}
-		return -1;
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				handleResize();
+				setupFocusProjection();
+				setTimeout(() => {
+					isAnimating = false;
+					panelAnimating = false;
+				}, 150);
+			});
+		});
 	}
 
-	function getPath(country: GeoFeature, generator: d3.GeoPath<any, GeoFeature>, index: number): string {
-		const key = `${index}-${generator === pathGenerator ? 'main' : 'focus'}`;
-		if (!pathCache.has(key)) {
-			pathCache.set(key, generator(country as any) || '');
-		}
-		return pathCache.get(key)!;
+	async function closePanel() {
+		panelAnimating = true;
+		isAnimating = true;
+		selectedFeature = null;
+		selectedName = null;
+		updateURL(null);
+
+		setTimeout(() => {
+			focusProjection = undefined;
+			focusPathGenerator = null;
+			pathCache.clear();
+			lastFocusParams = { width: 0, height: 0, feature: null };
+
+			tick().then(() => {
+				handleResize();
+				resetZoom();
+				initZoom();
+				panelAnimating = false;
+				isAnimating = false;
+			});
+		}, 120);
 	}
 
 	function handleMapClick(e: MouseEvent) {
@@ -397,7 +402,6 @@
 						default:
 							tooltipValue = null;
 					}
-
 					tooltipVisible = true;
 				} else {
 					tooltipVisible = false;
@@ -411,61 +415,22 @@
 		}
 	}
 
-	async function onCountryClick(f: GeoFeature) {
-		if (!f || isAnimating || panelAnimating) return;
-
-		isAnimating = true;
-		panelAnimating = true;
-
-		selectedName = getCountryName(f);
-		selectedFeature = f;
-
-		if (!infoCache[selectedName]?.data) {
-			fetchCountryInfoByName(selectedName, infoCache).then((cache) => {
-				infoCache = cache || infoCache;
-			});
+	function handleMouseMove(e: MouseEvent) {
+		if (tooltipVisible && isChloroplethTheme) {
+			tooltipX = e.clientX;
+			tooltipY = e.clientY;
 		}
-
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				handleResize();
-				setupFocusProjection();
-
-				setTimeout(() => {
-					isAnimating = false;
-					panelAnimating = false;
-				}, 150);
-			});
-		});
 	}
 
-	async function closePanel() {
-		panelAnimating = true;
-		isAnimating = true;
-		selectedFeature = null;
-		selectedName = null;
-		updateURL(null);
-
-		setTimeout(() => {
-			focusProjection = undefined;
-			focusPathGenerator = null;
-			pathCache.clear();
-			lastFocusParams = { width: 0, height: 0, feature: null };
-
-			tick().then(() => {
-				handleResize();
-				resetZoom();
-				initZoom();
-				panelAnimating = false;
-				isAnimating = false;
-			});
-		}, 120);
+	function hoverReset() {
+		hoveredCountry = null;
+		tooltipVisible = false;
 	}
 
+	// === DRAG HANDLERS ===
 	function handlePointerDown() {
 		if (!selectedFeature) return;
 		dragging = true;
-		tempLeftPct = leftPct;
 		tempLeftWidth = leftWidth;
 		document.body.style.userSelect = 'none';
 		(document.body as any).style.webkitUserSelect = 'none';
@@ -478,7 +443,6 @@
 	function handlePointerMove(e: PointerEvent) {
 		if (!dragging) return;
 		const pct = Math.max(MIN_PCT, Math.min(MAX_PCT, e.clientX / outerWidth));
-		tempLeftPct = pct;
 		tempLeftWidth = Math.round(pct * outerWidth);
 		rightWidth = Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH);
 	}
@@ -486,7 +450,7 @@
 	function handlePointerUp() {
 		if (!dragging) return;
 		dragging = false;
-		leftPct = tempLeftPct;
+		leftPct = tempLeftWidth / outerWidth;
 		leftWidth = tempLeftWidth;
 		rightWidth = Math.max(300, outerWidth - leftWidth - HANDLE_WIDTH);
 		setupFocusProjection();
@@ -495,6 +459,7 @@
 		window.removeEventListener('pointermove', handlePointerMove);
 	}
 
+	// === ZOOM ===
 	function buildZoomBehavior() {
 		return d3
 			.zoom<SVGSVGElement, unknown>()
@@ -504,7 +469,6 @@
 			})
 			.on('zoom', (event: any) => {
 				if (!mapGroup || !svgEl) return;
-
 				if (zoomRAF) cancelAnimationFrame(zoomRAF);
 
 				zoomRAF = requestAnimationFrame(() => {
@@ -513,6 +477,7 @@
 					const k = t.k;
 					let tx = t.x,
 						ty = t.y;
+
 					if (mapGroup) {
 						const bbox = mapGroup.getBBox();
 						const vb = svgEl!.viewBox.baseVal;
@@ -564,6 +529,28 @@
 			.call((zoomBehavior as any).transform, currentTransform);
 	}
 
+	// === SETTINGS ===
+	function handleProjectionChange(projection: string) {
+		currentProjection = projection;
+		pathCache.clear();
+		handleResize();
+		if (selectedFeature) setupFocusProjection();
+		resetZoom();
+		initZoom();
+	}
+
+	function handleThemeChange(theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
+		currentTheme = theme;
+		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
+			buildColorfulPalette();
+		}
+	}
+
+	function toggleSettings() {
+		settingsOpen = !settingsOpen;
+	}
+
+	// === COLORFUL PALETTE ===
 	function buildColorfulPalette() {
 		if (!topoData || !topoObjectKey) {
 			countryColorMap = new Array(countries.length).fill('#D0DCE8');
@@ -578,7 +565,6 @@
 			const geoms = topoData.objects[topoObjectKey].geometries;
 			const neigh = neighbors(geoms);
 			const palette = ['#E8D4C0', '#C8E6D7', '#C8DEFF', '#E0D4E8', '#FFD8EA', '#D0F0FF', '#FFE8C0', '#D8F0D8'];
-
 			const assigned: string[] = new Array(geoms.length).fill('#D0DCE8');
 
 			for (let i = 0; i < geoms.length; i++) {
@@ -599,13 +585,13 @@
 		}
 	}
 
-	function toggleSettings() {
-		settingsOpen = !settingsOpen;
-	}
-
-	function hoverReset() {
-		hoveredCountry = null;
-		tooltipVisible = false;
+	// === URL & COPY ===
+	function updateURL(countryName: string | null) {
+		if (countryName) {
+			goto(`/${encodeURIComponent(countryName)}`, { replaceState: false, noScroll: true, keepFocus: true });
+		} else {
+			goto('/', { replaceState: false, noScroll: true, keepFocus: true });
+		}
 	}
 
 	function handleCopyLink() {
@@ -620,67 +606,7 @@
 		});
 	}
 
-	function updateURL(countryName: string | null) {
-		if (countryName) {
-			goto(`/${encodeURIComponent(countryName)}`, { replaceState: false, noScroll: true, keepFocus: true });
-		} else {
-			goto('/', { replaceState: false, noScroll: true, keepFocus: true });
-		}
-	}
-
-	function getCountryFillColor(index: number, isSelected: boolean = false, isHovered: boolean = false): string {
-		if (isChloroplethTheme && chloroplethData) {
-			const baseColor = getChloroplethColor(index, chloroplethData, '#475569');
-			return baseColor;
-		}
-
-		if (currentTheme === 'colorful') {
-			return countryColorMap[index] ?? '#E6EEF8';
-		} else if (currentTheme === 'light') {
-			return isSelected ? '#DCEAF6' : '#E6EEF8';
-		} else {
-			return isHovered ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)';
-		}
-	}
-
-	function getCountryStroke(isSelected: boolean, isHovered: boolean): { color: string; width: number } {
-		if (isChloroplethTheme) {
-			return {
-				color: isSelected ? '#fbbf24' : isHovered ? '#fff' : '#1e293b',
-				width: isSelected ? 2.5 : isHovered ? 1.8 : 0.8
-			};
-		}
-
-		if (currentTheme === 'dark') {
-			return {
-				color: 'rgba(255,255,255,0.4)',
-				width: 0.5
-			};
-		} else if (currentTheme === 'colorful') {
-			return {
-				color: '#000',
-				width: isHovered ? 2 : 1.2
-			};
-		} else {
-			return {
-				color: '#000',
-				width: isHovered ? 2 : 1
-			};
-		}
-	}
-
-	function handleMouseMove(e: MouseEvent) {
-		if (tooltipVisible && isChloroplethTheme) {
-			tooltipX = e.clientX;
-			tooltipY = e.clientY;
-		}
-	}
-
-	// DERIVED VALUES & EFFECTS
-	const isChloroplethTheme = $derived(['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme));
-	const compact = $derived(leftWidth <= COMPACT_THRESHOLD);
-	const selectedLoading = $derived(selectedName ? (infoCache[selectedName]?.loading ?? false) : false);
-	const selectedInfo = $derived(selectedName ? (infoCache[selectedName]?.data ?? null) : null);
+	// === EFFECTS ===
 	$effect(() => {
 		if (isChloroplethTheme && countries.length > 0) {
 			const progress = getLoadProgress(countries, infoCache);
@@ -701,6 +627,71 @@
 			chloroplethData = null;
 			showLegend = false;
 		}
+	});
+
+	// === LIFECYCLE ===
+	onMount(async () => {
+		initZoom();
+		try {
+			const resp = await fetch('/data/countries-map.json');
+			if (!resp.ok) {
+				console.error('Failed to load topojson');
+				return;
+			}
+			const topo = await resp.json();
+			topoData = topo;
+			const objects = topo.objects;
+			const objectKey = Object.keys(objects)[0];
+			topoObjectKey = objectKey;
+			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
+
+			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
+
+			const doBackgroundLoad = () => {
+				void batchLoadCountryData(countries, infoCache)
+					.then((updated) => {
+						infoCache = updated;
+					})
+					.catch((err) => console.error('batchLoadCountryData failed:', err));
+			};
+
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(doBackgroundLoad, { timeout: 2000 });
+			} else {
+				setTimeout(doBackgroundLoad, 50);
+			}
+
+			const urlCountry = page.params.country || page.url.pathname.split('/')[1];
+			if (urlCountry) {
+				const decodedCountry = decodeURIComponent(urlCountry);
+				const matchingCountry = countries.find((c) => getCountryName(c).toLowerCase() === decodedCountry.toLowerCase());
+				if (matchingCountry) {
+					await tick();
+					onCountryClick(matchingCountry);
+				}
+			}
+
+			handleResize();
+			window.addEventListener('resize', throttledResize, { passive: true });
+		} catch (error) {
+			console.error('Error loading map data:', error);
+		}
+	});
+
+	onDestroy(() => {
+		window.removeEventListener('resize', throttledResize);
+		if (resizeTimeout) clearTimeout(resizeTimeout);
+		if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
+		if (resizeRAF) cancelAnimationFrame(resizeRAF);
+		if (zoomRAF) cancelAnimationFrame(zoomRAF);
+		if (svgEl && zoomBehavior) {
+			d3.select(svgEl).on('.zoom', null);
+			zoomBehavior = null;
+		}
+		document.body.style.userSelect = '';
+		(document.body as any).style.webkitUserSelect = '';
+		pathCache.clear();
+		projectionCache.clear();
 	});
 </script>
 
@@ -745,14 +736,13 @@
 			{/if}
 		</div>
 	{/if}
-
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
 	<div
 		class="relative flex-1 overflow-hidden"
 		style="width: {selectedFeature
 			? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)`
 			: '100%'}; transition: width 150ms cubic-bezier(0.33, 1, 0.68, 1); will-change: width;"
 	>
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		{#if !selectedFeature}
 			<MapSettings
 				{settingsOpen}
@@ -768,13 +758,11 @@
 				total={dataLoadProgress.total}
 				percentage={dataLoadProgress.percentage}
 			/>
-
 			<ChloroplethLegend
 				{chloroplethData}
 				dataType={currentTheme as DataType}
 				visible={showLegend && isChloroplethTheme && !selectedFeature}
 			/>
-
 			<ChloroplethTooltip
 				visible={tooltipVisible && isChloroplethTheme && !selectedFeature}
 				countryName={tooltipCountry}

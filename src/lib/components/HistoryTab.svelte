@@ -17,6 +17,8 @@
 
 	let activeSection = $state('overview');
 	let historyData: any = $state(null);
+	let isLoading = $state(false);
+	let lastLoadedCountry = $state('');
 
 	function fetchHistoryData(name: string) {
 		return fetchHistoryDataModule({
@@ -36,32 +38,45 @@
 	function updateHistoryData() {
 		if (!selectedName) {
 			historyData = null;
+			lastLoadedCountry = '';
 			return;
 		}
 
 		const cachedData = infoCache[selectedName]?.data;
 		if (cachedData?.history && typeof cachedData.history !== 'string') {
 			historyData = cachedData.history;
-		} else {
-			historyData = null;
+			lastLoadedCountry = selectedName;
+		} else if (lastLoadedCountry !== selectedName) {
+			isLoading = true;
+			fetchHistoryData(selectedName).finally(() => {
+				isLoading = false;
+			});
 		}
 	}
 
+	$effect(() => {
+		const name = selectedName;
+		const cache = infoCache;
+
+		if (name) {
+			const cachedData = cache[name]?.data;
+			if (cachedData?.history && typeof cachedData.history !== 'string') {
+				historyData = cachedData.history;
+				lastLoadedCountry = name;
+			} else if (lastLoadedCountry !== name && !cache[name]?.loading) {
+				isLoading = true;
+				fetchHistoryData(name).finally(() => {
+					isLoading = false;
+				});
+			}
+		} else {
+			historyData = null;
+			lastLoadedCountry = '';
+		}
+	});
+
 	onMount(() => {
-		updateHistoryData();
-		if (selectedName) {
-			fetchHistoryData(selectedName);
-		}
-	});
-
-	$effect(() => {
-		if (selectedName) {
-			fetchHistoryData(selectedName);
-		}
-	});
-
-	$effect(() => {
-		if (selectedInfo || selectedName || infoCache) {
+		if (selectedName && !infoCache[selectedName]?.data?.history) {
 			updateHistoryData();
 		}
 	});
@@ -82,7 +97,7 @@
 		{/if}
 	</div>
 
-	{#if selectedName && infoCache[selectedName]?.loading}
+	{#if (selectedName && infoCache[selectedName]?.loading) || isLoading}
 		<div
 			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-linear-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
 		>

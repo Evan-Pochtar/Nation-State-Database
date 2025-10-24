@@ -98,7 +98,7 @@
 					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-linear-to-b from-transparent via-white/5 to-transparent"
 				></div>
 				<div
-					class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-size[4px_4px]"
+					class="bg-size[4px_4px] absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]"
 				></div>
 			</div>
 
@@ -238,9 +238,7 @@
 		{@const exports = getLatestValue(indicators.exports)}
 		{@const imports = getLatestValue(indicators.imports)}
 		{#if exports && imports}
-			<div
-				class="mt-3 rounded-lg border border-emerald-700/30 bg-linear-to-br from-emerald-900/20 to-blue-900/20 p-4"
-			>
+			<div class="mt-3 rounded-lg border border-emerald-700/30 bg-linear-to-br from-emerald-900/20 to-blue-900/20 p-4">
 				<div class="mb-2 flex items-center gap-2">
 					<span class="font-semibold text-white">Trade Balance</span>
 				</div>
