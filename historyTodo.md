@@ -206,8 +206,8 @@
   - [ ] Macau
 
 - [ ] OCEANIA / PACIFIC
-  - [ ] Australia
-  - [ ] New Zealand
+  - [x] Australia
+  - [x] New Zealand
   - [ ] Fiji
   - [ ] Papua New Guinea
   - [ ] Solomon Islands

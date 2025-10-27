@@ -10645,5 +10645,739 @@
 				"description": "Shackleton's ship discovered remarkably preserved 3,008 meters deep after 107 years"
 			}
 		]
+	},
+	{
+		"name": "Australia",
+		"overview": "Australia's history spans over 65,000 years of continuous Indigenous civilization, followed by British colonization beginning in 1788, and evolution into a prosperous, multicultural democracy. From the world's oldest living cultures of Aboriginal and Torres Strait Islander peoples to the arrival of the First Fleet, from the struggles of frontier conflicts and the quest for federation to the forging of a distinct national identity through war and peace, Australia has developed a unique character. The ANZAC spirit born at Gallipoli, the White Australia policy and its eventual dismantling, the Stolen Generations and ongoing reconciliation efforts, and transformation into a diverse Pacific nation define modern Australia's complex journey from British penal colony to independent Commonwealth realm.",
+		"source": {
+			"label": "Wikipedia - History of Australia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Australia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Australia",
+				"https://www.britannica.com/place/Australia/History",
+				"https://en.wikipedia.org/wiki/History_of_Indigenous_Australians",
+				"https://www.nma.gov.au/defining-moments/resources/federation"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Indigenous Settlement",
+				"value": "c. 65,000 years ago"
+			},
+			{
+				"label": "British Colonization",
+				"value": "January 26, 1788"
+			},
+			{
+				"label": "Federation",
+				"value": "January 1, 1901"
+			},
+			{
+				"label": "Capital",
+				"value": "Canberra (founded 1913)"
+			},
+			{
+				"label": "Statute of Westminster Adopted",
+				"value": "1942 (retroactive to 1939)"
+			},
+			{
+				"label": "Full Independence",
+				"value": "Australia Act 1986"
+			}
+		],
+		"pre-colonial": {
+			"period": "c. 65,000 BCE - 1788 CE",
+			"description": "Aboriginal Australians and Torres Strait Islanders represent the world's oldest continuous living cultures, having inhabited the Australian continent for at least 65,000 years according to recent archaeological evidence. The first peoples arrived from Southeast Asia during periods when lower sea levels created land bridges and shorter ocean crossings. They rapidly spread across the continent, adapting to diverse environments from tropical rainforests to arid deserts, developing sophisticated land management practices including controlled burning, complex kinship systems, and deep spiritual connections to Country. At the time of European contact in 1788, the Indigenous population was estimated between 300,000 and one million people, comprising approximately 260 distinct language groups and over 500 dialects. Aboriginal societies were organized into family groups and clans with defined territorial boundaries, practicing semi-nomadic lifestyles that followed seasonal patterns. They possessed extensive knowledge of their environments, sophisticated resource management, complex trade networks spanning thousands of kilometers, and rich artistic and ceremonial traditions including rock art, storytelling, and Dreamtime law. Torres Strait Islanders, who settled their islands at least 2,500 years ago, developed distinct maritime cultures based on seafaring, horticulture, and reef resources. These diverse cultures created some of humanity's earliest art, with petroglyphs dated to 43,000 years ago, developed advanced stone tool technologies, and maintained intricate systems of law, ceremony, and social organization. The arrival of Europeans would devastate these populations through introduced diseases like smallpox (killing over 50% of the population), violent frontier conflicts that killed an estimated 17,000-30,000 Aboriginal people by 1928, forced displacement from traditional lands, and systematic destruction of cultural practices. Despite this catastrophic impact, Indigenous peoples demonstrated remarkable resilience and resistance, maintaining cultural continuity and connection to Country that persists to the present day.",
+			"keyEvents": [
+				{
+					"year": "c. 65,000 BCE",
+					"title": "First Human Settlement",
+					"description": "Aboriginal peoples arrive in Australia from Southeast Asia, establishing the world's oldest continuous living culture"
+				},
+				{
+					"year": "c. 50,000 BCE",
+					"title": "Rapid Continental Spread",
+					"description": "Aboriginal populations sweep around continent in parallel movements along east and west coasts, meeting near modern Adelaide"
+				},
+				{
+					"year": "c. 43,000 BCE",
+					"title": "Ancient Rock Art",
+					"description": "Creation of some of world's oldest petroglyphs in South Australia, demonstrating sophisticated cultural expression"
+				},
+				{
+					"year": "c. 40,000 BCE",
+					"title": "Mungo Man and Lady Mungo",
+					"description": "Burials at Lake Mungo in New South Wales showing complex ritual practices and one of earliest cremations in human history"
+				},
+				{
+					"year": "c. 2,500 years ago",
+					"title": "Torres Strait Islander Settlement",
+					"description": "Torres Strait Islander peoples permanently settle islands, developing distinct seafaring culture separate from mainland Aboriginal groups"
+				},
+				{
+					"year": "1606",
+					"title": "First European Contact",
+					"description": "Dutch navigator Willem Janszoon makes first recorded European landing on Australian continent at Cape York Peninsula"
+				},
+				{
+					"year": "1770",
+					"title": "Cook Claims East Coast",
+					"description": "Captain James Cook charts eastern coastline and claims it for Britain as 'New South Wales,' despite Indigenous inhabitation"
+				}
+			],
+			"notableFigures": [
+				"Pemulwuy (Eora resistance leader)",
+				"Bennelong (Eora man who befriended Governor Phillip)",
+				"Truganini (Palawa woman, symbol of Tasmanian Aboriginal survival)"
+			]
+		},
+		"colonial": {
+			"period": "1788 - 1901",
+			"description": "British colonization of Australia began on January 26, 1788, when the First Fleet of 11 ships carrying over 1,400 people (half of them convicts) arrived at Port Jackson (Sydney) under Captain Arthur Phillip. Britain established the penal colony following the loss of American colonies, seeking a place for transported convicts. The doctrine of 'terra nullius' (land belonging to no one) was used to justify colonization despite clear Indigenous presence and established societies. Transportation of convicts continued until 1868, with approximately 160,000 convicts sent to Australia. Free settlers increasingly arrived, especially during gold rushes of the 1850s which dramatically boosted population and wealth. The colonial period was marked by devastating frontier violence as settlers pushed inland, with systematic massacres, punitive expeditions, and disease killing tens of thousands of Aboriginal people. The Hawkesbury River massacre (1794), Myall Creek massacre (1838), and countless other attacks were part of what historians now recognize as frontier wars. Some Aboriginal people also allied with colonists against traditional enemies. Six separate British colonies developed: New South Wales (1788), Tasmania (1825), Western Australia (1829), South Australia (1836), Victoria (1851), and Queensland (1859). Each gained responsible government between 1855-1890, meaning elected parliaments controlled internal affairs while Britain retained foreign policy control. The colonies developed pastoral and agricultural economies, particularly wool and wheat exports. The gold rushes brought rapid population growth, multiculturalism (including Chinese immigration), and democratic reforms. However, growing anti-Chinese sentiment led to restrictive laws in various colonies. The 1879-1880 'Conquest of the Desert' campaign brutally pushed remaining Aboriginal peoples off their lands in inland areas. By the 1890s, momentum built for federation to unite the colonies, driven by defense concerns, desire for economic cooperation, and emerging Australian nationalism. The Constitution was drafted through conventions in the 1890s, approved by colonial referendums, passed by British Parliament, and the Commonwealth of Australia was proclaimed on January 1, 1901.",
+			"keyEvents": [
+				{
+					"year": "1788",
+					"title": "First Fleet Arrives",
+					"description": "January 26, Captain Arthur Phillip establishes penal colony at Port Jackson (Sydney), beginning British colonization"
+				},
+				{
+					"year": "1789",
+					"title": "Smallpox Epidemic",
+					"description": "April, devastating smallpox outbreak kills large numbers of Aboriginal people around Sydney, likely over 50% of population"
+				},
+				{
+					"year": "1792-1797",
+					"title": "Pemulwuy's Resistance",
+					"description": "Aboriginal warrior Pemulwuy leads sustained resistance against colonists in Sydney region until his death in 1802"
+				},
+				{
+					"year": "1794",
+					"title": "Hawkesbury River Massacre",
+					"description": "First recorded mass killing of Aboriginal people by white colonists marks beginning of systematic frontier violence"
+				},
+				{
+					"year": "1803",
+					"title": "Settlement of Tasmania",
+					"description": "Colony established in Van Diemen's Land (Tasmania), leading to near-extermination of Tasmanian Aboriginal people"
+				},
+				{
+					"year": "1830",
+					"title": "Black Line",
+					"description": "Attempt to round up remaining Tasmanian Aboriginal people through human chain across island during 'Black War'"
+				},
+				{
+					"year": "1838",
+					"title": "Myall Creek Massacre",
+					"description": "June 10, killing of up to 30 Aboriginal people; seven perpetrators later hanged, first punishment for such killings"
+				},
+				{
+					"year": "1851",
+					"title": "Gold Rush Begins",
+					"description": "Gold discovered in Victoria and New South Wales, triggering massive immigration and economic transformation"
+				},
+				{
+					"year": "1854",
+					"title": "Eureka Stockade",
+					"description": "December 3, miners' rebellion at Ballarat goldfields becomes symbol of Australian democratic and egalitarian spirit"
+				},
+				{
+					"year": "1868",
+					"title": "Convict Transportation Ends",
+					"description": "Last convict ship arrives in Western Australia, ending 80 years of penal transportation"
+				},
+				{
+					"year": "1880",
+					"title": "Ned Kelly Executed",
+					"description": "November 11, bushranger Ned Kelly hanged in Melbourne, becoming Australian folk hero and symbol of anti-establishment defiance"
+				},
+				{
+					"year": "1890-1891",
+					"title": "Federation Conventions Begin",
+					"description": "Colonial leaders meet to draft constitution for united Australia, beginning decade-long federation process"
+				},
+				{
+					"year": "1897-1898",
+					"title": "Constitutional Conventions",
+					"description": "Delegates from colonies draft final version of Constitution, including compromises on state powers and federal structure"
+				},
+				{
+					"year": "1899-1900",
+					"title": "Federation Referendums",
+					"description": "Colonies vote to approve Constitution; British Parliament passes Commonwealth of Australia Constitution Act in July 1900"
+				}
+			],
+			"notableFigures": [
+				"Captain Arthur Phillip (first Governor)",
+				"Pemulwuy (Eora resistance leader)",
+				"Lachlan Macquarie (Governor 1810-1821)",
+				"Truganini (Palawa survivor)",
+				"Peter Lalor (Eureka Stockade leader)",
+				"Ned Kelly (bushranger)",
+				"Sir Henry Parkes (Father of Federation)"
+			]
+		},
+		"modern": {
+			"period": "1901 - Present",
+			"description": "Federation on January 1, 1901 created the Commonwealth of Australia, uniting six colonies as states under a federal system modeled on British parliamentary democracy and American federalism. Edmund Barton became first Prime Minister. One of the first acts was the Immigration Restriction Act 1901, beginning the White Australia policy to exclude non-European immigrants. Australia remained enthusiastic British dominion, participating eagerly in imperial affairs. Over 60,000 Australians died in World War I, with the failed Gallipoli campaign (1915) becoming defining moment of national identity, establishing the ANZAC legend of courage, mateship, and sacrifice. ANZAC Day (April 25) became sacred national commemoration. Australia signed the Treaty of Versailles separately from Britain, marking growing independence. The 1931 Statute of Westminster granted legislative autonomy, though Australia didn't adopt it until 1942. World War II saw over 40,000 Australian deaths and shifted focus toward United States alliance after fall of Singapore exposed vulnerability. Post-war immigration transformed Australia from predominantly British to multicultural society, with Southern European migrants in 1950s-60s followed by Asian immigration after White Australia policy officially ended in 1973. The devastating policy of forcibly removing Aboriginal children from families (Stolen Generations) continued from 1910s-1970s, causing intergenerational trauma. Aboriginal Australians weren't counted in census until 1971 and faced legal discrimination until 1960s civil rights movement. The 1967 referendum saw 90.77% vote to include Aboriginal people in census and allow federal government to make laws for them. The 1970s-80s brought multicultural policy, land rights movement, and in 1992 the landmark Mabo decision overturned terra nullius doctrine. Prime Minister Kevin Rudd's 2008 apology to Stolen Generations marked important reconciliation milestone. The 1986 Australia Act severed remaining constitutional ties with Britain, achieving full legal independence. Australia has developed into prosperous, stable democracy and multicultural society, though reconciliation with Indigenous Australians and addressing inequality remain ongoing challenges. The country maintains strong alliances with Britain and United States while increasingly engaging with Asia-Pacific region.",
+			"keyEvents": [
+				{
+					"year": "1901",
+					"title": "Federation Proclaimed",
+					"description": "January 1, Commonwealth of Australia inaugurated with Edmund Barton as first Prime Minister; Melbourne temporary capital"
+				},
+				{
+					"year": "1901",
+					"title": "Immigration Restriction Act",
+					"description": "White Australia policy enshrined in law, excluding non-European immigration for next 70 years"
+				},
+				{
+					"year": "1913",
+					"title": "Canberra Established",
+					"description": "March 12, new capital city Canberra officially named; Parliament moved from Melbourne in 1927"
+				},
+				{
+					"year": "1914-1918",
+					"title": "World War I",
+					"description": "Over 330,000 Australians serve; 60,000 killed. ANZAC legend born at Gallipoli defines national identity"
+				},
+				{
+					"year": "1915",
+					"title": "Gallipoli Campaign",
+					"description": "April 25, ANZAC forces land at Gallipoli; 8,141 Australians killed in failed campaign that became defining national moment"
+				},
+				{
+					"year": "1919",
+					"title": "Treaty of Versailles",
+					"description": "Australia signs treaty as separate nation, marking evolution toward independent foreign policy"
+				},
+				{
+					"year": "1920s-1930s",
+					"title": "Stolen Generations Policies",
+					"description": "Government policies forcibly remove Aboriginal children from families for assimilation, causing lasting trauma"
+				},
+				{
+					"year": "1939-1945",
+					"title": "World War II",
+					"description": "One million Australians serve; 40,000 killed. Fall of Singapore (1942) shifts focus to US alliance"
+				},
+				{
+					"year": "1942",
+					"title": "Statute of Westminster Adopted",
+					"description": "Australia adopts 1931 Statute retroactive to 1939, gaining legislative independence from Britain"
+				},
+				{
+					"year": "1945-1970s",
+					"title": "Post-War Immigration Boom",
+					"description": "Over 2 million migrants arrive, initially from Europe, transforming Australia into multicultural society"
+				},
+				{
+					"year": "1950-1953",
+					"title": "Korean War",
+					"description": "17,000 Australians serve in Korean War alongside UN forces"
+				},
+				{
+					"year": "1962-1972",
+					"title": "Vietnam War",
+					"description": "60,000 Australians serve in controversial war; 523 killed. War divides nation and sparks protests"
+				},
+				{
+					"year": "1965",
+					"title": "Freedom Rides",
+					"description": "Aboriginal activists and students tour NSW protesting discrimination, inspired by US civil rights movement"
+				},
+				{
+					"year": "1967",
+					"title": "Referendum on Aboriginal Rights",
+					"description": "May 27, 90.77% vote yes to count Aboriginal people in census and allow Commonwealth to make laws for them"
+				},
+				{
+					"year": "1973",
+					"title": "White Australia Policy Ends",
+					"description": "Whitlam government formally dismantles White Australia policy, opening door to Asian immigration"
+				},
+				{
+					"year": "1975",
+					"title": "Whitlam Dismissal",
+					"description": "November 11, Governor-General dismisses elected Prime Minister Gough Whitlam, causing constitutional crisis"
+				},
+				{
+					"year": "1986",
+					"title": "Australia Act",
+					"description": "March 3, severs remaining constitutional links with Britain, achieving full legal independence"
+				},
+				{
+					"year": "1992",
+					"title": "Mabo Decision",
+					"description": "June 3, High Court overturns terra nullius doctrine, recognizing Aboriginal land rights and native title"
+				},
+				{
+					"year": "2000",
+					"title": "Sydney Olympics",
+					"description": "September, Olympic Games showcase modern multicultural Australia to world; Cathy Freeman lights Olympic flame"
+				},
+				{
+					"year": "2008",
+					"title": "Apology to Stolen Generations",
+					"description": "February 13, Prime Minister Kevin Rudd delivers formal apology to Aboriginal Australians for past injustices"
+				},
+				{
+					"year": "2017",
+					"title": "Same-Sex Marriage",
+					"description": "December 9, Parliament legalizes same-sex marriage after national postal survey shows 61.6% support"
+				}
+			],
+			"notableFigures": [
+				"Edmund Barton (first PM)",
+				"Sir Robert Menzies (longest-serving PM)",
+				"John Curtin (WWII leader)",
+				"Gough Whitlam (reformist PM)",
+				"Eddie Mabo (land rights activist)",
+				"Cathy Freeman (Olympic champion)",
+				"Paul Keating",
+				"John Howard",
+				"Indigenous rights activists (Vincent Lingiari, Charles Perkins)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 65,000 BCE",
+				"era": "Pre-Colonial",
+				"title": "First Australians",
+				"description": "Aboriginal peoples arrive, establishing world's oldest continuous living culture"
+			},
+			{
+				"year": "1770",
+				"era": "Colonial",
+				"title": "Cook Claims East Coast",
+				"description": "Captain James Cook charts eastern coastline and claims it for Britain"
+			},
+			{
+				"year": "1788",
+				"era": "Colonial",
+				"title": "First Fleet Arrives",
+				"description": "British establish penal colony at Sydney Cove, beginning colonization"
+			},
+			{
+				"year": "1838",
+				"era": "Colonial",
+				"title": "Myall Creek Massacre",
+				"description": "Brutal killing of Aboriginal people leads to first execution of perpetrators"
+			},
+			{
+				"year": "1851",
+				"era": "Colonial",
+				"title": "Gold Rush",
+				"description": "Discovery of gold triggers massive immigration and economic boom"
+			},
+			{
+				"year": "1901",
+				"era": "Modern",
+				"title": "Federation",
+				"description": "Six colonies unite to form Commonwealth of Australia"
+			},
+			{
+				"year": "1915",
+				"era": "Modern",
+				"title": "Gallipoli Landing",
+				"description": "ANZAC forces land at Gallipoli on April 25, creating national legend"
+			},
+			{
+				"year": "1942",
+				"era": "Modern",
+				"title": "Fall of Singapore",
+				"description": "Japanese capture of Singapore shifts Australian security focus to United States"
+			},
+			{
+				"year": "1967",
+				"era": "Modern",
+				"title": "Aboriginal Rights Referendum",
+				"description": "Overwhelming vote to include Aboriginal people in census and recognize rights"
+			},
+			{
+				"year": "1986",
+				"era": "Modern",
+				"title": "Australia Act",
+				"description": "Complete legal independence from Britain achieved"
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "Mabo Decision",
+				"description": "High Court overturns terra nullius, recognizing Indigenous land rights"
+			},
+			{
+				"year": "2008",
+				"era": "Modern",
+				"title": "National Apology",
+				"description": "Government apologizes to Stolen Generations"
+			}
+		]
+	},
+	{
+		"name": "New Zealand",
+		"overview": "New Zealand's history encompasses the arrival of Polynesian voyagers who became the Māori people around 1250-1300 CE, European colonization beginning in the early 19th century, and the complex partnership established through the 1840 Treaty of Waitangi. From the sophisticated traditions of Māori tribal societies to violent land wars of the 1860s, from progressive social reforms making New Zealand first country to grant women's suffrage to the devastating world wars that forged ANZAC identity, New Zealand has developed a unique bicultural character. The ongoing process of addressing Treaty breaches through the Waitangi Tribunal, efforts toward genuine partnership between Māori and Pākehā (European New Zealanders), and evolution into an independent Pacific nation with progressive social policies define modern New Zealand's journey from British colony to distinct nation proud of both its Indigenous heritage and multicultural present.",
+		"source": {
+			"label": "New Zealand History - NZ History",
+			"url": "https://nzhistory.govt.nz/culture/history-of-new-zealand-1769-1914",
+			"urls": [
+				"https://nzhistory.govt.nz/culture/history-of-new-zealand-1769-1914",
+				"https://en.wikipedia.org/wiki/History_of_New_Zealand",
+				"https://www.britannica.com/topic/history-of-New-Zealand",
+				"https://nzhistory.govt.nz/politics/treaty/the-treaty-in-brief"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Māori Settlement",
+				"value": "c. 1250-1300 CE"
+			},
+			{
+				"label": "Treaty of Waitangi Signed",
+				"value": "February 6, 1840"
+			},
+			{
+				"label": "Women's Suffrage",
+				"value": "1893 (world first)"
+			},
+			{
+				"label": "Dominion Status",
+				"value": "September 26, 1907"
+			},
+			{
+				"label": "Full Independence",
+				"value": "1947 (Statute of Westminster)"
+			},
+			{
+				"label": "Capital",
+				"value": "Wellington (since 1865)"
+			}
+		],
+		"pre-colonial": {
+			"period": "c. 1250 CE - 1840 CE",
+			"description": "New Zealand was one of the last major landmasses on Earth to be settled by humans. Polynesian voyagers from Eastern Polynesia, likely from the Society Islands or nearby regions, reached New Zealand in deliberate voyages of exploration around 1250-1300 CE, though dates remain debated. These skilled navigators traveled thousands of kilometers across open ocean using knowledge of stars, currents, and bird migrations. They brought the dog, rat, and several plants including kumara (sweet potato), taro, and yam. The settlers developed into the Māori people, with the term 'Māori' (meaning 'ordinary' or 'normal') only adopted after European arrival to distinguish themselves from Pākehā (Europeans). Early Māori society evolved through distinct phases: an 'Archaic' period focused on coastal settlements, hunting large flightless moa birds (leading to their extinction), fishing, and limited cultivation; followed by a 'Classic' period characterized by movement inland, construction of fortified pā (villages), extensive kumara cultivation using sophisticated storage techniques, and development of intricate carving and weaving traditions. Māori organized into iwi (tribes) and hapū (sub-tribes) with complex kinship systems, each with defined territories and resources. Society was hierarchical with rangatira (chiefs), tohunga (priests and experts), and common people. Warfare was common between groups, often over resources, insults to mana (prestige), or utu (revenge). Māori developed remarkable adaptation to New Zealand's cooler climate compared to tropical Polynesia, creating one of the world's few Polynesian societies in temperate latitudes. They established extensive trade networks, sophisticated resource management including seasonal harvesting, and rich oral traditions preserving genealogies (whakapapa), histories, and spiritual beliefs centered on concepts like tapu (sacred) and mana. European contact began with Dutch explorer Abel Tasman in 1642, who had hostile encounter and left without landing. Captain James Cook's voyages (1769-1777) brought sustained contact, detailed mapping, and knowledge of New Zealand to Europe. From the 1790s, sealers, whalers, and traders arrived, bringing muskets, metal tools, and diseases. The 'Musket Wars' (1807-1837) saw tribes with early access to muskets devastate traditional enemies, causing massive casualties and population displacement.",
+			"keyEvents": [
+				{
+					"year": "c. 1250-1300",
+					"title": "Polynesian Settlement",
+					"description": "Polynesian voyagers reach New Zealand in deliberate ocean voyages, becoming ancestors of Māori people"
+				},
+				{
+					"year": "c. 1300-1500",
+					"title": "Moa Extinction",
+					"description": "Hunting leads to extinction of moa and other large birds, forcing adaptation of Māori economy and settlement patterns"
+				},
+				{
+					"year": "1642",
+					"title": "First European Contact",
+					"description": "December, Dutch explorer Abel Tasman encounters Māori in Golden Bay; violent confrontation, leaves without landing"
+				},
+				{
+					"year": "1769",
+					"title": "Cook's First Voyage",
+					"description": "October, Captain James Cook arrives, beginning sustained European contact and detailed mapping of New Zealand"
+				},
+				{
+					"year": "1790s-1830s",
+					"title": "Sealers and Whalers",
+					"description": "European and American sealers and whalers establish temporary settlements, introducing trade goods, muskets, and diseases"
+				},
+				{
+					"year": "1807-1837",
+					"title": "Musket Wars",
+					"description": "Inter-tribal conflicts intensified by European muskets cause massive casualties and population displacement across North Island"
+				},
+				{
+					"year": "1814",
+					"title": "First Mission Station",
+					"description": "Anglican missionary Samuel Marsden establishes first Christian mission at Rangihoua in Bay of Islands"
+				},
+				{
+					"year": "1835",
+					"title": "Declaration of Independence",
+					"description": "October 28, northern chiefs sign He Whakaputanga (Declaration of Independence), asserting Māori sovereignty"
+				}
+			],
+			"notableFigures": [
+				"Kupe (legendary navigator credited with discovering New Zealand)",
+				"Hongi Hika (Ngāpuhi chief in Musket Wars)",
+				"Te Rauparaha (Ngāti Toa chief, military leader)",
+				"Hōne Heke (signatory and later opponent of Treaty)"
+			]
+		},
+		"colonial": {
+			"period": "1840 - 1907",
+			"description": "British colonization formally began with the Treaty of Waitangi, signed on February 6, 1840, at Waitangi in the Bay of Islands. Lieutenant-Governor William Hobson negotiated with Māori chiefs, with about 540 eventually signing (mostly the Māori version). The Treaty had three articles: Māori ceded some form of governance to Britain (though the Māori and English versions differed significantly on sovereignty vs. governance); Māori were guaranteed possession of lands, forests, fisheries, and taonga (treasures), with Crown having exclusive right to purchase land; and Māori were granted rights and privileges of British subjects. However, critical differences between English and Māori texts created lasting confusion and conflict. The English version suggested Māori ceded sovereignty, while the Māori version used 'kawanatanga' (governance) and guaranteed 'tino rangatiratanga' (full chiefly authority). British sovereignty was proclaimed in May 1840. The New Zealand Company had begun organized settlement before the Treaty, establishing Wellington, Nelson, New Plymouth, and later Otago and Canterbury. Pressure for Māori land intensified as settler population grew. The New Zealand Wars (1845-1872) erupted from land disputes and conflicting understandings of sovereignty. The Northern War (1845-1846) began when Hōne Heke, disillusioned with British rule, repeatedly cut down the flagstaff at Kororāreka. The Taranaki Wars (1860-1861, 1863-1869) stemmed from disputed land purchases. The Waikato War (1863-1864) saw British invasion of Waikato region to suppress the Kīngitanga movement (Māori King movement established 1858 to resist land sales and assert Māori authority). Later conflicts involved Pai Mārire and Hauhau religious movements. The wars cost approximately 3,000 lives (majority Māori) and resulted in massive Māori land confiscations. By 1860, 80% of North Island remained in Māori ownership; by 1890s, most had passed to European hands through dubious purchases, confiscations, and legal manipulations. Responsible government was granted in 1852, giving settlers control over internal affairs. Gold rushes in Otago (1861) and West Coast boosted economy and immigration. In 1893, New Zealand became world's first country to grant women the vote. The colony became increasingly prosperous through pastoral agriculture, especially after refrigerated shipping enabled frozen meat exports to Britain from 1882. However, Māori population declined dramatically from disease, warfare, and social disruption, reaching a low point around 1900. On September 26, 1907, New Zealand became a Dominion within the British Empire, a largely symbolic change but reflecting growing autonomy.",
+			"keyEvents": [
+				{
+					"year": "1840",
+					"title": "Treaty of Waitangi Signed",
+					"description": "February 6, Lieutenant-Governor William Hobson and Māori chiefs sign treaty establishing British governance and Māori rights; critical differences between English and Māori versions create lasting disputes"
+				},
+				{
+					"year": "1840",
+					"title": "British Sovereignty Proclaimed",
+					"description": "May 21, Hobson proclaims British sovereignty over all New Zealand; capital established at Auckland"
+				},
+				{
+					"year": "1843",
+					"title": "Wairau Affray",
+					"description": "June 17, conflict over land purchase in Marlborough results in deaths of 22 Europeans and 4 Māori, first major armed clash"
+				},
+				{
+					"year": "1845-1846",
+					"title": "Northern War (Flagstaff War)",
+					"description": "Hōne Heke repeatedly cuts down British flagstaff at Kororāreka, beginning first New Zealand War over sovereignty and authority"
+				},
+				{
+					"year": "1852",
+					"title": "Responsible Government",
+					"description": "New Zealand Constitution Act grants self-government to settler colony; Māori excluded from voting in most electorates"
+				},
+				{
+					"year": "1858",
+					"title": "Kīngitanga Movement",
+					"description": "Māori chiefs elect Pōtatau Te Wherowhero as first Māori King to unite tribes and resist land sales"
+				},
+				{
+					"year": "1860-1869",
+					"title": "Taranaki Wars",
+					"description": "Wars erupt over disputed land purchases in Taranaki; British and colonial forces battle Māori defenders"
+				},
+				{
+					"year": "1861",
+					"title": "Otago Gold Rush",
+					"description": "Gold discovered in Otago, triggering rush that dramatically increases European population and economic growth"
+				},
+				{
+					"year": "1863-1864",
+					"title": "Waikato War",
+					"description": "British invasion of Waikato to suppress Kīngitanga movement; results in extensive land confiscations from 'rebel' tribes"
+				},
+				{
+					"year": "1865",
+					"title": "Capital Moved to Wellington",
+					"description": "Capital relocated from Auckland to Wellington for more central location between North and South Islands"
+				},
+				{
+					"year": "1867",
+					"title": "Māori Representation Act",
+					"description": "Creates four dedicated Māori seats in Parliament, though with restricted franchise"
+				},
+				{
+					"year": "1893",
+					"title": "Women's Suffrage",
+					"description": "September 19, New Zealand becomes world's first nation to grant women the right to vote in national elections"
+				},
+				{
+					"year": "1907",
+					"title": "Dominion Status",
+					"description": "September 26, New Zealand becomes Dominion within British Empire, gaining greater autonomy"
+				}
+			],
+			"notableFigures": [
+				"William Hobson (first Governor)",
+				"Hōne Heke (Northern War leader)",
+				"Pōtatau Te Wherowhero (first Māori King)",
+				"Te Kooti (prophet and guerrilla leader)",
+				"Titokowaru (military commander)",
+				"Kate Sheppard (suffrage leader)",
+				"Richard Seddon (Premier 1893-1906)"
+			]
+		},
+		"modern": {
+			"period": "1907 - Present",
+			"description": "New Zealand's modern era began with Dominion status in 1907, though strong ties to Britain persisted. Over 100,000 New Zealanders served in World War I, with 18,166 killed—the highest per capita casualties of any British dominion. The ANZAC experience at Gallipoli (1915) alongside Australians became central to national identity. ANZAC Day (April 25) remains most significant national commemoration. The 1931 Statute of Westminster granted legislative independence, adopted by New Zealand in 1947. World War II saw 140,000 serve and 12,000 die, with New Zealand contributing significantly to campaigns in North Africa, Italy, and Pacific. Post-war period brought prosperity through agriculture and development of welfare state. The 1950s-60s saw economic growth but also growing Māori urbanization and activism. The Māori Renaissance beginning in 1970s saw revitalization of language, culture, and political assertion. In 1975, the Treaty of Waitangi Act established the Waitangi Tribunal to investigate Treaty breaches, initially for claims after 1975, extended to historical claims in 1985. This began ongoing process of settlements and reconciliation. Major protests included 1975 Māori Land March and 1978 occupation of Bastion Point. Economic reforms of 1980s transformed New Zealand from protected economy to free-market system, causing significant social disruption. New Zealand adopted nuclear-free policy in 1984, banning nuclear-powered or nuclear-armed ships, straining US alliance but becoming point of national pride. The 1986 Constitution Act formally ended remaining British legislative authority. Electoral reform in 1993 introduced Mixed Member Proportional (MMP) system, increasing representation of Māori and minor parties. Treaty settlements returned billions in compensation and apologies for historical injustices, though many argue settlements inadequate. Te reo Māori (Māori language) became official language in 1987. New Zealand has developed progressive social policies including legalized prostitution (2003), same-sex civil unions (2004), and same-sex marriage (2013). The country maintains independent foreign policy while retaining strong links to Australia through ANZAC tradition and CER trade agreement, and to Pacific region. The 2019 Christchurch mosque shootings, killing 51, shocked nation and led to swift gun control reforms. Ongoing challenges include addressing racial inequalities, housing affordability, environmental protection, and fully realizing Treaty partnership between Māori and Crown.",
+			"keyEvents": [
+				{
+					"year": "1914-1918",
+					"title": "World War I",
+					"description": "Over 100,000 New Zealanders serve; 18,166 killed, highest per capita casualties among British dominions"
+				},
+				{
+					"year": "1915",
+					"title": "Gallipoli Campaign",
+					"description": "April 25, ANZAC forces land at Gallipoli alongside Australians; 2,779 New Zealanders killed in campaign that forges ANZAC identity"
+				},
+				{
+					"year": "1918",
+					"title": "Influenza Pandemic",
+					"description": "Spanish flu kills over 9,000 New Zealanders, devastating Māori communities particularly hard"
+				},
+				{
+					"year": "1935",
+					"title": "First Labour Government",
+					"description": "Labour Party elected under Michael Joseph Savage, implements comprehensive welfare state and economic reforms"
+				},
+				{
+					"year": "1939-1945",
+					"title": "World War II",
+					"description": "140,000 New Zealanders serve; 12,000 killed in campaigns across North Africa, Italy, and Pacific"
+				},
+				{
+					"year": "1947",
+					"title": "Statute of Westminster Adopted",
+					"description": "New Zealand formally adopts 1931 Statute, gaining full legislative independence from Britain"
+				},
+				{
+					"year": "1951",
+					"title": "ANZUS Treaty",
+					"description": "Security treaty signed with Australia and United States, though later strained by nuclear-free policy"
+				},
+				{
+					"year": "1973",
+					"title": "Britain Joins EEC",
+					"description": "Britain's entry into European Economic Community ends preferential trade, forcing economic diversification"
+				},
+				{
+					"year": "1975",
+					"title": "Māori Land March",
+					"description": "September-October, thousands march from Te Hāpua to Parliament protesting ongoing Māori land alienation"
+				},
+				{
+					"year": "1975",
+					"title": "Treaty of Waitangi Act",
+					"description": "Establishes Waitangi Tribunal to investigate Treaty breaches, beginning formal redress process"
+				},
+				{
+					"year": "1978",
+					"title": "Bastion Point Occupation",
+					"description": "Māori protesters occupy Bastion Point for 506 days protesting land confiscation; forcibly removed by police"
+				},
+				{
+					"year": "1984",
+					"title": "Nuclear-Free Policy",
+					"description": "Fourth Labour Government bans nuclear-powered or nuclear-armed vessels, straining US alliance but becoming source of national pride"
+				},
+				{
+					"year": "1985",
+					"title": "Rainbow Warrior Bombing",
+					"description": "July 10, French intelligence agents bomb Greenpeace ship in Auckland harbor, killing photographer Fernando Pereira"
+				},
+				{
+					"year": "1985",
+					"title": "Treaty Claims Extended",
+					"description": "Waitangi Tribunal's jurisdiction extended to historical claims dating back to 1840"
+				},
+				{
+					"year": "1986",
+					"title": "Constitution Act",
+					"description": "Formally ends remaining British legislative authority over New Zealand"
+				},
+				{
+					"year": "1987",
+					"title": "Māori Language Act",
+					"description": "Te reo Māori becomes official language alongside English"
+				},
+				{
+					"year": "1993",
+					"title": "Electoral Reform",
+					"description": "Referendum approves Mixed Member Proportional (MMP) voting system, implemented 1996"
+				},
+				{
+					"year": "1995",
+					"title": "First Major Treaty Settlement",
+					"description": "Crown settles with Waikato-Tainui, returning land and $170 million compensation; beginning of major settlements"
+				},
+				{
+					"year": "2004",
+					"title": "Civil Unions Legalized",
+					"description": "Same-sex civil unions recognized, significant step toward marriage equality"
+				},
+				{
+					"year": "2013",
+					"title": "Same-Sex Marriage",
+					"description": "August 19, same-sex marriage legalized; New Zealand becomes 13th country to do so"
+				},
+				{
+					"year": "2019",
+					"title": "Christchurch Mosque Shootings",
+					"description": "March 15, terrorist attacks on two mosques kill 51 people; leads to swift gun control reforms and national reckoning"
+				}
+			],
+			"notableFigures": [
+				"Michael Joseph Savage (first Labour PM)",
+				"Peter Fraser (WWII leader)",
+				"Norman Kirk (reformist PM)",
+				"David Lange (nuclear-free policy)",
+				"Dame Whina Cooper (Māori land rights activist)",
+				"Sir Apirana Ngata (Māori leader and politician)",
+				"Helen Clark (first elected female PM)",
+				"Jacinda Ardern (PM 2017-2023)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1250-1300",
+				"era": "Pre-Colonial",
+				"title": "Polynesian Settlement",
+				"description": "Polynesian voyagers reach New Zealand, becoming Māori people"
+			},
+			{
+				"year": "1642",
+				"era": "Pre-Colonial",
+				"title": "First European Contact",
+				"description": "Dutch explorer Abel Tasman encounters Māori; violent clash prevents landing"
+			},
+			{
+				"year": "1769",
+				"era": "Pre-Colonial",
+				"title": "Cook's Arrival",
+				"description": "Captain James Cook begins sustained European contact and mapping"
+			},
+			{
+				"year": "1840",
+				"era": "Colonial",
+				"title": "Treaty of Waitangi",
+				"description": "Treaty signed establishing British sovereignty and Māori rights"
+			},
+			{
+				"year": "1860s",
+				"era": "Colonial",
+				"title": "New Zealand Wars",
+				"description": "Major conflicts between British/colonial forces and Māori over land and sovereignty"
+			},
+			{
+				"year": "1893",
+				"era": "Colonial",
+				"title": "Women's Suffrage",
+				"description": "World's first country to grant women the right to vote"
+			},
+			{
+				"year": "1907",
+				"era": "Modern",
+				"title": "Dominion Status",
+				"description": "New Zealand becomes Dominion within British Empire"
+			},
+			{
+				"year": "1915",
+				"era": "Modern",
+				"title": "Gallipoli Landing",
+				"description": "ANZAC forces land at Gallipoli, creating enduring national legend"
+			},
+			{
+				"year": "1947",
+				"era": "Modern",
+				"title": "Full Independence",
+				"description": "Adopts Statute of Westminster, gaining complete legislative independence"
+			},
+			{
+				"year": "1975",
+				"era": "Modern",
+				"title": "Waitangi Tribunal Established",
+				"description": "Beginning of formal process to address Treaty breaches"
+			},
+			{
+				"year": "1984",
+				"era": "Modern",
+				"title": "Nuclear-Free Policy",
+				"description": "Bans nuclear vessels, becoming defining element of national identity"
+			},
+			{
+				"year": "1987",
+				"era": "Modern",
+				"title": "Māori Language Official",
+				"description": "Te reo Māori becomes official language alongside English"
+			}
+		]
 	}
 ]
