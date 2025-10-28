@@ -3039,13 +3039,6 @@
 		"colonial": {
 			"period": "Viking Age and outward expansion (c. 790-1066)",
 			"description": "Norwegian Vikings specialized in long-distance colonization and maritime settlement. They combined raiding with permanent settlement. Norwegian activity concentrated west and northwest of Scandinavia. Key features included advanced clinker-built longships, seasonal raid circuits, and creation of Norse-Gaelic mixed societies in the Irish Sea. Norwegian settlers established enduring polities in the North Atlantic and took part in exploration to North America.",
-			"vikingDetails": {
-				"maritimeProfile": "Ships suited for open Atlantic voyages (longships and knarrs). Expertise in coastal navigation and seasonal patterns allowed sustained long-range travel.",
-				"settlementPattern": "Focus on permanent colonization: Orkney, Shetland, Hebrides, Isle of Man, western Scotland, Iceland (settled c. 870s), Greenland (c. 985), short-lived Norse presence in Vinland (Newfoundland c. 1000).",
-				"socialStructure": "Local jarls and powerful chieftains controlled regional resources. Many voyages were organized by chieftain-led retinues rather than centralized royal fleets in early period.",
-				"economy": "Combination of raiding, tribute, trade in walrus ivory, fish, and slaves; later emphasis on fisheries and Atlantic resources.",
-				"religion": "Norse pagan cults with local gods and rites; conversion to Christianity occurs through royal patronage and missionary activity in late 10th-11th centuries."
-			},
 			"keyEvents": [
 				{
 					"year": "c. 793",
@@ -3224,12 +3217,6 @@
 		"colonial": {
 			"period": "Viking Age (c. 790-1066) and continental engagement",
 			"description": "Danish Vikings are notable for raids, large-scale migrations, and direct political domination on the English east coast and parts of northern France. Denmark produced powerful kings early in the Viking period who increasingly directed expeditions and sought territorial rule abroad. Danish control in England culminated in the Danelaw and later the North Sea Empire under Cnut. Denmark also developed major trading centers like Hedeby (Haithabu) and Ribe that tied the North Sea and Baltic economies.",
-			"vikingDetails": {
-				"maritimeProfile": "Skilled in both longship raids and larger merchant vessels. Hedeby and Ribe were key emporia linking Baltic and North Sea trade.",
-				"expansionPattern": "Frequent raids and settlement in eastern England, northern France, and Baltic coasts. Stronger tendency toward political conquest and dynasty building on continental coasts compared with Norwegian westward colonization.",
-				"politicalProfile": "Earlier concentration of royal authority in southern Scandinavia. Danish kings like Gorm, Harald Bluetooth, Sweyn Forkbeard, and Cnut became central figures with cross-regional power.",
-				"religion": "Early conversion episodes are visible in Jelling runestones and royal patronage of Christianity under Harald Bluetooth."
-			},
 			"keyEvents": [
 				{
 					"year": "c. 8th-9th centuries",
@@ -3405,12 +3392,6 @@
 		"ancient": {
 			"period": "Pre-Viking & Viking (before ~8th century - 11th century)",
 			"description": "Populations in Uppland, Svealand, Götaland; tribal divisions; important regional elites around Uppsala. Swedish Vikings (“Rus”) oriented east more than west; trade along rivers toward the Baltic and the interior of what is now Russia. Raiding, trading, settlement by Swedes into Eastern Baltic and Russian river-network (e.g. Novgorod routes). Unlike Norwegian Vikings who focused westward (islands, Atlantic), Swedish Vikings had greater involvement in overland trade and interaction with Slavic and Finnic peoples. Christianization gradually adopted via missions and royal patronage.",
-			"vikingDetails": {
-				"maritimeProfile": "Longships and cargo craft; navigation across Baltic and rivers rather than long Atlantic voyages dominating Norwegian route.",
-				"expansionPattern": "Swedes engaged in trade, tribute, and sometimes raids to the east; they founded or influenced trade settlements (e.g. Birka), and part of eastern Baltic politics; less colonization westwards compared to Norway.",
-				"religion": "Norse paganism dominant early; local cults (e.g. at Uppsala). Conversion in 11th-12th centuries via kings and clergy, establishment of church hierarchy (Archbishopric of Uppsala).",
-				"socialStructure": "Regional magnates; assembly law (“things”) in provinces; later increasing royal authority."
-			},
 			"keyEvents": [
 				{
 					"year": "c. 800-900",
@@ -8852,7 +8833,7 @@
 			],
 			"notableFigures": ["Sir Stamford Raffles"]
 		},
-		"isolation_and_war": {
+		"isolation": {
 			"period": "1942 — 1945",
 			"description": "Japanese conquest in 1942 and harsh wartime occupation traumatized the island, producing significant civilian suffering, reconfiguring colonial authority and energizing postwar nationalist and social movements. The occupation period marked a break in colonial legitimacy and contributed to demands for self-determination after 1945.",
 			"keyEvents": [
