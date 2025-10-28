@@ -69,7 +69,7 @@
 
 <div class="fixed top-5 left-5 z-100">
 	<button
-		class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-sky-400/30 bg-linear-to-br from-slate-900/90 to-black/95 shadow-[0_4px_12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400/60 hover:shadow-[0_8px_25px_rgba(0,0,0,0.5),0_0_20px_rgba(56,189,248,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]"
+		class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-sky-400/30 bg-gradient-to-br from-slate-900/90 to-black/95 shadow-[0_4px_12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(56,189,248,0.1),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400/60 hover:shadow-[0_8px_25px_rgba(0,0,0,0.5),0_0_20px_rgba(56,189,248,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]"
 		class:settings-btn-active={settingsOpen}
 		onclick={onToggle}
 		aria-label="Map Settings"
@@ -95,13 +95,13 @@
 
 	{#if settingsOpen}
 		<div
-			class="absolute top-0 left-[72px] max-h-[calc(100vh-80px)] w-[440px] overflow-x-hidden overflow-y-auto rounded-3xl border border-sky-400/20 bg-linear-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
+			class="absolute top-0 left-[72px] max-h-[calc(100vh-80px)] w-[440px] overflow-x-hidden overflow-y-auto rounded-3xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 to-black/98 p-4 shadow-2xl backdrop-blur-lg"
 			transition:fly={{ x: -20, duration: 300 }}
 		>
 			<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-				<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 				<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">MAP PROJECTION</h3>
-				<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
+				<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 			</div>
 
 			<div class="mb-3 flex flex-col gap-1">
@@ -127,9 +127,9 @@
 
 			<div class="border-t border-slate-700/30 pt-4">
 				<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-					<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
+					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 					<h3 class="m-0 text-xs font-semibold tracking-wide text-sky-400/90">BASE THEMES</h3>
-					<div class="h-px flex-1 bg-linear-to-r from-transparent via-sky-400/30 to-transparent"></div>
+					<div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/30 to-transparent"></div>
 				</div>
 
 				<div class="mb-4 flex items-center justify-center gap-4">
@@ -178,9 +178,9 @@
 
 				<div class="mt-4 border-t border-slate-700/30 pt-4">
 					<div class="mb-3 flex items-center gap-3 border-b border-slate-700/40 px-2 pb-3">
-						<div class="h-px flex-1 bg-linear-to-r from-transparent via-purple-400/30 to-transparent"></div>
+						<div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
 						<h3 class="m-0 text-xs font-semibold tracking-wide text-purple-400/90">DATA VISUALIZATIONS</h3>
-						<div class="h-px flex-1 bg-linear-to-r from-transparent via-purple-400/30 to-transparent"></div>
+						<div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
 					</div>
 
 					<div class="flex flex-col gap-3">

@@ -52,7 +52,7 @@
 <div
 	in:fly={{ x: -leftWidth, duration: 150, easing: cubicOut }}
 	out:fly={{ x: -leftWidth, duration: 120, easing: cubicOut }}
-	class="z-20 min-w-[320px] border-r border-darkCyan bg-linear-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px]"
+	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px]"
 	style="width: {leftWidth}px; will-change: transform; transform: translateZ(0);"
 	aria-hidden="false"
 >
@@ -146,7 +146,7 @@
 
 						<div class="mt-1 flex flex-wrap items-center gap-2">
 							<span
-								class="rounded-full border border-darkCyan bg-linear-to-br from-cyan-400/6 to-sky-400/2 px-2 py-1 text-xs text-lightBlue opacity-95"
+								class="rounded-full border border-darkCyan bg-gradient-to-br from-cyan-400/6 to-sky-400/2 px-2 py-1 text-xs text-lightBlue opacity-95"
 							>
 								{selectedInfo.region}
 								{#if showSources && getSource('region', selectedInfo)}
@@ -217,7 +217,7 @@
 								aria-pressed={showSources}
 								aria-label="Toggle source attribution"
 								aria-describedby="toggle-sources-tooltip"
-								class={`peer transition-color flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border border-white/15 px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-linear-to-br from-cyan-400/10 to-sky-400/20 text-cyan-300' : 'bg-linear-to-br from-white/5 to-white/10 text-white/70'}`}
+								class={`peer transition-color flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border border-white/15 px-2 py-2 font-semibold backdrop-blur-[10px] duration-500 ${showSources ? 'bg-gradient-to-br from-cyan-400/10 to-sky-400/20 text-cyan-300' : 'bg-gradient-to-br from-white/5 to-white/10 text-white/70'}`}
 							>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 									<path
@@ -229,7 +229,7 @@
 							<div
 								id="toggle-sources-tooltip"
 								role="tooltip"
-								class="pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs translate-y-1 scale-95 transform rounded-md border border-white/10 bg-linear-to-br from-black/80 to-slate-900/80 px-3 py-1.5 text-sm font-medium text-white/90 opacity-0 shadow-[0_6px_30px] shadow-cyan-500/10 backdrop-blur-[6px] transition-all duration-180 will-change-transform
+								class="pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs translate-y-1 scale-95 transform rounded-md border border-white/10 bg-gradient-to-br from-black/80 to-slate-900/80 px-3 py-1.5 text-sm font-medium text-white/90 opacity-0 shadow-[0_6px_30px] shadow-cyan-500/10 backdrop-blur-[6px] transition-all duration-180 will-change-transform
 									peer-hover:translate-y-0 peer-hover:scale-100 peer-hover:opacity-100 peer-focus-visible:translate-y-0 peer-focus-visible:scale-100 peer-focus-visible:opacity-100"
 								aria-hidden="false"
 							>
@@ -242,7 +242,7 @@
 								onclick={onCopyLink}
 								aria-label="Copy link to country"
 								aria-describedby="copy-link-tooltip"
-								class={`peer group flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border px-2 py-2 font-semibold backdrop-blur-[10px] transition-all duration-300 ${copyLinkSuccess ? 'border-emerald-500/50 bg-linear-to-br from-emerald-400/20 to-emerald-500/10 text-emerald-300' : 'border-white/15 bg-linear-to-br from-white/5 to-white/10 text-white/70 hover:border-cyan-400/30 hover:from-cyan-400/10 hover:to-sky-400/10 hover:text-cyan-300'}`}
+								class={`peer group flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border px-2 py-2 font-semibold backdrop-blur-[10px] transition-all duration-300 ${copyLinkSuccess ? 'border-emerald-500/50 bg-gradient-to-br from-emerald-400/20 to-emerald-500/10 text-emerald-300' : 'border-white/15 bg-gradient-to-br from-white/5 to-white/10 text-white/70 hover:border-cyan-400/30 hover:from-cyan-400/10 hover:to-sky-400/10 hover:text-cyan-300'}`}
 							>
 								<svg
 									width="16"
@@ -278,7 +278,7 @@
 							<div
 								id="copy-link-tooltip"
 								role="tooltip"
-								class={`pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs rounded-md border px-3 py-1.5 text-sm font-medium shadow-[0_6px_30px] backdrop-blur-[6px] transition-all duration-300 will-change-transform ${copyLinkSuccess ? 'translate-y-0 scale-100 border-emerald-500/30 bg-linear-to-br from-emerald-900/90 to-emerald-950/90 text-emerald-200 opacity-100 shadow-emerald-500/20' : 'translate-y-1 scale-95 border-white/10 bg-linear-to-br from-black/80 to-slate-900/80 text-white/90 opacity-0 shadow-cyan-500/10 group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:scale-100 group-focus-visible:opacity-100'}`}
+								class={`pointer-events-none absolute top-full right-0 mt-2 w-max max-w-xs rounded-md border px-3 py-1.5 text-sm font-medium shadow-[0_6px_30px] backdrop-blur-[6px] transition-all duration-300 will-change-transform ${copyLinkSuccess ? 'translate-y-0 scale-100 border-emerald-500/30 bg-gradient-to-br from-emerald-900/90 to-emerald-950/90 text-emerald-200 opacity-100 shadow-emerald-500/20' : 'translate-y-1 scale-95 border-white/10 bg-gradient-to-br from-black/80 to-slate-900/80 text-white/90 opacity-0 shadow-cyan-500/10 group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:scale-100 group-focus-visible:opacity-100'}`}
 								aria-hidden="false"
 							>
 								{copyLinkSuccess ? 'Link Copied!' : 'Copy link to country'}
@@ -288,7 +288,7 @@
 						<button
 							onclick={onClose}
 							aria-label="Close info panel"
-							class="flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-linear-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200 hover:scale-105"
+							class="flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border border-teal-800 bg-gradient-to-br from-cyan-400/10 to-sky-400/20 px-2 py-2 font-semibold text-cyan-300 backdrop-blur-[10px] transition-transform duration-200 hover:scale-105"
 							>✕</button
 						>
 					</div>
@@ -330,7 +330,7 @@
 				</nav>
 
 				<section
-					class="read-panel mt-3 overflow-auto rounded-xl border border-darkCyan bg-linear-to-b from-black/2 to-white/1 p-3 shadow-[0_8px_30px] shadow-cyan-400/2"
+					class="read-panel mt-3 overflow-auto rounded-xl border border-darkCyan bg-gradient-to-b from-black/2 to-white/1 p-3 shadow-[0_8px_30px] shadow-cyan-400/2"
 					aria-live="polite"
 				>
 					<div class="pr-1">
