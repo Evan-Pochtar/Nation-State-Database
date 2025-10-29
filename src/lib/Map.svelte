@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
-	import { feature, neighbors } from 'topojson-client';
+	import { feature } from 'topojson-client';
 	import * as d3 from 'd3';
 	import type { GeoFeature, CountryData, ChloroplethData, DataType } from '$lib/utils/types';
 	import { fetchCountryInfoByName, batchLoadCountryData, getLoadProgress } from '$lib/utils/getInfo';
@@ -38,52 +38,34 @@
 	const COMPACT_THRESHOLD = 700,
 		HANDLE_WIDTH = 6;
 	let dragging = $state(false);
-
-	// Dimensions
 	let outerWidth = $state(1600);
 	let outerHeight = $state(900);
-	let rightWidth = $state(1600);
-	let rightHeight = $state(900);
+	let resizeTimeout: number;
 
-	// D3 projections
+	// D3 projection
 	let projection: d3.GeoProjection;
 	let pathGenerator: d3.GeoPath<any, GeoFeature> = $state(d3.geoPath<any, GeoFeature>());
-	let focusProjection: d3.GeoProjection | undefined;
-	let focusPathGenerator: d3.GeoPath<any, GeoFeature> | null = $state(null);
-
-	// Animation state
-	let isAnimating = false;
-	let panelAnimating = false;
 
 	// Cache
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = $state({});
-	let pathCache = new Map<string, string>();
 	const countryNameCache = new WeakMap<GeoFeature, string>();
-	const countryIndexCache = new WeakMap<GeoFeature, number>();
-	const projectionCache = new Map<string, () => d3.GeoProjection>();
 
-	// SVG refs
+	// SVG refs & SVG Zoom
 	let svgEl: SVGSVGElement | null = $state(null);
 	let mapGroup: SVGGElement | null = $state(null);
-
-	// Zoom
 	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
-	let currentTransform = d3.zoomIdentity;
-	let isZooming = false;
-	let zoomRAF: number | null = null;
 
 	// UI state
 	let hoveredCountry: number | null = $state(null);
 	let showSources = $state(false);
 	let copyLinkSuccess = $state(false);
 	let copyLinkTimeout: number | null = null;
-
-	// Theme & chloropleth
 	let currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita' = $state('dark');
 	let chloroplethData: ChloroplethData | null = $state(null);
 	let showLegend = $state(false);
 	let dataLoading = $state(false);
 	let dataLoadProgress = $state({ loaded: 0, total: 0, percentage: 0 });
+	let isAnimating = false;
 
 	// Tooltip
 	let tooltipVisible = $state(false);
@@ -97,12 +79,6 @@
 	let topoObjectKey: string | null = null;
 	let countryColorMap: string[] = [];
 
-	// Timeouts
-	let resizeTimeout: number;
-	let resizeRAF: number | null = null;
-	let lastFocusParams = { width: 0, height: 0, feature: null as GeoFeature | null };
-	let dimensionsCache = { leftWidth: 0, rightWidth: 0, rightHeight: 0 };
-
 	// === DERIVED VALUES ===
 	const isChloroplethTheme = $derived(['gini', 'gdp', 'gdpPerCapita'].includes(currentTheme));
 	const compact = $derived(leftWidth <= COMPACT_THRESHOLD);
@@ -111,20 +87,15 @@
 
 	// === HELPER FUNCTIONS ===
 	function getProjection(type: string): d3.GeoProjection {
-		if (!projectionCache.has(type)) {
-			projectionCache.set(type, () => {
-				switch (type) {
-					case 'mercator':
-						return d3.geoMercator();
-					case 'equalEarth':
-						return d3.geoEqualEarth();
-					case 'naturalEarth1':
-					default:
-						return d3.geoNaturalEarth1();
-				}
-			});
+		switch (type) {
+			case 'mercator':
+				return d3.geoMercator();
+			case 'equalEarth':
+				return d3.geoEqualEarth();
+			case 'naturalEarth1':
+			default:
+				return d3.geoNaturalEarth1();
 		}
-		return projectionCache.get(type)!();
 	}
 
 	function getCountryName(f: GeoFeature): string {
@@ -132,32 +103,6 @@
 			countryNameCache.set(f, f.properties?.name ?? 'Unknown Country');
 		}
 		return countryNameCache.get(f)!;
-	}
-
-	function getCountryIndex(f: GeoFeature) {
-		if (countryIndexCache.has(f)) return countryIndexCache.get(f)!;
-
-		for (let i = 0; i < countries.length; i++) {
-			if (
-				countries[i] === f ||
-				(countries[i]?.properties?.iso_a3 &&
-					f?.properties?.iso_a3 &&
-					countries[i].properties.iso_a3 === f.properties.iso_a3) ||
-				(countries[i]?.properties?.name && f?.properties?.name && countries[i].properties.name === f.properties.name)
-			) {
-				countryIndexCache.set(f, i);
-				return i;
-			}
-		}
-		return -1;
-	}
-
-	function getPath(country: GeoFeature, generator: d3.GeoPath<any, GeoFeature>, index: number): string {
-		const key = `${index}-${generator === pathGenerator ? 'main' : 'focus'}`;
-		if (!pathCache.has(key)) {
-			pathCache.set(key, generator(country as any) || '');
-		}
-		return pathCache.get(key)!;
 	}
 
 	function getCountryFillColor(index: number, isSelected: boolean = false, isHovered: boolean = false): string {
@@ -197,120 +142,24 @@
 		const desired = Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)));
 		leftWidth = desired;
 
-		const effectiveLeft = dragging ? Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, tempLeftWidth || desired)) : leftWidth;
-		rightWidth = selectedFeature ? Math.max(300, outerWidth - effectiveLeft - HANDLE_WIDTH) : outerWidth;
-		rightHeight = outerHeight;
-
-		// Skip if dimensions haven't changed significantly
-		if (
-			Math.abs(dimensionsCache.leftWidth - leftWidth) < 5 &&
-			Math.abs(dimensionsCache.rightWidth - rightWidth) < 5 &&
-			Math.abs(dimensionsCache.rightHeight - rightHeight) < 5
-		) {
-			return;
-		}
-
-		dimensionsCache = { leftWidth, rightWidth, rightHeight };
-
 		if (countries.length > 0) {
 			const worldFeature: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: countries };
 			projection = getProjection(currentProjection);
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
-
-			// Clear main projection paths from cache
-			pathCache.forEach((_, key) => {
-				if (key.includes('-main')) pathCache.delete(key);
-			});
-
-			if (selectedFeature) setupFocusProjection();
 		}
 	}
 
 	function throttledResize() {
 		if (resizeTimeout) clearTimeout(resizeTimeout);
-		if (resizeRAF) cancelAnimationFrame(resizeRAF);
-
-		resizeRAF = requestAnimationFrame(() => {
-			resizeTimeout = window.setTimeout(handleResize, 100);
-		});
-	}
-
-	// === FOCUS PROJECTION ===
-	function setupFocusProjection() {
-		if (!selectedFeature) return;
-
-		const currentRightWidth = dragging ? Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH) : rightWidth;
-
-		// Skip if nothing changed
-		if (
-			lastFocusParams.feature === selectedFeature &&
-			Math.abs(lastFocusParams.width - currentRightWidth) < 5 &&
-			Math.abs(lastFocusParams.height - rightHeight) < 5
-		) {
-			return;
-		}
-
-		lastFocusParams = { width: currentRightWidth, height: rightHeight, feature: selectedFeature };
-
-		try {
-			let proj = getProjection(currentProjection === 'orthographic' ? 'mercator' : currentProjection);
-			const worldFeature: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: countries };
-			proj.fitSize([currentRightWidth, rightHeight], worldFeature as any);
-			const worldScale = proj.scale();
-
-			const minDim = Math.min(Math.max(300, currentRightWidth), Math.max(300, rightHeight));
-			const paddingPx = Math.max(20, Math.min(80, minDim * 0.06));
-			const left = paddingPx,
-				top = paddingPx;
-			const right = Math.max(currentRightWidth - paddingPx, left + 10);
-			const bottom = Math.max(rightHeight - paddingPx, top + 10);
-
-			proj.fitExtent(
-				[
-					[left, top],
-					[right, bottom]
-				],
-				selectedFeature as any
-			);
-
-			const countryScale = proj.scale();
-			if (countryScale < worldScale * 0.9) {
-				proj.scale(worldScale * 0.9);
-				const bounds = d3
-					.geoPath()
-					.projection(proj)
-					.bounds(selectedFeature as any);
-				const dx = (bounds[0][0] + bounds[1][0]) / 2;
-				const dy = (bounds[0][1] + bounds[1][1]) / 2;
-				const x = currentRightWidth / 2 - dx;
-				const y = rightHeight / 2 - dy;
-				proj.translate([x, y]);
-			}
-
-			focusProjection = proj;
-			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
-
-			// Clear focus paths from cache
-			pathCache.forEach((_, key) => {
-				if (key.includes('-focus')) pathCache.delete(key);
-			});
-		} catch (error) {
-			const fallback = d3.geoMercator();
-			fallback.fitSize(
-				[Math.max(100, currentRightWidth * 0.8), Math.max(100, rightHeight * 0.8)],
-				selectedFeature as any
-			);
-			focusProjection = fallback;
-			focusPathGenerator = d3.geoPath().projection(focusProjection as any);
-		}
+		resizeTimeout = window.setTimeout(handleResize, 100);
 	}
 
 	// === INTERACTION HANDLERS ===
-	async function onCountryClick(f: GeoFeature) {
-		if (!f || isAnimating || panelAnimating) return;
+	async function onCountryClick(f: GeoFeature, index: number) {
+		if (!f || isAnimating || !svgEl || !zoomBehavior) return;
+
 		isAnimating = true;
-		panelAnimating = true;
 		selectedName = getCountryName(f);
 		selectedFeature = f;
 
@@ -320,46 +169,46 @@
 			});
 		}
 
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				handleResize();
-				setupFocusProjection();
-				setTimeout(() => {
-					isAnimating = false;
-					panelAnimating = false;
-				}, 150);
+		const bounds = pathGenerator.bounds(f as any);
+		const dx = bounds[1][0] - bounds[0][0];
+		const dy = bounds[1][1] - bounds[0][1];
+		const x = (bounds[0][0] + bounds[1][0]) / 2;
+		const y = (bounds[0][1] + bounds[1][1]) / 2;
+
+		const scale = Math.min(8, 0.9 / Math.max(dx / outerWidth, dy / outerHeight));
+		const translate: [number, number] = [outerWidth / 2 - scale * x, outerHeight / 2 - scale * y];
+
+		d3.select(svgEl)
+			.transition()
+			.duration(750)
+			.call(zoomBehavior.transform as any, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale))
+			.on('end', () => {
+				isAnimating = false;
 			});
-		});
+
+		handleResize();
 	}
 
 	async function closePanel() {
-		panelAnimating = true;
 		isAnimating = true;
 		selectedFeature = null;
 		selectedName = null;
 		updateURL(null);
 
-		setTimeout(() => {
-			focusProjection = undefined;
-			focusPathGenerator = null;
-			pathCache.clear();
-			lastFocusParams = { width: 0, height: 0, feature: null };
+		await tick();
+		handleResize();
+		resetZoom();
 
-			tick().then(() => {
-				handleResize();
-				resetZoom();
-				initZoom();
-				panelAnimating = false;
-				isAnimating = false;
-			});
-		}, 120);
+		setTimeout(() => {
+			isAnimating = false;
+		}, 150);
 	}
 
 	function handleMapClick(e: MouseEvent) {
-		if (isAnimating || panelAnimating || !e.target || !(e.target instanceof SVGPathElement)) return;
+		if (isAnimating || !e.target || !(e.target instanceof SVGPathElement)) return;
 		const index = parseInt(e.target.dataset.index || '-1');
 		if (index >= 0 && index < countries.length) {
-			onCountryClick(countries[index]);
+			onCountryClick(countries[index], index);
 		}
 	}
 
@@ -368,7 +217,7 @@
 			e.preventDefault();
 			const index = parseInt(e.target.dataset.index || '-1');
 			if (index >= 0 && index < countries.length) {
-				onCountryClick(countries[index]);
+				onCountryClick(countries[index], index);
 			}
 		}
 	}
@@ -433,7 +282,6 @@
 		dragging = true;
 		tempLeftWidth = leftWidth;
 		document.body.style.userSelect = 'none';
-		(document.body as any).style.webkitUserSelect = 'none';
 
 		window.addEventListener('pointermove', handlePointerMove, { passive: true });
 		window.addEventListener('pointerup', handlePointerUp, { once: true });
@@ -444,7 +292,6 @@
 		if (!dragging) return;
 		const pct = Math.max(MIN_PCT, Math.min(MAX_PCT, e.clientX / outerWidth));
 		tempLeftWidth = Math.round(pct * outerWidth);
-		rightWidth = Math.max(300, outerWidth - tempLeftWidth - HANDLE_WIDTH);
 	}
 
 	function handlePointerUp() {
@@ -452,10 +299,8 @@
 		dragging = false;
 		leftPct = tempLeftWidth / outerWidth;
 		leftWidth = tempLeftWidth;
-		rightWidth = Math.max(300, outerWidth - leftWidth - HANDLE_WIDTH);
-		setupFocusProjection();
+		handleResize();
 		document.body.style.userSelect = '';
-		(document.body as any).style.webkitUserSelect = '';
 		window.removeEventListener('pointermove', handlePointerMove);
 	}
 
@@ -463,43 +308,11 @@
 	function buildZoomBehavior() {
 		return d3
 			.zoom<SVGSVGElement, unknown>()
-			.scaleExtent([1, 100])
-			.on('start', () => {
-				isZooming = true;
-			})
+			.scaleExtent([1, 20])
 			.on('zoom', (event: any) => {
-				if (!mapGroup || !svgEl) return;
-				if (zoomRAF) cancelAnimationFrame(zoomRAF);
-
-				zoomRAF = requestAnimationFrame(() => {
-					const t = event.transform;
-					currentTransform = t;
-					const k = t.k;
-					let tx = t.x,
-						ty = t.y;
-
-					if (mapGroup) {
-						const bbox = mapGroup.getBBox();
-						const vb = svgEl!.viewBox.baseVal;
-						const viewW = vb?.width || svgEl!.clientWidth;
-						const viewH = vb?.height || svgEl!.clientHeight;
-						const txMin = viewW - (bbox.x + bbox.width) * k;
-						const txMax = -bbox.x * k;
-						const tyMin = viewH - (bbox.y + bbox.height) * k;
-						const tyMax = -bbox.y * k;
-						tx = txMin > txMax ? (txMin + txMax) / 2 : Math.min(Math.max(tx, txMin), txMax);
-						ty = tyMin > tyMax ? (tyMin + tyMax) / 2 : Math.min(Math.max(ty, tyMin), tyMax);
-					}
-
-					mapGroup!.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale3d(${k}, ${k}, 1)`;
-				});
-			})
-			.on('end', () => {
-				isZooming = false;
-				if (zoomRAF) {
-					cancelAnimationFrame(zoomRAF);
-					zoomRAF = null;
-				}
+				if (!mapGroup) return;
+				const t = event.transform;
+				mapGroup.style.transform = `translate(${t.x}px, ${t.y}px) scale(${t.k})`;
 			});
 	}
 
@@ -512,77 +325,27 @@
 	}
 
 	function resetZoom() {
-		if (!svgEl || !zoomBehavior || !mapGroup) return;
-		const vb = svgEl.viewBox.baseVal;
-		const viewW = vb?.width || svgEl.clientWidth;
-		const viewH = vb?.height || svgEl.clientHeight;
-		const bbox = mapGroup.getBBox();
-		const sx = viewW / (bbox.width || viewW);
-		const sy = viewH / (bbox.height || viewH);
-		const s = Math.min(1, Math.max(0.4, Math.min(sx, sy)));
-		const tx = (viewW - (bbox.x + bbox.width) * s + -bbox.x * s) / 2;
-		const ty = (viewH - (bbox.y + bbox.height) * s + -bbox.y * s) / 2;
-		currentTransform = d3.zoomIdentity.translate(tx, ty).scale(s);
+		if (!svgEl || !zoomBehavior) return;
 		d3.select(svgEl)
 			.transition()
-			.duration(350)
-			.call((zoomBehavior as any).transform, currentTransform);
+			.duration(750)
+			.call((zoomBehavior as any).transform, d3.zoomIdentity);
 	}
 
 	// === SETTINGS ===
 	function handleProjectionChange(projection: string) {
 		currentProjection = projection;
-		pathCache.clear();
 		handleResize();
-		if (selectedFeature) setupFocusProjection();
 		resetZoom();
 		initZoom();
 	}
 
 	function handleThemeChange(theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
 		currentTheme = theme;
-		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
-			buildColorfulPalette();
-		}
 	}
 
 	function toggleSettings() {
 		settingsOpen = !settingsOpen;
-	}
-
-	// === COLORFUL PALETTE ===
-	function buildColorfulPalette() {
-		if (!topoData || !topoObjectKey) {
-			countryColorMap = new Array(countries.length).fill('#D0DCE8');
-			return;
-		}
-
-		if (countryColorMap.length === countries.length && countryColorMap.some((c) => c !== '#D0DCE8')) {
-			return;
-		}
-
-		try {
-			const geoms = topoData.objects[topoObjectKey].geometries;
-			const neigh = neighbors(geoms);
-			const palette = ['#E8D4C0', '#C8E6D7', '#C8DEFF', '#E0D4E8', '#FFD8EA', '#D0F0FF', '#FFE8C0', '#D8F0D8'];
-			const assigned: string[] = new Array(geoms.length).fill('#D0DCE8');
-
-			for (let i = 0; i < geoms.length; i++) {
-				const used = new Set<string>();
-				const nbs = neigh[i] || [];
-				for (const nb of nbs) {
-					if (assigned[nb]) used.add(assigned[nb]);
-				}
-				let pick = palette.find((c) => !used.has(c));
-				if (!pick) pick = palette[i % palette.length];
-				assigned[i] = pick;
-			}
-
-			countryColorMap = assigned.slice(0, countries.length);
-		} catch (e) {
-			console.error('Failed to build colorful palette', e);
-			countryColorMap = new Array(countries.length).fill('#D0DCE8');
-		}
 	}
 
 	// === URL & COPY ===
@@ -631,7 +394,6 @@
 
 	// === LIFECYCLE ===
 	onMount(async () => {
-		initZoom();
 		try {
 			const resp = await fetch('/data/countries-map.json');
 			if (!resp.ok) {
@@ -647,19 +409,16 @@
 
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
-			const doBackgroundLoad = () => {
-				void batchLoadCountryData(countries, infoCache)
-					.then((updated) => {
-						infoCache = updated;
-					})
-					.catch((err) => console.error('batchLoadCountryData failed:', err));
-			};
-
-			if ('requestIdleCallback' in window) {
-				requestIdleCallback(doBackgroundLoad, { timeout: 2000 });
-			} else {
-				setTimeout(doBackgroundLoad, 50);
-			}
+			requestIdleCallback(
+				() => {
+					batchLoadCountryData(countries, infoCache)
+						.then((updated) => {
+							infoCache = updated;
+						})
+						.catch((err) => console.error('Background load failed:', err));
+				},
+				{ timeout: 2000 }
+			);
 
 			const urlCountry = page.params.country || page.url.pathname.split('/')[1];
 			if (urlCountry) {
@@ -667,11 +426,13 @@
 				const matchingCountry = countries.find((c) => getCountryName(c).toLowerCase() === decodedCountry.toLowerCase());
 				if (matchingCountry) {
 					await tick();
-					onCountryClick(matchingCountry);
+					const index = countries.indexOf(matchingCountry);
+					onCountryClick(matchingCountry, index);
 				}
 			}
 
 			handleResize();
+			initZoom();
 			window.addEventListener('resize', throttledResize, { passive: true });
 		} catch (error) {
 			console.error('Error loading map data:', error);
@@ -682,16 +443,11 @@
 		window.removeEventListener('resize', throttledResize);
 		if (resizeTimeout) clearTimeout(resizeTimeout);
 		if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
-		if (resizeRAF) cancelAnimationFrame(resizeRAF);
-		if (zoomRAF) cancelAnimationFrame(zoomRAF);
 		if (svgEl && zoomBehavior) {
 			d3.select(svgEl).on('.zoom', null);
 			zoomBehavior = null;
 		}
 		document.body.style.userSelect = '';
-		(document.body as any).style.webkitUserSelect = '';
-		pathCache.clear();
-		projectionCache.clear();
 	});
 </script>
 
@@ -736,12 +492,12 @@
 			{/if}
 		</div>
 	{/if}
-	<!-- svelte-ignore a11y_no_static_element_interactions -->
+
 	<div
 		class="relative flex-1 overflow-hidden"
 		style="width: {selectedFeature
 			? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)`
-			: '100%'}; transition: width 150ms cubic-bezier(0.33, 1, 0.68, 1); will-change: width;"
+			: '100%'}; transition: width 150ms cubic-bezier(0.33, 1, 0.68, 1);"
 	>
 		{#if !selectedFeature}
 			<MapSettings
@@ -771,166 +527,86 @@
 				x={tooltipX}
 				y={tooltipY}
 			/>
-			<svg
-				viewBox={`0 0 ${outerWidth} ${outerHeight}`}
-				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full"
-				bind:this={svgEl}
-				onclick={handleMapClick}
-				onkeydown={handleMapKeydown}
-				onpointerover={handleMapHover}
-				onfocus={hoverReset}
-				onmouseleave={hoverReset}
-				style="contain: paint layout;"
-			>
-				{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
-					<defs>
-						<linearGradient id="waterBase" x1="0%" y1="0%" x2="0%" y2="100%">
-							{#if currentTheme === 'colorful'}
-								<stop offset="0%" stop-color="oklch(84% 0.12 235)" />
-								<stop offset="50%" stop-color="oklch(81% 0.115 232)" />
-								<stop offset="100%" stop-color="oklch(77% 0.11 228)" />
-							{:else}
-								<stop offset="0%" stop-color="oklch(87% 0.08 235)" />
-								<stop offset="50%" stop-color="oklch(84% 0.09 232)" />
-								<stop offset="100%" stop-color="oklch(80% 0.10 230)" />
-							{/if}
-						</linearGradient>
-					</defs>
-					<rect x="0" y="0" width="100%" height="100%" fill={'url(#waterBase)'}></rect>
-				{/if}
-
-				{#if isChloroplethTheme}
-					<rect x="0" y="0" width="100%" height="100%" fill="#0f172a"></rect>
-				{/if}
-
-				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
-					{#if countries.length && pathGenerator}
-						{#each countries as c, i (i)}
-							{@const fillColor = getCountryFillColor(i, false, hoveredCountry === i)}
-							{@const stroke = getCountryStroke(false, hoveredCountry === i)}
-
-							<path
-								d={getPath(c, pathGenerator, i)}
-								data-index={i}
-								fill={fillColor}
-								stroke={stroke.color}
-								stroke-width={stroke.width}
-								stroke-linejoin="round"
-								opacity={hoveredCountry === i ? 0.9 : 1}
-								role="button"
-								aria-label={getCountryName(c)}
-								class="cursor-pointer transition-all duration-200"
-								class:animate-pulse={isChloroplethTheme && hoveredCountry === i}
-							/>
-						{/each}
-					{/if}
-				</g>
-			</svg>
-		{:else}
-			<svg
-				viewBox={`0 0 ${rightWidth} ${rightHeight}`}
-				preserveAspectRatio="xMidYMid meet"
-				class="block h-full w-full"
-				bind:this={svgEl}
-				onclick={handleMapClick}
-				onkeydown={handleMapKeydown}
-				onpointerover={handleMapHover}
-				onfocus={hoverReset}
-				onmouseleave={hoverReset}
-				style="contain: paint layout;"
-			>
-				{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
-					<rect x="0" y="0" width={rightWidth} height={rightHeight} fill="oklch(74.6% 0.16 232.661)" opacity="0.2"
-					></rect>
-				{/if}
-
-				{#if isChloroplethTheme}
-					<rect x="0" y="0" width={rightWidth} height={rightHeight} fill="#0f172a" opacity="0.3"></rect>
-				{/if}
-
-				<g bind:this={mapGroup} style="will-change: transform; transform-origin: 0 0;">
-					{#if countries.length && focusPathGenerator}
-						{#each countries as c, i (i)}
-							{#if c !== selectedFeature}
-								{@const fillColor = getCountryFillColor(i, false, hoveredCountry === i)}
-								{@const stroke = getCountryStroke(false, hoveredCountry === i)}
-
-								<path
-									d={getPath(c, focusPathGenerator, i)}
-									data-index={i}
-									fill={fillColor}
-									stroke={stroke.color}
-									stroke-width={stroke.width}
-									stroke-linejoin="round"
-									opacity={hoveredCountry === i ? 0.9 : isChloroplethTheme ? 0.6 : 1}
-									role="button"
-									aria-label={getCountryName(c)}
-									class="cursor-pointer transition-all duration-200"
-								/>
-							{/if}
-						{/each}
-
-						{#if selectedFeature}
-							{@const idx = getCountryIndex(selectedFeature)}
-							{#if idx >= 0}
-								{@const fillColor = getCountryFillColor(idx, true, false)}
-								{@const stroke = getCountryStroke(true, false)}
-
-								<path
-									d={getPath(selectedFeature, focusPathGenerator, idx)}
-									data-index={idx}
-									fill={fillColor}
-									stroke={stroke.color}
-									stroke-width={stroke.width}
-									stroke-linejoin="round"
-									opacity="0.95"
-									role="button"
-									aria-label={getCountryName(selectedFeature)}
-									class="cursor-pointer"
-									class:animate-pulse={!isChloroplethTheme}
-									class:drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]={isChloroplethTheme}
-								/>
-							{:else}
-								<path
-									d={getPath(selectedFeature, focusPathGenerator, -1)}
-									class="animate-pulse fill-darkCyan stroke-cyan-400/95 stroke-[3px]"
-								/>
-							{/if}
-						{/if}
-					{/if}
-				</g>
-			</svg>
 		{/if}
+
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<svg
+			viewBox={`0 0 ${outerWidth} ${outerHeight}`}
+			preserveAspectRatio="xMidYMid meet"
+			class="block h-full w-full"
+			bind:this={svgEl}
+			onclick={handleMapClick}
+			onkeydown={handleMapKeydown}
+			onpointerover={handleMapHover}
+			onfocus={hoverReset}
+			onmouseleave={hoverReset}
+		>
+			{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
+				<defs>
+					<linearGradient id="waterBase" x1="0%" y1="0%" x2="0%" y2="100%">
+						{#if currentTheme === 'colorful'}
+							<stop offset="0%" stop-color="oklch(84% 0.12 235)" />
+							<stop offset="50%" stop-color="oklch(81% 0.115 232)" />
+							<stop offset="100%" stop-color="oklch(77% 0.11 228)" />
+						{:else}
+							<stop offset="0%" stop-color="oklch(87% 0.08 235)" />
+							<stop offset="50%" stop-color="oklch(84% 0.09 232)" />
+							<stop offset="100%" stop-color="oklch(80% 0.10 230)" />
+						{/if}
+					</linearGradient>
+				</defs>
+				<rect x="0" y="0" width="100%" height="100%" fill={'url(#waterBase)'}></rect>
+			{/if}
+
+			{#if isChloroplethTheme}
+				<rect x="0" y="0" width="100%" height="100%" fill="#0f172a"></rect>
+			{/if}
+
+			<g bind:this={mapGroup}>
+				{#if countries.length && pathGenerator}
+					{#each countries as c, i (i)}
+						{@const isSelected = c === selectedFeature}
+						{@const isHovered = hoveredCountry === i}
+						{@const fillColor = getCountryFillColor(i, isSelected, isHovered)}
+						{@const stroke = getCountryStroke(isSelected, isHovered)}
+
+						<path
+							d={pathGenerator(c as any) || ''}
+							data-index={i}
+							fill={fillColor}
+							stroke={stroke.color}
+							stroke-width={stroke.width}
+							stroke-linejoin="round"
+							opacity={isHovered ? 0.9 : isSelected ? 0.95 : 1}
+							role="button"
+							aria-label={getCountryName(c)}
+							class="cursor-pointer transition-opacity duration-200"
+							class:animate-pulse={isSelected && !isChloroplethTheme}
+							class:drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]={isSelected && isChloroplethTheme}
+						/>
+					{/each}
+				{/if}
+			</g>
+		</svg>
 	</div>
 </div>
 
 <style global>
 	@keyframes dash {
-		0% {
+		0%,
+		100% {
 			border-left-color: rgba(0, 255, 255, 0.8);
 		}
 		50% {
 			border-left-color: rgba(0, 255, 255, 0.4);
 		}
-		100% {
-			border-left-color: rgba(0, 255, 255, 0.8);
-		}
-	}
-
-	svg {
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0);
 	}
 
 	svg g {
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
+		transform-origin: 0 0;
 	}
 
 	svg path {
 		vector-effect: non-scaling-stroke;
-		will-change: transform, opacity;
-		transition: none;
 	}
 </style>

@@ -238,7 +238,9 @@
 		{@const exports = getLatestValue(indicators.exports)}
 		{@const imports = getLatestValue(indicators.imports)}
 		{#if exports && imports}
-			<div class="mt-3 rounded-lg border border-emerald-700/30 bg-gradient-to-br from-emerald-900/20 to-blue-900/20 p-4">
+			<div
+				class="mt-3 rounded-lg border border-emerald-700/30 bg-gradient-to-br from-emerald-900/20 to-blue-900/20 p-4"
+			>
 				<div class="mb-2 flex items-center gap-2">
 					<span class="font-semibold text-white">Trade Balance</span>
 				</div>

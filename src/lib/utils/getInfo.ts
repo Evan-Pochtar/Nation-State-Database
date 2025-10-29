@@ -34,28 +34,20 @@ const latestOnlySet = new Set([
 ]);
 
 let countriesDataCache: any = null;
-let countriesDataPromise: Promise<any> | null = null;
+
 async function getCountriesData(): Promise<any> {
 	if (countriesDataCache) return countriesDataCache;
-	if (countriesDataPromise) return countriesDataPromise;
 
-	countriesDataPromise = (async () => {
-		try {
-			const localResp = await fetch('/data/countries-data.json');
-			if (!localResp.ok) {
-				console.warn('No local countries-data.json accessible:', localResp.status);
-				return null;
-			}
-			const localJson = await localResp.json();
-			countriesDataCache = localJson;
-			return localJson;
-		} catch (err) {
-			console.warn('Error loading /data/countries-data.json', err);
-			return null;
-		}
-	})();
-
-	return countriesDataPromise;
+	try {
+		const localResp = await fetch('/data/countries-data.json');
+		if (!localResp.ok) return null;
+		const localJson = await localResp.json();
+		countriesDataCache = localJson;
+		return localJson;
+	} catch (err) {
+		console.warn('Error loading /data/countries-data.json', err);
+		return null;
+	}
 }
 
 export async function preloadCountryData(): Promise<void> {
@@ -64,23 +56,20 @@ export async function preloadCountryData(): Promise<void> {
 
 export async function fetchCountryInfoByName(
 	name: string | '',
-	infoCache:
-		| Record<string, { data?: CountryData | undefined; loading: boolean; error?: string | undefined }>
-		| undefined
+	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {}
 ) {
-	if (!infoCache) infoCache = {};
-	if (!name || infoCache[name]?.data) return infoCache;
-	if (infoCache[name]?.loading) return infoCache;
+	if (!name || infoCache[name]?.data || infoCache[name]?.loading) return infoCache;
 
 	infoCache[name] = { loading: true };
+
 	try {
 		const countriesData = await getCountriesData();
 		let localEntry: any = null;
 
 		if (countriesData) {
 			localEntry = Array.isArray(countriesData)
-				? (countriesData.find((e) => e.name === name) ?? null)
-				: (countriesData[name] ?? Object.values(countriesData).find((e: any) => e.name === name) ?? null);
+				? countriesData.find((e) => e.name === name)
+				: (countriesData[name] ?? Object.values(countriesData).find((e: any) => e.name === name));
 		}
 
 		let cca2ID = localEntry?.cca2ID ?? null;
@@ -97,8 +86,9 @@ export async function fetchCountryInfoByName(
 		let population = localEntry?.population ?? null;
 		let gini = localEntry?.gini ?? null;
 		const economics = localEntry?.economics ?? null;
-		let sources = normalizeSources(localEntry?.sources ?? {}, name);
+		const sources = normalizeSources(localEntry?.sources ?? {}, name);
 
+		// Only fetch from APIs if we don't have cached data
 		if (!summary || !cca2ID) {
 			if (!summary) {
 				try {
@@ -116,9 +106,7 @@ export async function fetchCountryInfoByName(
 						exsectionformat: 'plain'
 					});
 
-					const res = await fetch(`${endpoint}?${params.toString()}`, {
-						signal: controller.signal
-					});
+					const res = await fetch(`${endpoint}?${params.toString()}`, { signal: controller.signal });
 					clearTimeout(timeoutId);
 
 					if (res.ok) {
@@ -129,18 +117,15 @@ export async function fetchCountryInfoByName(
 							summary = page?.missing
 								? 'No summary available.'
 								: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
-							sources = {
-								...sources,
-								summary: {
-									label: 'Wikipedia',
-									url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
-								}
+							sources.summary = {
+								label: 'Wikipedia',
+								url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
 							};
 						}
 					}
 				} catch (err) {
-					console.warn('Wikipedia fetch failed', err);
 					summary = 'No summary available.';
+					console.log('Wikipedia fetch failed', err);
 				}
 			}
 
@@ -182,17 +167,17 @@ export async function fetchCountryInfoByName(
 							const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
 							const restSource = { label: 'REST Countries', url: restUrl };
 							Object.assign(sources, {
-								...(!sources.flag && { flag: restSource }),
-								...(!sources.coatOfArms && { coatOfArms: restSource }),
-								...(!sources.officialName && { officialName: restSource }),
-								...(!sources.capital && { capital: restSource }),
-								...(!sources.independent && { independent: restSource }),
-								...(!sources.region && { region: restSource }),
-								...(!sources.subregion && { subregion: restSource }),
-								...(!sources.area && { area: restSource }),
-								...(!sources.languages && { languages: restSource }),
-								...(!sources.population && { population: restSource }),
-								...(!sources.gini && { gini: restSource })
+								flag: restSource,
+								coatOfArms: restSource,
+								officialName: restSource,
+								capital: restSource,
+								independent: restSource,
+								region: restSource,
+								subregion: restSource,
+								area: restSource,
+								languages: restSource,
+								population: restSource,
+								gini: restSource
 							});
 						}
 					}
@@ -223,40 +208,36 @@ export async function fetchCountryInfoByName(
 		};
 
 		if (!localEntry || (!localEntry.summary && !localEntry.cca2ID && summary)) {
-			Promise.resolve().then(async () => {
-				try {
-					await fetch('/api', {
-						method: 'POST',
-						headers: { 'Content-Type': 'application/json' },
-						body: JSON.stringify({
-							name: localEntry?.name ?? name,
-							summary,
-							cca2ID,
-							officialName,
-							flag,
-							coatOfArms,
-							independent,
-							region,
-							subregion,
-							area,
-							languages,
-							capital,
-							population,
-							gini,
-							economics,
-							sources
-						})
-					});
-				} catch (err) {
-					console.warn('Failed to persist country data', err);
-				}
-			});
+			fetch('/api', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					name: localEntry?.name ?? name,
+					summary,
+					cca2ID,
+					officialName,
+					flag,
+					coatOfArms,
+					independent,
+					region,
+					subregion,
+					area,
+					languages,
+					capital,
+					population,
+					gini,
+					economics,
+					sources
+				})
+			}).catch((err) => console.warn('Failed to persist country data', err));
 		}
+
 		infoCache[name] = { data, loading: false };
 	} catch (err: any) {
 		infoCache[name] = { loading: false, error: String(err) };
 		console.error('Error fetching country info for', name, err);
 	}
+
 	return infoCache;
 }
 
@@ -276,56 +257,36 @@ export async function fetchEconomicDataModule(params: {
 
 	const job = (async () => {
 		try {
-			setInfoCache(
-				(() => {
-					const prev = getInfoCache();
-					const next = { ...prev };
-					next[entryName] = { ...(next[entryName] ?? { loading: false }), loading: true };
-					return next;
-				})()
-			);
-
 			const cache = getInfoCache();
+			const next = { ...cache };
+			next[entryName] = { ...(next[entryName] ?? { loading: false }), loading: true };
+			setInfoCache(next);
+
 			if (cache[entryName]?.data?.economics && cache[entryName].data.economics !== 'Data not provided.') {
-				setInfoCache(
-					(() => {
-						const prev = getInfoCache();
-						const next = { ...prev };
-						next[entryName] = { ...(next[entryName] ?? {}), loading: false };
-						return next;
-					})()
-				);
+				next[entryName].loading = false;
+				setInfoCache(next);
 				return;
 			}
 
 			const countriesData = await getCountriesData();
 			let localEntry: any = null;
 			let sources: DataSources = {};
+
 			if (countriesData) {
 				localEntry = Array.isArray(countriesData)
-					? (countriesData.find((e: any) => e.name === entryName) ?? null)
-					: (countriesData[entryName] ?? Object.values(countriesData).find((e: any) => e.name === entryName) ?? null);
+					? countriesData.find((e: any) => e.name === entryName)
+					: (countriesData[entryName] ?? Object.values(countriesData).find((e: any) => e.name === entryName));
 			}
 
 			sources = normalizeSources(localEntry?.sources ?? {}, entryName);
 
-			if (localEntry && Object.prototype.hasOwnProperty.call(localEntry, 'economics') && localEntry.economics) {
-				setInfoCache(
-					(() => {
-						const prev = getInfoCache();
-						const next = { ...prev };
-						next[entryName] = {
-							...(next[entryName] ?? {}),
-							data: {
-								...(next[entryName]?.data ?? selectedInfo ?? {}),
-								economics: localEntry.economics
-							} as CountryData,
-							loading: false
-						};
-						return next;
-					})()
-				);
-
+			if (localEntry?.economics) {
+				next[entryName] = {
+					...next[entryName],
+					data: { ...(next[entryName]?.data ?? selectedInfo ?? {}), economics: localEntry.economics } as CountryData,
+					loading: false
+				};
+				setInfoCache(next);
 				if (setSelectedInfo && selectedInfo) {
 					setSelectedInfo({ ...selectedInfo, economics: localEntry.economics });
 				}
@@ -335,49 +296,64 @@ export async function fetchEconomicDataModule(params: {
 			const allData: Record<string, any[]> = {};
 			const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlySet.has(id));
 			const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlySet.has(id));
+
 			if (timeSeriesIndicators.length > 0) {
 				const batch = ['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS'];
 				const indicatorString = batch.join(';');
 				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
+
 				try {
 					const res = await fetch(url);
-					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
-					const json = await res.json();
-					if (!Array.isArray(json) || !json[1]) throw new Error('No data returned');
-					json[1].forEach((item: any) => {
-						const id = item.indicator.id;
-						if (item.value !== null) {
-							if (!allData[id]) allData[id] = [];
-							allData[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
+					if (res.ok) {
+						const json = await res.json();
+						if (Array.isArray(json) && json[1]) {
+							json[1].forEach((item: any) => {
+								const id = item.indicator.id;
+								if (item.value !== null) {
+									if (!allData[id]) allData[id] = [];
+									allData[id].push({
+										year: parseInt(item.date, 10),
+										value: item.value,
+										indicator: item.indicator.value
+									});
+								}
+							});
 						}
-					});
+					}
 				} catch (err) {
-					console.warn(`Failed time series batch ${indicatorString}`, err);
+					console.warn(`Failed time series batch`, err);
 				}
 			}
 
 			if (latestOnlyIndicators.length > 0) {
 				const indicatorString = latestOnlyIndicators.join(';');
 				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2022:2024`;
+
 				try {
 					const res = await fetch(url);
-					if (!res.ok) throw new Error(`WorldBank API error ${res.status}`);
-					const json = await res.json();
-					if (!Array.isArray(json) || !json[1]) throw new Error('No data returned');
-					const bucket: Record<string, any[]> = {};
-					json[1].forEach((item: any) => {
-						const id = item.indicator.id;
-						if (!bucket[id]) bucket[id] = [];
-						if (item.value !== null) {
-							bucket[id].push({ year: parseInt(item.date, 10), value: item.value, indicator: item.indicator.value });
+					if (res.ok) {
+						const json = await res.json();
+						if (Array.isArray(json) && json[1]) {
+							const bucket: Record<string, any[]> = {};
+							json[1].forEach((item: any) => {
+								const id = item.indicator.id;
+								if (!bucket[id]) bucket[id] = [];
+								if (item.value !== null) {
+									bucket[id].push({
+										year: parseInt(item.date, 10),
+										value: item.value,
+										indicator: item.indicator.value
+									});
+								}
+							});
+							for (const id of Object.keys(bucket)) {
+								const arr = bucket[id];
+								if (!arr.length) continue;
+								arr.sort((a, b) => a.year - b.year);
+								const latest = arr[arr.length - 1];
+								allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
+							}
 						}
-					});
-					for (const id of Object.keys(bucket)) {
-						const arr = bucket[id];
-						if (!arr.length) continue;
-						arr.sort((a, b) => a.year - b.year);
-						const latest = arr[arr.length - 1];
-						allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
 					}
 				} catch (err) {
 					console.warn('Failed to fetch latest-only indicators', err);
@@ -386,58 +362,35 @@ export async function fetchEconomicDataModule(params: {
 
 			Object.keys(allData).forEach((k) => allData[k].sort((a: any, b: any) => a.year - b.year));
 
-			setInfoCache(
-				(() => {
-					const prev = getInfoCache();
-					const next = { ...prev };
-					next[entryName] = {
-						...(next[entryName] ?? {}),
-						data: { ...(next[entryName]?.data ?? selectedInfo ?? {}), economics: allData } as CountryData,
-						loading: false
-					};
-					return next;
-				})()
-			);
+			next[entryName] = {
+				...next[entryName],
+				data: { ...(next[entryName]?.data ?? selectedInfo ?? {}), economics: allData } as CountryData,
+				loading: false
+			};
+			setInfoCache(next);
 
 			if (setSelectedInfo && selectedInfo) {
 				setSelectedInfo({ ...selectedInfo, economics: allData });
 			}
 
-			if (persist) {
-				(async () => {
-					try {
-						const shouldPersist = !localEntry || (!localEntry.economics && Object.keys(allData).length > 0);
-						if (!shouldPersist) return;
-						const econSource = {
-							label: 'World Bank',
-							url: `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator`
-						};
-						Object.assign(sources, { ...(!sources.economics ? { economics: econSource } : {}) });
+			if (persist && (!localEntry || (!localEntry.economics && Object.keys(allData).length > 0))) {
+				const econSource = {
+					label: 'World Bank',
+					url: `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator`
+				};
+				Object.assign(sources, { economics: econSource });
 
-						await fetch('/api', {
-							method: 'POST',
-							headers: { 'Content-Type': 'application/json' },
-							body: JSON.stringify({
-								name: entryName,
-								economics: allData,
-								sources
-							})
-						});
-					} catch (err) {
-						console.warn('Failed to persist economic data', err);
-					}
-				})();
+				fetch('/api', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ name: entryName, economics: allData, sources })
+				}).catch((err) => console.warn('Failed to persist economic data', err));
 			}
 		} catch (err) {
 			console.error('Economic data fetch error:', err);
-			setInfoCache(
-				(() => {
-					const prev = getInfoCache();
-					const next = { ...prev };
-					next[entryName] = { ...(next[entryName] ?? {}), loading: false, error: 'Failed to load economic data' };
-					return next;
-				})()
-			);
+			const next = { ...getInfoCache() };
+			next[entryName] = { ...next[entryName], loading: false, error: 'Failed to load economic data' };
+			setInfoCache(next);
 		} finally {
 			inFlight.delete(entryName);
 		}
@@ -457,31 +410,18 @@ export async function fetchHistoryDataModule(params: {
 }) {
 	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = false } = params;
 
-	if (!name) return;
-
-	if (historyInFlight.has(name)) return historyInFlight.get(name)!;
+	if (!name || historyInFlight.has(name)) return historyInFlight.get(name);
 
 	const job = (async () => {
 		try {
-			setInfoCache(
-				(() => {
-					const prev = getInfoCache();
-					const next = { ...prev };
-					next[name] = { ...(next[name] ?? { loading: false }), loading: true };
-					return next;
-				})()
-			);
-
 			const cache = getInfoCache();
+			const next = { ...cache };
+			next[name] = { ...(next[name] ?? { loading: false }), loading: true };
+			setInfoCache(next);
+
 			if (cache[name]?.data?.history && cache[name].data.history !== 'Data not provided.') {
-				setInfoCache(
-					(() => {
-						const prev = getInfoCache();
-						const next = { ...prev };
-						next[name] = { ...(next[name] ?? {}), loading: false };
-						return next;
-					})()
-				);
+				next[name].loading = false;
+				setInfoCache(next);
 				return;
 			}
 
@@ -491,77 +431,44 @@ export async function fetchHistoryDataModule(params: {
 				const localResp = await fetch('/data/countries-history.json');
 				if (localResp.ok) {
 					const localJson = await localResp.json();
-					historyEntry = Array.isArray(localJson)
-						? (localJson.find((e: any) => e.name === name) ?? null)
-						: (localJson[name] ?? null);
-				} else {
-					console.warn('No local countries-history.json accessible:', localResp.status);
+					historyEntry = Array.isArray(localJson) ? localJson.find((e: any) => e.name === name) : localJson[name];
 				}
 			} catch (err) {
 				console.warn('Error loading /data/countries-history.json', err);
 			}
 
 			if (historyEntry) {
-				setInfoCache(
-					(() => {
-						const prev = getInfoCache();
-						const next = { ...prev };
-						next[name] = {
-							...(next[name] ?? {}),
-							data: {
-								...(next[name]?.data ?? selectedInfo ?? {}),
-								history: historyEntry
-							} as any,
-							loading: false
-						};
-						return next;
-					})()
-				);
+				next[name] = {
+					...next[name],
+					data: { ...(next[name]?.data ?? selectedInfo ?? {}), history: historyEntry } as any,
+					loading: false
+				};
+				setInfoCache(next);
 
 				if (setSelectedInfo && selectedInfo) {
 					setSelectedInfo({ ...selectedInfo, history: historyEntry } as any);
 				}
 
 				if (persist) {
-					Promise.resolve().then(async () => {
-						try {
-							await fetch('/api/history', {
-								method: 'POST',
-								headers: { 'Content-Type': 'application/json' },
-								body: JSON.stringify({
-									name,
-									history: historyEntry
-								})
-							});
-						} catch (err) {
-							console.warn('Failed to persist history data', err);
-						}
-					});
+					fetch('/api/history', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ name, history: historyEntry })
+					}).catch((err) => console.warn('Failed to persist history data', err));
 				}
 			} else {
-				setInfoCache(
-					(() => {
-						const prev = getInfoCache();
-						const next = { ...prev };
-						next[name] = {
-							...(next[name] ?? {}),
-							loading: false,
-							error: 'No history data available for this country'
-						};
-						return next;
-					})()
-				);
+				next[name] = {
+					...next[name],
+					loading: false,
+					error: 'No history data available for this country'
+				};
+				setInfoCache(next);
 			}
 		} catch (err) {
 			console.error('History data fetch error:', err);
-			setInfoCache(
-				(() => {
-					const prev = getInfoCache();
-					const next = { ...prev };
-					next[name] = { ...(next[name] ?? {}), loading: false, error: 'Failed to load history data' };
-					return next;
-				})()
-			);
+			const next = { ...getInfoCache() };
+			next[name] = { ...next[name], loading: false, error: 'Failed to load history data' };
+			setInfoCache(next);
 		} finally {
 			historyInFlight.delete(name);
 		}
@@ -577,20 +484,14 @@ export async function batchLoadCountryData(
 	countries: GeoFeature[],
 	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
 ): Promise<Record<string, { data?: CountryData; loading: boolean; error?: string }>> {
-	if (loadingBatch) {
-		console.log('Batch loading already in progress');
-		return infoCache;
-	}
+	if (loadingBatch) return infoCache;
 
 	loadingBatch = true;
 	const cache = { ...infoCache };
 
 	try {
 		const countriesData = await getCountriesData();
-		if (!countriesData) {
-			console.error('Failed to load countries-data.json');
-			return infoCache;
-		}
+		if (!countriesData) return infoCache;
 
 		const dataMap = new Map<string, any>();
 		if (Array.isArray(countriesData)) {
@@ -611,8 +512,7 @@ export async function batchLoadCountryData(
 		const total = countries.length;
 		countries.forEach((country) => {
 			const name = country.properties?.name;
-			if (!name) return;
-			if (cache[name]?.data) return;
+			if (!name || cache[name]?.data) return;
 
 			const localEntry = dataMap.get(name.toLowerCase());
 			if (localEntry) {
@@ -638,11 +538,6 @@ export async function batchLoadCountryData(
 				};
 				cache[name] = { data, loading: false };
 				loaded++;
-			} else {
-				cache[name] = {
-					loading: false,
-					error: 'No data available for this country'
-				};
 			}
 		});
 		console.log(`Loaded data for ${loaded}/${total} countries from local JSON`);
