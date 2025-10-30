@@ -406,11 +406,12 @@ export async function fetchHistoryDataModule(params: {
 	getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
 	setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
 	setSelectedInfo?: (newInfo: CountryData) => void;
-	persist?: boolean;
 }) {
-	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo, persist = false } = params;
+	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo = false } = params;
 
-	if (!name || historyInFlight.has(name)) return historyInFlight.get(name);
+	if (!name || historyInFlight.has(name)) {
+		return historyInFlight.get(name);
+	}
 
 	const job = (async () => {
 		try {
@@ -420,8 +421,9 @@ export async function fetchHistoryDataModule(params: {
 			setInfoCache(next);
 
 			if (cache[name]?.data?.history && cache[name].data.history !== 'Data not provided.') {
-				next[name].loading = false;
-				setInfoCache(next);
+				const finalNext = { ...getInfoCache() };
+				finalNext[name] = { ...finalNext[name], loading: false };
+				setInfoCache(finalNext);
 				return;
 			}
 
@@ -437,32 +439,26 @@ export async function fetchHistoryDataModule(params: {
 				console.warn('Error loading /data/countries-history.json', err);
 			}
 
+			const finalNext = { ...getInfoCache() };
+
 			if (historyEntry) {
-				next[name] = {
-					...next[name],
-					data: { ...(next[name]?.data ?? selectedInfo ?? {}), history: historyEntry } as any,
+				finalNext[name] = {
+					...finalNext[name],
+					data: { ...(finalNext[name]?.data ?? selectedInfo ?? {}), history: historyEntry } as any,
 					loading: false
 				};
-				setInfoCache(next);
+				setInfoCache(finalNext);
 
 				if (setSelectedInfo && selectedInfo) {
 					setSelectedInfo({ ...selectedInfo, history: historyEntry } as any);
 				}
-
-				if (persist) {
-					fetch('/api/history', {
-						method: 'POST',
-						headers: { 'Content-Type': 'application/json' },
-						body: JSON.stringify({ name, history: historyEntry })
-					}).catch((err) => console.warn('Failed to persist history data', err));
-				}
 			} else {
-				next[name] = {
-					...next[name],
+				finalNext[name] = {
+					...finalNext[name],
 					loading: false,
 					error: 'No history data available for this country'
 				};
-				setInfoCache(next);
+				setInfoCache(finalNext);
 			}
 		} catch (err) {
 			console.error('History data fetch error:', err);

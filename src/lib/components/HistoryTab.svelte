@@ -27,7 +27,6 @@
 			getInfoCache: () => infoCache,
 			setInfoCache: (newCache) => (infoCache = newCache),
 			setSelectedInfo: (newSelected) => (selectedInfo = newSelected),
-			persist: false
 		});
 	}
 
@@ -35,49 +34,34 @@
 		activeSection = section;
 	}
 
-	function updateHistoryData() {
+	$effect(() => {
 		if (!selectedName) {
 			historyData = null;
 			lastLoadedCountry = '';
+			isLoading = false;
 			return;
 		}
 
 		const cachedData = infoCache[selectedName]?.data;
+
 		if (cachedData?.history && typeof cachedData.history !== 'string') {
 			historyData = cachedData.history;
 			lastLoadedCountry = selectedName;
-		} else if (lastLoadedCountry !== selectedName) {
+			isLoading = false;
+		} else if (lastLoadedCountry !== selectedName && !infoCache[selectedName]?.loading && !isLoading) {
 			isLoading = true;
-			fetchHistoryData(selectedName).finally(() => {
-				isLoading = false;
-			});
-		}
-	}
-
-	$effect(() => {
-		const name = selectedName;
-		const cache = infoCache;
-
-		if (name) {
-			const cachedData = cache[name]?.data;
-			if (cachedData?.history && typeof cachedData.history !== 'string') {
-				historyData = cachedData.history;
-				lastLoadedCountry = name;
-			} else if (lastLoadedCountry !== name && !cache[name]?.loading) {
-				isLoading = true;
-				fetchHistoryData(name).finally(() => {
+			lastLoadedCountry = selectedName;
+			fetchHistoryData(selectedName)
+				.then(() => {
+					const updatedData = infoCache[selectedName]?.data;
+					if (updatedData?.history && typeof updatedData.history !== 'string') {
+						historyData = updatedData.history;
+					}
+					isLoading = false;
+				})
+				.catch(() => {
 					isLoading = false;
 				});
-			}
-		} else {
-			historyData = null;
-			lastLoadedCountry = '';
-		}
-	});
-
-	onMount(() => {
-		if (selectedName && !infoCache[selectedName]?.data?.history) {
-			updateHistoryData();
 		}
 	});
 </script>

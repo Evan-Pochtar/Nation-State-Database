@@ -69,7 +69,11 @@
 	});
 
 	$effect(() => {
-		if (selectedInfo || selectedName || activeEconomicChart || infoCache) {
+		const info = selectedInfo;
+		const name = selectedName;
+		const chart = activeEconomicChart;
+
+		if (info && name) {
 			updateChartData();
 		}
 	});

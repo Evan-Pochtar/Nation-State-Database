@@ -47,7 +47,7 @@
 
 	// Cache
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = $state({});
-	const countryNameCache = new WeakMap<GeoFeature, string>();
+	let countryNameCache = new WeakMap<GeoFeature, string>();
 	let pathStrings: string[] = $state([]);
 
 	// SVG refs & SVG Zoom
@@ -173,13 +173,15 @@
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
 
-			pathStrings = countries.map((c) => {
-				try {
-					return pathGenerator(c as any) || '';
-				} catch (e) {
-					return '';
-				}
-			});
+			if (pathStrings.length === 0) {
+				pathStrings = countries.map((c) => {
+					try {
+						return pathGenerator(c as any) || '';
+					} catch (e) {
+						return '';
+					}
+				});
+			}
 		}
 	}
 
@@ -208,28 +210,19 @@
 
 		d3.select(svgEl)
 			.transition()
-			.duration(350)
+			.duration(250)
 			.call(zoomBehavior.transform as any, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale))
 			.on('end', () => {
 				isAnimating = false;
 			});
-
-		handleResize();
 	}
 
 	async function closePanel() {
-		isAnimating = true;
 		selectedFeature = null;
 		selectedName = null;
 		updateURL(null);
 
-		await tick();
-		handleResize();
 		resetZoom();
-
-		setTimeout(() => {
-			isAnimating = false;
-		}, 150);
 	}
 
 	function handleMapClick(e: MouseEvent) {
@@ -337,6 +330,14 @@
 		return d3
 			.zoom<SVGSVGElement, unknown>()
 			.scaleExtent([1, 20])
+			.translateExtent([
+				[0, 0],
+				[outerWidth, outerHeight]
+			])
+			.extent([
+				[0, 0],
+				[outerWidth, outerHeight]
+			])
 			.on('zoom', (event: any) => {
 				if (!mapGroup) return;
 				const t = event.transform;
@@ -363,6 +364,7 @@
 	// === SETTINGS ===
 	function handleProjectionChange(projection: string) {
 		currentProjection = projection;
+		pathStrings = [];
 		handleResize();
 		resetZoom();
 		initZoom();
@@ -405,18 +407,17 @@
 		if (isChloroplethTheme && countries.length > 0) {
 			const progress = getLoadProgress(countries, infoCache);
 			dataLoadProgress = progress;
-
-			if (progress.percentage < 50 && !dataLoading) {
+			if (progress.percentage >= 50 || Object.keys(infoCache).length > countries.length * 0.5) {
+				chloroplethData = buildChloroplethData(countries, infoCache, currentTheme as DataType);
+				showLegend = true;
+				dataLoading = false;
+			} else if (!dataLoading) {
 				dataLoading = true;
 				batchLoadCountryData(countries, infoCache).then((newCache) => {
 					infoCache = newCache;
 					dataLoading = false;
-					chloroplethData = buildChloroplethData(countries, infoCache, currentTheme as DataType);
 				});
-			} else {
-				chloroplethData = buildChloroplethData(countries, infoCache, currentTheme as DataType);
 			}
-			showLegend = true;
 		} else {
 			chloroplethData = null;
 			showLegend = false;
@@ -439,6 +440,9 @@
 			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
 
+			handleResize();
+			initZoom();
+
 			const urlCountry = page.params.country || page.url.pathname.split('/')[1];
 			if (urlCountry) {
 				const decodedCountry = decodeURIComponent(urlCountry);
@@ -449,9 +453,6 @@
 					onCountryClick(matchingCountry, index);
 				}
 			}
-
-			handleResize();
-			initZoom();
 		} catch (error) {
 			console.error('Error loading map data:', error);
 		}
@@ -464,6 +465,10 @@
 			zoomBehavior = null;
 		}
 		document.body.style.userSelect = '';
+
+		countryNameCache = new WeakMap();
+		pathStrings = [];
+		infoCache = {};
 	});
 </script>
 

@@ -45,8 +45,8 @@
 </script>
 
 <div
-	in:fly={{ x: -leftWidth, duration: 150, easing: cubicOut }}
-	out:fly={{ x: -leftWidth, duration: 120, easing: cubicOut }}
+	in:fly={{ x: -leftWidth, duration: 100, easing: cubicOut }}
+	out:fly={{ x: -leftWidth, duration: 100, easing: cubicOut }}
 	class="z-20 min-w-[320px] border-r border-darkCyan bg-gradient-to-br from-slate-950 to-zinc-950 shadow-[0_0_50px] shadow-cyan-400/10 backdrop-blur-[20px]"
 	style="width: {leftWidth}px;"
 >
