@@ -479,15 +479,15 @@
 		/>
 
 		<div
-			class="relative z-25 w-[5px] cursor-ew-resize overflow-visible bg-gradient-to-b from-cyan-400/30 to-sky-400/50 opacity-50 shadow-[0_0_10px] transition-all duration-300"
+			class="relative z-25 w-[5px] cursor-ew-resize bg-gradient-to-b from-cyan-400/30 to-sky-400/50 opacity-50 transition-opacity duration-300"
 			onpointerdown={handlePointerDown}
 			role="separator"
 			aria-orientation="vertical"
 		>
 			{#if dragging}
 				<div
-					class="pointer-events-none absolute top-0 bottom-0 z-30 w-0.5 border-l-2 border-dashed border-teal-300 bg-white/80"
-					style="left: {tempLeftWidth - leftWidth}px; animation: dash 1s linear infinite;"
+					class="pointer-events-none absolute inset-y-0 w-0.5 border-l-2 border-dashed border-teal-300 bg-white/80"
+					style="left: {tempLeftWidth - leftWidth}px;"
 				></div>
 			{/if}
 		</div>
@@ -497,7 +497,7 @@
 		class="relative flex-1 overflow-hidden"
 		style="width: {selectedFeature
 			? `calc(100% - ${leftWidth + HANDLE_WIDTH}px)`
-			: '100%'}; transition: width 150ms cubic-bezier(0.33, 1, 0.68, 1);"
+			: '100%'}; transition: width 150ms ease-out;"
 	>
 		{#if !selectedFeature}
 			<MapSettings
@@ -542,20 +542,7 @@
 			onmouseleave={hoverReset}
 		>
 			{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
-				<defs>
-					<linearGradient id="waterBase" x1="0%" y1="0%" x2="0%" y2="100%">
-						{#if currentTheme === 'colorful'}
-							<stop offset="0%" stop-color="oklch(84% 0.12 235)" />
-							<stop offset="50%" stop-color="oklch(81% 0.115 232)" />
-							<stop offset="100%" stop-color="oklch(77% 0.11 228)" />
-						{:else}
-							<stop offset="0%" stop-color="oklch(87% 0.08 235)" />
-							<stop offset="50%" stop-color="oklch(84% 0.09 232)" />
-							<stop offset="100%" stop-color="oklch(80% 0.10 230)" />
-						{/if}
-					</linearGradient>
-				</defs>
-				<rect x="0" y="0" width="100%" height="100%" fill={'url(#waterBase)'}></rect>
+				<rect x="0" y="0" width="100%" height="100%" fill="oklch(77% 0.11 228)"></rect>
 			{/if}
 
 			{#if isChloroplethTheme}

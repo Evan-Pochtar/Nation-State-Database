@@ -68813,5 +68813,242 @@
 		},
 		"createdAt": "2025-10-10T20:27:11.210Z",
 		"updatedAt": "2025-10-10T20:27:11.666Z"
+	},
+	{
+		"name": "Somaliland",
+		"summary": "Somaliland, officially the Republic of Somaliland, is an unrecognised state in the Horn of Africa. It is located in the southern coast of the Gulf of Aden and bordered by Djibouti to the northwest, Ethiopia to the south and west, and Somalia to the east. Its claimed territory has an area of 176,120 square kilometres (68,000 sq mi), with approximately 6.2 million people as of 2024. The capital and largest city is Hargeisa.\n\nVarious Somali Muslim kingdoms were established in the area during the early Islamic period, including in the 14th to 15th centuries the Zeila-based Adal Sultanate. In the early modern period, successor states to the Adal Sultanate emerged, including the Isaaq Sultanate which was established in the middle of the 18th century. In the late 19th century, the United Kingdom signed agreements with various clans in the area, establishing the Somaliland Protectorate, which was formally granted independence by the United Kingdom as the State of Somaliland on 26 June 1960. Five days later, the State of Somaliland voluntarily united with the Trust Territory of Somaliland (the former Italian Somalia) to form the Somali Republic. The union of the two states proved problematic early on, and in response to the harsh policies enacted by Somalia's Barre regime against the main clan family in Somaliland, the Isaaq, shortly after the conclusion of the disastrous Ogaden War, a 10-year war of independence concluded with the declaration of Somaliland's independence in 1991. The Government of Somaliland regards itself as the successor state to British Somaliland.\n\nSince 1991, the territory has been governed by democratically elected governments that seek international recognition as the government of the Republic of Somaliland. The central government maintains informal ties with some foreign governments, who have sent delegations to Hargeisa; Somaliland hosts representative offices from several countries, including Ethiopia and Taiwan. However, as of 2010, Somaliland's self-proclaimed independence had not been officially recognised by any UN member state or international organisation. It is the largest unrecognised state in the world by de facto controlled land area. It is a member of the Unrepresented Nations and Peoples Organization, an advocacy group whose members consist of indigenous peoples, minorities and unrecognised or occupied territories. Following the Las Anod conflict that emerged in 2022, Somaliland lost control of a significant portion of its eastern territory to pro-unionist forces who established the SSC-Khatumo administration.",
+		"cca2ID": null,
+		"officialName": null,
+		"flag": null,
+		"coatOfArms": null,
+		"independent": null,
+		"region": null,
+		"subregion": null,
+		"area": null,
+		"languages": null,
+		"capital": null,
+		"population": null,
+		"gini": null,
+		"economics": null,
+		"sources": {
+			"summary": {
+				"label": "Wikipedia",
+				"url": "https://en.wikipedia.org/wiki/Somaliland"
+			}
+		},
+		"createdAt": "2025-10-30T16:28:07.910Z",
+		"updatedAt": "2025-10-30T16:28:07.910Z"
+	},
+	{
+		"name": "Sudan",
+		"summary": "No summary available.",
+		"cca2ID": "SD",
+		"officialName": "Republic of the Sudan",
+		"flag": "https://flagcdn.com/sd.svg",
+		"coatOfArms": "https://mainfacts.com/media/images/coats_of_arms/sd.svg",
+		"independent": true,
+		"region": "Africa",
+		"subregion": "Northern Africa",
+		"area": 1886068,
+		"languages": {
+			"ara": "Arabic",
+			"eng": "English"
+		},
+		"capital": "Khartoum",
+		"population": 51662000,
+		"gini": 34.2,
+		"economics": null,
+		"sources": {
+			"flag": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"coatOfArms": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"officialName": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"capital": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"independent": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"region": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"subregion": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"area": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"languages": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"population": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			},
+			"gini": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Sudan"
+			}
+		},
+		"createdAt": "2025-10-30T16:30:30.927Z",
+		"updatedAt": "2025-10-30T16:30:30.927Z"
+	},
+	{
+		"name": "Republic of the Congo",
+		"summary": "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply the Congo (its name from 1971 to 1997; the last ambiguously also referring to the neighbouring Democratic Republic of the Congo), is a country located on the western coast of Central Africa to the west of the Congo River. It is bordered to the west by Gabon, to the northwest by Cameroon, to the northeast by the Central African Republic, to the southeast by the Democratic Republic of the Congo, to the south by the Angolan exclave of Cabinda, and to the southwest by the Atlantic Ocean.\n\nThe region was dominated by Bantu-speaking tribes at least 3,000 years ago, who built trade links leading into the Congo River basin. From the 13th century, the present-day territory was dominated by a confederation led by Vungu which included Kakongo and Ngoyo. Loango emerged in the 16th century. In the late 19th century France colonised the region and incorporated it into French Equatorial Africa. The Republic of the Congo was established on 28 November 1958 and gained independence from France in 1960. It was a Marxist–Leninist state from 1969 to 1992, under the name People's Republic of the Congo (PRC). The country has had multi-party elections since 1992, but a democratically elected government was ousted in the 1997 Republic of the Congo Civil War. President Denis Sassou Nguesso, who first came to power in 1979, ruled until 1992 and then again since after his reinstatement.\n\nThe Republic of the Congo is a member of the African Union, the United Nations, La Francophonie, the Economic Community of Central African States, and the Non-Aligned Movement. It is the fourth-largest oil producer in the Gulf of Guinea, providing the country a degree of prosperity, with political and economic instability in some areas and unequal distribution of oil revenue nationwide. Its economy is dependent on the oil sector and economic growth has slowed since the post-2015 drop in oil prices.\n\nChristianity is the most widely professed faith in the country. According to the 2024 rendition of the World Happiness Report, the Republic of the Congo is ranked 89th among 140 nations.",
+		"cca2ID": "CG",
+		"officialName": "Republic of the Congo",
+		"flag": "https://flagcdn.com/cg.svg",
+		"coatOfArms": "https://mainfacts.com/media/images/coats_of_arms/cd.svg",
+		"independent": true,
+		"region": "Africa",
+		"subregion": "Middle Africa",
+		"area": 342000,
+		"languages": {
+			"fra": "French",
+			"kon": "Kikongo",
+			"lin": "Lingala"
+		},
+		"capital": "Brazzaville",
+		"population": 6142180,
+		"gini": 48.9,
+		"economics": null,
+		"sources": {
+			"summary": {
+				"label": "Wikipedia",
+				"url": "https://en.wikipedia.org/wiki/Republic%20of%20the%20Congo"
+			},
+			"flag": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"coatOfArms": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"officialName": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"capital": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"independent": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"region": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"subregion": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"area": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"languages": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"population": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			},
+			"gini": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/Republic%20of%20the%20Congo"
+			}
+		},
+		"createdAt": "2025-10-30T16:33:41.082Z",
+		"updatedAt": "2025-10-30T16:33:41.082Z"
+	},
+	{
+		"name": "The Gambia",
+		"summary": "The Gambia, officially the Republic of the Gambia, is a country in West Africa. Geographically, the Gambia is the smallest country in continental Africa; it is surrounded by Senegal on all sides except for the western part, which is bordered by the Atlantic Ocean.\n\nIts territory is on both sides of the lower reaches of the Gambia River, which flows through the center of the country and empties into the Atlantic. The national namesake river demarcates the elongated shape of the country, which has an area of 11,300 square kilometres (4,400 sq mi) and a population of 2,422,712 people at the 1st of May 2024 Census which is a 30.45% population increase from 2013. The capital city is the island Banjul, formerly called Bathurst during colonial era, which has the most extensive metropolitan area in the country. The second and third-largest cities are Serekunda and Brikama. Other significant cities are Kanifing and Farafenni in the north bank, Basse in Upper River Region, and Soma in lower river region.\n\nArab Muslim merchants traded with indigenous West Africans in the Gambia, under an arrangement known as the trans Saharan trade, using a barter exchange system. Throughout the 9th and 10th centuries, Islam was introduced by the Arab traders to Western Sudan. In 1455, the Portuguese were the first Europeans to enter the Gambia, although they never established significant trade there. The British Empire established a colony in 1765. In 1965, 200 years later, the Gambia gained independence under the leadership of Dawda Jawara. Jawara remained the president, winning several elections, until he was overthrown by Yahya Jammeh in a  bloodless coup on  July 22, 1994.\n\nAdama Barrow was elected as the Gambia's third president in December 2016; He defeated Yahya Jammeh with the help of a coalition of other opposition political parties. Jammeh initially accepted the results, but then refused to leave office claiming he was cheated, triggering a constitutional crisis. The Economic Community of West African States (ECOWAS) conducted a military intervention and achieved Jammeh's removal two days after his term was initially scheduled to end. In a swearing-in ceremony at the Gambian embassy in Dakar, Senegal, on January 19, 2017, Adama Barrow formally became president of The Gambia.  \n\nThe Gambia's economy is dominated by farming, fishing, and especially tourism. In 2022, 17.2% of the population lived in extreme poverty, defined as living on less than US$2.15 (2017 PPP) per day. The Gambia is a founding member of the ECOWAS. It rejoined the Commonwealth of Nations in 2018 after previously withdrawing in 2013. English is the country's sole official language; it became widely used during British rule.",
+		"cca2ID": "GM",
+		"officialName": "Republic of the Gambia",
+		"flag": "https://flagcdn.com/gm.svg",
+		"coatOfArms": "https://mainfacts.com/media/images/coats_of_arms/gm.svg",
+		"independent": true,
+		"region": "Africa",
+		"subregion": "Western Africa",
+		"area": 10689,
+		"languages": {
+			"eng": "English"
+		},
+		"capital": "Banjul",
+		"population": 2422712,
+		"gini": 35.9,
+		"economics": null,
+		"sources": {
+			"summary": {
+				"label": "Wikipedia",
+				"url": "https://en.wikipedia.org/wiki/The%20Gambia"
+			},
+			"flag": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"coatOfArms": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"officialName": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"capital": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"independent": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"region": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"subregion": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"area": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"languages": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"population": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			},
+			"gini": {
+				"label": "REST Countries",
+				"url": "https://restcountries.com/v3.1/name/The%20Gambia"
+			}
+		},
+		"createdAt": "2025-10-30T16:34:00.396Z",
+		"updatedAt": "2025-10-30T16:34:00.396Z"
 	}
 ]
