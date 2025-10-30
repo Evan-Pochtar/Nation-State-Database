@@ -263,6 +263,14 @@
 </div>
 
 <style>
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
 	.settings-btn-active {
 		border-color: rgba(34, 197, 94, 0.8) !important;
 		background: linear-gradient(135deg, rgba(6, 78, 59, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%) !important;
@@ -297,29 +305,5 @@
 
 	.rotate-240 {
 		transform: rotate(240deg);
-	}
-
-	@keyframes rotate {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
-	@keyframes scale-in {
-		from {
-			transform: scale(0);
-			opacity: 0;
-		}
-		to {
-			transform: scale(1);
-			opacity: 1;
-		}
-	}
-
-	.animate-scale-in {
-		animation: scale-in 0.2s ease-out;
 	}
 </style>
