@@ -40,7 +40,6 @@
 	let dragging = $state(false);
 	let outerWidth = $state(1600);
 	let outerHeight = $state(900);
-	let resizeTimeout: number;
 
 	// D3 projection
 	let projection: d3.GeoProjection;
@@ -182,11 +181,6 @@
 				}
 			});
 		}
-	}
-
-	function throttledResize() {
-		if (resizeTimeout) clearTimeout(resizeTimeout);
-		resizeTimeout = window.setTimeout(handleResize, 100);
 	}
 
 	// === INTERACTION HANDLERS ===
@@ -458,15 +452,12 @@
 
 			handleResize();
 			initZoom();
-			window.addEventListener('resize', throttledResize, { passive: true });
 		} catch (error) {
 			console.error('Error loading map data:', error);
 		}
 	});
 
 	onDestroy(() => {
-		window.removeEventListener('resize', throttledResize);
-		if (resizeTimeout) clearTimeout(resizeTimeout);
 		if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
 		if (svgEl && zoomBehavior) {
 			d3.select(svgEl).on('.zoom', null);
