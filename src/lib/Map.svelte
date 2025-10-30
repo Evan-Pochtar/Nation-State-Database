@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, tick } from 'svelte';
-	import { feature } from 'topojson-client';
+	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
 	import type { GeoFeature, CountryData, ChloroplethData, DataType } from '$lib/utils/types';
 	import { fetchCountryInfoByName, batchLoadCountryData, getLoadProgress } from '$lib/utils/getInfo';
@@ -49,6 +49,7 @@
 	// Cache
 	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = $state({});
 	const countryNameCache = new WeakMap<GeoFeature, string>();
+	let pathStrings: string[] = $state([]);
 
 	// SVG refs & SVG Zoom
 	let svgEl: SVGSVGElement | null = $state(null);
@@ -134,6 +135,31 @@
 		}
 	}
 
+	function buildColorfulPalette() {
+		if (!topoData || !topoObjectKey) {
+			countryColorMap = new Array(countries.length).fill('#D0DCE8');
+			return;
+		}
+		if (countryColorMap.length === countries.length && countryColorMap.some((c) => c !== '#D0DCE8')) {
+			return;
+		}
+		const geoms = topoData.objects[topoObjectKey].geometries;
+		const neigh = neighbors(geoms);
+		const palette = ['#E8D4C0', '#C8E6D7', '#C8DEFF', '#E0D4E8', '#FFD8EA', '#D0F0FF', '#FFE8C0', '#D8F0D8'];
+		const assigned: string[] = new Array(geoms.length).fill('#D0DCE8');
+		for (let i = 0; i < geoms.length; i++) {
+			const used = new Set<string>();
+			const nbs = neigh[i] || [];
+			for (const nb of nbs) {
+				if (assigned[nb]) used.add(assigned[nb]);
+			}
+			let pick = palette.find((c) => !used.has(c));
+			if (!pick) pick = palette[i % palette.length];
+			assigned[i] = pick;
+		}
+		countryColorMap = assigned.slice(0, countries.length);
+	}
+
 	// === RESIZE HANDLING ===
 	function handleResize() {
 		outerWidth = window.innerWidth;
@@ -147,6 +173,14 @@
 			projection = getProjection(currentProjection);
 			projection.fitSize([outerWidth, outerHeight], worldFeature as any);
 			pathGenerator = d3.geoPath().projection(projection as any);
+
+			pathStrings = countries.map((c) => {
+				try {
+					return pathGenerator(c as any) || '';
+				} catch (e) {
+					return '';
+				}
+			});
 		}
 	}
 
@@ -180,7 +214,7 @@
 
 		d3.select(svgEl)
 			.transition()
-			.duration(750)
+			.duration(350)
 			.call(zoomBehavior.transform as any, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale))
 			.on('end', () => {
 				isAnimating = false;
@@ -328,7 +362,7 @@
 		if (!svgEl || !zoomBehavior) return;
 		d3.select(svgEl)
 			.transition()
-			.duration(750)
+			.duration(350)
 			.call((zoomBehavior as any).transform, d3.zoomIdentity);
 	}
 
@@ -342,6 +376,9 @@
 
 	function handleThemeChange(theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
 		currentTheme = theme;
+		if (theme === 'colorful' && topoData && topoObjectKey && countryColorMap.length === 0) {
+			buildColorfulPalette();
+		}
 	}
 
 	function toggleSettings() {
@@ -406,19 +443,7 @@
 			const objectKey = Object.keys(objects)[0];
 			topoObjectKey = objectKey;
 			const geo = feature(topo as any, objects[objectKey]) as GeoJSON.FeatureCollection | GeoJSON.Feature | null;
-
 			countries = geo?.type === 'FeatureCollection' ? (geo.features as GeoFeature[]) : geo ? [geo as GeoFeature] : [];
-
-			requestIdleCallback(
-				() => {
-					batchLoadCountryData(countries, infoCache)
-						.then((updated) => {
-							infoCache = updated;
-						})
-						.catch((err) => console.error('Background load failed:', err));
-				},
-				{ timeout: 2000 }
-			);
 
 			const urlCountry = page.params.country || page.url.pathname.split('/')[1];
 			if (urlCountry) {
@@ -550,15 +575,15 @@
 			{/if}
 
 			<g bind:this={mapGroup}>
-				{#if countries.length && pathGenerator}
-					{#each countries as c, i (i)}
+				{#if countries.length}
+					{#each countries as c, i (getCountryName(c))}
 						{@const isSelected = c === selectedFeature}
 						{@const isHovered = hoveredCountry === i}
 						{@const fillColor = getCountryFillColor(i, isSelected, isHovered)}
 						{@const stroke = getCountryStroke(isSelected, isHovered)}
 
 						<path
-							d={pathGenerator(c as any) || ''}
+							d={pathStrings[i] || ''}
 							data-index={i}
 							fill={fillColor}
 							stroke={stroke.color}
