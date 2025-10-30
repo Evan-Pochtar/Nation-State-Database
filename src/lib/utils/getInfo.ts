@@ -20,7 +20,6 @@ export const indicators = {
 
 const inFlight = new Map<string, Promise<void>>();
 const historyInFlight = new Map<string, Promise<void>>();
-
 const latestOnlySet = new Set([
 	indicators.exports,
 	indicators.imports,
@@ -34,6 +33,7 @@ const latestOnlySet = new Set([
 ]);
 
 let countriesDataCache: any = null;
+let loadingBatch = false;
 
 async function getCountriesData(): Promise<any> {
 	if (countriesDataCache) return countriesDataCache;
@@ -48,10 +48,6 @@ async function getCountriesData(): Promise<any> {
 		console.warn('Error loading /data/countries-data.json', err);
 		return null;
 	}
-}
-
-export async function preloadCountryData(): Promise<void> {
-	await getCountriesData();
 }
 
 export async function fetchCountryInfoByName(
@@ -88,7 +84,6 @@ export async function fetchCountryInfoByName(
 		const economics = localEntry?.economics ?? null;
 		const sources = normalizeSources(localEntry?.sources ?? {}, name);
 
-		// Only fetch from APIs if we don't have cached data
 		if (!summary || !cca2ID) {
 			if (!summary) {
 				try {
@@ -473,8 +468,6 @@ export async function fetchHistoryDataModule(params: {
 	historyInFlight.set(name, job);
 	return job;
 }
-
-let loadingBatch = false;
 
 export async function batchLoadCountryData(
 	countries: GeoFeature[],

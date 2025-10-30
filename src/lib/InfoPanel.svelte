@@ -3,7 +3,6 @@
 	import { cubicOut } from 'svelte/easing';
 	import type { CountryData } from '$lib/utils/types';
 	import { formatNumber, formatLanguages } from '$lib/utils/helpers';
-	import { cardClass, buttonClass, labelClass } from '$lib/utils/styles';
 	import EconomicsTab from './components/EconomicsTab.svelte';
 	import OverviewTab from './components/OverviewTab.svelte';
 	import HistoryTab from './components/HistoryTab.svelte';
@@ -155,8 +154,10 @@
 				<section class="mt-3">
 					<div class="grid grid-cols-2 gap-2">
 						{#each [['Area', formatNumber(selectedInfo.area) + ' km²'], ['Population', formatNumber(selectedInfo.population)], ['Gini', selectedInfo.gini > 0 ? selectedInfo.gini.toFixed(1) : '—'], ['Languages', formatLanguages(selectedInfo.languages)]] as [label, value]}
-							<div class={cardClass}>
-								<div class={labelClass}>{label}</div>
+							<div
+								class="rounded-xl border border-darkCyan bg-gradient-to-b from-white/[0.02] to-black/[0.03] p-2 shadow-[0_6px_18px] shadow-cyan-400/[0.02] backdrop-blur-[6px]"
+							>
+								<div class="mb-1 text-[11px] tracking-[0.6px] text-white/60 uppercase">{label}</div>
 								<div class="text-[14px] font-extrabold text-white">{value}</div>
 							</div>
 						{/each}
@@ -165,7 +166,11 @@
 
 				<nav class="mt-2 flex gap-2">
 					{#each [['overview', 'Overview'], ['economics', 'Economy'], ['history', 'History']] as [tab, label]}
-						<button role="tab" aria-selected={activeTab === tab} onclick={() => setTab(tab)} class={buttonClass}
+						<button
+							role="tab"
+							aria-selected={activeTab === tab}
+							onclick={() => setTab(tab)}
+							class="cursor-pointer rounded-lg border border-darkCyan bg-gradient-to-r from-white/[0.01] to-black/[0.02] px-3 py-2 font-extrabold text-cyan-50 transition-transform duration-160"
 							>{label}</button
 						>
 					{/each}

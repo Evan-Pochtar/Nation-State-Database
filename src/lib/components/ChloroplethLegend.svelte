@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import type { ChloroplethData, DataType } from '$lib/utils/types';
 	import { getDataLabel } from '$lib/utils/chloroplethUtils';
 

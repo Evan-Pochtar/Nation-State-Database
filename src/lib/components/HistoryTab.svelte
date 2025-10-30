@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fetchHistoryDataModule } from '$lib/utils/getInfo';
 	import type { CountryData } from '$lib/utils/types';
 
@@ -26,7 +25,7 @@
 			selectedInfo,
 			getInfoCache: () => infoCache,
 			setInfoCache: (newCache) => (infoCache = newCache),
-			setSelectedInfo: (newSelected) => (selectedInfo = newSelected),
+			setSelectedInfo: (newSelected) => (selectedInfo = newSelected)
 		});
 	}
 
