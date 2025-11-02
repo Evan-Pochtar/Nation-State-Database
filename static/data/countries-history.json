@@ -11360,5 +11360,1229 @@
 				"description": "Te reo Māori becomes official language alongside English"
 			}
 		]
+	},
+	{
+		"name": "Guatemala",
+		"overview": "Guatemala was the core of the ancient Maya world and later a Spanish captaincy. It declared independence in 1821, experienced 19th-century state formation and repeated authoritarian rule in the 20th century, endured a long internal armed conflict (1960-1996), and signed peace accords in 1996. The country today is ethnically and linguistically diverse, with strong indigenous cultural persistence and ongoing challenges in governance, inequality, and security.",
+		"source": {
+			"label": "Wikipedia - History of Guatemala",
+			"url": "https://en.wikipedia.org/wiki/History_of_Guatemala",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Guatemala",
+				"https://www.britannica.com/place/Guatemala",
+				"https://whc.unesco.org/en/statesparties/gt",
+				"https://digitalcollections.rice.edu/Documents/Detail/declaration-of-independence-of-guatemala-translation/362470"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "15 September 1821" },
+			{ "label": "Current Constitution Adopted", "value": "31 May 1985" },
+			{ "label": "Capital", "value": "Guatemala City" },
+			{ "label": "Name Origin", "value": "From Nahuatl Cuauhtēmallān, 'place of many trees'" },
+			{
+				"label": "UNESCO Sites",
+				"value": "Tikal, Antigua Guatemala, Quiriguá, Tak'alik Ab'aj"
+			},
+			{ "label": "National Day", "value": "15 September" }
+		],
+		"ancient": {
+			"period": "c. 2000 BCE - 1697 CE",
+			"description": "Guatemala contains core regions of Maya civilization. Major Classic-era Maya cities in the Petén and highland regions developed monumental architecture, astronomy, writing, and long-distance exchange. Postclassic polities persisted in some areas until Spanish conquest. Maya languages and cultural institutions remain central to Guatemala's social landscape.",
+			"keyEvents": [
+				{
+					"year": "c. 2000 BCE - 250 CE",
+					"title": "Preclassic Developments",
+					"description": "Villages, early agriculture, long-term development of Maya cultural foundations"
+				},
+				{
+					"year": "c. 250 - 900",
+					"title": "Classic Maya Flourishing",
+					"description": "Cities such as Tikal become major ceremonial, political, and economic centers"
+				},
+				{
+					"year": "c. 900 - 1500",
+					"title": "Postclassic Transformations",
+					"description": "Political realignments, shifting trade, and regional cultural change across the highlands and lowlands"
+				},
+				{
+					"year": "1697",
+					"title": "Final Itza Maya defeat",
+					"description": "Spanish conquest of the last independent Maya polities in the Petén (Nojpetén)"
+				}
+			],
+			"notableFigures": ["Rulers of Tikal", "Jasaw Chan K'awiil I", "Mayapan / Itza leaders in the Postclassic period"]
+		},
+		"colonial": {
+			"period": "1524 - 1821",
+			"description": "Spanish conquest (led by Pedro de Alvarado and others) incorporated central Guatemala into the Captaincy General of Guatemala. Colonial society was organized around encomiendas, Church institutions, and extractive agriculture. Antigua (Santiago de los Caballeros) served as the colonial capital until devastating earthquakes led to relocation. Indigenous communities experienced missionization, forced labor, and demographic collapse from disease and conflict.",
+			"keyEvents": [
+				{
+					"year": "1524",
+					"title": "Spanish Conquest Begins",
+					"description": "Pedro de Alvarado campaigns in highlands and coasts, bringing major indigenous polities under Spanish control"
+				},
+				{
+					"year": "1543",
+					"title": "Captaincy General Established",
+					"description": "The Captaincy General of Guatemala organizes Spain's Central American territories administratively"
+				},
+				{
+					"year": "1773-1776",
+					"title": "Antigua Earthquakes and Capital Move",
+					"description": "Series of catastrophic earthquakes lead to founding of a new capital (Guatemala City) in 1776"
+				}
+			],
+			"notableFigures": ["Pedro de Alvarado", "Franciscan and Dominican missionaries"]
+		},
+		"independence": {
+			"period": "1821 - 1847",
+			"description": "Guatemala joined the regional movement that declared independence from Spain on 15 September 1821. The province briefly joined the First Mexican Empire and then the Federal Republic of Central America. Political conflict in the 1820s-1840s produced regional fragmentation and the eventual establishment of an independent republic.",
+			"keyEvents": [
+				{
+					"year": "15 September 1821",
+					"title": "Independence from Spain Declared",
+					"description": "Provincial authorities sign the Act of Independence of Central America"
+				},
+				{
+					"year": "1822-1823",
+					"title": "Annexation and Separation",
+					"description": "Brief annexation to the Mexican Empire then separation and creation of the Federal Republic of Central America"
+				},
+				{
+					"year": "1847",
+					"title": "Republic Declared",
+					"description": "Guatemala declares itself an independent republic as regional federation dissolves"
+				}
+			],
+			"notableFigures": ["Gabino Gaínza"]
+		},
+		"modern": {
+			"period": "1847 - Present",
+			"description": "Guatemala's modern era includes conservative and liberal contests over land and power, U.S.-backed interventions in the 20th century, a revolution in 1944, a 1954 coup that reversed reform, a long internal armed conflict from 1960-1996 marked by widespread human rights abuses, and a signed Peace Accords framework in 1996. The country continues to face governance, social inequality, and security challenges while maintaining political pluralism and active civil society.",
+			"keyEvents": [
+				{
+					"year": "1944",
+					"title": "October Revolution",
+					"description": "Popular uprising ousts dictator Jorge Ubico and opens period of democratic reform"
+				},
+				{
+					"year": "1954",
+					"title": "US-backed Coup",
+					"description": "Military coup overthrows Jacobo Árbenz, reversing agrarian reforms"
+				},
+				{
+					"year": "1960",
+					"title": "Start of Internal Armed Conflict",
+					"description": "Guatemalan conflict begins between leftist insurgents and state forces"
+				},
+				{
+					"year": "1996",
+					"title": "Peace Accords Signed",
+					"description": "Government and insurgent groups sign accords ending the 36-year internal conflict"
+				},
+				{
+					"year": "2013",
+					"title": "Ríos Montt Genocide Trial",
+					"description": "A national court convicts former de facto leader Efraín Ríos Montt of genocide; conviction later overturned on procedural grounds"
+				}
+			],
+			"notableFigures": ["Jacobo Árbenz", "Efraín Ríos Montt", "Rigoberta Menchú"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE",
+				"era": "Ancient",
+				"title": "Early agricultural communities",
+				"description": "Foundations of Maya culture develop"
+			},
+			{
+				"year": "c. 250-900",
+				"era": "Ancient",
+				"title": "Classic Maya peak",
+				"description": "Tikal and other city-states flourish"
+			},
+			{
+				"year": "1524",
+				"era": "Colonial",
+				"title": "Spanish conquest",
+				"description": "Conquest campaigns bring highlands under Spanish rule"
+			},
+			{
+				"year": "1776",
+				"era": "Colonial",
+				"title": "Guatemala City becomes capital",
+				"description": "Capital moved after Antigua's destruction"
+			},
+			{
+				"year": "1821",
+				"era": "Independence",
+				"title": "Independence declared",
+				"description": "Act of Independence of Central America signed, 15 Sep 1821"
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Popular Revolution",
+				"description": "Democratic experiment begins after dictator Ubico's fall"
+			},
+			{
+				"year": "1960",
+				"era": "Modern",
+				"title": "Civil war begins",
+				"description": "Insurgency and counterinsurgency mark next decades"
+			},
+			{
+				"year": "1996",
+				"era": "Modern",
+				"title": "Peace Accords",
+				"description": "Formal end to internal armed conflict"
+			}
+		]
+	},
+	{
+		"name": "Belize",
+		"overview": "Belize holds Maya archaeological heritage and a colonial history distinct from its Spanish-speaking neighbors. Known as British Honduras until the 20th century, Belize developed a Creole and multiethnic society under British influence and achieved full independence in 1981. It preserves extensive Caribbean coastline and the Belize Barrier Reef, a major natural heritage site. Belize continues to manage post-colonial state-building, a long-standing territorial dispute with Guatemala, and environmental stewardship of its reef.",
+		"source": {
+			"label": "Wikipedia - Belize",
+			"url": "https://en.wikipedia.org/wiki/Belize",
+			"urls": [
+				"https://en.wikipedia.org/wiki/Belize",
+				"https://www.britannica.com/place/Belize",
+				"https://whc.unesco.org/en/list/764",
+				"https://en.wikipedia.org/wiki/Belize_Barrier_Reef"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "21 September 1981 (from the United Kingdom)" },
+			{ "label": "Capital", "value": "Belmopan (founded 1970; moved after Hurricane Hattie damaged Belize City)" },
+			{
+				"label": "Former Name",
+				"value": "British Honduras (until 1973/1981; name officially changed to Belize in 1973)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Uncertain — theories include a Mayan word (belix, 'muddy water') or a buccaneer Peter Wallace"
+			},
+			{ "label": "UNESCO Sites", "value": "Belize Barrier Reef Reserve System (inscribed 1996)" },
+			{ "label": "National Day", "value": "21 September (Independence Day)" }
+		],
+		"ancient": {
+			"period": "c. 2000 BCE - 900 CE",
+			"description": "The territory of Belize was part of the Maya cultural area. Classic-era Maya cities, plazas, and trade routes existed across Belizean lowlands. Archaeological sites record sophisticated urbanism, ceramics, and trade in jade and cacao. Maya cultural continuity persists among indigenous communities.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 BCE - 250 CE",
+					"title": "Preclassic developments",
+					"description": "Early village farming and ritual centers emerge"
+				},
+				{
+					"year": "c. 250 - 900",
+					"title": "Classic Maya peak in Belize",
+					"description": "Urban centers such as Caracol and Lamanai attain regional importance"
+				},
+				{
+					"year": "c. 900 - 1500",
+					"title": "Postclassic changes",
+					"description": "Shifts in settlement patterns and political organization across the lowlands"
+				}
+			],
+			"notableFigures": ["Rulers and elites of Classic Maya centers such as Caracol and Lamanai"]
+		},
+		"colonial": {
+			"period": "c. 16th century - 1981 (gradual British control formalized 1862)",
+			"description": "Belizean territory saw limited Spanish colonization but became a center for logwood and later mahogany cutters. British settlers and settlers of mixed African and indigenous descent established de facto control. The colony was formalized as British Honduras in the 19th century and remained a British possession through the 20th century, while distinct Creole, Garifuna, Mestizo, and Maya communities shaped its social fabric.",
+			"keyEvents": [
+				{
+					"year": "17th century",
+					"title": "English/British settlement and logwood trade",
+					"description": "British logwood cutters and settlers operate along the coast and rivers"
+				},
+				{ "year": "1862", "title": "Colony of British Honduras", "description": "British Crown formalizes the colony" },
+				{
+					"year": "1961",
+					"title": "Hurricane Hattie",
+					"description": "Devastating hurricane damages Belize City and triggers decision to build a new inland capital"
+				},
+				{
+					"year": "1970",
+					"title": "Belmopan founded as new capital",
+					"description": "Planned capital established inland; seat of government moved in subsequent years"
+				}
+			],
+			"notableFigures": ["George Cadle Price", "Early Creole community leaders and British colonial governors"]
+		},
+		"independence": {
+			"period": "1973 - 1981",
+			"description": "Belize adopted its modern name in 1973 and progressed to full sovereignty in 1981. Independence was achieved peacefully under local political leadership, though Guatemala maintained a historical territorial claim that complicated diplomatic recognition for years. Guatemala formally recognized Belize's independence in the 1990s after negotiations and confidence-building measures.",
+			"keyEvents": [
+				{
+					"year": "1973",
+					"title": "Name changed to Belize",
+					"description": "Colony adopts the name 'Belize' (used officially prior to full independence)"
+				},
+				{
+					"year": "21 September 1981",
+					"title": "Independence from the United Kingdom",
+					"description": "Belize gains full sovereign status"
+				},
+				{
+					"year": "1992",
+					"title": "Guatemala recognizes Belize",
+					"description": "Guatemala formally recognizes Belize's independence, easing regional tensions"
+				}
+			],
+			"notableFigures": ["George Cadle Price", "Manuel Esquivel"]
+		},
+		"modern": {
+			"period": "1981 - Present",
+			"description": "Post-independence Belize has developed democratic institutions and a mixed economy reliant on tourism, agriculture, and services. The country manages environmental policy around the Belize Barrier Reef and navigates periodic domestic political shifts and the long-standing maritime and territorial dispute with Guatemala. Belize participates in regional diplomacy while building capacity for conservation and sustainable tourism.",
+			"keyEvents": [
+				{
+					"year": "1996",
+					"title": "Belize Barrier Reef inscribed as UNESCO site",
+					"description": "Recognition of the reef's global ecological importance"
+				},
+				{
+					"year": "1993-1994",
+					"title": "Withdrawal of British military",
+					"description": "UK ends major military presence; Belize continues building national defense and diplomacy"
+				},
+				{
+					"year": "2000s-present",
+					"title": "Environmental management and tourism growth",
+					"description": "Conservation and reef management become central policy issues"
+				}
+			],
+			"notableFigures": ["George Cadle Price", "Dean Barrow", "Irene G. Panton"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500 BCE",
+				"era": "Ancient",
+				"title": "Early Maya communities",
+				"description": "Agriculture and village life establish long-term cultural roots"
+			},
+			{
+				"year": "c. 250-900",
+				"era": "Ancient",
+				"title": "Classic Maya urbanism",
+				"description": "Regional centers such as Caracol grow in power and scale"
+			},
+			{
+				"year": "1862",
+				"era": "Colonial",
+				"title": "British Honduras formalized",
+				"description": "Colony status recognized by Britain"
+			},
+			{
+				"year": "1961",
+				"era": "Colonial",
+				"title": "Hurricane Hattie",
+				"description": "Destruction in Belize City prompts decision to create Belmopan"
+			},
+			{
+				"year": "1970",
+				"era": "Colonial",
+				"title": "Belmopan founded",
+				"description": "Planned inland capital established"
+			},
+			{
+				"year": "1973",
+				"era": "Independence",
+				"title": "Name becomes Belize",
+				"description": "Colony officially adopts name 'Belize'"
+			},
+			{
+				"year": "1981",
+				"era": "Independence",
+				"title": "Independence day",
+				"description": "Full independence granted on 21 Sep 1981"
+			},
+			{
+				"year": "1996",
+				"era": "Modern",
+				"title": "UNESCO reef inscription",
+				"description": "Belize Barrier Reef Reserve System listed as World Heritage site"
+			}
+		]
+	},
+	{
+		"name": "Panama",
+		"overview": "Panama is the narrow isthmus linking North and South America. It was a pre-Columbian crossroads of indigenous cultures, became a strategic Spanish transit and port zone from the 16th century, and later the focal point of global geopolitics because of the Panama Canal. Panama declared independence from Spain in 1821, separated from Colombia in 1903 with U.S. support, saw the Panama Canal built and operated by the United States (1904-1999), negotiated sovereignty treaties in 1977, and assumed full control of the canal on 31 December 1999. Its modern history includes authoritarian rule, U.S. intervention, democratic transitions, and ongoing economic and environmental challenges tied to canal management and coastal ecosystems.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Panama",
+			"urls": [
+				"https://www.britannica.com/place/Panama",
+				"https://en.wikipedia.org/wiki/History_of_Panama",
+				"https://history.state.gov/milestones/1899-1913/panama-canal",
+				"https://en.wikipedia.org/wiki/Hay%E2%80%93Bunau-Varilla_Treaty",
+				"https://en.wikipedia.org/wiki/Torrijos%E2%80%93Carter_Treaties"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence from Spain", "value": "28 November 1821 (Act of Independence of Panama)" },
+			{
+				"label": "Separation from Colombia",
+				"value": "3 November 1903"
+			},
+			{ "label": "Hay-Bunau-Varilla Treaty (Canal zone agreement)", "value": "Signed 18 November 1903" },
+			{ "label": "Panama Canal opened", "value": "15 August 1914" },
+			{
+				"label": "Torrijos-Carter Treaties (canal sovereignty)",
+				"value": "Signed 7 September 1977"
+			},
+			{
+				"label": "Capital",
+				"value": "Panama City"
+			},
+			{
+				"label": "Name origin",
+				"value": "Likely from indigenous word(s) meaning 'abundance of fish'"
+			}
+		],
+		"ancient": {
+			"period": "c. 3000 BCE - 1500 CE",
+			"description": "Panama's pre-Columbian record shows early coastal and agricultural communities, distinct ceramic traditions, and regional interaction networks that linked the isthmus to Mesoamerica and South America. Archaeological cultures such as Monagrillo (early pottery), Gran Coclé polychrome traditions, and highland complex societies left ceremonial centers, metallurgy traces, and long-distance trade. Indigenous language families (Chibchan, Chocoan and others) and societies persisted into the colonial era. The isthmus functioned as a demographic and trade corridor rather than a single homogenized polity.",
+			"keyEvents": [
+				{
+					"year": "c. 2500-1200 BCE",
+					"title": "Monagrillo pottery and early coastal villages",
+					"description": "Earliest securely dated pottery and settled fishing/agricultural communities along the Gulf of Panama (Monagrillo phase)."
+				},
+				{
+					"year": "c. 500 BCE - 900 CE",
+					"title": "Regional ceramic florescence and chiefdoms",
+					"description": "Development of Gran Coclé polychrome ceramics, monumental stone sculpture at sites such as Barriles, and more complex social hierarchies."
+				},
+				{
+					"year": "c. 900-1500 CE",
+					"title": "Late pre-Columbian transformations",
+					"description": "Shifts in settlement patterns, intensified coastal trade, and continued cultural diversity across lowland and highland zones."
+				}
+			],
+			"notableFigures": ["Local polities and ritual elites of Gran Coclé and other regional centers"]
+		},
+		"colonial": {
+			"period": "1501 - 1821",
+			"description": "Spanish conquest and colonial rule transformed Panama into a key transit and logistics zone for trans-Atlantic and trans-Pacific flows of people, silver and goods. Spaniards established settlements such as Panamá Viejo (1519) and used overland routes and port facilities to move treasure from the Pacific to Atlantic shipping lanes. The Real Audiencia and later administrative units governed the isthmus. Disease, forced labor systems (encomienda), and mission activity reshaped indigenous societies. Panama's geography made it strategically valuable and repeatedly exposed it to piracy and foreign intrusion.",
+			"keyEvents": [
+				{
+					"year": "1513",
+					"title": "Balboa sights the Pacific Ocean",
+					"description": "Vasco Núñez de Balboa crosses the isthmus and becomes first European to see and claim the South Sea (Pacific) for Spain."
+				},
+				{
+					"year": "1519",
+					"title": "Founding of Panamá Viejo",
+					"description": "Pedro Arias Dávila (Pedrarias Dávila) founds the first European city on the Pacific side, which becomes a key transit port."
+				},
+				{
+					"year": "1671-1673",
+					"title": "Sack of Panama and relocation",
+					"description": "Privateer Henry Morgan sacks and burns Panamá Viejo (1671). Survivors relocate and rebuild the city as Casco Antiguo (1673) on a nearby peninsula."
+				},
+				{
+					"year": "18th century",
+					"title": "Audiencia and colonial administration",
+					"description": "Panama remains a Spanish logistical hub governed through regional institutions such as the Real Audiencia."
+				}
+			],
+			"notableFigures": [
+				"Vasco Núñez de Balboa",
+				"Pedro Arias Dávila (Pedrarias Dávila)",
+				"Local caciques and mission leaders"
+			]
+		},
+		"independence": {
+			"period": "1821 - 1903",
+			"description": "Panama declared independence from Spain on 28 November 1821 and joined the Republic of Gran Colombia. Throughout the 19th century Panama's connection to governments in Bogotá was uneven. The isthmus experimented with short-lived autonomous regimes (notably the Free State of the Isthmus in 1840-1841) and was repeatedly shaped by international transit politics, the California gold rush (which raised the isthmus's economic profile), and competing canal schemes. Tensions with the central government in Bogotá, foreign pressure, and strategic interest in an inter-oceanic canal set the stage for separation in 1903.",
+			"keyEvents": [
+				{
+					"year": "28 November 1821",
+					"title": "Act of Independence from Spain",
+					"description": "Local elites and municipal authorities proclaim separation from Spain and opt to join the Republic of Gran Colombia."
+				},
+				{
+					"year": "1840-1841",
+					"title": "State of the Isthmus (Free State)",
+					"description": "Short-lived independent republic under Tomás de Herrera, which later rejoined New Granada (Colombia)."
+				},
+				{
+					"year": "Late 19th century",
+					"title": "Canal interest and commercial pressure",
+					"description": "International canal projects and transit routes (including French attempts) raise the isthmus's strategic profile and intensify local grievances against Bogotá."
+				},
+				{
+					"year": "3 November 1903",
+					"title": "Separation from Colombia",
+					"description": "Panama proclaims independence from Colombia. U.S. warships prevent Colombian troops from intervening. A provisional government is established."
+				},
+				{
+					"year": "18 November 1903",
+					"title": "Hay-Bunau-Varilla Treaty",
+					"description": "Treaty signed granting the United States rights to build and administer a canal zone."
+				}
+			],
+			"notableFigures": ["Tomás de Herrera", "Manuel Amador Guerrero", "Philippe-Jean Bunau-Varilla"]
+		},
+		"modern": {
+			"period": "1903 - Present",
+			"description": "The 20th century was dominated by Panama Canal politics, U.S. control of the Canal Zone, and the interaction of military, civilian and foreign interests. U.S. construction (1904-1914) turned the isthmus into a global maritime artery but also institutionalized foreign privileges through the Canal Zone. Mid-century nationalist movements and friction culminated in the 1964 Martyrs' Day clashes over sovereignty. Military rule and populist authoritarianism rose in the 1960s-1980s under leaders such as Omar Torrijos and later Manuel Noriega. Torrijos negotiated the Torrijos-Carter Treaties in 1977 that set a timetable for Panama to assume canal control. In December 1989 the U.S. invaded to remove Noriega (Operation Just Cause). Panama assumed full canal authority on 31 December 1999 and has since focused on democratic governance, canal expansion (2016 lock expansion), economic diversification, and environmental management while navigating regional geopolitics.",
+			"keyEvents": [
+				{
+					"year": "1904-1914",
+					"title": "U.S. construction of the Panama Canal",
+					"description": "After the 1903 treaty the U.S. builds the canal; it opens to traffic on 15 August 1914."
+				},
+				{
+					"year": "9 January 1964",
+					"title": "Martyrs' Day clashes",
+					"description": "Violent confrontations in the Canal Zone over flag-raising and sovereignty escalate tensions with the U.S."
+				},
+				{
+					"year": "7 September 1977",
+					"title": "Torrijos-Carter Treaties signed",
+					"description": "Treaties establish a timetable for phased transfer of the Canal Zone and canal administration to Panama; enter into force 1 October 1979."
+				},
+				{
+					"year": "20 December 1989 - January 1990",
+					"title": "U.S. invasion (Operation Just Cause)",
+					"description": "U.S. forces remove General Manuel Noriega; democratic civilian government restored and transition processes begin."
+				},
+				{
+					"year": "31 December 1999",
+					"title": "Panama assumes full control of the Panama Canal",
+					"description": "Formal handover of the canal and former Canal Zone from the United States to Panama."
+				},
+				{
+					"year": "26 June 2016",
+					"title": "Panama Canal expansion opens",
+					"description": "New set of locks increases capacity for larger modern vessels, reshaping global shipping routes."
+				}
+			],
+			"notableFigures": ["Omar Torrijos", "Manuel Noriega", "Manuel Amador Guerrero"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2500-1200 BCE",
+				"era": "Ancient",
+				"title": "Monagrillo pottery and early coastal villages",
+				"description": "Earliest settled coastal communities with pottery on the Gulf of Panama."
+			},
+			{
+				"year": "1513",
+				"era": "Colonial",
+				"title": "Balboa sights the Pacific",
+				"description": "Vasco Núñez de Balboa crosses the isthmus and becomes first European to see the Pacific Ocean."
+			},
+			{
+				"year": "1519",
+				"era": "Colonial",
+				"title": "Founding of Panamá Viejo",
+				"description": "Spanish establishment of the first European city on the Pacific side."
+			},
+			{
+				"year": "1671",
+				"era": "Colonial",
+				"title": "Sack of Panamá Viejo",
+				"description": "Henry Morgan sacks and burns the city leading to relocation and the founding of Casco Antiguo."
+			},
+			{
+				"year": "28 November 1821",
+				"era": "Independence",
+				"title": "Independence from Spain",
+				"description": "Act of Independence; Panama joins Gran Colombia."
+			},
+			{
+				"year": "3 November 1903",
+				"era": "Independence",
+				"title": "Separation from Colombia",
+				"description": "Republic of Panama proclaimed; U.S. recognition follows."
+			},
+			{
+				"year": "18 November 1903",
+				"era": "Independence",
+				"title": "Hay-Bunau-Varilla Treaty signed",
+				"description": "Treaty grants U.S. rights over the Canal Zone and land for construction."
+			},
+			{
+				"year": "15 August 1914",
+				"era": "Modern",
+				"title": "Panama Canal opens",
+				"description": "First official transit through the newly completed canal."
+			},
+			{
+				"year": "7 September 1977",
+				"era": "Modern",
+				"title": "Torrijos-Carter Treaties signed",
+				"description": "Agreements set timetable to transfer canal control to Panama."
+			},
+			{
+				"year": "31 December 1999",
+				"era": "Modern",
+				"title": "Full transfer of canal to Panama",
+				"description": "Panama assumes sovereignty and administration of the canal."
+			}
+		]
+	},
+	{
+		"name": "El Salvador",
+		"overview": "El Salvador is the smallest and most densely populated Central American republic. Its territory was home to Pipil and other indigenous peoples before Spanish conquest. After independence from Spain in 1821 it passed through republican instability, oligarchic 'coffee republic' rule, long military dominance in the 20th century, a brutal civil war (1980-1992) that ended with the Chapultepec Peace Accords, and a contested postwar transition. Contemporary El Salvador combines democratic institutions with persistent inequality, episodes of authoritarian drift, high levels of violence in the late 20th and early 21st centuries, and extensive migration.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/El-Salvador",
+			"urls": [
+				"https://www.britannica.com/place/El-Salvador",
+				"https://en.wikipedia.org/wiki/Salvadoran_Civil_War",
+				"https://en.wikipedia.org/wiki/La_Matanza_%28El_Salvador%29",
+				"https://www.britannica.com/biography/%C3%93scar-Arnulfo-Romero"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "15 September 1821" },
+			{ "label": "Current Constitution Adopted", "value": "20 December 1983" },
+			{
+				"label": "Capital",
+				"value": "San Salvador"
+			},
+			{ "label": "Name Origin", "value": "From Spanish 'El Salvador' meaning 'The Savior'" },
+			{ "label": "National Day", "value": "15 September" }
+		],
+		"ancient": {
+			"period": "c. 1500 BCE - 1500 CE",
+			"description": "Pre-Columbian El Salvador formed part of the Mesoamerican cultural world. The Pipil (a Nahua-speaking group) and other indigenous communities established agricultural systems, small polities, and regional trade ties. Archaeological remains include public plazas, pyramids, and pottery that attest to regional integration with the highlands and the Pacific coast.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 BCE - 250 CE",
+					"title": "Early formative communities",
+					"description": "Initial agricultural villages and ceremonial centers develop in the Pacific lowlands."
+				},
+				{
+					"year": "c. 250 - 900 CE",
+					"title": "Classic-period influences",
+					"description": "Cultural and trade links with broader Mesoamerica intensify; local chiefdoms grow in complexity."
+				},
+				{
+					"year": "c. 1000 - 1500 CE",
+					"title": "Pipil migrations and settlement",
+					"description": "Nahuatl-speaking Pipil arrive or increase presence in central and western El Salvador, establishing urban centers and intensive agriculture."
+				}
+			],
+			"notableFigures": ["Local caciques and ritual elites of Pipil and other indigenous polities"]
+		},
+		"colonial": {
+			"period": "1524 - 1821",
+			"description": "Spanish forces led by Pedro de Alvarado conquered large parts of the territory in 1524. Colonial rule organized local economies around encomiendas, tribute, evangelization by religious orders, and integration into Guatemala's administrative structures. Indigenous populations suffered demographic collapse from disease and coercive labor systems. Colonial-era towns and agricultural estates shaped landholding patterns that influenced later social inequality.",
+			"keyEvents": [
+				{
+					"year": "1524",
+					"title": "Spanish conquest expeditions",
+					"description": "Pedro de Alvarado's campaign brings most of present-day El Salvador under Spanish control."
+				},
+				{
+					"year": "16th-18th c.",
+					"title": "Colonial agrarian economy",
+					"description": "Encomienda and estate systems expand; Church and Spanish officials consolidate land and labor control."
+				}
+			],
+			"notableFigures": ["Pedro de Alvarado", "Franciscan and Dominican missionaries"]
+		},
+		"independence": {
+			"period": "1811 - 1841",
+			"description": "El Salvador participated in early independence uprisings beginning 1811 led by local creole leaders such as José Matías Delgado. On 15 September 1821 the Captaincy General of Guatemala declared independence from Spain and El Salvador initially joined Mexico briefly and then the Federal Republic of Central America. The federation dissolved during the 1830s and El Salvador moved toward an independent republican trajectory by mid-century.",
+			"keyEvents": [
+				{
+					"year": "5 November 1811",
+					"title": "First independence movement (1811)",
+					"description": "Uprising in San Salvador led by José Matías Delgado and Manuel José Arce; initially suppressed."
+				},
+				{
+					"year": "15 September 1821",
+					"title": "Act of Independence of Central America",
+					"description": "Local authorities sign the regional declaration; provinces initially join together in postcolonial arrangements."
+				},
+				{
+					"year": "1830s-1841",
+					"title": "Dissolution of the Central American Federation",
+					"description": "Regional conflicts and separations lead to consolidated national republics across Central America."
+				}
+			],
+			"notableFigures": ["José Matías Delgado", "Manuel José Arce"]
+		},
+		"modern": {
+			"period": "1841 - Present",
+			"description": "Modern El Salvador was shaped by a coffee-export oligarchy that concentrated land and wealth, cycles of military rule, urbanization, and Cold-War-era political polarization. The 20th century included the 1932 peasant uprising (La Matanza) violently suppressed under General Maximiliano Hernández Martínez, decades of military-influenced governments, a revolutionary insurgency and counterinsurgency culminating in the 1980-1992 civil war, and a negotiated peace that incorporated the FMLN into politics. Postwar politics have alternated among traditional parties and new movements. The late 20th and early 21st centuries saw chronically high homicide rates, mass migration, and recent debates over democratic norms and constitutional changes.",
+			"keyEvents": [
+				{
+					"year": "1932",
+					"title": "La Matanza (The Massacre)",
+					"description": "Peasant revolt led in part by communist organizers and indigenous leaders is crushed by the military; estimated 10,000-40,000 killed, effecting profound social trauma and repression."
+				},
+				{
+					"year": "1931-1979",
+					"title": "Military-led rule and oligarchic dominance",
+					"description": "Military influence and elite control of land and politics shape the republic; intermittent mass repression."
+				},
+				{
+					"year": "24 March 1980",
+					"title": "Assassination of Archbishop Óscar Romero",
+					"description": "Óscar Romero is assassinated while saying mass after publicly denouncing human-rights abuses; his death galvanized domestic and international attention."
+				},
+				{
+					"year": "1980-1992",
+					"title": "Salvadoran Civil War",
+					"description": "Leftist guerrilla coalition FMLN fights successive governments and military forces. Massive human-rights violations occur on all sides."
+				},
+				{
+					"year": "16 January 1992",
+					"title": "Chapultepec Peace Accords",
+					"description": "Government and FMLN sign accords that end the civil war, restructure the military, and integrate guerrillas into political life."
+				},
+				{
+					"year": "Post-1992",
+					"title": "Democratic transition and security crises",
+					"description": "Electoral politics, economic reforms, and waves of criminal violence and migration shape contemporary policy debates."
+				}
+			],
+			"notableFigures": ["Maximiliano Hernández Martínez", "Farabundo Martí", "Óscar Arnulfo Romero"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1000-1500",
+				"era": "Ancient",
+				"title": "Pipil and pre-Columbian polities",
+				"description": "Pipil and other indigenous groups form settlements and agricultural systems."
+			},
+			{
+				"year": "1524",
+				"era": "Colonial",
+				"title": "Spanish conquest",
+				"description": "Conquest led by Pedro de Alvarado establishes Spanish rule."
+			},
+			{
+				"year": "5 November 1811",
+				"era": "Independence",
+				"title": "First independence uprising",
+				"description": "San Salvador insurgents declare against Spanish rule."
+			},
+			{
+				"year": "15 September 1821",
+				"era": "Independence",
+				"title": "Regional independence declared",
+				"description": "Act of Independence of Central America signed."
+			},
+			{
+				"year": "1932",
+				"era": "Modern",
+				"title": "La Matanza",
+				"description": "Large-scale massacre of peasants and indigenous people."
+			},
+			{
+				"year": "24 March 1980",
+				"era": "Modern",
+				"title": "Assassination of Óscar Romero",
+				"description": "Catholic archbishop slain while denouncing violence."
+			},
+			{
+				"year": "1980-1992",
+				"era": "Modern",
+				"title": "Civil War",
+				"description": "Guerrilla war with major human-rights abuses and international involvement."
+			},
+			{
+				"year": "16 January 1992",
+				"era": "Modern",
+				"title": "Chapultepec Peace Accords",
+				"description": "Formal end to the civil war and political reintegration of the FMLN."
+			}
+		]
+	},
+	{
+		"name": "Nicaragua",
+		"overview": "Nicaragua occupies the largest territory in Central America. Its pre-Columbian societies included diverse indigenous groups such as the Nahua, Chorotega, and Miskito. Spanish colonization in the 16th century created rival regional centers on the Pacific and Atlantic coasts. Nicaragua experienced unstable republican politics through the 19th century, was dominated in the 20th century by the Somoza family dictatorship, saw the Sandinista revolution overthrow Somoza in 1979, endured a U.S.-backed Contra insurgency in the 1980s, and moved through electoral alternation in the 1990s before Daniel Ortega's return to power in the 21st century. Recent years have featured concerns about democratic backsliding and human-rights abuses.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Nicaragua",
+			"urls": [
+				"https://www.britannica.com/place/Nicaragua",
+				"https://en.wikipedia.org/wiki/Sandinista_National_Liberation_Front",
+				"https://www.britannica.com/biography/Anastasio-Somoza-Debayle",
+				"https://www.reuters.com/world/americas/nicaraguan-officials-committed-systematic-repression-un-says-2025-04-03/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "15 September 1821 (Act of Independence of Central America)" },
+			{
+				"label": "Sandinista Revolution (overthrow of Somoza)",
+				"value": "1979 (Somozas fall; Sandinista junta assumes power)"
+			},
+			{
+				"label": "Notable democratic transition",
+				"value": "1990 election of Violeta Barrios de Chamorro ends Sandinista rule in government"
+			},
+			{ "label": "Capital", "value": "Managua" },
+			{ "label": "Name Origin", "value": "From Nicarao, an indigenous leader on Lake Nicaragua" }
+		],
+		"ancient": {
+			"period": "c. 2000 BCE - 1500 CE",
+			"description": "Pre-Columbian Nicaragua hosted multiple cultural zones. Pacific lowland societies such as the Chorotega and Nicarao engaged in agriculture and trade. On the Caribbean (Mosquito) Coast, different linguistic groups and later British influence preserved distinct cultural patterns. Archaeological evidence shows complex ceramic traditions and regional connections across Mesoamerica and northern South America.",
+			"keyEvents": [
+				{
+					"year": "c. 2000 BCE - 250 CE",
+					"title": "Formative communities",
+					"description": "Early agricultural settlements and pottery traditions arise along lakes and coasts."
+				},
+				{
+					"year": "c. 250 - 900 CE",
+					"title": "Regional chiefdoms",
+					"description": "Development of hierarchical polities and intensified trade networks."
+				}
+			],
+			"notableFigures": ["Regional caciques and ritual leaders of Chorotega, Nicarao, and other local groups"]
+		},
+		"colonial": {
+			"period": "16th century - 1821",
+			"description": "Spanish conquest established settlements on the Pacific lowlands and around Lake Nicaragua. The Atlantic coast was less tightly controlled and saw British intrusion and fostering of autonomous indigenous polities. Colonial rule created extractive economies, missions, and urban centers. Nineteenth-century struggles for independence and regional rivalry produced a fragmented postcolonial landscape.",
+			"keyEvents": [
+				{
+					"year": "1520s-1530s",
+					"title": "Spanish conquest and settlement",
+					"description": "Spanish expeditions secure Pacific lowlands and found colonial towns."
+				},
+				{
+					"year": "17th-18th c.",
+					"title": "Atlantic Coast pluralism",
+					"description": "British influence and coastal autonomy create distinct legal and social arrangements on the Caribbean side."
+				}
+			],
+			"notableFigures": [
+				"Early Spanish governors and colonial administrators; Atlantic coast leaders with British connections"
+			]
+		},
+		"independence": {
+			"period": "1811 - 1850s",
+			"description": "Nicaragua participated in the wider Central American independence movement. After 1821 the province joined regional republican experiments. The 19th century featured caudillo politics, foreign interventions (including filibuster William Walker in the 1850s), and repeated constitutional restructurings that shaped state formation.",
+			"keyEvents": [
+				{
+					"year": "15 September 1821",
+					"title": "Independence from Spain",
+					"description": "Joined the broader Act of Independence of Central America."
+				},
+				{
+					"year": "1855-1857",
+					"title": "William Walker filibuster",
+					"description": "American adventurer Walker briefly takes control, declaring himself president before Central American coalitions expel him."
+				},
+				{
+					"year": "Late 19th century",
+					"title": "Liberal-conservative struggles",
+					"description": "Internal conflicts and foreign economic penetration affect political consolidation."
+				}
+			],
+			"notableFigures": ["Francisco Castellón", "José Santos Zelaya"]
+		},
+		"modern": {
+			"period": "20th century - Present",
+			"description": "The 20th century was dominated by the Somoza family dictatorship (1936-1979) which concentrated wealth and power. The Sandinista National Liberation Front (FSLN) overthrew Somoza in 1979 and introduced sweeping social reforms while confronting a U.S.-backed Contra insurgency during the 1980s. Democratic elections in 1990 brought Violeta Chamorro to the presidency and began a period of relative stabilization. Daniel Ortega and the FSLN returned to power via elections in 2006 and consolidated authority in subsequent years. International organizations and media have repeatedly documented political repression, curbs on civil society, and human-rights abuses, especially after 2018. Nicaragua's political economy has been shaped by revolution, counterinsurgency, international sanctions, and debates over sovereignty and governance.",
+			"keyEvents": [
+				{
+					"year": "1936-1979",
+					"title": "Somoza family rule",
+					"description": "Anastasio Somoza García and his sons dominate Nicaraguan politics through clientelism and repression."
+				},
+				{
+					"year": "1979",
+					"title": "Sandinista Revolution",
+					"description": "FSLN forces overthrow Anastasio Somoza Debayle; revolutionary junta begins reform programs."
+				},
+				{
+					"year": "1980s",
+					"title": "Contra war and international controversy",
+					"description": "U.S.-backed Contra insurgency and the Iran-Contra scandal mark the decade; war devastates the economy and produced major casualties and displacement."
+				},
+				{
+					"year": "25 February 1990",
+					"title": "Election of Violeta Chamorro",
+					"description": "Chamorro defeats Daniel Ortega in a free election, beginning a negotiated transition and demobilization process."
+				},
+				{
+					"year": "2006-present",
+					"title": "Ortega's return and consolidation",
+					"description": "Daniel Ortega reelected and centralizes power; observers note erosion of democratic checks and human-rights concerns, with international reporting and UN scrutiny."
+				}
+			],
+			"notableFigures": [
+				"Anastasio Somoza García; Anastasio Somoza Debayle",
+				"Carlos Fonseca",
+				"Daniel Ortega",
+				"Violeta Barrios de Chamorro"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE",
+				"era": "Ancient",
+				"title": "Formative settlements",
+				"description": "Early agricultural communities by lakes and coasts."
+			},
+			{
+				"year": "1520s",
+				"era": "Colonial",
+				"title": "Spanish conquest and towns founded",
+				"description": "Spanish establish Pacific settlements and missions."
+			},
+			{
+				"year": "1855-1857",
+				"era": "Independence",
+				"title": "William Walker episode",
+				"description": "Filibuster briefly seizes power before regional coalition removes him."
+			},
+			{
+				"year": "1936-1979",
+				"era": "Modern",
+				"title": "Somoza dynasty",
+				"description": "Family controls state through patronage and repression."
+			},
+			{
+				"year": "1979",
+				"era": "Modern",
+				"title": "Sandinista revolution",
+				"description": "FSLN topples Somoza regime."
+			},
+			{
+				"year": "1980s",
+				"era": "Modern",
+				"title": "Contra insurgency and Iran-Contra",
+				"description": "U.S. covert involvement and regional conflict destabilize Nicaragua."
+			},
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Chamorro elected",
+				"description": "Opposition victory ends Sandinista government in the executive branch and begins demobilization."
+			},
+			{
+				"year": "2006-present",
+				"era": "Modern",
+				"title": "Ortega returns to power and consolidation",
+				"description": "Electoral victories and subsequent measures raise international concerns over repression and rule of law."
+			}
+		]
+	},
+	{
+		"name": "Honduras",
+		"overview": "Honduras occupies mountainous interior and a Caribbean coastal plain. It was home to Maya lowland cities and Lenca and other indigenous groups before Spanish colonization. After independence in 1821 Honduras joined and left the Federal Republic of Central America and then built a fragile republican order. The late 19th and early 20th centuries saw massive foreign investment in bananas and infrastructure that concentrated land and power and produced the 'banana republic' pattern. The 20th century included authoritarian rule, U.S. interventions, chronic instability, the brief 1969 war with El Salvador, and democratic openings interrupted by coups and political crises (including the 2009 removal of President Manuel Zelaya). Honduras continues to face governance, security, and economic-development challenges while maintaining electoral politics and active civil society.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Honduras",
+			"urls": [
+				"https://www.britannica.com/place/Honduras",
+				"https://en.wikipedia.org/wiki/History_of_Honduras",
+				"https://www.britannica.com/topic/United-Fruit-Company",
+				"https://www.britannica.com/topic/Soccer-War",
+				"https://www.britannica.com/biography/Tiburcio-Carias-Andino",
+				"https://www.britannica.com/biography/Manuel-Zelaya"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "15 September 1821" },
+			{ "label": "Capital", "value": "Tegucigalpa" },
+			{
+				"label": "Name Origin",
+				"value": "From Spanish 'Honduras' meaning 'depths'"
+			},
+			{
+				"label": "Major Export",
+				"value": "Bananas and other tropical products"
+			},
+			{ "label": "National Day", "value": "15 September" }
+		],
+		"ancient": {
+			"period": "c. 1000 BCE - 1500 CE",
+			"description": "Northern Honduras contains Classic Maya lowland sites such as Copán with elite political hierarchies, hieroglyphic inscriptions, and monumental architecture. Highland regions and the southern interior were inhabited by Lenca and other non-Maya indigenous groups. Archaeological evidence shows regional interaction, specialized craft production, and political complexity before European contact.",
+			"keyEvents": [
+				{
+					"year": "c. 5th-9th centuries CE",
+					"title": "Classic Copán flowering",
+					"description": "Copán becomes a major Maya political, artistic, and epigraphic center with dynastic monuments and astronomy."
+				},
+				{
+					"year": "Post-9th century",
+					"title": "Regional reorganization",
+					"description": "Political fragmentation and shifting population centers in the Postclassic period across Honduran territories"
+				}
+			],
+			"notableFigures": ["Copán dynastic rulers,", "K'inich Yax K'uk' Mo'"]
+		},
+		"colonial": {
+			"period": "1524 - 1821",
+			"description": "Spanish expeditions conquered and reorganized the territory. Colonial rule established mining, cattle ranching, and encomienda labor arrangements. Tegucigalpa and Comayagua emerged as administrative and ecclesiastical centers in the highlands. Geographic barriers and dispersed indigenous populations produced uneven colonization and peripheral development compared with larger colonial centers.",
+			"keyEvents": [
+				{
+					"year": "1524-1537",
+					"title": "Conquest and early colonial order",
+					"description": "Spanish incursions, establishment of colonial municipalities, and integration into the Captaincy General of Guatemala."
+				},
+				{
+					"year": "16th-18th c.",
+					"title": "Mining and cattle economy",
+					"description": "Regional economies revolve around mining, hacienda agriculture, and local trade under colonial regulations."
+				}
+			],
+			"notableFigures": ["Spanish colonial administrators and missionaries"]
+		},
+		"independence": {
+			"period": "1821 - 1838",
+			"description": "Honduras joined the regional independence movement of 1821 and became a member of the Federal Republic of Central America after Spanish rule ended. The federation experienced recurrent civil conflict and factionalism. By the late 1830s the federation dissolved and Honduras emerged as an independent republic struggling with caudillo politics and boundary disputes with neighbors.",
+			"keyEvents": [
+				{
+					"year": "15 September 1821",
+					"title": "Independence declared",
+					"description": "Local authorities join the Act of Independence of Central America declaring separation from Spain."
+				},
+				{
+					"year": "1823-1838",
+					"title": "Federal Republic membership and collapse",
+					"description": "Honduras participates in and then leaves the Federal Republic of Central America as regional fragmentation produces independent states."
+				}
+			],
+			"notableFigures": ["Local political leaders and regional caudillos"]
+		},
+		"modern": {
+			"period": "1838 - Present",
+			"description": "Honduras' modern history is marked by land concentration, foreign corporate influence in bananas and railways, cycles of military and civilian governments, and intermittent U.S. intervention. The banana companies and foreign capital shaped labor, land tenure, and state capacity in the late 19th and early 20th centuries. The 20th century included long authoritarian periods such as Tiburcio Carías Andino's rule (1933-1949), growing labor movements, the 1969 brief war with El Salvador, Cold War politics, and contested democratic transitions. The 2009 removal of President Manuel Zelaya by the military created an international crisis and domestic polarization. Honduras faces persistent poverty, migration, narcotrafficking-related violence, and governance challenges while participating in electoral politics and regional diplomacy.",
+			"keyEvents": [
+				{
+					"year": "Late 19th-early 20th c.",
+					"title": "Banana economy and foreign companies",
+					"description": "U.S. fruit companies and investors acquire large tracts, build railroads and ports, and wield major political influence over Honduran elites and state policy."
+				},
+				{
+					"year": "1933-1949",
+					"title": "Tiburcio Carías Andino's rule",
+					"description": "Authoritarian presidency consolidates state power and aligns with conservative elites during the Great Depression and WWII era."
+				},
+				{
+					"year": "14-18 July 1969",
+					"title": "Football War with El Salvador",
+					"description": "Short, intense conflict erupted amid migration and land tensions; OAS brokered ceasefire and status quo ante was restored but regional relations suffered long-term consequences."
+				},
+				{
+					"year": "28 June 2009",
+					"title": "Removal of President Manuel Zelaya",
+					"description": "Military deposes and expatriates Zelaya amid constitutional controversy; domestic protests and international condemnation follow."
+				},
+				{
+					"year": "21st century",
+					"title": "Security and migration crises",
+					"description": "High rates of homicide, gang violence, and migration to North America are major policy issues; regional cooperation and international aid respond unevenly."
+				}
+			],
+			"notableFigures": [
+				"Miguel R. Dávila,",
+				"Manuel Bonilla",
+				"Tiburcio Carías Andino",
+				"Oswaldo López Arellano",
+				"Manuel Zelaya"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 5th-9th centuries CE",
+				"era": "Ancient",
+				"title": "Copán Classic era",
+				"description": "Flourishing of the Copán polity with monumental inscriptional record."
+			},
+			{
+				"year": "1524-1537",
+				"era": "Colonial",
+				"title": "Spanish conquest",
+				"description": "Colonial institutions and municipalities established."
+			},
+			{
+				"year": "15 September 1821",
+				"era": "Independence",
+				"title": "Independence from Spain",
+				"description": "Honduran provinces join Central American declaration."
+			},
+			{
+				"year": "Late 19th-early 20th c.",
+				"era": "Modern",
+				"title": "Banana republic era",
+				"description": "Large-scale foreign investment reshapes economy and politics."
+			},
+			{
+				"year": "1933-1949",
+				"era": "Modern",
+				"title": "Carías dictatorship",
+				"description": "Long authoritarian rule centralizes power."
+			},
+			{
+				"year": "1969",
+				"era": "Modern",
+				"title": "Football War",
+				"description": "Brief war with El Salvador amid social tensions."
+			},
+			{
+				"year": "28 June 2009",
+				"era": "Modern",
+				"title": "2009 political crisis",
+				"description": "President Zelaya removed by military; regional fallout."
+			}
+		]
+	},
+	{
+		"name": "Costa Rica",
+		"overview": "Costa Rica was sparsely populated at European contact compared with other Central American areas, developed an export economy based on coffee and later bananas, and built strong civic institutions in the 19th and 20th centuries. After a short but decisive civil war in 1948 José Figueres Ferrer led a revolutionary junta that produced a new constitution (1949), abolished the standing army, expanded social guarantees, and set the framework for stable electoral democracy. Costa Rica is notable for long-term investment in education, environmental conservation, and relatively high human development in the region.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Costa-Rica",
+			"urls": [
+				"https://www.britannica.com/place/Costa-Rica",
+				"https://en.wikipedia.org/wiki/History_of_Costa_Rica",
+				"https://www.unesco.org/en/memory-world/abolition-army-costa-rica",
+				"https://www.britannica.com/biography/Jose-Figueres-Ferrer",
+				"https://en.wikipedia.org/wiki/Costa_Rican_Civil_War"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "15 September 1821" },
+			{ "label": "Constitution Promulgated", "value": "7 November 1949" },
+			{
+				"label": "Abolition of Standing Army",
+				"value": "Decree 249 and constitutional prohibition, 1949"
+			},
+			{
+				"label": "Capital",
+				"value": "San José"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Spanish for 'Rich Coast'"
+			}
+		],
+		"ancient": {
+			"period": "c. 2000 BCE - 1500 CE",
+			"description": "Pre-Columbian Costa Rica hosted regional cultural zones with agricultural villages, ceremonial sites, and trade links to Mesoamerica and to northern South America. Archaeological traditions include complex ceramics, metallurgy, and regional craft specialization. Indigenous groups such as the Chorotega and Huetar developed chiefdoms and localized political orders before European contact.",
+			"keyEvents": [
+				{
+					"year": "c. 2000 BCE - 250 CE",
+					"title": "Formative village life",
+					"description": "Development of early agriculture, shell-working, and pottery along coasts and rivers."
+				},
+				{
+					"year": "c. 500-1500 CE",
+					"title": "Regional chiefdoms and craft specialization",
+					"description": "Ceramic and gold-working traditions, evidence of trade and social ranking."
+				}
+			],
+			"notableFigures": ["Local caciques and chiefs of Chorotega, Huetar, and other indigenous polities"]
+		},
+		"colonial": {
+			"period": "1502 - 1821",
+			"description": "Christopher Columbus first recorded the Pacific and Caribbean coasts of what became Costa Rica. Spanish colonization proceeded more slowly than in other regions because of limited mineral wealth and scattered indigenous resistance. Costa Rica became a province of the Captaincy General of Guatemala. Land appropriation, mission activity, and smallholder agricultural economies established patterns that later favored coffee production and rural property formation.",
+			"keyEvents": [
+				{
+					"year": "1502",
+					"title": "Columbus reaches Caribbean coast",
+					"description": "Early European contact during Columbus's fourth voyage; later Spanish expeditions follow."
+				},
+				{
+					"year": "16th-18th c.",
+					"title": "Marginal colonial economy",
+					"description": "Relative colonial neglect produces a frontier society oriented to small-scale agriculture and local markets."
+				}
+			],
+			"notableFigures": ["Spanish colonial administrators and local frontier settlers"]
+		},
+		"independence": {
+			"period": "1821 - 1838",
+			"description": "Costa Rica participated in Central American independence in 1821, initially joining short-lived imperial and federal arrangements before consolidating as an independent republic. The early republican era saw coffee become the leading export and a rising liberal oligarchy that invested in education and infrastructure, laying institutional foundations later consolidated in the mid-20th century.",
+			"keyEvents": [
+				{
+					"year": "15 September 1821",
+					"title": "Independence from Spain",
+					"description": "Provincial authorities join the Central American declaration of independence."
+				},
+				{
+					"year": "1824-1848",
+					"title": "Coffee expansion and state formation",
+					"description": "Coffee exports finance roads, schools, and a rising merchant-landowner class that shapes politics."
+				}
+			],
+			"notableFigures": ["Early republican leaders"]
+		},
+		"modern": {
+			"period": "1848 - Present",
+			"description": "Costa Rica's modern trajectory centers on consolidation of democratic institutions, social investment, and environmental stewardship. The 1948 civil war produced a short-lived revolutionary junta led by José Figueres Ferrer; the junta organized a constituent assembly that promulgated the 1949 Constitution, abolished the standing army, extended suffrage, and created social guarantees. Figueres and later democratic governments institutionalized strong public education, health services, and protected areas. Costa Rica became a regional mediator and a leader on conservation and ecotourism. The country faces contemporary political debates over economic policy, foreign investment, relations with the U.S. and China, and governance, but retains strong electoral institutions and high human-development indicators relative to the region.",
+			"keyEvents": [
+				{
+					"year": "12 March - 24 April 1948",
+					"title": "Costa Rican Civil War",
+					"description": "Short civil conflict triggered by annulled presidential election; Figueres' forces defeat government forces and end in political settlement."
+				},
+				{
+					"year": "1948-1949",
+					"title": "Figueres junta and constitution",
+					"description": "José Figueres Ferrer leads provisional junta, oversees constituent assembly and reforms that produce the 1949 constitution."
+				},
+				{
+					"year": "11 October 1949",
+					"title": "Abolition of standing army (decree 249)",
+					"description": "Provisional government's decree and the 1949 constitution prohibit a permanent standing military; state capacity redirected to education and welfare."
+				},
+				{
+					"year": "Late 20th-21st century",
+					"title": "Environmental leadership and democratization",
+					"description": "Expansion of national parks, strong electoral institutions, and Nobel Peace Prize for Óscar Arias (1987) for Central American peace efforts."
+				}
+			],
+			"notableFigures": ["José Figueres Ferrer", "Óscar Arias Sánchez"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE",
+				"era": "Ancient",
+				"title": "Early agricultural and coastal settlements",
+				"description": "Early pottery and village life along coasts and rivers."
+			},
+			{
+				"year": "1502",
+				"era": "Colonial",
+				"title": "European contact",
+				"description": "Columbus reaches the Caribbean coast; later Spanish settlements follow."
+			},
+			{
+				"year": "15 September 1821",
+				"era": "Independence",
+				"title": "Central American Independence",
+				"description": "Costa Rica joins the regional declaration separating from Spain."
+			},
+			{
+				"year": "12 March - 24 April 1948",
+				"era": "Modern",
+				"title": "Civil War",
+				"description": "Short conflict leads to fundamental constitutional and institutional change."
+			},
+			{
+				"year": "7 November 1949",
+				"era": "Modern",
+				"title": "Constitution promulgated",
+				"description": "Constitution of the Second Republic is adopted establishing the framework of modern Costa Rica."
+			},
+			{
+				"year": "11 October 1949",
+				"era": "Modern",
+				"title": "Abolition of the standing army",
+				"description": "Decree and constitutional provisions remove permanent military institution."
+			},
+			{
+				"year": "1987",
+				"era": "Modern",
+				"title": "Óscar Arias Nobel Peace Prize",
+				"description": "Arias honored for diplomatic leadership toward Central American peace."
+			}
+		]
 	}
 ]

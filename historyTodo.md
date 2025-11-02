@@ -3,14 +3,14 @@
   - [x] Canada
   - [x] Mexico
 
-- [ ] CENTRAL AMERICA
-  - [ ] Guatemala
-  - [ ] Belize
-  - [ ] El Salvador
-  - [ ] Nicaragua
-  - [ ] Honduras
-  - [ ] Costa Rica
-  - [ ] Panama
+- [x] CENTRAL AMERICA
+  - [x] Guatemala
+  - [x] Belize
+  - [x] El Salvador
+  - [x] Nicaragua
+  - [x] Honduras
+  - [x] Costa Rica
+  - [x] Panama
 
 - [ ] CARIBBEAN
   - [ ] Antigua and Barbuda
