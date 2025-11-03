@@ -6,6 +6,7 @@
 	import GiniPreview from '$lib/assets/img/gini-preview.png';
 	import GDPPreview from '$lib/assets/img/gdp-preview.png';
 	import GDPPerCapitaPreview from '$lib/assets/img/gdp-per-capita-preview.png';
+	import type { ProjectionType, ThemeType } from '$lib/utils/types';
 
 	let {
 		settingsOpen = false,
@@ -16,11 +17,11 @@
 		onThemeChange
 	}: {
 		settingsOpen: boolean;
-		currentProjection: string;
-		currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita';
+		currentProjection: ProjectionType;
+		currentTheme: ThemeType;
 		onToggle: (() => void) | undefined;
-		onProjectionChange: ((projection: string) => void) | undefined;
-		onThemeChange: ((theme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') => void) | undefined;
+		onProjectionChange: ((projection: ProjectionType) => void) | undefined;
+		onThemeChange: ((theme: ThemeType) => void) | undefined;
 	} = $props();
 
 	const projections = [
@@ -46,12 +47,12 @@
 		}
 	];
 
-	function selectProjection(projectionId: string) {
+	function selectProjection(projectionId: ProjectionType) {
 		currentProjection = projectionId;
 		onProjectionChange?.(projectionId);
 	}
 
-	function setTheme(t: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita') {
+	function setTheme(t: ThemeType) {
 		currentTheme = t;
 		onThemeChange?.(t);
 	}
@@ -109,7 +110,7 @@
 					<button
 						type="button"
 						class="flex cursor-pointer items-center gap-3 rounded-lg px-4 py-3 text-left transition hover:bg-sky-400/6 focus:outline-none"
-						onclick={() => selectProjection(projection.id)}
+						onclick={() => selectProjection(projection.id as ProjectionType)}
 						aria-pressed={currentProjection === projection.id}
 					>
 						<div class="flex h-2 w-2 items-center justify-center rounded-full border-2 border-slate-400/40">
@@ -263,14 +264,6 @@
 </div>
 
 <style>
-	@keyframes rotate {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
 	.settings-btn-active {
 		border-color: rgba(34, 197, 94, 0.8) !important;
 		background: linear-gradient(135deg, rgba(6, 78, 59, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%) !important;

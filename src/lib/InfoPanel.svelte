@@ -3,9 +3,9 @@
 	import { cubicOut } from 'svelte/easing';
 	import type { CountryData } from '$lib/utils/types';
 	import { formatNumber, formatLanguages } from '$lib/utils/helpers';
-	import EconomicsTab from './components/EconomicsTab.svelte';
-	import OverviewTab from './components/OverviewTab.svelte';
-	import HistoryTab from './components/HistoryTab.svelte';
+	import EconomicsTab from './components/tabs/EconomicsTab.svelte';
+	import OverviewTab from './components/tabs/OverviewTab.svelte';
+	import HistoryTab from './components/tabs/HistoryTab.svelte';
 
 	let {
 		selectedInfo = null,

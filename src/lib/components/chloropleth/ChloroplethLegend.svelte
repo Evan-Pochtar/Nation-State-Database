@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import type { ChloroplethData, DataType } from '$lib/utils/types';
 	import { getDataLabel } from '$lib/utils/chloroplethUtils';
+	import { formatCurrency, formatGini } from '$lib/utils/helpers';
 
 	let {
 		chloroplethData = null,
@@ -36,19 +37,10 @@
 	function formatValue(value: number): string {
 		const displayValue = isLogScale ? Math.pow(10, value) : value;
 
-		if (dataType === 'gdp') {
-			if (displayValue >= 1e12) {
-				return `$${(displayValue / 1e12).toFixed(2)}T`;
-			} else if (displayValue >= 1e9) {
-				return `$${(displayValue / 1e9).toFixed(2)}B`;
-			} else if (displayValue >= 1e6) {
-				return `$${(displayValue / 1e6).toFixed(2)}M`;
-			}
-			return `$${displayValue.toFixed(0)}`;
-		} else if (dataType === 'gdpPerCapita') {
-			return `$${displayValue.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+		if (dataType === 'gdp' || dataType === 'gdpPerCapita') {
+			return formatCurrency(displayValue, { compact: true, decimals: 2 });
 		} else {
-			return displayValue.toFixed(1);
+			return formatGini(displayValue);
 		}
 	}
 

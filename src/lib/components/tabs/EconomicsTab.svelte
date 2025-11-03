@@ -2,7 +2,11 @@
 	import { onMount } from 'svelte';
 	import { fetchEconomicDataModule, indicators } from '$lib/utils/getInfo';
 	import type { CountryData } from '$lib/utils/types';
-	import { formatValue } from '$lib/utils/helpers';
+	import { formatEconomicValue } from '$lib/utils/helpers';
+	import LoadingState from '$lib/components/shared/LoadingState.svelte';
+	import SectionHeader from '$lib/components/shared/SectionHeader.svelte';
+	import TabButton from '$lib/components/shared/TabButton.svelte';
+	import StatCard from '$lib/components/shared/StatCard.svelte';
 
 	let {
 		selectedInfo = null,
@@ -80,52 +84,13 @@
 </script>
 
 <div class="rounded-xl bg-transparent p-0">
-	<div class="mb-4 text-[13px] font-bold tracking-[0.5px] text-cyan-200 uppercase">
-		Economic Data
-		{#if showSources}
-			<span class="ml-1 text-[10px] font-normal opacity-60">
-				(<a
-					href="https://api.worldbank.org"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="font-semibold text-lightBlue underline">World Bank</a
-				>)
-			</span>
-		{/if}
-	</div>
+	<SectionHeader
+		title="Economic Data"
+		source={{ label: 'World Bank', url: 'https://api.worldbank.org' }}
+		{showSources}
+	/>
 	{#if selectedName ? infoCache[selectedName]?.loading : false}
-		<div
-			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
-		>
-			<div class="pointer-events-none absolute inset-0 opacity-10">
-				<div
-					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent via-white/5 to-transparent"
-				></div>
-				<div
-					class="bg-size[4px_4px] absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]"
-				></div>
-			</div>
-
-			<div class="relative z-10 flex flex-col items-center justify-center py-12">
-				<div class="relative">
-					<div class="animate-spin-slow h-22 w-22 rounded-full border-2 border-cyan-400/30"></div>
-					<div
-						class="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-cyan-500/20"
-					>
-						<div class="h-10 w-10 animate-spin rounded-full border-t-2 border-cyan-300"></div>
-					</div>
-				</div>
-
-				<div class="mt-3 text-center">
-					<div class="mb-1 animate-pulse font-mono text-sm text-cyan-300">FETCHING ECONOMIC DATA...</div>
-				</div>
-
-				<div class="animate-bounce-slow absolute -top-4 -left-4 font-mono text-xs text-cyan-400/30">$ECO_LOAD</div>
-				<div class="animate-bounce-slow absolute -right-4 -bottom-4 font-mono text-xs text-emerald-400/30">
-					> WorldBank V2.1
-				</div>
-			</div>
-		</div>
+		<LoadingState message="FETCHING ECONOMIC DATA..." submessage="WorldBank V2.1" />
 	{:else if selectedName ? infoCache[selectedName]?.error : true}
 		<div class="rounded-lg border border-red-700/30 bg-red-900/20 p-4 text-red-200">
 			<div class="font-semibold">Unable to Load Economic Data</div>
@@ -136,16 +101,9 @@
 	{:else if selectedInfo && selectedInfo.economics && typeof selectedInfo.economics !== 'string'}
 		<div class="mb-4 flex flex-wrap gap-1">
 			{#each [['gdpPerCapita', 'GDP/Capita'], ['gdpGrowth', 'GDP Growth'], ['inflation', 'Inflation'], ['unemployment', 'Unemployment']] as [key, label]}
-				<button
-					onclick={() => setEconomicChart(key)}
-					class={`rounded px-3 py-1 text-xs transition-all ${
-						activeEconomicChart === key
-							? 'border border-cyan-400/50 bg-cyan-400/20 text-cyan-300'
-							: 'border border-white/10 bg-white/5 text-white/70 hover:bg-white/10'
-					}`}
-				>
+				<TabButton active={activeEconomicChart === key} onclick={() => setEconomicChart(key)}>
 					{label}
-				</button>
+				</TabButton>
 			{/each}
 		</div>
 		<div class="mb-6 rounded-lg border border-white/10 bg-black/20 p-4">
@@ -189,21 +147,21 @@
 									fill="#0891b2"
 									opacity="0.9"
 								>
-									<title>{point.year}: {formatValue(point.value, activeEconomicChart)}</title>
+									<title>{point.year}: {formatEconomicValue(point.value, activeEconomicChart)}</title>
 								</circle>
 							{/each}
 							<text x="35" y="35" text-anchor="end" fill="rgba(255,255,255,0.6)" font-size="10">
-								{formatValue(maxVal, activeEconomicChart)}
+								{formatEconomicValue(maxVal, activeEconomicChart)}
 							</text>
 							<text x="35" y="155" text-anchor="end" fill="rgba(255,255,255,0.6)" font-size="10">
-								{formatValue(minVal, activeEconomicChart)}
+								{formatEconomicValue(minVal, activeEconomicChart)}
 							</text>
 						{/if}
 					</svg>
 				</div>
 				<div class="mt-2 text-right">
 					<span class="text-xl font-bold text-cyan-300">
-						{formatValue(chartData[chartData.length - 1]?.value, activeEconomicChart)}
+						{formatEconomicValue(chartData[chartData.length - 1]?.value, activeEconomicChart)}
 					</span>
 					<span class="ml-2 text-xs text-white/60">
 						({chartData[chartData.length - 1]?.year})
@@ -222,19 +180,7 @@
 			{#each [['exports', 'Exports'], ['imports', 'Imports'], ['currentAccount', 'Current Account'], ['fdi', 'Foreign Investment'], ['militaryExpenditure', 'Military Spending as % of GDP'], ['researchDev', 'R&D Spending as % of GDP'], ['internetUsers', 'Internet Users'], ['healthExpenditure', 'Health Spending as % of GDP']] as [key, label]}
 				{@const latest = getLatestValue((indicators as any)[key])}
 				{#if latest}
-					<div
-						class="w-[calc(50%-0.375rem)] grow rounded-lg border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-3 sm:w-[calc(50%-0.375rem)]"
-					>
-						<div class="mb-1 flex items-center gap-2">
-							<span class="text-xs font-medium text-white/80">{label}</span>
-						</div>
-						<div class="text-sm font-bold text-white">
-							{formatValue(latest.value, key)}
-						</div>
-						<div class="text-xs text-white/50">
-							{latest.year}
-						</div>
-					</div>
+					<StatCard {label} value={formatEconomicValue(latest.value, key)} year={latest.year} />
 				{/if}
 			{/each}
 		</div>
@@ -249,7 +195,7 @@
 					<span class="font-semibold text-white">Trade Balance</span>
 				</div>
 				<div class="text-lg font-bold text-white">
-					{formatValue(exports.value - imports.value, 'tradeBalance')}
+					{formatEconomicValue(exports.value - imports.value, 'tradeBalance')}
 				</div>
 				<div class="mt-1 text-xs text-white/60">
 					{exports.value > imports.value ? 'Trade Surplus' : 'Trade Deficit'} ({exports.year})
@@ -263,41 +209,3 @@
 		</div>
 	{/if}
 </div>
-
-<style>
-	@keyframes pulse-slow {
-		0%,
-		100% {
-			opacity: 0.5;
-		}
-		50% {
-			opacity: 0.8;
-		}
-	}
-	@keyframes spin-slow {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-	@keyframes bounce-slow {
-		0%,
-		100% {
-			transform: translateY(0);
-		}
-		50% {
-			transform: translateY(-4px);
-		}
-	}
-	.animate-pulse-slow {
-		animation: pulse-slow 3s ease-in-out infinite;
-	}
-	.animate-spin-slow {
-		animation: spin-slow 8s linear infinite;
-	}
-	.animate-bounce-slow {
-		animation: bounce-slow 4s ease-in-out infinite;
-	}
-</style>

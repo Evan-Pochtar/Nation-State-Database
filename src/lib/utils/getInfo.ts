@@ -1,5 +1,7 @@
 import type { DataSources, CountryData, GeoFeature } from '$lib/utils/types';
 import { normalizeSources } from '$lib/utils/helpers';
+import { TIMEOUTS } from '$lib/utils/constants';
+import type { InfoCache } from '$lib/utils/types';
 
 export const indicators = {
 	gdpPerCapita: 'NY.GDP.PCAP.CD',
@@ -50,10 +52,7 @@ async function getCountriesData(): Promise<any> {
 	}
 }
 
-export async function fetchCountryInfoByName(
-	name: string | '',
-	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = {}
-) {
+export async function fetchCountryInfoByName(name: string | '', infoCache: InfoCache = {}) {
 	if (!name || infoCache[name]?.data || infoCache[name]?.loading) return infoCache;
 
 	infoCache[name] = { loading: true };
@@ -88,7 +87,7 @@ export async function fetchCountryInfoByName(
 			if (!summary) {
 				try {
 					const controller = new AbortController();
-					const timeoutId = setTimeout(() => controller.abort(), 3000);
+					const timeoutId = setTimeout(() => controller.abort(), TIMEOUTS.API_REQUEST);
 					const endpoint = 'https://en.wikipedia.org/w/api.php';
 					const params = new URLSearchParams({
 						action: 'query',
@@ -239,8 +238,8 @@ export async function fetchCountryInfoByName(
 export async function fetchEconomicDataModule(params: {
 	cca2ID: string;
 	selectedInfo: CountryData | null;
-	getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
-	setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
+	getInfoCache: () => InfoCache;
+	setInfoCache: (newCache: InfoCache) => void;
 	setSelectedInfo?: (newInfo: CountryData) => void;
 	persist?: boolean;
 }) {
@@ -398,8 +397,8 @@ export async function fetchEconomicDataModule(params: {
 export async function fetchHistoryDataModule(params: {
 	name: string;
 	selectedInfo: CountryData | null;
-	getInfoCache: () => Record<string, { data?: CountryData; loading: boolean; error?: string }>;
-	setInfoCache: (newCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>) => void;
+	getInfoCache: () => InfoCache;
+	setInfoCache: (newCache: InfoCache) => void;
 	setSelectedInfo?: (newInfo: CountryData) => void;
 }) {
 	const { name, selectedInfo, getInfoCache, setInfoCache, setSelectedInfo = false } = params;
@@ -469,10 +468,7 @@ export async function fetchHistoryDataModule(params: {
 	return job;
 }
 
-export async function batchLoadCountryData(
-	countries: GeoFeature[],
-	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
-): Promise<Record<string, { data?: CountryData; loading: boolean; error?: string }>> {
+export async function batchLoadCountryData(countries: GeoFeature[], infoCache: InfoCache): Promise<InfoCache> {
 	if (loadingBatch) return infoCache;
 
 	loadingBatch = true;
@@ -541,7 +537,7 @@ export async function batchLoadCountryData(
 
 export function getLoadProgress(
 	countries: GeoFeature[],
-	infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }>
+	infoCache: InfoCache
 ): { loaded: number; total: number; percentage: number } {
 	const total = countries.length;
 	const loaded = countries.filter((c) => {

@@ -1,6 +1,16 @@
 export type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
 export type SourceValue = string | { label: string; url?: string };
 export type DataType = 'gini' | 'gdp' | 'gdpPerCapita';
+export type InfoCache = Record<string, InfoCacheEntry>;
+export type TabType = 'overview' | 'economics' | 'history';
+export type ThemeType = 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita';
+export type ProjectionType = 'naturalEarth1' | 'mercator' | 'equalEarth';
+
+export type InfoCacheEntry = {
+	data?: CountryData;
+	loading: boolean;
+	error?: string;
+};
 
 export type DataSources = {
 	flag?: SourceValue;

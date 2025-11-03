@@ -2,15 +2,16 @@
 	import { onMount, onDestroy, tick } from 'svelte';
 	import { feature, neighbors } from 'topojson-client';
 	import * as d3 from 'd3';
-	import type { GeoFeature, CountryData, ChloroplethData, DataType } from '$lib/utils/types';
 	import { fetchCountryInfoByName, batchLoadCountryData, getLoadProgress } from '$lib/utils/getInfo';
 	import InfoPanel from '$lib/InfoPanel.svelte';
 	import MapSettings from '$lib/components/MapSettings.svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import ChloroplethLegend from '$lib/components/ChloroplethLegend.svelte';
-	import DataLoadingIndicator from '$lib/components/DataLoadingIndicator.svelte';
-	import ChloroplethTooltip from '$lib/components/ChloroplethTooltip.svelte';
+	import ChloroplethLegend from '$lib/components/chloropleth/ChloroplethLegend.svelte';
+	import DataLoadingIndicator from '$lib/components/chloropleth/DataLoadingIndicator.svelte';
+	import ChloroplethTooltip from '$lib/components/chloropleth/ChloroplethTooltip.svelte';
+	import { LAYOUT, ANIMATION_DELAYS, TIMEOUTS } from '$lib/utils/constants';
+	import type { GeoFeature, ChloroplethData, DataType, InfoCache, ThemeType, ProjectionType } from '$lib/utils/types';
 	import {
 		buildChloroplethData,
 		getChloroplethColor,
@@ -24,19 +25,14 @@
 	let selectedFeature: GeoFeature | null = $state(null);
 	let selectedName: string | null = $state(null);
 	let activeTab: string = $state('overview');
-	let currentProjection: string = $state('naturalEarth1');
+	let currentProjection: ProjectionType = $state('naturalEarth1');
 	let settingsOpen = $state(false);
 
 	// Resizing state
 	let leftPct = 0.36;
 	let leftWidth = $state(0);
 	let tempLeftWidth = $state(0);
-	const MIN_PCT = 0.2,
-		MAX_PCT = 0.75;
-	const MIN_LEFT_PX = 450,
-		MAX_LEFT_PX = 900;
-	const COMPACT_THRESHOLD = 700,
-		HANDLE_WIDTH = 6;
+	const { MIN_PCT, MAX_PCT, MIN_LEFT_WIDTH, MAX_LEFT_WIDTH, COMPACT_THRESHOLD, HANDLE_WIDTH } = LAYOUT;
 	let dragging = $state(false);
 	let outerWidth = $state(1600);
 	let outerHeight = $state(900);
@@ -46,7 +42,7 @@
 	let pathGenerator: d3.GeoPath<any, GeoFeature> = $state(d3.geoPath<any, GeoFeature>());
 
 	// Cache
-	let infoCache: Record<string, { data?: CountryData; loading: boolean; error?: string }> = $state({});
+	let infoCache: InfoCache = $state({});
 	let countryNameCache = new WeakMap<GeoFeature, string>();
 	let pathStrings: string[] = $state([]);
 
@@ -60,7 +56,7 @@
 	let showSources = $state(false);
 	let copyLinkSuccess = $state(false);
 	let copyLinkTimeout: number | null = null;
-	let currentTheme: 'dark' | 'light' | 'colorful' | 'gini' | 'gdp' | 'gdpPerCapita' = $state('dark');
+	let currentTheme: ThemeType = $state('dark');
 	let chloroplethData: ChloroplethData | null = $state(null);
 	let showLegend = $state(false);
 	let dataLoading = $state(false);
@@ -164,7 +160,7 @@
 		outerWidth = window.innerWidth;
 		outerHeight = window.innerHeight;
 
-		const desired = Math.max(MIN_LEFT_PX, Math.min(MAX_LEFT_PX, Math.round(leftPct * outerWidth)));
+		const desired = Math.max(MIN_LEFT_WIDTH, Math.min(MAX_LEFT_WIDTH, Math.round(leftPct * outerWidth)));
 		leftWidth = desired;
 
 		if (countries.length > 0) {
@@ -210,7 +206,7 @@
 
 		d3.select(svgEl)
 			.transition()
-			.duration(250)
+			.duration(ANIMATION_DELAYS.ZOOM)
 			.call(zoomBehavior.transform as any, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale))
 			.on('end', () => {
 				isAnimating = false;
@@ -357,12 +353,12 @@
 		if (!svgEl || !zoomBehavior) return;
 		d3.select(svgEl)
 			.transition()
-			.duration(350)
+			.duration(ANIMATION_DELAYS.RESET_ZOOM)
 			.call((zoomBehavior as any).transform, d3.zoomIdentity);
 	}
 
 	// === SETTINGS ===
-	function handleProjectionChange(projection: string) {
+	function handleProjectionChange(projection: ProjectionType) {
 		currentProjection = projection;
 		pathStrings = [];
 		handleResize();
@@ -398,7 +394,7 @@
 			if (copyLinkTimeout) clearTimeout(copyLinkTimeout);
 			copyLinkTimeout = window.setTimeout(() => {
 				copyLinkSuccess = false;
-			}, 2000);
+			}, TIMEOUTS.COPY_LINK_SUCCESS);
 		});
 	}
 
@@ -548,6 +544,9 @@
 				x={tooltipX}
 				y={tooltipY}
 			/>
+			<div class="glass-panel-dark absolute bottom-5 left-5 z-50 px-3 py-2 text-xs text-white/60">
+				Click on any country to zoom in and view details
+			</div>
 		{/if}
 
 		<!-- svelte-ignore a11y_no_static_element_interactions -->

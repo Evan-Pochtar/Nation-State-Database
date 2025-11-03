@@ -1,33 +1,52 @@
 import type { SourceValue, DataSources, CountryData } from '$lib/utils/types';
 
-export function formatNumber(n: number | undefined): string {
+export function formatNumber(n: number | undefined, decimals: number = 2): string {
 	if (!n && n !== 0) return '—';
-	const abs = Math.abs(Math.round(n));
-	if (abs >= 1_000_000_000) return (abs / 1_000_000_000).toFixed(2) + 'B';
-	if (abs >= 1_000_000) return (abs / 1_000_000).toFixed(2) + 'M';
-	if (abs >= 1_000) return (abs / 1_000).toFixed(2) + 'K';
-	return String(abs);
+	const abs = Math.abs(n);
+
+	if (abs >= 1_000_000_000_000) return (n / 1_000_000_000_000).toFixed(decimals) + 'T';
+	if (abs >= 1_000_000_000) return (n / 1_000_000_000).toFixed(decimals) + 'B';
+	if (abs >= 1_000_000) return (n / 1_000_000).toFixed(decimals) + 'M';
+	if (abs >= 1_000) return (n / 1_000).toFixed(decimals) + 'K';
+	return String(Math.round(abs));
 }
 
-export function formatGDP(val: number | undefined) {
+export function formatCurrency(
+	value: number | undefined,
+	options: { compact?: boolean; decimals?: number } = {}
+): string {
+	if (!value && value !== 0) return '—';
+
+	const { compact = false, decimals = 0 } = options;
+
+	if (compact) {
+		return `$${formatNumber(value, decimals === 0 ? 2 : decimals)}`;
+	}
+
+	return `$${value.toLocaleString('en-US', { maximumFractionDigits: decimals })}`;
+}
+
+export function formatGDP(val: number | undefined): string {
 	if (!val && val !== 0) return '—';
-	return `$${Number(val).toLocaleString('en-US', { maximumFractionDigits: 0 })} · ${formatNumber(val)}`;
+	return `${formatCurrency(val)} · ${formatCurrency(val, { compact: true })}`;
 }
 
-export function formatLanguages(langs: unknown): string {
-	if (!langs) return '—';
-	if (Array.isArray(langs)) return langs.join(', ');
-	if (typeof langs === 'string') return langs;
-	if (typeof langs === 'object') return Object.values(langs as Record<string, any>).join(', ');
-	return String(langs);
+export function formatPercentage(value: number | undefined, decimals: number = 1): string {
+	if (value == null) return 'N/A';
+	return `${value.toFixed(decimals)}%`;
 }
 
-export function formatValue(value: number, type: string): string {
+export function formatGini(value: number | undefined): string {
+	if (!value || value <= 0) return '—';
+	return value.toFixed(1);
+}
+
+export function formatEconomicValue(value: number, type: string): string {
 	if (value == null) return 'N/A';
 
 	switch (type) {
 		case 'gdpPerCapita':
-			return `$${formatNumber(Math.round(value))}`;
+			return formatCurrency(Math.round(value));
 		case 'gdpGrowth':
 		case 'inflation':
 		case 'unemployment':
@@ -35,7 +54,7 @@ export function formatValue(value: number, type: string): string {
 		case 'researchDev':
 		case 'internetUsers':
 		case 'healthExpenditure':
-			return `${value.toFixed(1)}%`;
+			return formatPercentage(value);
 		case 'exports':
 		case 'imports':
 		case 'currentAccount':
@@ -45,6 +64,14 @@ export function formatValue(value: number, type: string): string {
 		default:
 			return formatNumber(value);
 	}
+}
+
+export function formatLanguages(langs: unknown): string {
+	if (!langs) return '—';
+	if (Array.isArray(langs)) return langs.join(', ');
+	if (typeof langs === 'string') return langs;
+	if (typeof langs === 'object') return Object.values(langs as Record<string, any>).join(', ');
+	return String(langs);
 }
 
 export function isSourceString(s: unknown): s is string {

@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import type { DataType } from '$lib/utils/types';
-	import { formatDataValue, getDataLabel } from '$lib/utils/chloroplethUtils';
+	import { getDataLabel } from '$lib/utils/chloroplethUtils';
+	import { formatCurrency, formatGini } from '$lib/utils/helpers';
 
 	let {
 		visible = false,
@@ -19,7 +20,13 @@
 		y: number;
 	} = $props();
 
-	let formattedValue = $derived(value !== null ? formatDataValue(value, dataType) : 'No data');
+	let formattedValue = $derived(
+		value !== null
+			? dataType === 'gini'
+				? formatGini(value)
+				: formatCurrency(Math.pow(10, value), { compact: true, decimals: 2 })
+			: 'No data'
+	);
 	let dataLabel = $derived(getDataLabel(dataType));
 </script>
 

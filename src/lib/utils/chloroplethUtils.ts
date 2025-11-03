@@ -105,29 +105,6 @@ export function getChloroplethColor(
 	return chloroplethData.colorScale(value);
 }
 
-export function formatDataValue(value: number, dataType: DataType, isLogScale: boolean = false): string {
-	let displayValue = value;
-	if (isLogScale && (dataType === 'gdp' || dataType === 'gdpPerCapita')) {
-		displayValue = Math.pow(10, value);
-	}
-
-	switch (dataType) {
-		case 'gdp':
-			if (displayValue >= 1e12) {
-				return `$${(displayValue / 1e12).toFixed(2)}T`;
-			} else if (displayValue >= 1e9) {
-				return `$${(displayValue / 1e9).toFixed(2)}B`;
-			} else if (displayValue >= 1e6) {
-				return `$${(displayValue / 1e6).toFixed(2)}M`;
-			}
-			return `$${displayValue.toFixed(0)}`;
-		case 'gdpPerCapita':
-			return `$${displayValue.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
-		case 'gini':
-			return displayValue.toFixed(1);
-	}
-}
-
 export function getDataLabel(dataType: DataType): string {
 	switch (dataType) {
 		case 'gdp':

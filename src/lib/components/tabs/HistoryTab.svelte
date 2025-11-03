@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { fetchHistoryDataModule } from '$lib/utils/getInfo';
 	import type { CountryData } from '$lib/utils/types';
+	import LoadingState from '$lib/components/shared/LoadingState.svelte';
+	import SectionHeader from '$lib/components/shared/SectionHeader.svelte';
+	import TabButton from '$lib/components/shared/TabButton.svelte';
 
 	let {
 		selectedInfo = null,
@@ -66,53 +69,10 @@
 </script>
 
 <div class="rounded-xl bg-transparent p-0">
-	<div class="mb-4 text-[13px] font-bold tracking-[0.5px] text-cyan-200 uppercase">
-		Historical Timeline
-		{#if showSources && historyData?.source}
-			<span class="ml-1 text-[10px] font-normal opacity-60">
-				(<a
-					href={historyData.source.url}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="font-semibold text-lightBlue underline">{historyData.source.label}</a
-				>)
-			</span>
-		{/if}
-	</div>
+	<SectionHeader title="Historical Timeline" source={historyData?.source} {showSources} />
 
 	{#if (selectedName && infoCache[selectedName]?.loading) || isLoading}
-		<div
-			class="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-black/40 via-cyan-900/10 to-black/40 p-8 backdrop-blur-sm"
-		>
-			<div class="pointer-events-none absolute inset-0 opacity-10">
-				<div
-					class="animate-pulse-slow absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent via-white/5 to-transparent"
-				></div>
-				<div
-					class="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-size-[4px_4px]"
-				></div>
-			</div>
-
-			<div class="relative z-10 flex flex-col items-center justify-center py-12">
-				<div class="relative">
-					<div class="animate-spin-slow h-22 w-22 rounded-full border-2 border-cyan-400/30"></div>
-					<div
-						class="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-cyan-500/20"
-					>
-						<div class="h-10 w-10 animate-spin rounded-full border-t-2 border-cyan-300"></div>
-					</div>
-				</div>
-
-				<div class="mt-3 text-center">
-					<div class="mb-1 animate-pulse font-mono text-sm text-cyan-300">LOADING HISTORICAL DATA...</div>
-				</div>
-
-				<div class="animate-bounce-slow absolute -top-4 -left-4 font-mono text-xs text-cyan-400/30">$HIST_LOAD</div>
-				<div class="animate-bounce-slow absolute -right-4 -bottom-4 font-mono text-xs text-emerald-400/30">
-					> Timeline V3.2
-				</div>
-			</div>
-		</div>
+		<LoadingState message="LOADING HISTORICAL DATA..." submessage="Timeline V3.2" />
 	{:else if selectedName && infoCache[selectedName]?.error}
 		<div class="rounded-lg border border-red-700/30 bg-red-900/20 p-4 text-red-200">
 			<div class="font-semibold">Unable to Load Historical Data</div>
@@ -124,16 +84,9 @@
 		<div class="mb-4 flex flex-wrap gap-1">
 			{#each [['overview', 'Overview'], ['ancient', 'Ancient'], ['medieval', 'Medieval'], ['feudal', 'Feudal'], ['isolation', 'Isolation'], ['pre-colonial', 'Pre-Colonial'], ['colonial', 'Colonial'], ['imperial', 'Imperial'], ['independence', 'Independence'], ['modern', 'Modern'], ['timeline', 'Timeline']] as [key, label]}
 				{#if historyData[key]}
-					<button
-						onclick={() => setSection(key)}
-						class={`rounded px-3 py-1 text-xs transition-all ${
-							activeSection === key
-								? 'border border-cyan-400/50 bg-cyan-400/20 text-cyan-300'
-								: 'border border-white/10 bg-white/5 text-white/70 hover:bg-white/10'
-						}`}
-					>
+					<TabButton active={activeSection === key} onclick={() => setSection(key)}>
 						{label}
-					</button>
+					</TabButton>
 				{/if}
 			{/each}
 		</div>
