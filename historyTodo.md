@@ -208,15 +208,15 @@
 - [ ] OCEANIA / PACIFIC
   - [x] Australia
   - [x] New Zealand
-  - [ ] Fiji
-  - [ ] Papua New Guinea
+  - [x] Fiji
+  - [x] Papua New Guinea
   - [ ] Solomon Islands
   - [ ] Vanuatu
   - [ ] Samoa
   - [ ] Tonga
   - [ ] Kiribati
-  - [ ] Marshall Islands
-  - [ ] Micronesia
+  - [x] Marshall Islands
+  - [x] Micronesia
   - [ ] Nauru
   - [ ] Palau
   - [ ] Tuvalu

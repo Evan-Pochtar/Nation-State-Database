@@ -12584,5 +12584,1316 @@
 				"description": "Arias honored for diplomatic leadership toward Central American peace."
 			}
 		]
+	},
+	{
+		"name": "Fiji",
+		"overview": "Fiji's history spans over 3,500 years from the arrival of the Lapita people to its emergence as a modern Pacific nation. The indigenous Fijians developed sophisticated societies with complex chieftainships and maritime traditions before European contact in the 17th century. After a brief period as an independent kingdom under paramount chief Ratu Seru Epenisa Cakobau, Fiji became a British Crown colony in 1874, during which indentured laborers from India were brought to work sugar plantations, fundamentally transforming the nation's demographic makeup. Independence in 1970 brought challenges of governing a multi-ethnic society, leading to four military coups between 1987 and 2006 rooted in tensions between indigenous Fijians and Indo-Fijians over political power and land rights. Despite this turbulent political history, Fiji has maintained its cultural heritage and democratic institutions, working toward reconciliation and becoming a leader in Pacific regional affairs.",
+		"source": {
+			"label": "Wikipedia - History of Fiji",
+			"url": "https://en.wikipedia.org/wiki/History_of_Fiji",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Fiji",
+				"https://www.britannica.com/place/Fiji-republic-Pacific-Ocean/History",
+				"https://en.wikipedia.org/wiki/Colony_of_Fiji"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "October 10, 1970"
+			},
+			{
+				"label": "British Colony Established",
+				"value": "October 10, 1874"
+			},
+			{
+				"label": "Capital",
+				"value": "Suva"
+			},
+			{
+				"label": "First Settlers",
+				"value": "Lapita people (c. 1500-1000 BCE)"
+			},
+			{
+				"label": "Major Ethnic Groups",
+				"value": "Indigenous Fijian, Indo-Fijian"
+			},
+			{
+				"label": "Number of Islands",
+				"value": "Over 330 islands"
+			}
+		],
+		"pre-colonial": {
+			"period": "c. 1500 BCE - 1643 CE",
+			"description": "Fiji was first settled by the Lapita people around 1500-1000 BCE, part of a remarkable seafaring migration from Southeast Asia that populated much of the Pacific. These skilled navigators brought with them distinctive pottery with intricate geometric designs, pigs, and advanced horticultural knowledge. The Lapita culture evolved into distinctly Fijian societies characterized by complex chieftainship systems, with powerful chiefs called Ratu leading hierarchical social structures. Fijians developed sophisticated maritime technology, building large ocean-going canoes for trade and warfare across the Pacific. They created a monetary system using polished sperm whale teeth called tabua, which became central to ceremonial exchanges and remain culturally significant today. Fijian society was organized around mataqali (clans) within larger vanua (land-based social units), with chiefs holding both spiritual and political authority. Warfare was endemic, with elaborate protocols and specialized weapons including distinctive war clubs. Villages were often fortified with earth mounds and palisades. Fijians practiced horticulture, growing yams, taro, and breadfruit in complex agricultural systems. They developed sophisticated textile production using masi (bark cloth) for clothing and ceremonial purposes. Spiritual leaders called bete mediated between the human and divine worlds, with yaqona (kava) consumption central to ceremonies. The practice of cannibalism, whether ritualistic or exaggerated by later Europeans for colonial justification, became part of Fiji's fearsome reputation. By the time Europeans arrived in the 17th century, Fijian society was highly organized with powerful confederacies competing for dominance, particularly centered on the islands of Bau and Rewa.",
+			"keyEvents": [
+				{
+					"year": "c. 1500-1000 BCE",
+					"title": "Lapita Settlement",
+					"description": "Lapita people arrive in Fiji, bringing pottery, pigs, and agricultural knowledge, establishing first human settlements"
+				},
+				{
+					"year": "c. 500 BCE - 1000 CE",
+					"title": "Distinctly Fijian Culture Emerges",
+					"description": "Lapita pottery traditions evolve into unique Fijian cultural expressions, with development of complex chieftainship systems"
+				},
+				{
+					"year": "c. 1000-1800 CE",
+					"title": "Chiefdom Consolidation",
+					"description": "Powerful confederacies emerge, particularly centered on Bau, Rewa, and Cakaudrove, with extensive inter-island warfare and trade"
+				},
+				{
+					"year": "1643",
+					"title": "First European Sighting",
+					"description": "Dutch explorer Abel Tasman becomes first European to sight Fiji, encountering northern islands of Vanua Levu and Taveuni"
+				},
+				{
+					"year": "1774",
+					"title": "Captain Cook's Passage",
+					"description": "British Captain James Cook sails through Fijian waters but does not land, noting the islands' location"
+				},
+				{
+					"year": "1789",
+					"title": "Bligh's Journey",
+					"description": "Captain William Bligh navigates through Fiji after the Bounty mutiny, documenting the islands but avoiding landing due to cannibalism reports"
+				}
+			],
+			"notableFigures": [
+				"Traditional chiefs and bete (spiritual leaders)",
+				"Confederacy leaders of Bau, Rewa, and Cakaudrove"
+			]
+		},
+		"colonial": {
+			"period": "1643 - 1970",
+			"description": "European contact with Fiji began in 1643 when Dutch explorer Abel Tasman sighted the islands, but sustained contact didn't occur until the early 19th century. Beachcombers, escaped convicts from Australia, and traders seeking sandalwood (1804-1813) and bêche-de-mer (sea cucumber) arrived in the 1820s, bringing guns and disease that transformed Fijian society. The town of Levuka on Ovalau became the first European settlement. Wesleyan missionaries arrived in 1835, beginning the Christianization of Fiji. Paramount Chief Ratu Seru Epenisa Cakobau of Bau emerged as the most powerful chief, though he faced mounting debts and American threats. In 1871, Cakobau established Fiji as a constitutional monarchy with himself as King, but the government struggled. Facing financial collapse and unable to maintain order, Cakobau offered to cede Fiji to Britain. On October 10, 1874, Fiji became a British Crown colony. The first governor, Sir Arthur Gordon, implemented policies that profoundly shaped Fiji's future: he banned the sale of Fijian land, governed indigenous Fijians through chiefs in a system of indirect rule, and protected them from plantation labor. To develop the sugar industry, Gordon introduced indentured laborers from India beginning in 1879. Over the next 40 years, more than 60,000 Indians arrived to work on plantations under harsh conditions. Many stayed after their indentures expired, establishing a permanent Indo-Fijian community. By the 1940s, Indo-Fijians outnumbered indigenous Fijians, creating demographic tensions that would define post-independence politics. The colonial administration reinforced chiefly authority through the Great Council of Chiefs (established 1876) while keeping the two communities largely separate. During World War II, Fijians served with distinction in the Pacific campaigns, while most Indo-Fijians refused military service due to discriminatory pay. This created lasting resentments. Constitutional development toward independence began in the 1960s, driven more by international pressure than domestic demand.",
+			"keyEvents": [
+				{
+					"year": "1804-1813",
+					"title": "Sandalwood Trade",
+					"description": "European and American traders arrive seeking sandalwood, beginning sustained contact and introducing firearms"
+				},
+				{
+					"year": "1820s",
+					"title": "Levuka Established",
+					"description": "European traders establish Fiji's first European-style town at Levuka on Ovalau island"
+				},
+				{
+					"year": "1835",
+					"title": "Christian Missionaries Arrive",
+					"description": "Wesleyan missionaries begin work in Fiji, gradually converting chiefs and commoners to Christianity"
+				},
+				{
+					"year": "1854",
+					"title": "Cakobau Converts to Christianity",
+					"description": "Paramount Chief Cakobau converts to Christianity, accelerating the spread of the new religion throughout Fiji"
+				},
+				{
+					"year": "1871",
+					"title": "Kingdom of Fiji",
+					"description": "Cakobau establishes constitutional monarchy with himself as King, attempting to create unified Fijian state"
+				},
+				{
+					"year": "1874",
+					"title": "Deed of Cession",
+					"description": "October 10, Cakobau cedes Fiji to British Crown after government collapse; becomes Crown colony"
+				},
+				{
+					"year": "1875-1876",
+					"title": "Measles Epidemic",
+					"description": "Devastating measles outbreak kills over 40,000 Fijians, approximately one-third of indigenous population"
+				},
+				{
+					"year": "1876",
+					"title": "Great Council of Chiefs",
+					"description": "Governor Arthur Gordon establishes Great Council of Chiefs to advise colonial administration and reinforce chiefly authority"
+				},
+				{
+					"year": "1879-1916",
+					"title": "Indian Indentured Labor",
+					"description": "Over 60,000 Indian indentured laborers brought to work sugar plantations, fundamentally changing Fiji's demographics"
+				},
+				{
+					"year": "1920",
+					"title": "Indians Become Permanent Community",
+					"description": "Most Indians remain in Fiji after indentures expire, establishing farms and businesses, creating multi-ethnic society"
+				},
+				{
+					"year": "1942-1945",
+					"title": "World War II Service",
+					"description": "Fijian soldiers serve with distinction in Pacific campaigns; Indo-Fijian non-participation creates lasting tensions"
+				},
+				{
+					"year": "1960s",
+					"title": "Constitutional Negotiations",
+					"description": "Series of constitutional conferences address path to independence amid ethnic tensions over political representation"
+				}
+			],
+			"notableFigures": [
+				"Ratu Seru Epenisa Cakobau (Paramount Chief, King of Fiji)",
+				"Sir Arthur Gordon (first British Governor)",
+				"Reverend Thomas Baker (missionary)",
+				"Ratu Sukuna (colonial-era leader and educator)"
+			]
+		},
+		"independence": {
+			"period": "1970 - Present",
+			"description": "Fiji achieved independence on October 10, 1970, becoming a dominion within the Commonwealth with Ratu Sir Kamisese Mara as first prime minister. The constitution attempted to balance power between ethnic groups through a complex system of communal and national seats. For 17 years, the Alliance Party governed under a policy of multiracialism, though indigenous Fijians maintained political dominance. This stability shattered in April 1987 when a coalition government led by Timoci Bavadra and supported primarily by Indo-Fijians won elections. Less than a month later, on May 14, Lieutenant Colonel Sitiveni Rabuka staged Fiji's first coup, overthrowing the elected government. A second coup in September 1987 made Fiji a republic outside the Commonwealth. The 1990 constitution entrenched indigenous political dominance. A more equitable 1997 constitution raised hopes for reconciliation. In 1999, Mahendra Chaudhry became Fiji's first Indo-Fijian prime minister, but in May 2000, businessman George Speight led an armed takeover, holding government members hostage for 56 days in Fiji's most traumatic coup. Military commander Frank Bainimarama intervened, eventually restoring order and installing an interim government. The pattern repeated in December 2006 when Bainimarama himself staged a coup against Prime Minister Laisenia Qarase, citing corruption and policies favoring ethnic Fijians. Bainimarama ruled for eight years before holding elections under a new 2013 constitution that abolished racial voting and the Great Council of Chiefs. His Fiji First party won elections in 2014 and 2018. In 2022, the opposition coalition led by former coup leader Rabuka won elections, marking the first peaceful transfer of power. Throughout this turbulent period, Fiji has grappled with fundamental questions of identity, land rights, and power-sharing in a multi-ethnic society.",
+			"keyEvents": [
+				{
+					"year": "1970",
+					"title": "Independence Achieved",
+					"description": "October 10, Fiji becomes independent nation within Commonwealth with complex constitution balancing ethnic interests"
+				},
+				{
+					"year": "1970-1987",
+					"title": "Alliance Party Era",
+					"description": "Ratu Mara's Alliance Party governs continuously under multiracialism policy, maintaining stability but indigenous dominance"
+				},
+				{
+					"year": "1987",
+					"title": "First Coup",
+					"description": "May 14, Lt. Col. Sitiveni Rabuka overthrows Indo-Fijian-supported coalition government of Timoci Bavadra"
+				},
+				{
+					"year": "1987",
+					"title": "Second Coup and Republic",
+					"description": "September 25, Rabuka stages second coup; October 10, Fiji declared republic, leaving Commonwealth"
+				},
+				{
+					"year": "1990",
+					"title": "Discriminatory Constitution",
+					"description": "New constitution guarantees indigenous Fijian political control and institutionalizes ethnic divisions"
+				},
+				{
+					"year": "1997",
+					"title": "Reformed Constitution",
+					"description": "New constitution removes many discriminatory provisions, raises hopes for genuine multiracialism"
+				},
+				{
+					"year": "1999",
+					"title": "First Indo-Fijian PM",
+					"description": "Mahendra Chaudhry becomes first Indo-Fijian prime minister after historic election victory"
+				},
+				{
+					"year": "2000",
+					"title": "Speight Coup",
+					"description": "May 19, George Speight and armed supporters storm parliament, holding government hostage for 56 days"
+				},
+				{
+					"year": "2000",
+					"title": "Military Intervention",
+					"description": "Commander Frank Bainimarama declares martial law, eventually restores order and installs interim government"
+				},
+				{
+					"year": "2000",
+					"title": "November Mutiny",
+					"description": "Military mutiny at Suva headquarters leaves eight soldiers dead in attempt to overthrow Bainimarama"
+				},
+				{
+					"year": "2006",
+					"title": "Bainimarama Coup",
+					"description": "December 5, Bainimarama overthrows Qarase government citing corruption and pro-indigenous policies"
+				},
+				{
+					"year": "2009",
+					"title": "Constitutional Crisis",
+					"description": "Court of Appeal rules 2006 coup illegal; President abrogates constitution on military's advice"
+				},
+				{
+					"year": "2013",
+					"title": "New Constitution",
+					"description": "New constitution abolishes racial voting, Great Council of Chiefs, establishes equal citizenship"
+				},
+				{
+					"year": "2014",
+					"title": "Return to Elections",
+					"description": "First elections in eight years; Bainimarama's Fiji First party wins majority, legitimizing his rule"
+				},
+				{
+					"year": "2022",
+					"title": "Democratic Transfer",
+					"description": "Opposition coalition led by Rabuka defeats Bainimarama; first peaceful democratic transition after decades of coups"
+				}
+			],
+			"notableFigures": [
+				"Ratu Sir Kamisese Mara",
+				"Timoci Bavadra",
+				"Sitiveni Rabuka",
+				"Mahendra Chaudhry",
+				"George Speight",
+				"Frank Bainimarama",
+				"Ratu Sukuna",
+				"Adi Lady Lala Mara"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500-1000 BCE",
+				"era": "Pre-Colonial",
+				"title": "Lapita Arrival",
+				"description": "Lapita people first settle Fiji, bringing pottery, agriculture, and seafaring traditions"
+			},
+			{
+				"year": "1643",
+				"era": "Pre-Colonial",
+				"title": "European Discovery",
+				"description": "Dutch explorer Abel Tasman becomes first European to sight Fiji"
+			},
+			{
+				"year": "1835",
+				"era": "Colonial",
+				"title": "Missionaries Arrive",
+				"description": "Christian missionaries begin converting Fijian population"
+			},
+			{
+				"year": "1874",
+				"era": "Colonial",
+				"title": "British Colony",
+				"description": "October 10, Cakobau cedes Fiji to Britain; becomes Crown colony"
+			},
+			{
+				"year": "1879-1916",
+				"era": "Colonial",
+				"title": "Indian Indenture",
+				"description": "Over 60,000 Indians brought as indentured laborers for sugar plantations"
+			},
+			{
+				"year": "1970",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "October 10, Fiji becomes independent nation within Commonwealth"
+			},
+			{
+				"year": "1987",
+				"era": "Independence",
+				"title": "First Coups",
+				"description": "Two military coups by Rabuka overthrow elected government and establish republic"
+			},
+			{
+				"year": "2000",
+				"era": "Independence",
+				"title": "Speight Coup",
+				"description": "Armed takeover holds government hostage for 56 days, triggering political crisis"
+			},
+			{
+				"year": "2006",
+				"era": "Independence",
+				"title": "Fourth Coup",
+				"description": "Military commander Bainimarama seizes power in Fiji's fourth coup"
+			},
+			{
+				"year": "2014",
+				"era": "Independence",
+				"title": "Democratic Elections",
+				"description": "First elections in eight years restore democratic process"
+			},
+			{
+				"year": "2022",
+				"era": "Independence",
+				"title": "Peaceful Transfer",
+				"description": "First democratic change of government after decades of military intervention"
+			}
+		]
+	},
+	{
+		"name": "Federated States of Micronesia",
+		"overview": "An island nation in the western Pacific composed of four states (Yap, Chuuk, Pohnpei, Kosrae) spread across the Caroline Islands. Inhabited for millennia by Austronesian-speaking navigators, the islands developed distinctive seafaring cultures and local polities. European contact brought Spanish then German and Japanese control, followed by US trusteeship after World War II. The FSM adopted a written constitution in 1979 and achieved sovereignty under a Compact of Free Association with the United States in 1986. Today the FSM is an independent nation with close security and economic ties to the US and persistent development, environmental, and governance challenges.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean",
+			"urls": [
+				"https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean",
+				"https://en.wikipedia.org/wiki/Federated_States_of_Micronesia",
+				"https://www.doi.gov/oia/islands/fsm",
+				"https://fsmlaw.org/fsm/constitution/",
+				"https://jcrp.gov.fm/1986-compact-of-free-association/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Constitution Adopted / Constitution Day",
+				"value": "Constitution took effect May 10, 1979"
+			},
+			{
+				"label": "Compact of Free Association (effective)",
+				"value": "November 3, 1986 (entered into force with the US)"
+			},
+			{ "label": "Capital", "value": "Palikir (on Pohnpei)" },
+			{ "label": "States", "value": "Yap, Chuuk, Pohnpei, Kosrae" },
+			{ "label": "UN Membership", "value": "Admitted 1991" }
+		],
+		"ancient": {
+			"period": "c. 1500 BCE - c. 1500 CE",
+			"description": "The Caroline Islands were settled in multiple waves by Austronesian-speaking voyagers who developed complex voyaging knowledge, local chiefdoms, and island-specific social systems. Archaeological evidence and oral traditions show long-distance canoe navigation, local agriculture (taro, breadfruit, pandanus), and distinctive cultural practices. On Pohnpei monumental stone-city construction at Nan Madol and the Saudeleur polity are notable examples of pre-contact political complexity.",
+			"keyEvents": [
+				{
+					"year": "c. 1500-500 BCE",
+					"title": "Austronesian Settlement Begins",
+					"description": "Lapita-descended voyagers and later Austronesian groups colonize the Caroline islands, establishing the foundations of language and culture."
+				},
+				{
+					"year": "c. 8th-12th centuries CE",
+					"title": "Nan Madol Construction and Saudeleur Dynasty",
+					"description": "Nan Madol on Pohnpei becomes an important ceremonial and political center; the Saudeleur dynasty consolidates power in the island's interior."
+				},
+				{
+					"year": "pre-contact",
+					"title": "Distinct Island Polities",
+					"description": "Yap, Chuuk, Pohnpei and Kosrae each develop local chiefly systems, customary law, and long-distance exchange networks (including stone money in Yap)."
+				}
+			],
+			"notableFigures": ["Isokelekel"]
+		},
+		"colonial": {
+			"period": "c. 1520s - 1947 (processes extend through WWII)",
+			"description": "European and later imperial interests reshaped Micronesia. Spanish explorers charted parts of the Carolines in the 16th century and claimed them. Spain exercised limited colonial control, which was transferred to Germany after 1899. Germany administered the islands for trade and copra production until World War I when Japan occupied and later received the South Seas Mandate from the League of Nations. Japanese economic settlement and strategic development intensified between the world wars. During World War II many islands were battlefronts; after the war the United Nations placed the area under U.S. trusteeship (Trust Territory of the Pacific Islands) administered by the United States.",
+			"keyEvents": [
+				{
+					"year": "1520s-1600s",
+					"title": "European sighting and Spanish claim",
+					"description": "Spanish navigators chart islands in Micronesia; Spanish sovereignty declared though effective control remained limited."
+				},
+				{
+					"year": "1899",
+					"title": "Spanish cession to Germany",
+					"description": "Following Spain's defeat in the Spanish-American War, Spain sold many Pacific island possessions, including parts of Micronesia, to Germany."
+				},
+				{
+					"year": "1914-1920s",
+					"title": "Japanese occupation and League of Nations mandate",
+					"description": "Japan occupied German Micronesia in WWI and administered the islands under a League of Nations mandate, increasing migration and infrastructure investment."
+				},
+				{
+					"year": "1944-1945",
+					"title": "World War II combat and occupation",
+					"description": "Fighting in the central Pacific disrupted local societies; after Japan's defeat the US established control over the Trust Territory."
+				},
+				{
+					"year": "1947",
+					"title": "UN Trust Territory established",
+					"description": "United Nations trusteeship places Micronesia under U.S. administration (TTPI) for postwar governance and development."
+				}
+			],
+			"notableFigures": ["Various traditional chiefs", "Colonial administrators (Spanish/German/Japanese officials)"]
+		},
+		"independence": {
+			"period": "1978 - 1991 (transition period)",
+			"description": "In the 1970s the districts of the Trust Territory pursued different political paths. Four districts adopted the FSM constitution (ratified 1978; in force 1979), creating a federal government (Yap, Chuuk, Pohnpei, Kosrae). Negotiations with the United States produced the Compact of Free Association, approved by plebiscite and Congress, taking effect on November 3, 1986. FSM achieved full sovereignty while the Compact provided US defense authority and financial assistance. FSM joined the United Nations in 1991.",
+			"keyEvents": [
+				{
+					"year": "1978-1979",
+					"title": "Constitution drafted and takes effect",
+					"description": "Micronesian Constitutional Convention drafts constitution; constitution ratified and takes effect May 10, 1979."
+				},
+				{
+					"year": "1983",
+					"title": "Plebiscite on Compact",
+					"description": "Citizens approve the Compact of Free Association in referendum processes."
+				},
+				{
+					"year": "1986",
+					"title": "Compact enters into force / End of trusteeship for FSM",
+					"description": "Compact with the United States enters into force on November 3, 1986; FSM becomes self-governing under the Compact."
+				},
+				{ "year": "1991", "title": "UN membership", "description": "FSM admitted to the United Nations." }
+			],
+			"notableFigures": ["Local constitutional leaders and Compact negotiators"]
+		},
+		"modern": {
+			"period": "1986 - Present",
+			"description": "The FSM is a sovereign nation with strong ties to the United States through the Compact of Free Association. US financial assistance and access to education and services play outsized roles in the national economy. The country faces development constraints from remoteness, small population, limited arable land, and vulnerability to climate change and sea-level rise. Governance is a federal blend of customary authority and republican institutions; state and municipal networks remain central to daily life. Fisheries, copra, and limited tourism are economic pillars while migration and labor agreements shape demographics.",
+			"keyEvents": [
+				{
+					"year": "2004",
+					"title": "Compact amendments and longer-term arrangements",
+					"description": "Amendments and implementation packages adjust financial timelines and administrative arrangements with the United States."
+				},
+				{
+					"year": "21st century",
+					"title": "Climate vulnerability and development dialogue",
+					"description": "Rising sea levels, extreme weather, and development dependence shape domestic and international policy priorities."
+				}
+			],
+			"notableFigures": ["Prominent modern leaders include presidents and state governors"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500-500 BCE",
+				"era": "Ancient",
+				"title": "Austronesian settlement",
+				"description": "Early maritime settlers populate the Caroline Islands, establishing the linguistic and cultural basis of Micronesian societies."
+			},
+			{
+				"year": "c. 8th-12th c. CE",
+				"era": "Ancient",
+				"title": "Nan Madol and the Saudeleur",
+				"description": "Pohnpei's Nan Madol emerges as a ceremonial-political center under the Saudeleur dynasty."
+			},
+			{
+				"year": "1520s-1600s",
+				"era": "Colonial",
+				"title": "Spanish claims",
+				"description": "Spanish navigators chart and claim many Micronesian islands."
+			},
+			{
+				"year": "1899",
+				"era": "Colonial",
+				"title": "German administration begins",
+				"description": "Spain cedes or sells many Pacific possessions including parts of Micronesia to Germany."
+			},
+			{
+				"year": "1914-1920s",
+				"era": "Colonial",
+				"title": "Japanese mandate",
+				"description": "Japan occupies and administers the islands under the South Seas Mandate."
+			},
+			{
+				"year": "1947",
+				"era": "Colonial",
+				"title": "UN Trusteeship",
+				"description": "United Nations places islands under U.S. trusteeship as the Trust Territory of the Pacific Islands."
+			},
+			{
+				"year": "May 10, 1979",
+				"era": "Independence",
+				"title": "Constitution takes effect",
+				"description": "FSM constitution becomes effective and the federal government begins operating."
+			},
+			{
+				"year": "November 3, 1986",
+				"era": "Independence",
+				"title": "Compact enters into force / Sovereignty",
+				"description": "Compact of Free Association with the US takes effect; FSM achieves self-governing status under the Compact."
+			},
+			{
+				"year": "1991",
+				"era": "Independence",
+				"title": "UN membership",
+				"description": "FSM admitted to the United Nations."
+			}
+		]
+	},
+	{
+		"name": "Marshall Islands",
+		"overview": "A republic of coral atolls and islands in the central Pacific. Inhabited by Marshallese Austronesian voyagers for millennia, the atolls developed local chiefly systems and navigational expertise. European contact brought German then Japanese rule; after World War II the islands were administered by the United States as part of the UN Trust Territory. The Marshalls experienced extensive US nuclear testing in the 1940s-1950s, which caused lasting social and environmental impacts. The Republic adopted a constitution in 1979, entered the Compact of Free Association with the United States in 1986, and remains a sovereign state with strong US ties while facing serious climate, health, and economic challenges.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Marshall-Islands",
+			"urls": [
+				"https://www.britannica.com/place/Marshall-Islands",
+				"https://en.wikipedia.org/wiki/Marshall_Islands",
+				"https://2009-2017.state.gov/outofdate/bgn/marshallislands/55252.htm",
+				"https://www.state.gov/wp-content/uploads/2019/02/04-625-Micronesia-Compact-Amendment.pdf",
+				"https://www.reaganlibrary.gov/archives/speech/executive-order-12569-compact-free-association-republic-marshall-islands-federated"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Constitution Effective", "value": "May 1, 1979" },
+			{
+				"label": "Compact of Free Association (effective)",
+				"value": "October 21, 1986 (entered into force with the US)"
+			},
+			{
+				"label": "Capital",
+				"value": "Majuro (seat of government);"
+			},
+			{
+				"label": "Nuclear testing",
+				"value": "Site of 67 US nuclear tests (1946-1958)"
+			},
+			{ "label": "UN Membership", "value": "1991" }
+		],
+		"ancient": {
+			"period": "c. 2nd millennium BCE - c. 1500 CE",
+			"description": "The Marshall Islands were settled by Austronesian voyagers. Communities developed local atoll-based social structures and navigational skills adapted to low-lying coral environments. Oral histories record genealogies, land tenure customs, and canoe voyaging patterns that shaped Marshallese identity.",
+			"keyEvents": [
+				{
+					"year": "c. 2nd millennium BCE - 1st millennium CE",
+					"title": "Austronesian settlement and cultural formation",
+					"description": "Long-distance voyaging and colonization create the Marshallese linguistic and cultural core; adaptation to atoll ecology shapes settlement patterns."
+				}
+			],
+			"notableFigures": ["Traditional chiefs and navigator lineages (names vary by atoll and oral tradition)."]
+		},
+		"colonial": {
+			"period": "c. 16th century - 1947 (and WWII to 1947 transition)",
+			"description": "European contact, German commercial administration, Japanese mandate and WWII occupation defined the colonial era. Germany took formal control of many Caroline and Marshall Islands holdings around the turn of the 20th century. Japan occupied the Marshalls during World War I and administered them under the South Seas Mandate between wars. During WWII the islands were strategically important, and many atolls were battle sites. After Japan's defeat, the United States administered the islands under a UN trusteeship (Trust Territory of the Pacific Islands) from 1947.",
+			"keyEvents": [
+				{
+					"year": "late 1800s - 1899",
+					"title": "German commercial administration",
+					"description": "Germany established economic control (copra, trading companies) over many Micronesian islands including the Marshalls."
+				},
+				{
+					"year": "1914-1920s",
+					"title": "Japanese occupation and mandate",
+					"description": "Japan occupies the Marshalls in WWI and administers them under League of Nations mandate, increasing settlement and infrastructure."
+				},
+				{
+					"year": "1944-1945",
+					"title": "World War II battles and US occupation",
+					"description": "US forces capture key atolls; Japanese administration is removed and US authority expands in the postwar settlement."
+				},
+				{
+					"year": "1947",
+					"title": "UN trusteeship under US administration",
+					"description": "United Nations places the Marshalls in the Trust Territory of the Pacific Islands under US administration."
+				}
+			],
+			"notableFigures": [
+				"Local chiefly leaders",
+				"Colonial administrators from Germany and Japan",
+				"US trusteeship officials."
+			]
+		},
+		"modern": {
+			"period": "1946 - Present (focused modern era)",
+			"description": "Postwar US trusteeship brought infrastructure, schooling, and US strategic use of atolls. Between 1946 and 1958 the United States conducted nuclear tests at Bikini and Enewetak and other sites; forced relocations and long-term health and environmental effects followed and remain central to Marshallese politics and claims for remediation. The Marshall Islands adopted a constitution and internal self-government in 1979 and entered the Compact of Free Association with the United States in 1986, securing defense guarantees and economic assistance while remaining sovereign. Contemporary priorities include addressing the nuclear legacy, climate change adaptation, economic diversification, and health and education development.",
+			"keyEvents": [
+				{
+					"year": "1946-1958",
+					"title": "US nuclear testing program",
+					"description": "Sixty-seven nuclear tests, including 'Operation Crossroads' (Bikini, 1946) and the 1952 'Mike' thermonuclear test (Enewetak), produce profound environmental and human consequences."
+				},
+				{
+					"year": "1979",
+					"title": "Constitution and internal self-government",
+					"description": "Marshallese voters approve a constitution; the republic's institutions come into effect May 1, 1979."
+				},
+				{
+					"year": "October 21, 1986",
+					"title": "Compact enters into force",
+					"description": "Compact of Free Association with the United States takes effect for the Marshall Islands; trusteeship responsibilities are adjusted as per UN processes."
+				},
+				{
+					"year": "1991 - present",
+					"title": "International advocacy and climate threat",
+					"description": "Marshall Islands pursues legal, diplomatic, and scientific efforts on nuclear claims and climate change; sea-level rise is an existential policy issue."
+				}
+			],
+			"notableFigures": ["Presidents and negotiators of the Compact"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2nd millennium BCE",
+				"era": "Ancient",
+				"title": "Austronesian settlement",
+				"description": "Marshallese islands populated by Austronesian voyagers; local atoll cultures develop."
+			},
+			{
+				"year": "late 1800s",
+				"era": "Colonial",
+				"title": "European contact and German control",
+				"description": "Germany consolidates commercial influence across Micronesia including the Marshalls."
+			},
+			{
+				"year": "1914-1920s",
+				"era": "Colonial",
+				"title": "Japanese mandate",
+				"description": "Japan administers the Marshalls under the South Seas mandate following WWI."
+			},
+			{
+				"year": "1946",
+				"era": "Modern",
+				"title": "Operation Crossroads (Bikini)",
+				"description": "United States begins nuclear testing program at Bikini Atoll; relocations and contamination follow."
+			},
+			{
+				"year": "1946-1958",
+				"era": "Modern",
+				"title": "Expanded nuclear testing",
+				"description": "A total of dozens of atmospheric and underground tests at Bikini and Enewetak create long-term health and environmental impacts."
+			},
+			{
+				"year": "May 1, 1979",
+				"era": "Independence",
+				"title": "Constitution comes into force",
+				"description": "Marshall Islands constitution becomes effective; internal self-government established."
+			},
+			{
+				"year": "October 21, 1986",
+				"era": "Independence",
+				"title": "Compact enters into force",
+				"description": "Compact of Free Association with the United States takes effect for the Marshall Islands."
+			},
+			{
+				"year": "1991",
+				"era": "Independence",
+				"title": "UN membership",
+				"description": "Marshall Islands admitted to the United Nations."
+			}
+		]
+	},
+	{
+		"name": "Fiji",
+		"overview": "Fiji's history spans over 3,500 years from the arrival of the Lapita people to its emergence as a modern Pacific nation. The indigenous Fijians developed sophisticated societies with complex chieftainships and maritime traditions before European contact in the 17th century. After a brief period as an independent kingdom under paramount chief Ratu Seru Epenisa Cakobau, Fiji became a British Crown colony in 1874, during which indentured laborers from India were brought to work sugar plantations, fundamentally transforming the nation's demographic makeup. Independence in 1970 brought challenges of governing a multi-ethnic society, leading to four military coups between 1987 and 2006 rooted in tensions between indigenous Fijians and Indo-Fijians over political power and land rights. Despite this turbulent political history, Fiji has maintained its cultural heritage and democratic institutions, working toward reconciliation and becoming a leader in Pacific regional affairs.",
+		"source": {
+			"label": "Wikipedia - History of Fiji",
+			"url": "https://en.wikipedia.org/wiki/History_of_Fiji",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Fiji",
+				"https://www.britannica.com/place/Fiji-republic-Pacific-Ocean/History",
+				"https://en.wikipedia.org/wiki/Colony_of_Fiji"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "October 10, 1970"
+			},
+			{
+				"label": "British Colony Established",
+				"value": "October 10, 1874"
+			},
+			{
+				"label": "Capital",
+				"value": "Suva"
+			},
+			{
+				"label": "First Settlers",
+				"value": "Lapita people (c. 1500-1000 BCE)"
+			},
+			{
+				"label": "Major Ethnic Groups",
+				"value": "Indigenous Fijian, Indo-Fijian"
+			},
+			{
+				"label": "Number of Islands",
+				"value": "Over 330 islands"
+			}
+		],
+		"pre-colonial": {
+			"period": "c. 1500 BCE - 1643 CE",
+			"description": "Fiji was first settled by the Lapita people around 1500-1000 BCE, part of a remarkable seafaring migration from Southeast Asia that populated much of the Pacific. These skilled navigators brought with them distinctive pottery with intricate geometric designs, pigs, and advanced horticultural knowledge. The Lapita culture evolved into distinctly Fijian societies characterized by complex chieftainship systems, with powerful chiefs called Ratu leading hierarchical social structures. Fijians developed sophisticated maritime technology, building large ocean-going canoes for trade and warfare across the Pacific. They created a monetary system using polished sperm whale teeth called tabua, which became central to ceremonial exchanges and remain culturally significant today. Fijian society was organized around mataqali (clans) within larger vanua (land-based social units), with chiefs holding both spiritual and political authority. Warfare was endemic, with elaborate protocols and specialized weapons including distinctive war clubs. Villages were often fortified with earth mounds and palisades. Fijians practiced horticulture, growing yams, taro, and breadfruit in complex agricultural systems. They developed sophisticated textile production using masi (bark cloth) for clothing and ceremonial purposes. Spiritual leaders called bete mediated between the human and divine worlds, with yaqona (kava) consumption central to ceremonies. The practice of cannibalism, whether ritualistic or exaggerated by later Europeans for colonial justification, became part of Fiji's fearsome reputation. By the time Europeans arrived in the 17th century, Fijian society was highly organized with powerful confederacies competing for dominance, particularly centered on the islands of Bau and Rewa.",
+			"keyEvents": [
+				{
+					"year": "c. 1500-1000 BCE",
+					"title": "Lapita Settlement",
+					"description": "Lapita people arrive in Fiji, bringing pottery, pigs, and agricultural knowledge, establishing first human settlements"
+				},
+				{
+					"year": "c. 500 BCE - 1000 CE",
+					"title": "Distinctly Fijian Culture Emerges",
+					"description": "Lapita pottery traditions evolve into unique Fijian cultural expressions, with development of complex chieftainship systems"
+				},
+				{
+					"year": "c. 1000-1800 CE",
+					"title": "Chiefdom Consolidation",
+					"description": "Powerful confederacies emerge, particularly centered on Bau, Rewa, and Cakaudrove, with extensive inter-island warfare and trade"
+				},
+				{
+					"year": "1643",
+					"title": "First European Sighting",
+					"description": "Dutch explorer Abel Tasman becomes first European to sight Fiji, encountering northern islands of Vanua Levu and Taveuni"
+				},
+				{
+					"year": "1774",
+					"title": "Captain Cook's Passage",
+					"description": "British Captain James Cook sails through Fijian waters but does not land, noting the islands' location"
+				},
+				{
+					"year": "1789",
+					"title": "Bligh's Journey",
+					"description": "Captain William Bligh navigates through Fiji after the Bounty mutiny, documenting the islands but avoiding landing due to cannibalism reports"
+				}
+			],
+			"notableFigures": [
+				"Traditional chiefs and bete (spiritual leaders)",
+				"Confederacy leaders of Bau, Rewa, and Cakaudrove"
+			]
+		},
+		"colonial": {
+			"period": "1643 - 1970",
+			"description": "European contact with Fiji began in 1643 when Dutch explorer Abel Tasman sighted the islands, but sustained contact didn't occur until the early 19th century. Beachcombers, escaped convicts from Australia, and traders seeking sandalwood (1804-1813) and bêche-de-mer (sea cucumber) arrived in the 1820s, bringing guns and disease that transformed Fijian society. The town of Levuka on Ovalau became the first European settlement. Wesleyan missionaries arrived in 1835, beginning the Christianization of Fiji. Paramount Chief Ratu Seru Epenisa Cakobau of Bau emerged as the most powerful chief, though he faced mounting debts and American threats. In 1871, Cakobau established Fiji as a constitutional monarchy with himself as King, but the government struggled. Facing financial collapse and unable to maintain order, Cakobau offered to cede Fiji to Britain. On October 10, 1874, Fiji became a British Crown colony. The first governor, Sir Arthur Gordon, implemented policies that profoundly shaped Fiji's future: he banned the sale of Fijian land, governed indigenous Fijians through chiefs in a system of indirect rule, and protected them from plantation labor. To develop the sugar industry, Gordon introduced indentured laborers from India beginning in 1879. Over the next 40 years, more than 60,000 Indians arrived to work on plantations under harsh conditions. Many stayed after their indentures expired, establishing a permanent Indo-Fijian community. By the 1940s, Indo-Fijians outnumbered indigenous Fijians, creating demographic tensions that would define post-independence politics. The colonial administration reinforced chiefly authority through the Great Council of Chiefs (established 1876) while keeping the two communities largely separate. During World War II, Fijians served with distinction in the Pacific campaigns, while most Indo-Fijians refused military service due to discriminatory pay. This created lasting resentments. Constitutional development toward independence began in the 1960s, driven more by international pressure than domestic demand.",
+			"keyEvents": [
+				{
+					"year": "1804-1813",
+					"title": "Sandalwood Trade",
+					"description": "European and American traders arrive seeking sandalwood, beginning sustained contact and introducing firearms"
+				},
+				{
+					"year": "1820s",
+					"title": "Levuka Established",
+					"description": "European traders establish Fiji's first European-style town at Levuka on Ovalau island"
+				},
+				{
+					"year": "1835",
+					"title": "Christian Missionaries Arrive",
+					"description": "Wesleyan missionaries begin work in Fiji, gradually converting chiefs and commoners to Christianity"
+				},
+				{
+					"year": "1854",
+					"title": "Cakobau Converts to Christianity",
+					"description": "Paramount Chief Cakobau converts to Christianity, accelerating the spread of the new religion throughout Fiji"
+				},
+				{
+					"year": "1871",
+					"title": "Kingdom of Fiji",
+					"description": "Cakobau establishes constitutional monarchy with himself as King, attempting to create unified Fijian state"
+				},
+				{
+					"year": "1874",
+					"title": "Deed of Cession",
+					"description": "October 10, Cakobau cedes Fiji to British Crown after government collapse; becomes Crown colony"
+				},
+				{
+					"year": "1875-1876",
+					"title": "Measles Epidemic",
+					"description": "Devastating measles outbreak kills over 40,000 Fijians, approximately one-third of indigenous population"
+				},
+				{
+					"year": "1876",
+					"title": "Great Council of Chiefs",
+					"description": "Governor Arthur Gordon establishes Great Council of Chiefs to advise colonial administration and reinforce chiefly authority"
+				},
+				{
+					"year": "1879-1916",
+					"title": "Indian Indentured Labor",
+					"description": "Over 60,000 Indian indentured laborers brought to work sugar plantations, fundamentally changing Fiji's demographics"
+				},
+				{
+					"year": "1920",
+					"title": "Indians Become Permanent Community",
+					"description": "Most Indians remain in Fiji after indentures expire, establishing farms and businesses, creating multi-ethnic society"
+				},
+				{
+					"year": "1942-1945",
+					"title": "World War II Service",
+					"description": "Fijian soldiers serve with distinction in Pacific campaigns; Indo-Fijian non-participation creates lasting tensions"
+				},
+				{
+					"year": "1960s",
+					"title": "Constitutional Negotiations",
+					"description": "Series of constitutional conferences address path to independence amid ethnic tensions over political representation"
+				}
+			],
+			"notableFigures": [
+				"Ratu Seru Epenisa Cakobau (Paramount Chief, King of Fiji)",
+				"Sir Arthur Gordon (first British Governor)",
+				"Reverend Thomas Baker (missionary)",
+				"Ratu Sukuna (colonial-era leader and educator)"
+			]
+		},
+		"independence": {
+			"period": "1970 - Present",
+			"description": "Fiji achieved independence on October 10, 1970, becoming a dominion within the Commonwealth with Ratu Sir Kamisese Mara as first prime minister. The constitution attempted to balance power between ethnic groups through a complex system of communal and national seats. For 17 years, the Alliance Party governed under a policy of multiracialism, though indigenous Fijians maintained political dominance. This stability shattered in April 1987 when a coalition government led by Timoci Bavadra and supported primarily by Indo-Fijians won elections. Less than a month later, on May 14, Lieutenant Colonel Sitiveni Rabuka staged Fiji's first coup, overthrowing the elected government. A second coup in September 1987 made Fiji a republic outside the Commonwealth. The 1990 constitution entrenched indigenous political dominance. A more equitable 1997 constitution raised hopes for reconciliation. In 1999, Mahendra Chaudhry became Fiji's first Indo-Fijian prime minister, but in May 2000, businessman George Speight led an armed takeover, holding government members hostage for 56 days in Fiji's most traumatic coup. Military commander Frank Bainimarama intervened, eventually restoring order and installing an interim government. The pattern repeated in December 2006 when Bainimarama himself staged a coup against Prime Minister Laisenia Qarase, citing corruption and policies favoring ethnic Fijians. Bainimarama ruled for eight years before holding elections under a new 2013 constitution that abolished racial voting and the Great Council of Chiefs. His Fiji First party won elections in 2014 and 2018. In 2022, the opposition coalition led by former coup leader Rabuka won elections, marking the first peaceful transfer of power. Throughout this turbulent period, Fiji has grappled with fundamental questions of identity, land rights, and power-sharing in a multi-ethnic society.",
+			"keyEvents": [
+				{
+					"year": "1970",
+					"title": "Independence Achieved",
+					"description": "October 10, Fiji becomes independent nation within Commonwealth with complex constitution balancing ethnic interests"
+				},
+				{
+					"year": "1970-1987",
+					"title": "Alliance Party Era",
+					"description": "Ratu Mara's Alliance Party governs continuously under multiracialism policy, maintaining stability but indigenous dominance"
+				},
+				{
+					"year": "1987",
+					"title": "First Coup",
+					"description": "May 14, Lt. Col. Sitiveni Rabuka overthrows Indo-Fijian-supported coalition government of Timoci Bavadra"
+				},
+				{
+					"year": "1987",
+					"title": "Second Coup and Republic",
+					"description": "September 25, Rabuka stages second coup; October 10, Fiji declared republic, leaving Commonwealth"
+				},
+				{
+					"year": "1990",
+					"title": "Discriminatory Constitution",
+					"description": "New constitution guarantees indigenous Fijian political control and institutionalizes ethnic divisions"
+				},
+				{
+					"year": "1997",
+					"title": "Reformed Constitution",
+					"description": "New constitution removes many discriminatory provisions, raises hopes for genuine multiracialism"
+				},
+				{
+					"year": "1999",
+					"title": "First Indo-Fijian PM",
+					"description": "Mahendra Chaudhry becomes first Indo-Fijian prime minister after historic election victory"
+				},
+				{
+					"year": "2000",
+					"title": "Speight Coup",
+					"description": "May 19, George Speight and armed supporters storm parliament, holding government hostage for 56 days"
+				},
+				{
+					"year": "2000",
+					"title": "Military Intervention",
+					"description": "Commander Frank Bainimarama declares martial law, eventually restores order and installs interim government"
+				},
+				{
+					"year": "2000",
+					"title": "November Mutiny",
+					"description": "Military mutiny at Suva headquarters leaves eight soldiers dead in attempt to overthrow Bainimarama"
+				},
+				{
+					"year": "2006",
+					"title": "Bainimarama Coup",
+					"description": "December 5, Bainimarama overthrows Qarase government citing corruption and pro-indigenous policies"
+				},
+				{
+					"year": "2009",
+					"title": "Constitutional Crisis",
+					"description": "Court of Appeal rules 2006 coup illegal; President abrogates constitution on military's advice"
+				},
+				{
+					"year": "2013",
+					"title": "New Constitution",
+					"description": "New constitution abolishes racial voting, Great Council of Chiefs, establishes equal citizenship"
+				},
+				{
+					"year": "2014",
+					"title": "Return to Elections",
+					"description": "First elections in eight years; Bainimarama's Fiji First party wins majority, legitimizing his rule"
+				},
+				{
+					"year": "2022",
+					"title": "Democratic Transfer",
+					"description": "Opposition coalition led by Rabuka defeats Bainimarama; first peaceful democratic transition after decades of coups"
+				}
+			],
+			"notableFigures": [
+				"Ratu Sir Kamisese Mara",
+				"Timoci Bavadra",
+				"Sitiveni Rabuka",
+				"Mahendra Chaudhry",
+				"George Speight",
+				"Frank Bainimarama",
+				"Ratu Sukuna",
+				"Adi Lady Lala Mara"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500-1000 BCE",
+				"era": "Pre-Colonial",
+				"title": "Lapita Arrival",
+				"description": "Lapita people first settle Fiji, bringing pottery, agriculture, and seafaring traditions"
+			},
+			{
+				"year": "1643",
+				"era": "Pre-Colonial",
+				"title": "European Discovery",
+				"description": "Dutch explorer Abel Tasman becomes first European to sight Fiji"
+			},
+			{
+				"year": "1835",
+				"era": "Colonial",
+				"title": "Missionaries Arrive",
+				"description": "Christian missionaries begin converting Fijian population"
+			},
+			{
+				"year": "1874",
+				"era": "Colonial",
+				"title": "British Colony",
+				"description": "October 10, Cakobau cedes Fiji to Britain; becomes Crown colony"
+			},
+			{
+				"year": "1879-1916",
+				"era": "Colonial",
+				"title": "Indian Indenture",
+				"description": "Over 60,000 Indians brought as indentured laborers for sugar plantations"
+			},
+			{
+				"year": "1970",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "October 10, Fiji becomes independent nation within Commonwealth"
+			},
+			{
+				"year": "1987",
+				"era": "Independence",
+				"title": "First Coups",
+				"description": "Two military coups by Rabuka overthrow elected government and establish republic"
+			},
+			{
+				"year": "2000",
+				"era": "Independence",
+				"title": "Speight Coup",
+				"description": "Armed takeover holds government hostage for 56 days, triggering political crisis"
+			},
+			{
+				"year": "2006",
+				"era": "Independence",
+				"title": "Fourth Coup",
+				"description": "Military commander Bainimarama seizes power in Fiji's fourth coup"
+			},
+			{
+				"year": "2014",
+				"era": "Independence",
+				"title": "Democratic Elections",
+				"description": "First elections in eight years restore democratic process"
+			},
+			{
+				"year": "2022",
+				"era": "Independence",
+				"title": "Peaceful Transfer",
+				"description": "First democratic change of government after decades of military intervention"
+			}
+		]
+	},
+	{
+		"name": "Papua New Guinea",
+		"overview": "Papua New Guinea's history encompasses one of the world's oldest continuous human settlements, dating back approximately 50,000-60,000 years, making it one of the first regions outside Africa populated by modern humans. The island developed extraordinary cultural and linguistic diversity with over 800 distinct language groups, and was one of the few places where agriculture was independently invented around 7,000 BCE. European colonization came late, with the territory divided between Germany (northeast) and Britain (southeast) in the 1880s. Australia assumed control of both territories during and after World War I, administering them separately until 1949. The New Guinea campaign of World War II (1942-1945) was one of the war's bloodiest, with over 200,000 deaths. After decades of Australian rule, Papua New Guinea achieved independence on September 16, 1975, becoming the last major territory in Oceania to gain sovereignty. Since independence, PNG has struggled with nation-building across its deeply diverse populations, managing resource wealth, and developing infrastructure in one of the world's most challenging terrains, while maintaining vibrant traditional cultures alongside modern democratic institutions.",
+		"source": {
+			"label": "Wikipedia - History of Papua New Guinea",
+			"url": "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea",
+				"https://www.britannica.com/place/Papua-New-Guinea",
+				"https://papuanewguinea.travel/history-tours/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "September 16, 1975"
+			},
+			{
+				"label": "First Human Settlement",
+				"value": "c. 50,000-60,000 years ago"
+			},
+			{
+				"label": "Capital",
+				"value": "Port Moresby"
+			},
+			{
+				"label": "Languages",
+				"value": "Over 800 indigenous languages"
+			},
+			{
+				"label": "Agriculture Invented",
+				"value": "c. 7,000 BCE (Kuk Valley)"
+			},
+			{
+				"label": "Population",
+				"value": "Over 9 million (2020s)"
+			}
+		],
+		"ancient": {
+			"period": "c. 60,000 BCE - 1526 CE",
+			"description": "Papua New Guinea preserves one of humanity's most ancient and remarkable settlement histories. Archaeological and genetic evidence indicates that modern humans arrived approximately 50,000-60,000 years ago, crossing from Southeast Asia during the last Ice Age when lower sea levels created the landmass of Sahul connecting New Guinea with Australia. These early inhabitants likely arrived via the southern route across the Arafura Plain, now submerged, settling first in the southeastern lowlands before gradually dispersing to the highlands and interior following major river systems. For tens of thousands of years, these Melanesian peoples developed in isolation, creating extraordinary cultural and linguistic diversity unmatched anywhere on Earth. Stone tools dating back 40,000 years have been found, and recent discoveries show highland settlements at 2,000 meters altitude dating to 49,000 years ago, making them among the oldest high-altitude human habitations. Around 7,000 BCE, in the highlands near modern Kuk, people independently invented agriculture, one of only a few places globally where farming developed without outside influence. They domesticated taro, yams, bananas, and sugarcane, creating sophisticated drainage and mound systems still visible today. This Neolithic revolution led to population growth and increasingly complex societies. Around 3,500 years ago, Austronesian-speaking peoples arrived from Island Southeast Asia, bringing the Lapita cultural complex with distinctive pottery, pigs, chickens, and new crops. These newcomers settled primarily in coastal areas and islands, interacting and sometimes intermarrying with existing populations. By the time Europeans arrived in the 16th century, New Guinea hosted an astonishing diversity of societies: highland warriors living in fortified villages practicing sweet potato agriculture, coastal fishing communities, lowland sago gatherers, and island traders. With over 800 distinct languages and countless cultural traditions, PNG represents one of the most diverse human populations ever to develop. Traditional societies practiced elaborate ceremonial exchanges, maintained complex kinship systems, and created remarkable art including intricate carvings, masks, and body decoration.",
+			"keyEvents": [
+				{
+					"year": "c. 60,000-50,000 BCE",
+					"title": "First Human Settlement",
+					"description": "Modern humans arrive from Southeast Asia during Ice Age, crossing to Sahul via southern route from Arafura region"
+				},
+				{
+					"year": "c. 49,000 years ago",
+					"title": "Highland Settlement",
+					"description": "Humans establish high-altitude settlements at 2,000 meters in Owen Stanley Range, among world's oldest highland habitations"
+				},
+				{
+					"year": "c. 40,000 years ago",
+					"title": "Stone Tool Development",
+					"description": "Sophisticated stone tools appear, including obsidian tools traded across regions from 23,000 years ago"
+				},
+				{
+					"year": "c. 7000 BCE",
+					"title": "Agriculture Invented",
+					"description": "Independent development of agriculture in highlands at Kuk Valley, one of few places globally where farming originated"
+				},
+				{
+					"year": "c. 5000-3000 BCE",
+					"title": "Agricultural Intensification",
+					"description": "Complex drainage systems and mound cultivation develop, supporting growing populations in highlands"
+				},
+				{
+					"year": "c. 1500 BCE",
+					"title": "Austronesian Arrival",
+					"description": "Lapita people arrive from Southeast Asia bringing pottery, pigs, and new cultural practices to coastal regions"
+				},
+				{
+					"year": "c. 300 years ago",
+					"title": "Sweet Potato Introduction",
+					"description": "Sweet potato reaches New Guinea, revolutionizing highland agriculture with higher yields and enabling population expansion"
+				},
+				{
+					"year": "1526-1527",
+					"title": "European Discovery",
+					"description": "Portuguese explorer Jorge de Meneses possibly first European to sight New Guinea"
+				}
+			],
+			"notableFigures": [
+				"Traditional highland clan leaders",
+				"Coastal trading chiefs",
+				"Ceremonial exchange network organizers"
+			]
+		},
+		"colonial": {
+			"period": "1526 - 1975",
+			"description": "European contact with New Guinea began in the early 16th century when Portuguese and Spanish navigators sighted the island. In 1545, Spanish explorer Yñigo Ortiz de Retez named it 'New Guinea' due to perceived resemblance of inhabitants to peoples of African Guinea. Despite centuries of occasional visits, European colonization came remarkably late. The Dutch claimed the western half as part of the Dutch East Indies in 1828. In 1883, Queensland attempted to annex southeastern New Guinea, alarming Germany which was establishing a presence in the Pacific. In 1884, this triggered a partition: Germany annexed the northeastern quadrant as German New Guinea (Kaiser-Wilhelmsland), while Britain declared a protectorate over the southeast, called British New Guinea. Britain transferred British New Guinea to Australia in 1902, becoming the Territory of Papua in 1906 under the Papua Act. Colonial development focused on copra plantations and gold mining. In German New Guinea, plantation agriculture flourished around Madang and the islands, using indentured laborers from various regions. When World War I began in 1914, Australian forces quickly captured German New Guinea, which became an Australian mandate under the League of Nations in 1921 as the Territory of New Guinea. Crucially, Papua and New Guinea remained separate administrations with different legal statuses: Papua was an Australian territory, while New Guinea was a League of Nations mandate (later UN trust territory). This distinction persisted until 1949. The New Guinea campaign (1942-1945) was one of World War II's bloodiest theaters. Japanese forces invaded in 1942, advancing toward Port Moresby. The Battle of Milne Bay (1942) was Japan's first land defeat in the Pacific. The Kokoda Track campaign saw brutal fighting in mountainous jungle terrain. Approximately 216,000 Japanese, Australian, American, and other Allied soldiers died. Papua New Guineans served as invaluable carriers, scouts, and guides—the 'Fuzzy Wuzzy Angels'—saving countless Allied lives. After the war, the Papua and New Guinea Act 1949 united the territories administratively as the Territory of Papua and New Guinea, though maintaining distinct legal identities. Constitutional development accelerated in the 1960s. The first House of Assembly was established in 1964. In 1972, Michael Somare became Chief Minister, leading the territory toward self-government (achieved December 1, 1973) and independence on September 16, 1975.",
+			"keyEvents": [
+				{
+					"year": "1526-1527",
+					"title": "First European Contact",
+					"description": "Portuguese explorer Jorge de Meneses likely first European to land on New Guinea"
+				},
+				{
+					"year": "1545",
+					"title": "Named 'New Guinea'",
+					"description": "Spanish explorer Yñigo Ortiz de Retez names island 'New Guinea' after African Guinea coast"
+				},
+				{
+					"year": "1828",
+					"title": "Dutch Claim Western Half",
+					"description": "Netherlands claims western New Guinea as part of Dutch East Indies"
+				},
+				{
+					"year": "1884",
+					"title": "Colonial Partition",
+					"description": "Germany annexes northeast as German New Guinea; Britain declares protectorate over southeast as British New Guinea"
+				},
+				{
+					"year": "1906",
+					"title": "Australian Control of Papua",
+					"description": "British transfer Territory of Papua to Australian administration under Papua Act"
+				},
+				{
+					"year": "1914",
+					"title": "Australian Invasion",
+					"description": "Australian forces capture German New Guinea at outbreak of World War I"
+				},
+				{
+					"year": "1921",
+					"title": "League of Nations Mandate",
+					"description": "Australia receives League of Nations mandate to administer former German New Guinea"
+				},
+				{
+					"year": "1932",
+					"title": "Highland First Contact",
+					"description": "Australian prospector Michael Leahy makes first contact with highland peoples, documenting previously unknown populations"
+				},
+				{
+					"year": "1942",
+					"title": "Japanese Invasion",
+					"description": "Japanese forces invade New Guinea, beginning brutal Pacific War campaign"
+				},
+				{
+					"year": "1942",
+					"title": "Battle of Milne Bay",
+					"description": "Australian forces defeat Japanese attack, first Allied land victory against Japan in Pacific"
+				},
+				{
+					"year": "1942-1943",
+					"title": "Kokoda Track Campaign",
+					"description": "Desperate fighting along Kokoda Track as Australians halt Japanese advance on Port Moresby"
+				},
+				{
+					"year": "1942-1945",
+					"title": "New Guinea Campaign",
+					"description": "Prolonged brutal fighting across New Guinea; approximately 216,000 military deaths"
+				},
+				{
+					"year": "1949",
+					"title": "Administrative Union",
+					"description": "Papua and New Guinea Act unites two territories administratively as Territory of Papua and New Guinea"
+				},
+				{
+					"year": "1964",
+					"title": "House of Assembly",
+					"description": "First House of Assembly established, giving Papua New Guineans greater role in governance"
+				},
+				{
+					"year": "1972",
+					"title": "Somare Becomes Chief Minister",
+					"description": "Michael Somare elected Chief Minister, leading drive toward independence"
+				},
+				{
+					"year": "1973",
+					"title": "Self-Government",
+					"description": "December 1, Territory achieves self-government as Papua New Guinea"
+				}
+			],
+			"notableFigures": [
+				"Jorge de Meneses",
+				"Yñigo Ortiz de Retez",
+				"Sir William MacGregor (British administrator)",
+				"Sir Hubert Murray (Lieutenant-Governor of Papua 1908-1940)",
+				"Michael Leahy (gold prospector, first contact)",
+				"General Douglas MacArthur",
+				"'Fuzzy Wuzzy Angels' (PNG carriers and scouts)"
+			]
+		},
+		"independence": {
+			"period": "1975 - Present",
+			"description": "Papua New Guinea achieved independence on September 16, 1975, with Michael Somare as first prime minister. The new nation faced immense challenges: unifying over 800 language groups and countless traditional societies into a single state, developing infrastructure across extraordinarily difficult terrain, and managing expectations while building institutions from scratch. The Westminster parliamentary system was adopted, with provincial governments established to address regional diversity. Somare led coalition governments through the crucial early years, though political instability became a pattern with frequent votes of no confidence toppling governments. PNG's economy centers on resource extraction—gold, copper, oil, natural gas, and timber—but benefits rarely reach rural populations where most citizens live traditional subsistence lifestyles. The Panguna copper mine on Bougainville generated enormous revenue but also sparked a brutal secessionist conflict (1988-1998) costing 15,000-20,000 lives. The Bougainville Peace Agreement (2001) granted autonomy, and a 2019 referendum overwhelmingly supported independence, though implementation remains negotiated. PNG has faced ongoing challenges: tribal conflicts in the highlands, law and order issues, corruption, weak infrastructure, and uneven development between Port Moresby and rural areas. Natural disasters including earthquakes, tsunamis, and volcanic eruptions periodically devastate communities. Resource developments like the PNG LNG project bring revenue but also environmental concerns and benefit-sharing disputes. Despite challenges, PNG has maintained continuous democratic governance since independence, a significant achievement. The nation is culturally vibrant with traditional customs thriving alongside modernity, hosts remarkable biodiversity, and plays an increasingly important role in Pacific regional politics. Women's participation in politics and leadership has gradually increased, though significant gender inequality persists. PNG maintains close ties with Australia, which remains the largest aid donor and security partner, while also developing relationships with China and other Asian powers. The economy has shown resilience despite commodity price fluctuations, though poverty remains widespread with approximately 40% of the population living below the poverty line. Education and healthcare access remain limited, especially in remote areas. PNG joined APEC in 1993 and hosted the APEC summit in 2018, showcasing its growing international presence. The country continues to balance traditional governance through chiefs and modern democratic institutions, manage its extraordinary cultural diversity, and pursue economic development while preserving cultural heritage and addressing environmental concerns in one of the world's last great wildernesses.",
+			"keyEvents": [
+				{
+					"year": "1975",
+					"title": "Independence",
+					"description": "September 16, Papua New Guinea becomes independent nation with Michael Somare as first prime minister"
+				},
+				{
+					"year": "1975-1980",
+					"title": "Nation-Building Era",
+					"description": "Early years focus on establishing institutions, integrating diverse populations, and developing infrastructure"
+				},
+				{
+					"year": "1988",
+					"title": "Bougainville Crisis Begins",
+					"description": "Armed conflict erupts on Bougainville over Panguna copper mine, beginning decade-long civil war"
+				},
+				{
+					"year": "1989",
+					"title": "Panguna Mine Closes",
+					"description": "Bougainville Revolutionary Army forces closure of massive Panguna copper mine, costing PNG billions in revenue"
+				},
+				{
+					"year": "1990",
+					"title": "Bougainville Independence Declared",
+					"description": "May 17, Bougainville unilaterally declares independence as Republic of Bougainville, not internationally recognized"
+				},
+				{
+					"year": "1998",
+					"title": "Bougainville Ceasefire",
+					"description": "Lincoln Agreement establishes permanent ceasefire after conflict kills estimated 15,000-20,000 people"
+				},
+				{
+					"year": "2001",
+					"title": "Bougainville Peace Agreement",
+					"description": "Comprehensive peace agreement grants Bougainville autonomy and promises referendum on independence"
+				},
+				{
+					"year": "2002",
+					"title": "Somare Returns to Power",
+					"description": "Michael Somare becomes prime minister again, serving until 2011 across multiple terms"
+				},
+				{
+					"year": "2006",
+					"title": "Australian Intervention",
+					"description": "Enhanced Cooperation Program sees Australian police deployed to PNG amid law and order crisis"
+				},
+				{
+					"year": "2009",
+					"title": "PNG LNG Project",
+					"description": "ExxonMobil-led liquefied natural gas project approved, representing largest investment in PNG history"
+				},
+				{
+					"year": "2011-2012",
+					"title": "Constitutional Crisis",
+					"description": "Dual prime minister crisis sees Somare and Peter O'Neill both claiming legitimacy; resolved in O'Neill's favor"
+				},
+				{
+					"year": "2014",
+					"title": "PNG LNG Begins Production",
+					"description": "First LNG exports begin, though revenues and benefits distribution remain controversial"
+				},
+				{
+					"year": "2018",
+					"title": "APEC Summit",
+					"description": "PNG hosts Asia-Pacific Economic Cooperation summit in Port Moresby, raising international profile"
+				},
+				{
+					"year": "2019",
+					"title": "Bougainville Independence Referendum",
+					"description": "December, 98% vote for independence from PNG; implementation negotiations ongoing"
+				},
+				{
+					"year": "2019",
+					"title": "James Marape Becomes PM",
+					"description": "James Marape takes office promising to renegotiate resource contracts for greater PNG benefit"
+				},
+				{
+					"year": "2022",
+					"title": "Port Moresby Riots",
+					"description": "January, police strike triggers widespread looting and violence in capital; at least 15 killed"
+				}
+			],
+			"notableFigures": [
+				"Sir Michael Somare ('Father of the Nation')",
+				"Julius Chan",
+				"Paias Wingti",
+				"Francis Ona (Bougainville Revolutionary Army leader)",
+				"Sir Mekere Morauta",
+				"Peter O'Neill",
+				"James Marape",
+				"Jean Kekedo (women's rights advocate)",
+				"Dame Carol Kidu (first female MP)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 60,000-50,000 BCE",
+				"era": "Ancient",
+				"title": "First Settlement",
+				"description": "Modern humans arrive in New Guinea, among earliest migrations from Africa"
+			},
+			{
+				"year": "c. 7000 BCE",
+				"era": "Ancient",
+				"title": "Agriculture Invented",
+				"description": "Independent development of agriculture in Kuk Valley highlands"
+			},
+			{
+				"year": "c. 1500 BCE",
+				"era": "Ancient",
+				"title": "Austronesian Arrival",
+				"description": "Lapita people arrive bringing new technologies and cultural practices"
+			},
+			{
+				"year": "1526",
+				"era": "Colonial",
+				"title": "European Discovery",
+				"description": "Portuguese explorer likely first European to reach New Guinea"
+			},
+			{
+				"year": "1884",
+				"era": "Colonial",
+				"title": "Colonial Partition",
+				"description": "Germany and Britain divide eastern New Guinea between them"
+			},
+			{
+				"year": "1906",
+				"era": "Colonial",
+				"title": "Australian Papua",
+				"description": "Australia assumes control of British New Guinea as Territory of Papua"
+			},
+			{
+				"year": "1942-1945",
+				"era": "Colonial",
+				"title": "WWII Campaign",
+				"description": "Brutal Pacific War fighting across New Guinea; over 200,000 deaths"
+			},
+			{
+				"year": "1949",
+				"era": "Colonial",
+				"title": "Administrative Union",
+				"description": "Papua and New Guinea combined under single Australian administration"
+			},
+			{
+				"year": "1975",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "September 16, PNG becomes independent with Michael Somare as prime minister"
+			},
+			{
+				"year": "1988-1998",
+				"era": "Independence",
+				"title": "Bougainville Crisis",
+				"description": "Decade-long civil war on Bougainville costs 15,000-20,000 lives"
+			},
+			{
+				"year": "2001",
+				"era": "Independence",
+				"title": "Bougainville Peace",
+				"description": "Peace agreement grants autonomy and promises independence referendum"
+			},
+			{
+				"year": "2014",
+				"era": "Independence",
+				"title": "LNG Era Begins",
+				"description": "PNG LNG project begins exports, transforming economy"
+			},
+			{
+				"year": "2019",
+				"era": "Independence",
+				"title": "Bougainville Referendum",
+				"description": "Overwhelming vote for independence; negotiations continue on implementation"
+			}
+		]
 	}
 ]
