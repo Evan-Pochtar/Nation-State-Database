@@ -101,6 +101,25 @@
 		return countryNameCache.get(f)!;
 	}
 
+	function getCountryStroke(isSelected: boolean, isHovered: boolean): { color: string; width: number } {
+		if (isChloroplethTheme) {
+			return {
+				color: isSelected ? '#fbbf24' : isHovered ? '#fff' : '#1e293b',
+				width: isSelected ? 2.5 : isHovered ? 1.8 : 0.8
+			};
+		}
+		if (currentTheme === 'dark') {
+			return {
+				color: isSelected ? 'rgba(34, 211, 238, 0.9)' : isHovered ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.4)',
+				width: isSelected ? 2 : isHovered ? 1 : 0.5
+			};
+		} else if (currentTheme === 'colorful') {
+			return { color: '#000', width: isHovered ? 2 : 1.2 };
+		} else {
+			return { color: '#000', width: isHovered ? 2 : 1 };
+		}
+	}
+
 	function getCountryFillColor(index: number, isSelected: boolean = false, isHovered: boolean = false): string {
 		if (isChloroplethTheme && chloroplethData) {
 			return getChloroplethColor(index, chloroplethData, '#475569');
@@ -110,23 +129,10 @@
 		} else if (currentTheme === 'light') {
 			return isSelected ? '#DCEAF6' : '#E6EEF8';
 		} else {
+			if (isSelected) {
+				return 'rgba(34, 211, 238, 0.25)';
+			}
 			return isHovered ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.08)';
-		}
-	}
-
-	function getCountryStroke(isSelected: boolean, isHovered: boolean): { color: string; width: number } {
-		if (isChloroplethTheme) {
-			return {
-				color: isSelected ? '#fbbf24' : isHovered ? '#fff' : '#1e293b',
-				width: isSelected ? 2.5 : isHovered ? 1.8 : 0.8
-			};
-		}
-		if (currentTheme === 'dark') {
-			return { color: 'rgba(255,255,255,0.4)', width: 0.5 };
-		} else if (currentTheme === 'colorful') {
-			return { color: '#000', width: isHovered ? 2 : 1.2 };
-		} else {
-			return { color: '#000', width: isHovered ? 2 : 1 };
 		}
 	}
 
@@ -468,6 +474,8 @@
 	});
 </script>
 
+<svelte:window on:resize={handleResize} />
+
 <div
 	class={`bg-gradient-radial fixed inset-0 flex h-screen w-screen overflow-hidden font-sans ` +
 		(currentTheme === 'dark'
@@ -552,7 +560,7 @@
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<svg
 			viewBox={`0 0 ${outerWidth} ${outerHeight}`}
-			preserveAspectRatio="xMidYMid meet"
+			preserveAspectRatio="xMidYMid slice"
 			class="block h-full w-full"
 			bind:this={svgEl}
 			onclick={handleMapClick}
@@ -561,13 +569,15 @@
 			onfocus={hoverReset}
 			onmouseleave={hoverReset}
 		>
-			{#if (currentTheme === 'colorful' || currentTheme === 'light') && !isChloroplethTheme}
-				<rect x="0" y="0" width="100%" height="100%" fill="oklch(77% 0.11 228)"></rect>
-			{/if}
-
-			{#if isChloroplethTheme}
-				<rect x="0" y="0" width="100%" height="100%" fill="#0f172a"></rect>
-			{/if}
+			<rect x="0" y="0" width={outerWidth} height={outerHeight}>
+				{#if currentTheme === 'colorful' || currentTheme === 'light'}
+					<animate attributeName="fill" values="oklch(77% 0.11 228)" dur="0.1s" fill="freeze" />
+				{:else if isChloroplethTheme}
+					<animate attributeName="fill" values="#0f172a" dur="0.1s" fill="freeze" />
+				{:else}
+					<animate attributeName="fill" values="transparent" dur="0.1s" fill="freeze" />
+				{/if}
+			</rect>
 
 			<g bind:this={mapGroup}>
 				{#if countries.length}

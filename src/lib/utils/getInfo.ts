@@ -35,21 +35,30 @@ const latestOnlySet = new Set([
 ]);
 
 let countriesDataCache: any = null;
+let countriesDataPromise: Promise<any> | null = null;
 let loadingBatch = false;
 
 async function getCountriesData(): Promise<any> {
 	if (countriesDataCache) return countriesDataCache;
 
-	try {
-		const localResp = await fetch('/data/countries-data.json');
-		if (!localResp.ok) return null;
-		const localJson = await localResp.json();
-		countriesDataCache = localJson;
-		return localJson;
-	} catch (err) {
-		console.warn('Error loading /data/countries-data.json', err);
-		return null;
-	}
+	if (countriesDataPromise) return countriesDataPromise;
+
+	countriesDataPromise = (async () => {
+		try {
+			const localResp = await fetch('/data/countries-data.json');
+			if (!localResp.ok) return null;
+			const localJson = await localResp.json();
+			countriesDataCache = localJson;
+			return localJson;
+		} catch (err) {
+			console.warn('Error loading /data/countries-data.json', err);
+			return null;
+		} finally {
+			countriesDataPromise = null;
+		}
+	})();
+
+	return countriesDataPromise;
 }
 
 export async function fetchCountryInfoByName(name: string | '', infoCache: InfoCache = {}) {
@@ -84,101 +93,112 @@ export async function fetchCountryInfoByName(name: string | '', infoCache: InfoC
 		const sources = normalizeSources(localEntry?.sources ?? {}, name);
 
 		if (!summary || !cca2ID) {
+			const apiPromises: Promise<void>[] = [];
 			if (!summary) {
-				try {
-					const controller = new AbortController();
-					const timeoutId = setTimeout(() => controller.abort(), TIMEOUTS.API_REQUEST);
-					const endpoint = 'https://en.wikipedia.org/w/api.php';
-					const params = new URLSearchParams({
-						action: 'query',
-						format: 'json',
-						origin: '*',
-						prop: 'extracts',
-						titles: name,
-						exintro: '1',
-						explaintext: '1',
-						exsectionformat: 'plain'
-					});
+				apiPromises.push(
+					(async () => {
+						try {
+							const controller = new AbortController();
+							const timeoutId = setTimeout(() => controller.abort(), TIMEOUTS.API_REQUEST);
+							const endpoint = 'https://en.wikipedia.org/w/api.php';
+							const params = new URLSearchParams({
+								action: 'query',
+								format: 'json',
+								origin: '*',
+								prop: 'extracts',
+								titles: name,
+								exintro: '1',
+								explaintext: '1',
+								exsectionformat: 'plain'
+							});
 
-					const res = await fetch(`${endpoint}?${params.toString()}`, { signal: controller.signal });
-					clearTimeout(timeoutId);
+							const res = await fetch(`${endpoint}?${params.toString()}`, { signal: controller.signal });
+							clearTimeout(timeoutId);
 
-					if (res.ok) {
-						const json = await res.json();
-						const pages = json?.query?.pages;
-						if (pages) {
-							const page = Object.values(pages)[0] as any;
-							summary = page?.missing
-								? 'No summary available.'
-								: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
-							sources.summary = {
-								label: 'Wikipedia',
-								url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
-							};
+							if (res.ok) {
+								const json = await res.json();
+								const pages = json?.query?.pages;
+								if (pages) {
+									const page = Object.values(pages)[0] as any;
+									summary = page?.missing
+										? 'No summary available.'
+										: page?.extract.replace(/\n/g, '\n\n') || 'No summary available.';
+									sources.summary = {
+										label: 'Wikipedia',
+										url: `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`
+									};
+								}
+							}
+						} catch (err) {
+							summary = 'No summary available.';
+							console.log(err);
 						}
-					}
-				} catch (err) {
-					summary = 'No summary available.';
-					console.log('Wikipedia fetch failed', err);
-				}
+					})()
+				);
 			}
 
 			if (!cca2ID) {
-				try {
-					const controller = new AbortController();
-					const timeoutId = setTimeout(() => controller.abort(), 3000);
-					const res = await fetch('https://restcountries.com/v3.1/name/' + encodeURIComponent(name), {
-						signal: controller.signal
-					});
-					clearTimeout(timeoutId);
-
-					if (res.ok) {
-						const json = await res.json();
-						const restData =
-							json.length === 1
-								? json[0]
-								: json.find(
-										(c: any) =>
-											c.name.common?.toLowerCase() === name.toLowerCase() ||
-											c.name.official?.toLowerCase() === name.toLowerCase() ||
-											c.altSpellings?.some((s: string) => s.toLowerCase() === name.toLowerCase())
-									);
-
-						if (restData) {
-							cca2ID = restData.cca2 ?? 'UNKNOWN';
-							officialName = restData.name.official ?? 'UNKNOWN';
-							flag = restData.flags.svg ?? 'UNKNOWN';
-							coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
-							capital = restData.capital?.[0] ?? '—';
-							independent = restData.independent ?? false;
-							region = restData.region ?? 'UNKNOWN';
-							subregion = restData.subregion ?? 'UNKNOWN';
-							area = restData.area ?? -1;
-							languages = restData.languages ?? [];
-							population = restData.population ?? -1;
-							gini = restData.gini ? (restData.gini[Object.keys(restData.gini)[0]] ?? 0) : -1;
-
-							const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
-							const restSource = { label: 'REST Countries', url: restUrl };
-							Object.assign(sources, {
-								flag: restSource,
-								coatOfArms: restSource,
-								officialName: restSource,
-								capital: restSource,
-								independent: restSource,
-								region: restSource,
-								subregion: restSource,
-								area: restSource,
-								languages: restSource,
-								population: restSource,
-								gini: restSource
+				apiPromises.push(
+					(async () => {
+						try {
+							const controller = new AbortController();
+							const timeoutId = setTimeout(() => controller.abort(), 3000);
+							const res = await fetch('https://restcountries.com/v3.1/name/' + encodeURIComponent(name), {
+								signal: controller.signal
 							});
+							clearTimeout(timeoutId);
+
+							if (res.ok) {
+								const json = await res.json();
+								const restData =
+									json.length === 1
+										? json[0]
+										: json.find(
+												(c: any) =>
+													c.name.common?.toLowerCase() === name.toLowerCase() ||
+													c.name.official?.toLowerCase() === name.toLowerCase() ||
+													c.altSpellings?.some((s: string) => s.toLowerCase() === name.toLowerCase())
+											);
+
+								if (restData) {
+									cca2ID = restData.cca2 ?? 'UNKNOWN';
+									officialName = restData.name.official ?? 'UNKNOWN';
+									flag = restData.flags.svg ?? 'UNKNOWN';
+									coatOfArms = restData.coatOfArms.svg ?? 'UNKNOWN';
+									capital = restData.capital?.[0] ?? '—';
+									independent = restData.independent ?? false;
+									region = restData.region ?? 'UNKNOWN';
+									subregion = restData.subregion ?? 'UNKNOWN';
+									area = restData.area ?? -1;
+									languages = restData.languages ?? [];
+									population = restData.population ?? -1;
+									gini = restData.gini ? (restData.gini[Object.keys(restData.gini)[0]] ?? 0) : -1;
+
+									const restUrl = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}`;
+									const restSource = { label: 'REST Countries', url: restUrl };
+									Object.assign(sources, {
+										flag: restSource,
+										coatOfArms: restSource,
+										officialName: restSource,
+										capital: restSource,
+										independent: restSource,
+										region: restSource,
+										subregion: restSource,
+										area: restSource,
+										languages: restSource,
+										population: restSource,
+										gini: restSource
+									});
+								}
+							}
+						} catch (err) {
+							console.warn('RestCountries fetch failed', err);
 						}
-					}
-				} catch (err) {
-					console.warn('RestCountries fetch failed', err);
-				}
+					})()
+				);
 			}
+
+			await Promise.all(apiPromises);
 		}
 
 		const data: CountryData = {
@@ -291,68 +311,80 @@ export async function fetchEconomicDataModule(params: {
 			const timeSeriesIndicators = Object.values(indicators).filter((id) => !latestOnlySet.has(id));
 			const latestOnlyIndicators = Object.values(indicators).filter((id) => latestOnlySet.has(id));
 
-			if (timeSeriesIndicators.length > 0) {
-				const batch = ['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS'];
-				const indicatorString = batch.join(';');
-				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
+			const fetchPromises: Promise<void>[] = [];
 
-				try {
-					const res = await fetch(url);
-					if (res.ok) {
-						const json = await res.json();
-						if (Array.isArray(json) && json[1]) {
-							json[1].forEach((item: any) => {
-								const id = item.indicator.id;
-								if (item.value !== null) {
-									if (!allData[id]) allData[id] = [];
-									allData[id].push({
-										year: parseInt(item.date, 10),
-										value: item.value,
-										indicator: item.indicator.value
+			if (timeSeriesIndicators.length > 0) {
+				fetchPromises.push(
+					(async () => {
+						const batch = ['NY.GDP.PCAP.CD', 'NY.GDP.MKTP.KD.ZG', 'FP.CPI.TOTL.ZG', 'SL.UEM.TOTL.ZS'];
+						const indicatorString = batch.join(';');
+						const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2014:2024`;
+
+						try {
+							const res = await fetch(url);
+							if (res.ok) {
+								const json = await res.json();
+								if (Array.isArray(json) && json[1]) {
+									json[1].forEach((item: any) => {
+										const id = item.indicator.id;
+										if (item.value !== null) {
+											if (!allData[id]) allData[id] = [];
+											allData[id].push({
+												year: parseInt(item.date, 10),
+												value: item.value,
+												indicator: item.indicator.value
+											});
+										}
 									});
 								}
-							});
+							}
+						} catch (err) {
+							console.warn(`Failed time series batch`, err);
 						}
-					}
-				} catch (err) {
-					console.warn(`Failed time series batch`, err);
-				}
+					})()
+				);
 			}
 
 			if (latestOnlyIndicators.length > 0) {
-				const indicatorString = latestOnlyIndicators.join(';');
-				const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2022:2024`;
+				fetchPromises.push(
+					(async () => {
+						const indicatorString = latestOnlyIndicators.join(';');
+						const url = `https://api.worldbank.org/v2/country/${encodeURIComponent(cca2ID)}/indicator/${indicatorString}?source=2&format=json&date=2022:2024`;
 
-				try {
-					const res = await fetch(url);
-					if (res.ok) {
-						const json = await res.json();
-						if (Array.isArray(json) && json[1]) {
-							const bucket: Record<string, any[]> = {};
-							json[1].forEach((item: any) => {
-								const id = item.indicator.id;
-								if (!bucket[id]) bucket[id] = [];
-								if (item.value !== null) {
-									bucket[id].push({
-										year: parseInt(item.date, 10),
-										value: item.value,
-										indicator: item.indicator.value
+						try {
+							const res = await fetch(url);
+							if (res.ok) {
+								const json = await res.json();
+								if (Array.isArray(json) && json[1]) {
+									const bucket: Record<string, any[]> = {};
+									json[1].forEach((item: any) => {
+										const id = item.indicator.id;
+										if (!bucket[id]) bucket[id] = [];
+										if (item.value !== null) {
+											bucket[id].push({
+												year: parseInt(item.date, 10),
+												value: item.value,
+												indicator: item.indicator.value
+											});
+										}
 									});
+									for (const id of Object.keys(bucket)) {
+										const arr = bucket[id];
+										if (!arr.length) continue;
+										arr.sort((a, b) => a.year - b.year);
+										const latest = arr[arr.length - 1];
+										allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
+									}
 								}
-							});
-							for (const id of Object.keys(bucket)) {
-								const arr = bucket[id];
-								if (!arr.length) continue;
-								arr.sort((a, b) => a.year - b.year);
-								const latest = arr[arr.length - 1];
-								allData[id] = [{ year: latest.year, value: latest.value, indicator: latest.indicator }];
 							}
+						} catch (err) {
+							console.warn('Failed to fetch latest-only indicators', err);
 						}
-					}
-				} catch (err) {
-					console.warn('Failed to fetch latest-only indicators', err);
-				}
+					})()
+				);
 			}
+
+			await Promise.all(fetchPromises);
 
 			Object.keys(allData).forEach((k) => allData[k].sort((a: any, b: any) => a.year - b.year));
 

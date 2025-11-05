@@ -22,6 +22,9 @@
 
 	let activeEconomicChart = $state('gdpPerCapita');
 	let chartData: any[] = $state([]);
+	let hoveredPoint: { x: number; y: number; year: number; value: number } | null = $state(null);
+	let tooltipX = $state(0);
+	let tooltipY = $state(0);
 
 	function getLatestValue(indicatorId?: string): any {
 		if (!indicatorId || !selectedInfo?.cca2ID) return null;
@@ -64,7 +67,22 @@
 
 	function setEconomicChart(chart: string) {
 		activeEconomicChart = chart;
+		hoveredPoint = null;
 		updateChartData();
+	}
+
+	function handlePointHover(e: MouseEvent, point: any, cx: number, cy: number) {
+		hoveredPoint = { x: cx, y: cy, year: point.year, value: point.value };
+		const svg = (e.target as Element).closest('svg');
+		if (svg) {
+			const rect = svg.getBoundingClientRect();
+			tooltipX = rect.left + cx;
+			tooltipY = rect.top + cy;
+		}
+	}
+
+	function handlePointLeave() {
+		hoveredPoint = null;
 	}
 
 	onMount(() => {
@@ -140,15 +158,19 @@
 								opacity="0.8"
 							/>
 							{#each chartData as point, i}
+								{@const cx = 40 + (i / (chartData.length - 1)) * 340}
+								{@const cy = 155 - ((point.value - minVal) / range) * 125}
+								<!-- svelte-ignore a11y_no_static_element_interactions -->
 								<circle
-									cx={40 + (i / (chartData.length - 1)) * 340}
-									cy={155 - ((point.value - minVal) / range) * 125}
-									r="3"
+									{cx}
+									{cy}
+									r="5"
 									fill="#0891b2"
 									opacity="0.9"
-								>
-									<title>{point.year}: {formatEconomicValue(point.value, activeEconomicChart)}</title>
-								</circle>
+									class="hover:r-7 cursor-pointer transition-all hover:fill-cyan-400"
+									onmouseenter={(e) => handlePointHover(e, point, cx, cy)}
+									onmouseleave={handlePointLeave}
+								/>
 							{/each}
 							<text x="35" y="35" text-anchor="end" fill="rgba(255,255,255,0.6)" font-size="10">
 								{formatEconomicValue(maxVal, activeEconomicChart)}
@@ -209,3 +231,15 @@
 		</div>
 	{/if}
 </div>
+
+{#if hoveredPoint}
+	<div
+		class="pointer-events-none fixed z-200 rounded-lg border border-cyan-400/40 bg-gradient-to-br from-slate-900/98 to-black px-3 py-2 shadow-2xl backdrop-blur-lg"
+		style="left: {tooltipX}px; top: {tooltipY}px; transform: translate(-50%, -120%);"
+	>
+		<div class="text-xs text-slate-400">{hoveredPoint.year}</div>
+		<div class="font-mono text-sm font-semibold text-cyan-300">
+			{formatEconomicValue(hoveredPoint.value, activeEconomicChart)}
+		</div>
+	</div>
+{/if}

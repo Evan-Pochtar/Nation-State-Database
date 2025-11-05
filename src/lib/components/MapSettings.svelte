@@ -145,9 +145,11 @@
 								<img
 									src={theme.preview}
 									alt="{theme.name} preview"
-									class="h-20 w-20 rounded-md border object-cover shadow-md transition-all border-emerald-400/80={currentTheme ===
-										theme.id} border-white/10={currentTheme !==
-										theme.id} shadow-[0_0_20px_rgba(34,197,94,0.3)]={currentTheme === theme.id}"
+									class="h-20 w-20 rounded-md object-cover shadow-md transition-all"
+									class:border={currentTheme === theme.id}
+									class:border-emerald-400={currentTheme === theme.id}
+									class:shadow-[0_0_20px_rgba(34,197,94,0.3)]={currentTheme === theme.id}
+									class:border-0={currentTheme !== theme.id}
 								/>
 								{#if currentTheme === theme.id}
 									<div
