@@ -210,10 +210,10 @@
   - [x] New Zealand
   - [x] Fiji
   - [x] Papua New Guinea
-  - [ ] Solomon Islands
-  - [ ] Vanuatu
-  - [ ] Samoa
-  - [ ] Tonga
+  - [x] Solomon Islands
+  - [x] Vanuatu
+  - [x] Samoa
+  - [x] Tonga
   - [ ] Kiribati
   - [x] Marshall Islands
   - [x] Micronesia

@@ -13895,5 +13895,693 @@
 				"description": "Overwhelming vote for independence; negotiations continue on implementation"
 			}
 		]
+	},
+	{
+		"name": "Solomon Islands",
+		"overview": "An archipelagic Melanesian nation in the southwestern Pacific. Settled in prehistory by successive waves including early Pleistocene-era foragers and later Austronesian/Lapita seafarers, the islands developed diverse local societies and chiefly systems. European contact began in the 16th century. The islands became a British protectorate in the late 19th century, were the scene of major World War II campaigns (notably Guadalcanal, 1942-1943), and achieved independence in 1978. Post-independence history includes periods of internal unrest (the 1998-2003 tensions), international intervention (RAMSI, 2003), and contemporary challenges from climate change, economic development, and shifting regional diplomacy.",
+		"source": {
+			"label": "Wikipedia - Solomon Islands",
+			"url": "https://en.wikipedia.org/wiki/Solomon_Islands",
+			"urls": [
+				"https://en.wikipedia.org/wiki/Solomon_Islands",
+				"https://www.britannica.com/place/Solomon-Islands",
+				"https://whc.unesco.org/en/list/854",
+				"https://en.wikipedia.org/wiki/Guadalcanal_campaign",
+				"https://www.usip.org/publications/2022/08/solomon-islands-wwii-legacy-unresolved-80-years-after-guadalcanal-campaign"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "7 July 1978 (from the United Kingdom)" },
+			{ "label": "Capital", "value": "Honiara (founded 1952)" },
+			{
+				"label": "Name origin",
+				"value": "Named by Spanish explorer Álvaro de Mendaña (1568) after the biblical King Solomon (legend of riches)"
+			},
+			{ "label": "Currency", "value": "Solomon Islands dollar (SBD)" },
+			{ "label": "UNESCO World Heritage site", "value": "East Rennell (natural) — raised coral atoll, Lake Tegano" },
+			{ "label": "National day", "value": "Independence Day — July 7" }
+		],
+		"ancient": {
+			"period": "Pleistocene to 1st millennium BCE",
+			"description": "The Solomons show evidence of very early human presence in the western Pacific followed by Austronesian (Lapita) settlement waves. Archaeological sites document occupation spanning thousands of years. The Lapita-associated ceramic horizons and maritime networks link the Solomons to wider Island Melanesia and the settlement of Remote Oceania.",
+			"keyEvents": [
+				{
+					"year": "c. 30,000-28,000 BCE",
+					"title": "Earliest deep-time occupation (archaeological evidence)",
+					"description": "Pleistocene-era material on nearby Bougainville indicates very early human presence in the region that later became the Solomons."
+				},
+				{
+					"year": "c. 4500-2500 BCE",
+					"title": "Early Holocene coastal sites",
+					"description": "Evidence of continued human occupation in places like Guadalcanal and Buka as sea levels stabilized."
+				},
+				{
+					"year": "c. 1600-500 BCE (Lapita)",
+					"title": "Lapita seafaring and pottery horizons",
+					"description": "Late-Lapita and plainware finds attest to Austronesian-derived seafaring settlers who shaped the island cultural landscape and voyaging links across Melanesia."
+				}
+			],
+			"notableFigures": []
+		},
+		"pre-colonial": {
+			"period": "Before European contact — up to late 19th century",
+			"description": "Diverse chiefdoms and local polities organized around kinship, subsistence horticulture, fishing, and exchange. Social systems varied between islands. Oral histories and material culture reflect complex local governance, ritual practice, and inter-island trade.",
+			"keyEvents": [
+				{
+					"year": "pre-1500s",
+					"title": "Development of island chiefdoms",
+					"description": "Locally distinct political and social systems evolve across island groups, with strong customary law and land tenure systems."
+				}
+			],
+			"notableFigures": []
+		},
+		"colonial": {
+			"period": "1568 (first European contact) - 1978",
+			"description": "Spanish navigators first sighted islands in the 16th century; European influence increased from the 19th century with missionaries, sandalwood and copra traders, and planters. In 1893 Britain declared a protectorate over much of the archipelago (British Solomon Islands Protectorate). The islands were strategically important in World War II when Japanese forces occupied parts of the chain and Allied campaigns (notably Guadalcanal, 1942-1943) reversed Japanese expansion. After the war decolonization and growing local political organization led to self-government in the 1970s and full independence in 1978.",
+			"keyEvents": [
+				{
+					"year": "1568",
+					"title": "European contact — Álvaro de Mendaña",
+					"description": "Spanish expedition led by Álvaro de Mendaña makes first recorded European landings and names the islands 'Islas Salomón'."
+				},
+				{
+					"year": "1893",
+					"title": "British protectorate established",
+					"description": "The southern Solomons come under British protection; colonial administration, missions, and extractive economies expand."
+				},
+				{
+					"year": "7 August 1942 - 9 February 1943",
+					"title": "Guadalcanal campaign (World War II)",
+					"description": "Major Allied offensive against Japanese forces. Campaign marked a turning point in the Pacific War and left lasting social and environmental legacies on the islands."
+				}
+			],
+			"notableFigures": [
+				"Alvaro de Mendaña (Spanish explorer)",
+				"Local leaders associated with anti-colonial movements and postwar political organization"
+			]
+		},
+		"independence": {
+			"period": "1970s - 1980s",
+			"description": "Local political parties, chiefs and movement leaders organized for self-government. Constitutional arrangements and negotiations with Britain culminated in internal self-government in the mid-1970s and full independence on 7 July 1978 as the Solomon Islands, a constitutional monarchy in the Commonwealth.",
+			"keyEvents": [
+				{
+					"year": "1976",
+					"title": "Internal self-government",
+					"description": "Self-government established ahead of full sovereignty."
+				},
+				{
+					"year": "7 July 1978",
+					"title": "Independence",
+					"description": "Solomon Islands becomes an independent state within the Commonwealth."
+				}
+			],
+			"notableFigures": []
+		},
+		"modern": {
+			"period": "1978 - Present",
+			"description": "Post-independence development has faced governance, economic, and social challenges. The late 1990s saw sharp ethnic and land-tenure tensions centered on Guadalcanal and Malaita (the 'tensions', 1998-2003). Australia-led Regional Assistance Mission to Solomon Islands (RAMSI) intervened in 2003 to restore law and order and assist institutional rebuilding. Contemporary challenges include climate change impacts (coastal erosion and island loss), fisheries and forestry management, infrastructure, and evolving geopolitics in the Pacific.",
+			"keyEvents": [
+				{
+					"year": "1998-2003",
+					"title": "Ethnic tension and unrest",
+					"description": "Inter-island and community conflict between Guadalcanal-based groups and Malaitan settlers produces violence, displacement, and political instability."
+				},
+				{
+					"year": "2003",
+					"title": "RAMSI intervention",
+					"description": "Regional Assistance Mission led by Australia and Pacific partners restores security and assists governance reforms."
+				},
+				{
+					"year": "2008",
+					"title": "East Rennell inscribed as UNESCO World Heritage site",
+					"description": "Recognition of outstanding natural values (raised coral atoll and Lake Tegano)."
+				},
+				{
+					"year": "2019-2024",
+					"title": "Shifting diplomatic and strategic ties",
+					"description": "The Solomons’ diplomatic realignments and security agreements in the region drew international attention and aid and development engagement from multiple partners."
+				}
+			],
+			"notableFigures": [
+				"Malaita chiefs and leaders associated with the Maasina Rule movement (postwar autonomy movement)",
+				"Contemporary political figures associated with independence and post-independence governance"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 30,000-28,000 BCE",
+				"era": "Ancient",
+				"title": "Earliest regional occupation evidence",
+				"description": "Pleistocene-era archaeological traces on nearby Bougainville indicate deep-time human presence in the region."
+			},
+			{
+				"year": "c. 1600-500 BCE",
+				"era": "Ancient",
+				"title": "Lapita affiliations",
+				"description": "Late Lapita pottery and cultural markers tie the Solomons to wider Austronesian expansion and maritime networks."
+			},
+			{
+				"year": "1568",
+				"era": "Colonial",
+				"title": "European contact",
+				"description": "Spanish expedition led by Álvaro de Mendaña sight and name the islands."
+			},
+			{
+				"year": "1893",
+				"era": "Colonial",
+				"title": "British protectorate declared",
+				"description": "Colonial administration expands under British protectorate arrangements."
+			},
+			{
+				"year": "1942-1943",
+				"era": "Colonial/WWII",
+				"title": "Guadalcanal campaign",
+				"description": "Major battles between Allied and Japanese forces; pivotal Pacific War campaign."
+			},
+			{
+				"year": "1976",
+				"era": "Independence",
+				"title": "Internal self-government",
+				"description": "Step toward sovereignty and institutional preparation for independence."
+			},
+			{
+				"year": "1978",
+				"era": "Independence",
+				"title": "Independence declared",
+				"description": "Solomon Islands achieves full independence on 7 July 1978."
+			},
+			{
+				"year": "1998-2003",
+				"era": "Modern",
+				"title": "Ethnic tensions and RAMSI",
+				"description": "Civil unrest followed by a regional intervention aimed at stabilisation and reform."
+			}
+		]
+	},
+	{
+		"name": "Vanuatu",
+		"overview": "An island nation in the southwestern Pacific composed of a Y-shaped chain of islands. Populated for millennia by Melanesian peoples and settled by Lapita-era seafarers, the archipelago was contacted by Europeans from the 17th-18th centuries. During the colonial era it was governed as the Anglo-French Condominium of the New Hebrides (1906-1980), a rare dual-administration arrangement. The Republic of Vanuatu gained independence on 30 July 1980. Modern Vanuatu's history includes active customary institutions, strong cultural identity, non-aligned international diplomacy, vulnerability to cyclones and earthquakes, and continuing development challenges.",
+		"source": {
+			"label": "Wikipedia - Vanuatu",
+			"url": "[https://en.wikipedia.org/wiki/Vanuatu](https://en.wikipedia.org/wiki/Vanuatu)",
+			"urls": [
+				"https://en.wikipedia.org/wiki/Vanuatu",
+				"https://www.britannica.com/place/Vanuatu",
+				"https://whc.unesco.org/en/list/1280",
+				"https://en.wikipedia.org/wiki/New_Hebrides",
+				"https://www.theguardian.com/world/2025/jan/25/vanuatu-earthquake-december-2024-port-vila-feature"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "30 July 1980 (from Anglo-French condominium, New Hebrides)" },
+			{ "label": "Capital", "value": "Port Vila" },
+			{
+				"label": "Name origin",
+				"value": "'Vanuatu' from local languages meaning roughly 'our land (land that stands)'"
+			},
+			{ "label": "Official languages", "value": "Bislama, English, French" },
+			{ "label": "UNESCO World Heritage site", "value": "Chief Roi Mata's Domain (cultural, 2008)" },
+			{ "label": "National day", "value": "Independence Day — July 30" }
+		],
+		"ancient": {
+			"period": "c. 1300 BCE - 1st millennium CE",
+			"description": "Archaeology shows early Lapita settlement in northern Vanuatu from the late 2nd and early 1st millennium BCE, part of the wider Austronesian expansion. Subsequent centuries produced distinct island cultures, oral traditions, and chiefly institutions.",
+			"keyEvents": [
+				{
+					"year": "c. 1300 BCE (approx.)",
+					"title": "Lapita settlement",
+					"description": "Lapita-related sites indicate early settlement and the spread of Austronesian-derived horticulture, animals and pottery into Vanuatu."
+				}
+			],
+			"notableFigures": []
+		},
+		"pre-colonial": {
+			"period": "Before European control",
+			"description": "Complex chiefdoms, ritual systems and strong customary land tenure characterized island societies. Oral histories such as those connected to Roi Mata preserve political memory and social norms across generations.",
+			"keyEvents": [
+				{
+					"year": "c. 16th-17th century (oral chronology)",
+					"title": "Roi Mata era",
+					"description": "Roi Mata, a paramount chief in central Vanuatu, is associated with social reforms and sites later recognised by UNESCO; oral tradition places his lifetime in the early 1600s."
+				}
+			],
+			"notableFigures": ["Roi Mata (paramount chief central to oral history and later archaeology)"]
+		},
+		"colonial": {
+			"period": "18th century European contact - 1980",
+			"description": "European explorers charted the islands from the 18th century. Sandalwood, plantation agriculture, missionaries, and rival British and French settlers increased foreign influence. From 1906 the islands were governed under an unusual Anglo-French Condominium (the New Hebrides) with parallel British and French administrations until the independence movement of the 1970s.",
+			"keyEvents": [
+				{
+					"year": "1774",
+					"title": "Captain James Cook names the islands 'New Hebrides'",
+					"description": "European charting intensifies in the 18th century."
+				},
+				{
+					"year": "1906",
+					"title": "Anglo-French Condominium established (New Hebrides)",
+					"description": "Unique joint sovereignty created with parallel administrative systems and duplicated institutions."
+				},
+				{
+					"year": "1940s (WWII)",
+					"title": "Allied wartime presence (Espiritu Santo)",
+					"description": "Espiritu Santo becomes an important Allied base during World War II, bringing economic and social impacts."
+				}
+			],
+			"notableFigures": ["Missionaries and colonial administrators associated with the New Hebrides period"]
+		},
+		"independence": {
+			"period": "1970s-1980",
+			"description": "Local political mobilization and decolonization movements culminated in independence. The new nation adopted the name Vanuatu, asserting indigenous sovereignty and rejecting the colonial label 'New Hebrides.' The immediate post-independence period included brief internal armed resistance (the 'Coconut War') that was quickly contained.",
+			"keyEvents": [
+				{
+					"year": "30 July 1980",
+					"title": "Independence declared",
+					"description": "The Republic of Vanuatu becomes independent; Walter Lini becomes the first Prime Minister."
+				},
+				{
+					"year": "1980 (September)",
+					"title": "Coconut War",
+					"description": "Short-lived secessionist conflict on Espiritu Santo suppressed with external assistance; an early post-independence security episode."
+				}
+			],
+			"notableFigures": ["Walter Lini (first Prime Minister and leading independence figure)"]
+		},
+		"modern": {
+			"period": "1980 - Present",
+			"description": "Vanuatu pursues nonaligned foreign policy, active participation in regional forums, and development policies that balance custom and modern governance. The country is highly vulnerable to natural hazards. Cyclone Pam (2015) and major earthquakes and associated damage (including the December 2024 earthquake that heavily impacted Port Vila and surrounding areas) illustrate recurring disaster risks. Political volatility, governance and corruption challenges, and economic development remain ongoing priorities.",
+			"keyEvents": [
+				{
+					"year": "2008",
+					"title": "Chief Roi Mata's Domain inscribed (UNESCO)",
+					"description": "Three sites linked to the 17th-century chief recognized for combined cultural, archaeological and oral-tradition value."
+				},
+				{
+					"year": "2015",
+					"title": "Cyclone Pam",
+					"description": "Severe Category 5 cyclone causes widespread devastation, international humanitarian response."
+				},
+				{
+					"year": "December 2024",
+					"title": "Major earthquake impacts (Port Vila area)",
+					"description": "High-magnitude earthquake causes fatalities, infrastructure damage and large-scale displacement; recovery remains a major challenge."
+				}
+			],
+			"notableFigures": ["Walter Lini", "Contemporary political leaders engaged in development and disaster response"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1300 BCE (approx.)",
+				"era": "Ancient",
+				"title": "Lapita settlement",
+				"description": "Early Austronesian/Lapita presence establishes horticulture and seafaring links in Vanuatu."
+			},
+			{
+				"year": "1600s (oral chronology)",
+				"era": "Pre-Colonial",
+				"title": "Roi Mata period (oral/archaeological)",
+				"description": "Roi Mata unites regions and becomes central to later oral history; associated sites date to c. 17th century."
+			},
+			{
+				"year": "1906",
+				"era": "Colonial",
+				"title": "Anglo-French Condominium established",
+				"description": "New Hebrides governed jointly by Britain and France under a unique condominium system."
+			},
+			{
+				"year": "30 July 1980",
+				"era": "Independence",
+				"title": "Independence declared",
+				"description": "Vanuatu becomes an independent republic; Walter Lini leads the new government."
+			},
+			{
+				"year": "2015",
+				"era": "Modern",
+				"title": "Cyclone Pam",
+				"description": "Devastating cyclone causes major national damage and humanitarian crisis."
+			},
+			{
+				"year": "December 2024",
+				"era": "Modern",
+				"title": "Severe earthquake",
+				"description": "Significant earthquake damages Port Vila and nearby districts and spurs international relief efforts."
+			}
+		]
+	},
+	{
+		"name": "Samoa",
+		"overview": "An independent Polynesian state in the South Pacific with a long Lapita-derived cultural history, a powerful matai (chief) system, a 20th-century anti-colonial Mau movement, and a modern parliamentary democracy that has faced public-health crises and a recent constitutional transition. Western Samoa gained independence from New Zealand on 1 January 1962 and has since navigated customary governance, party politics, and regional diplomacy.",
+		"source": {
+			"label": "Wikipedia - History of Samoa",
+			"url": "https://en.wikipedia.org/wiki/History_of_Samoa",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Samoa",
+				"https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/History",
+				"https://en.wikipedia.org/wiki/2019_Samoa_measles_outbreak",
+				"https://www.axios.com/2021/07/24/samoa-first-woman-prime-minister"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "1 January 1962 (from New Zealand; known until 1997 as Western Samoa)" },
+			{ "label": "Capital", "value": "Apia" },
+			{
+				"label": "Head of state (O le Ao o le Malo)",
+				"value": "Constitutional office; long-serving holders included Malietoa Tanumafili II (1962-2007)"
+			},
+			{ "label": "Currency", "value": "Samoan tala (WST)" },
+			{ "label": "Official languages", "value": "Samoan and English" },
+			{ "label": "National day", "value": "Independence Day — January 1" }
+		],
+		"ancient": {
+			"period": "c. 1500-500 BCE (Lapita settlement) onward",
+			"description": "Archaeology shows early Lapita seafaring settlers and pottery horizons establishing Samoa as an early node of Polynesian migration. Over centuries Samoan society developed dense settlements, chiefly titles (matai), complex ceremonial centers and long-distance voyaging connections across Polynesia.",
+			"keyEvents": [
+				{
+					"year": "c. 1500-900 BCE",
+					"title": "Lapita-era settlement",
+					"description": "Lapita pottery and early agricultural systems link Samoa to the wider Austronesian expansion into Polynesia."
+				},
+				{
+					"year": "1st-12th centuries CE",
+					"title": "Formation of chiefly polities",
+					"description": "Local chiefdoms and ritual centers consolidate social hierarchies, chiefly titles and inter-island links."
+				}
+			],
+			"notableFigures": []
+		},
+		"pre-colonial": {
+			"period": "pre-18th century - early 19th century",
+			"description": "Samoan islands were organised through complex kinship and chiefly networks. Oral genealogies, fa'a Samoa (the Samoan way), and chiefly title systems structured land tenure, leadership and dispute resolution. Inter-island alliances and chiefly rivalries shaped political geography long before external contact.",
+			"keyEvents": [
+				{
+					"year": "pre-1700s",
+					"title": "Consolidation of major paramount titles",
+					"description": "Traditional titles such as Tupua Tamasese, Mata'afa and Malietoa emerge as enduring political and ceremonial authorities."
+				}
+			],
+			"notableFigures": [
+				"Lineages and title-holders such as the Tupua, Mata'afa and Malietoa families (central to Samoan politics and customary authority)"
+			]
+		},
+		"colonial": {
+			"period": "18th century contact - 1962",
+			"description": "European contact intensified in the late 18th and 19th centuries with missionaries, traders and colonial rivalry. Germany and Britain established influence in the 19th century. Following disputes and the 1899 Tripartite Convention the Samoan islands were partitioned: Germany controlled what became German Samoa (western islands) and the United States took American Samoa (eastern islands). After World War I New Zealand administered Western Samoa under a League of Nations mandate and later a UN trusteeship. Colonial rule provoked resistance and shaped the 20th-century independence movement.",
+			"keyEvents": [
+				{
+					"year": "1768-1830s",
+					"title": "European contact increases",
+					"description": "Whalers, missionaries and traders arrive; Christianity and new goods alter Samoan society."
+				},
+				{
+					"year": "1899",
+					"title": "Partition of Samoa",
+					"description": "Tripartite Convention divides the archipelago between the US (Eastern/Samoa Islands) and Germany (Western/Samoa)."
+				},
+				{
+					"year": "1914-1920s",
+					"title": "New Zealand administration",
+					"description": "New Zealand occupies German Samoa in 1914 and later governs Western Samoa under mandate; colonial administration, taxation and land disputes fuel nationalist sentiment."
+				},
+				{
+					"year": "1920s-1930s",
+					"title": "Mau movement",
+					"description": "Nonviolent and civil-resistance movement for self-government; leaders like Tupua Tamasese Lealofi III and Mata'afa Faumuina Fiame Mulinuʻu I become martyrs and symbols after violent suppression such as Black Saturday (1929)."
+				}
+			],
+			"notableFigures": [
+				"Tupua Tamasese Lealofi III (Mau leader, killed on Black Saturday 1929)",
+				"Mataʻafa Faumuina Fiame Mulinuʻu I (Mau leader and elder chief)"
+			]
+		},
+		"independence": {
+			"period": "1940s-1962",
+			"description": "Post-war constitutional negotiations, growing indigenous political organization and international decolonisation set the stage for independence. Western Samoa gained full sovereignty on 1 January 1962 under a parliamentary constitution with a largely ceremonial O le Ao o le Malo drawn from paramount chiefly families.",
+			"keyEvents": [
+				{
+					"year": "1948-1960s",
+					"title": "Political organising and constitutional development",
+					"description": "Local parties, chiefly caucuses and negotiations with New Zealand produce steps toward self-government."
+				},
+				{
+					"year": "1 January 1962",
+					"title": "Independence",
+					"description": "Western Samoa attains independence; Fiamē Mataʻafa Faumuina Mulinuʻu II becomes a key early prime minister and Malietoa Tanumafili II serves as head of state."
+				},
+				{
+					"year": "1997",
+					"title": "Name change to Samoa",
+					"description": "Parliament drops 'Western' and adopts 'Samoa' as the official name."
+				}
+			],
+			"notableFigures": [
+				"Fiamē Mataʻafa Faumuina Mulinuʻu II (first prime minister and major independence figure)",
+				"Malietoa Tanumafili II (long-serving O le Ao o le Malo, 1962-2007)"
+			]
+		},
+		"modern": {
+			"period": "1962 - Present",
+			"description": "Samoa developed a mixed customary-parliamentary system where matai titles remain central. The post-independence era saw periods of one-party dominance under the Human Rights Protection Party (HRPP), economic and social development, and occasional political tension over land and constitutional reform. Severe public-health crises and natural hazards tested capacity: the 2019 measles epidemic caused substantial mortality among children and prompted emergency vaccination and policy changes. In 2021 a close election produced a constitutional crisis resolved by the courts and resulted in Fiame Naomi Mataʻafa becoming Samoa's first female prime minister. Contemporary challenges include climate vulnerability, diaspora relations, economic diversification, and balancing customary authority with democratic institutions.",
+			"keyEvents": [
+				{
+					"year": "1970s-1990s",
+					"title": "Post-independence consolidation",
+					"description": "Economic and social policies, periodic cabinet changes, and extension of public services."
+				},
+				{
+					"year": "2019 (Sept-Dec)",
+					"title": "Measles epidemic",
+					"description": "Large outbreak with over 5,000 cases and dozens of deaths; emergency vaccination campaign and public-health reforms followed."
+				},
+				{
+					"year": "2021 (April-July)",
+					"title": "Electoral deadlock and constitutional crisis",
+					"description": "A tied election and dispute over women's representation led to court rulings and the installation of Fiame Naomi Mataʻafa as prime minister, ending Tuilaʻepa Saʼilele Malielegaoi’s long tenure."
+				},
+				{
+					"year": "2021-2025",
+					"title": "Political realignments",
+					"description": "Fiame Naomi Mataʻafa's government pursued policy shifts; later political infighting and parliamentary challenges produced additional instability (ongoing developments)."
+				}
+			],
+			"notableFigures": [
+				"Tuilaʻepa Saʻilele Malielegaoi (long-serving prime minister, 1998-2021)",
+				"Fiame Naomi Mataʻafa (first female prime minister, leader of FAST movement in 2021)",
+				"Tupua Tamasese Efi (Tui Atua, elder statesman, former prime minister and O le Ao o le Malo candidate)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500-900 BCE",
+				"era": "Ancient",
+				"title": "Lapita settlement",
+				"description": "Early Austronesian/Lapita peoples colonise Samoa and establish horticultural and voyaging networks."
+			},
+			{
+				"year": "Late 19th century",
+				"era": "Colonial",
+				"title": "European rivalry and partition",
+				"description": "Germany and the US gain influence; later New Zealand administers Western Samoa."
+			},
+			{
+				"year": "1929",
+				"era": "Colonial",
+				"title": "Black Saturday",
+				"description": "New Zealand police fire on Mau demonstrators; Tupua Tamasese Lealofi III killed, galvanising independence movement."
+			},
+			{
+				"year": "1 January 1962",
+				"era": "Independence",
+				"title": "Samoa gains independence",
+				"description": "Western Samoa becomes independent under a parliamentary constitution."
+			},
+			{
+				"year": "2019",
+				"era": "Modern",
+				"title": "Measles epidemic",
+				"description": "Severe outbreak prompts national emergency vaccination campaign."
+			},
+			{
+				"year": "2021",
+				"era": "Modern",
+				"title": "Constitutional crisis and first woman prime minister",
+				"description": "Court rulings confirm Fiame Naomi Mataʻafa as prime minister after a disputed election."
+			}
+		]
+	},
+	{
+		"name": "Tonga",
+		"overview": "A Polynesian kingdom that maintained indigenous monarchy and relative continuity through the 19th and 20th centuries. Tonga was united under the Tupou dynasty in the 19th century, negotiated a Treaty of Friendship with Britain in 1900 that made it a protected state while preserving internal sovereignty, and evolved toward parliamentary democracy with major constitutional reforms after 2006. Tonga retains a hereditary monarchy and noble class that continue to shape politics. Natural disasters and geopolitical ties are important in recent decades.",
+		"source": {
+			"label": "Wikipedia - History of Tonga",
+			"url": "https://en.wikipedia.org/wiki/History_of_Tonga",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Tonga",
+				"https://www.britannica.com/topic/history-of-Tonga",
+				"https://www.britannica.com/event/2022-Hunga-Tonga-eruption-and-tsunami",
+				"https://en.wikipedia.org/wiki/%CA%BBAkilisi_P%C5%8Dhiva"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Status",
+				"value": "Constitutional monarchy (King of Tonga) with hereditary nobles and elected representatives"
+			},
+			{ "label": "Capital", "value": "Nukuʻalofa" },
+			{
+				"label": "Founding modern monarch",
+				"value": "George Tupou I (Tāufaʻāhau) — 19th-century unifier and lawgiver"
+			},
+			{
+				"label": "Independence/sovereignty",
+				"value": "Treaty of Friendship with Britain 1900 (protected state); full domestic and foreign affairs control affirmed by 1970"
+			},
+			{ "label": "Currency", "value": "Tongan paʻanga (TOP)" }
+		],
+		"ancient": {
+			"period": "c. 1000 BCE - early 1st millennium CE (Lapita and later Polynesian development)",
+			"description": "Archaeological evidence identifies Tonga as an early centre of Lapita settlement and a launching point for Polynesian expansion. Tongan society evolved powerful chiefly dynasties and monumentality such as megalithic structures and royal tombs.",
+			"keyEvents": [
+				{
+					"year": "c. 1000-700 BCE",
+					"title": "Early Lapita settlement",
+					"description": "Lapita pottery and early settlement patterns establish Tonga as a key Polynesian node."
+				},
+				{
+					"year": "1st millennium CE - 12th century",
+					"title": "Social complexity and maritime networks",
+					"description": "Tongan maritime reach and cultural exchange across Polynesia grow; later the Tuʻi Tonga dynasty exerts regional influence."
+				}
+			],
+			"notableFigures": []
+		},
+		"pre-colonial": {
+			"period": "c. 10th century - 19th century",
+			"description": "Tongan political culture centred on the Tuʻi Tonga and later the Tuʻi Haʻatakalaua and Tuʻi Kanokupolu lines. By the medieval period Tonga exerted influence across parts of Polynesia. Monumental architecture such as langi (royal tombs) and the Haʻamonga ʻa Maui trilithon testify to centralized authority and ritual complexity.",
+			"keyEvents": [
+				{
+					"year": "c. 10th-12th centuries",
+					"title": "Tuʻi Tonga expansion",
+					"description": "Tongan chiefly authority and maritime influence expand across the central Pacific."
+				}
+			],
+			"notableFigures": ["Tuʻi Tonga dynasty chiefs (founders of Tonga's medieval polity)"]
+		},
+		"colonial": {
+			"period": "19th century contact - 1970",
+			"description": "Tāufaʻāhau (George Tupou I) consolidated control in the 19th century, promulgated a modern constitution (1875) and centralized the kingdom. Tonga negotiated a Treaty of Friendship with Britain in 1900 that preserved internal sovereignty while ceding some external functions to Britain. Tonga avoided full formal colonisation, retaining a strong monarchy but accepting missionary, trading and political influences. The 20th century saw gradual modernization and the consolidation of royal authority and state institutions.",
+			"keyEvents": [
+				{
+					"year": "1845-1893",
+					"title": "Reign of George Tupou I",
+					"description": "Unification, Christianisation and legal reforms including the 1875 constitution that created the modern Tongan state."
+				},
+				{
+					"year": "1900",
+					"title": "Treaty of Friendship with Britain",
+					"description": "Tonga becomes a British protected state while retaining the monarchy and internal self-government."
+				},
+				{
+					"year": "1918",
+					"title": "Reign of Sālote Tupou III begins",
+					"description": "Long and popular queen who guided Tonga through the early 20th century and WWII."
+				}
+			],
+			"notableFigures": [
+				"George Tupou I (Tāufaʻāhau) — unifier and constitutional monarch",
+				"Queen Sālote Tupou III — influential 20th-century monarch"
+			]
+		},
+		"independence": {
+			"period": "20th century transition to full control",
+			"description": "Tonga maintained protected-state arrangements with Britain but gradually took control of its external affairs. The 1970s mark the transfer of full control of domestic and foreign affairs and the affirmation of the kingdom’s international sovereignty.",
+			"keyEvents": [
+				{
+					"year": "1970",
+					"title": "Full control over domestic and foreign affairs",
+					"description": "Treaty arrangements evolve; Tonga affirms independent international status while remaining in the Commonwealth."
+				}
+			],
+			"notableFigures": []
+		},
+		"modern": {
+			"period": "1970 - Present",
+			"description": "Tonga has balanced hereditary monarchy and democratic reform. Pro-democracy agitation culminated in the 2006 Nukuʻalofa riots that destroyed large parts of the capital and triggered constitutional reforms. Subsequent elections (notably 2010) shifted more power to elected representatives. Pro-democracy leaders such as ʻAkilisi Pōhiva became central political figures, serving as prime minister from 2014 until his death in 2019. Tonga faces significant disaster risk as shown by the 2022 Hunga Tonga-Hunga Haʻapai eruption and tsunami that caused widespread damage and international relief operations. Political tensions between the elected government and the monarchy occasionally flare, and economic vulnerability, external debt and climate impacts shape policy priorities.",
+			"keyEvents": [
+				{
+					"year": "2006",
+					"title": "Nukuʻalofa riots",
+					"description": "Large pro-democracy protests turn violent; fires and looting destroy parts of the capital and prompt rebuilding and political concessions."
+				},
+				{
+					"year": "2010",
+					"title": "Electoral and constitutional reforms",
+					"description": "Reforms increase the number of people's representatives and reduce the executive power of the monarchy, marking a major transition toward parliamentary government."
+				},
+				{
+					"year": "2014-2019",
+					"title": "ʻAkilisi Pōhiva as prime minister",
+					"description": "Longtime democracy activist is elected PM, representing a milestone for Tonga’s democratic movement; his death in 2019 marks a political turning point."
+				},
+				{
+					"year": "15-16 January 2022",
+					"title": "Hunga Tonga-Hunga Haʻapai eruption and tsunami",
+					"description": "Massive submarine eruption and tsunami devastate parts of Tonga, spread ash globally and trigger a major international emergency response."
+				},
+				{
+					"year": "2024 (Dec)",
+					"title": "Prime ministerial resignation and royal-government tensions",
+					"description": "Political-royal tensions produced high-profile resignations and public debate about the balance of power (ongoing developments)."
+				}
+			],
+			"notableFigures": [
+				"ʻAkilisi Pōhiva (pro-democracy leader and prime minister 2014-2019)",
+				"King George Tupou I (founder of modern Tonga)",
+				"Queen Sālote Tupou III (popular 20th-century monarch)",
+				"King Tupou VI (current monarch; active role in recent political moments)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 1000-700 BCE",
+				"era": "Ancient",
+				"title": "Lapita settlement",
+				"description": "Early settlement links Tonga to the wider expansion of Polynesian peoples."
+			},
+			{
+				"year": "c. 10th-12th centuries",
+				"era": "Pre-Colonial",
+				"title": "Tuʻi Tonga ascendancy",
+				"description": "Tongan chiefly power exerts regional influence across Polynesia."
+			},
+			{
+				"year": "1875",
+				"era": "Colonial/Modern",
+				"title": "1875 Constitution promulgated",
+				"description": "George Tupou I formalises modern legal structures for Tonga."
+			},
+			{
+				"year": "1900",
+				"era": "Colonial",
+				"title": "Treaty of Friendship with Britain",
+				"description": "Tonga becomes a protected state while retaining internal sovereignty."
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "Nukuʻalofa riots",
+				"description": "Violent pro-democracy unrest leads to destruction and reforms."
+			},
+			{
+				"year": "2010",
+				"era": "Modern",
+				"title": "Electoral reforms",
+				"description": "Parliamentary changes increase elected representation and curtail some royal powers."
+			},
+			{
+				"year": "15-16 January 2022",
+				"era": "Modern",
+				"title": "Hunga Tonga eruption and tsunami",
+				"description": "Major volcanic event and tsunami cause severe damage in Tonga and prompt international relief."
+			}
+		]
 	}
 ]
