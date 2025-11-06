@@ -205,7 +205,7 @@
   - [ ] Hong Kong
   - [ ] Macau
 
-- [ ] OCEANIA / PACIFIC
+- [x] OCEANIA / PACIFIC
   - [x] Australia
   - [x] New Zealand
   - [x] Fiji
@@ -214,12 +214,12 @@
   - [x] Vanuatu
   - [x] Samoa
   - [x] Tonga
-  - [ ] Kiribati
+  - [x] Kiribati
   - [x] Marshall Islands
   - [x] Micronesia
-  - [ ] Nauru
-  - [ ] Palau
-  - [ ] Tuvalu
+  - [x] Nauru
+  - [x] Palau
+  - [x] Tuvalu
 
 - [x] ANTARCTICA
   - [x] Antarctica

@@ -8777,7 +8777,7 @@
 	},
 	{
 		"name": "Singapore",
-		"overview": "Singapore transformed from a sparsely populated island with episodic settlement into a critical entrepôt under British rule and then into a high-income, globally connected city-state. Its recorded history includes early references as Temasek and later Malay and Bugis settlement, the founding of a British trading post by Sir Stamford Raffles in 1819, rapid colonial-era growth as part of the Straits Settlements, Japanese occupation during World War II, a postwar trajectory through self-government and brief union with Malaysia, and abrupt separation and full independence on August 9, 1965. Under the leadership of Lee Kuan Yew and the People’s Action Party, Singapore pursued an authoritarian-leaning but technocratic developmental state model emphasizing rule-driven governance, export-oriented industrialization, property-led urban planning, and meritocratic public institutions. The city-state now serves as a global financial center, major port, and hub for high-value services. Ongoing policy debates center on demographic trends, social compact, political pluralism, and balancing sovereignty with deep economic integration in a volatile region.",
+		"overview": "Singapore transformed from a sparsely populated island with episodic settlement into a critical entrepôt under British rule and then into a high-income, globally connected city-state. Its recorded history includes early references as Temasek and later Malay and Bugis settlement, the founding of a British trading post by Sir Stamford Raffles in 1819, rapid colonial-era growth as part of the Straits Settlements, Japanese occupation during World War II, a postwar trajectory through self-government and brief union with Malaysia, and abrupt separation and full independence on August 9, 1965. Under the leadership of Lee Kuan Yew and the People's Action Party, Singapore pursued an authoritarian-leaning but technocratic developmental state model emphasizing rule-driven governance, export-oriented industrialization, property-led urban planning, and meritocratic public institutions. The city-state now serves as a global financial center, major port, and hub for high-value services. Ongoing policy debates center on demographic trends, social compact, political pluralism, and balancing sovereignty with deep economic integration in a volatile region.",
 		"source": {
 			"label": "Britannica - History of Singapore",
 			"url": "https://www.britannica.com/topic/history-of-Singapore",
@@ -8792,7 +8792,7 @@
 				"label": "Founding of British Trading Post",
 				"value": "1819 (Sir Stamford Raffles establishes a British trading settlement)"
 			},
-			{ "label": "Self-Government", "value": "1959 (internal self-government under the People’s Action Party)" },
+			{ "label": "Self-Government", "value": "1959 (internal self-government under the People's Action Party)" },
 			{
 				"label": "Separation and Independence",
 				"value": "August 9, 1965 (Republic of Singapore becomes independent after separation from Malaysia)"
@@ -8800,7 +8800,7 @@
 			{ "label": "Capital/City-State", "value": "Singapore (city-state; no separate capital)" },
 			{
 				"label": "Political System",
-				"value": "Parliamentary republic with dominant-party governance (People’s Action Party major role since 1959)"
+				"value": "Parliamentary republic with dominant-party governance (People's Action Party major role since 1959)"
 			},
 			{ "label": "UNESCO Sites", "value": "1 World Heritage Site (Singapore Botanic Gardens, inscribed 2015)" }
 		],
@@ -8847,7 +8847,7 @@
 		},
 		"independence": {
 			"period": "1945 — 1965",
-			"description": "After WWII Singapore moved through reconstituted colonial administration, negotiated self-government and emergent party politics. Internal self-government in 1959 under the People’s Action Party established Lee Kuan Yew as Prime Minister. A contentious merger with Malaysia in 1963 was followed by communal tensions and political conflict that culminated in Singapore's forced separation and the proclamation of sovereign independence on August 9, 1965. Independence required rapid institution-building, social order, and an economic strategy to survive as a tiny, resource-poor state.",
+			"description": "After WWII Singapore moved through reconstituted colonial administration, negotiated self-government and emergent party politics. Internal self-government in 1959 under the People's Action Party established Lee Kuan Yew as Prime Minister. A contentious merger with Malaysia in 1963 was followed by communal tensions and political conflict that culminated in Singapore's forced separation and the proclamation of sovereign independence on August 9, 1965. Independence required rapid institution-building, social order, and an economic strategy to survive as a tiny, resource-poor state.",
 			"keyEvents": [
 				{
 					"year": "1959",
@@ -14019,7 +14019,7 @@
 				{
 					"year": "2019-2024",
 					"title": "Shifting diplomatic and strategic ties",
-					"description": "The Solomons’ diplomatic realignments and security agreements in the region drew international attention and aid and development engagement from multiple partners."
+					"description": "The Solomons' diplomatic realignments and security agreements in the region drew international attention and aid and development engagement from multiple partners."
 				}
 			],
 			"notableFigures": [
@@ -14354,7 +14354,7 @@
 				{
 					"year": "2021 (April-July)",
 					"title": "Electoral deadlock and constitutional crisis",
-					"description": "A tied election and dispute over women's representation led to court rulings and the installation of Fiame Naomi Mataʻafa as prime minister, ending Tuilaʻepa Saʼilele Malielegaoi’s long tenure."
+					"description": "A tied election and dispute over women's representation led to court rulings and the installation of Fiame Naomi Mataʻafa as prime minister, ending Tuilaʻepa Saʼilele Malielegaoi's long tenure."
 				},
 				{
 					"year": "2021-2025",
@@ -14492,7 +14492,7 @@
 		},
 		"independence": {
 			"period": "20th century transition to full control",
-			"description": "Tonga maintained protected-state arrangements with Britain but gradually took control of its external affairs. The 1970s mark the transfer of full control of domestic and foreign affairs and the affirmation of the kingdom’s international sovereignty.",
+			"description": "Tonga maintained protected-state arrangements with Britain but gradually took control of its external affairs. The 1970s mark the transfer of full control of domestic and foreign affairs and the affirmation of the kingdom's international sovereignty.",
 			"keyEvents": [
 				{
 					"year": "1970",
@@ -14519,7 +14519,7 @@
 				{
 					"year": "2014-2019",
 					"title": "ʻAkilisi Pōhiva as prime minister",
-					"description": "Longtime democracy activist is elected PM, representing a milestone for Tonga’s democratic movement; his death in 2019 marks a political turning point."
+					"description": "Longtime democracy activist is elected PM, representing a milestone for Tonga's democratic movement; his death in 2019 marks a political turning point."
 				},
 				{
 					"year": "15-16 January 2022",
@@ -14581,6 +14581,642 @@
 				"era": "Modern",
 				"title": "Hunga Tonga eruption and tsunami",
 				"description": "Major volcanic event and tsunami cause severe damage in Tonga and prompt international relief."
+			}
+		]
+	},
+	{
+		"name": "Kiribati",
+		"overview": "A central Pacific island nation formed from the Gilbert Islands, Phoenix Islands and Line Islands. Settled millennia ago by Austronesian voyagers, Kiribati was a British protectorate and colony until independence in 1979. Its economy centers on fishing, limited copra production and revenue from fishing licenses and remittances. Kiribati faces acute threats from sea-level rise, freshwater scarcity and limited arable land. The Phoenix Islands Protected Area is one of the world's largest marine protected areas and a major conservation achievement for the state.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Kiribati",
+			"urls": [
+				"https://www.britannica.com/place/Kiribati",
+				"https://en.wikipedia.org/wiki/History_of_Kiribati",
+				"https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands",
+				"https://whc.unesco.org/en/list/1325"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "12 July 1979" },
+			{ "label": "Capital / seat of government", "value": "South Tarawa (Tarawa Atoll)" },
+			{ "label": "Population (approx.)", "value": "≈120,000 (2020s estimate)" },
+			{ "label": "Land area", "value": "≈811 km² (scattered across ~3.5 million km² EEZ)" },
+			{ "label": "Official languages", "value": "Gilbertese (I-Kiribati) and English" },
+			{
+				"label": "Name origin",
+				"value": "Kiribati is the local (Gilbertese) rendering of 'Gilberts' (Gilbert Islands)"
+			},
+			{ "label": "Notable protected area", "value": "Phoenix Islands Protected Area (UNESCO World Heritage site)" }
+		],
+		"ancient": {
+			"period": "c. 2000-500 BCE to c. 1800 CE (broad)",
+			"description": "Austronesian voyagers settled the low coral atolls and raised islands thousands of years ago. The islands' cultures developed maritime skills, reef and lagoon fishing, and communal village systems. Over centuries there was inter-island contact with Micronesian and Polynesian groups and later inter-island movements that shaped local dialects, leadership structures and customary law.",
+			"keyEvents": [
+				{
+					"year": "c. 4,000-2,000 years ago",
+					"title": "Austronesian settlement (broad estimate)",
+					"description": "People from Southeast Asia/Micronesia/Polynesia colonize Central Pacific atolls, establishing subsistence fishing and horticulture."
+				},
+				{
+					"year": "pre-1600s",
+					"title": "Inter-island contact",
+					"description": "Cultural and material exchange with neighbouring island groups; development of distinct Gilbertese language and customs."
+				}
+			],
+			"notableFigures": ["Traditional community leaders (unrecorded names; chiefly lines preserved in oral histories)"]
+		},
+		"colonial": {
+			"period": "late 18th century (European contact) - 1979",
+			"description": "European ships sighted and charted elements of the island groups from the 17th-19th centuries. The Gilbert and Ellice Islands were made a British protectorate in 1892 and a Crown Colony in 1916. The colony's administration centred on Ocean Island (Banaba) for part of the 20th century because of phosphate mining. Missionaries, traders and labour recruitment (including coercive practices known as blackbirding) reshaped local economies and societies. During World War II the Japanese occupied parts of the Gilberts; the US-led assault on Tarawa in November 1943 was a major and bloody battle in the Central Pacific. Postwar decolonisation and internal moves toward self-government led to separate states: Tuvalu (Ellice) and Kiribati (Gilbert islands with Banaba).",
+			"keyEvents": [
+				{
+					"year": "1606",
+					"title": "Early European sightings",
+					"description": "Some Gilbert atolls first sighted and named by European navigators (records from early 17th century onward)."
+				},
+				{
+					"year": "1892",
+					"title": "British protectorate established",
+					"description": "Gilbert and Ellice Islands placed under British protectorate administration."
+				},
+				{
+					"year": "1916",
+					"title": "Crown colony formed",
+					"description": "Protectorate reconstituted as the Gilbert and Ellice Islands Colony (Crown colony)."
+				},
+				{
+					"year": "1900s-1970s",
+					"title": "Phosphate and Ocean Island (Banaba)",
+					"description": "Phosphate mining on Banaba/Ocean Island under colonial concessionled to major social and environmental impacts; Banabans were later relocated in part to Rabi Island (Fiji)."
+				},
+				{
+					"year": "1941-1945",
+					"title": "WWII Japanese occupation and Allied campaigns",
+					"description": "Japanese occupation of some islands; Tarawa and Makin were focal points of Allied amphibious operations (Tarawa battle, Nov 1943)."
+				}
+			],
+			"notableFigures": ["Arthur Grimble", "Local island leaders recorded in colonial records and oral histories"]
+		},
+		"independence": {
+			"period": "1970s",
+			"description": "Decolonisation proceeded through staged internal self-government in the 1970s. The Gilbert Islands separated administratively from the Ellice Islands (which became Tuvalu). The Republic of Kiribati (name chosen to render 'Gilberts' in Gilbertese) became independent on 12 July 1979. Independence brought control over a large exclusive economic zone and new responsibilities for managing scarce land, marine resources and climate vulnerabilities.",
+			"keyEvents": [
+				{
+					"year": "1974-1976",
+					"title": "Political separation",
+					"description": "Ellice Islands vote to separate; administrative division precedes full independence."
+				},
+				{
+					"year": "12 July 1979",
+					"title": "Independence",
+					"description": "Republic of Kiribati established with a constitution and elected government."
+				}
+			],
+			"notableFigures": ["Tebuoro Tabai (Ieremia Tabai) — first President of independent Kiribati"]
+		},
+		"modern": {
+			"period": "1980 - present",
+			"description": "Modern Kiribati manages a dispersed population and a vast EEZ. Economic activity relies on fishing license revenue, development aid, small-scale agriculture (copra) and remittances. Kiribati has been internationally prominent on climate change issues because of extreme low elevation and freshwater scarcity on atolls. The state created the Phoenix Islands Protected Area (PIPA) in the 2000s and successfully secured UNESCO World Heritage status for it. Governance challenges include infrastructure and health pressures from rapid urbanisation on South Tarawa.",
+			"keyEvents": [
+				{
+					"year": "2006-2008",
+					"title": "PIPA established and expanded",
+					"description": "Phoenix Islands Protected Area created and extended to become one of the world's largest MPAs; later inscribed on UNESCO World Heritage List (2010)."
+				},
+				{
+					"year": "2000s-2020s",
+					"title": "Climate vulnerability recognised internationally",
+					"description": "Kiribati advocates for climate adaptation and mitigation; domestic policies address water security, coastal erosion and planned relocation discussions."
+				}
+			],
+			"notableFigures": ["Anote Tong — President (2003-2016)", "Ieremia Tabai — early post-independence leader"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE-500 CE",
+				"era": "Ancient",
+				"title": "Island settlement",
+				"description": "Austronesian colonisation and establishment of atoll communities."
+			},
+			{
+				"year": "1606",
+				"era": "Colonial",
+				"title": "European sightings",
+				"description": "Early European navigators record some Gilbert atolls."
+			},
+			{
+				"year": "1892",
+				"era": "Colonial",
+				"title": "British protectorate",
+				"description": "Protectorate over Gilbert and Ellice Islands established."
+			},
+			{
+				"year": "1916",
+				"era": "Colonial",
+				"title": "Crown colony formed",
+				"description": "Gilbert and Ellice Islands become a Crown colony."
+			},
+			{
+				"year": "1943",
+				"era": "Colonial/WWII",
+				"title": "Battle of Tarawa",
+				"description": "Major World War II amphibious assault on Tarawa Atoll, heavy casualties."
+			},
+			{
+				"year": "1976-1979",
+				"era": "Independence",
+				"title": "Separation and independence",
+				"description": "Ellice Islands separate; Gilbert Islands become independent Kiribati on 12 July 1979."
+			},
+			{
+				"year": "2008-2010",
+				"era": "Modern",
+				"title": "PIPA and UNESCO listing",
+				"description": "Phoenix Islands Protected Area established and inscribed as World Heritage site."
+			}
+		]
+	},
+	{
+		"name": "Nauru",
+		"overview": "A tiny raised coral island in the southwestern Pacific. Nauru's modern history is dominated by exceptionally rich phosphate deposits. Colonial annexation, extensive phosphate extraction and short-term wealth followed by environmental devastation and economic collapse define the 20th- and 21st-century narrative. Nauru became independent in 1968. Since the phosphate boom ended the country has pursued diverse revenue strategies, including offshore financial services and hosting regional asylum processing facilities.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Nauru",
+			"urls": [
+				"https://www.britannica.com/place/Nauru",
+				"https://en.wikipedia.org/wiki/History_of_Nauru",
+				"https://en.wikipedia.org/wiki/Phosphate_mining_in_Banaba_and_Nauru",
+				"https://www.constituteproject.org/constitution/Nauru_1968"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "31 January 1968" },
+			{
+				"label": "Administrative centre",
+				"value": "Yaren District (de facto seat of government; Nauru has no official capital)"
+			},
+			{ "label": "Population (approx.)", "value": "≈10,000-12,000 (2020s estimate)" },
+			{ "label": "Land area", "value": "≈21 km² (one of the world's smallest states by area)" },
+			{ "label": "Official languages", "value": "Nauruan and English" },
+			{
+				"label": "Natural resource (historical)",
+				"value": "High-grade phosphate (largely mined out by early 21st century)"
+			}
+		],
+		"ancient": {
+			"period": "pre-European contact to 19th century",
+			"description": "Nauru was settled by Austronesian peoples and developed a distinct Nauruan language and culture adapted to a raised coral island environment. Communities relied on reef and lagoon resources, pandanus and coconut, and managed limited arable land.",
+			"keyEvents": [
+				{
+					"year": "pre-1600s",
+					"title": "Local settlement and social development",
+					"description": "Nauruan society develops customary governance, clan structures and maritime skills suited to a raised coral island."
+				}
+			],
+			"notableFigures": ["Traditional elders and clan leaders recorded in oral history"]
+		},
+		"colonial": {
+			"period": "late 19th century - mid 20th century",
+			"description": "Nauru was first sighted by Europeans in the late 18th century but regular contact increased in the 19th century. In 1888 Germany annexed Nauru. Phosphate discovery and exploitation began in the early 20th century under foreign companies. After World War I the League of Nations placed Nauru under Australian administration (with UK and New Zealand participation). Phosphate extraction escalated under the British Phosphate Commissioners and later under locally owned enterprises after the Nauruan purchase of assets in the late 1960s.",
+			"keyEvents": [
+				{
+					"year": "1798",
+					"title": "First recorded European sighting",
+					"description": "Island sighted by western mariners (often cited as Captain John Fearn, 1798)."
+				},
+				{ "year": "1888", "title": "German annexation", "description": "Nauru annexed into German New Guinea." },
+				{
+					"year": "1906-1907",
+					"title": "Commercial phosphate mining begins",
+					"description": "Pacific Phosphate Company begins mining; mining expands under colonial arrangements."
+				},
+				{
+					"year": "1914-1920",
+					"title": "WWI and League mandate",
+					"description": "Australian forces occupy Nauru in 1914; after WWI administration placed under a League of Nations mandate administered by Australia with UK and New Zealand involvement."
+				}
+			],
+			"notableFigures": [
+				"Local leaders who negotiated with colonial authorities (names preserved in local records and oral history)"
+			]
+		},
+		"independence": {
+			"period": "1960s",
+			"description": "Nauru achieved self-government in the 1960s and purchased phosphate assets from the former colonial consortium shortly before independence. The Republic of Nauru declared independence on 31 January 1968 under founding president Hammer DeRoburt. Control of phosphate revenues initially made the country unusually wealthy per capita for a time.",
+			"keyEvents": [
+				{
+					"year": "1966",
+					"title": "Self-government",
+					"description": "Nauru attains self-government ahead of formal independence."
+				},
+				{
+					"year": "31 January 1968",
+					"title": "Independence",
+					"description": "Republic of Nauru established; Hammer DeRoburt becomes the founding president."
+				},
+				{
+					"year": "1970",
+					"title": "Control of phosphate operations",
+					"description": "Nauru purchases assets of the British Phosphate Commissioners and assumes local control of phosphate production (Nauru Phosphate Corporation, later RONPHOS)."
+				}
+			],
+			"notableFigures": ["Hammer DeRoburt"]
+		},
+		"modern": {
+			"period": "1970s - present",
+			"description": "The phosphate boom produced large sovereign funds and high per-capita income in the 1970s. Mismanagement, poor investments, litigation, and the exhaustion of high-grade phosphate reserves by the 1990s-2000s led to economic collapse and severe environmental degradation. Nauru has pursued varied revenue strategies including hosting offshore processing centres for asylum seekers under arrangements with other states, selling passports or citizenship in some periods, and limited phosphate re-mining. Environmental rehabilitation remains a major long-term challenge.",
+			"keyEvents": [
+				{
+					"year": "1970s",
+					"title": "Phosphate wealth era",
+					"description": "High per-capita incomes; establishment of Nauru Phosphate Royalties Trust and state investments."
+				},
+				{
+					"year": "1993-1994",
+					"title": "Legal action and settlements",
+					"description": "Nauru takes actions concerning environmental damage from colonial mining; Australia offers settlements toward rehabilitation."
+				},
+				{
+					"year": "late 1990s-2000s",
+					"title": "Economic decline",
+					"description": "Mismanagement of trust funds and exhausted phosphate led to insolvency of the sovereign wealth fund and economic crisis."
+				},
+				{
+					"year": "2001-present",
+					"title": "Asylum processing and new revenue sources",
+					"description": "Nauru signs agreements to host offshore processing centres; revenue from services and bilateral deals becomes important."
+				}
+			],
+			"notableFigures": ["Hammer DeRoburt", "Bernard Dowiyogo"]
+		},
+		"timeline": [
+			{
+				"year": "c. pre-1600s",
+				"era": "Ancient/Pre-Colonial",
+				"title": "Traditional settlement",
+				"description": "Austronesian settlement and development of local culture."
+			},
+			{
+				"year": "1798",
+				"era": "Colonial",
+				"title": "European sighting recorded",
+				"description": "First recorded European sighting reported in late 18th century."
+			},
+			{
+				"year": "1888",
+				"era": "Colonial",
+				"title": "German annexation",
+				"description": "Nauru becomes part of the German colonial sphere."
+			},
+			{
+				"year": "1906-1907",
+				"era": "Colonial",
+				"title": "Phosphate mining begins",
+				"description": "Commercial mining establishes Nauru as a major phosphate exporter."
+			},
+			{
+				"year": "1914-1920",
+				"era": "Colonial/WWI",
+				"title": "Australian occupation and League mandate",
+				"description": "Australian forces occupy Nauru in WWI; postwar administration as a League of Nations mandate."
+			},
+			{
+				"year": "31 January 1968",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Republic of Nauru proclaimed and constitution adopted."
+			},
+			{
+				"year": "1970s",
+				"era": "Modern",
+				"title": "Phosphate boom and sovereign investment",
+				"description": "High per-capita wealth from phosphate revenues; establishment of investment trusts."
+			},
+			{
+				"year": "1990s-2000s",
+				"era": "Modern",
+				"title": "Economic collapse and environmental crisis",
+				"description": "Phosphate reserves decline; mismanaged investments and environmental devastation create severe economic and social challenges."
+			}
+		]
+	},
+	{
+		"name": "Palau",
+		"overview": "An archipelagic Micronesian state in the western Pacific. Settled by Austronesian voyagers millennia ago, Palau experienced successive external contacts and controls: sporadic European sighting, Spanish claim, German administration, Japanese mandate and settlement, then U.S. trusteeship after World War II. Palau opted for sovereign nationhood through a negotiated Compact of Free Association with the United States and became fully independent in 1994. Today Palau balances customary local governance and state institutions while pursuing marine conservation, limited tourism, and strategic partnerships that shape its economy and security.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Palau",
+			"urls": [
+				"https://www.britannica.com/place/Palau",
+				"https://en.wikipedia.org/wiki/History_of_Palau",
+				"https://www.doi.gov/sites/doi.gov/files/uploads/Palau_ROP_COFA.pdf",
+				"https://www.palaugov.pw/states/",
+				"https://www.pewtrusts.org/-/media/assets/2017/07/palau_update2017_v6.pdf"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "1 October 1994 (Compact of Free Association entered into force)" },
+			{ "label": "Capital", "value": "Melekeok (seat of government); Koror (largest population center)" },
+			{ "label": "Population (approx.)", "value": "≈17,000-18,000 (2020s estimates)" },
+			{ "label": "Land area", "value": "≈459 km² (principal islands; extensive EEZ)" },
+			{ "label": "Official languages", "value": "Palauan and English" },
+			{
+				"label": "Notable policy",
+				"value": "Large-scale marine conservation including Palau National Marine Sanctuary"
+			}
+		],
+		"ancient": {
+			"period": "c. 2000 BCE - c. 1500 CE (broad prehistoric settlement to contact era)",
+			"description": "Palau was settled by Austronesian-speaking peoples whose material culture and oral histories show links to the Philippines, eastern Indonesia and wider Micronesia. Societies developed stone and shell tool industries, complex matrilineal/chiefly social structures in some states, sophisticated canoe voyaging and localized customary law. Archaeology on Babeldaob and the Rock Islands documents village sites, terraces and stonework that indicate long-term, settled adaptation to island environments.",
+			"keyEvents": [
+				{
+					"year": "c. 1st-2nd millennium BCE (broad)",
+					"title": "Austronesian settlement",
+					"description": "Voyaging colonists establish communities across main islands and rock islets; development of Palauan language and island-level social systems."
+				},
+				{
+					"year": "pre-contact (centuries)",
+					"title": "Inter-island exchange and customary institutions",
+					"description": "Long-distance trade, exchange of prestige goods and development of chiefly/clan networks that persist in customary governance."
+				}
+			],
+			"notableFigures": ["Traditional chiefs (Ibedul, Reklai and other title-holders)"]
+		},
+		"colonial": {
+			"period": "16th century (sightings) - 1947 (start of US trusteeship)",
+			"description": "European navigators sighted Palau from the 16th century but sustained colonial control began much later. Spain claimed Palau in the 19th century but did not settle it heavily. After the Spanish-American War (1898) Spain sold Palau to Germany (1899), and German administration introduced copra and small-scale mining. Japan seized Palau in World War I and later colonized and developed infrastructure and settler communities under the South Seas Mandate (Japanese administration). During World War II Palau became a major Japanese defensive area and suffered intense Allied campaigns (notably Peleliu). After Japan's defeat Palau became part of the U.S.-administered Trust Territory of the Pacific Islands under UN mandate in 1947.",
+			"keyEvents": [
+				{
+					"year": "1522-18th-19th centuries",
+					"title": "European sightings and intermittent contact",
+					"description": "Various European ships record Palauan islands; no sustained colonization during early period."
+				},
+				{
+					"year": "1899",
+					"title": "German administration",
+					"description": "Palau sold by Spain to Germany; German economic interests establish copra and limited industry."
+				},
+				{
+					"year": "1914-1944",
+					"title": "Japanese mandate and settlement",
+					"description": "Japan takes control during WWI; interwar Japanese development and migration reshape demographics and economy."
+				},
+				{
+					"year": "1944",
+					"title": "Allied campaign (Peleliu and others)",
+					"description": "Bloody battles as US forces capture Palau from Japan; heavy local and military casualties."
+				},
+				{
+					"year": "1947",
+					"title": "U.S. Trust Territory",
+					"description": "Palau placed under U.S. trusteeship as part of the Trust Territory of the Pacific Islands (UN trusteeship system)."
+				}
+			],
+			"notableFigures": [
+				"Japanese administrators and settlers (interwar period)",
+				"U.S. trusteeship administrators (post-1947)"
+			]
+		},
+		"independence": {
+			"period": "1978-1994 (self-government through Compact and full independence)",
+			"description": "Palau opted out of earlier federations and negotiated its own path to sovereignty. Constitutional debates, referenda and negotiations with the United States over nuclear provisions and security took decades. Palau entered a Compact of Free Association which provided U.S. defense responsibility, access to economic assistance and migration arrangements. The Compact entered into force and Palau became a UN member-state when it achieved full independence on 1 October 1994.",
+			"keyEvents": [
+				{
+					"year": "1978-1981",
+					"title": "Constitution and early self-government",
+					"description": "Palau adopts a constitution and establishes internal government institutions while negotiating status with the United States."
+				},
+				{
+					"year": "1 October 1994",
+					"title": "Independence and Compact in force",
+					"description": "Republic of Palau becomes fully sovereign as Compact of Free Association with the United States enters into force."
+				}
+			],
+			"notableFigures": [
+				"Haruo Remeliik — first President of Palau",
+				"Kuniwo Nakamura — President (1993-2001)",
+				"Tommy E. Remengesau Jr"
+			]
+		},
+		"modern": {
+			"period": "1994 - present",
+			"description": "Palau manages a small domestic economy dependent on tourism, U.S. Compact assistance, fisheries revenue and niche services. It has become a global exemplar in marine conservation, establishing extensive marine protected areas and pioneering shark protection. Domestic governance balances state (village) autonomy, traditional chiefly authority and national institutions. Palau faces economic vulnerability from tourism shocks, climate change risk to infrastructure and debates on how to balance conservation with sustainable economic uses of its EEZ.",
+			"keyEvents": [
+				{
+					"year": "2009",
+					"title": "Shark sanctuary established",
+					"description": "Palau creates legal protection for sharks, an early high-profile conservation step."
+				},
+				{
+					"year": "2015",
+					"title": "Palau National Marine Sanctuary Act passed",
+					"description": "Law phases in a sanctuary covering roughly 80% of Palau's EEZ with limited zones for local fishing, positioning Palau as leader in ocean protection."
+				},
+				{
+					"year": "2010s-2020s",
+					"title": "Compact renewals and economic negotiations",
+					"description": "Palau continues negotiation and management of U.S. assistance under COFA and explores diversified revenue sources while confronting COVID-era tourism collapse."
+				}
+			],
+			"notableFigures": ["Tommy E. Remengesau Jr.", "Kuniwo Nakamura", "Surangel Whipps Jr."]
+		},
+		"timeline": [
+			{
+				"year": "c. 1st-2nd millennium BCE",
+				"era": "Ancient",
+				"title": "Austronesian settlement",
+				"description": "Founding of village societies and development of Palauan culture."
+			},
+			{
+				"year": "1899",
+				"era": "Colonial",
+				"title": "German control begins",
+				"description": "Spain sells Palau to Germany following Spanish defeat in 1898."
+			},
+			{
+				"year": "1914-1944",
+				"era": "Colonial/WWII",
+				"title": "Japanese mandate & wartime occupation",
+				"description": "Japanese administration and wartime military campaigns; major WWII battles (e.g., Peleliu)."
+			},
+			{
+				"year": "1947",
+				"era": "Colonial/Trusteeship",
+				"title": "U.S. Trust Territory",
+				"description": "Palau placed under U.S. trusteeship after WWII."
+			},
+			{
+				"year": "1 October 1994",
+				"era": "Independence",
+				"title": "Full independence",
+				"description": "Compact of Free Association enters into force; Palau becomes sovereign and joins the UN."
+			},
+			{
+				"year": "2015",
+				"era": "Modern",
+				"title": "National Marine Sanctuary",
+				"description": "Landmark sanctuary law protects the majority of Palau's EEZ."
+			}
+		]
+	},
+	{
+		"name": "Tuvalu",
+		"overview": "A small Polynesian atoll state in the central Pacific. Tuvalu's population and culture derive from centuries of Polynesian settlement. European contact in the 16th century was intermittent; sustained integration into global trade, missionary activity and colonial administration came in the 19th century. Tuvalu formed part of the British Gilbert and Ellice Islands Protectorate and later colony before separating and achieving independence in 1978. The country is notable for strong community institutions, pronounced vulnerability to sea-level rise and an active international diplomatic profile on climate change.",
+		"source": {
+			"label": "Encyclopaedia Britannica",
+			"url": "https://www.britannica.com/place/Tuvalu",
+			"urls": [
+				"https://www.britannica.com/place/Tuvalu",
+				"https://en.wikipedia.org/wiki/History_of_Tuvalu",
+				"https://rnz.co.nz/collections/nff-tuvalu/about-tuvalu",
+				"https://www.un.org/press/en/2000/20000905.gf111.shtml"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "1 October 1978" },
+			{
+				"label": "Capital / administrative centre",
+				"value": "Funafuti (atoll; administrative centre and government offices)"
+			},
+			{ "label": "Population (approx.)", "value": "≈11,000-12,000 (2020s estimates)" },
+			{ "label": "Land area", "value": "≈26 km² (nine atolls and reef islands)" },
+			{ "label": "Official languages", "value": "Tuvaluan and English" },
+			{
+				"label": "Primary economic activities",
+				"value": "Remittances, fisheries licensing, foreign aid, limited copra production, and niche services"
+			}
+		],
+		"ancient": {
+			"period": "c. 1st millennium BCE - c. 16th century (Polynesian settlement era)",
+			"description": "Tuvalu was settled by Polynesian voyagers who brought horticulture, canoe technology and social systems suited to low atolls. Cultural links with Samoa, Tonga, Uvea and other Polynesian islands shaped language, kinship, and chiefly arrangements. Settlement patterns favored dispersed village clusters and sustainable lagoon-reef resource use.",
+			"keyEvents": [
+				{
+					"year": "c. 1,000-2,000 years ago (broad)",
+					"title": "Polynesian settlement",
+					"description": "Arrival of seafaring Polynesian settlers who established the cultural and linguistic foundations of Tuvaluan society."
+				},
+				{
+					"year": "pre-contact centuries",
+					"title": "Inter-atoll exchange",
+					"description": "Regular voyaging and exchange sustain social, marriage and ritual ties across the atolls and with neighbouring island groups."
+				}
+			],
+			"notableFigures": ["Traditional elders and matai (local leaders)"]
+		},
+		"colonial": {
+			"period": "19th century - 1978 (British protectorate/colony period)",
+			"description": "European whalers, traders and missionaries arrived from the early 19th century. Blackbirding and labour recruitment in the 19th century disrupted populations on some atolls. Missionaries (notably the London Missionary Society) converted many islanders to Christianity and reshaped social life. Britain declared a protectorate over the Ellice Islands in 1892 and administered them as part of the Gilbert and Ellice Islands Colony. Colonial administration formalized borders, education and economic ties oriented toward copra and external labour markets.",
+			"keyEvents": [
+				{
+					"year": "1568",
+					"title": "First recorded European sighting",
+					"description": "Spanish expedition of Álvaro de Mendaña de Neira sights Nui (part of the Ellice group) and charts it as Isla de Jesús."
+				},
+				{
+					"year": "1820s-1860s",
+					"title": "Whalers, traders and blackbirding",
+					"description": "Regular visits by whaling ships and traders; Peruvian labour recruiters abduct islanders during blackbirding episodes (1860s)."
+				},
+				{
+					"year": "1892",
+					"title": "British protectorate established",
+					"description": "Ellice Islands placed under British protection; later incorporated administratively with the Gilbert Islands."
+				},
+				{
+					"year": "Late 19th century",
+					"title": "Missionary influence",
+					"description": "London Missionary Society and converted islanders reshape religious and social institutions."
+				}
+			],
+			"notableFigures": ["Missionaries such as Elekana"]
+		},
+		"independence": {
+			"period": "1974-1978 (separation from Gilbert Islands and independence)",
+			"description": "Political movements in the 1970s sought separate administration for the Ellice group. A 1974-1975 separation referendum led to administrative separation from the Gilbert Islands (later Kiribati). Tuvalu adopted a constitution and became independent within the Commonwealth on 1 October 1978 with Toaripi Lauti as its first Prime Minister. Independence preserved local customary law and village governance while creating modern state institutions.",
+			"keyEvents": [
+				{
+					"year": "1974-1975",
+					"title": "Referendum and separation",
+					"description": "Ellice Islanders vote to separate from the Gilbert and Ellice Colony; administrative partition follows."
+				},
+				{
+					"year": "1 October 1978",
+					"title": "Independence",
+					"description": "Tuvalu becomes an independent constitutional monarchy within the Commonwealth; Toaripi Lauti becomes first prime minister."
+				},
+				{
+					"year": "5 September 2000",
+					"title": "UN membership",
+					"description": "Tuvalu admitted to the United Nations (189th member state)."
+				}
+			],
+			"notableFigures": ["Toaripi Lauti", "Sir Tomu Sione"]
+		},
+		"modern": {
+			"period": "1978 - present",
+			"description": "Tuvalu's contemporary policy focus is climate adaptation, economic resilience and preservation of cultural identity. Limited land and freshwater make it highly vulnerable to sea-level rise and extreme weather. The government has been an active voice at international climate negotiations. Economically Tuvalu depends on development assistance, revenue from fisheries licensing, remittances and the Tuvalu Trust Fund established to stabilise public finances. In recent years Tuvalu has pursued digital innovation and strategic partnerships to provide relocation pathways and adaptation funding.",
+			"keyEvents": [
+				{
+					"year": "2000",
+					"title": "United Nations membership",
+					"description": "Increased diplomatic visibility; Tuvalu advocates internationally on climate and small states' issues."
+				},
+				{
+					"year": "2000s-2010s",
+					"title": "Climate diplomacy",
+					"description": "Tuvalu leads and participates in AOSIS and UN climate negotiations to secure stronger global commitments and adaptation finance."
+				},
+				{
+					"year": "2022-2023",
+					"title": "Digital preservation & regional security pacts",
+					"description": "Tuvalu announces a digital replica project to preserve cultural heritage and signs security/assistance arrangements (e.g., Falepili Union with Australia) addressing climate mobility and cooperation."
+				}
+			],
+			"notableFigures": ["Enele Sopoaga", "Toaripi Lauti", "Kausea Natano"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1,000-2,000 years ago",
+				"era": "Ancient",
+				"title": "Polynesian settlement",
+				"description": "Voyaging settlers establish the island communities that become Tuvalu."
+			},
+			{
+				"year": "1568",
+				"era": "Colonial",
+				"title": "European sighting (Mendaña)",
+				"description": "Spanish expedition sights Nui; intermittent European contact begins."
+			},
+			{
+				"year": "1820s-1860s",
+				"era": "Colonial",
+				"title": "Whalers, traders and blackbirding",
+				"description": "Islanders encounter whalers and are affected by labour recruitment and trade."
+			},
+			{
+				"year": "1892",
+				"era": "Colonial",
+				"title": "British protectorate",
+				"description": "Ellice Islands become a British protectorate and later a colony within the Gilbert and Ellice Islands."
+			},
+			{
+				"year": "1975-1978",
+				"era": "Independence",
+				"title": "Separation and independence",
+				"description": "Ellice Islands separate administratively and adopt constitution; Tuvalu becomes independent on 1 Oct 1978."
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "UN membership",
+				"description": "Tuvalu admitted to the United Nations and amplifies climate advocacy."
+			},
+			{
+				"year": "2022-2023",
+				"era": "Modern",
+				"title": "Digital preservation & regional agreements",
+				"description": "Tuvalu pursues cultural digitalisation and signs regional cooperation agreements addressing climate mobility and adaptation."
 			}
 		]
 	}
