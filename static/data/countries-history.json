@@ -15219,5 +15219,1099 @@
 				"description": "Tuvalu pursues cultural digitalisation and signs regional cooperation agreements addressing climate mobility and adaptation."
 			}
 		]
+	},
+	{
+		"name": "North Korea",
+		"overview": "The history of the Korean peninsula spans millennia of unified kingdoms and dynasties, followed by Japanese colonial occupation and a devastating division that persists today. From the ancient kingdoms of Gojoseon and the Three Kingdoms period through the sophisticated Goryeo and Joseon dynasties, Korea developed a distinct culture blending indigenous traditions with Chinese influences. Japanese annexation in 1910 brought 35 years of harsh colonial rule that attempted to erase Korean identity. The peninsula's liberation in 1945 led not to independence but to Cold War division at the 38th parallel, creating two separate nations with competing ideologies. The Korean War (1950-1953) cemented this split, leaving North Korea as an isolated totalitarian state under the Kim dynasty and South Korea evolving from military dictatorship to vibrant democracy and economic powerhouse. Despite shared heritage, the two Koreas have developed drastically different political systems and societies, yet remain technically at war with reunification an elusive dream.",
+		"source": {
+			"label": "Wikipedia - History of Korea",
+			"url": "https://en.wikipedia.org/wiki/History_of_Korea",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Korea",
+				"https://www.britannica.com/place/Korea",
+				"https://en.wikipedia.org/wiki/Division_of_Korea",
+				"https://www.history.com/articles/north-south-korea-divided-reasons-facts"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Division Date",
+				"value": "September 2, 1945 (38th parallel)"
+			},
+			{
+				"label": "North Korea Founded",
+				"value": "September 9, 1948"
+			},
+			{
+				"label": "Korean War",
+				"value": "June 25, 1950 - July 27, 1953"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "3 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 2333 BCE - 676 CE",
+			"description": "Korea's ancient history begins with the legendary kingdom of Gojoseon, founded according to tradition in 2333 BCE by Tangun, said to be descended from heaven. Archaeological evidence shows advanced Bronze Age cultures developing on the peninsula from around the 8th century BCE, with the use of iron appearing by the 4th century BCE. Gojoseon, centered in the Taedong River basin in northern Korea, developed into a confederation of tribes and engaged with Chinese states before falling to Han China around 108 BCE. Following Gojoseon's collapse, various states emerged including Buyeo in the north and the Three Han confederacies (Mahan, Jinhan, Byeonhan) in the south. The Three Kingdoms period (57 BCE-668 CE) saw the peninsula divided between Goguryeo in the north, Baekje in the southwest, and Silla in the southeast. Goguryeo emerged as a powerful empire controlling much of Manchuria and northern Korea, famously defeating massive Chinese invasions under King Gwanggaeto the Great and his son King Jangsu in the 5th century. Baekje became a sophisticated maritime power, serving as a cultural bridge transmitting Buddhism, Chinese characters, and advanced technology to Japan. Silla, initially the weakest kingdom, developed the elite Hwarang warrior corps and eventually allied with Tang China to conquer Baekje in 660 and Goguryeo in 668. All three kingdoms shared similar languages and cultures, adopted Buddhism as state religion, and developed sophisticated aristocratic systems. The kingdoms compiled their own histories, built impressive fortifications and Buddhist temples, and created distinctive ceramics and metalwork. After defeating both rivals, Silla expelled Tang forces from the peninsula by 676, achieving the first unification of most of Korea and establishing a foundation for Korean national identity.",
+			"keyEvents": [
+				{
+					"year": "c. 2333 BCE",
+					"title": "Legendary Founding of Gojoseon",
+					"description": "Traditional founding date by Tangun; earliest Korean kingdom emerges in northern peninsula"
+				},
+				{
+					"year": "c. 4th century BCE",
+					"title": "Iron Age Begins",
+					"description": "Iron technology spreads across Korea, enabling advanced farming and warfare"
+				},
+				{
+					"year": "108 BCE",
+					"title": "Fall of Gojoseon",
+					"description": "Han China conquers Gojoseon, establishing commanderies but Korean resistance continues"
+				},
+				{
+					"year": "37 BCE",
+					"title": "Goguryeo Founded",
+					"description": "King Jumong establishes Goguryeo near Yalu River, becoming powerful northern kingdom"
+				},
+				{
+					"year": "18 BCE",
+					"title": "Baekje Founded",
+					"description": "Kingdom established in Han River region, later becoming major maritime power"
+				},
+				{
+					"year": "57 BCE",
+					"title": "Silla Founded",
+					"description": "Kingdom emerges in southeastern Korea, eventually unifying peninsula"
+				},
+				{
+					"year": "372 CE",
+					"title": "Buddhism Introduced to Goguryeo",
+					"description": "Buddhism arrives from China, becoming state religion and major cultural force"
+				},
+				{
+					"year": "391-413 CE",
+					"title": "King Gwanggaeto's Reign",
+					"description": "Goguryeo reaches zenith, expanding into Manchuria and dominating peninsula"
+				},
+				{
+					"year": "612 CE",
+					"title": "Battle of Salsu",
+					"description": "General Eulji Mundeok defeats massive Sui invasion, preserving Korean independence"
+				},
+				{
+					"year": "660 CE",
+					"title": "Fall of Baekje",
+					"description": "Silla-Tang alliance conquers Baekje, beginning unification process"
+				},
+				{
+					"year": "668 CE",
+					"title": "Fall of Goguryeo",
+					"description": "Silla-Tang forces conquer Goguryeo after years of war"
+				},
+				{
+					"year": "676 CE",
+					"title": "Silla Unification",
+					"description": "Silla expels Tang forces and unifies most of Korean peninsula for first time"
+				}
+			],
+			"notableFigures": [
+				"Tangun (legendary founder)",
+				"King Jumong (founder of Goguryeo)",
+				"King Gwanggaeto the Great",
+				"King Jangsu",
+				"General Eulji Mundeok",
+				"General Kim Yu-sin"
+			]
+		},
+		"medieval": {
+			"period": "676 - 1392 CE",
+			"description": "Following unification, Unified Silla (676-935) and the northern state of Balhae (698-926) coexisted in what Koreans call the North-South States Period. Silla's Later Three Kingdoms period saw fragmentation until General Wang Geon founded the Goryeo dynasty in 918, reunifying the peninsula by 936 and giving Korea its English name. Goryeo (918-1392) established Buddhism as the state religion while adopting Confucianism for governance, creating a centralized bureaucracy and examination system. The dynasty produced magnificent cultural achievements including the world-famous Goryeo celadon ceramics, the Tripitaka Koreana (81,258 woodblocks of Buddhist scriptures), and the first metal movable type printing. Goryeo successfully resisted multiple invasions by the Khitan Liao dynasty and Jurchen Jin dynasty. However, the Mongol invasions (1231-1259) devastated the country despite fierce resistance including the heroic Sambyeolcho rebellion. Goryeo became a vassal of the Mongol Yuan dynasty through forced intermarriage between ruling families, though it maintained internal autonomy. The dynasty engaged in extensive international trade with Song China, Central Asia, Arabia, and Japan, with merchants bringing silk, porcelain, and other goods through the port of Byeongnando. By the late 14th century, Goryeo collapsed from years of Mongol domination, elite corruption, and factional strife. General Yi Seong-gye staged the Wihwado Retreat in 1388, turning his army back from attacking Ming China, and in 1392 overthrew the last Goryeo king to establish the Joseon dynasty, Korea's longest-lasting kingdom.",
+			"keyEvents": [
+				{
+					"year": "918",
+					"title": "Goryeo Dynasty Founded",
+					"description": "General Wang Geon establishes Goryeo with capital at Songdo (Kaesong)"
+				},
+				{
+					"year": "936",
+					"title": "Peninsula Reunified",
+					"description": "Goryeo defeats Later Baekje, completing reunification of Korean peninsula"
+				},
+				{
+					"year": "993-1019",
+					"title": "Khitan Invasions",
+					"description": "Goryeo successfully repels three major invasions by Khitan Liao dynasty"
+				},
+				{
+					"year": "1145",
+					"title": "Samguk Sagi Compiled",
+					"description": "Kim Bu-sik completes history of Three Kingdoms, oldest surviving Korean history book"
+				},
+				{
+					"year": "1196-1258",
+					"title": "Military Rule",
+					"description": "Choe family military dictatorship controls Goryeo, sidelining civilian government"
+				},
+				{
+					"year": "1231-1259",
+					"title": "Mongol Invasions",
+					"description": "Seven devastating Mongol invasions; Goryeo eventually becomes Yuan vassal while maintaining autonomy"
+				},
+				{
+					"year": "1234",
+					"title": "Metal Type Printing",
+					"description": "Goryeo invents world's first metal movable type printing, predating Gutenberg"
+				},
+				{
+					"year": "1270-1356",
+					"title": "Mongol Domination",
+					"description": "Goryeo under Mongol Yuan influence with intermarriage between royal families"
+				},
+				{
+					"year": "1388",
+					"title": "Wihwado Retreat",
+					"description": "General Yi Seong-gye refuses to attack Ming China, marches back to capital"
+				},
+				{
+					"year": "1392",
+					"title": "Goryeo Falls",
+					"description": "Yi Seong-gye overthrows last Goryeo king, establishes Joseon dynasty"
+				}
+			],
+			"notableFigures": [
+				"Wang Geon (Taejo of Goryeo)",
+				"Gang Gam-chan (military commander)",
+				"Kim Bu-sik (historian)",
+				"Choe Chung-heon (military ruler)",
+				"Sambyeolcho leaders"
+			]
+		},
+		"feudal": {
+			"period": "1392 - 1897",
+			"description": "The Joseon dynasty (1392-1910) became one of the world's longest-lasting Confucian dynasties. Founder King Taejo (Yi Seong-gye) moved the capital to Hanyang (modern Seoul) and established Neo-Confucianism as state ideology, replacing Buddhism's dominance. King Sejong the Great (r. 1418-1450) presided over a golden age of scientific and cultural achievements, most notably creating Hangeul, the Korean alphabet, in 1443 to increase literacy among common people. The alphabet's systematic design based on phonetics is considered one of the most scientific writing systems ever created. Joseon developed sophisticated bureaucracy through civil service examinations, advanced astronomy and mathematics, and created masterworks of white porcelain ceramics. The rigid yangban aristocratic class system governed social hierarchy. Joseon faced devastating invasions: Japanese warlord Toyotomi Hideyoshi's invasions (1592-1598) ravaged the peninsula, though Admiral Yi Sun-sin's brilliant naval victories using turtle ships preserved Korean independence. Manchu invasions (1627, 1636) forced Joseon to become Qing tributary state. The dynasty pursued isolationist policies earning Korea the label \"Hermit Kingdom.\" Late Joseon saw intellectual flourishing through Silhak (Practical Learning) scholars and cultural developments, but also growing social tensions and peasant rebellions. In the late 19th century, competing imperial powers (Japan, China, Russia) vied for control of Korea. Despite attempts at modernization including declaring the Korean Empire in 1897, Japan increasingly dominated Korean affairs. The Joseon dynasty ended with Japanese annexation in 1910, closing over 500 years of Confucian monarchy.",
+			"keyEvents": [
+				{
+					"year": "1392",
+					"title": "Joseon Dynasty Founded",
+					"description": "Yi Seong-gye becomes King Taejo, establishes new dynasty with Neo-Confucian principles"
+				},
+				{
+					"year": "1394",
+					"title": "Capital Moved to Hanyang",
+					"description": "Seoul (then Hanyang) established as capital, remaining so to present"
+				},
+				{
+					"year": "1418-1450",
+					"title": "King Sejong's Reign",
+					"description": "Golden age of science and culture; invention of rain gauge, sundial, astronomical instruments"
+				},
+				{
+					"year": "1443-1446",
+					"title": "Hangeul Created",
+					"description": "King Sejong invents Korean alphabet, making literacy accessible to common people"
+				},
+				{
+					"year": "1592-1598",
+					"title": "Japanese Invasions (Imjin War)",
+					"description": "Hideyoshi's invasions devastate Korea; Admiral Yi Sun-sin's naval victories save nation"
+				},
+				{
+					"year": "1627",
+					"title": "First Manchu Invasion",
+					"description": "Later Jin (Manchu) forces invade, forcing Joseon to break ties with Ming China"
+				},
+				{
+					"year": "1636-1637",
+					"title": "Second Manchu Invasion",
+					"description": "Qing forces conquer Joseon, making it tributary state; King Injo forced to surrender"
+				},
+				{
+					"year": "1784",
+					"title": "Catholicism Arrives",
+					"description": "Western religion introduced, leading to persecution of converts"
+				},
+				{
+					"year": "1866",
+					"title": "French Campaign",
+					"description": "French naval attack on Ganghwa Island repelled; Korea maintains isolation"
+				},
+				{
+					"year": "1871",
+					"title": "American Expedition",
+					"description": "US military expedition to Korea fails to open country to trade"
+				},
+				{
+					"year": "1876",
+					"title": "Treaty of Ganghwa",
+					"description": "Japan forces Korea to sign unequal treaty, opening ports and ending isolation"
+				},
+				{
+					"year": "1897",
+					"title": "Korean Empire Declared",
+					"description": "Joseon becomes Korean Empire (Daehan Jeguk), asserting sovereignty amid foreign pressure"
+				}
+			],
+			"notableFigures": [
+				"King Taejo (Yi Seong-gye)",
+				"King Sejong the Great",
+				"Admiral Yi Sun-sin",
+				"Queen Min",
+				"King Gojong",
+				"Ahn Jung-geun"
+			]
+		},
+		"colonial": {
+			"period": "1910 - 1945",
+			"description": "After decades of increasing Japanese influence following the Sino-Japanese War (1894-95) and Russo-Japanese War (1904-05), Japan formally annexed Korea on August 22, 1910, ending the Joseon dynasty. For 35 years, Korea suffered harsh colonial rule designed to erase Korean identity and exploit resources for Japan's imperial expansion. The colonial government banned Korean language instruction, forced Koreans to adopt Japanese names (especially during WWII), closed Korean newspapers, and attempted cultural genocide. Korean history and culture were suppressed while Japanese Shinto shrines were imposed. The colonial economy was structured to benefit Japan—Korean farmers lost land to Japanese settlers, rice and other resources were extracted for Japanese consumption, and Koreans worked in mines and factories under harsh conditions. Despite brutal repression, Koreans mounted significant resistance. The March 1st Movement of 1919 saw nationwide peaceful protests for independence, with over 2 million participants. Japanese forces killed approximately 7,000 people suppressing the movement. This led Korean leaders to establish the Provisional Government of the Republic of Korea in Shanghai, with Syngman Rhee as president. The independence movement continued through armed resistance in Manchuria, diplomatic efforts abroad, and cultural preservation. During WWII (1937-1945), Japan intensified exploitation—forcing hundreds of thousands of Koreans into labor, conscripting soldiers, and enslaving Korean women as \"comfort women\" for Japanese military brothels. Liberation finally came with Japan's surrender on August 15, 1945, but rather than independence, Korea faced new occupation by Soviet and American forces.",
+			"keyEvents": [
+				{
+					"year": "1905",
+					"title": "Protectorate Treaty",
+					"description": "Japan forces Korea to accept protectorate status, controlling foreign affairs"
+				},
+				{
+					"year": "1907",
+					"title": "Forced Abdication",
+					"description": "Emperor Gojong forced to abdicate after sending secret envoys to Hague seeking help"
+				},
+				{
+					"year": "1909",
+					"title": "Ahn Jung-geun Assassination",
+					"description": "Korean patriot assassinates Japanese official Ito Hirobumi at Harbin station"
+				},
+				{
+					"year": "1910",
+					"title": "Annexation Treaty",
+					"description": "August 22, Japan formally annexes Korea, ending 518 years of Joseon dynasty"
+				},
+				{
+					"year": "1919",
+					"title": "March 1st Movement",
+					"description": "Nationwide independence demonstrations; 2 million participate, 7,000 killed by Japanese"
+				},
+				{
+					"year": "1919",
+					"title": "Provisional Government Formed",
+					"description": "Korean Provisional Government established in Shanghai with Syngman Rhee as president"
+				},
+				{
+					"year": "1920s-1930s",
+					"title": "Armed Resistance",
+					"description": "Korean independence fighters wage guerrilla warfare in Manchuria, including Kim Il-sung"
+				},
+				{
+					"year": "1932-1945",
+					"title": "Comfort Women System",
+					"description": "Japan forces Korean and other Asian women into sexual slavery for military"
+				},
+				{
+					"year": "1939-1945",
+					"title": "Forced Assimilation",
+					"description": "Name change policy, forced labor, military conscription intensify during WWII"
+				},
+				{
+					"year": "1945",
+					"title": "Liberation",
+					"description": "August 15, Japan surrenders; Korea liberated but immediately divided by Allied powers"
+				}
+			],
+			"notableFigures": ["Emperor Gojong", "Ahn Jung-geun", "Syngman Rhee", "Kim Gu", "Yu Gwan-sun", "Kim Il-sung"]
+		},
+		"independence": {
+			"period": "1945 - 1953",
+			"description": "Korea's liberation from Japan on August 15, 1945, brought hope of independence but Cold War realities intervened. On September 2, 1945, the US and USSR divided Korea at the 38th parallel—US forces south, Soviet forces north—as a temporary measure to accept Japanese surrender. This division hardened as the superpowers backed competing governments. The Soviet Union installed Kim Il-sung, a former anti-Japanese guerrilla fighter, as leader in the north. In the south, after failed attempts at unified governance through UN-supervised elections, Syngman Rhee was elected president and the Republic of Korea was proclaimed on August 15, 1948. The Democratic People's Republic of Korea was established in the north on September 9, 1948, with Kim Il-sung as premier. Both claimed legitimacy over the entire peninsula. Tensions escalated through border skirmishes and political violence, with both leaders committed to reunification by force. On June 25, 1950, North Korea invaded South Korea with Soviet approval and Chinese support, seeking to unify the peninsula under communism. US-led UN forces intervened to defend South Korea. The war saw dramatic reversals—North Korea nearly conquered the entire south, then UN forces pushed far into North Korea, then Chinese intervention drove them back. After three years of devastating warfare, an armistice was signed July 27, 1953, establishing the Demilitarized Zone (DMZ) near the 38th parallel. The war killed over 2.5 million people, destroyed most of Korea's infrastructure, and permanently divided families. Technically, the two Koreas remain at war, having never signed a peace treaty.",
+			"keyEvents": [
+				{
+					"year": "1945",
+					"title": "Liberation and Division",
+					"description": "August 15, Korea liberated from Japan; September 2, divided at 38th parallel by US and USSR"
+				},
+				{
+					"year": "1946",
+					"title": "Provisional Governments",
+					"description": "Provisional People's Committee established in North; US military government in South"
+				},
+				{
+					"year": "1948",
+					"title": "Separate Governments Established",
+					"description": "August 15, Republic of Korea founded in South; September 9, DPRK founded in North"
+				},
+				{
+					"year": "1948",
+					"title": "Jeju Uprising",
+					"description": "South Korean forces suppress rebellion on Jeju Island; tens of thousands killed"
+				},
+				{
+					"year": "1950",
+					"title": "Korean War Begins",
+					"description": "June 25, North Korea invades South Korea with Soviet approval; UN forces intervene"
+				},
+				{
+					"year": "1950",
+					"title": "Incheon Landing",
+					"description": "September 15, General MacArthur's amphibious assault turns war, pushing north"
+				},
+				{
+					"year": "1950",
+					"title": "Chinese Intervention",
+					"description": "October-November, Chinese forces enter war, driving UN forces back south"
+				},
+				{
+					"year": "1951",
+					"title": "Stalemate",
+					"description": "Fighting stabilizes near 38th parallel; armistice negotiations begin"
+				},
+				{
+					"year": "1953",
+					"title": "Armistice Signed",
+					"description": "July 27, fighting ends; DMZ established but no peace treaty signed"
+				}
+			],
+			"notableFigures": [
+				"Kim Il-sung",
+				"General Douglas MacArthur",
+				"General Matthew Ridgway",
+				"Mao Zedong",
+				"Joseph Stalin"
+			]
+		},
+		"modern": {
+			"period": "1953 - Present",
+			"description": "Following the Korean War armistice, North and South Korea developed along radically divergent paths. North Korea under Kim Il-sung (1948-1994) established a totalitarian state centered on Juche (self-reliance) ideology and an intense personality cult. Kim purged rivals, collectivized agriculture, and pursued heavy industrialization with Soviet and Chinese aid. Initially more prosperous than the South, North Korea's economy stagnated as the Soviet bloc collapsed. Kim Il-sung's son Kim Jong-il (1994-2011) and grandson Kim Jong-un (2011-present) continued hereditary dictatorship, developing nuclear weapons while millions faced famine in the 1990s. South Korea initially struggled under Syngman Rhee's increasingly authoritarian rule until student protests forced his resignation in 1960. General Park Chung-hee seized power in 1961, ruling until assassination in 1979 while implementing rapid industrialization that created the \"Miracle on the Han River.\" Despite authoritarian rule and human rights abuses, South Korea achieved remarkable economic growth. General Chun Doo-hwan's military regime (1980-1988) brutally suppressed the Gwangju Uprising but faced growing pro-democracy movements. The June Democratic Uprising of 1987 forced democratic reforms including direct presidential elections. South Korea successfully transitioned to democracy while becoming Asia's fourth-largest economy, hosting the 1988 Olympics and 2002 World Cup. The country weathered the 1997 Asian Financial Crisis and impeached corrupt presidents. Relations between the two Koreas have alternated between tension and reconciliation, including family reunions, economic cooperation, and summit meetings, but reunification remains distant. North Korea's nuclear program poses ongoing regional and global security challenges.",
+			"keyEvents": [
+				{
+					"year": "1953-1960",
+					"title": "Post-War Reconstruction",
+					"description": "Both Koreas rebuild from devastation; South Korea remains impoverished"
+				},
+				{
+					"year": "1968",
+					"title": "USS Pueblo Incident",
+					"description": "North Korea seizes American ship, holding crew hostage for 11 months"
+				},
+				{
+					"year": "1991",
+					"title": "UN Membership",
+					"description": "North and South Korea admitted to UN simultaneously"
+				},
+				{
+					"year": "1994",
+					"title": "Kim Il-sung Dies",
+					"description": "July 8, founder dies after 46 years; son Kim Jong-il succeeds him"
+				},
+				{
+					"year": "1994-1998",
+					"title": "North Korean Famine",
+					"description": "Economic collapse and natural disasters cause widespread starvation; estimated 600,000-1 million deaths"
+				},
+				{
+					"year": "2000",
+					"title": "First Inter-Korean Summit",
+					"description": "June, South Korean President Kim Dae-jung meets Kim Jong-il in Pyongyang"
+				},
+				{
+					"year": "2006",
+					"title": "First Nuclear Test",
+					"description": "October 9, North Korea conducts first nuclear weapons test"
+				},
+				{
+					"year": "2007",
+					"title": "Second Inter-Korean Summit",
+					"description": "October, leaders meet in Pyongyang; tensions ease temporarily"
+				},
+				{
+					"year": "2010",
+					"title": "Cheonan Sinking",
+					"description": "South Korean naval vessel sunk, allegedly by North Korean torpedo"
+				},
+				{
+					"year": "2011",
+					"title": "Kim Jong-il Dies",
+					"description": "December 17, Kim Jong-il dies; son Kim Jong-un becomes third-generation leader"
+				},
+				{
+					"year": "2018",
+					"title": "Peace Initiatives",
+					"description": "Three inter-Korean summits; Kim Jong-un meets Trump in Singapore"
+				},
+				{
+					"year": "2020s",
+					"title": "Continuing Division",
+					"description": "Relations deteriorate; North Korea advances nuclear/missile programs; reunification distant"
+				}
+			],
+			"notableFigures": ["Kim Il-sung", "Kim Jong-il", "Kim Jong-un"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2333 BCE",
+				"era": "Ancient",
+				"title": "Gojoseon Founded",
+				"description": "Legendary founding of first Korean kingdom by Tangun"
+			},
+			{
+				"year": "37 BCE - 668 CE",
+				"era": "Ancient",
+				"title": "Three Kingdoms Period",
+				"description": "Goguryeo, Baekje, and Silla compete for control of peninsula"
+			},
+			{
+				"year": "676 CE",
+				"era": "Ancient",
+				"title": "Silla Unification",
+				"description": "First unification of most of Korean peninsula under single rule"
+			},
+			{
+				"year": "918",
+				"era": "Medieval",
+				"title": "Goryeo Dynasty Begins",
+				"description": "Wang Geon founds dynasty that gives Korea its English name"
+			},
+			{
+				"year": "1392",
+				"era": "Feudal",
+				"title": "Joseon Dynasty Founded",
+				"description": "Yi Seong-gye establishes Korea's longest-lasting Confucian dynasty"
+			},
+			{
+				"year": "1443",
+				"era": "Feudal",
+				"title": "Hangeul Created",
+				"description": "King Sejong invents Korean alphabet"
+			},
+			{
+				"year": "1592-1598",
+				"era": "Feudal",
+				"title": "Japanese Invasions",
+				"description": "Admiral Yi Sun-sin's naval victories preserve Korean independence"
+			},
+			{
+				"year": "1910",
+				"era": "Colonial",
+				"title": "Japanese Annexation",
+				"description": "Korea becomes Japanese colony, beginning 35 years of harsh rule"
+			},
+			{
+				"year": "1919",
+				"era": "Colonial",
+				"title": "March 1st Movement",
+				"description": "Nationwide independence protests brutally suppressed by Japan"
+			},
+			{
+				"year": "1945",
+				"era": "Independence",
+				"title": "Liberation and Division",
+				"description": "Korea freed from Japan but divided at 38th parallel by US and USSR"
+			},
+			{
+				"year": "1948",
+				"era": "Independence",
+				"title": "Two Koreas Established",
+				"description": "Separate governments formed: ROK in South (August 15), DPRK in North (September 9)"
+			},
+			{
+				"year": "1950-1953",
+				"era": "Independence",
+				"title": "Korean War",
+				"description": "Devastating war kills 2.5+ million, ends in armistice with peninsula still divided"
+			},
+			{
+				"year": "1960s-1970s",
+				"era": "Modern",
+				"title": "Miracle on Han River",
+				"description": "South Korea achieves rapid industrialization and economic transformation"
+			},
+			{
+				"year": "1987",
+				"era": "Modern",
+				"title": "June Democracy Movement",
+				"description": "Mass protests force South Korea's transition from dictatorship to democracy"
+			},
+			{
+				"year": "1994",
+				"era": "Modern",
+				"title": "Kim Il-sung Dies",
+				"description": "North Korea's founder dies; son Kim Jong-il begins second-generation rule"
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "First Inter-Korean Summit",
+				"description": "Historic meeting between leaders raises hopes for reconciliation"
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "North Korea Nuclear Test",
+				"description": "First nuclear test escalates regional tensions and security concerns"
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Kim Jong-un Takes Power",
+				"description": "Third-generation hereditary succession continues North Korean dynasty"
+			},
+			{
+				"year": "2018",
+				"era": "Modern",
+				"title": "Peace Initiatives",
+				"description": "Multiple summits between Korean leaders and with US raise hopes for détente"
+			}
+		]
+	},
+	{
+		"name": "South Korea",
+		"overview": "The history of the Korean peninsula spans millennia of unified kingdoms and dynasties, followed by Japanese colonial occupation and a devastating division that persists today. From the ancient kingdoms of Gojoseon and the Three Kingdoms period through the sophisticated Goryeo and Joseon dynasties, Korea developed a distinct culture blending indigenous traditions with Chinese influences. Japanese annexation in 1910 brought 35 years of harsh colonial rule that attempted to erase Korean identity. The peninsula's liberation in 1945 led not to independence but to Cold War division at the 38th parallel, creating two separate nations with competing ideologies. The Korean War (1950-1953) cemented this split, leaving North Korea as an isolated totalitarian state under the Kim dynasty and South Korea evolving from military dictatorship to vibrant democracy and economic powerhouse. Despite shared heritage, the two Koreas have developed drastically different political systems and societies, yet remain technically at war with reunification an elusive dream.",
+		"source": {
+			"label": "Wikipedia - History of Korea",
+			"url": "https://en.wikipedia.org/wiki/History_of_Korea",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Korea",
+				"https://www.britannica.com/place/Korea",
+				"https://en.wikipedia.org/wiki/Division_of_Korea",
+				"https://www.history.com/articles/north-south-korea-divided-reasons-facts"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Division Date",
+				"value": "September 2, 1945 (38th parallel)"
+			},
+			{
+				"label": "South Korea Founded",
+				"value": "August 15, 1948 (ROK)"
+			},
+			{
+				"label": "Korean War",
+				"value": "June 25, 1950 - July 27, 1953"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "17 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 2333 BCE - 676 CE",
+			"description": "Korea's ancient history begins with the legendary kingdom of Gojoseon, founded according to tradition in 2333 BCE by Tangun, said to be descended from heaven. Archaeological evidence shows advanced Bronze Age cultures developing on the peninsula from around the 8th century BCE, with the use of iron appearing by the 4th century BCE. Gojoseon, centered in the Taedong River basin in northern Korea, developed into a confederation of tribes and engaged with Chinese states before falling to Han China around 108 BCE. Following Gojoseon's collapse, various states emerged including Buyeo in the north and the Three Han confederacies (Mahan, Jinhan, Byeonhan) in the south. The Three Kingdoms period (57 BCE-668 CE) saw the peninsula divided between Goguryeo in the north, Baekje in the southwest, and Silla in the southeast. Goguryeo emerged as a powerful empire controlling much of Manchuria and northern Korea, famously defeating massive Chinese invasions under King Gwanggaeto the Great and his son King Jangsu in the 5th century. Baekje became a sophisticated maritime power, serving as a cultural bridge transmitting Buddhism, Chinese characters, and advanced technology to Japan. Silla, initially the weakest kingdom, developed the elite Hwarang warrior corps and eventually allied with Tang China to conquer Baekje in 660 and Goguryeo in 668. All three kingdoms shared similar languages and cultures, adopted Buddhism as state religion, and developed sophisticated aristocratic systems. The kingdoms compiled their own histories, built impressive fortifications and Buddhist temples, and created distinctive ceramics and metalwork. After defeating both rivals, Silla expelled Tang forces from the peninsula by 676, achieving the first unification of most of Korea and establishing a foundation for Korean national identity.",
+			"keyEvents": [
+				{
+					"year": "c. 2333 BCE",
+					"title": "Legendary Founding of Gojoseon",
+					"description": "Traditional founding date by Tangun; earliest Korean kingdom emerges in northern peninsula"
+				},
+				{
+					"year": "c. 4th century BCE",
+					"title": "Iron Age Begins",
+					"description": "Iron technology spreads across Korea, enabling advanced farming and warfare"
+				},
+				{
+					"year": "108 BCE",
+					"title": "Fall of Gojoseon",
+					"description": "Han China conquers Gojoseon, establishing commanderies but Korean resistance continues"
+				},
+				{
+					"year": "37 BCE",
+					"title": "Goguryeo Founded",
+					"description": "King Jumong establishes Goguryeo near Yalu River, becoming powerful northern kingdom"
+				},
+				{
+					"year": "18 BCE",
+					"title": "Baekje Founded",
+					"description": "Kingdom established in Han River region, later becoming major maritime power"
+				},
+				{
+					"year": "57 BCE",
+					"title": "Silla Founded",
+					"description": "Kingdom emerges in southeastern Korea, eventually unifying peninsula"
+				},
+				{
+					"year": "372 CE",
+					"title": "Buddhism Introduced to Goguryeo",
+					"description": "Buddhism arrives from China, becoming state religion and major cultural force"
+				},
+				{
+					"year": "391-413 CE",
+					"title": "King Gwanggaeto's Reign",
+					"description": "Goguryeo reaches zenith, expanding into Manchuria and dominating peninsula"
+				},
+				{
+					"year": "612 CE",
+					"title": "Battle of Salsu",
+					"description": "General Eulji Mundeok defeats massive Sui invasion, preserving Korean independence"
+				},
+				{
+					"year": "660 CE",
+					"title": "Fall of Baekje",
+					"description": "Silla-Tang alliance conquers Baekje, beginning unification process"
+				},
+				{
+					"year": "668 CE",
+					"title": "Fall of Goguryeo",
+					"description": "Silla-Tang forces conquer Goguryeo after years of war"
+				},
+				{
+					"year": "676 CE",
+					"title": "Silla Unification",
+					"description": "Silla expels Tang forces and unifies most of Korean peninsula for first time"
+				}
+			],
+			"notableFigures": [
+				"Tangun (legendary founder)",
+				"King Jumong (founder of Goguryeo)",
+				"King Gwanggaeto the Great",
+				"King Jangsu",
+				"General Eulji Mundeok",
+				"General Kim Yu-sin"
+			]
+		},
+		"medieval": {
+			"period": "676 - 1392 CE",
+			"description": "Following unification, Unified Silla (676-935) and the northern state of Balhae (698-926) coexisted in what Koreans call the North-South States Period. Silla's Later Three Kingdoms period saw fragmentation until General Wang Geon founded the Goryeo dynasty in 918, reunifying the peninsula by 936 and giving Korea its English name. Goryeo (918-1392) established Buddhism as the state religion while adopting Confucianism for governance, creating a centralized bureaucracy and examination system. The dynasty produced magnificent cultural achievements including the world-famous Goryeo celadon ceramics, the Tripitaka Koreana (81,258 woodblocks of Buddhist scriptures), and the first metal movable type printing. Goryeo successfully resisted multiple invasions by the Khitan Liao dynasty and Jurchen Jin dynasty. However, the Mongol invasions (1231-1259) devastated the country despite fierce resistance including the heroic Sambyeolcho rebellion. Goryeo became a vassal of the Mongol Yuan dynasty through forced intermarriage between ruling families, though it maintained internal autonomy. The dynasty engaged in extensive international trade with Song China, Central Asia, Arabia, and Japan, with merchants bringing silk, porcelain, and other goods through the port of Byeongnando. By the late 14th century, Goryeo collapsed from years of Mongol domination, elite corruption, and factional strife. General Yi Seong-gye staged the Wihwado Retreat in 1388, turning his army back from attacking Ming China, and in 1392 overthrew the last Goryeo king to establish the Joseon dynasty, Korea's longest-lasting kingdom.",
+			"keyEvents": [
+				{
+					"year": "918",
+					"title": "Goryeo Dynasty Founded",
+					"description": "General Wang Geon establishes Goryeo with capital at Songdo (Kaesong)"
+				},
+				{
+					"year": "936",
+					"title": "Peninsula Reunified",
+					"description": "Goryeo defeats Later Baekje, completing reunification of Korean peninsula"
+				},
+				{
+					"year": "993-1019",
+					"title": "Khitan Invasions",
+					"description": "Goryeo successfully repels three major invasions by Khitan Liao dynasty"
+				},
+				{
+					"year": "1145",
+					"title": "Samguk Sagi Compiled",
+					"description": "Kim Bu-sik completes history of Three Kingdoms, oldest surviving Korean history book"
+				},
+				{
+					"year": "1196-1258",
+					"title": "Military Rule",
+					"description": "Choe family military dictatorship controls Goryeo, sidelining civilian government"
+				},
+				{
+					"year": "1231-1259",
+					"title": "Mongol Invasions",
+					"description": "Seven devastating Mongol invasions; Goryeo eventually becomes Yuan vassal while maintaining autonomy"
+				},
+				{
+					"year": "1234",
+					"title": "Metal Type Printing",
+					"description": "Goryeo invents world's first metal movable type printing, predating Gutenberg"
+				},
+				{
+					"year": "1270-1356",
+					"title": "Mongol Domination",
+					"description": "Goryeo under Mongol Yuan influence with intermarriage between royal families"
+				},
+				{
+					"year": "1388",
+					"title": "Wihwado Retreat",
+					"description": "General Yi Seong-gye refuses to attack Ming China, marches back to capital"
+				},
+				{
+					"year": "1392",
+					"title": "Goryeo Falls",
+					"description": "Yi Seong-gye overthrows last Goryeo king, establishes Joseon dynasty"
+				}
+			],
+			"notableFigures": [
+				"Wang Geon (Taejo of Goryeo)",
+				"Gang Gam-chan (military commander)",
+				"Kim Bu-sik (historian)",
+				"Choe Chung-heon (military ruler)",
+				"Sambyeolcho leaders"
+			]
+		},
+		"feudal": {
+			"period": "1392 - 1897",
+			"description": "The Joseon dynasty (1392-1910) became one of the world's longest-lasting Confucian dynasties. Founder King Taejo (Yi Seong-gye) moved the capital to Hanyang (modern Seoul) and established Neo-Confucianism as state ideology, replacing Buddhism's dominance. King Sejong the Great (r. 1418-1450) presided over a golden age of scientific and cultural achievements, most notably creating Hangeul, the Korean alphabet, in 1443 to increase literacy among common people. The alphabet's systematic design based on phonetics is considered one of the most scientific writing systems ever created. Joseon developed sophisticated bureaucracy through civil service examinations, advanced astronomy and mathematics, and created masterworks of white porcelain ceramics. The rigid yangban aristocratic class system governed social hierarchy. Joseon faced devastating invasions: Japanese warlord Toyotomi Hideyoshi's invasions (1592-1598) ravaged the peninsula, though Admiral Yi Sun-sin's brilliant naval victories using turtle ships preserved Korean independence. Manchu invasions (1627, 1636) forced Joseon to become Qing tributary state. The dynasty pursued isolationist policies earning Korea the label \"Hermit Kingdom.\" Late Joseon saw intellectual flourishing through Silhak (Practical Learning) scholars and cultural developments, but also growing social tensions and peasant rebellions. In the late 19th century, competing imperial powers (Japan, China, Russia) vied for control of Korea. Despite attempts at modernization including declaring the Korean Empire in 1897, Japan increasingly dominated Korean affairs. The Joseon dynasty ended with Japanese annexation in 1910, closing over 500 years of Confucian monarchy.",
+			"keyEvents": [
+				{
+					"year": "1392",
+					"title": "Joseon Dynasty Founded",
+					"description": "Yi Seong-gye becomes King Taejo, establishes new dynasty with Neo-Confucian principles"
+				},
+				{
+					"year": "1394",
+					"title": "Capital Moved to Hanyang",
+					"description": "Seoul (then Hanyang) established as capital, remaining so to present"
+				},
+				{
+					"year": "1418-1450",
+					"title": "King Sejong's Reign",
+					"description": "Golden age of science and culture; invention of rain gauge, sundial, astronomical instruments"
+				},
+				{
+					"year": "1443-1446",
+					"title": "Hangeul Created",
+					"description": "King Sejong invents Korean alphabet, making literacy accessible to common people"
+				},
+				{
+					"year": "1592-1598",
+					"title": "Japanese Invasions (Imjin War)",
+					"description": "Hideyoshi's invasions devastate Korea; Admiral Yi Sun-sin's naval victories save nation"
+				},
+				{
+					"year": "1627",
+					"title": "First Manchu Invasion",
+					"description": "Later Jin (Manchu) forces invade, forcing Joseon to break ties with Ming China"
+				},
+				{
+					"year": "1636-1637",
+					"title": "Second Manchu Invasion",
+					"description": "Qing forces conquer Joseon, making it tributary state; King Injo forced to surrender"
+				},
+				{
+					"year": "1784",
+					"title": "Catholicism Arrives",
+					"description": "Western religion introduced, leading to persecution of converts"
+				},
+				{
+					"year": "1866",
+					"title": "French Campaign",
+					"description": "French naval attack on Ganghwa Island repelled; Korea maintains isolation"
+				},
+				{
+					"year": "1871",
+					"title": "American Expedition",
+					"description": "US military expedition to Korea fails to open country to trade"
+				},
+				{
+					"year": "1876",
+					"title": "Treaty of Ganghwa",
+					"description": "Japan forces Korea to sign unequal treaty, opening ports and ending isolation"
+				},
+				{
+					"year": "1897",
+					"title": "Korean Empire Declared",
+					"description": "Joseon becomes Korean Empire (Daehan Jeguk), asserting sovereignty amid foreign pressure"
+				}
+			],
+			"notableFigures": [
+				"King Taejo (Yi Seong-gye)",
+				"King Sejong the Great",
+				"Admiral Yi Sun-sin",
+				"Queen Min",
+				"King Gojong",
+				"Ahn Jung-geun"
+			]
+		},
+		"colonial": {
+			"period": "1910 - 1945",
+			"description": "After decades of increasing Japanese influence following the Sino-Japanese War (1894-95) and Russo-Japanese War (1904-05), Japan formally annexed Korea on August 22, 1910, ending the Joseon dynasty. For 35 years, Korea suffered harsh colonial rule designed to erase Korean identity and exploit resources for Japan's imperial expansion. The colonial government banned Korean language instruction, forced Koreans to adopt Japanese names (especially during WWII), closed Korean newspapers, and attempted cultural genocide. Korean history and culture were suppressed while Japanese Shinto shrines were imposed. The colonial economy was structured to benefit Japan—Korean farmers lost land to Japanese settlers, rice and other resources were extracted for Japanese consumption, and Koreans worked in mines and factories under harsh conditions. Despite brutal repression, Koreans mounted significant resistance. The March 1st Movement of 1919 saw nationwide peaceful protests for independence, with over 2 million participants. Japanese forces killed approximately 7,000 people suppressing the movement. This led Korean leaders to establish the Provisional Government of the Republic of Korea in Shanghai, with Syngman Rhee as president. The independence movement continued through armed resistance in Manchuria, diplomatic efforts abroad, and cultural preservation. During WWII (1937-1945), Japan intensified exploitation—forcing hundreds of thousands of Koreans into labor, conscripting soldiers, and enslaving Korean women as \"comfort women\" for Japanese military brothels. Liberation finally came with Japan's surrender on August 15, 1945, but rather than independence, Korea faced new occupation by Soviet and American forces.",
+			"keyEvents": [
+				{
+					"year": "1905",
+					"title": "Protectorate Treaty",
+					"description": "Japan forces Korea to accept protectorate status, controlling foreign affairs"
+				},
+				{
+					"year": "1907",
+					"title": "Forced Abdication",
+					"description": "Emperor Gojong forced to abdicate after sending secret envoys to Hague seeking help"
+				},
+				{
+					"year": "1909",
+					"title": "Ahn Jung-geun Assassination",
+					"description": "Korean patriot assassinates Japanese official Ito Hirobumi at Harbin station"
+				},
+				{
+					"year": "1910",
+					"title": "Annexation Treaty",
+					"description": "August 22, Japan formally annexes Korea, ending 518 years of Joseon dynasty"
+				},
+				{
+					"year": "1919",
+					"title": "March 1st Movement",
+					"description": "Nationwide independence demonstrations; 2 million participate, 7,000 killed by Japanese"
+				},
+				{
+					"year": "1919",
+					"title": "Provisional Government Formed",
+					"description": "Korean Provisional Government established in Shanghai with Syngman Rhee as president"
+				},
+				{
+					"year": "1920s-1930s",
+					"title": "Armed Resistance",
+					"description": "Korean independence fighters wage guerrilla warfare in Manchuria, including Kim Il-sung"
+				},
+				{
+					"year": "1932-1945",
+					"title": "Comfort Women System",
+					"description": "Japan forces Korean and other Asian women into sexual slavery for military"
+				},
+				{
+					"year": "1939-1945",
+					"title": "Forced Assimilation",
+					"description": "Name change policy, forced labor, military conscription intensify during WWII"
+				},
+				{
+					"year": "1945",
+					"title": "Liberation",
+					"description": "August 15, Japan surrenders; Korea liberated but immediately divided by Allied powers"
+				}
+			],
+			"notableFigures": ["Emperor Gojong", "Ahn Jung-geun", "Syngman Rhee", "Kim Gu", "Yu Gwan-sun", "Kim Il-sung"]
+		},
+		"independence": {
+			"period": "1945 - 1953",
+			"description": "Korea's liberation from Japan on August 15, 1945, brought hope of independence but Cold War realities intervened. On September 2, 1945, the US and USSR divided Korea at the 38th parallel—US forces south, Soviet forces north—as a temporary measure to accept Japanese surrender. This division hardened as the superpowers backed competing governments. The Soviet Union installed Kim Il-sung, a former anti-Japanese guerrilla fighter, as leader in the north. In the south, after failed attempts at unified governance through UN-supervised elections, Syngman Rhee was elected president and the Republic of Korea was proclaimed on August 15, 1948. The Democratic People's Republic of Korea was established in the north on September 9, 1948, with Kim Il-sung as premier. Both claimed legitimacy over the entire peninsula. Tensions escalated through border skirmishes and political violence, with both leaders committed to reunification by force. On June 25, 1950, North Korea invaded South Korea with Soviet approval and Chinese support, seeking to unify the peninsula under communism. US-led UN forces intervened to defend South Korea. The war saw dramatic reversals—North Korea nearly conquered the entire south, then UN forces pushed far into North Korea, then Chinese intervention drove them back. After three years of devastating warfare, an armistice was signed July 27, 1953, establishing the Demilitarized Zone (DMZ) near the 38th parallel. The war killed over 2.5 million people, destroyed most of Korea's infrastructure, and permanently divided families. Technically, the two Koreas remain at war, having never signed a peace treaty.",
+			"keyEvents": [
+				{
+					"year": "1945",
+					"title": "Liberation and Division",
+					"description": "August 15, Korea liberated from Japan; September 2, divided at 38th parallel by US and USSR"
+				},
+				{
+					"year": "1946",
+					"title": "Provisional Governments",
+					"description": "Provisional People's Committee established in North; US military government in South"
+				},
+				{
+					"year": "1948",
+					"title": "Separate Governments Established",
+					"description": "August 15, Republic of Korea founded in South; September 9, DPRK founded in North"
+				},
+				{
+					"year": "1948",
+					"title": "Jeju Uprising",
+					"description": "South Korean forces suppress rebellion on Jeju Island; tens of thousands killed"
+				},
+				{
+					"year": "1950",
+					"title": "Korean War Begins",
+					"description": "June 25, North Korea invades South Korea with Soviet approval; UN forces intervene"
+				},
+				{
+					"year": "1950",
+					"title": "Incheon Landing",
+					"description": "September 15, General MacArthur's amphibious assault turns war, pushing north"
+				},
+				{
+					"year": "1950",
+					"title": "Chinese Intervention",
+					"description": "October-November, Chinese forces enter war, driving UN forces back south"
+				},
+				{
+					"year": "1951",
+					"title": "Stalemate",
+					"description": "Fighting stabilizes near 38th parallel; armistice negotiations begin"
+				},
+				{
+					"year": "1953",
+					"title": "Armistice Signed",
+					"description": "July 27, fighting ends; DMZ established but no peace treaty signed"
+				}
+			],
+			"notableFigures": [
+				"Syngman Rhee (South Korea founder)",
+				"General Douglas MacArthur",
+				"General Matthew Ridgway",
+				"Mao Zedong",
+				"Joseph Stalin"
+			]
+		},
+		"modern": {
+			"period": "1953 - Present",
+			"description": "Following the Korean War armistice, North and South Korea developed along radically divergent paths. North Korea under Kim Il-sung (1948-1994) established a totalitarian state centered on Juche (self-reliance) ideology and an intense personality cult. Kim purged rivals, collectivized agriculture, and pursued heavy industrialization with Soviet and Chinese aid. Initially more prosperous than the South, North Korea's economy stagnated as the Soviet bloc collapsed. Kim Il-sung's son Kim Jong-il (1994-2011) and grandson Kim Jong-un (2011-present) continued hereditary dictatorship, developing nuclear weapons while millions faced famine in the 1990s. South Korea initially struggled under Syngman Rhee's increasingly authoritarian rule until student protests forced his resignation in 1960. General Park Chung-hee seized power in 1961, ruling until assassination in 1979 while implementing rapid industrialization that created the \"Miracle on the Han River.\" Despite authoritarian rule and human rights abuses, South Korea achieved remarkable economic growth. General Chun Doo-hwan's military regime (1980-1988) brutally suppressed the Gwangju Uprising but faced growing pro-democracy movements. The June Democratic Uprising of 1987 forced democratic reforms including direct presidential elections. South Korea successfully transitioned to democracy while becoming Asia's fourth-largest economy, hosting the 1988 Olympics and 2002 World Cup. The country weathered the 1997 Asian Financial Crisis and impeached corrupt presidents. Relations between the two Koreas have alternated between tension and reconciliation, including family reunions, economic cooperation, and summit meetings, but reunification remains distant. North Korea's nuclear program poses ongoing regional and global security challenges.",
+			"keyEvents": [
+				{
+					"year": "1953-1960",
+					"title": "Post-War Reconstruction",
+					"description": "Both Koreas rebuild from devastation; South Korea remains impoverished"
+				},
+				{
+					"year": "1960",
+					"title": "April Revolution",
+					"description": "Student protests overthrow Syngman Rhee's authoritarian government"
+				},
+				{
+					"year": "1961",
+					"title": "Park Chung-hee Coup",
+					"description": "May 16, military coup begins Park's 18-year rule and economic transformation"
+				},
+				{
+					"year": "1960s-1970s",
+					"title": "Miracle on Han River",
+					"description": "Rapid industrialization, export-oriented growth transforms South Korea"
+				},
+				{
+					"year": "1972",
+					"title": "Yusin Constitution",
+					"description": "Park establishes authoritarian system granting himself dictatorial powers"
+				},
+				{
+					"year": "1979",
+					"title": "Park Assassination",
+					"description": "October 26, Park killed by intelligence chief; brief democratic opening"
+				},
+				{
+					"year": "1980",
+					"title": "Gwangju Uprising",
+					"description": "May 18-27, military brutally crushes pro-democracy protests; hundreds killed"
+				},
+				{
+					"year": "1987",
+					"title": "June Democracy Movement",
+					"description": "Mass protests force democratic reforms; direct presidential elections restored"
+				},
+				{
+					"year": "1988",
+					"title": "Seoul Olympics",
+					"description": "South Korea hosts Olympics, showcasing economic success to world"
+				},
+				{
+					"year": "1991",
+					"title": "UN Membership",
+					"description": "North and South Korea admitted to UN simultaneously"
+				},
+				{
+					"year": "1997",
+					"title": "Asian Financial Crisis",
+					"description": "Economic crisis forces IMF bailout but South Korea recovers quickly"
+				},
+				{
+					"year": "1998",
+					"title": "Kim Dae-jung Elected",
+					"description": "First opposition candidate wins presidency; pursues Sunshine Policy toward North"
+				},
+				{
+					"year": "2000",
+					"title": "First Inter-Korean Summit",
+					"description": "June, South Korean President Kim Dae-jung meets Kim Jong-il in Pyongyang"
+				},
+				{
+					"year": "2007",
+					"title": "Second Inter-Korean Summit",
+					"description": "October, leaders meet in Pyongyang; tensions ease temporarily"
+				},
+				{
+					"year": "2010",
+					"title": "Cheonan Sinking",
+					"description": "South Korean naval vessel sunk, allegedly by North Korean torpedo"
+				},
+				{
+					"year": "2016-2017",
+					"title": "Park Geun-hye Impeachment",
+					"description": "Massive candlelight protests lead to impeachment and removal of president for corruption"
+				},
+				{
+					"year": "2018",
+					"title": "Peace Initiatives",
+					"description": "Three inter-Korean summits; Kim Jong-un meets Trump in Singapore"
+				},
+				{
+					"year": "2020s",
+					"title": "Continuing Division",
+					"description": "Relations deteriorate; North Korea advances nuclear/missile programs; reunification distant"
+				}
+			],
+			"notableFigures": ["Park Chung-hee", "Kim Dae-jung", "Moon Jae-in"]
+		},
+		"timeline": [
+			{
+				"year": "c. 2333 BCE",
+				"era": "Ancient",
+				"title": "Gojoseon Founded",
+				"description": "Legendary founding of first Korean kingdom by Tangun"
+			},
+			{
+				"year": "37 BCE - 668 CE",
+				"era": "Ancient",
+				"title": "Three Kingdoms Period",
+				"description": "Goguryeo, Baekje, and Silla compete for control of peninsula"
+			},
+			{
+				"year": "676 CE",
+				"era": "Ancient",
+				"title": "Silla Unification",
+				"description": "First unification of most of Korean peninsula under single rule"
+			},
+			{
+				"year": "918",
+				"era": "Medieval",
+				"title": "Goryeo Dynasty Begins",
+				"description": "Wang Geon founds dynasty that gives Korea its English name"
+			},
+			{
+				"year": "1392",
+				"era": "Feudal",
+				"title": "Joseon Dynasty Founded",
+				"description": "Yi Seong-gye establishes Korea's longest-lasting Confucian dynasty"
+			},
+			{
+				"year": "1443",
+				"era": "Feudal",
+				"title": "Hangeul Created",
+				"description": "King Sejong invents Korean alphabet"
+			},
+			{
+				"year": "1592-1598",
+				"era": "Feudal",
+				"title": "Japanese Invasions",
+				"description": "Admiral Yi Sun-sin's naval victories preserve Korean independence"
+			},
+			{
+				"year": "1910",
+				"era": "Colonial",
+				"title": "Japanese Annexation",
+				"description": "Korea becomes Japanese colony, beginning 35 years of harsh rule"
+			},
+			{
+				"year": "1919",
+				"era": "Colonial",
+				"title": "March 1st Movement",
+				"description": "Nationwide independence protests brutally suppressed by Japan"
+			},
+			{
+				"year": "1945",
+				"era": "Independence",
+				"title": "Liberation and Division",
+				"description": "Korea freed from Japan but divided at 38th parallel by US and USSR"
+			},
+			{
+				"year": "1948",
+				"era": "Independence",
+				"title": "Two Koreas Established",
+				"description": "Separate governments formed: ROK in South (August 15), DPRK in North (September 9)"
+			},
+			{
+				"year": "1950-1953",
+				"era": "Independence",
+				"title": "Korean War",
+				"description": "Devastating war kills 2.5+ million, ends in armistice with peninsula still divided"
+			},
+			{
+				"year": "1960s-1970s",
+				"era": "Modern",
+				"title": "Miracle on Han River",
+				"description": "South Korea achieves rapid industrialization and economic transformation"
+			},
+			{
+				"year": "1987",
+				"era": "Modern",
+				"title": "June Democracy Movement",
+				"description": "Mass protests force South Korea's transition from dictatorship to democracy"
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "First Inter-Korean Summit",
+				"description": "Historic meeting between leaders raises hopes for reconciliation"
+			},
+			{
+				"year": "2018",
+				"era": "Modern",
+				"title": "Peace Initiatives",
+				"description": "Multiple summits between Korean leaders and with US raise hopes for détente"
+			}
+		]
 	}
 ]

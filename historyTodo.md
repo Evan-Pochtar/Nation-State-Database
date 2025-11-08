@@ -181,7 +181,7 @@
   - [ ] Mongolia
   - [x] Myanmar
   - [ ] Nepal
-  - [ ] North Korea
+  - [x] North Korea
   - [ ] Oman
   - [ ] Pakistan
   - [ ] Palestine
@@ -189,7 +189,7 @@
   - [ ] Qatar
   - [ ] Saudi Arabia
   - [x] Singapore
-  - [ ] South Korea
+  - [x] South Korea
   - [ ] Sri Lanka
   - [x] Syria
   - [ ] Taiwan
