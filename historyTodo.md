@@ -78,7 +78,7 @@
   - [x] Netherlands
   - [ ] North Macedonia
   - [x] Norway
-  - [ ] Poland
+  - [x] Poland
   - [x] Portugal
   - [ ] Romania
   - [x] Russia
@@ -90,7 +90,7 @@
   - [x] Sweden
   - [ ] Switzerland
   - [ ] Turkey
-  - [ ] Ukraine
+  - [x] Ukraine
   - [x] United Kingdom
   - [ ] Vatican City
   - [ ] Gibraltar
