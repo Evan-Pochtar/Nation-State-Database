@@ -166,7 +166,7 @@
 					{/if}
 					<p class="mb-8 leading-relaxed text-white/80">{historyData[activeSection].description}</p>
 
-					{#if historyData[activeSection].keyEvents}
+					{#if historyData[activeSection].keyEvents !== undefined && historyData[activeSection].keyEvents.length > 0}
 						<div class="space-y-3">
 							<div class="text-center font-semibold text-cyan-300">Key Events</div>
 							{#each historyData[activeSection].keyEvents as event}
@@ -181,7 +181,7 @@
 						</div>
 					{/if}
 
-					{#if historyData[activeSection].notableFigures}
+					{#if historyData[activeSection].notableFigures !== undefined && historyData[activeSection].notableFigures.length > 0}
 						<div class="mt-8 space-y-2">
 							<div class="text-center font-semibold text-cyan-300">Notable Figures</div>
 							<div class="flex flex-wrap justify-center gap-2">
