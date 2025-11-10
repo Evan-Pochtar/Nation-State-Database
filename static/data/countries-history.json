@@ -17936,5 +17936,781 @@
 				"description": "Russia launches massive invasion; Ukraine fights for survival and sovereignty"
 			}
 		]
+	},
+	{
+		"austria": {
+			"name": "Austria",
+			"overview": "Austria's history spans from Celtic kingdoms and Roman provinces through centuries of Habsburg imperial dominance to modern democratic republicanism. From the Celtic Noricum and Roman Noricum province to becoming the heartland of one of Europe's most powerful dynasties, Austria evolved from a duchy within the Holy Roman Empire into a vast multinational empire that shaped European politics for over six centuries. The Habsburg dynasty ruled Austria from 1282 to 1918, expanding their influence through strategic marriages and military conquests to control territories across Central Europe. After World War I, the Austro-Hungarian Empire collapsed, and Austria was reduced to a small republic. The nation endured annexation by Nazi Germany, Allied occupation after World War II, and emerged in 1955 as a neutral, independent democracy that has since become a prosperous member of the European Union while maintaining its unique position as a bridge between East and West.",
+			"source": {
+				"label": "Wikipedia - History of Austria",
+				"url": "https://en.wikipedia.org/wiki/History_of_Austria",
+				"urls": [
+					"https://en.wikipedia.org/wiki/History_of_Austria",
+					"https://www.britannica.com/topic/history-of-Austria",
+					"https://en.wikipedia.org/wiki/Habsburg_monarchy"
+				]
+			},
+			"keyFacts": [
+				{
+					"label": "First Republic",
+					"value": "1919-1934"
+				},
+				{
+					"label": "Anschluss",
+					"value": "March 12-13, 1938"
+				},
+				{
+					"label": "State Treaty Signed",
+					"value": "May 15, 1955"
+				},
+				{
+					"label": "Capital",
+					"value": "Vienna (Vindobona in Roman times)"
+				},
+				{
+					"label": "Name Origin",
+					"value": "From 'Ostarrîchi' (Eastern Realm), first used 996 AD"
+				},
+				{
+					"label": "National Day",
+					"value": "October 26 (Neutrality Declaration, 1955)"
+				}
+			],
+			"ancient": {
+				"period": "c. 800 BCE - 488 CE",
+				"description": "The territory of modern Austria was inhabited during the late Iron Age by Celtic peoples of the Hallstatt culture, named after the Austrian archaeological site. Around 400 BCE, Celtic tribes established the kingdom of Noricum, centered in what is now Austria and parts of Slovenia. The Norici, the dominant tribe, formed a confederation of approximately thirteen tribes around 200 BCE, creating one of the first organized states on Austrian territory. Noricum was rich in iron ore and became famous throughout the ancient world for producing superior steel, known as 'ferrum noricum' or Noric steel, which was highly prized for Roman weapons. The capital Noreia and later the Roman colonial city Virunum served as important centers. The Noricans maintained friendly relations with Rome, establishing a treaty of hospitality with the Roman Republic around 170 BCE. In 113 BCE, Germanic tribes called the Cimbri and Teutones invaded Noricum, and the Romans came to assist their Celtic allies, though they suffered a devastating defeat at the Battle of Noreia. King Voccio of Noricum provided crucial support to Julius Caesar during the Roman Civil War. In 15 BCE, under Emperor Augustus, Noricum was peacefully incorporated into the Roman Empire, initially as a client kingdom and later as a full province under Emperor Claudius (41-54 CE). The Romans built important cities including Vindobona (Vienna), Juvavum (Salzburg), and maintained Noricum's Celtic administrative structures. The region prospered under Roman rule, becoming thoroughly Romanized by the 2nd century CE. Roman control began to collapse during the Crisis of the Third Century when Germanic tribes invaded. By 476 CE, the Western Roman Empire had fallen, and in 488 CE, the remaining Roman population evacuated Noricum as Germanic peoples, particularly the Bavarii and later the Alemanni, occupied the territory.",
+				"keyEvents": [
+					{
+						"year": "c. 800 BCE",
+						"title": "Hallstatt Culture",
+						"description": "Celtic Hallstatt culture flourishes in Austrian territory, known for salt mining and advanced Iron Age civilization"
+					},
+					{
+						"year": "c. 200 BCE",
+						"title": "Kingdom of Noricum Established",
+						"description": "Thirteen Celtic tribes unite under the leadership of the Norici to form the Kingdom of Noricum, first state on Austrian soil"
+					},
+					{
+						"year": "113 BCE",
+						"title": "Battle of Noreia",
+						"description": "Roman army suffers crushing defeat by Cimbri and Teutones near Noreia while attempting to defend Celtic allies"
+					},
+					{
+						"year": "58-49 BCE",
+						"title": "Norican Support for Caesar",
+						"description": "King Voccio provides troops and support to Julius Caesar, strengthening alliance with Rome"
+					},
+					{
+						"year": "15 BCE",
+						"title": "Roman Annexation",
+						"description": "Emperor Augustus peacefully incorporates Noricum into Roman Empire after campaigns by Drusus and Tiberius"
+					},
+					{
+						"year": "41-54 CE",
+						"title": "Province Established",
+						"description": "Under Emperor Claudius, Noricum becomes a full Roman province with enhanced status and infrastructure"
+					},
+					{
+						"year": "c. 260-280 CE",
+						"title": "Germanic Invasions Begin",
+						"description": "Alemanni and other Germanic tribes raid Roman Noricum during Crisis of the Third Century"
+					},
+					{
+						"year": "488 CE",
+						"title": "Noricum Abandoned",
+						"description": "Roman population evacuated from Noricum as Germanic peoples occupy the region"
+					}
+				],
+				"notableFigures": [
+					"Cincibilus (Norican king, ally of Rome)",
+					"Voccio (Celtic king who supported Julius Caesar)",
+					"Saint Severinus of Noricum (documented end of Roman rule)"
+				]
+			},
+			"medieval": {
+				"period": "488 - 1278",
+				"description": "After the fall of Rome, Germanic peoples including the Bavarii occupied Austrian lands, which later fell under the control of the Frankish Empire established by Charlemagne in the 9th century. The region became part of the East Frankish Kingdom and later the Holy Roman Empire. In 976 CE, Leopold I of Babenberg was appointed margrave of a territory called the 'Ostmark' or Eastern March, marking the first distinct Austrian state entity. The name 'Ostarrîchi' (Austria) appears in a document from 996 CE. The Babenberg dynasty ruled Austria for nearly three centuries, gradually expanding their territory and elevating their status. In 1156, the Privilegium Minus elevated Austria from a margravate to an independent duchy under Duke Henry II Jasomirgott, freeing it from subordination to Bavaria. The Babenbergs made Vienna their capital and promoted its development, though they remained vassals of the Holy Roman Empire. During the Crusades, Austrian rulers gained prominence, with Duke Leopold V capturing Richard the Lionheart of England in 1192 and using the ransom to develop Austrian cities. The last Babenberg duke, Frederick II, died in 1246 battling Hungary, ending the dynasty. A period of instability followed, with Ottokar II of Bohemia seizing control of Austria and expanding aggressively. However, in 1273, Count Rudolf of Habsburg was elected Holy Roman Emperor. In 1278, at the Battle on the Marchfeld, Rudolf defeated Ottokar and established Habsburg control over Austria, beginning over six centuries of Habsburg rule that would shape European history.",
+				"keyEvents": [
+					{
+						"year": "976",
+						"title": "Margraviate Founded",
+						"description": "Leopold I of Babenberg appointed margrave of Ostmark, establishing first Austrian state under Holy Roman Empire"
+					},
+					{
+						"year": "996",
+						"title": "First Written Record",
+						"description": "Document uses name 'Ostarrîchi' (Austria) for the first time in written history"
+					},
+					{
+						"year": "1156",
+						"title": "Duchy of Austria Created",
+						"description": "Privilegium Minus elevates Austria to independent duchy under Henry II Jasomirgott, separate from Bavaria"
+					},
+					{
+						"year": "1192",
+						"title": "Richard Lionheart Captured",
+						"description": "Duke Leopold V captures English King Richard I returning from Crusades; ransom funds Austrian development"
+					},
+					{
+						"year": "1246",
+						"title": "Babenberg Dynasty Ends",
+						"description": "Last Babenberg duke Frederick II dies in battle against Hungary, leaving no heir"
+					},
+					{
+						"year": "1273",
+						"title": "Rudolf of Habsburg Elected",
+						"description": "Count Rudolf of Habsburg elected Holy Roman Emperor, beginning Habsburg dominance in Central Europe"
+					},
+					{
+						"year": "1278",
+						"title": "Battle on the Marchfeld",
+						"description": "Rudolf defeats Ottokar II of Bohemia, establishing Habsburg control of Austria that would last until 1918"
+					},
+					{
+						"year": "1282",
+						"title": "Habsburg Austria Founded",
+						"description": "Rudolf grants Austria and Styria to his sons Albert and Rudolf, formally beginning Habsburg rule of Austria"
+					}
+				],
+				"notableFigures": [
+					"Leopold I of Babenberg",
+					"Henry II Jasomirgott",
+					"Leopold V (captured Richard Lionheart)",
+					"Rudolf I of Habsburg",
+					"Ottokar II of Bohemia"
+				]
+			},
+			"imperial": {
+				"period": "1282 - 1918",
+				"description": "The Habsburg dynasty transformed Austria from a duchy into the heartland of a vast European empire. Through strategic marriages and military conquest, the Habsburgs accumulated territories across Europe, epitomized by the motto 'Bella gerant alii, tu felix Austria nube' (Let others wage war; you, happy Austria, marry). In 1438, Albert II became Holy Roman Emperor, and from then until 1806, Habsburgs held the imperial title almost continuously. Emperor Maximilian I (1493-1519) arranged marriages that brought the Burgundian Netherlands and eventually Spain and its vast empire under Habsburg control. His grandson Charles V ruled an empire 'on which the sun never set,' spanning Europe and the Americas. In 1521, the Habsburg domains were divided between Charles's brother Ferdinand (Austrian branch) and son Philip (Spanish branch). The Austrian Habsburgs faced constant threats from the Ottoman Turks, who besieged Vienna in 1529 and 1683. Through marriage and inheritance, Austria gained control of Bohemia and Hungary in 1526, though much of Hungary remained under Ottoman occupation until 1699. The 18th century saw Austria under Maria Theresa (1740-1780) and her son Joseph II modernize the state while fighting wars against Prussia and France. Napoleon dissolved the Holy Roman Empire in 1806, prompting Francis II to declare himself Emperor of Austria in 1804. The Congress of Vienna in 1815 made Austria a dominant power in Central Europe under Chancellor Metternich. The 1848 revolutions shook the empire, and the young Emperor Franz Joseph (1848-1916) struggled to maintain control of the multinational state. After defeat by Prussia in 1866, the Austro-Hungarian Compromise of 1867 created the Dual Monarchy. The assassination of heir Franz Ferdinand in 1914 sparked World War I, which devastated the empire. Franz Joseph died in 1916, and his successor Charles I could not prevent the empire's collapse in 1918.",
+				"keyEvents": [
+					{
+						"year": "1358-1359",
+						"title": "Privilegium Maius Forged",
+						"description": "Duke Rudolf IV creates forged document claiming title of Archduke; confirmed by Emperor in 1453"
+					},
+					{
+						"year": "1438",
+						"title": "Imperial Crown to Habsburgs",
+						"description": "Albert II elected Holy Roman Emperor; Habsburgs hold title almost continuously until 1806"
+					},
+					{
+						"year": "1477",
+						"title": "Burgundian Inheritance",
+						"description": "Maximilian I marries Mary of Burgundy, acquiring Low Countries and beginning territorial expansion"
+					},
+					{
+						"year": "1519",
+						"title": "Charles V Becomes Emperor",
+						"description": "Charles V inherits vast empire including Spain, Netherlands, Austria, and American colonies"
+					},
+					{
+						"year": "1521",
+						"title": "Habsburg Division",
+						"description": "Empire divided between Spanish branch under Philip II and Austrian branch under Ferdinand I"
+					},
+					{
+						"year": "1526",
+						"title": "Bohemia and Hungary Acquired",
+						"description": "Ferdinand inherits crowns of Bohemia and Hungary after King Louis II dies at Battle of Mohács"
+					},
+					{
+						"year": "1529",
+						"title": "First Siege of Vienna",
+						"description": "Ottoman Turks under Suleiman the Magnificent besiege Vienna but fail to capture city"
+					},
+					{
+						"year": "1618-1648",
+						"title": "Thirty Years' War",
+						"description": "Religious and political war devastates Central Europe; Peace of Westphalia recognizes Swiss independence"
+					},
+					{
+						"year": "1683",
+						"title": "Second Siege of Vienna",
+						"description": "Ottoman army defeated at Vienna with Polish and German assistance, marking beginning of Ottoman decline"
+					},
+					{
+						"year": "1740",
+						"title": "Maria Theresa Succeeds",
+						"description": "Maria Theresa becomes empress; War of Austrian Succession tests female succession rights"
+					},
+					{
+						"year": "1804",
+						"title": "Austrian Empire Proclaimed",
+						"description": "Francis II proclaims Empire of Austria in response to Napoleon's rise; becomes Francis I of Austria"
+					},
+					{
+						"year": "1806",
+						"title": "Holy Roman Empire Dissolved",
+						"description": "Napoleon forces dissolution of Holy Roman Empire after thousand-year existence"
+					},
+					{
+						"year": "1815",
+						"title": "Congress of Vienna",
+						"description": "Austria emerges as dominant power in Central Europe under Chancellor Metternich's leadership"
+					},
+					{
+						"year": "1848",
+						"title": "Revolutions of 1848",
+						"description": "Liberal revolutions across empire; Franz Joseph becomes emperor at age 18"
+					},
+					{
+						"year": "1866",
+						"title": "Austro-Prussian War",
+						"description": "Decisive defeat by Prussia ends Austrian influence in Germany; leads to Dual Monarchy"
+					},
+					{
+						"year": "1867",
+						"title": "Austro-Hungarian Compromise",
+						"description": "Creates Dual Monarchy of Austria-Hungary, granting Hungary equal status with Austria"
+					},
+					{
+						"year": "1914",
+						"title": "Assassination in Sarajevo",
+						"description": "Archduke Franz Ferdinand assassinated June 28, triggering chain of events leading to World War I"
+					},
+					{
+						"year": "1916",
+						"title": "Franz Joseph Dies",
+						"description": "Emperor Franz Joseph dies after 68-year reign; succeeded by grand-nephew Charles I"
+					},
+					{
+						"year": "1918",
+						"title": "Empire Collapses",
+						"description": "November 11, armistice signed; empire dissolves into successor states; Republic of German-Austria proclaimed November 12"
+					}
+				],
+				"notableFigures": [
+					"Maximilian I",
+					"Charles V",
+					"Ferdinand I",
+					"Maria Theresa",
+					"Joseph II",
+					"Emperor Franz Joseph I",
+					"Prince Metternich",
+					"Archduke Franz Ferdinand"
+				]
+			},
+			"modern": {
+				"period": "1918 - Present",
+				"description": "The Austro-Hungarian Empire's collapse in 1918 left Austria devastated, reduced from a major power to a small republic of about 6.5 million people. The Treaty of Saint-Germain-en-Laye (1919) forbade union with Germany and ceded vast territories to successor states. Vienna, formerly an imperial capital of nearly 2 million, became a 'hydrocephalus' - an oversized head on a small body. The First Republic (1919-1934) struggled with economic crisis, political polarization, and hyperinflation. Bitter divisions between Social Democrats and conservative Christian Socialists culminated in the July 1927 riots and February 1934 civil war. Chancellor Engelbert Dollfuss established an authoritarian regime but was assassinated by Austrian Nazis in 1934. His successor Kurt Schuschnigg tried to maintain independence from Nazi Germany, but Hitler, born in Austria, forced Schuschnigg's resignation in March 1938. On March 12, 1938, German troops entered Austria to enthusiastic crowds in the Anschluss (annexation), making Austria part of Nazi Germany. Many Austrians supported the Nazis, and the country was thoroughly integrated into the Third Reich. Vienna's large Jewish population was devastated; over 65,000 Austrian Jews were murdered in the Holocaust, and the city's once-vibrant Jewish culture was destroyed. After World War II, Austria was occupied by the four Allied powers (USA, UK, France, USSR) like Germany. Unlike Germany, Austria was declared Hitler's 'first victim,' though this narrative obscured Austrian complicity in Nazi crimes. After lengthy negotiations, the Austrian State Treaty was signed on May 15, 1955, restoring full sovereignty. On October 26, 1955, Austria declared permanent neutrality, joining neither NATO nor the Warsaw Pact. The Second Republic flourished as a neutral bridge between East and West during the Cold War. Austria joined the European Union in 1995 while maintaining its neutral status, and has become one of Europe's most prosperous and stable democracies.",
+				"keyEvents": [
+					{
+						"year": "1919",
+						"title": "Treaty of Saint-Germain",
+						"description": "September 10, treaty confirms Austria's borders, forbids union with Germany, establishes First Republic"
+					},
+					{
+						"year": "1920",
+						"title": "Federal Constitution Adopted",
+						"description": "October 1, constitution establishes Austria as federal republic with nine provinces"
+					},
+					{
+						"year": "1922",
+						"title": "Economic Crisis",
+						"description": "Hyperinflation devastates economy; League of Nations provides loan in exchange for financial supervision"
+					},
+					{
+						"year": "1927",
+						"title": "July Revolt",
+						"description": "July 15, riots in Vienna leave 89 dead after acquittal of right-wing activists who killed protesters"
+					},
+					{
+						"year": "1934",
+						"title": "Austrian Civil War",
+						"description": "February 12-16, government defeats Social Democrats in brief civil war; democracy ended"
+					},
+					{
+						"year": "1934",
+						"title": "Dollfuss Assassinated",
+						"description": "July 25, Chancellor Engelbert Dollfuss murdered by Austrian Nazis in failed coup attempt"
+					},
+					{
+						"year": "1938",
+						"title": "Anschluss with Germany",
+						"description": "March 12-13, Nazi Germany annexes Austria; met with widespread popular support despite coercion"
+					},
+					{
+						"year": "1938",
+						"title": "Kristallnacht in Vienna",
+						"description": "November 9-10, violent antisemitic pogroms particularly severe in Vienna; beginning of systematic persecution"
+					},
+					{
+						"year": "1945",
+						"title": "Liberation and Occupation",
+						"description": "April 27, provisional government declares Anschluss void; Austria divided into four Allied occupation zones"
+					},
+					{
+						"year": "1955",
+						"title": "Austrian State Treaty",
+						"description": "May 15, treaty signed at Belvedere Palace restoring Austrian sovereignty; occupation ends October 25"
+					},
+					{
+						"year": "1955",
+						"title": "Neutrality Declared",
+						"description": "October 26, Austria declares permanent neutrality; becomes national holiday celebrating independence"
+					},
+					{
+						"year": "1955",
+						"title": "United Nations Membership",
+						"description": "December 14, Austria joins UN, demonstrating neutrality compatible with international cooperation"
+					},
+					{
+						"year": "1995",
+						"title": "European Union Entry",
+						"description": "January 1, Austria joins EU along with Finland and Sweden after referendum; maintains neutrality"
+					}
+				],
+				"notableFigures": [
+					"Karl Renner (first and last chancellor of First Republic, first president of Second Republic)",
+					"Engelbert Dollfuss",
+					"Kurt Schuschnigg",
+					"Julius Raab (chancellor who negotiated State Treaty)",
+					"Leopold Figl",
+					"Bruno Kreisky (longest-serving chancellor)",
+					"Simon Wiesenthal (Nazi hunter)"
+				]
+			},
+			"timeline": [
+				{
+					"year": "c. 200 BCE",
+					"era": "Ancient",
+					"title": "Noricum Founded",
+					"description": "Celtic tribes establish Kingdom of Noricum, first state on Austrian territory"
+				},
+				{
+					"year": "15 BCE",
+					"era": "Ancient",
+					"title": "Roman Province",
+					"description": "Noricum peacefully incorporated into Roman Empire under Emperor Augustus"
+				},
+				{
+					"year": "976",
+					"era": "Medieval",
+					"title": "Austria Established",
+					"description": "Margraviate of Austria created under Babenberg dynasty within Holy Roman Empire"
+				},
+				{
+					"year": "1278",
+					"era": "Medieval",
+					"title": "Habsburg Era Begins",
+					"description": "Rudolf of Habsburg defeats Ottokar II, establishing Habsburg control lasting until 1918"
+				},
+				{
+					"year": "1526",
+					"era": "Imperial",
+					"title": "Bohemia and Hungary",
+					"description": "Habsburg Austria acquires crowns of Bohemia and Hungary through inheritance"
+				},
+				{
+					"year": "1683",
+					"era": "Imperial",
+					"title": "Second Siege of Vienna",
+					"description": "Ottoman Empire's last major attack on Vienna defeated, marking turning point"
+				},
+				{
+					"year": "1804",
+					"era": "Imperial",
+					"title": "Austrian Empire",
+					"description": "Francis II proclaims Austrian Empire in response to Napoleon's rise to power"
+				},
+				{
+					"year": "1867",
+					"era": "Imperial",
+					"title": "Dual Monarchy",
+					"description": "Austria-Hungary created, granting Hungary equal status within empire"
+				},
+				{
+					"year": "1918",
+					"era": "Modern",
+					"title": "Empire Collapses",
+					"description": "World War I ends with dissolution of Austria-Hungary; First Republic proclaimed"
+				},
+				{
+					"year": "1938",
+					"era": "Modern",
+					"title": "Nazi Annexation",
+					"description": "Anschluss makes Austria part of Nazi Germany until 1945"
+				},
+				{
+					"year": "1955",
+					"era": "Modern",
+					"title": "Independence Restored",
+					"description": "Austrian State Treaty ends occupation; permanent neutrality declared October 26"
+				},
+				{
+					"year": "1995",
+					"era": "Modern",
+					"title": "European Union",
+					"description": "Austria joins EU while maintaining its neutral status in international affairs"
+				}
+			]
+		},
+		"switzerland": {
+			"name": "Switzerland",
+			"overview": "Switzerland's history is a remarkable story of unity forged from diversity, independence won through determination, and neutrality maintained through armed preparedness. From Celtic tribes and Roman provinces through the medieval formation of a unique confederation of alpine communities, Switzerland developed as an alliance that defied the feudal hierarchies dominating medieval Europe. The Old Swiss Confederacy began in 1291 when three alpine valleys pledged mutual defense, and gradually expanded to thirteen cantons by 1513 through both alliance and conquest. Swiss military prowess made their soldiers sought throughout Europe, but devastating defeat at Marignano in 1515 ended expansionism and began the tradition of neutrality. The Reformation divided the nation religiously, leading to civil wars, but the confederation survived. Napoleon's invasion in 1798 briefly transformed Switzerland into the Helvetic Republic, but the Congress of Vienna in 1815 restored independence and internationally recognized Swiss neutrality. The liberal Sonderbund civil war of 1847 led to the creation of a modern federal state in 1848, establishing democratic institutions that remain largely unchanged. Switzerland maintained strict neutrality through both World Wars, emerging as a prosperous, multicultural democracy that has become synonymous with precision, stability, and mediation. Despite not joining the UN until 2002 and remaining outside the EU, Switzerland has become a global center for international organizations, banking, and humanitarian work.",
+			"source": {
+				"label": "Wikipedia - History of Switzerland",
+				"url": "https://en.wikipedia.org/wiki/History_of_Switzerland",
+				"urls": [
+					"https://en.wikipedia.org/wiki/History_of_Switzerland",
+					"https://www.britannica.com/place/Switzerland",
+					"https://www.myswitzerland.com/en-us/planning/about-switzerland/history-of-switzerland/"
+				]
+			},
+			"keyFacts": [
+				{
+					"label": "Federal Charter",
+					"value": "August 1, 1291"
+				},
+				{
+					"label": "Federal Constitution",
+					"value": "September 12, 1848"
+				},
+				{
+					"label": "Neutrality Recognized",
+					"value": "Congress of Vienna, 1815"
+				},
+				{
+					"label": "Capital",
+					"value": "Bern (federal city since 1848)"
+				},
+				{
+					"label": "Name Origin",
+					"value": "From canton of Schwyz, one of founding members"
+				},
+				{
+					"label": "National Day",
+					"value": "August 1 (Federal Charter commemoration)"
+				}
+			],
+			"ancient": {
+				"period": "c. 500 BCE - 400 CE",
+				"description": "The territory of modern Switzerland was inhabited by Celtic peoples, most prominently the Helvetii, who migrated from southern Germany to the Swiss plateau around the 2nd century BCE under pressure from Germanic tribes. The Helvetii, possibly divided into four subgroups including the Tigurini and Verbigeni, developed a prosperous agricultural and trading society. They built fortified hilltop settlements called oppida, including settlements that would later become major cities. The Helvetii were known for their wealth, with Greek writer Poseidonios describing them as 'rich in gold but peaceful people.' In 58 BCE, pressed by Germanic invasions, approximately 368,000 Helvetians attempted to migrate to western Gaul under their leader Orgetorix. Julius Caesar, then governor of Gaul, refused them passage and pursued them up the Saône River, defeating them decisively at the Battle of Bibracte. Caesar forced the surviving Helvetians to return to their homeland to serve as a buffer against Germanic tribes. Under Emperor Augustus, the Swiss plateau was incorporated into the Roman Empire, initially as part of Gallia Belgica and later Germania Superior. The Helvetii and other Celtic tribes were organized as civitates with considerable autonomy, and Roman colonization brought cities, roads, and thorough Romanization. Important Roman settlements included Augusta Raurica (near Basel), Aventicum (Avenches, capital of Helvetia), Vindonissa, and others. The region prospered during the Pax Romana with trade, agriculture, and the famous Roman baths at Aquae Helveticae (Baden). After the Crisis of the Third Century, Germanic Alemanni invaded around 260 CE, destroying many settlements. By 400 CE, Roman control had collapsed, and Germanic peoples including the Alemanni and Burgundians occupied Swiss territory, though romanized culture persisted in areas that became French-speaking.",
+				"keyEvents": [
+					{
+						"year": "c. 500 BCE",
+						"title": "Celtic Settlement",
+						"description": "Celtic peoples including the Helvetii settle Swiss plateau, developing prosperous agricultural communities"
+					},
+					{
+						"year": "c. 100 BCE",
+						"title": "Helvetian Consolidation",
+						"description": "Helvetii establish fortified oppida and extensive trade networks across Alpine region"
+					},
+					{
+						"year": "107 BCE",
+						"title": "Battle of Agen",
+						"description": "Tigurini under chief Divico defeat Roman legions, demonstrating military prowess"
+					},
+					{
+						"year": "58 BCE",
+						"title": "Battle of Bibracte",
+						"description": "Julius Caesar defeats Helvetian migration attempt, forcing return to Switzerland"
+					},
+					{
+						"year": "15 BCE",
+						"title": "Roman Conquest",
+						"description": "Augustus incorporates Swiss territory into Roman Empire; Raetia and Helvetia established"
+					},
+					{
+						"year": "c. 100 CE",
+						"title": "Roman Prosperity",
+						"description": "Aventicum flourishes as capital of Helvetia; Roman culture, roads, and cities transform region"
+					},
+					{
+						"year": "260 CE",
+						"title": "Alemanni Invasion",
+						"description": "Germanic Alemanni breach Roman defenses, raiding and eventually settling Swiss plateau"
+					},
+					{
+						"year": "c. 400-500 CE",
+						"title": "Germanic Settlement",
+						"description": "Roman control ends; Alemanni and Burgundians settle region, beginning Germanic era"
+					}
+				],
+				"notableFigures": [
+					"Divico (Helvetian chief who defeated Romans)",
+					"Orgetorix (Helvetian leader who planned migration)",
+					"Julius Caesar (defeated Helvetii at Bibracte)"
+				]
+			},
+			"medieval": {
+				"period": "400 - 1291",
+				"description": "After Roman withdrawal, the Alemanni settled northern and eastern Switzerland, while Burgundians occupied the west, creating the linguistic division that persists today between German-speaking and French-speaking regions. The Frankish Empire under Clovis defeated the Alemanni around 500 CE, and Switzerland became part of Charlemagne's empire by the early 9th century. After the empire's division, Swiss territories fell within the Kingdom of East Francia and eventually the Holy Roman Empire. The western region became part of the Kingdom of Burgundy. During the High Middle Ages, Swiss valleys gained importance due to their control of strategic Alpine passes, particularly the Gotthard Pass connecting Italy to Northern Europe. Local communities of free peasants in Uri, Schwyz, and Unterwalden managed these routes and enjoyed reichsfrei status - answering directly to the emperor without intermediate lords. The opening of the Gotthard Pass in the 13th century dramatically increased the region's strategic and economic importance. The Habsburg dynasty, rising to power from their castle in what is now Switzerland, sought to extend control over these alpine communities. King Rudolf I of Habsburg (1273-1291) attempted to assert authority over the region, increasing taxes and appointing bailiffs. His death on July 15, 1291, created uncertainty about whether the communities' imperial privileges would be maintained under his successor. According to tradition, representatives from Uri, Schwyz, and Unterwalden met on the Rütli meadow and swore an oath of mutual assistance. The Federal Charter, dated to early August 1291, represents the oldest written evidence of this alliance, pledging the three valley communities to defend each other against foreign judges and external threats. This formed the nucleus of what would become the Swiss Confederation.",
+				"keyEvents": [
+					{
+						"year": "c. 500",
+						"title": "Frankish Conquest",
+						"description": "Clovis defeats Alemanni; Swiss territory incorporated into Frankish kingdom"
+					},
+					{
+						"year": "c. 800",
+						"title": "Carolingian Empire",
+						"description": "Charlemagne's empire includes Swiss lands; monasteries like St. Gallen flourish"
+					},
+					{
+						"year": "843",
+						"title": "Treaty of Verdun",
+						"description": "Frankish Empire divided; Swiss lands split between East Francia and Burgundy"
+					},
+					{
+						"year": "c. 1200",
+						"title": "Gotthard Pass Opened",
+						"description": "Strategic alpine pass opens, dramatically increasing importance of central Swiss valleys"
+					},
+					{
+						"year": "1231",
+						"title": "Imperial Freedom Granted",
+						"description": "Uri receives reichsfrei status from Emperor Frederick II, becoming directly imperial"
+					},
+					{
+						"year": "1240",
+						"title": "Schwyz Gains Freedom",
+						"description": "Schwyz receives imperial immediacy, freeing it from Habsburg or other feudal control"
+					},
+					{
+						"year": "1273",
+						"title": "Habsburg Rudolf Elected",
+						"description": "Rudolf I of Habsburg becomes Holy Roman Emperor, beginning Habsburg pressure on alpine communities"
+					},
+					{
+						"year": "1291",
+						"title": "Federal Charter",
+						"description": "August 1, Uri, Schwyz, and Unterwalden form defensive alliance, founding the Swiss Confederation"
+					}
+				],
+				"notableFigures": [
+					"Charlemagne (incorporated Swiss lands into empire)",
+					"Rudolf I of Habsburg",
+					"William Tell (legendary folk hero of Swiss independence)"
+				]
+			},
+			"independence": {
+				"period": "1291 - 1648",
+				"description": "The newly formed Swiss Confederation faced immediate challenges from the Habsburg dynasty, which sought to reassert control over the rebellious alpine communities. The Confederation's survival and expansion were secured through a series of military victories that established Switzerland's reputation for martial prowess. In 1315, at the Battle of Morgarten, a small force of Swiss confederates ambushed and destroyed a much larger Austrian Habsburg army, solidifying the alliance. Lucerne joined the Confederation in 1332, followed by Zürich in 1351, Glarus and Zug in 1352, and Bern in 1353, forming the 'Eight Cantons.' Swiss infantry, fighting in tightly packed pike formations, proved nearly invincible in the mountainous terrain. Victory at the Battle of Sempach in 1386, where Leopold III of Austria was killed, and at Näfels in 1388 further secured Swiss independence. The Confederates gradually expanded their territory through military campaigns and diplomatic alliances. In 1476-1477, Swiss forces decisively defeated Charles the Bold of Burgundy at Grandson, Murten, and Nancy, ending Burgundian power. The Swabian War of 1499 against the Holy Roman Empire effectively ended imperial jurisdiction over Switzerland, though formal recognition wouldn't come until 1648. By 1513, the Confederation had grown to thirteen cantons with the addition of Fribourg, Solothurn, Basel, Schaffhausen, and Appenzell. However, the Reformation beginning in the 1520s under Huldrych Zwingli in Zürich and later John Calvin in Geneva divided the Confederation along religious lines. Catholic and Protestant cantons fought civil wars in 1529, 1531 (where Zwingli was killed at Kappel), and 1656. Despite religious tensions, the Confederation maintained its alliance. The devastating military defeat at the Battle of Marignano in 1515 against France ended Swiss territorial expansion and marked the beginning of Switzerland's policy of neutrality. Swiss mercenaries, however, continued serving foreign armies, with the Papal Swiss Guard established in 1506 continuing to this day. The Peace of Westphalia in 1648, ending the Thirty Years' War, formally recognized Swiss independence from the Holy Roman Empire.",
+				"keyEvents": [
+					{
+						"year": "1315",
+						"title": "Battle of Morgarten",
+						"description": "November 15, Swiss confederates ambush and defeat Austrian Habsburg army, securing early independence"
+					},
+					{
+						"year": "1332-1353",
+						"title": "Eight Cantons Formed",
+						"description": "Lucerne, Zürich, Glarus, Zug, and Bern join original three, forming confederation of Eight Cantons"
+					},
+					{
+						"year": "1386",
+						"title": "Battle of Sempach",
+						"description": "July 9, Swiss defeat Habsburgs; Leopold III killed; Swiss pike tactics prove devastating"
+					},
+					{
+						"year": "1476",
+						"title": "Battle of Grandson",
+						"description": "March 2, Swiss defeat Charles the Bold of Burgundy, beginning Burgundian Wars"
+					},
+					{
+						"year": "1477",
+						"title": "Battle of Nancy",
+						"description": "January 5, Swiss victory kills Charles the Bold, ending Burgundian power and expanding Swiss influence"
+					},
+					{
+						"year": "1499",
+						"title": "Swabian War",
+						"description": "Swiss victories over Holy Roman Empire forces gain de facto independence"
+					},
+					{
+						"year": "1506",
+						"title": "Swiss Guard Established",
+						"description": "Pope Julius II establishes Swiss Guard, demonstrating reputation of Swiss mercenaries"
+					},
+					{
+						"year": "1513",
+						"title": "Thirteen Cantons",
+						"description": "Confederation reaches thirteen cantons with addition of Appenzell; remains until 1798"
+					},
+					{
+						"year": "1515",
+						"title": "Battle of Marignano",
+						"description": "September 13-14, devastating defeat by French forces ends Swiss expansion; begins neutrality policy"
+					},
+					{
+						"year": "1519",
+						"title": "Reformation Begins",
+						"description": "Huldrych Zwingli begins Protestant Reformation in Zürich, dividing Confederation religiously"
+					},
+					{
+						"year": "1531",
+						"title": "First Kappel War",
+						"description": "October 11, Catholic cantons defeat Protestant forces; Zwingli killed in battle"
+					},
+					{
+						"year": "1536",
+						"title": "Calvin in Geneva",
+						"description": "John Calvin establishes Protestant theocracy in Geneva, making it center of Reformed Christianity"
+					},
+					{
+						"year": "1648",
+						"title": "Peace of Westphalia",
+						"description": "Treaty formally recognizes Swiss independence from Holy Roman Empire after Thirty Years' War"
+					}
+				],
+				"notableFigures": [
+					"Arnold von Winkelried (hero of Sempach)",
+					"Huldrych Zwingli",
+					"John Calvin",
+					"Niklaus von Flüe (hermit and peacemaker)"
+				]
+			},
+			"modern": {
+				"period": "1648 - Present",
+				"description": "After gaining formal independence, the Old Swiss Confederacy continued as a loose alliance of thirteen sovereign cantons with varying political systems, from democratic assemblies to oligarchic city-states. The Confederation remained officially neutral during European conflicts, though this neutrality was sometimes compromised by mercenary service. The French Revolution profoundly impacted Switzerland. In 1798, French revolutionary armies invaded, overthrowing the old order and establishing the Helvetic Republic as a French client state with a centralized government. This unpopular regime collapsed in 1802-1803, and Napoleon's Act of Mediation partially restored cantonal sovereignty while adding six new cantons. After Napoleon's defeat, the Congress of Vienna in 1815 restored Swiss independence and, crucially, recognized perpetual Swiss neutrality, expanding the Confederation to twenty-two cantons. Throughout the 19th century, tensions grew between conservative Catholic cantons and liberal Protestant cantons over questions of centralization and religious policy. In 1845, seven Catholic cantons formed a separate defensive alliance called the Sonderbund. This constitutional crisis led to the brief Sonderbund War in 1847, won by federal forces in less than a month with minimal casualties. The victory of liberal federalists led to the Constitution of 1848, transforming Switzerland from a confederation into a federal state with a bicameral legislature, federal council, and strong cantonal autonomy. Bern became the federal city. Switzerland maintained strict neutrality during both World Wars, though this neutrality was controversial. During World War I, Switzerland provided asylum while managing tensions between French and German-speaking populations sympathetic to different sides. In World War II, Switzerland was surrounded by Axis powers and under constant threat of invasion. The Swiss army mobilized, and General Henri Guisan organized defense in the 'National Redoubt' strategy. Switzerland's banking sector dealt with Nazi Germany, a fact that provoked later criticism. The country provided refuge to some refugees while controversially turning others away. Post-war, Switzerland emerged prosperous, hosting international organizations including the Red Cross and later many UN agencies, though Switzerland itself didn't join the UN until 2002. Switzerland joined EFTA but has remained outside the EU despite being surrounded by member states. Through referendums, Switzerland has gradually extended rights, including women's suffrage in 1971 (among the last in Europe). Today, Switzerland is known for direct democracy, multiculturalism, neutrality, and prosperity.",
+				"keyEvents": [
+					{
+						"year": "1798",
+						"title": "French Invasion",
+						"description": "April, French revolutionary armies invade; Helvetic Republic established as centralized state"
+					},
+					{
+						"year": "1803",
+						"title": "Act of Mediation",
+						"description": "Napoleon restores cantonal sovereignty and adds six new cantons; ends Helvetic Republic"
+					},
+					{
+						"year": "1815",
+						"title": "Congress of Vienna",
+						"description": "Switzerland's independence and perpetual neutrality internationally recognized; 22 cantons established"
+					},
+					{
+						"year": "1847",
+						"title": "Sonderbund War",
+						"description": "November 3-29, brief civil war between Catholic and Protestant cantons won by federal forces"
+					},
+					{
+						"year": "1848",
+						"title": "Federal Constitution",
+						"description": "September 12, constitution creates modern federal state; Bern becomes federal city"
+					},
+					{
+						"year": "1863",
+						"title": "Red Cross Founded",
+						"description": "Henry Dunant founds International Committee of Red Cross in Geneva, cementing humanitarian role"
+					},
+					{
+						"year": "1914-1918",
+						"title": "World War I Neutrality",
+						"description": "Switzerland maintains armed neutrality despite being surrounded by warring nations"
+					},
+					{
+						"year": "1920",
+						"title": "League of Nations",
+						"description": "Switzerland joins League of Nations, housed in Geneva, with guaranteed neutrality"
+					},
+					{
+						"year": "1939-1945",
+						"title": "World War II Neutrality",
+						"description": "Switzerland maintains controversial neutrality, surrounded by Axis powers; mobilizes army under General Guisan"
+					},
+					{
+						"year": "1971",
+						"title": "Women's Suffrage",
+						"description": "February 7, Swiss women gain right to vote in federal elections after referendum"
+					},
+					{
+						"year": "1992",
+						"title": "EEA Referendum Fails",
+						"description": "December 6, Swiss voters narrowly reject joining European Economic Area"
+					},
+					{
+						"year": "2002",
+						"title": "United Nations Membership",
+						"description": "September 10, Switzerland joins UN after referendum, maintaining neutrality"
+					}
+				],
+				"notableFigures": [
+					"Henry Dunant (Red Cross founder, Nobel Peace Prize)",
+					"Henri Guisan (World War II general)",
+					"Jean-Jacques Rousseau (philosopher from Geneva)",
+					"Johanna Spyri (author of Heidi)",
+					"Carl Jung (psychologist)",
+					"Le Corbusier (architect)"
+				]
+			},
+			"timeline": [
+				{
+					"year": "58 BCE",
+					"era": "Ancient",
+					"title": "Battle of Bibracte",
+					"description": "Julius Caesar defeats Helvetian migration attempt, forcing return to Switzerland"
+				},
+				{
+					"year": "15 BCE",
+					"era": "Ancient",
+					"title": "Roman Conquest",
+					"description": "Augustus incorporates Swiss territory into Roman Empire as provinces of Helvetia and Raetia"
+				},
+				{
+					"year": "c. 500",
+					"era": "Medieval",
+					"title": "Germanic Settlement",
+					"description": "Alemanni and Burgundians settle Switzerland after Roman withdrawal, establishing linguistic division"
+				},
+				{
+					"year": "1291",
+					"era": "Medieval",
+					"title": "Confederation Founded",
+					"description": "August 1, Federal Charter unites Uri, Schwyz, and Unterwalden in defensive alliance"
+				},
+				{
+					"year": "1315",
+					"era": "Independence",
+					"title": "Battle of Morgarten",
+					"description": "Swiss confederates defeat Austrian Habsburg army, securing early independence"
+				},
+				{
+					"year": "1515",
+					"era": "Independence",
+					"title": "Battle of Marignano",
+					"description": "Devastating defeat by France ends Swiss expansion; beginning of neutrality policy"
+				},
+				{
+					"year": "1648",
+					"era": "Independence",
+					"title": "Formal Independence",
+					"description": "Peace of Westphalia recognizes Swiss independence from Holy Roman Empire"
+				},
+				{
+					"year": "1815",
+					"era": "Modern",
+					"title": "Neutrality Recognized",
+					"description": "Congress of Vienna internationally recognizes perpetual Swiss neutrality"
+				},
+				{
+					"year": "1848",
+					"era": "Modern",
+					"title": "Federal State Created",
+					"description": "Constitution transforms Switzerland from confederation into modern federal state"
+				},
+				{
+					"year": "1863",
+					"era": "Modern",
+					"title": "Red Cross Founded",
+					"description": "International Committee of Red Cross established in Geneva by Henry Dunant"
+				},
+				{
+					"year": "1939-1945",
+					"era": "Modern",
+					"title": "World War II",
+					"description": "Switzerland maintains armed neutrality surrounded by Axis powers"
+				},
+				{
+					"year": "2002",
+					"era": "Modern",
+					"title": "UN Membership",
+					"description": "Switzerland joins United Nations while maintaining traditional neutrality"
+				}
+			]
+		}
 	}
 ]

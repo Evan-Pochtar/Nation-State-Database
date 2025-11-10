@@ -45,7 +45,7 @@
   - [ ] Albania
   - [ ] Andorra
   - [ ] Armenia
-  - [ ] Austria
+  - [x] Austria
   - [ ] Azerbaijan
   - [ ] Belarus
   - [x] Belgium
@@ -88,7 +88,7 @@
   - [ ] Slovenia
   - [x] Spain
   - [x] Sweden
-  - [ ] Switzerland
+  - [x] Switzerland
   - [ ] Turkey
   - [x] Ukraine
   - [x] United Kingdom
