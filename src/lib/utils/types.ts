@@ -1,5 +1,5 @@
 export type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, any>>;
-export type SourceValue = string | { label: string; url?: string };
+export type SourceValue = string | { label: string; url?: string; urls?: string[] };
 export type DataType = 'gini' | 'gdp' | 'gdpPerCapita';
 export type InfoCache = Record<string, InfoCacheEntry>;
 export type TabType = 'overview' | 'economics' | 'history';
