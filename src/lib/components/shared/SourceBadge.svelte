@@ -17,12 +17,31 @@
 	function extractDomain(url: string): string {
 		try {
 			const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
-			const hostname = urlObj.hostname.replace('www.', '');
+			let hostname = urlObj.hostname.toLowerCase();
+			hostname = hostname.replace(/^www\./, '');
+			
 			const parts = hostname.split('.');
-			if (parts.length >= 2) {
-				return parts[parts.length - 2];
+			const knownTLDs = new Set([
+				'com', 'org', 'net', 'edu', 'gov', 'mil', 'int',
+				'co', 'ac', 'io', 'ai', 'app', 'dev'
+			]);
+			
+			const twoLetterTLD = parts.length >= 2 && parts[parts.length - 1].length === 2;
+			if (parts.length >= 3 && twoLetterTLD) {
+				const secondToLast = parts[parts.length - 2];
+				if (knownTLDs.has(secondToLast)) {
+					return parts[parts.length - 3];
+				}
 			}
-			return hostname;
+
+			if (parts.length >= 2) {
+				const lastPart = parts[parts.length - 1];
+				const secondToLast = parts[parts.length - 2];
+				if (knownTLDs.has(lastPart) || lastPart.length === 2) {
+					return secondToLast;
+				}
+			}
+			return parts.length > 1 ? parts[parts.length - 2] : hostname;
 		} catch {
 			return url;
 		}
