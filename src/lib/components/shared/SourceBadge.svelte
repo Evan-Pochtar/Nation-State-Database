@@ -19,13 +19,24 @@
 			const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
 			let hostname = urlObj.hostname.toLowerCase();
 			hostname = hostname.replace(/^www\./, '');
-			
+
 			const parts = hostname.split('.');
 			const knownTLDs = new Set([
-				'com', 'org', 'net', 'edu', 'gov', 'mil', 'int',
-				'co', 'ac', 'io', 'ai', 'app', 'dev'
+				'com',
+				'org',
+				'net',
+				'edu',
+				'gov',
+				'mil',
+				'int',
+				'co',
+				'ac',
+				'io',
+				'ai',
+				'app',
+				'dev'
 			]);
-			
+
 			const twoLetterTLD = parts.length >= 2 && parts[parts.length - 1].length === 2;
 			if (parts.length >= 3 && twoLetterTLD) {
 				const secondToLast = parts[parts.length - 2];

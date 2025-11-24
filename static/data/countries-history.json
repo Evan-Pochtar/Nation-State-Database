@@ -18710,5 +18710,356 @@
 				"description": "Switzerland joins United Nations while maintaining traditional neutrality"
 			}
 		]
+	},
+	{
+		"name": "Moldova",
+		"overview": "Moldova's history centers on the medieval Principality of Moldavia (founded in the 14th century), centuries of shifting suzerainty between regional powers, partition and Russian/Soviet rule over much of its territory (Bessarabia), a brief union with Romania after World War I, incorporation into the USSR as the Moldavian SSR, and independence in 1991. The modern Republic of Moldova faces the legacy of Soviet institutions, the unresolved Transnistrian conflict, and a political divide between pro-European and pro-Russian currents while pursuing EU integration and domestic reform.",
+		"source": {
+			"label": "Wikipedia - History of Moldova",
+			"url": "https://en.wikipedia.org/wiki/History_of_Moldova",
+			"urls": [
+				"https://www.britannica.com/topic/history-of-Moldova"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "August 27, 1991" },
+			{ "label": "Constitution Adopted", "value": "July 29, 1994" },
+			{ "label": "Capital", "value": "Chișinău (first recorded c. 1436; major growth 19th century)" },
+			{ "label": "Official Language", "value": "Romanian (called 'Moldovan' in some legal texts historically)" },
+			{ "label": "Historic Principality Founded", "value": "Mid-14th century (Bogdan I, c. 1359-1365)" },
+			{
+				"label": "Territorial Note",
+				"value": "Modern state formed largely from Bessarabia (Prut-Dniester region) with Transnistria as a de facto breakaway region"
+			},
+			{ "label": "National Day", "value": "August 27 (Independence Day)" }
+		],
+		"ancient": {
+			"period": "Pre-14th century",
+			"description": "Before the medieval principality, the lands that became Moldova were inhabited by various peoples (Dacian/Thraco-Roman successors, Sarmatians, early Slavs) and formed part of broader late antique and early medieval political and cultural zones influenced by Byzantium and nomadic steppe polities. Archaeological sites show continuity of rural settlement and frontier cultural exchanges along the lower Danube and Dniester corridors.",
+			"keyEvents": [
+				{
+					"year": "1st-6th centuries CE",
+					"title": "Roman & Post-Roman Influence",
+					"description": "Borderland of Roman and post-Roman influences; migration and settlement by various groups across the region"
+				},
+				{
+					"year": "6th-10th centuries",
+					"title": "Early Medieval Migrations",
+					"description": "Slavic settlement and formation of local polities; trade and cultural links with Byzantine world"
+				}
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "14th-16th centuries",
+			"description": "The Principality of Moldavia emerged in the 14th century. Bogdan I (often dated c. 1359) is credited with establishing an independent Moldavian principality. Moldavia developed as an Orthodox, feudal state centered on Suceava (later other seats) and navigated pressures from Hungary, Poland-Lithuania, and the Ottoman Empire while cultivating its own boyar (noble) culture and ecclesiastical institutions.",
+			"keyEvents": [
+				{
+					"year": "c. 1359-1365",
+					"title": "Bogdan I establishes independent Moldavia",
+					"description": "Bogdan the Founder consolidates local Vlach rule and creates the principality named for the Moldova River"
+				},
+				{
+					"year": "14th-15th c.",
+					"title": "State consolidation and cultural growth",
+					"description": "Moldavia develops administrative structures, Orthodox monastic culture, and defensive architecture (fortified monasteries and citadels)"
+				},
+				{
+					"year": "15th century",
+					"title": "Relations with neighbors",
+					"description": "Moldavia alternates between autonomy, vassalage, and alliance as regional powers (Ottoman Empire, Poland, Hungary) compete for influence"
+				}
+			],
+			"notableFigures": ["Bogdan I (founder)", "Stephen the Great (Ștefan cel Mare)"]
+		},
+		"imperial": {
+			"period": "16th century - 1918 (fragmented/contested sovereignty)",
+			"description": "From the 16th century Moldavia became an Ottoman vassal (retaining internal autonomy). In 1812 the eastern portion of the historic principality (Bessarabia, between Prut and Dniester) was ceded to the Russian Empire after the Russo-Turkish War (Treaty of Bucharest, 1812). That partition shaped modern geopolitics: parts of historic Moldavia were later in the Russian Empire, others in the Danubian Principalities that evolved into modern Romania.",
+			"keyEvents": [
+				{
+					"year": "16th century onward",
+					"title": "Ottoman suzerainty",
+					"description": "Moldavia becomes an Ottoman vassal but keeps internal institutions and Orthodox hierarchy"
+				},
+				{
+					"year": "May 28, 1812",
+					"title": "Treaty of Bucharest (1812) — Bessarabia ceded to Russia",
+					"description": "Ottoman Empire cedes eastern Moldavia (Bessarabia) to the Russian Empire, creating long-term separation"
+				},
+				{
+					"year": "1859-1918",
+					"title": "National developments in the west",
+					"description": "The western part of the historic principality joins wider Romanian unification processes (United Principalities → Kingdom of Romania)"
+				}
+			],
+			"notableFigures": ["Princes and boyars of Moldavia", "Local church leaders and cultural patrons"]
+		},
+		"independence": {
+			"period": "20th century - 1991",
+			"description": "The 20th century brought dramatic shifts: after World War I Bessarabia united with Romania (1918). In 1940, following the Molotov-Ribbentrop arrangements and a Soviet ultimatum, the USSR annexed Bessarabia and formed the Moldavian SSR (with some territorial adjustments). The region saw wartime occupations (1941-1944) and postwar Sovietization. With the collapse of the USSR, Moldova declared independence on August 27, 1991; the new state faced immediate challenges including the Transnistria conflict (1990-1992) and the transition from a planned to a market economy.",
+			"keyEvents": [
+				{
+					"year": "March 27, 1918",
+					"title": "Union with Romania",
+					"description": "Sfatul Țării (Bessarabian assembly) votes for union with the Kingdom of Romania after World War I"
+				},
+				{
+					"year": "June-August 1940",
+					"title": "Soviet occupation & annexation",
+					"description": "USSR issues ultimatum to Romania and establishes the Moldavian Soviet Socialist Republic (Moldavian SSR)"
+				},
+				{
+					"year": "1990-1992",
+					"title": "Transnistria conflict",
+					"description": "Armed conflict and a frozen territorial dispute follow Transnistrian separatist declarations; a ceasefire in 1992 leaves Russian-backed Transnistria as a de facto breakaway entity"
+				},
+				{
+					"year": "August 27, 1991",
+					"title": "Independence declared",
+					"description": "Parliament proclaims the Republic of Moldova independent from the USSR"
+				},
+				{
+					"year": "July 29, 1994",
+					"title": "Constitution adopted",
+					"description": "New constitution establishes the framework of the independent republic"
+				}
+			],
+			"notableFigures": [
+				"Members of Sfatul Țării (1917-1918)",
+				"Mircea Snegur",
+				"Petru Lucinschi",
+				"Vladimir Voronin",
+				"Maia Sandu"
+			]
+		},
+		"modern": {
+			"period": "1991 - Present",
+			"description": "Post-Soviet Moldova has oscillated between pro-European and pro-Russian political majorities. Key issues include economic reform, corruption, energy dependence, migration, and the unresolved Transnistria status. Moldova applied for EU membership and has deepening ties with the EU while managing regional geopolitical pressure, especially after the 2014-present east-west tensions in Eastern Europe.",
+			"keyEvents": [
+				{
+					"year": "1992",
+					"title": "Ceasefire in Transnistria",
+					"description": "Russian-mediated ceasefire leaves Transnistria as a frozen conflict zone"
+				},
+				{
+					"year": "2009",
+					"title": "Protests and political crisis",
+					"description": "Mass protests (April) and political instability follow disputed elections and fuel reform debates"
+				},
+				{
+					"year": "2020-present",
+					"title": "European orientation",
+					"description": "Election of pro-European leaders (e.g., Maia Sandu) strengthens EU integration efforts; energy and security remain policy priorities"
+				}
+			],
+			"notableFigures": ["Maia Sandu", "Ilan Shor"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1359",
+				"era": "Medieval",
+				"title": "Foundation of Principality of Moldavia",
+				"description": "Bogdan I establishes an independent Moldavian principality"
+			},
+			{
+				"year": "16th century",
+				"era": "Imperial",
+				"title": "Ottoman suzerainty established",
+				"description": "Moldavia becomes an Ottoman vassal while maintaining internal institutions"
+			},
+			{
+				"year": "1812",
+				"era": "Imperial",
+				"title": "Bessarabia ceded to Russia",
+				"description": "Treaty of Bucharest transfers eastern Moldavia (Bessarabia) to the Russian Empire"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Union with Romania (Bessarabia)",
+				"description": "Local assembly votes to unite Bessarabia with Romania after World War I"
+			},
+			{
+				"year": "1940",
+				"era": "Imperial/Modern",
+				"title": "Soviet annexation",
+				"description": "Soviet ultimatum and incorporation into the Moldavian SSR"
+			},
+			{
+				"year": "1991",
+				"era": "Independence",
+				"title": "Independence declared",
+				"description": "Republic of Moldova declares independence from the USSR (August 27, 1991)"
+			}
+		]
+	},
+	{
+		"name": "Albania",
+		"overview": "Albania's history stretches from ancient Illyrian and classical-era Greek settlements on the Adriatic coast through Roman and Byzantine rule, the medieval consolidation of Albanian principalities, the national resistance under Skanderbeg (15th century), five centuries of Ottoman rule, a short independence and state-building period after 1912, a turbulent 20th century including monarchy, Italian/German occupation, decades of isolationist communist rule under Enver Hoxha, and democratic transition since 1990 with ongoing Euro-Atlantic integration efforts.",
+		"source": {
+			"label": "Wikipedia - History of Albania",
+			"url": "https://en.wikipedia.org/wiki/History_of_Albania",
+			"urls": [
+				"https://www.britannica.com/place/Albania",
+				"https://www.britannica.com/biography/Skanderbeg"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "November 28, 1912 (Vlorë)" },
+			{ "label": "Constitution Adopted", "value": "November 28, 1998 (current constitution)" },
+			{ "label": "Capital", "value": "Tirana (established as capital 1920s)" },
+			{ "label": "Official Language", "value": "Albanian" },
+			{ "label": "Notable UNESCO Site", "value": "Butrint (archaeological site)" },
+			{ "label": "National Day", "value": "November 28 (Independence Day, 1912)" }
+		],
+		"ancient": {
+			"period": "Prehistory - Antiquity",
+			"description": "The territory of modern Albania was settled in prehistory and in antiquity by Illyrian tribes and saw Greek coastal colonies (Apollonia, Dyrrachium/Durrës, Butrint). Integrated into the Roman Empire, the region formed part of Roman provinces and later Byzantine administrative units, preserving diverse cultural influences and trade links along the Adriatic and inland Balkan routes.",
+			"keyEvents": [
+				{
+					"year": "7th-1st centuries BCE",
+					"title": "Illyrian & Greek presence",
+					"description": "Illyrian tribes inland and Greek colonies on the coast establish early urban centers and trade connections"
+				},
+				{
+					"year": "2nd century BCE - 5th century CE",
+					"title": "Roman incorporation",
+					"description": "Roman conquest integrates the region into imperial administrative and economic systems"
+				}
+			],
+			"notableFigures": []
+		},
+		"medieval": {
+			"period": "Middle Ages (6th-15th centuries)",
+			"description": "Medieval Albania saw fragmented principalities, Byzantine and later Serbian and Angevin influences, and the rise of local dynasties. In the 12th-13th centuries the Principality of Arbanon and later local feudal lords shaped regional politics. The 15th century brought national consolidation under Gjergj Kastrioti (Skanderbeg), who led the League of Lezhë (1444) and resisted Ottoman conquest for decades.",
+			"keyEvents": [
+				{
+					"year": "1190",
+					"title": "Principality of Arbanon founded",
+					"description": "Earliest native medieval polity centered on Krujë"
+				},
+				{
+					"year": "1444",
+					"title": "League of Lezhë formed",
+					"description": "Regional Albanian lords unite under Skanderbeg to resist Ottoman expansion"
+				},
+				{
+					"year": "1468-1479",
+					"title": "Ottoman consolidation",
+					"description": "After Skanderbeg's death and later campaigns, the Ottomans consolidate control over most Albanian lands"
+				}
+			],
+			"notableFigures": ["Gjergj Kastrioti 'Skanderbeg'"]
+		},
+		"imperial": {
+			"period": "15th century - early 20th century (Ottoman era)",
+			"description": "Albania was incorporated into the Ottoman Empire for centuries. Ottoman rule brought administrative change, Islamization in many regions, and integration into imperial economic and military systems (including recruitment to the Janissaries). Local Albanian elites sometimes rose to prominence within Ottoman structures, but the period also produced distinctive local cultures and recurring uprisings.",
+			"keyEvents": [
+				{
+					"year": "15th-19th centuries",
+					"title": "Ottoman administration and social change",
+					"description": "Albanian lands are governed within Ottoman provincial structures; religion and landholding patterns evolve"
+				},
+				{
+					"year": "19th century",
+					"title": "National awakening (Rilindja)",
+					"description": "Cultural and political revival fosters modern Albanian nationalism and calls for autonomy/independence"
+				}
+			],
+			"notableFigures": ["Naim Frashëri", "Ismail Qemali"]
+		},
+		"independence": {
+			"period": "1912 - mid 20th century",
+			"description": "Following the weakening of Ottoman control and Balkan conflicts, Albanian leaders declared independence in Vlorë on November 28, 1912 under Ismail Qemali. The early Albanian state endured territorial disputes, short-lived governments, and shifting international recognition. In the interwar period Albania became a principality (and later a kingdom under Zog I). World War II and occupation by Italy (1939) and Germany (1943-1944) preceded the communist takeover.",
+			"keyEvents": [
+				{
+					"year": "November 28, 1912",
+					"title": "Independence proclaimed",
+					"description": "Ismail Qemali proclaims independence in Vlorë; a provisional government is formed"
+				},
+				{
+					"year": "1928",
+					"title": "Kingdom of Albania (Zog I)",
+					"description": "Ahmet Zogu proclaims himself King Zog I after serving as president and prime minister"
+				},
+				{
+					"year": "1939-1944",
+					"title": "Italian and German occupation",
+					"description": "World War II occupations destabilize the country and set stage for communist ascendancy"
+				}
+			],
+			"notableFigures": ["Ismail Qemali", "Ahmet Zogu (later King Zog I)"]
+		},
+		"modern": {
+			"period": "1944 - Present",
+			"description": "After World War II, the communist Party of Labour under Enver Hoxha established a Stalinist, isolationist regime that lasted until Hoxha's death and the eventual collapse of communism in 1990. The 1990s brought transition to multiparty democracy, economic liberalization, and social upheavals (including the 1997 crisis tied to pyramid scheme collapses). Albania has pursued Euro-Atlantic integration, becoming a NATO member (2009) and an EU candidate, while continuing reforms and recovering from post-communist challenges.",
+			"keyEvents": [
+				{
+					"year": "1944-1985",
+					"title": "Communist era under Enver Hoxha",
+					"description": "One of Europe's most isolationist and repressive regimes; break with USSR and later China; pervasive state control"
+				},
+				{
+					"year": "1991-1992",
+					"title": "End of communist rule",
+					"description": "Multi-party elections lead to democratic transition and market reforms"
+				},
+				{
+					"year": "1997",
+					"title": "Pyramid scheme crisis",
+					"description": "Widespread financial collapse triggers protests, instability, and international intervention"
+				},
+				{
+					"year": "2009",
+					"title": "NATO membership",
+					"description": "Albania joins NATO, strengthening security ties with the West"
+				},
+				{
+					"year": "2014-present",
+					"title": "EU candidate and reform efforts",
+					"description": "Albania advances EU accession steps while pursuing judicial and anti-corruption reforms"
+				}
+			],
+			"notableFigures": ["Enver Hoxha", "Ramiz Alia", "Sali Berisha", "Edi Rama"]
+		},
+		"timeline": [
+			{
+				"year": "7th-1st centuries BCE",
+				"era": "Ancient",
+				"title": "Illyrian tribes & Greek colonies",
+				"description": "Illyrian peoples inland; Greek colonies (Apollonia, Durrës, Butrint) on the Adriatic coast"
+			},
+			{
+				"year": "1190",
+				"era": "Medieval",
+				"title": "Principality of Arbanon",
+				"description": "Early native medieval polity centered on Krujë"
+			},
+			{
+				"year": "1444",
+				"era": "Medieval",
+				"title": "League of Lezhë / Skanderbeg",
+				"description": "Skanderbeg unites Albanian principalities to resist the Ottoman Empire"
+			},
+			{
+				"year": "1912",
+				"era": "Independence",
+				"title": "Independence proclaimed",
+				"description": "Ismail Qemali proclaims the independent Albanian state in Vlorë (November 28, 1912)"
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Communist takeover",
+				"description": "Communist Party establishes durable one-party state under Enver Hoxha"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "End of communist rule",
+				"description": "Multi-party politics begins and Albania begins transition to democracy"
+			},
+			{ "year": "2009", "era": "Modern", "title": "NATO accession", "description": "Albania becomes a NATO member" }
+		]
 	}
 ]

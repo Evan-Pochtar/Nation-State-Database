@@ -42,7 +42,7 @@
   - [x] Venezuela
 
 - [ ] EUROPE
-  - [ ] Albania
+  - [x] Albania
   - [ ] Andorra
   - [ ] Armenia
   - [x] Austria
@@ -72,7 +72,7 @@
   - [ ] Lithuania
   - [x] Luxembourg
   - [ ] Malta
-  - [ ] Moldova
+  - [x] Moldova
   - [ ] Monaco
   - [ ] Montenegro
   - [x] Netherlands
