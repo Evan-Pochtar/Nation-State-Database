@@ -61,7 +61,7 @@
   - [ ] Georgia
   - [x] Germany
   - [x] Greece
-  - [ ] Hungary
+  - [x] Hungary
   - [ ] Iceland
   - [x] Ireland
   - [x] Italy
@@ -80,7 +80,7 @@
   - [x] Norway
   - [x] Poland
   - [x] Portugal
-  - [ ] Romania
+  - [x] Romania
   - [x] Russia
   - [ ] San Marino
   - [ ] Serbia

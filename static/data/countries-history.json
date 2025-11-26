@@ -18717,9 +18717,7 @@
 		"source": {
 			"label": "Wikipedia - History of Moldova",
 			"url": "https://en.wikipedia.org/wiki/History_of_Moldova",
-			"urls": [
-				"https://www.britannica.com/topic/history-of-Moldova"
-			]
+			"urls": ["https://www.britannica.com/topic/history-of-Moldova"]
 		},
 		"keyFacts": [
 			{ "label": "Independence Declared", "value": "August 27, 1991" },
@@ -18899,10 +18897,7 @@
 		"source": {
 			"label": "Wikipedia - History of Albania",
 			"url": "https://en.wikipedia.org/wiki/History_of_Albania",
-			"urls": [
-				"https://www.britannica.com/place/Albania",
-				"https://www.britannica.com/biography/Skanderbeg"
-			]
+			"urls": ["https://www.britannica.com/place/Albania", "https://www.britannica.com/biography/Skanderbeg"]
 		},
 		"keyFacts": [
 			{ "label": "Independence Declared", "value": "November 28, 1912 (Vlorë)" },
@@ -19060,6 +19055,932 @@
 				"description": "Multi-party politics begins and Albania begins transition to democracy"
 			},
 			{ "year": "2009", "era": "Modern", "title": "NATO accession", "description": "Albania becomes a NATO member" }
+		]
+	},
+	{
+		"name": "Hungary",
+		"overview": "Hungary's history spans over a millennium, from the arrival of the Magyar tribes in the Carpathian Basin to the modern democratic republic. The nation was founded as a Christian kingdom in 1000 AD under Saint Stephen, establishing itself as a significant Central European power that bridged East and West. Through centuries of greatness under kings like Matthias Corvinus, devastating invasions by Mongols and Ottomans, 150 years of partition between Ottoman and Habsburg rule, and the dual Austro-Hungarian monarchy, Hungary developed a unique identity. The 20th century brought territorial losses, communist dictatorship, the heroic 1956 revolution, and ultimately peaceful transition to democracy in 1989. Despite immense challenges and territorial reduction to one-third its historical size, Hungary has maintained its distinct language, culture, and fierce spirit of independence.",
+		"source": {
+			"label": "Wikipedia - History of Hungary",
+			"url": "https://en.wikipedia.org/wiki/History_of_Hungary",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Hungary",
+				"https://www.britannica.com/topic/history-of-Hungary",
+				"https://studyinhungary.hu/why-hungary/menu/brief-history.html"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Kingdom Founded",
+				"value": "December 25, 1000 (Christmas Day)"
+			},
+			{
+				"label": "Capital",
+				"value": "Budapest (unified 1873 from Buda, Pest, Óbuda)"
+			},
+			{
+				"label": "Language Family",
+				"value": "Finno-Ugric (related to Finnish, Estonian)"
+			},
+			{
+				"label": "National Day",
+				"value": "October 23 (1956 Revolution, 1989 Republic)"
+			},
+			{
+				"label": "1956 Revolution",
+				"value": "October 23 - November 10, 1956"
+			},
+			{
+				"label": "NATO Member",
+				"value": "Since March 12, 1999"
+			}
+		],
+		"ancient": {
+			"period": "c. 500 BCE - 895 CE",
+			"description": "The territory of modern Hungary has been inhabited since the Paleolithic era, with successive waves of peoples shaping the region's complex history. During the Iron Age, it stood at the crossroads of Celtic, Scythian, and Germanic tribal spheres. Around 44 BC, the Sarmatian Iazyges moved into the Great Hungarian Plain. In 8 AD, the western portion (Transdanubia) became part of the Roman province of Pannonia, with the eastern region forming Dacia. The Romans established important settlements including Aquincum (near modern Budapest), Sopron, and Pécs. Roman control lasted until the late 4th century when Germanic tribes began to overwhelm the borders. The collapse of Roman power opened the floodgates to a succession of migrations: Huns under Attila established a powerful empire centered in the Carpathian Basin around 453 CE, though it disintegrated shortly after Attila's death. The Huns were followed by Germanic Ostrogoths and Lombards, then by the Avars, a Turkic people who dominated the region from the 6th to 8th centuries. Charlemagne's Franks conquered the Avars around 800, forcing Christianity upon them, but Frankish control proved ephemeral. By the late 9th century, the region was ripe for the arrival of a people who would permanently claim it as their homeland: the Magyars, ancestors of modern Hungarians.",
+			"keyEvents": [
+				{
+					"year": "c. 500 BCE",
+					"title": "Celtic and Scythian Presence",
+					"description": "Celtic tribes (Scordisci, Boii) and Scythian peoples establish settlements in the Carpathian Basin"
+				},
+				{
+					"year": "44 BC",
+					"title": "Sarmatian Iazyges Arrive",
+					"description": "Sarmatian Iazyges people move into the Great Hungarian Plain, dominating the region for centuries"
+				},
+				{
+					"year": "8-9 AD",
+					"title": "Roman Pannonia Established",
+					"description": "Romans conquer western Hungary, creating province of Pannonia with major settlements at Aquincum and other sites"
+				},
+				{
+					"year": "370-453 CE",
+					"title": "Hunnic Empire",
+					"description": "Huns under Attila establish powerful empire based in Carpathian Basin, reaching peak of expansion by 453"
+				},
+				{
+					"year": "6th-8th Century",
+					"title": "Avar Khaganate",
+					"description": "Turkic Avars conquer and rule Hungary, establishing significant fortifications and settlements"
+				},
+				{
+					"year": "791-803",
+					"title": "Frankish Conquest of Avars",
+					"description": "Charlemagne's forces defeat Avar Khaganate, briefly bringing region under Frankish Christian control"
+				}
+			],
+			"notableFigures": ["Attila the Hun (reigned 434-453)", "Various Avar khans"]
+		},
+		"medieval": {
+			"period": "895 - 1526",
+			"description": "The medieval Hungarian kingdom began with the arrival of the Magyar tribes under chieftain Árpád around 895-896, conquering the Carpathian Basin in what Hungarians call the 'Honfoglalás' (Conquest of the Homeland). The Magyars, a Finno-Ugric people from the Ural region who had migrated westward, rapidly subjugated the Slavic and remnant Avar populations. For decades, Magyar warriors conducted devastating raids across Europe, reaching as far as Spain and southern Italy, terrorizing Christian kingdoms with their superior mounted archery. This raiding period ended catastrophically at the Battle of Lechfeld (Augsburg) in 955, where German King Otto I decisively defeated the Magyars, forcing them to abandon nomadic warfare and settle permanently. Prince Géza (972-997) began the crucial process of Christianization, inviting missionaries and organizing the state. His son Vajk, baptized as Stephen (István), became Hungary's first king on Christmas Day 1000, receiving his crown from Pope Sylvester II—a masterstroke that established Hungary as an independent Christian kingdom directly under papal protection, avoiding German imperial domination. Saint Stephen (1000-1038) built an ecclesiastical structure of dioceses and abbeys, established royal counties as administrative units, invited foreign settlers to develop towns, and ruthlessly suppressed pagan opposition, founding a stable Christian monarchy. The Árpád dynasty ruled for three centuries, expanding Hungarian power significantly. Under Béla III (1172-1196) and Andrew II (1205-1235), Hungary became a major European power, though Andrew's lavish crusading and poor governance led nobles to force him to issue the Golden Bull of 1222, a constitutional document limiting royal power and granting nobles rights—parallel to England's Magna Carta. The catastrophic Mongol invasion of 1241-1242 devastated the kingdom; Béla IV (1235-1270), the 'Second Founder,' rebuilt Hungary with stone castles and invited new settlers. Hungary reached its medieval zenith under Matthias Corvinus (1458-1490), a Renaissance king of common origin who built a brilliant court, patronized arts and learning, created the famous Bibliotheca Corviniana, reformed administration, and led successful campaigns against Ottomans and Bohemians. After Matthias's death, Hungarian power declined rapidly. The disastrous Battle of Mohács (1526) against Sultan Suleiman the Magnificent's Ottoman forces killed King Louis II and destroyed Hungarian independence, fragmenting the kingdom into three parts for 150 years.",
+			"keyEvents": [
+				{
+					"year": "895-896",
+					"title": "Magyar Conquest",
+					"description": "Árpád leads seven Magyar tribes in conquest of Carpathian Basin, establishing permanent homeland"
+				},
+				{
+					"year": "955",
+					"title": "Battle of Lechfeld",
+					"description": "Decisive German victory over Magyar raiders ends raiding era, forces settlement and integration into Christian Europe"
+				},
+				{
+					"year": "1000",
+					"title": "Kingdom Founded",
+					"description": "December 25, Vajk crowned as King Stephen I by papal authority, founding independent Christian Hungarian Kingdom"
+				},
+				{
+					"year": "1077-1095",
+					"title": "Reign of László I",
+					"description": "King Saint László (Ladislaus) consolidates kingdom, expands territory, and strengthens Christian foundations"
+				},
+				{
+					"year": "1102",
+					"title": "Personal Union with Croatia",
+					"description": "Croatia enters personal union with Hungary, expanding Hungarian influence to Adriatic coast"
+				},
+				{
+					"year": "1222",
+					"title": "Golden Bull",
+					"description": "Andrew II issues Golden Bull, first constitution in Europe limiting royal power and granting noble rights"
+				},
+				{
+					"year": "1241-1242",
+					"title": "Mongol Invasion",
+					"description": "Devastating Mongol attack under Batu Khan destroys much of Hungary, killing estimated 15-25% of population"
+				},
+				{
+					"year": "1301",
+					"title": "Árpád Dynasty Ends",
+					"description": "Death of Andrew III ends Árpád dynasty after three centuries; succession crisis leads to foreign dynasties"
+				},
+				{
+					"year": "1308-1342",
+					"title": "Charles I (Károly Róbert)",
+					"description": "Anjou king Charles I restores royal power, reforms currency and economy, establishes gold forint"
+				},
+				{
+					"year": "1342-1382",
+					"title": "Louis the Great",
+					"description": "Louis I expands Hungary to greatest territorial extent, ruling from Baltic to Adriatic"
+				},
+				{
+					"year": "1456",
+					"title": "Siege of Belgrade",
+					"description": "John Hunyadi's victory over Ottomans at Belgrade postpones Turkish conquest, celebrated by church bells at noon"
+				},
+				{
+					"year": "1458-1490",
+					"title": "Matthias Corvinus",
+					"description": "Renaissance king Matthias creates brilliant court, builds famous library, conquers Vienna, strengthens kingdom culturally and militarily"
+				},
+				{
+					"year": "1526",
+					"title": "Battle of Mohács",
+					"description": "August 29, catastrophic defeat to Ottoman Sultan Suleiman; King Louis II drowns fleeing battlefield, ending independent Hungary"
+				}
+			],
+			"notableFigures": [
+				"Árpád (chieftain, died c. 907)",
+				"Saint Stephen I (István, 1000-1038)",
+				"Saint László I (Ladislaus, 1077-1095)",
+				"Béla IV (1235-1270, 'Second Founder')",
+				"John Hunyadi (regent, military leader, died 1456)",
+				"Matthias Corvinus (1458-1490)",
+				"Louis II (1516-1526)"
+			]
+		},
+		"imperial": {
+			"period": "1526 - 1867",
+			"description": "The Battle of Mohács in 1526 shattered Hungary into three parts for 150 years. The central plains fell under direct Ottoman rule with Buda as capital of a Turkish province, where Islamic administration replaced Christian institutions and much of the population was displaced or enslaved. Royal Hungary—western and northern regions—fell under Habsburg control, with Hungarian nobles recognizing Habsburg rulers as kings while maintaining some autonomy. Transylvania emerged as a semi-independent principality under Ottoman suzerainty, becoming a unique haven for religious tolerance where Catholics, Calvinists, Lutherans, and Unitarians coexisted legally—remarkable for the era. This tripartite division devastated Hungarian society: constant warfare, slave raids, and population displacement transformed the ethnic composition as Hungarians declined while Romanians, Slovaks, Germans, and Serbs increased. The liberation campaigns of 1683-1699, following the failed Ottoman siege of Vienna, saw Habsburg forces gradually expel the Turks, but Hungary emerged devastated, depopulated, and firmly under Habsburg control. Hungarian nobles chafed under Habsburg absolutism and Catholic Counter-Reformation policies that threatened Protestant majorities. This sparked major anti-Habsburg uprisings: Bocskai's Rebellion (1604-1606), the Thirty Years' War period revolts, and especially Ferenc Rákóczi II's War of Independence (1703-1711), where Kuruc forces nearly succeeded before being crushed. The 18th century brought Habsburg consolidation but also cultural revival. Maria Theresa and Joseph II attempted centralization and Germanization, provoking Hungarian resistance. The 19th century saw explosive growth of Hungarian national consciousness. Reformers like Count István Széchenyi promoted modernization, economic development, and Hungarian language revival. The 1848 Revolution, led by Lajos Kossuth and Sándor Petőfi, saw Hungary declare independence, but Austrian and Russian forces crushed it brutally in 1849. The defeat was followed by harsh neo-absolutism under Bach. Austria's defeat by Prussia in 1866 forced compromise: the Ausgleich of 1867 created the Austro-Hungarian Dual Monarchy, where Hungary achieved extensive autonomy with its own parliament, ministries, and control over internal affairs, joined to Austria only through the monarch, foreign policy, and military.",
+			"keyEvents": [
+				{
+					"year": "1526-1541",
+					"title": "Partition of Hungary",
+					"description": "After Mohács, Hungary splits: Ottomans take central regions (1541), Habsburgs control west/north, Transylvania becomes principality"
+				},
+				{
+					"year": "1541",
+					"title": "Fall of Buda",
+					"description": "Ottomans capture Buda, making it capital of Ottoman Hungary for 145 years"
+				},
+				{
+					"year": "1568",
+					"title": "Edict of Torda",
+					"description": "Transylvanian Diet declares religious freedom, first such edict in Europe, allowing Catholic, Lutheran, Calvinist, Unitarian worship"
+				},
+				{
+					"year": "1604-1606",
+					"title": "Bocskai Uprising",
+					"description": "István Bocskai leads successful revolt against Habsburg religious persecution, gains concessions for Protestant nobles"
+				},
+				{
+					"year": "1686",
+					"title": "Buda Liberated",
+					"description": "Habsburg forces recapture Buda from Ottomans after 145 years, beginning expulsion of Turks from Hungary"
+				},
+				{
+					"year": "1699",
+					"title": "Treaty of Karlowitz",
+					"description": "Ottoman Empire cedes most of Hungary to Habsburgs, ending 150 years of partition but replacing Turkish with Austrian rule"
+				},
+				{
+					"year": "1703-1711",
+					"title": "Rákóczi's War of Independence",
+					"description": "Ferenc Rákóczi II leads major revolt against Habsburgs; despite initial successes, rebellion crushed, leaders exiled"
+				},
+				{
+					"year": "1825-1848",
+					"title": "Reform Era",
+					"description": "Hungarian national renaissance: Széchenyi promotes modernization, Chain Bridge planned, Academy of Sciences founded, language revived"
+				},
+				{
+					"year": "1848",
+					"title": "March Revolution",
+					"description": "March 15, Hungarian Revolution begins in Pest; Kossuth and Petőfi lead independence movement, establish government"
+				},
+				{
+					"year": "1849",
+					"title": "Revolution Crushed",
+					"description": "April 14, Hungary declares independence; August, Austrian and Russian forces defeat revolution; 13 generals executed at Arad"
+				},
+				{
+					"year": "1849-1867",
+					"title": "Bach's Neo-Absolutism",
+					"description": "Harsh Austrian absolutist rule under Minister Bach suppresses Hungarian autonomy, language, and institutions"
+				},
+				{
+					"year": "1867",
+					"title": "Compromise (Ausgleich)",
+					"description": "Austria-Hungary becomes Dual Monarchy; Hungary gains extensive autonomy with own parliament, ministries, while sharing monarch and foreign policy"
+				}
+			],
+			"notableFigures": [
+				"István Bocskai (1557-1606)",
+				"Ferenc Rákóczi II (1676-1735)",
+				"Count István Széchenyi (1791-1860, 'Greatest Hungarian')",
+				"Lajos Kossuth (1802-1894, revolutionary leader)",
+				"Sándor Petőfi (1823-1849, poet and revolutionary)",
+				"Ferenc Deák (1803-1876, architect of Compromise)"
+			]
+		},
+		"modern": {
+			"period": "1867 - Present",
+			"description": "The Dual Monarchy period (1867-1918) brought rapid development: Budapest became a magnificent imperial capital unified in 1873, railways expanded, industry flourished, and Hungarian culture thrived. However, tensions with ethnic minorities who resisted Magyarization policies created internal strains. World War I proved catastrophic. Hungary, as Austria's partner, fought alongside Germany and suffered devastating losses—over 600,000 dead from 4 million mobilized. The empire's collapse in 1918 led to democratic revolution, brief communist dictatorship under Béla Kun (1919), then Romanian occupation. The Treaty of Trianon (1920) was a national trauma: Hungary lost 72% of its territory and 64% of its population to Romania, Czechoslovakia, Yugoslavia, and Austria, leaving 3.3 million Hungarians as minorities in neighboring states. Interwar Hungary under Admiral Horthy sought revision of Trianon through alignment with Nazi Germany, temporarily regaining territories through the Vienna Awards (1938, 1940) but leading to catastrophic World War II participation. Hungary suffered immensely: German occupation (1944), Arrow Cross terror, Holocaust that killed over 500,000 Hungarian Jews, Soviet siege of Budapest, and massive destruction. Liberation by Soviets in 1945 meant occupation and communist takeover. By 1949, Hungary became a Stalinist People's Republic under Mátyás Rákosi, marked by show trials, purges, forced collectivization, and secret police terror. The Hungarian Revolution of 1956 (October 23 - November 10) was a heroic but doomed uprising. Students and workers rose against Soviet domination, toppled Stalin's statue, demanded democracy and neutrality. Prime Minister Imre Nagy announced reforms and withdrawal from Warsaw Pact. Soviet tanks brutally crushed the revolution, killing thousands, executing Nagy and leaders, sending 200,000 into exile. János Kádár's subsequent regime combined repression with gradual economic liberalization ('goulash communism'), making Hungary the 'happiest barrack' in the Eastern Bloc. By the 1980s, economic stagnation and Gorbachev's reforms enabled change. In 1989, Hungary pioneered Eastern European democratization: dismantled border fence with Austria (enabling East Germans to escape), rehabilitated 1956 martyrs including Nagy (reburied with honor), held Round Table talks, and on October 23, 1989—anniversary of 1956—declared the Republic of Hungary, ending communism peacefully. Democratic Hungary joined NATO (1999) and EU (2004), though faces current challenges regarding rule of law and democratic backsliding.",
+			"keyEvents": [
+				{
+					"year": "1873",
+					"title": "Budapest Unified",
+					"description": "Buda, Pest, and Óbuda officially merge to form Budapest, which becomes one of Europe's grandest capitals"
+				},
+				{
+					"year": "1896",
+					"title": "Millennium Celebrations",
+					"description": "1000th anniversary of Magyar Conquest celebrated with massive exhibitions, monuments, and first Continental metro line"
+				},
+				{
+					"year": "1914-1918",
+					"title": "World War I",
+					"description": "Austria-Hungary mobilizes 9 million (4 million from Hungary); over 600,000 Hungarian dead, empire collapses"
+				},
+				{
+					"year": "1918",
+					"title": "Aster Revolution",
+					"description": "October 31, Count Mihály Károlyi leads democratic revolution, declares independence from Austria"
+				},
+				{
+					"year": "1919",
+					"title": "Hungarian Soviet Republic",
+					"description": "March-August, Béla Kun establishes communist dictatorship; Red Terror, economic collapse, Romanian intervention ends it"
+				},
+				{
+					"year": "1920",
+					"title": "Treaty of Trianon",
+					"description": "June 4, Hungary loses 72% of territory, 64% of population to successor states; national trauma, 'Trianon Syndrome'"
+				},
+				{
+					"year": "1938-1941",
+					"title": "Territorial Revision",
+					"description": "Through Vienna Awards and Hitler's favor, Hungary regains parts of Czechoslovakia, Romania, Yugoslavia"
+				},
+				{
+					"year": "1944",
+					"title": "German Occupation and Holocaust",
+					"description": "March 19, Germany occupies Hungary; mass deportations begin, over 500,000 Hungarian Jews murdered"
+				},
+				{
+					"year": "1944-1945",
+					"title": "Siege of Budapest",
+					"description": "December-February, brutal Soviet siege destroys much of Budapest, killing tens of thousands"
+				},
+				{
+					"year": "1947-1949",
+					"title": "Communist Takeover",
+					"description": "Step-by-step elimination of democratic parties, rigged elections, establishment of People's Republic (1949)"
+				},
+				{
+					"year": "1949-1956",
+					"title": "Stalinist Terror",
+					"description": "Rákosi's regime: show trials (László Rajk executed 1949), forced collectivization, ÁVH secret police terror, purges"
+				},
+				{
+					"year": "1956",
+					"title": "Hungarian Revolution",
+					"description": "October 23-November 10, nationwide uprising against Soviet domination; Soviet tanks crush revolt, 2,500+ killed, 200,000 flee"
+				},
+				{
+					"year": "1958",
+					"title": "Nagy Executed",
+					"description": "June 16, Imre Nagy, Pál Maléter, and other revolution leaders executed after secret trial, buried in unmarked graves"
+				},
+				{
+					"year": "1956-1988",
+					"title": "Kádár Era",
+					"description": "János Kádár's 'goulash communism': repression eases after 1960s, economic reforms, relative prosperity, 'happiest barrack'"
+				},
+				{
+					"year": "1988",
+					"title": "Kádár Removed",
+					"description": "May 22, János Kádár replaced as General Secretary, opening path to reforms and democratic transition"
+				},
+				{
+					"year": "1989",
+					"title": "Border Opening",
+					"description": "May 2, Hungary begins dismantling border fence with Austria; August 19, Pan-European Picnic allows East Germans to flee West"
+				},
+				{
+					"year": "1989",
+					"title": "Nagy Reburied",
+					"description": "June 16, Imre Nagy reburied with full honors on 31st anniversary of execution; over 100,000 attend, symbolic rehabilitation"
+				},
+				{
+					"year": "1989",
+					"title": "Republic Declared",
+					"description": "October 23, on 33rd anniversary of 1956 Revolution, Republic of Hungary proclaimed, ending communist rule"
+				},
+				{
+					"year": "1990",
+					"title": "First Free Elections",
+					"description": "March-May, first free multi-party elections since 1947; József Antall becomes prime minister"
+				},
+				{
+					"year": "1991",
+					"title": "Soviet Troops Leave",
+					"description": "June 19, last Soviet troops withdraw, ending occupation that began in 1944"
+				},
+				{
+					"year": "1999",
+					"title": "NATO Membership",
+					"description": "March 12, Hungary joins NATO alongside Poland and Czech Republic"
+				},
+				{
+					"year": "2004",
+					"title": "European Union Membership",
+					"description": "May 1, Hungary joins European Union alongside nine other countries"
+				}
+			],
+			"notableFigures": [
+				"Mihály Károlyi (1875-1955, democratic leader)",
+				"Admiral Miklós Horthy (1868-1957, regent 1920-1944)",
+				"Raoul Wallenberg (Swedish diplomat, saved thousands of Jews)",
+				"Mátyás Rákosi (1892-1971, Stalinist dictator)",
+				"Imre Nagy (1896-1958, reform PM, revolution martyr)",
+				"János Kádár (1912-1989, communist leader 1956-1988)",
+				"Miklós Németh (born 1948, last communist PM, reform leader)",
+				"Viktor Orbán (born 1963, PM 1998-2002, 2010-present)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "895-896",
+				"era": "Medieval",
+				"title": "Magyar Conquest",
+				"description": "Árpád leads Magyar tribes in conquest of Carpathian Basin, founding Hungarian homeland"
+			},
+			{
+				"year": "1000",
+				"era": "Medieval",
+				"title": "Kingdom Founded",
+				"description": "Stephen I crowned first king on Christmas Day, establishing Christian Hungarian Kingdom"
+			},
+			{
+				"year": "1241-1242",
+				"era": "Medieval",
+				"title": "Mongol Invasion",
+				"description": "Devastating Mongol attack destroys much of kingdom, kills up to quarter of population"
+			},
+			{
+				"year": "1458-1490",
+				"era": "Medieval",
+				"title": "Matthias Corvinus",
+				"description": "Renaissance king creates brilliant court, expands power, builds famous library"
+			},
+			{
+				"year": "1526",
+				"era": "Imperial",
+				"title": "Battle of Mohács",
+				"description": "Ottoman victory kills King Louis II, ends independence, partitions Hungary for 150 years"
+			},
+			{
+				"year": "1686",
+				"era": "Imperial",
+				"title": "Buda Liberated",
+				"description": "Habsburgs recapture Buda after 145 years of Ottoman rule"
+			},
+			{
+				"year": "1848-1849",
+				"era": "Imperial",
+				"title": "Revolution and Independence War",
+				"description": "Hungarian revolution declares independence but is crushed by Austria and Russia"
+			},
+			{
+				"year": "1867",
+				"era": "Modern",
+				"title": "Compromise/Dual Monarchy",
+				"description": "Austria-Hungary formed, Hungary gains extensive autonomy and self-government"
+			},
+			{
+				"year": "1920",
+				"era": "Modern",
+				"title": "Treaty of Trianon",
+				"description": "Hungary loses 72% of territory and 64% of population, national trauma"
+			},
+			{
+				"year": "1944-1945",
+				"era": "Modern",
+				"title": "Holocaust and WWII End",
+				"description": "Over 500,000 Hungarian Jews murdered; Soviet siege destroys Budapest"
+			},
+			{
+				"year": "1956",
+				"era": "Modern",
+				"title": "Hungarian Revolution",
+				"description": "October 23-November 10, heroic uprising against Soviet control brutally crushed"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Democracy Restored",
+				"description": "October 23, Republic declared on revolution anniversary, ending 40 years of communism"
+			},
+			{
+				"year": "1999",
+				"era": "Modern",
+				"title": "NATO Membership",
+				"description": "Hungary joins NATO, returning to Western security structures"
+			},
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "EU Membership",
+				"description": "Hungary joins European Union, completing integration into Western institutions"
+			}
+		]
+	},
+	{
+		"name": "Romania",
+		"overview": "Romania's history is a compelling narrative of resilience, cultural continuity, and the struggle for unity and independence. From the ancient Dacian kingdom that defied Rome, through centuries of foreign domination by Ottomans, Habsburgs, and Russians, to the forging of Greater Romania in 1918, the Romanian people maintained their Latin language and Orthodox faith as markers of distinct identity. The modern state emerged from the unification of Moldavia and Wallachia in 1859, gaining full independence in 1878. Romania's 20th century was tumultuous: territorial gains after World War I created Greater Romania, but World War II brought devastating losses, communist dictatorship under Ceaușescu's oppressive regime, and the violent 1989 revolution that ended communist rule. Despite challenges of transition, Romania has emerged as a democratic European Union member, reclaiming its European identity while honoring a rich heritage that bridges East and West.",
+		"source": {
+			"label": "Wikipedia - History of Romania",
+			"url": "https://en.wikipedia.org/wiki/History_of_Romania",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Romania",
+				"https://www.britannica.com/place/Romania"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Modern State Founded",
+				"value": "1859 (United Principalities)"
+			},
+			{
+				"label": "Independence Declared",
+				"value": "May 9, 1877"
+			},
+			{
+				"label": "Independence Recognized",
+				"value": "July 13, 1878 (Treaty of Berlin)"
+			},
+			{
+				"label": "Greater Romania",
+				"value": "December 1, 1918 (National Day)"
+			},
+			{
+				"label": "Capital",
+				"value": "Bucharest (first mentioned 1459)"
+			},
+			{
+				"label": "Language Origin",
+				"value": "Eastern Romance (descended from Latin)"
+			},
+			{
+				"label": "Communist Period",
+				"value": "1947-1989 (42 years)"
+			}
+		],
+		"ancient": {
+			"period": "c. 5500 BCE - 106 CE",
+			"description": "The territory of modern Romania has been inhabited since the Paleolithic era, with significant Neolithic cultures developing along the Danube and in Transylvania. The Cucuteni-Trypillia culture (5500-2750 BCE) was among Europe's most advanced Neolithic civilizations, producing sophisticated painted pottery and large settlements. During the Bronze and Iron Ages, Thracian tribes inhabited the region. By the 7th century BCE, Greek colonies appeared on the Black Sea coast, including Histria, Tomis (modern Constanța), and Callatis, establishing trade networks. The Getae and Dacians, Thracian peoples speaking related languages, emerged as dominant groups. The Dacians developed an advanced society with sophisticated metallurgy, particularly gold and silver working, fortified settlements, and a warrior culture. Under King Burebista (82-44 BCE), the Dacian kingdom reached its zenith, uniting tribes and expanding across much of modern Romania, Moldova, and parts of Hungary and Bulgaria, becoming powerful enough to threaten Roman interests. Burebista's assassination led to fragmentation, but the kingdom revived under Decebalus (87-106 CE), who built impressive mountain fortresses in the Orăștie Mountains, established a centralized state, and resisted Roman expansion. The Dacian capital at Sarmizegetusa Regia featured advanced architecture, drainage systems, and religious sanctuaries. Decebalus's kingdom controlled rich gold and silver mines that attracted Roman attention. Despite fierce resistance, Emperor Trajan conquered Dacia in two wars (101-102, 105-106 CE), annexing it as a Roman province. Trajan's Column in Rome depicts the brutal campaigns in detail. The conquest brought massive Roman colonization, urbanization, and the introduction of Latin language and Roman law that would profoundly shape Romanian identity.",
+			"keyEvents": [
+				{
+					"year": "c. 5500-2750 BCE",
+					"title": "Cucuteni-Trypillia Culture",
+					"description": "Advanced Neolithic civilization flourishes with sophisticated ceramics, large settlements, and complex social organization"
+				},
+				{
+					"year": "c. 7th century BCE",
+					"title": "Greek Colonies",
+					"description": "Greek colonists establish Black Sea ports including Histria, Tomis, and Callatis, bringing Mediterranean trade and culture"
+				},
+				{
+					"year": "82-44 BCE",
+					"title": "Burebista's Kingdom",
+					"description": "King Burebista unites Dacian tribes, creates powerful kingdom threatening Roman expansion, reaches greatest territorial extent"
+				},
+				{
+					"year": "87-106 CE",
+					"title": "Decebalus Reigns",
+					"description": "King Decebalus rebuilds Dacian power, constructs mountain fortresses, centralizes state, resists Roman campaigns"
+				},
+				{
+					"year": "101-102 CE",
+					"title": "First Dacian War",
+					"description": "Emperor Trajan invades Dacia; after fierce fighting, Decebalus accepts harsh peace terms"
+				},
+				{
+					"year": "105-106 CE",
+					"title": "Second Dacian War and Conquest",
+					"description": "Trajan's second campaign conquers Dacia; capital Sarmizegetusa Regia destroyed, Decebalus commits suicide, kingdom annexed"
+				}
+			],
+			"notableFigures": [
+				"Burebista (c. 82-44 BCE, Dacian king)",
+				"Decebalus (87-106 CE, last Dacian king)",
+				"Emperor Trajan (ruled 98-117 CE, conqueror of Dacia)"
+			]
+		},
+		"medieval": {
+			"period": "271 - 1526",
+			"description": "Roman Dacia lasted only 165 years. In 271-275 CE, Emperor Aurelian withdrew legions and administration south of the Danube due to pressure from migrating Germanic and nomadic peoples, though debate continues about the extent of Roman population withdrawal. The abandoned province became a highway for migrations: Goths, Huns, Gepids, Avars, Slavs, Bulgars, Magyars, Pechenegs, Cumans, and Mongols swept through in successive waves over a millennium. The crucial historiographical debate concerns the origin of Romanians: Romanian historiography emphasizes Daco-Roman continuity—that Romanized Dacians remained in the territory throughout the Migration Period, preserving Latin language despite invasions, while Hungarian and some Western historians suggest migration theory—that Vlachs (Romance-speaking shepherds) migrated north from the Balkans in the 11th-13th centuries. Archaeological evidence and linguistic analysis support significant Latin-speaking population continuity. By the 9th-10th centuries, Romanian-speaking peoples (Vlachs) are documented in chronicles. Three distinct Romanian principalities gradually emerged: Wallachia (Țara Românească) in the south, officially founded around 1330 under Basarab I; Moldavia in the east, founded around 1359 under Bogdan I; and Transylvania, which came under Hungarian Kingdom control in the 11th century, where Romanian populations lived under Magyar nobility. These principalities developed as Orthodox Christian states with Slavonic liturgy and Byzantine cultural influence, distinct from Catholic Hungary and Poland. The 14th-15th centuries saw principality consolidation and construction of painted monasteries that remain cultural treasures. The Ottoman Empire's expansion threatened all three regions. Wallachia and Moldavia became Ottoman vassals in the 15th-16th centuries, maintaining autonomy by paying tribute, while Transylvania fell under Ottoman suzerainty after Hungary's defeat at Mohács (1526). Despite vassalage, rulers like Vlad III Țepeș (Dracula) of Wallachia (1456-1462) and Stephen the Great of Moldavia (1457-1504) fiercely resisted Ottoman domination through military campaigns, earning legendary status. The principalities maintained Orthodox faith, Romanian language, and significant autonomy despite foreign overlordship.",
+			"keyEvents": [
+				{
+					"year": "271-275",
+					"title": "Roman Withdrawal",
+					"description": "Emperor Aurelian abandons Dacia province, withdrawing administration and legions south of Danube"
+				},
+				{
+					"year": "4th-9th centuries",
+					"title": "Migration Period",
+					"description": "Successive waves of migrations (Goths, Huns, Avars, Slavs, Bulgars) sweep through region; Romance-speaking populations persist"
+				},
+				{
+					"year": "c. 895",
+					"title": "Magyar Conquest",
+					"description": "Magyars conquer Carpathian Basin including Transylvania, bringing Romanian territories under Hungarian sphere"
+				},
+				{
+					"year": "c. 1330",
+					"title": "Wallachia Founded",
+					"description": "Basarab I establishes independent Wallachia, defeats Hungarian King Charles I at Battle of Posada (1330)"
+				},
+				{
+					"year": "c. 1359",
+					"title": "Moldavia Founded",
+					"description": "Bogdan I (Bogdan the Founder) breaks from Hungarian suzerainty, establishes independent Principality of Moldavia"
+				},
+				{
+					"year": "1456-1462",
+					"title": "Vlad III Țepeș (Dracula)",
+					"description": "Vlad the Impaler rules Wallachia, resists Ottoman expansion through brutal warfare, becomes legendary figure"
+				},
+				{
+					"year": "1457-1504",
+					"title": "Stephen the Great",
+					"description": "Stephen III of Moldavia wins 46 of 48 battles against Ottomans, Hungarians, Poles; builds fortified monasteries; canonized as saint"
+				},
+				{
+					"year": "1476",
+					"title": "Battle of Valea Albă",
+					"description": "Moldavia under Stephen defeats Ottoman army three times larger, one of greatest victories against Ottomans"
+				},
+				{
+					"year": "15th-16th centuries",
+					"title": "Ottoman Vassalage",
+					"description": "Wallachia and Moldavia become Ottoman vassals paying tribute while maintaining autonomy, Orthodox faith, and Romanian rule"
+				}
+			],
+			"notableFigures": [
+				"Basarab I (died c. 1352, founder of Wallachia)",
+				"Bogdan I (died 1367, founder of Moldavia)",
+				"Vlad III Țepeș/Dracula (1428/31-1476/77)",
+				"Stephen the Great (1433-1504, Moldavian prince)",
+				"Michael the Brave (1558-1601)"
+			]
+		},
+		"imperial": {
+			"period": "1526 - 1859",
+			"description": "The period from the 16th to mid-19th centuries saw Romanian principalities caught between competing empires: Ottoman, Habsburg, and Russian. Wallachia and Moldavia remained Ottoman vassals, governed by native princes (voivodes) who paid tribute and provided military assistance but maintained internal autonomy, Orthodox Church control, and Romanian administration. This vassalage, while economically burdensome, preserved Romanian identity and prevented direct Ottoman colonization like in the Balkans. Transylvania's fate diverged: initially an autonomous principality under Ottoman suzerainty (1526-1699), it became a Habsburg possession after 1699, where Romanian majority lived under Hungarian and German nobility with limited rights. A brief but significant moment came in 1600 when Michael the Brave (Mihai Viteazul) of Wallachia conquered Transylvania and Moldavia, uniting all Romanian lands for the first time, though his rule lasted only one year before assassination—yet the union became a powerful symbol for future Romanian nationalism. The 18th century brought Phanariote rule (1711-1821) to Wallachia and Moldavia, where the Ottoman Porte appointed Greek governors from Constantinople's Phanar district. While culturally sophisticated, Phanariote princes exploited the provinces economically. Russia emerged as a new power factor, fighting multiple wars with the Ottomans and claiming to protect Orthodox Christians. The 1821 Wallachian uprising led by Tudor Vladimirescu against Phanariote rule, combined with the Greek War of Independence, ended Phanariote period. Native Romanian princes were restored. Russia's influence grew through the Treaty of Adrianople (1829), establishing Russian protectorate over the principalities. The 1848 revolutionary wave reached Romania: intellectuals in Wallachia and Moldavia demanded reforms, end to serfdom, and union, inspired by liberal nationalism sweeping Europe. Though suppressed by Ottoman and Russian intervention, the revolutions accelerated national awakening. The Crimean War (1853-1856) reduced Russian influence, creating space for Romanian unification. The Congress of Paris (1856) placed principalities under collective European guarantee. In 1859, Alexandru Ioan Cuza was elected prince of both Moldavia and Wallachia through clever maneuvering, creating the United Principalities, foundation of modern Romania.",
+			"keyEvents": [
+				{
+					"year": "1600",
+					"title": "Michael the Brave's Union",
+					"description": "May-November, Michael the Brave of Wallachia briefly unites all Romanian lands (Wallachia, Moldavia, Transylvania)"
+				},
+				{
+					"year": "1711-1821",
+					"title": "Phanariote Period",
+					"description": "Ottoman Porte appoints Greek Phanariote princes to rule Wallachia and Moldavia, bringing cultural sophistication but exploitation"
+				},
+				{
+					"year": "1775",
+					"title": "Bukovina Annexed",
+					"description": "Habsburg Austria annexes Bukovina region from Moldavia, beginning territorial losses"
+				},
+				{
+					"year": "1812",
+					"title": "Bessarabia Lost",
+					"description": "Treaty of Bucharest: Russia annexes Bessarabia (eastern Moldavia), halving principality's territory"
+				},
+				{
+					"year": "1821",
+					"title": "Vladimirescu Uprising",
+					"description": "Tudor Vladimirescu leads Wallachian revolt against Phanariote rule; though suppressed, ends Phanariote period"
+				},
+				{
+					"year": "1829",
+					"title": "Treaty of Adrianople",
+					"description": "After Russo-Turkish War, treaty establishes Russian protectorate over Wallachia and Moldavia, grants autonomy"
+				},
+				{
+					"year": "1848",
+					"title": "Revolutionary Movement",
+					"description": "Liberal revolutionaries in Wallachia and Moldavia demand reforms, union, end to serfdom; suppressed but accelerates nationalism"
+				},
+				{
+					"year": "1856",
+					"title": "Treaty of Paris",
+					"description": "After Crimean War, principalities placed under European guarantee, reducing Russian control, opening path to union"
+				},
+				{
+					"year": "1859",
+					"title": "Union of Principalities",
+					"description": "January 5 (Moldavia) and January 24 (Wallachia), Alexandru Ioan Cuza elected prince of both, creating United Principalities"
+				}
+			],
+			"notableFigures": [
+				"Michael the Brave (1558-1601)",
+				"Constantin Brâncoveanu (1654-1714, Wallachian prince)",
+				"Tudor Vladimirescu (1780-1821, revolutionary)",
+				"Nicolae Bălcescu (1819-1852, revolutionary, historian)",
+				"Alexandru Ioan Cuza (1820-1873, first ruler of united principalities)"
+			]
+		},
+		"independence": {
+			"period": "1859 - 1918",
+			"description": "The United Principalities under Alexandru Ioan Cuza (1859-1866) pursued rapid modernization: abolishing serfdom (1864), secularizing monastery lands, implementing agrarian reform, and establishing comprehensive education system. However, political conflicts led to Cuza's forced abdication in 1866. Romanian elites, seeking stability and European legitimacy, imported a foreign prince: Karl of Hohenzollern-Sigmaringen became Carol I. The 1866 Constitution established a constitutional monarchy modeled on Belgium. The principalities officially adopted the name 'Romania' in 1866, emphasizing Latin heritage. Independence came through the Russo-Turkish War of 1877-1878. Despite earlier treaties forbidding foreign troops, Russia requested Romanian participation against the Ottomans. Romania declared independence on May 9, 1877, and Romanian troops fought bravely at Plevna and other battles. The Treaty of San Stefano and Congress of Berlin (1878) recognized Romanian independence, though Russia seized southern Bessarabia. Carol I was crowned king in 1881, establishing the Kingdom of Romania. The late 19th century brought industrialization, railway construction, cultural flowering, and expansion of Bucharest as a sophisticated capital nicknamed 'Little Paris.' However, severe problems persisted: vast inequalities between wealthy boyars and impoverished peasants led to the massive 1907 Peasant Revolt, brutally suppressed with thousands killed. Romania entered World War I in 1916 on the Allied side, hoping to unite Romanian populations in Austria-Hungary (Transylvania, Bukovina, Banat). Initial campaigns failed disastrously; German and Austro-Hungarian forces occupied most of Romania by 1917. However, Romania's re-entry into war in 1918 and the Central Powers' collapse enabled Romania's greatest territorial expansion. The union of Bessarabia (March 27, 1918), Bukovina (November 28, 1918), and especially Transylvania (December 1, 1918) created Greater Romania, doubling territory and population. December 1, 1918, became National Day, celebrating the fulfillment of national aspirations.",
+			"keyEvents": [
+				{
+					"year": "1864",
+					"title": "Serfdom Abolished",
+					"description": "Cuza's agrarian reform abolishes serfdom, redistributes land, though reforms prove inadequate for peasant needs"
+				},
+				{
+					"year": "1866",
+					"title": "Carol I Becomes Prince",
+					"description": "February 22, Cuza forced to abdicate; May 10, Karl of Hohenzollern-Sigmaringen becomes Carol I; Constitution adopted"
+				},
+				{
+					"year": "1877",
+					"title": "Independence Declared",
+					"description": "May 9, Romania declares independence during Russo-Turkish War, participates in fighting"
+				},
+				{
+					"year": "1878",
+					"title": "Independence Recognized",
+					"description": "July 13, Treaty of Berlin recognizes Romanian independence, though Russia takes southern Bessarabia"
+				},
+				{
+					"year": "1881",
+					"title": "Kingdom Proclaimed",
+					"description": "March 26, Carol I crowned King of Romania, elevating principality to kingdom"
+				},
+				{
+					"year": "1907",
+					"title": "Peasant Revolt",
+					"description": "March-April, massive peasant uprising against exploitation by landlords; army brutally suppresses, killing thousands"
+				},
+				{
+					"year": "1916",
+					"title": "Entry into WWI",
+					"description": "August 27, Romania enters World War I on Allied side, aiming to unite Transylvania with Romania"
+				},
+				{
+					"year": "1916-1917",
+					"title": "Military Defeat",
+					"description": "Central Powers invade and occupy most of Romania; government retreats to Iași; Treaty of Bucharest (1918) imposes harsh terms"
+				},
+				{
+					"year": "1918",
+					"title": "Re-entry and Victory",
+					"description": "November 10, Romania re-enters war; Allied victory enables territorial claims"
+				},
+				{
+					"year": "1918",
+					"title": "Greater Romania",
+					"description": "March 27 (Bessarabia), November 28 (Bukovina), December 1 (Transylvania) unite with Romania, creating Greater Romania"
+				}
+			],
+			"notableFigures": [
+				"Alexandru Ioan Cuza (1820-1873)",
+				"Carol I (1839-1914, king 1881-1914)",
+				"Ion Brătianu (1821-1891, liberal statesman)",
+				"Mihai Eminescu (1850-1889, national poet)",
+				"Queen Marie (1875-1938, granddaughter of Queen Victoria)",
+				"Ferdinand I (1865-1927, king during WWI)"
+			]
+		},
+		"modern": {
+			"period": "1918 - Present",
+			"description": "Greater Romania (1918-1940) was the fulfillment of national aspirations, uniting Romanians from the old kingdom with those from Transylvania, Bessarabia, and Bukovina. The interwar period saw ambitious modernization, universal suffrage (1918), agrarian reform, cultural flowering, and constitutional reforms. However, severe challenges persisted: integrating diverse regions with different administrative traditions, addressing ethnic minorities (Hungarians, Germans, Jews, Ukrainians comprising 28% of population), peasant poverty, political instability, and rising fascism. The far-right Iron Guard (Legion of the Archangel Michael) promoted ultranationalist, antisemitic ideology, engaging in political violence. World War II proved catastrophic. The 1939 Nazi-Soviet Pact's secret protocols targeted Romania. Soviet ultimatums forced ceding Bessarabia and northern Bukovina to USSR (June 1940), then northern Transylvania to Hungary (Vienna Award, August 1940), and southern Dobrogea to Bulgaria (September 1940)—losing one-third of Greater Romania's territory. King Carol II abdicated; General Ion Antonescu established military dictatorship allied with Nazi Germany. Romania joined Operation Barbarossa (1941), hoping to recover Bessarabia. Romanian troops fought brutally on Eastern Front; regime participated in Holocaust, murdering estimated 280,000-380,000 Romanian and Ukrainian Jews and Roma. After Stalingrad, King Michael I led coup (August 23, 1944), arresting Antonescu, switching to Allies—but Soviet occupation followed. Communists, a tiny party, seized power through Soviet backing. By 1947, King Michael was forced to abdicate; Romanian People's Republic proclaimed. Communist regime under Gheorghe Gheorghiu-Dej and especially Nicolae Ceaușescu (1965-1989) imposed totalitarian control: nationalization, forced collectivization, industrialization, secret police (Securitate) terror, censorship, and personality cult. Ceaușescu pursued nominally independent foreign policy, receiving Western praise while imposing brutal domestic repression. The 1980s brought economic disaster: Ceaușescu's austerity policies to repay foreign debt created severe shortages, rationing, and cold apartments. The December 1989 Revolution began in Timișoara when protests supporting persecuted Hungarian pastor László Tőkés sparked broader uprising. Ceaușescu's December 21 Bucharest speech was disrupted by crowds; regime collapsed rapidly. Ceaușescu and wife Elena fled, were captured, hastily tried, and executed on December 25, 1989—the only violent overthrow of communist regime in Eastern Europe. Post-communist transition proved difficult: former communists in National Salvation Front dominated politics; economic transition caused hardship; corruption persisted. Nevertheless, Romania consolidated democracy, joined NATO (2004) and EU (2007), experienced economic growth, while facing ongoing challenges of corruption, emigration, and political instability.",
+			"keyEvents": [
+				{
+					"year": "1918-1920",
+					"title": "Greater Romania Consolidated",
+					"description": "Treaties of Versailles, Saint-Germain, Trianon confirm Romanian territorial gains; agrarian reforms implemented"
+				},
+				{
+					"year": "1923",
+					"title": "New Constitution",
+					"description": "Liberal Constitution establishes universal male suffrage, guarantees civil rights, centralizes administration"
+				},
+				{
+					"year": "1927",
+					"title": "Iron Guard Founded",
+					"description": "Corneliu Zelea Codreanu founds Legion of the Archangel Michael (Iron Guard), fascist movement becomes major force"
+				},
+				{
+					"year": "1938",
+					"title": "Carol II's Dictatorship",
+					"description": "King Carol II dissolves political parties, establishes royal dictatorship, executes Iron Guard leaders"
+				},
+				{
+					"year": "1940",
+					"title": "Territorial Losses",
+					"description": "June-September, forced to cede Bessarabia/Bukovina to USSR, northern Transylvania to Hungary, southern Dobrogea to Bulgaria"
+				},
+				{
+					"year": "1940-1944",
+					"title": "Antonescu Dictatorship",
+					"description": "General Ion Antonescu rules as Conducător, allies with Nazi Germany, participates in invasion of USSR and Holocaust"
+				},
+				{
+					"year": "1941-1944",
+					"title": "Holocaust in Romania",
+					"description": "Romanian regime murders 280,000-380,000 Jews and Roma through pogroms, deportations, death camps in Transnistria"
+				},
+				{
+					"year": "1944",
+					"title": "Royal Coup",
+					"description": "August 23, King Michael I arrests Antonescu, switches sides to Allies; Soviet army occupies Romania"
+				},
+				{
+					"year": "1947",
+					"title": "Communist Takeover",
+					"description": "December 30, King Michael forced to abdicate under Soviet pressure; Romanian People's Republic proclaimed"
+				},
+				{
+					"year": "1948-1965",
+					"title": "Stalinist Period",
+					"description": "Gheorghe Gheorghiu-Dej's rule: forced collectivization, industrialization, Securitate terror, show trials, suppression of opposition"
+				},
+				{
+					"year": "1965-1989",
+					"title": "Ceaușescu Era",
+					"description": "Nicolae Ceaușescu's increasingly totalitarian, personalistic rule: cult of personality, Securitate terror, disastrous economic policies"
+				},
+				{
+					"year": "1968",
+					"title": "Denounces Warsaw Pact Invasion",
+					"description": "Ceaușescu condemns Soviet invasion of Czechoslovakia, wins Western praise while maintaining domestic repression"
+				},
+				{
+					"year": "1980s",
+					"title": "Austerity and Repression",
+					"description": "Ceaușescu's policy to eliminate foreign debt creates severe shortages, rationing, cold apartments; repression intensifies"
+				},
+				{
+					"year": "1989",
+					"title": "December Revolution",
+					"description": "December 16-25, protests in Timișoara spread nationwide; Ceaușescu flees, captured, executed December 25 with wife Elena"
+				},
+				{
+					"year": "1990",
+					"title": "First Free Elections",
+					"description": "May 20, Ion Iliescu and National Salvation Front win elections; transition begins amid controversy about continuity with old regime"
+				},
+				{
+					"year": "1991",
+					"title": "New Constitution",
+					"description": "December 8, democratic constitution adopted by referendum, establishing semi-presidential system"
+				},
+				{
+					"year": "2004",
+					"title": "NATO Membership",
+					"description": "March 29, Romania joins NATO, completing integration into Western security structures"
+				},
+				{
+					"year": "2007",
+					"title": "EU Membership",
+					"description": "January 1, Romania joins European Union, fulfilling post-communist goal of European integration"
+				},
+				{
+					"year": "2017-2019",
+					"title": "Anti-Corruption Protests",
+					"description": "Massive protests against government attempts to weaken anti-corruption laws; largest demonstrations since 1989"
+				}
+			],
+			"notableFigures": [
+				"Queen Marie (1875-1938, WWI diplomat)",
+				"Iuliu Maniu (1873-1953, democratic leader, died in communist prison)",
+				"Corneliu Zelea Codreanu (1899-1938, Iron Guard founder)",
+				"King Michael I (1921-2017, led 1944 coup)",
+				"Ana Pauker (1893-1960, communist leader)",
+				"Nicolae Ceaușescu (1918-1989, communist dictator)",
+				"Ion Iliescu (born 1930, first post-communist president)",
+				"Emil Constantinescu (born 1939, reform president 1996-2000)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 82-44 BCE",
+				"era": "Ancient",
+				"title": "Burebista's Dacian Kingdom",
+				"description": "King Burebista unites Dacian tribes into powerful kingdom threatening Rome"
+			},
+			{
+				"year": "106 CE",
+				"era": "Ancient",
+				"title": "Roman Conquest",
+				"description": "Emperor Trajan conquers Dacia, introducing Latin language and Roman culture"
+			},
+			{
+				"year": "271-275",
+				"era": "Medieval",
+				"title": "Roman Withdrawal",
+				"description": "Emperor Aurelian abandons Dacia province to migrating peoples"
+			},
+			{
+				"year": "c. 1330",
+				"era": "Medieval",
+				"title": "Wallachia Founded",
+				"description": "Basarab I establishes Wallachia as independent principality"
+			},
+			{
+				"year": "c. 1359",
+				"era": "Medieval",
+				"title": "Moldavia Founded",
+				"description": "Bogdan I establishes Moldavia, completing Romanian principalities"
+			},
+			{
+				"year": "1457-1504",
+				"era": "Medieval",
+				"title": "Stephen the Great",
+				"description": "Stephen III of Moldavia defends against Ottomans, builds monasteries, becomes national hero"
+			},
+			{
+				"year": "1600",
+				"era": "Imperial",
+				"title": "First Union",
+				"description": "Michael the Brave briefly unites all Romanian lands for first time"
+			},
+			{
+				"year": "1859",
+				"era": "Independence",
+				"title": "United Principalities",
+				"description": "Alexandru Ioan Cuza elected prince of both Moldavia and Wallachia"
+			},
+			{
+				"year": "1877-1878",
+				"era": "Independence",
+				"title": "Independence Achieved",
+				"description": "Romania declares independence, recognized by Treaty of Berlin"
+			},
+			{
+				"year": "1881",
+				"era": "Independence",
+				"title": "Kingdom Proclaimed",
+				"description": "Carol I crowned King of Romania"
+			},
+			{
+				"year": "1918",
+				"era": "Modern",
+				"title": "Greater Romania",
+				"description": "December 1, Transylvania unites with Romania, creating Greater Romania"
+			},
+			{
+				"year": "1940",
+				"era": "Modern",
+				"title": "Territorial Losses",
+				"description": "Forced cessions of Bessarabia, northern Transylvania, southern Dobrogea"
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Royal Coup",
+				"description": "August 23, King Michael arrests Antonescu, switches to Allies"
+			},
+			{
+				"year": "1947",
+				"era": "Modern",
+				"title": "Communist Republic",
+				"description": "King forced to abdicate, communist regime established"
+			},
+			{
+				"year": "1965-1989",
+				"era": "Modern",
+				"title": "Ceaușescu Dictatorship",
+				"description": "Nicolae Ceaușescu's brutal totalitarian regime"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Revolution",
+				"description": "December, violent overthrow of Ceaușescu; only violent end to Eastern European communism"
+			},
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "NATO Membership",
+				"description": "Romania joins NATO, integrating into Western security structures"
+			},
+			{
+				"year": "2007",
+				"era": "Modern",
+				"title": "EU Membership",
+				"description": "Romania joins European Union, achieving European integration goal"
+			}
 		]
 	}
 ]
