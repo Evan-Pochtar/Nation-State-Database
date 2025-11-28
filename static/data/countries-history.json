@@ -19505,10 +19505,7 @@
 		"source": {
 			"label": "Wikipedia - History of Romania",
 			"url": "https://en.wikipedia.org/wiki/History_of_Romania",
-			"urls": [
-				"https://en.wikipedia.org/wiki/History_of_Romania",
-				"https://www.britannica.com/place/Romania"
-			]
+			"urls": ["https://en.wikipedia.org/wiki/History_of_Romania", "https://www.britannica.com/place/Romania"]
 		},
 		"keyFacts": [
 			{
@@ -19980,6 +19977,907 @@
 				"era": "Modern",
 				"title": "EU Membership",
 				"description": "Romania joins European Union, achieving European integration goal"
+			}
+		]
+	},
+	{
+		"name": "Serbia",
+		"overview": "Serbia's history spans from ancient tribal settlements through medieval glory as a powerful kingdom, centuries of Ottoman rule, struggles for independence, participation in two world wars, the complex Yugoslav era, and emergence as an independent nation in 2006. From the medieval Serbian Empire under Stefan Dušan to the battles of Kosovo that shaped national identity, from the liberation struggles of the 19th century to the traumatic Yugoslav Wars of the 1990s, Serbia has experienced dramatic transformations. The nation has been a crossroads of empires and cultures, developing a rich Orthodox Christian heritage, distinctive cultural traditions in literature and music, and a resilient national identity forged through centuries of conflict and renewal.",
+		"source": {
+			"label": "Wikipedia - History of Serbia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Serbia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Serbia",
+				"https://www.britannica.com/place/Serbia",
+				"https://en.wikipedia.org/wiki/Serbian_Empire"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence",
+				"value": "1878 (recognized by Treaty of Berlin)"
+			},
+			{
+				"label": "Modern Independence",
+				"value": "June 5, 2006 (from State Union)"
+			},
+			{
+				"label": "Capital",
+				"value": "Belgrade (founded 3rd century BCE)"
+			},
+			{
+				"label": "Medieval Capital",
+				"value": "Raška, later Skopje under Dušan"
+			},
+			{
+				"label": "National Day",
+				"value": "February 15 (Statehood Day)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "5 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 6000 BCE - 7th century CE",
+			"description": "The territory of modern Serbia has been inhabited since the Paleolithic era, with significant Neolithic settlements like the Vinča culture (5700-4500 BCE) near Belgrade, one of Europe's most important prehistoric cultures that developed early forms of writing and advanced metallurgy. The region was inhabited by various Illyrian and Thracian tribes before coming under Celtic influence around 4th century BCE. The Romans conquered the area in the 1st century BCE, making it a crucial part of the empire. The province of Moesia covered much of Serbia, with important cities like Singidunum (Belgrade), Viminacium, and Naissus (Niš). The region produced several Roman emperors, including Constantine the Great, born in Naissus around 272 CE, who would legalize Christianity and establish Constantinople. After Rome's division, the area became part of the Eastern Roman (Byzantine) Empire. The great migrations of the 4th-7th centuries saw Germanic tribes, Huns, and Avars pass through or settle temporarily. By the 7th century, Slavic tribes began arriving from the north, gradually settling the Balkans and mixing with the remaining Romanized population, laying the foundation for the medieval Serbian nation.",
+			"keyEvents": [
+				{
+					"year": "c. 5700-4500 BCE",
+					"title": "Vinča Culture",
+					"description": "Advanced Neolithic culture flourishes near Belgrade, developing proto-writing system and sophisticated crafts"
+				},
+				{
+					"year": "c. 279 BCE",
+					"title": "Celtic Settlement",
+					"description": "Celtic tribe Scordisci establish settlement at future Belgrade, creating fortified oppidum"
+				},
+				{
+					"year": "c. 15 CE",
+					"title": "Roman Conquest",
+					"description": "Romans complete conquest of region, establishing provinces of Moesia and later Pannonia"
+				},
+				{
+					"year": "272 CE",
+					"title": "Constantine Born",
+					"description": "Future Emperor Constantine the Great born in Naissus, will legalize Christianity and transform empire"
+				},
+				{
+					"year": "395 CE",
+					"title": "Empire Division",
+					"description": "Roman Empire divides; Serbian lands become part of Eastern Roman (Byzantine) Empire"
+				},
+				{
+					"year": "c. 630",
+					"title": "Slavic Settlement",
+					"description": "South Slavic tribes settle in Balkans under Byzantine Emperor Heraclius, beginning Serbian ethnogenesis"
+				}
+			],
+			"notableFigures": ["Constantine the Great (Roman Emperor)", "Justinian I (Byzantine Emperor, codified Roman law)"]
+		},
+		"medieval": {
+			"period": "7th century - 1459",
+			"description": "Medieval Serbia emerged from Slavic tribes that settled the Balkans in the 7th century under Byzantine authority. The first Serbian principalities formed in the 9th century in Raška and other regions. The Christianization of Serbs began in the 9th century, with the choice of Orthodox Christianity over Roman Catholicism proving decisive for Serbian cultural identity. Stefan Nemanja (r. 1166-1196) founded the Nemanjić dynasty and unified Serbian lands, establishing an independent state. His son, Saint Sava, became the first Serbian Archbishop in 1219, creating an autocephalous Serbian Orthodox Church that became central to national identity. Under the Nemanjić dynasty, Serbia reached its zenith under Stefan Dušan (r. 1331-1355), who conquered much of the Balkans and crowned himself Emperor of Serbs and Greeks in 1346, creating the Serbian Empire that rivaled Byzantium. Dušan's Code established advanced legal framework and administration. However, after Dušan's death in 1355, the empire fragmented among noble families. The rising Ottoman Empire began advancing into the Balkans. The Battle of Kosovo on June 15, 1389, where Prince Lazar led Serbian forces against Sultan Murad I, resulted in a costly battle that decimated Serbian nobility and opened the path for Ottoman conquest, though both leaders died. Kosovo became a defining moment in Serbian historical memory and national mythology. Serbian resistance continued for decades, but by 1459, with the fall of Smederevo, Serbia was fully incorporated into the Ottoman Empire, beginning nearly four centuries of Ottoman rule.",
+			"keyEvents": [
+				{
+					"year": "c. 768",
+					"title": "Višeslav's Serbia",
+					"description": "Prince Višeslav mentioned as first known Serbian ruler by name, establishing principality in Raška region"
+				},
+				{
+					"year": "c. 870",
+					"title": "Christianization Begins",
+					"description": "Mass conversion of Serbs to Christianity under Byzantine influence, choosing Orthodox faith"
+				},
+				{
+					"year": "1166",
+					"title": "Stefan Nemanja Takes Power",
+					"description": "Nemanja becomes Grand Prince, unifies Serbian lands, and founds Nemanjić dynasty that will rule for 200 years"
+				},
+				{
+					"year": "1219",
+					"title": "Autocephalous Church",
+					"description": "Saint Sava becomes first Archbishop of autocephalous Serbian Orthodox Church, crucial for national identity"
+				},
+				{
+					"year": "1346",
+					"title": "Serbian Empire Proclaimed",
+					"description": "Stefan Dušan crowns himself Emperor of Serbs and Greeks at Skopje, marking zenith of Serbian medieval power"
+				},
+				{
+					"year": "1349-1354",
+					"title": "Dušan's Code",
+					"description": "Emperor Dušan promulgates comprehensive legal code, one of most advanced in medieval Europe"
+				},
+				{
+					"year": "1355",
+					"title": "Dušan's Death",
+					"description": "Emperor Dušan dies suddenly at 47 while preparing to attack Constantinople; empire begins fragmenting"
+				},
+				{
+					"year": "1389",
+					"title": "Battle of Kosovo",
+					"description": "June 15, Serbian Prince Lazar leads forces against Ottoman Sultan Murad I; both leaders killed, Serbian nobility decimated in defining battle of Serbian history"
+				},
+				{
+					"year": "1459",
+					"title": "Fall of Smederevo",
+					"description": "Last Serbian fortress falls to Ottomans, completing Ottoman conquest of Serbia"
+				}
+			],
+			"notableFigures": [
+				"Stefan Nemanja (founder of Nemanjić dynasty)",
+				"Saint Sava (first Serbian Archbishop, patron saint)",
+				"Stefan Dušan (Emperor, greatest medieval Serbian ruler)",
+				"Prince Lazar (martyr-prince of Kosovo battle)"
+			]
+		},
+		"imperial": {
+			"period": "1459 - 1878",
+			"description": "Under Ottoman rule, Serbia underwent profound transformation. The Ottoman millet system allowed religious communities some autonomy, making the Serbian Orthodox Church the primary institution preserving national identity. Many Serbs converted to Islam, while others migrated north to Habsburg territories. The Serbian Patriarchate was restored in 1557 at Peć, becoming a center of cultural and spiritual life until its abolition in 1766. Serbs played various roles in the Ottoman system, with some serving in the military and administration, while the majority were peasant farmers paying various taxes and tributes. The Great Migrations of the 17th-18th centuries saw hundreds of thousands of Serbs flee Ottoman territory for Habsburg lands, invited to settle the Military Frontier as border defenders. This created large Serbian populations in Croatia and southern Hungary. By the late 18th century, Ottoman power was declining, and Serbian uprisings began. The First Serbian Uprising (1804-1813) led by Karađorđe Petrović started as a rebellion against renegade janissaries but evolved into a war for independence. Though ultimately crushed by the Ottomans, it established foundations for future struggle. The Second Serbian Uprising (1815) led by Miloš Obrenović was more successful, securing Serbian autonomy within the Ottoman Empire. Serbia gradually expanded its autonomy over decades, with the last Turkish garrison leaving Belgrade in 1867. The Congress of Berlin in 1878 recognized Serbia's full independence, though considerable Serbian populations remained under Ottoman and Habsburg rule.",
+			"keyEvents": [
+				{
+					"year": "1557",
+					"title": "Patriarchate Restored",
+					"description": "Serbian Patriarchate restored at Peć by Ottomans, becoming center of Serbian cultural and spiritual life"
+				},
+				{
+					"year": "1690",
+					"title": "Great Migration",
+					"description": "First Great Migration sees up to 40,000 Serbian families flee to Habsburg territories under Patriarch Arsenije III"
+				},
+				{
+					"year": "1737",
+					"title": "Second Great Migration",
+					"description": "Another large Serbian exodus to Habsburg lands during Austro-Turkish War"
+				},
+				{
+					"year": "1766",
+					"title": "Patriarchate Abolished",
+					"description": "Ottomans abolish Serbian Patriarchate, placing Serbian Church under Greek Patriarchate of Constantinople"
+				},
+				{
+					"year": "1804",
+					"title": "First Serbian Uprising",
+					"description": "Karađorđe Petrović leads uprising against Ottoman rule, establishing temporary independent state (1807-1813)"
+				},
+				{
+					"year": "1815",
+					"title": "Second Serbian Uprising",
+					"description": "Miloš Obrenović leads successful rebellion, securing Serbian autonomy within Ottoman Empire"
+				},
+				{
+					"year": "1830",
+					"title": "Autonomy Granted",
+					"description": "Ottoman Sultan formally recognizes Serbia as hereditary principality under Obrenović dynasty"
+				},
+				{
+					"year": "1867",
+					"title": "Last Turkish Troops Leave",
+					"description": "Last Ottoman garrison departs Belgrade, effective Serbian independence though not yet recognized internationally"
+				},
+				{
+					"year": "1878",
+					"title": "Independence Recognized",
+					"description": "Treaty of Berlin recognizes Serbia as fully independent kingdom, ending 400+ years of Ottoman rule"
+				}
+			],
+			"notableFigures": [
+				"Patriarch Arsenije III Čarnojević",
+				"Karađorđe Petrović (leader of First Uprising)",
+				"Miloš Obrenović (leader of Second Uprising, first modern Prince)"
+			]
+		},
+		"modern": {
+			"period": "1878 - Present",
+			"description": "Independent Serbia pursued territorial expansion and modernization while navigating great power rivalries. The Karađorđević and Obrenović dynasties competed for power through multiple coups. Serbia fought two Balkan Wars (1912-1913), nearly doubling its territory. Austro-Hungarian annexation of Bosnia in 1908 and rising South Slav nationalism created tensions. The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, by Serbian nationalist Gavrilo Princip triggered World War I. Serbia fought valiantly but was occupied 1915-1918, suffering devastating losses. Victory brought the creation of the Kingdom of Serbs, Croats and Slovenes (1918), renamed Yugoslavia in 1929 under King Alexander. Nazi Germany invaded in 1941; Serbia was occupied while brutal civil wars raged between Partisans, Chetniks, and Ustaše. Communist Partisans under Josip Broz Tito emerged victorious, establishing Socialist Yugoslavia (1945) with Serbia as the largest republic. Tito's death in 1980 left a power vacuum. Rising nationalism, especially after Slobodan Milošević came to power in Serbia in 1987, contributed to Yugoslavia's violent disintegration. Wars in Croatia (1991-1995) and Bosnia (1992-1995) involved Serbian forces and paramilitary groups in atrocities including ethnic cleansing. The Kosovo War (1998-1999) ended with NATO bombing Serbia and Kosovo becoming a UN protectorate. Milošević was overthrown in the Bulldozer Revolution (2000) and later tried at The Hague for war crimes. Montenegro's 2006 independence referendum ended the State Union, making Serbia fully independent. Kosovo declared independence in 2008, recognized by many countries but not by Serbia, remaining a central political issue.",
+			"keyEvents": [
+				{
+					"year": "1882",
+					"title": "Kingdom Proclaimed",
+					"description": "Serbia elevated from principality to kingdom under King Milan I Obrenović"
+				},
+				{
+					"year": "1903",
+					"title": "May Overthrow",
+					"description": "Military coup assassinates King Alexander Obrenović and Queen Draga; Karađorđević dynasty restored with Peter I"
+				},
+				{
+					"year": "1912-1913",
+					"title": "Balkan Wars",
+					"description": "Serbia fights Ottoman Empire then Bulgaria, nearly doubling territory and gaining Kosovo and Macedonia"
+				},
+				{
+					"year": "1914",
+					"title": "Archduke Assassination",
+					"description": "June 28, Gavrilo Princip assassinates Archduke Franz Ferdinand in Sarajevo, triggering World War I"
+				},
+				{
+					"year": "1914-1918",
+					"title": "World War I",
+					"description": "Serbia fights against Austria-Hungary and Germany; occupied 1915-1918, losing over 25% of population"
+				},
+				{
+					"year": "1918",
+					"title": "Yugoslavia Created",
+					"description": "December 1, Kingdom of Serbs, Croats and Slovenes proclaimed, uniting South Slavs under Serbian Karađorđević dynasty"
+				},
+				{
+					"year": "1929",
+					"title": "Royal Dictatorship",
+					"description": "King Alexander establishes dictatorship and renames country Yugoslavia"
+				},
+				{
+					"year": "1934",
+					"title": "King Assassinated",
+					"description": "King Alexander assassinated in Marseille by Bulgarian revolutionary in conspiracy with Croatian nationalists"
+				},
+				{
+					"year": "1941",
+					"title": "Nazi Invasion",
+					"description": "April, Axis powers invade and partition Yugoslavia; Serbia occupied, brutal civil wars begin"
+				},
+				{
+					"year": "1945",
+					"title": "Communist Yugoslavia",
+					"description": "Tito's Partisans establish Socialist Federal Republic of Yugoslavia with six republics including Serbia"
+				},
+				{
+					"year": "1948",
+					"title": "Tito-Stalin Split",
+					"description": "Yugoslavia breaks with Soviet Union, developing independent socialist path and non-aligned movement leadership"
+				},
+				{
+					"year": "1980",
+					"title": "Tito Dies",
+					"description": "May 4, President Tito dies after 35 years of rule; rotating presidency system struggles to maintain unity"
+				},
+				{
+					"year": "1987",
+					"title": "Milošević Rises",
+					"description": "Slobodan Milošević takes control of Serbian Communist Party, promoting Serbian nationalism"
+				},
+				{
+					"year": "1991",
+					"title": "Yugoslavia Dissolves",
+					"description": "Slovenia, Croatia, Macedonia, and Bosnia-Herzegovina declare independence; Yugoslav Wars begin"
+				},
+				{
+					"year": "1991-1995",
+					"title": "Croatian and Bosnian Wars",
+					"description": "Brutal wars involving Serbian forces, paramilitaries, and atrocities including Srebrenica massacre (1995)"
+				},
+				{
+					"year": "1992",
+					"title": "Federal Republic Formed",
+					"description": "Serbia and Montenegro form Federal Republic of Yugoslavia as other republics gain independence"
+				},
+				{
+					"year": "1995",
+					"title": "Dayton Agreement",
+					"description": "Peace agreement ends Bosnian War; war crimes tribunal established at The Hague"
+				},
+				{
+					"year": "1998-1999",
+					"title": "Kosovo War",
+					"description": "Conflict between Yugoslav forces and Kosovo Albanian insurgents; NATO bombs Serbia for 78 days"
+				},
+				{
+					"year": "1999",
+					"title": "Kosovo Protectorate",
+					"description": "June, Serbian forces withdraw from Kosovo; UN establishes protectorate over Kosovo"
+				},
+				{
+					"year": "2000",
+					"title": "Bulldozer Revolution",
+					"description": "October 5, popular uprising overthrows Milošević after refusing to accept electoral defeat"
+				},
+				{
+					"year": "2001",
+					"title": "Milošević Arrested",
+					"description": "June, Milošević arrested and extradited to The Hague to face war crimes charges"
+				},
+				{
+					"year": "2003",
+					"title": "Prime Minister Assassinated",
+					"description": "March 12, reformist Prime Minister Zoran Đinđić assassinated by organized crime groups"
+				},
+				{
+					"year": "2006",
+					"title": "Independence Restored",
+					"description": "June 5, Montenegro votes for independence, dissolving State Union; Serbia becomes independent state"
+				},
+				{
+					"year": "2008",
+					"title": "Kosovo Independence",
+					"description": "February 17, Kosovo declares independence, recognized by many countries but not Serbia"
+				}
+			],
+			"notableFigures": [
+				"King Peter I Karađorđević",
+				"Gavrilo Princip (assassin of Franz Ferdinand)",
+				"King Alexander I",
+				"Josip Broz Tito (Yugoslav leader)",
+				"Slobodan Milošević",
+				"Zoran Đinđić (reformist Prime Minister)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 5700 BCE",
+				"era": "Ancient",
+				"title": "Vinča Culture",
+				"description": "Advanced Neolithic civilization develops near Belgrade with proto-writing system"
+			},
+			{
+				"year": "272 CE",
+				"era": "Ancient",
+				"title": "Constantine Born",
+				"description": "Future Roman Emperor Constantine the Great born in Naissus (Niš)"
+			},
+			{
+				"year": "c. 630",
+				"era": "Ancient",
+				"title": "Slavic Settlement",
+				"description": "South Slavic tribes settle in Balkans, beginning Serbian ethnogenesis"
+			},
+			{
+				"year": "1166",
+				"era": "Medieval",
+				"title": "Nemanjić Dynasty",
+				"description": "Stefan Nemanja founds dynasty that will rule Serbia for two centuries"
+			},
+			{
+				"year": "1346",
+				"era": "Medieval",
+				"title": "Serbian Empire",
+				"description": "Stefan Dušan proclaims Serbian Empire at its territorial and cultural zenith"
+			},
+			{
+				"year": "1389",
+				"era": "Medieval",
+				"title": "Battle of Kosovo",
+				"description": "Defining battle against Ottomans becomes central to Serbian national mythology"
+			},
+			{
+				"year": "1459",
+				"era": "Imperial",
+				"title": "Ottoman Conquest",
+				"description": "Fall of last Serbian fortress marks beginning of 400+ years of Ottoman rule"
+			},
+			{
+				"year": "1804",
+				"era": "Imperial",
+				"title": "First Uprising",
+				"description": "Karađorđe leads first Serbian revolution against Ottoman Empire"
+			},
+			{
+				"year": "1878",
+				"era": "Imperial",
+				"title": "Independence",
+				"description": "Treaty of Berlin recognizes Serbia as fully independent kingdom"
+			},
+			{
+				"year": "1914",
+				"era": "Modern",
+				"title": "World War I Begins",
+				"description": "Assassination in Sarajevo triggers war; Serbia suffers devastating losses"
+			},
+			{
+				"year": "1918",
+				"era": "Modern",
+				"title": "Yugoslavia Created",
+				"description": "Kingdom of Serbs, Croats and Slovenes formed under Serbian monarchy"
+			},
+			{
+				"year": "1945",
+				"era": "Modern",
+				"title": "Communist Yugoslavia",
+				"description": "Tito establishes socialist federation with Serbia as largest republic"
+			},
+			{
+				"year": "1991-1995",
+				"era": "Modern",
+				"title": "Yugoslav Wars",
+				"description": "Brutal conflicts accompany Yugoslavia's violent dissolution"
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "Democratic Revolution",
+				"description": "Popular uprising overthrows Milošević, beginning democratic transition"
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "Modern Independence",
+				"description": "Serbia becomes independent state after Montenegro referendum"
+			}
+		]
+	},
+	{
+		"name": "Lithuania",
+		"overview": "Lithuania's history encompasses the rise of one of medieval Europe's largest empires, a unique dual commonwealth with Poland, centuries of foreign domination, and three declarations of independence in the 20th century. From the pagan Grand Duchy that stretched from the Baltic to the Black Sea to the Polish-Lithuanian Commonwealth that was a major European power, from the partitions that erased it from maps to the dramatic reassertion of sovereignty against the Soviet Union in 1990, Lithuania has demonstrated remarkable cultural resilience. The last pagan nation in Europe to adopt Christianity, Lithuania preserved Baltic culture and language through centuries of pressure, developed a rich literary tradition, and became a symbol of peaceful resistance during the Singing Revolution that helped end the Cold War.",
+		"source": {
+			"label": "Wikipedia - History of Lithuania",
+			"url": "https://en.wikipedia.org/wiki/History_of_Lithuania",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Lithuania",
+				"https://www.britannica.com/place/Lithuania",
+				"https://en.wikipedia.org/wiki/Grand_Duchy_of_Lithuania"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence",
+				"value": "February 16, 1918"
+			},
+			{
+				"label": "Second Independence",
+				"value": "March 11, 1990 (from Soviet Union)"
+			},
+			{
+				"label": "Capital",
+				"value": "Vilnius (founded 1323)"
+			},
+			{
+				"label": "Medieval Capital",
+				"value": "Trakai, then Vilnius from 1323"
+			},
+			{
+				"label": "EU & NATO Member",
+				"value": "Since 2004"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "4 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 10,000 BCE - 1009 CE",
+			"description": "The Baltic region where Lithuania emerged has been inhabited since the end of the last Ice Age around 10,000 BCE. The ancestors of modern Lithuanians were Baltic tribes—distinct from both Slavic and Germanic peoples—who settled the eastern Baltic coast and inland territories. These tribes spoke Baltic languages, ancestors of modern Lithuanian and Latvian, which are among the most archaic Indo-European languages still spoken today. Archaeological evidence shows continuous habitation and development of Baltic cultures from the Neolithic through the Bronze and Iron Ages. The Baltic peoples developed settlements, engaged in agriculture, animal husbandry, and fishing, and crafted distinctive pottery, tools, and amber jewelry—the 'Baltic gold' that was traded throughout Europe. They practiced polytheistic religions with a rich mythology centered on nature worship, thunder gods (Perkūnas), and sacred groves. Unlike their neighbors, the Baltic tribes remained pagan well into the medieval period, resisting early Christian missionary efforts. The tribes were organized into chiefdoms and had no unified state structure until the medieval period. The first written mention of Lithuania appears in 1009 in the Annals of Quedlinburg, which records the murder of a missionary, Saint Bruno of Querfurt, by pagans on the border of Russia and Lithuania. This early reference indicates Lithuania was known to Western chroniclers by the early 11th century, though its political organization remained tribal.",
+			"keyEvents": [
+				{
+					"year": "c. 10,000 BCE",
+					"title": "First Settlement",
+					"description": "After Ice Age retreat, hunter-gatherers settle Baltic region, ancestors of Lithuanian people"
+				},
+				{
+					"year": "c. 3000-1800 BCE",
+					"title": "Corded Ware Culture",
+					"description": "Bronze Age culture develops in Baltic region, creating distinctive pottery and beginning agriculture"
+				},
+				{
+					"year": "c. 500 BCE - 500 CE",
+					"title": "Baltic Tribes Form",
+					"description": "Distinct Baltic tribal identities emerge including Aukštaitians, Samogitians, and others speaking Baltic languages"
+				},
+				{
+					"year": "c. 98 CE",
+					"title": "Tacitus Mentions Aestii",
+					"description": "Roman historian Tacitus describes amber-gathering people on Baltic coast, possibly Baltic tribes"
+				},
+				{
+					"year": "1009",
+					"title": "First Written Reference",
+					"description": "Annals of Quedlinburg mention Lithuania in account of Saint Bruno's martyrdom, first historical documentation"
+				}
+			],
+			"notableFigures": ["Baltic chieftains (unnamed in historical records)"]
+		},
+		"medieval": {
+			"period": "1009 - 1569",
+			"description": "Medieval Lithuania emerged as a unified state in the 13th century in response to external threats, particularly the crusading Teutonic Knights who conquered neighboring Prussia and Latvia. Grand Duke Mindaugas united Lithuanian tribes and was crowned King of Lithuania in 1253 after accepting Catholic baptism—a tactical move to gain Papal protection against the Knights. After Mindaugas's assassination in 1263, Lithuania reverted to paganism and continued military resistance. Under Grand Dukes Gediminas (r. 1316-1341) and his sons, particularly Algirdas, Lithuania rapidly expanded eastward into Ruthenian (East Slavic) lands weakened by Mongol invasions. At its greatest extent under Vytautas the Great (r. 1392-1430), the Grand Duchy stretched from the Baltic Sea to the Black Sea, encompassing modern Lithuania, Belarus, much of Ukraine, and parts of western Russia, making it one of Europe's largest states. This vast realm was ethnically and religiously diverse, with Orthodox Ruthenians outnumbering pagan/Catholic Lithuanians. The state practiced remarkable religious tolerance for its time. The Battle of Grunwald in 1410, where Lithuanian-Polish forces decisively defeated the Teutonic Knights, ended the Order's expansion and became a defining moment in Lithuanian history. Grand Duke Jogaila had converted to Catholicism in 1387, becoming King of Poland through marriage and beginning a personal union between the two states. Lithuania was the last pagan nation in Europe to officially adopt Christianity (1387), though conversion proceeded gradually, with Samogitia not fully Christianized until 1417. The Union of Lublin in 1569 merged Lithuania and Poland into the Polish-Lithuanian Commonwealth, a unique elective monarchy and federal state. While this began a period of 'Polonization' among Lithuanian nobility, the Grand Duchy retained separate laws, army, and administration.",
+			"keyEvents": [
+				{
+					"year": "1230s",
+					"title": "State Formation",
+					"description": "Lithuanian tribes unite under leader Mindaugas in response to Teutonic Knights' crusades"
+				},
+				{
+					"year": "1253",
+					"title": "Mindaugas Crowned King",
+					"description": "Mindaugas accepts baptism and crowned King of Lithuania by Papal authority, first and only crowned Lithuanian king"
+				},
+				{
+					"year": "1263",
+					"title": "Mindaugas Assassinated",
+					"description": "King Mindaugas murdered by rivals Daumantas and Treniota; Lithuania reverts to paganism and military expansion"
+				},
+				{
+					"year": "1316-1341",
+					"title": "Gediminas's Reign",
+					"description": "Grand Duke Gediminas expands territory, establishes Vilnius as capital (1323), invites Western artisans and merchants"
+				},
+				{
+					"year": "1345-1377",
+					"title": "Algirdas's Expansion",
+					"description": "Grand Duke Algirdas conquers vast Ruthenian territories, extending Lithuania to Black Sea region"
+				},
+				{
+					"year": "1386",
+					"title": "Union with Poland",
+					"description": "Grand Duke Jogaila marries Polish Queen Jadwiga, becomes King of Poland, beginning Polish-Lithuanian union"
+				},
+				{
+					"year": "1387",
+					"title": "Official Christianization",
+					"description": "Jogaila baptizes Lithuania, last pagan nation in Europe to officially convert to Christianity"
+				},
+				{
+					"year": "1392-1430",
+					"title": "Vytautas the Great",
+					"description": "Vytautas rules as Grand Duke, brings Lithuania to greatest territorial extent and political power"
+				},
+				{
+					"year": "1410",
+					"title": "Battle of Grunwald",
+					"description": "July 15, Lithuanian-Polish forces decisively defeat Teutonic Knights in one of medieval Europe's largest battles"
+				},
+				{
+					"year": "1529",
+					"title": "First Statute",
+					"description": "First Lithuanian Statute codifies laws in Ruthenian language, establishing sophisticated legal system"
+				},
+				{
+					"year": "1569",
+					"title": "Union of Lublin",
+					"description": "Lithuania and Poland merge into Polish-Lithuanian Commonwealth, creating federal state with shared king and parliament"
+				}
+			],
+			"notableFigures": [
+				"Mindaugas (first King of Lithuania)",
+				"Gediminas (expanded state, founded Vilnius)",
+				"Algirdas (expanded Grand Duchy eastward)",
+				"Jogaila/Władysław II Jagiełło (united crowns)",
+				"Vytautas the Great (greatest Grand Duke)",
+				"Kęstutis (Grand Duke, defended against Teutonic Knights)"
+			]
+		},
+		"imperial": {
+			"period": "1569 - 1795",
+			"description": "The Polish-Lithuanian Commonwealth became one of Europe's largest and most unusual states, covering over 400,000 square miles at its peak. It operated as an elective monarchy with a parliament (Sejm) dominated by the nobility (szlachta), who enjoyed extraordinary freedoms and privileges under the principle of 'Golden Liberty.' While this created a relatively tolerant, decentralized state, it also led to political paralysis through the liberum veto (allowing any noble to dissolve parliament). The Commonwealth was religiously diverse, with substantial Catholic, Orthodox, Protestant, and Jewish populations. Jews found particular refuge in Lithuania, which became a major center of Jewish culture and learning. Vilnius was called the 'Jerusalem of the North.' The Commonwealth produced significant cultural achievements, including universities, printing presses, and architectural splendor. However, the 17th-18th centuries brought decline through devastating wars—the Deluge (1655-1660) when Swedish forces occupied much of the Commonwealth, the Russo-Polish Wars, and constant conflicts with the Ottoman Empire. The Commonwealth's political system became increasingly dysfunctional, and powerful neighbors—Russia, Prussia, and Austria—exploited its weakness. Three successive Partitions (1772, 1793, 1795) divided the Commonwealth among these powers, completely erasing it from the map. Most Lithuanian territory went to the Russian Empire. The final session of the Sejm in 1795 marked the end of Lithuanian independence for 123 years, though the Constitution of May 3, 1791—Europe's first codified national constitution—represented a last attempt at reform before the state's extinction.",
+			"keyEvents": [
+				{
+					"year": "1579",
+					"title": "Vilnius University Founded",
+					"description": "Jesuit academy elevated to university status by King Stefan Batory, becoming major center of learning"
+				},
+				{
+					"year": "1655-1660",
+					"title": "The Deluge",
+					"description": "Swedish invasion devastates Commonwealth; Vilnius occupied and partially destroyed, population decimated"
+				},
+				{
+					"year": "1700-1721",
+					"title": "Great Northern War",
+					"description": "War between Sweden and Russia fought largely on Commonwealth territory, causing further devastation"
+				},
+				{
+					"year": "1772",
+					"title": "First Partition",
+					"description": "Russia, Prussia, and Austria seize approximately 30% of Commonwealth territory in first partition"
+				},
+				{
+					"year": "1791",
+					"title": "May 3rd Constitution",
+					"description": "May 3, progressive constitution adopted, Europe's first codified national constitution, attempting reforms"
+				},
+				{
+					"year": "1792",
+					"title": "War in Defense of Constitution",
+					"description": "Russian invasion defeats reformist forces, leading to second partition"
+				},
+				{
+					"year": "1793",
+					"title": "Second Partition",
+					"description": "Russia and Prussia seize more territory, reducing Commonwealth to rump state"
+				},
+				{
+					"year": "1794",
+					"title": "Kościuszko Uprising",
+					"description": "Tadeusz Kościuszko leads national uprising against partitioning powers; ultimately crushed"
+				},
+				{
+					"year": "1795",
+					"title": "Third Partition",
+					"description": "Final partition completely eliminates Commonwealth; Lithuania becomes part of Russian Empire"
+				}
+			],
+			"notableFigures": [
+				"Stefan Batory (King, military leader)",
+				"Tadeusz Kościuszko (led 1794 uprising)",
+				"Stanisław August Poniatowski (last King)",
+				"Vilna Gaon (Elijah ben Solomon, Jewish scholar)"
+			]
+		},
+		"independence": {
+			"period": "1795 - 1940",
+			"description": "Under Russian Imperial rule, Lithuania endured intensive Russification policies aimed at suppressing Lithuanian identity. The Lithuanian language was banned from public use after the 1863-1864 uprising led by Konstantinas Kalinauskas. From 1864 to 1904, printing Lithuanian in Latin characters was prohibited, forcing publication abroad and creating a network of book smugglers (knygnešiai) who risked imprisonment to distribute Lithuanian materials. This 40-year press ban paradoxically strengthened national consciousness. The late 19th century saw a Lithuanian National Revival with cultural organizations, newspapers (once legal again), and growing political activism. World War I saw German occupation of Lithuania (1915-1918). As empires collapsed, the Lithuanian Council declared independence on February 16, 1918. The Act of Independence proclaimed Lithuania as a democratic republic. What followed was the Lithuanian Wars of Independence (1918-1920), fighting against Bolshevik Russia, Bermontians (German-Russian forces), and Poland, which seized Vilnius in 1920. The League of Nations couldn't resolve the Vilnius question, and Lithuania maintained Kaunas as temporary capital. Interwar Lithuania (1918-1940) was a democratic republic that developed its economy, education system, and culture, though it turned authoritarian under President Antanas Smetona after a 1926 coup. The secret protocols of the Molotov-Ribbentrop Pact of August 1939 assigned Lithuania to the Soviet sphere. In June 1940, the Soviet Union issued an ultimatum, occupied Lithuania, and staged a fraudulent election. Lithuania was annexed as a Soviet Socialist Republic, ending independence after just 22 years.",
+			"keyEvents": [
+				{
+					"year": "1831",
+					"title": "November Uprising",
+					"description": "Anti-Russian uprising in Congress Poland and Lithuania suppressed; Vilnius University closed by Russians"
+				},
+				{
+					"year": "1863-1864",
+					"title": "January Uprising",
+					"description": "Major insurrection led by Konstantinas Kalinauskas against Russian rule; brutally suppressed"
+				},
+				{
+					"year": "1864",
+					"title": "Lithuanian Press Ban",
+					"description": "Russia prohibits Lithuanian publications in Latin alphabet, beginning 40-year ban"
+				},
+				{
+					"year": "1883",
+					"title": "First Lithuanian Newspaper",
+					"description": "'Aušra' newspaper published abroad by Jonas Basanavičius, leading National Revival"
+				},
+				{
+					"year": "1904",
+					"title": "Press Ban Lifted",
+					"description": "After 40 years, ban on Lithuanian publications lifted, enabling cultural flourishing"
+				},
+				{
+					"year": "1915",
+					"title": "German Occupation",
+					"description": "German forces occupy Lithuania during World War I, Russian administration ends"
+				},
+				{
+					"year": "1918",
+					"title": "Independence Declared",
+					"description": "February 16, Lithuanian Council declares independence, establishing democratic republic"
+				},
+				{
+					"year": "1918-1920",
+					"title": "Wars of Independence",
+					"description": "Lithuania fights Bolsheviks, Bermontians, and Polish forces to secure independence"
+				},
+				{
+					"year": "1920",
+					"title": "Poland Seizes Vilnius",
+					"description": "Polish General Żeligowski occupies Vilnius and region; Lithuania refuses to recognize annexation"
+				},
+				{
+					"year": "1920",
+					"title": "Kaunas Becomes Capital",
+					"description": "With Vilnius under Polish control, Kaunas serves as temporary capital for interwar period"
+				},
+				{
+					"year": "1923",
+					"title": "Klaipėda Annexed",
+					"description": "Lithuania annexes Klaipėda Region (Memel) from French administration"
+				},
+				{
+					"year": "1926",
+					"title": "Smetona's Coup",
+					"description": "December coup brings Antanas Smetona to power; establishes authoritarian nationalist regime"
+				},
+				{
+					"year": "1939",
+					"title": "Molotov-Ribbentrop Pact",
+					"description": "August 23, secret Nazi-Soviet protocol assigns Lithuania to Soviet sphere of influence"
+				},
+				{
+					"year": "1939",
+					"title": "Vilnius Returned",
+					"description": "October, Soviet Union returns Vilnius to Lithuania as part of mutual assistance pact"
+				},
+				{
+					"year": "1940",
+					"title": "Soviet Occupation",
+					"description": "June 15, Soviet Union issues ultimatum and occupies Lithuania, ending independence"
+				},
+				{
+					"year": "1940",
+					"title": "Soviet Annexation",
+					"description": "August, Lithuania annexed as Soviet Socialist Republic after staged elections"
+				}
+			],
+			"notableFigures": [
+				"Konstantinas Kalinauskas (1863 uprising leader)",
+				"Jonas Basanavičius (National Revival leader)",
+				"Vincas Kudirka (wrote national anthem)",
+				"Jonas Jablonskis (standardized Lithuanian language)",
+				"Antanas Smetona (President 1919-1920, 1926-1940)"
+			]
+		},
+		"modern": {
+			"period": "1940 - Present",
+			"description": "Soviet occupation brought immediate terror. In June 1941, just before Nazi Germany invaded the USSR, the Soviets deported approximately 17,000 Lithuanians to Siberia. Nazi occupation (1941-1944) brought the Holocaust—over 90% of Lithuania's 200,000-strong Jewish community was murdered, often with local collaboration. Soviet forces reconquered Lithuania in 1944. From 1944-1953, Lithuanian partisans (Forest Brothers) waged guerrilla warfare against Soviet occupation in one of the longest armed resistance movements in modern Europe; an estimated 50,000 participated, with about 20,000 killed. Mass deportations continued, with approximately 130,000 Lithuanians sent to Siberian gulags and settlements between 1945-1952. Sovietization brought forced collectivization, industrialization, Russian immigration, and suppression of Lithuanian culture and religion. Underground resistance continued through cultural preservation, Catholic activism, and dissident movements like the Chronicle of the Catholic Church in Lithuania. Mikhail Gorbachev's glasnost policy in the late 1980s allowed Lithuanian activists to organize. The Sąjūdis (Reform Movement) emerged in 1988, leading the peaceful independence movement. The Singing Revolution saw massive demonstrations where Lithuanians sang national songs banned under Soviet rule. The Baltic Way on August 23, 1989—a human chain of two million people across Lithuania, Latvia, and Estonia—protested the Molotov-Ribbentrop Pact. On March 11, 1990, Lithuania became the first Soviet republic to declare independence, led by Vytautas Landsbergis. The Soviet Union responded with economic blockade and military intervention. On January 13, 1991, Soviet troops stormed the Vilnius TV Tower, killing 14 civilians. International pressure and the USSR's collapse led to recognition of Lithuanian independence in September 1991. Post-independence Lithuania transitioned to democracy and market economy, joined NATO and the EU in 2004, adopted the euro in 2015, and became a vocal advocate for democratic values and critic of Russian aggression.",
+			"keyEvents": [
+				{
+					"year": "1941",
+					"title": "June Deportations",
+					"description": "June 14-18, Soviets deport approximately 17,000 Lithuanians to Siberia just before Nazi invasion"
+				},
+				{
+					"year": "1941-1944",
+					"title": "Nazi Occupation",
+					"description": "German occupation brings Holocaust; over 90% of Lithuania's Jews murdered at sites like Paneriai"
+				},
+				{
+					"year": "1944",
+					"title": "Soviet Reconquest",
+					"description": "Red Army reconquers Lithuania; new wave of Soviet occupation begins"
+				},
+				{
+					"year": "1944-1953",
+					"title": "Partisan War",
+					"description": "Forest Brothers wage guerrilla resistance against Soviet occupation; approximately 20,000 partisans killed"
+				},
+				{
+					"year": "1945-1952",
+					"title": "Mass Deportations",
+					"description": "Soviets deport approximately 130,000 Lithuanians to Siberian gulags and special settlements"
+				},
+				{
+					"year": "1972",
+					"title": "Romas Kalanta's Self-Immolation",
+					"description": "May 14, young man self-immolates protesting Soviet occupation, sparking riots in Kaunas"
+				},
+				{
+					"year": "1987",
+					"title": "Freedom League Rally",
+					"description": "August 23, first large public demonstration against Soviet rule in Vilnius"
+				},
+				{
+					"year": "1988",
+					"title": "Sąjūdis Founded",
+					"description": "Reform Movement (Sąjūdis) established, becoming main independence organization"
+				},
+				{
+					"year": "1989",
+					"title": "Baltic Way",
+					"description": "August 23, two million people form 600km human chain across Baltic states protesting Soviet occupation"
+				},
+				{
+					"year": "1990",
+					"title": "Independence Declared",
+					"description": "March 11, Supreme Council declares restoration of independence, first Soviet republic to do so"
+				},
+				{
+					"year": "1991",
+					"title": "January 13th Events",
+					"description": "January 13, Soviet troops storm TV Tower and Parliament, killing 14 civilians defending independence"
+				},
+				{
+					"year": "1991",
+					"title": "International Recognition",
+					"description": "September, after failed Moscow coup, Soviet Union and international community recognize Lithuanian independence"
+				},
+				{
+					"year": "1991",
+					"title": "Last Soviet Troops Leave",
+					"description": "August 31, final Soviet military units depart Lithuania"
+				},
+				{
+					"year": "1993",
+					"title": "Last Russian Troops Leave",
+					"description": "Russian Federation completes withdrawal of all military forces from Lithuania"
+				},
+				{
+					"year": "2004",
+					"title": "NATO and EU Membership",
+					"description": "March 29, joins NATO; May 1, joins European Union, integrating with Western institutions"
+				},
+				{
+					"year": "2009",
+					"title": "Millennial Anniversary",
+					"description": "Lithuania celebrates 1000 years since first mention in historical records"
+				},
+				{
+					"year": "2015",
+					"title": "Euro Adopted",
+					"description": "January 1, Lithuania adopts euro as official currency, last Baltic state to do so"
+				}
+			],
+			"notableFigures": [
+				"Juozas Lukša (partisan leader)",
+				"Jonas Žemaitis (partisan commander)",
+				"Vytautas Landsbergis (independence leader, first post-Soviet head of state)",
+				"Valdas Adamkus (President 1998-2003, 2004-2009)",
+				"Dalia Grybauskaitė (President 2009-2019)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 10,000 BCE",
+				"era": "Ancient",
+				"title": "First Settlement",
+				"description": "Baltic peoples settle region after Ice Age, developing distinct Baltic culture"
+			},
+			{
+				"year": "1009",
+				"era": "Ancient",
+				"title": "First Written Mention",
+				"description": "Lithuania appears in historical chronicles for first time"
+			},
+			{
+				"year": "1253",
+				"era": "Medieval",
+				"title": "Kingdom Established",
+				"description": "Mindaugas crowned first and only King of Lithuania"
+			},
+			{
+				"year": "1323",
+				"era": "Medieval",
+				"title": "Vilnius Founded",
+				"description": "Gediminas establishes Vilnius as capital of expanding Grand Duchy"
+			},
+			{
+				"year": "1387",
+				"era": "Medieval",
+				"title": "Christianization",
+				"description": "Lithuania officially converts to Christianity, last pagan nation in Europe"
+			},
+			{
+				"year": "1410",
+				"era": "Medieval",
+				"title": "Battle of Grunwald",
+				"description": "Lithuanian-Polish victory over Teutonic Knights ends crusader expansion"
+			},
+			{
+				"year": "1569",
+				"era": "Imperial",
+				"title": "Commonwealth Created",
+				"description": "Union of Lublin establishes Polish-Lithuanian Commonwealth"
+			},
+			{
+				"year": "1795",
+				"era": "Imperial",
+				"title": "Partitions End Commonwealth",
+				"description": "Third Partition erases Lithuania from map; Russian Empire takes control"
+			},
+			{
+				"year": "1864-1904",
+				"era": "Independence",
+				"title": "Lithuanian Press Ban",
+				"description": "40-year ban on Lithuanian publications strengthens national identity"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "First Independence",
+				"description": "Lithuania declares independence as democratic republic"
+			},
+			{
+				"year": "1940",
+				"era": "Modern",
+				"title": "Soviet Occupation",
+				"description": "Soviet Union occupies and annexes Lithuania, ending first independence"
+			},
+			{
+				"year": "1944-1953",
+				"era": "Modern",
+				"title": "Partisan Resistance",
+				"description": "Forest Brothers wage armed resistance against Soviet occupation"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Baltic Way",
+				"description": "Two million people form human chain across Baltic states"
+			},
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Independence Restored",
+				"description": "March 11, first Soviet republic to declare independence"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Independence Recognized",
+				"description": "Soviet Union recognizes Lithuanian independence after failed coup"
+			},
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "Western Integration",
+				"description": "Lithuania joins NATO and European Union"
 			}
 		]
 	}

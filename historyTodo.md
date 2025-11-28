@@ -69,7 +69,7 @@
   - [ ] Kosovo
   - [ ] Latvia
   - [ ] Liechtenstein
-  - [ ] Lithuania
+  - [x] Lithuania
   - [x] Luxembourg
   - [ ] Malta
   - [x] Moldova
@@ -83,7 +83,7 @@
   - [x] Romania
   - [x] Russia
   - [ ] San Marino
-  - [ ] Serbia
+  - [x] Serbia
   - [ ] Slovakia
   - [ ] Slovenia
   - [x] Spain
