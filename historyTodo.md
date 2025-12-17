@@ -99,7 +99,7 @@
   - [ ] Guernsey
 
 - [ ] AFRICA
-  - [ ] Algeria
+  - [x] Algeria
   - [ ] Angola
   - [ ] Benin
   - [ ] Botswana
@@ -133,7 +133,7 @@
   - [ ] Mali
   - [ ] Mauritania
   - [ ] Mauritius
-  - [ ] Morocco
+  - [x] Morocco
   - [ ] Mozambique
   - [ ] Namibia
   - [ ] Niger

@@ -20880,5 +20880,410 @@
 				"description": "Lithuania joins NATO and European Union"
 			}
 		]
+	},
+	{
+		"name": "Morocco",
+		"overview": "Morocco's history is defined by its unique status as the only North African nation to remain largely independent of the Ottoman Empire, fostering a distinct identity rooted in Berber (Amazigh) tradition and Islamic scholarship. Known as 'Al-Maghrib al-Aqsa' (The Farthest West), it has been ruled by a succession of powerful dynasties—from the Idrisids who founded Fez to the Almoravids and Almohads who ruled empires stretching to Spain. Its strategic location has made it a bridge between Europe, Africa, and the Middle East. Unlike its neighbors, Morocco maintained its sovereignty for centuries before a relatively brief but impactful French and Spanish protectorate. Today, it remains a kingdom that balances deep-rooted traditions with modern development, influencing regional politics through its spiritual diplomacy and economic ambition.",
+		"source": {
+			"label": "Wikipedia - History of Morocco",
+			"url": "https://en.wikipedia.org/wiki/History_of_Morocco",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Morocco",
+				"https://www.britannica.com/place/Morocco",
+				"https://www.kingdomofmorocco.ma/en/history"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "March 2, 1956"
+			},
+			{
+				"label": "Current Dynasty",
+				"value": "Alaouite (since 1666)"
+			},
+			{
+				"label": "Capital",
+				"value": "Rabat"
+			},
+			{
+				"label": "Oldest University",
+				"value": "Al-Qarawiyyin (founded 859)"
+			},
+			{
+				"label": "Indigenous Name",
+				"value": "Al-Maghrib (The West)"
+			},
+			{
+				"label": "Geography",
+				"value": "Atlas Mountains & Sahara"
+			}
+		],
+		"ancient": {
+			"period": "c. 1000 BCE - 700 CE",
+			"description": "Morocco's ancient history is dominated by the indigenous Berber (Amazigh) peoples, who have inhabited the region for millennia. Early contact with Phoenician traders led to the establishment of coastal outposts like Lixus and Mogador. By the 4th century BCE, the Kingdom of Mauretania emerged as a significant Berber state. It was gradually absorbed into the Roman Empire, becoming the province of Mauretania Tingitana around 44 CE. Volubilis flourished as a major Roman city, producing olive oil and grain for the empire. However, Roman control was largely limited to the coast and plains, while independent Berber tribes controlled the mountainous interior. As Rome declined, the region saw brief incursions by the Vandals and Byzantines, but effectively returned to local Berber rule before the arrival of Islam.",
+			"keyEvents": [
+				{
+					"year": "c. 1100 BCE",
+					"title": "Phoenician Settlements",
+					"description": "Phoenicians establish trading posts at Lixus, Chellah, and Mogador"
+				},
+				{
+					"year": "c. 40 CE",
+					"title": "Roman Annexation",
+					"description": "Emperor Claudius annexes the Kingdom of Mauretania; Volubilis expands as a provincial capital"
+				},
+				{
+					"year": "285 CE",
+					"title": "Roman Withdrawal",
+					"description": "Rome withdraws administrative control to the coast (Tangier), leaving the interior to local Berber tribes"
+				}
+			],
+			"notableFigures": ["Juba II (King of Mauretania)", "Ptolemy of Mauretania", "Tacfarinas (Berber rebel leader)"]
+		},
+		"medieval": {
+			"period": "789 - 1549",
+			"description": "The medieval era marked Morocco's Golden Age as an imperial power. Following the Islamic conquest, Idris I founded the Idrisid dynasty in 789, establishing Fez as a center of spirituality and learning. The rise of the Berber dynasties—the Almoravids and Almohads—transformed Morocco into the center of a vast empire encompassing the Maghreb and Al-Andalus (Muslim Spain). The Almoravids founded Marrakesh in 1062, while the Almohads built monumental architecture like the Koutoubia Mosque. The subsequent Marinid dynasty focused on intellectual refinement, building madrasas and establishing the necropolis of Chellah. This era solidified Morocco's Maliki Islamic identity and its distinct architectural style, blending Andalusian and Maghrebi influences.",
+			"keyEvents": [
+				{
+					"year": "789",
+					"title": "Idrisid Dynasty Founded",
+					"description": "Idris I establishes the first major Islamic dynasty in Morocco, laying the foundations for the city of Fez"
+				},
+				{
+					"year": "859",
+					"title": "University of Al-Qarawiyyin",
+					"description": "Fatima al-Fihriya founds the world's oldest degree-granting university in Fez"
+				},
+				{
+					"year": "1062",
+					"title": "Marrakesh Founded",
+					"description": "The Almoravids establish Marrakesh as their imperial capital"
+				},
+				{
+					"year": "1147-1269",
+					"title": "Almohad Caliphate",
+					"description": "The Almohad dynasty unifies North Africa and Islamic Spain, overseeing a cultural and architectural zenith"
+				}
+			],
+			"notableFigures": ["Idris I", "Yusuf ibn Tashfin", "Ibn Tumart", "Yaqub al-Mansur"]
+		},
+		"imperial": {
+			"period": "1549 - 1912",
+			"description": "While the rest of North Africa fell to the Ottoman Empire, Morocco successfully resisted, maintaining its independence under the Saadi and later the Alaouite dynasties. The Saadians rose to power by expelling the Portuguese from coastal enclaves and famously defeating a Portuguese crusade at the Battle of the Three Kings in 1578. This victory paved the way for the invasion of the Songhai Empire in sub-Saharan Africa, securing control over trans-Saharan gold routes. The current ruling family, the Alaouite dynasty, seized power in 1666. Sultan Moulay Ismail consolidated the state with a professional army and grand construction projects in Meknes. By the 19th century, however, Morocco faced increasing European pressure, leading to the 'Great Game' of diplomacy where sultans tried to play rival European powers against one another to preserve sovereignty.",
+			"keyEvents": [
+				{
+					"year": "1578",
+					"title": "Battle of Three Kings",
+					"description": "Decisive Moroccan victory over Portugal; the Portuguese king and two Moroccan sultans die in battle, asserting Moroccan strength"
+				},
+				{
+					"year": "1666",
+					"title": "Alaouite Dynasty Begins",
+					"description": "Moulay al-Rashid captures Fez, establishing the dynasty that still rules Morocco today"
+				},
+				{
+					"year": "1672-1727",
+					"title": "Reign of Moulay Ismail",
+					"description": "Iron-fisted ruler who built Meknes and created the 'Black Guard' army, successfully holding off Ottoman advances"
+				},
+				{
+					"year": "1777",
+					"title": "Recognition of USA",
+					"description": "Morocco becomes the first country to formally recognize the independent United States"
+				}
+			],
+			"notableFigures": ["Ahmad al-Mansur (The Golden)", "Moulay Ismail", "Sultan Hassan I"]
+		},
+		"colonial": {
+			"period": "1912 - 1956",
+			"description": "Morocco's independence was suspended in 1912 with the Treaty of Fez, which established a French Protectorate over the majority of the country and a Spanish Protectorate in the north and south. Unlike Algeria, Morocco remained a sovereign state in theory, with the Sultan retaining his throne and religious authority, though real power lay with the French Resident-General, Hubert Lyautey. Lyautey modernized the country's infrastructure and built 'Villes Nouvelles' (new cities) while preserving traditional medinas. However, resistance was fierce. In the Rif mountains, Abd el-Krim el-Khattabi led a legendary guerrilla war (1921-1926) that humiliated Spanish forces before being crushed by a joint French-Spanish coalition. The nationalist movement grew after WWII, culminating in the French exile of the popular Sultan Mohammed V in 1953, which backfired by uniting the nation and hastening independence.",
+			"keyEvents": [
+				{
+					"year": "1912",
+					"title": "Treaty of Fez",
+					"description": "Sultan Abdelhafid signs away sovereignty, establishing the French Protectorate; riots erupt in Fez"
+				},
+				{
+					"year": "1921-1926",
+					"title": "Rif War",
+					"description": "Abd el-Krim establishes the Republic of the Rif and defeats Spanish forces at Anval before French intervention"
+				},
+				{
+					"year": "1944",
+					"title": "Manifesto of Independence",
+					"description": "The Istiqlal Party demands full independence, with the tacit support of the Sultan"
+				},
+				{
+					"year": "1953",
+					"title": "Exile of the Sultan",
+					"description": "France exiles Mohammed V to Madagascar, sparking the 'Revolution of the King and the People'"
+				}
+			],
+			"notableFigures": ["Hubert Lyautey", "Abd el-Krim el-Khattabi", "Allal al-Fassi", "Mohammed V"]
+		},
+		"independence": {
+			"period": "1956 - Present",
+			"description": "Morocco regained independence in 1956. King Mohammed V became a national hero but faced the challenge of unifying a fragmented country. Upon his death in 1961, his son Hassan II ascended the throne. Hassan II's reign (1961-1999) was marked by the 'Years of Lead,' a period of political repression, two failed coup attempts, and the consolidation of absolute monarchy. However, he also skillfully managed foreign relations, acting as a broker in Middle East peace talks. A defining moment was the 1975 Green March, where 350,000 unarmed Moroccans marched into the Spanish Sahara to claim it as Moroccan territory, sparking the ongoing Western Sahara conflict. In 1999, Mohammed VI succeeded his father, initiating social and economic reforms, including a groundbreaking family code (Mudawana) enhancing women's rights and major infrastructure projects like the TGV (high-speed train) and Tanger-Med port.",
+			"keyEvents": [
+				{
+					"year": "1956",
+					"title": "Independence",
+					"description": "France and Spain recognize Moroccan independence; the Sultanate becomes a Kingdom in 1957"
+				},
+				{
+					"year": "1975",
+					"title": "The Green March",
+					"description": "Mass civilian march into Western Sahara to assert Moroccan sovereignty"
+				},
+				{
+					"year": "1999",
+					"title": "Succession of Mohammed VI",
+					"description": "Hassan II dies; Mohammed VI ascends, promising modernization and human rights reforms"
+				},
+				{
+					"year": "2011",
+					"title": "Constitutional Reform",
+					"description": "In response to Arab Spring protests, a new constitution is adopted, granting more power to the prime minister"
+				}
+			],
+			"notableFigures": ["Hassan II", "Mohammed VI", "Mehdi Ben Barka"]
+		},
+		"timeline": [
+			{
+				"year": "789",
+				"era": "Medieval",
+				"title": "Founding of Fez",
+				"description": "Idris I establishes the Idrisid dynasty and the city of Fez"
+			},
+			{
+				"year": "1062",
+				"era": "Medieval",
+				"title": "Rise of Almoravids",
+				"description": "Foundation of Marrakesh and unification of the Maghreb"
+			},
+			{
+				"year": "1578",
+				"era": "Imperial",
+				"title": "Battle of Three Kings",
+				"description": "Morocco defeats Portugal, preserving independence during the colonial era"
+			},
+			{
+				"year": "1666",
+				"era": "Imperial",
+				"title": "Alaouite Dynasty",
+				"description": "Current ruling family takes power"
+			},
+			{
+				"year": "1912",
+				"era": "Colonial",
+				"title": "Protectorate Established",
+				"description": "Treaty of Fez divides Morocco into French and Spanish zones"
+			},
+			{
+				"year": "1956",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "End of French and Spanish rule"
+			},
+			{
+				"year": "1975",
+				"era": "Independence",
+				"title": "Green March",
+				"description": "Morocco asserts claim over Western Sahara"
+			}
+		]
+	},
+	{
+		"name": "Algeria",
+		"overview": "Algeria, the largest country in Africa, possesses a history forged in resistance and revolution. From the ancient Berber Kingdom of Numidia to the breadbasket of the Roman Empire, the land has always been pivotal. It became a formidable naval power under the Ottoman Regency of Algiers, dominating the Mediterranean for three centuries. However, it is most defined by its traumatic 132-year colonization by France, which considered Algeria an integral part of its territory rather than a simple colony. This culminated in one of the 20th century's most brutal wars of independence (1954-1962). Modern Algeria has grappled with the legacy of this conflict, a socialist industrial drive, a devastating civil war in the 1990s, and a recent popular movement (Hirak) seeking democratic renewal.",
+		"source": {
+			"label": "Wikipedia - History of Algeria",
+			"url": "https://en.wikipedia.org/wiki/History_of_Algeria",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Algeria",
+				"https://www.britannica.com/place/Algeria",
+				"https://www.mfa.gov.dz/discover-algeria/history-of-algeria"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "July 5, 1962"
+			},
+			{
+				"label": "Capital",
+				"value": "Algiers"
+			},
+			{
+				"label": "Land Area",
+				"value": "Largest in Africa"
+			},
+			{
+				"label": "Revolution Day",
+				"value": "November 1 (1954)"
+			},
+			{
+				"label": "Ancient Name",
+				"value": "Numidia"
+			},
+			{
+				"label": "Major Resource",
+				"value": "Oil and Natural Gas"
+			}
+		],
+		"ancient": {
+			"period": "c. 202 BCE - 647 CE",
+			"description": "Ancient Algeria was the heartland of the Numidians, a Berber people who established powerful kingdoms. The most famous ruler, Masinissa, unified Numidia and allied with Rome against Carthage, famously declaring 'Africa for the Africans.' His grandson Jugurtha later fought a protracted war against Rome. Following annexation, the region became a prosperous Roman province known as the 'granary of the empire,' supplying vast quantities of wheat. It was a center of early Christianity, producing Saint Augustine of Hippo, one of Western philosophy's most influential figures. As Roman power waned, the Vandals invaded in 429 CE, followed by a Byzantine reconquest that held only tenuous control over the coast while Berber principalities ruled the mountains.",
+			"keyEvents": [
+				{
+					"year": "202 BCE",
+					"title": "Unification of Numidia",
+					"description": "King Masinissa unifies Berber tribes and allies with Rome to defeat Carthage at the Battle of Zama"
+				},
+				{
+					"year": "112-105 BCE",
+					"title": "Jugurthine War",
+					"description": "King Jugurtha fights a skillful war against the Roman Republic before his capture"
+				},
+				{
+					"year": "430 CE",
+					"title": "Death of St. Augustine",
+					"description": "Augustine dies in Hippo Regius (modern Annaba) while the city is besieged by Vandals"
+				}
+			],
+			"notableFigures": ["Masinissa", "Jugurtha", "Saint Augustine", "Kahina (Berber warrior queen)"]
+		},
+		"pre-colonial": {
+			"period": "1516 - 1830",
+			"description": "Facing Spanish aggression on the coast, the local population invited the privateer brothers Oruç and Hayreddin Barbarossa for protection in 1516. This established the Regency of Algiers, an autonomous province of the Ottoman Empire. Algiers became a heavily fortified city and a major Mediterranean naval power. The 'Barbary Corsairs' operating from Algiers dominated shipping lanes, engaging in state-sanctioned privateering that enriched the city and led to conflicts with European powers and the young United States. The Regency was ruled by Deys, who were elected by the Janissaries and local guilds. Despite its naval reputation, the interior was governed through a complex system of alliances with local tribes. This era gave Algeria its modern boundaries and cemented Algiers as the political center.",
+			"keyEvents": [
+				{
+					"year": "1516",
+					"title": "Barbarossa Brothers Arrive",
+					"description": "Algiers accepts Ottoman protection to ward off Spanish invasion; Hayreddin Barbarossa builds the harbor"
+				},
+				{
+					"year": "1541",
+					"title": "Disaster of Algiers",
+					"description": "A massive armada led by Emperor Charles V fails to capture Algiers due to storms and fierce resistance"
+				},
+				{
+					"year": "1671",
+					"title": "Rule of the Deys",
+					"description": "The Janissaries revolt, establishing the Dey as the locally elected ruler, increasing autonomy from Constantinople"
+				}
+			],
+			"notableFigures": ["Hayreddin Barbarossa", "Rais Hamidou", "Hussein Dey"]
+		},
+		"colonial": {
+			"period": "1830 - 1962",
+			"description": "The French invasion of 1830, triggered by a diplomatic incident (the Fan Affair), launched a 132-year occupation that fundamentally altered Algerian society. Unlike other colonies, Algeria was annexed as part of France in 1848. European settlers, known as 'Pieds-Noirs,' seized the best land, while indigenous Algerians were subjected to the 'Code de l'Indigénat' and treated as second-class subjects. Resistance was immediate and long-lasting, most notably led by Emir Abdelkader, who built a state in the west before his defeat. The struggle for independence exploded on November 1, 1954, led by the National Liberation Front (FLN). The Algerian War was a brutal conflict involving guerrilla warfare, terrorism, and torture, traumatizing both nations. It ended with the Evian Accords and the exodus of nearly one million Pieds-Noirs.",
+			"keyEvents": [
+				{
+					"year": "1830",
+					"title": "French Invasion",
+					"description": "French troops land at Sidi Fredj; Hussein Dey surrenders Algiers"
+				},
+				{
+					"year": "1832-1847",
+					"title": "Resistance of Abdelkader",
+					"description": "Emir Abdelkader leads a unified resistance, creating a precursor to the modern Algerian state"
+				},
+				{
+					"year": "1945",
+					"title": "Sétif Massacre",
+					"description": "May 8 victory celebrations turn into protests; French repression kills thousands, radicalizing the nationalist movement"
+				},
+				{
+					"year": "1954",
+					"title": "War of Independence Begins",
+					"description": "November 1, the FLN launches coordinated attacks, marking the start of the revolution"
+				},
+				{
+					"year": "1957",
+					"title": "Battle of Algiers",
+					"description": "Urban guerrilla warfare in the Casbah and brutal French counter-insurgency tactics draw international attention"
+				}
+			],
+			"notableFigures": ["Emir Abdelkader", "Lalla Fatma N'Soumer", "Messali Hadj", "Frantz Fanon"]
+		},
+		"modern": {
+			"period": "1962 - Present",
+			"description": "Upon independence in 1962, Ahmed Ben Bella became the first president, but was overthrown in 1965 by Houari Boumédiène. Boumédiène nationalized the oil industry and pursued state-led socialist industrialization, making Algeria a leader in the Non-Aligned Movement. Following the 1988 'Black October' riots, the country opened up to multi-party democracy. However, the imminent victory of the Islamist FIS party in 1991 elections led the military to cancel the results, triggering a devastating Civil War (the 'Black Decade') that killed up to 200,000 people. Peace was gradually restored under Abdelaziz Bouteflika (elected 1999), though his rule became increasingly stagnant and corrupt. In 2019, the massive, peaceful 'Hirak' protests forced Bouteflika's resignation, ushering in a new era of cautious political transition.",
+			"keyEvents": [
+				{
+					"year": "1962",
+					"title": "Independence",
+					"description": "July 5, Algeria gains full independence; Ahmed Ben Bella becomes first president"
+				},
+				{
+					"year": "1965",
+					"title": "Boumédiène Era",
+					"description": "Houari Boumédiène seizes power, focusing on industrialization and international diplomacy"
+				},
+				{
+					"year": "1991-2002",
+					"title": "The Black Decade",
+					"description": "Civil war between the state and Islamist insurgents devastates the country"
+				},
+				{
+					"year": "2019",
+					"title": "Hirak Movement",
+					"description": "Massive peaceful protests force President Bouteflika to resign after 20 years in power"
+				}
+			],
+			"notableFigures": ["Houari Boumédiène", "Chadli Bendjedid", "Abdelaziz Bouteflika"]
+		},
+		"timeline": [
+			{
+				"year": "c. 202 BCE",
+				"era": "Ancient",
+				"title": "Kingdom of Numidia",
+				"description": "Masinissa unifies the Berber tribes into a powerful kingdom"
+			},
+			{
+				"year": "1516",
+				"era": "Pre-Colonial",
+				"title": "Regency of Algiers",
+				"description": "Establishment of the Ottoman Regency and rise of the Corsair state"
+			},
+			{
+				"year": "1830",
+				"era": "Colonial",
+				"title": "French Conquest",
+				"description": "France invades Algiers, beginning 132 years of colonization"
+			},
+			{
+				"year": "1847",
+				"era": "Colonial",
+				"title": "Abdelkader Defeated",
+				"description": "End of the major organized resistance to French expansion in the west"
+			},
+			{
+				"year": "1954",
+				"era": "Independence",
+				"title": "Revolution Starts",
+				"description": "The FLN launches the War of Independence on November 1"
+			},
+			{
+				"year": "1962",
+				"era": "Independence",
+				"title": "Independence Achieved",
+				"description": "Algeria becomes a sovereign nation on July 5"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Civil War Begins",
+				"description": "Cancellation of elections triggers a decade of internal conflict"
+			},
+			{
+				"year": "2019",
+				"era": "Modern",
+				"title": "Hirak Protests",
+				"description": "Popular movement leads to political changes"
+			}
+		]
 	}
 ]
