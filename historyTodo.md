@@ -127,7 +127,7 @@
   - [ ] Kenya
   - [ ] Lesotho
   - [ ] Liberia
-  - [ ] Libya
+  - [x] Libya
   - [ ] Madagascar
   - [ ] Malawi
   - [ ] Mali
@@ -152,7 +152,7 @@
   - [ ] Tunisia
   - [ ] Uganda
   - [ ] Zambia
-  - [ ] Zimbabwe
+  - [x] Zimbabwe
   - [ ] Western Sahara
 
 - [ ] ASIA

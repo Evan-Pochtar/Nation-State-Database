@@ -21285,5 +21285,470 @@
 				"description": "Popular movement leads to political changes"
 			}
 		]
+	},
+	{
+		"name": "Libya",
+		"overview": "Libya's history is a tapestry woven from the interactions of Berber indigenous peoples with Phoenician, Greek, Roman, Arab, Ottoman, and Italian civilizations. Strategically located on the Mediterranean, it served as a vital crossroads for trade and conquest. From the impressive ruins of Leptis Magna and Cyrene to the desert fortresses of the Garamantes, Libya's ancient heritage is rich. The region was profoundly transformed by the Arab conquest in the 7th century, establishing a lasting Islamic identity. After centuries of Ottoman rule and a brutal Italian colonial period marked by fierce resistance, Libya emerged as an independent kingdom in 1951. The 1969 coup led by Muammar Gaddafi inaugurated four decades of erratic, authoritarian rule and international isolation, ending in the 2011 revolution. Today, Libya grapples with the challenges of rebuilding a unified state amidst fragmentation and foreign intervention.",
+		"source": {
+			"label": "Wikipedia - History of Libya",
+			"url": "https://en.wikipedia.org/wiki/History_of_Libya",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Libya",
+				"https://www.britannica.com/place/Libya",
+				"https://www.embassyoflibyadc.org/5-2"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "December 24, 1951"
+			},
+			{
+				"label": "Current Capital",
+				"value": "Tripoli"
+			},
+			{
+				"label": "Major Ancient Sites",
+				"value": "Leptis Magna, Cyrene, Sabratha"
+			},
+			{
+				"label": "Revolution Day",
+				"value": "February 17 (2011)"
+			},
+			{
+				"label": "Oil Discovery",
+				"value": "1959 (Zeltan field)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From Ancient Egyptian 'Libu' (Berber tribe)"
+			}
+		],
+		"ancient": {
+			"period": "c. 10,000 BCE - 642 CE",
+			"description": "Ancient Libya was a mosaic of indigenous Berber (Amazigh) cultures and powerful foreign colonies. The Garamantes developed a sophisticated civilization in the Fezzan desert (c. 500 BCE - 700 CE), utilizing advanced underground irrigation (foggara) to thrive in the Sahara. On the coast, Phoenicians established trading posts in the west (Tripolitania) around the 7th century BCE, founding Oea (Tripoli), while Greeks colonized the east (Cyrenaica), founding the illustrious city of Cyrene in 631 BCE. This created a lasting cultural divide between east and west. The Romans eventually unified the coast, ushering in a golden age of prosperity. The Emperor Septimius Severus, born in Leptis Magna, lavishly expanded his hometown, leaving behind some of the best-preserved Roman ruins in the world. As Rome declined, the Vandals invaded in the 5th century, followed by a brief Byzantine restoration before the Arab conquest.",
+			"keyEvents": [
+				{
+					"year": "c. 631 BCE",
+					"title": "Founding of Cyrene",
+					"description": "Greeks from Thera found Cyrene, which becomes a center of Hellenic philosophy and the chief city of the Pentapolis"
+				},
+				{
+					"year": "c. 500 BCE",
+					"title": "Garamantian Kingdom",
+					"description": "Rise of the Garamantes in the Fezzan, controlling Trans-Saharan trade routes and building desert cities"
+				},
+				{
+					"year": "146 BCE",
+					"title": "Roman Annexation",
+					"description": "Following the destruction of Carthage, Rome begins consolidating control over Tripolitania"
+				},
+				{
+					"year": "193-211 CE",
+					"title": "Reign of Septimius Severus",
+					"description": "Libyan-born Roman Emperor expands and beautifies Leptis Magna, marking the peak of Roman Libya"
+				},
+				{
+					"year": "455 CE",
+					"title": "Vandal Invasion",
+					"description": "Vandals conquer the coast, disrupting Roman order and trade networks"
+				}
+			],
+			"notableFigures": [
+				"Septimius Severus (Roman Emperor)",
+				"Callimachus (Poet/Scholar of Cyrene)",
+				"Battus I (Founder of Cyrene)"
+			]
+		},
+		"medieval": {
+			"period": "642 - 1911",
+			"description": "The medieval era began with the Arab conquest led by Amr ibn al-Aas in 642 CE, which brought Islam and the Arabic language to the Berber population. Libya was ruled by a succession of caliphates (Umayyad, Abbasid, Fatimid) and local dynasties like the Zirids. The Hilalian migration in the 11th century significantly Arabized the interior. In the 16th century, Spain briefly occupied Tripoli, prompting the Ottoman Empire to intervene. Sinan Pasha conquered Tripoli in 1551, bringing Libya under Ottoman suzerainty. The Karamanli dynasty (1711–1835) achieved virtual independence, building a formidable navy and engaging in corsairing (piracy) that led to the Barbary Wars with the United States. The Ottomans reasserted direct control in 1835, implementing Tanzimat reforms but struggling to exert authority over the Sanusi order in the desert interior, which became a center of religious and anti-colonial resistance.",
+			"keyEvents": [
+				{
+					"year": "642-643",
+					"title": "Arab Conquest",
+					"description": "Amr ibn al-Aas conquers Cyrenaica; Uqba ibn Nafi later expands into the Fezzan, establishing Islamic rule"
+				},
+				{
+					"year": "11th Century",
+					"title": "Banu Hilal Migration",
+					"description": "Massive migration of Arab tribes accelerates the Arabization of the Berber countryside"
+				},
+				{
+					"year": "1551",
+					"title": "Ottoman Conquest",
+					"description": "Ottomans expel the Knights of St. John from Tripoli, establishing the Eyalet of Tripolitania"
+				},
+				{
+					"year": "1711",
+					"title": "Karamanli Dynasty Begins",
+					"description": "Ahmed Karamanli seizes power, establishing a semi-autonomous dynasty that rules for over a century"
+				},
+				{
+					"year": "1801-1805",
+					"title": "First Barbary War",
+					"description": "Conflict between the Karamanli dynasty and the United States over tribute and piracy"
+				},
+				{
+					"year": "1835",
+					"title": "Ottoman Restoration",
+					"description": "Ottoman Empire re-establishes direct rule to counter French expansion in North Africa"
+				}
+			],
+			"notableFigures": ["Amr ibn al-Aas", "Ahmed Karamanli", "Muhammad ibn Ali al-Senussi"]
+		},
+		"colonial": {
+			"period": "1911 - 1951",
+			"description": "Italy invaded Libya in 1911, seeking a 'Fourth Shore' for its empire. The Ottomans withdrew, but Libyan resistance was fierce, particularly in Cyrenaica under the leadership of Omar al-Mukhtar, the 'Lion of the Desert.' The fascist regime of Mussolini intensified the brutal 'Pacification of Libya' (1923-1932), using concentration camps and chemical weapons to crush the Bedouin resistance. By the late 1930s, Italy had integrated the coastal regions and invested in infrastructure, settling thousands of Italians. During World War II, Libya became a major battlefield between Axis and Allied forces (e.g., Siege of Tobruk, El Alamein). Following the Axis defeat in 1943, Libya was placed under British and French military administration until the UN negotiated its independence.",
+			"keyEvents": [
+				{
+					"year": "1911",
+					"title": "Italian Invasion",
+					"description": "Italy declares war on the Ottoman Empire and invades Libya, beginning the colonial era"
+				},
+				{
+					"year": "1923",
+					"title": "Second Italo-Senussi War",
+					"description": "Mussolini launches a brutal campaign to reconquer the interior; fierce resistance led by Omar al-Mukhtar"
+				},
+				{
+					"year": "1931",
+					"title": "Execution of Omar al-Mukhtar",
+					"description": "Captured resistance leader Omar al-Mukhtar is hanged by Italian authorities, ending organized military resistance"
+				},
+				{
+					"year": "1934",
+					"title": "Unification",
+					"description": "Italy administratively unites Tripolitania, Cyrenaica, and Fezzan as 'Libya'"
+				},
+				{
+					"year": "1940-1943",
+					"title": "North African Campaign",
+					"description": "Libya serves as a primary theater of WWII; battles of Tobruk and Gazala; Axis forces expelled in 1943"
+				}
+			],
+			"notableFigures": ["Omar al-Mukhtar", "Rodolfo Graziani (Italian General)", "Benito Mussolini"]
+		},
+		"modern": {
+			"period": "1951 - Present",
+			"description": "Libya became the first African nation to gain independence through the UN in 1951, established as a federal kingdom under King Idris I. The discovery of vast oil reserves in 1959 transformed the impoverished nation into a wealthy rentier state. In 1969, a group of officers led by 27-year-old Muammar Gaddafi overthrew the monarchy. Gaddafi established the 'Jamahiriya' (State of the Masses), a unique socialist-Islamic system described in his 'Green Book.' His regime was characterized by pan-Arab and pan-African ambitions, support for militant groups, and conflict with the West (including US airstrikes in 1986). In 2011, inspired by the Arab Spring, Libyans rose up; NATO intervention helped rebels overthrow and kill Gaddafi. Post-revolutionary Libya fractured, descending into a second civil war (2014-2020) between rival governments in Tripoli and Tobruk. A ceasefire in 2020 led to a fragile unity government, though political divisions remain deep.",
+			"keyEvents": [
+				{
+					"year": "1951",
+					"title": "Independence",
+					"description": "The United Kingdom of Libya is proclaimed with Idris I as King"
+				},
+				{
+					"year": "1969",
+					"title": "Al-Fateh Revolution",
+					"description": "Muammar Gaddafi leads a bloodless coup, abolishing the monarchy and establishing the Libyan Arab Republic"
+				},
+				{
+					"year": "1977",
+					"title": "Jamahiriya Established",
+					"description": "Gaddafi declares the 'State of the Masses' and imposes the ideology of the Green Book"
+				},
+				{
+					"year": "1986",
+					"title": "US Bombing",
+					"description": "Operation El Dorado Canyon strikes Libyan targets in retaliation for alleged terrorist sponsorship"
+				},
+				{
+					"year": "2011",
+					"title": "Libyan Revolution",
+					"description": "Uprising against Gaddafi's 42-year rule turns into civil war with NATO support; Gaddafi captured and killed in Sirte"
+				},
+				{
+					"year": "2012",
+					"title": "Attack on Benghazi Consulate",
+					"description": "US Ambassador Christopher Stevens killed in attack on diplomatic compound"
+				},
+				{
+					"year": "2014-2020",
+					"title": "Second Civil War",
+					"description": "Conflict between the GNA (Tripoli) and LNA (Haftar/Tobruk) divides the country"
+				},
+				{
+					"year": "2021",
+					"title": "Government of National Unity",
+					"description": "Interim unity government formed to prepare for national elections, though instability persists"
+				}
+			],
+			"notableFigures": ["King Idris I", "Muammar Gaddafi", "Khalifa Haftar", "Mustafa Abdul Jalil"]
+		},
+		"timeline": [
+			{
+				"year": "631 BCE",
+				"era": "Ancient",
+				"title": "Cyrene Founded",
+				"description": "Greek colonists establish the city of Cyrene"
+			},
+			{
+				"year": "146 BCE",
+				"era": "Ancient",
+				"title": "Roman Rule Begins",
+				"description": "Tripolitania comes under Roman influence after Carthage's fall"
+			},
+			{
+				"year": "642",
+				"era": "Medieval",
+				"title": "Islamic Conquest",
+				"description": "Arab armies bring Islam to the region"
+			},
+			{
+				"year": "1551",
+				"era": "Medieval",
+				"title": "Ottoman Control",
+				"description": "Libya becomes part of the Ottoman Empire"
+			},
+			{
+				"year": "1911",
+				"era": "Colonial",
+				"title": "Italian Invasion",
+				"description": "Italy invades and colonizes the coastal regions"
+			},
+			{
+				"year": "1931",
+				"era": "Colonial",
+				"title": "Mukhtar Executed",
+				"description": "Resistance leader Omar al-Mukhtar is hanged"
+			},
+			{
+				"year": "1951",
+				"era": "Independence",
+				"title": "Kingdom Established",
+				"description": "Libya gains independence under King Idris"
+			},
+			{
+				"year": "1969",
+				"era": "Modern",
+				"title": "Gaddafi Coup",
+				"description": "Military coup overthrows the monarchy"
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Revolution",
+				"description": "Gaddafi regime toppled; Civil War begins"
+			}
+		]
+	},
+	{
+		"name": "Zimbabwe",
+		"overview": "Zimbabwe's history is anchored by the legacy of the great stone civilizations that ruled the plateau for centuries, most notably Great Zimbabwe, the capital of a wealthy trading empire. The Shona states of Mutapa and Rozvi succeeded it, dominating the region until the turmoil of the 19th-century Mfecane brought the Ndebele people. British colonization in 1890, driven by Cecil Rhodes' British South Africa Company, created 'Southern Rhodesia,' a settler state marked by land dispossession and racial segregation. A Unilateral Declaration of Independence (UDI) by the white minority in 1965 sparked a bitter 15-year liberation war (Chimurenga). Independence in 1980 brought Robert Mugabe to power, whose rule began with promise in education and health but descended into authoritarianism, economic collapse, and controversial land reforms. The post-Mugabe era since 2017 has struggled to stabilize the economy and political landscape.",
+		"source": {
+			"label": "Wikipedia - History of Zimbabwe",
+			"url": "https://en.wikipedia.org/wiki/History_of_Zimbabwe",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Zimbabwe",
+				"https://www.sahistory.org.za/place/zimbabwe",
+				"https://www.britannica.com/place/Zimbabwe"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Recognized",
+				"value": "April 18, 1980"
+			},
+			{
+				"label": "Capital",
+				"value": "Harare (formerly Salisbury)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Shona 'Dzimba-dza-mabwe' (Houses of Stone)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "5 World Heritage Sites (incl. Great Zimbabwe)"
+			},
+			{
+				"label": "Major Languages",
+				"value": "English, Shona, Ndebele (16 official)"
+			},
+			{
+				"label": "Former Names",
+				"value": "Southern Rhodesia, Rhodesia, Zimbabwe Rhodesia"
+			}
+		],
+		"ancient": {
+			"period": "c. 100,000 BCE - 1000 CE",
+			"description": "The earliest inhabitants were San hunter-gatherers, who left behind an extensive legacy of rock art in the Matobo Hills. Around 2,000 years ago, Bantu-speaking peoples migrated into the region, bringing iron-working, agriculture, and cattle herding (the Gokomere culture). These early farming communities established the foundations for complex societies. By the 10th century, trade links with the Indian Ocean coast began to develop, facilitating the rise of the first state systems, such as the Kingdom of Mapungubwe (c. 1075–1220) just south of the Limpopo, which influenced the cultural and architectural traditions that would flourish on the Zimbabwean plateau.",
+			"keyEvents": [
+				{
+					"year": "c. 300 CE",
+					"title": "Bantu Migration",
+					"description": "Arrival of Iron Age Bantu farmers displacing/assimilating San hunter-gatherers"
+				},
+				{
+					"year": "c. 600 CE",
+					"title": "Gokomere Culture",
+					"description": "Establishment of early Iron Age settlements and ceramic traditions"
+				},
+				{
+					"year": "c. 900 CE",
+					"title": "Trade Networks",
+					"description": "Gold and ivory trade begins with Arab and Swahili merchants on the coast"
+				}
+			],
+			"notableFigures": ["Unknown San artists (Rock Art)"]
+		},
+		"medieval": {
+			"period": "c. 1000 - 1890",
+			"description": "This era is defined by the rise of monumental stone-building civilizations. The Kingdom of Zimbabwe (c. 1220–1450) centered at Great Zimbabwe, a massive stone city that housed up to 18,000 people and controlled the gold trade to Sofala. Its decline led to the rise of the Kingdom of Mutapa (c. 1430–1760) in the north, which encountered the Portuguese in the 16th century. The Mutapa rulers (Mwene Mutapa) successfully resisted early Portuguese attempts at conquest but eventually faced internal strife. In the southwest, the Rozvi Empire (1684–1834) emerged, famous for their military prowess and expulsion of the Portuguese from the plateau. The 19th century brought the Mfecane (upheaval) from South Africa; the Ndebele King Mzilikazi arrived in the 1830s, conquering the Rozvi and establishing the Ndebele Kingdom with its capital at Bulawayo, creating a dual Shona-Ndebele demographic that persists today.",
+			"keyEvents": [
+				{
+					"year": "c. 1220-1450",
+					"title": "Great Zimbabwe Era",
+					"description": "Peak of the Kingdom of Zimbabwe; construction of massive dry-stone walls and control of gold trade"
+				},
+				{
+					"year": "c. 1430",
+					"title": "Mutapa Kingdom Founded",
+					"description": "Nyatsimba Mutota establishes the Mutapa state in the north as Great Zimbabwe declines"
+				},
+				{
+					"year": "1684",
+					"title": "Rozvi Empire Rises",
+					"description": "Changamire Dombo defeats the Portuguese and establishes Rozvi dominance"
+				},
+				{
+					"year": "1830s",
+					"title": "Ndebele Arrival",
+					"description": "Mzilikazi leads the Ndebele north, conquering the Rozvi and establishing the Matabeleland kingdom"
+				},
+				{
+					"year": "1888",
+					"title": "Rudd Concession",
+					"description": "King Lobengula signs mining rights over to Cecil Rhodes' agents, tricked by mistranslations"
+				}
+			],
+			"notableFigures": ["Nyatsimba Mutota", "Changamire Dombo", "Mzilikazi", "Lobengula"]
+		},
+		"colonial": {
+			"period": "1890 - 1980",
+			"description": "Colonization began with the arrival of the 'Pioneer Column' in 1890, sent by Cecil Rhodes' British South Africa Company (BSAC). They founded Salisbury (Harare) and suppressed the Ndebele and Shona in the First Chimurenga (1896-1897), where spirit mediums like Nehanda played a key role. The territory became 'Southern Rhodesia,' a self-governing British colony in 1923 committed to white minority rule. Land Apportionment Acts segregated the country, allocating the best farmland to whites. In 1965, Prime Minister Ian Smith issued a Unilateral Declaration of Independence (UDI) to avoid decolonization. This triggered the Second Chimurenga (Bush War), a guerrilla struggle led by ZANU (under Mugabe) and ZAPU (under Nkomo). The war ended with the Lancaster House Agreement in 1979, paving the way for majority rule.",
+			"keyEvents": [
+				{
+					"year": "1890",
+					"title": "Pioneer Column",
+					"description": "BSAC force raises the Union Jack at Fort Salisbury, beginning colonial occupation"
+				},
+				{
+					"year": "1896-1897",
+					"title": "First Chimurenga",
+					"description": "Ndebele and Shona uprisings against BSAC rule; brutally suppressed"
+				},
+				{
+					"year": "1923",
+					"title": "Self-Government",
+					"description": "Southern Rhodesia becomes a self-governing British colony, rejecting union with South Africa"
+				},
+				{
+					"year": "1965",
+					"title": "UDI",
+					"description": "Ian Smith declares independence from Britain to maintain white minority rule"
+				},
+				{
+					"year": "1972-1979",
+					"title": "Bush War",
+					"description": "Intensified guerrilla war between Rhodesian forces and ZANLA/ZIPRA freedom fighters"
+				}
+			],
+			"notableFigures": ["Cecil Rhodes", "Nehanda Charwe", "Ian Smith", "Herbert Chitepo"]
+		},
+		"modern": {
+			"period": "1980 - Present",
+			"description": "Zimbabwe attained independence in 1980, with Robert Mugabe as Prime Minister. Initially hailed for racial reconciliation and social investments, the regime turned repressive. The 'Gukurahundi' massacres (1983-1987) targeted the Ndebele minority and ZAPU supporters, ending with the absorption of ZAPU into ZANU-PF. In 2000, Mugabe launched a 'Fast-Track Land Reform Program,' violently seizing white-owned farms for redistribution; while aiming to redress colonial imbalances, it triggered hyperinflation and economic collapse. The 2008 elections were marred by extreme violence. In November 2017, a military coup ousted Mugabe after 37 years, installing his former deputy Emmerson Mnangagwa. The 'Second Republic' has faced continued challenges with currency instability, corruption, and political polarization.",
+			"keyEvents": [
+				{
+					"year": "1980",
+					"title": "Independence",
+					"description": "Robert Mugabe becomes Prime Minister of the new Republic of Zimbabwe"
+				},
+				{
+					"year": "1983-1987",
+					"title": "Gukurahundi",
+					"description": "North Korean-trained Fifth Brigade massacres roughly 20,000 civilians in Matabeleland"
+				},
+				{
+					"year": "2000",
+					"title": "Land Reform",
+					"description": "Government backs seizure of white-owned farms, leading to agricultural collapse and sanctions"
+				},
+				{
+					"year": "2008",
+					"title": "Hyperinflation Crisis",
+					"description": "Inflation reaches astronomical levels (peaking at 79.6 billion percent month-on-month)"
+				},
+				{
+					"year": "2009",
+					"title": "Unity Government",
+					"description": "Mugabe forced into power-sharing deal with opposition leader Morgan Tsvangirai"
+				},
+				{
+					"year": "2017",
+					"title": "Coup d'état",
+					"description": "Military intervention forces Mugabe's resignation; Emmerson Mnangagwa becomes President"
+				}
+			],
+			"notableFigures": ["Robert Mugabe", "Joshua Nkomo", "Morgan Tsvangirai", "Emmerson Mnangagwa", "Grace Mugabe"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1220",
+				"era": "Medieval",
+				"title": "Great Zimbabwe Rises",
+				"description": "Construction of the capital of the Kingdom of Zimbabwe begins"
+			},
+			{
+				"year": "c. 1430",
+				"era": "Medieval",
+				"title": "Mutapa State",
+				"description": "Nyatsimba Mutota founds the Mutapa Kingdom in the north"
+			},
+			{
+				"year": "1890",
+				"era": "Colonial",
+				"title": "Colonization",
+				"description": "Cecil Rhodes' Pioneer Column occupies Mashonaland"
+			},
+			{
+				"year": "1896",
+				"era": "Colonial",
+				"title": "First Chimurenga",
+				"description": "Major indigenous uprising against colonial rule"
+			},
+			{
+				"year": "1965",
+				"era": "Colonial",
+				"title": "UDI",
+				"description": "Rhodesia unilaterally declares independence"
+			},
+			{
+				"year": "1980",
+				"era": "Independence",
+				"title": "Zimbabwe Born",
+				"description": "Official independence from Britain; Mugabe elected"
+			},
+			{
+				"year": "1987",
+				"era": "Modern",
+				"title": "Unity Accord",
+				"description": "ZANU and ZAPU merge, ending Gukurahundi violence"
+			},
+			{
+				"year": "2000",
+				"era": "Modern",
+				"title": "Fast-Track Land Reform",
+				"description": "Widespread seizure of commercial farms begins"
+			},
+			{
+				"year": "2017",
+				"era": "Modern",
+				"title": "Mugabe Ousted",
+				"description": "Robert Mugabe resigns following military pressure"
+			}
+		]
 	}
 ]
