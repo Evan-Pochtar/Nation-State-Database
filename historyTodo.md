@@ -50,10 +50,10 @@
   - [ ] Belarus
   - [x] Belgium
   - [ ] Bosnia and Herzegovina
-  - [ ] Bulgaria
+  - [x] Bulgaria
   - [ ] Croatia
   - [ ] Cyprus
-  - [ ] Czechia
+  - [x] Czechia
   - [x] Denmark
   - [ ] Estonia
   - [x] Finland
@@ -126,7 +126,7 @@
   - [ ] Guinea-Bissau
   - [ ] Kenya
   - [ ] Lesotho
-  - [ ] Liberia
+  - [x] Liberia
   - [x] Libya
   - [ ] Madagascar
   - [ ] Malawi
@@ -137,7 +137,7 @@
   - [ ] Mozambique
   - [ ] Namibia
   - [ ] Niger
-  - [ ] Nigeria
+  - [x] Nigeria
   - [ ] Rwanda
   - [ ] São Tomé and Príncipe
   - [ ] Senegal
@@ -146,7 +146,7 @@
   - [ ] Somalia
   - [x] South Africa
   - [ ] South Sudan
-  - [ ] Sudan
+  - [x] Sudan
   - [ ] Tanzania
   - [ ] Togo
   - [ ] Tunisia
@@ -156,7 +156,7 @@
   - [ ] Western Sahara
 
 - [ ] ASIA
-  - [ ] Afghanistan
+  - [x] Afghanistan
   - [ ] Bahrain
   - [ ] Bangladesh
   - [ ] Bhutan

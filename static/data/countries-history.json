@@ -21750,5 +21750,1398 @@
 				"description": "Robert Mugabe resigns following military pressure"
 			}
 		]
+	},
+	{
+		"name": "Sudan",
+		"overview": "Sudan's history is a monumental saga of intersecting worlds, serving as the great bridge between the Arab Middle East and Sub-Saharan Africa. dominated by the life-giving Nile. Home to some of antiquity's most powerful civilizations, including the 'Black Pharaohs' of Kush who once ruled Egypt, Sudan has been a crucible of cultures, religions, and empires. From the Christian kingdoms of Nubia to the Islamic Sultanates of Sennar and Darfur, the land has constantly evolved through trade and conquest. Its modern history is defined by a struggle for identity and unity, marred by the legacies of Anglo-Egyptian colonial rule, distinct ethnic divisions, and Africa's longest civil wars. The separation of South Sudan in 2011 and the 2019 revolution against authoritarian rule mark recent chapters in a nation still striving for stability amidst a rich, yet turbulent, heritage.",
+		"source": {
+			"label": "Britannica - History of Sudan",
+			"url": "https://www.britannica.com/place/Sudan",
+			"urls": [
+				"https://www.britannica.com/place/Sudan",
+				"https://en.wikipedia.org/wiki/History_of_Sudan",
+				"https://www.sahistory.org.za/place/sudan"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "January 1, 1956" },
+			{ "label": "Capital", "value": "Khartoum" },
+			{ "label": "Name Origin", "value": "Arabic 'Bilad al-Sudan' (Land of the Blacks)" },
+			{ "label": "Ancient Civilizations", "value": "Kerma, Kush, Meroe" },
+			{ "label": "Major Separation", "value": "South Sudan (July 9, 2011)" },
+			{ "label": "Key River", "value": "Nile (White and Blue confluence)" }
+		],
+		"ancient": {
+			"period": "c. 2500 BCE - 350 CE",
+			"description": "Ancient Sudan, known as Nubia, was the seat of some of Africa's earliest and most powerful civilizations, rivaling and often interacting with Pharaonic Egypt. The Kingdom of Kerma (c. 2500–1500 BCE) established a sophisticated urban center with massive mud-brick architecture (Defuffa). Following Egyptian expansion, the Kingdom of Kush emerged, centered first at Napata and later at Meroe. The Kushite kings of the 25th Dynasty, such as Piye and Taharqa, conquered Egypt and ruled as the 'Black Pharaohs' for nearly a century, intertwining the cultures of the Nile Valley. After retreating to Meroe, the civilization flourished independently for another millennium, developing its own Meroitic script, distinctive steep-sided pyramids, and a renowned iron-smelting industry. This era saw strong queens known as 'Kandakes' (Candaces) leading armies and effectively governing a wealthy trade empire that connected the African interior with the Mediterranean and Red Sea worlds.",
+			"keyEvents": [
+				{
+					"year": "c. 2500 BCE",
+					"title": "Rise of Kerma",
+					"description": "Kerma emerges as a powerful trade center and capital of the first major Nubian kingdom"
+				},
+				{
+					"year": "c. 747 BCE",
+					"title": "25th Dynasty",
+					"description": "Kushite King Piye conquers Egypt, establishing the rule of the Black Pharaohs"
+				},
+				{
+					"year": "c. 590 BCE",
+					"title": "Move to Meroe",
+					"description": "Capital shifts south to Meroe, beginning a golden age of iron production and pyramid building"
+				},
+				{
+					"year": "c. 23 BCE",
+					"title": "Roman Conflict",
+					"description": "Queen Amanirenas leads Kushite armies against Roman Egypt, securing a favorable peace treaty"
+				}
+			],
+			"notableFigures": ["Piye", "Taharqa", "Queen Amanirenas", "Queen Shanakdakheto"]
+		},
+		"medieval": {
+			"period": "c. 350 CE - 1821 CE",
+			"description": "Following the collapse of Meroe, three Christian kingdoms—Nobatia, Makuria, and Alodia—arose along the Nile, thriving for a thousand years with a unique blend of Coptic Christianity and indigenous culture. These kingdoms successfully resisted early Islamic expansion from Egypt, signing the 'Baqt' treaty which maintained peace for centuries. By the 14th and 15th centuries, however, Arab migration and internal decline led to the gradual Islamization of the region. The chaotic interim ended with the rise of the Funj Sultanate (the 'Black Sultanate') in 1504, centered in Sennar, which unified much of central Sudan and promoted Islamic scholarship. Concurrently, the Sultanate of Darfur rose in the west, establishing a complex feudal state. This era solidified the Arab-Islamic identity of northern Sudan while the south remained distinct, setting the stage for future cultural dichotomies.",
+			"keyEvents": [
+				{
+					"year": "c. 580 CE",
+					"title": "Christianization",
+					"description": "The Nubian kingdoms officially adopt Coptic Christianity"
+				},
+				{
+					"year": "652",
+					"title": "The Baqt Treaty",
+					"description": "Treaty between Muslim Egypt and Christian Makuria establishes 600 years of relative peace"
+				},
+				{
+					"year": "1504",
+					"title": "Funj Sultanate",
+					"description": "The 'Black Sultanate' of Sennar is founded, marking the dominance of Islam in central Sudan"
+				},
+				{
+					"year": "c. 1600",
+					"title": "Darfur Sultanate",
+					"description": "Keira dynasty establishes a powerful state in the western region of Darfur"
+				}
+			],
+			"notableFigures": ["King Silko", "Amara Dunqas (Funj founder)", "Sultan Sulayman Solong"]
+		},
+		"colonial": {
+			"period": "1821 - 1956",
+			"description": "Modern Sudan's borders were largely forged through foreign conquest, beginning with the Turco-Egyptian invasion of 1821 ordered by Muhammad Ali Pasha. The 'Turkiyah' regime unified the diverse regions for the first time but was marked by harsh taxation and slave raiding, particularly in the south. Resentment boiled over in 1881 when Muhammad Ahmad declared himself the 'Mahdi' (Guided One), leading a successful religious revolution that expelled the colonizers and killed British General Charles Gordon in Khartoum. The Mahdist State ruled until 1898, when British forces under Lord Kitchener ruthlessly reconquered Sudan at the Battle of Omdurman. To avoid direct annexation, Britain established the Anglo-Egyptian Condominium (1899-1956), effectively ruling Sudan as a colony. The British administration administered the Arab north and African south separately, deepening the rift that would later fuel civil war. As the 'Winds of Change' swept Africa, Sudanese nationalism grew, leading to independence.",
+			"keyEvents": [
+				{
+					"year": "1821",
+					"title": "Turco-Egyptian Conquest",
+					"description": "Forces of Muhammad Ali Pasha invade, beginning the 'Turkiyah' period and unifying the region"
+				},
+				{
+					"year": "1885",
+					"title": "Fall of Khartoum",
+					"description": "Mahdist forces capture Khartoum; General Gordon is killed; Mahdist State established"
+				},
+				{
+					"year": "1898",
+					"title": "Battle of Omdurman",
+					"description": "British forces use Maxim guns to decimate the Mahdist army, ending the Mahdist State"
+				},
+				{
+					"year": "1899",
+					"title": "Condominium Rule",
+					"description": "Anglo-Egyptian Condominium agreement establishes joint (de facto British) rule"
+				},
+				{
+					"year": "1924",
+					"title": "White Flag League",
+					"description": "Early nationalist uprising against British rule, ultimately suppressed"
+				}
+			],
+			"notableFigures": ["Muhammad Ahmad (The Mahdi)", "Charles Gordon", "Lord Kitchener", "Ali Abdel Latif"]
+		},
+		"modern": {
+			"period": "1956 - Present",
+			"description": "Sudan's independence in 1956 was immediately overshadowed by the First Sudanese Civil War (1955-1972) between the north and south, a conflict rooted in the colonial 'Southern Policy' that had isolated the two regions. A brief peace under President Nimeiry failed when Sharia law was imposed in 1983, igniting the Second Sudanese Civil War with the SPLA. In 1989, Omar al-Bashir seized power in an Islamist coup, ruling for 30 years. His regime was characterized by the brutal conflict in Darfur (labeled genocide by the US), international isolation, and the eventual secession of South Sudan in 2011, which cost Sudan its major oil reserves. Economic hardship sparked a massive popular revolution in 2019, leading to Bashir's ouster. A fragile transition to democracy was derailed by a military coup in 2021, followed by a devastating outbreak of war in 2023 between rival military factions (SAF and RSF), creating a massive humanitarian crisis.",
+			"keyEvents": [
+				{
+					"year": "1956",
+					"title": "Independence",
+					"description": "Sudan gains independence from Britain and Egypt; civil war is already underway"
+				},
+				{
+					"year": "1972",
+					"title": "Addis Ababa Agreement",
+					"description": "Ends the First Civil War, granting autonomy to the south"
+				},
+				{
+					"year": "1983",
+					"title": "Second Civil War",
+					"description": "War resumes after Nimeiry imposes Sharia law; John Garang forms the SPLA"
+				},
+				{
+					"year": "1989",
+					"title": "Bashir Coup",
+					"description": "Omar al-Bashir seizes power, establishing an Islamist military dictatorship"
+				},
+				{
+					"year": "2003",
+					"title": "Darfur Conflict",
+					"description": "Rebels in Darfur rise against the government; regime responds with Janjaweed militias"
+				},
+				{
+					"year": "2011",
+					"title": "South Sudan Secedes",
+					"description": "Following a referendum, South Sudan becomes an independent nation"
+				},
+				{
+					"year": "2019",
+					"title": "Sudanese Revolution",
+					"description": "Mass protests lead to the military removing Bashir; transitional government formed"
+				},
+				{
+					"year": "2023",
+					"title": "April 15 Conflict",
+					"description": "War erupts between the Sudanese Armed Forces (SAF) and Rapid Support Forces (RSF)"
+				}
+			],
+			"notableFigures": ["Omar al-Bashir", "John Garang", "Gaafar Nimeiry", "Abdalla Hamdok"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1500 BCE",
+				"era": "Ancient",
+				"title": "Kushite Rise",
+				"description": "Kingdom of Kush begins to emerge as a distinct power in Nubia"
+			},
+			{
+				"year": "c. 747 BCE",
+				"era": "Ancient",
+				"title": "Black Pharaohs",
+				"description": "Kushite kings conquer and rule Egypt as the 25th Dynasty"
+			},
+			{
+				"year": "1504",
+				"era": "Medieval",
+				"title": "Funj Sultanate",
+				"description": "Establishment of the Islamic Sultanate of Sennar"
+			},
+			{
+				"year": "1821",
+				"era": "Colonial",
+				"title": "Turkiyah Begins",
+				"description": "Ottoman Egypt invades and unifies Sudan"
+			},
+			{
+				"year": "1885",
+				"era": "Colonial",
+				"title": "Mahdist Victory",
+				"description": "Khartoum falls to Mahdist forces; British rule interrupted"
+			},
+			{
+				"year": "1898",
+				"era": "Colonial",
+				"title": "British Reconquest",
+				"description": "Battle of Omdurman re-establishes European control"
+			},
+			{
+				"year": "1956",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Sudan becomes an independent republic"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Islamist Coup",
+				"description": "Omar al-Bashir takes power in military coup"
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Separation",
+				"description": "South Sudan becomes an independent country"
+			},
+			{
+				"year": "2019",
+				"era": "Modern",
+				"title": "Bashir Ousted",
+				"description": "Popular revolution ends 30 years of dictatorship"
+			}
+		]
+	},
+	{
+		"name": "Afghanistan",
+		"overview": "Afghanistan's history is that of a rugged crossroads at the heart of Asia, often termed the 'Graveyard of Empires' yet historically the 'Highway of Civilizations.' Its strategic position on the Silk Road connected the cultures of India, Persia, and China, fostering the rich Greco-Buddhist art of Gandhara and the architectural splendors of the Timurids. The modern state emerged in the 18th century under the Durrani Empire, but its sovereignty was constantly tested by the 'Great Game' rivalry between the British and Russian Empires. Throughout the 20th and 21st centuries, Afghanistan has endured a tragic cycle of invasion, civil war, and radicalism—from the Soviet occupation to the Taliban's rise, the US-led war, and the recent return of Taliban rule—while its diverse tribal society remains resilient in the face of relentless upheaval.",
+		"source": {
+			"label": "Wikipedia - History of Afghanistan",
+			"url": "https://en.wikipedia.org/wiki/History_of_Afghanistan",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Afghanistan",
+				"https://www.britannica.com/place/Afghanistan",
+				"https://www.pbs.org/newshour/politics/asia-jan-june11-timeline-afghanistan"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "August 19, 1919" },
+			{ "label": "Capital", "value": "Kabul" },
+			{ "label": "Name Origin", "value": "Land of the Afghans (Pashtuns)" },
+			{ "label": "Founder", "value": "Ahmad Shah Durrani (1747)" },
+			{ "label": "Nickname", "value": "Graveyard of Empires" },
+			{ "label": "Key Mountain Range", "value": "Hindu Kush" }
+		],
+		"ancient": {
+			"period": "c. 3000 BCE - 650 CE",
+			"description": "Ancient Afghanistan was a vibrant hub of the ancient world. Part of the Achaemenid Persian Empire, it was conquered by Alexander the Great in 330 BCE, who founded cities like Alexandria Arachosia (modern Kandahar). This conquest birthed the Greco-Bactrian Kingdom, a unique fusion of Greek culture and local traditions. The region later became the heart of the Kushan Empire, which controlled the Silk Road trade and patronized Buddhism. This era saw the creation of the monumental Bamiyan Buddhas and the Gandhara style of art, which gave the Buddha his first human form, blending Hellenistic realism with Indian spirituality. The land was a center of learning and commerce until the decline of the Kushans and the rise of the Sassanids.",
+			"keyEvents": [
+				{
+					"year": "c. 330 BCE",
+					"title": "Alexander's Conquest",
+					"description": "Alexander the Great conquers the region, introducing Hellenistic culture"
+				},
+				{
+					"year": "c. 250 BCE",
+					"title": "Greco-Bactrian Kingdom",
+					"description": "Diodotus I establishes an independent Greek kingdom in Balkh (Bactria)"
+				},
+				{
+					"year": "c. 127 CE",
+					"title": "Kushan Empire",
+					"description": "Peak of Kushan power under Kanishka I; Buddhism spreads along the Silk Road"
+				},
+				{
+					"year": "c. 5th Century",
+					"title": "Bamiyan Buddhas",
+					"description": "Construction of the massive standing Buddha statues in the Bamiyan valley"
+				}
+			],
+			"notableFigures": ["Alexander the Great", "Kanishka the Great", "Roxana"]
+		},
+		"medieval": {
+			"period": "651 - 1747",
+			"description": "The Islamic conquest began in the 7th century but took centuries to fully permeate the rugged Hindu Kush. By the 10th century, the Ghaznavid Empire rose from Ghazni, turning the city into a beacon of Islamic culture and launching raids into India. The region was later devastated by the Mongol invasion under Genghis Khan in 1219, who razed flourishing cities like Balkh and Herat to the ground. Recovery came under the Timurids in the 15th century, with Herat becoming a center of Persian art, poetry, and miniatures under Queen Gawhar Shad. The early modern period saw the land contested between the Safavids of Persia and the Mughals of India, until local Pashtun tribes began asserting autonomy, culminating in the Hotak dynasty's brief overthrow of the Persians in 1709.",
+			"keyEvents": [
+				{
+					"year": "977",
+					"title": "Ghaznavid Dynasty",
+					"description": "Sabuktigin establishes the dynasty; his son Mahmud turns Ghazni into a major imperial capital"
+				},
+				{
+					"year": "1219",
+					"title": "Mongol Invasion",
+					"description": "Genghis Khan invades, causing massive destruction and depopulation"
+				},
+				{
+					"year": "c. 1400s",
+					"title": "Timurid Renaissance",
+					"description": "Herat flourishes as a center of art and learning under the Timurids"
+				},
+				{
+					"year": "1709",
+					"title": "Hotak Uprising",
+					"description": "Mirwais Hotak declares independence from the Safavids in Kandahar"
+				}
+			],
+			"notableFigures": ["Mahmud of Ghazni", "Genghis Khan", "Babur (founder of Mughal Empire)", "Mirwais Hotak"]
+		},
+		"imperial": {
+			"period": "1747 - 1919",
+			"description": "The modern state of Afghanistan was founded in 1747 by Ahmad Shah Durrani, who united the Pashtun tribes and forged the Durrani Empire, the last great Afghan empire. However, the 19th century brought the 'Great Game,' a strategic rivalry between the British Empire (fearing for India) and the Russian Empire (expanding south). Afghanistan became the buffer state between them. The British invaded twice (First and Second Anglo-Afghan Wars) to install compliant rulers but suffered disastrous defeats, most famously the 1842 retreat from Kabul. Despite military setbacks, the British eventually controlled Afghan foreign policy. Amir Abdur Rahman Khan (the 'Iron Amir') ruthlessly centralized the state in the late 19th century and accepted the Durand Line border, dividing Pashtuns between Afghanistan and British India—a source of tension to this day.",
+			"keyEvents": [
+				{
+					"year": "1747",
+					"title": "Durrani Empire",
+					"description": "Ahmad Shah Durrani is chosen as king, founding the modern Afghan state"
+				},
+				{
+					"year": "1839-1842",
+					"title": "First Anglo-Afghan War",
+					"description": "British invade to check Russian influence; ends in total destruction of British army in retreat"
+				},
+				{
+					"year": "1878-1880",
+					"title": "Second Anglo-Afghan War",
+					"description": "British secure control over Afghan foreign relations"
+				},
+				{
+					"year": "1893",
+					"title": "Durand Line",
+					"description": "Border agreement signed with British India, dividing the Pashtun tribal areas"
+				},
+				{
+					"year": "1919",
+					"title": "Third Anglo-Afghan War",
+					"description": "King Amanullah attacks British India, securing full independence from British control"
+				}
+			],
+			"notableFigures": ["Ahmad Shah Durrani", "Dost Mohammad Khan", "Abdur Rahman Khan", "King Amanullah"]
+		},
+		"modern": {
+			"period": "1919 - Present",
+			"description": "Following independence in 1919, King Amanullah attempted radical modernization, but tribal backlash led to his abdication. The Musahiban dynasty, particularly King Zahir Shah (1933-1973), brought forty years of relative peace and gradual development. This stability shattered in 1973 when Daoud Khan abolished the monarchy. The 1978 communist 'Saur Revolution' triggered the Soviet Invasion (1979-1989), plunging the country into a brutal war where US-backed Mujahideen fought the Red Army. The Soviet withdrawal left a vacuum that devolved into civil war, giving rise to the Taliban, who seized Kabul in 1996 and imposed a strict theocracy. Following the 9/11 attacks, a US-led coalition ousted the Taliban in 2001, establishing a democratic republic. However, after two decades of insurgency and the US withdrawal in August 2021, the democratic government collapsed, and the Taliban returned to power, re-establishing their Islamic Emirate and isolating the country once again.",
+			"keyEvents": [
+				{
+					"year": "1973",
+					"title": "Monarchy Abolished",
+					"description": "Daoud Khan stages a coup, ending the monarchy and declaring a republic"
+				},
+				{
+					"year": "1979",
+					"title": "Soviet Invasion",
+					"description": "Soviet Union invades to support the communist government, starting a decade-long war"
+				},
+				{
+					"year": "1989",
+					"title": "Soviet Withdrawal",
+					"description": "Last Soviet troops leave; civil war continues between government and Mujahideen"
+				},
+				{
+					"year": "1996",
+					"title": "Taliban Takeover",
+					"description": "Taliban capture Kabul, declaring the Islamic Emirate of Afghanistan"
+				},
+				{
+					"year": "2001",
+					"title": "US Invasion",
+					"description": "US-led forces topple the Taliban regime following the 9/11 attacks"
+				},
+				{
+					"year": "2004",
+					"title": "New Constitution",
+					"description": "Democratic constitution adopted; Hamid Karzai becomes the first elected president"
+				},
+				{
+					"year": "2021",
+					"title": "Taliban Return",
+					"description": "August 15, Kabul falls to the Taliban as US forces withdraw; Islamic Emirate restored"
+				}
+			],
+			"notableFigures": ["Zahir Shah", "Ahmad Shah Massoud", "Hamid Karzai", "Mullah Omar"]
+		},
+		"timeline": [
+			{
+				"year": "330 BCE",
+				"era": "Ancient",
+				"title": "Greek Arrival",
+				"description": "Alexander the Great conquers the region"
+			},
+			{
+				"year": "1747",
+				"era": "Imperial",
+				"title": "State Founded",
+				"description": "Ahmad Shah Durrani establishes the Afghan Empire"
+			},
+			{
+				"year": "1842",
+				"era": "Imperial",
+				"title": "British Defeat",
+				"description": "Disastrous British retreat from Kabul during First Anglo-Afghan War"
+			},
+			{
+				"year": "1919",
+				"era": "Modern",
+				"title": "Full Independence",
+				"description": "Afghanistan regains control of its foreign affairs from Britain"
+			},
+			{
+				"year": "1979",
+				"era": "Modern",
+				"title": "Soviet War",
+				"description": "Soviet troops invade, sparking the jihad of the Mujahideen"
+			},
+			{
+				"year": "1996",
+				"era": "Modern",
+				"title": "Taliban Era",
+				"description": "Taliban seize Kabul and impose strict Islamic rule"
+			},
+			{
+				"year": "2001",
+				"era": "Modern",
+				"title": "US Intervention",
+				"description": "Taliban regime falls; gradual establishment of a democratic republic"
+			},
+			{
+				"year": "2021",
+				"era": "Modern",
+				"title": "Republic Falls",
+				"description": "Taliban retake the country following US withdrawal"
+			}
+		]
+	},
+	{
+		"name": "Bulgaria",
+		"overview": "Bulgaria's history is a testament to resilience at the crossroads of Europe and Asia. One of the oldest states in Europe, it traces its roots to the Thracians, the Bulgars, and the Slavs, who merged to form a powerful medieval empire that challenged Byzantium and gave the Slavic world the Cyrillic alphabet. After five centuries of Ottoman rule, which stifled political independence but could not extinguish the Bulgarian national spirit, the nation re-emerged in 1878. The modern era has seen Bulgaria navigate the turbulence of the Balkan Wars, two World Wars, and a communist regime, eventually transitioning into a parliamentary democracy and a member of the European Union and NATO.",
+		"source": {
+			"label": "Wikipedia - History of Bulgaria",
+			"url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Bulgaria",
+				"https://www.britannica.com/place/Bulgaria",
+				"https://bulgariatravel.org/history/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "State Established",
+				"value": "681 CE"
+			},
+			{
+				"label": "Liberation Day",
+				"value": "March 3 (1878)"
+			},
+			{
+				"label": "Capital",
+				"value": "Sofia (since 1879)"
+			},
+			{
+				"label": "Alphabet",
+				"value": "Birthplace of Cyrillic"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "10 World Heritage Sites"
+			},
+			{
+				"label": "EU Accession",
+				"value": "January 1, 2007"
+			}
+		],
+		"ancient": {
+			"period": "c. 6000 BCE - 681 CE",
+			"description": "The lands of modern Bulgaria have been inhabited since the Neolithic era, home to some of the earliest civilizations in Europe, including the culture responsible for the Varna Necropolis gold (the oldest processed gold in the world). The region was dominated by the Thracians, a collection of Indo-European tribes known for their exquisite goldsmithing, horsemanship, and fierce warfare. The Odrysian Kingdom (5th century BCE) was the most powerful Thracian state. The region was later conquered by the Roman Empire, becoming the provinces of Moesia and Thrace, serving as a vital frontier zone. Following the division of Rome, the area fell under Byzantine control. In the ensuing centuries, the demographic landscape changed drastically with the Great Migration, seeing the arrival of Slavic tribes who settled the land, followed by the mounted Bulgar warriors from the steppes north of the Black Sea.",
+			"keyEvents": [
+				{
+					"year": "c. 4600 BCE",
+					"title": "Varna Culture",
+					"description": "Flourishing of a highly advanced culture, producing the world's oldest gold treasure found at the Varna Necropolis"
+				},
+				{
+					"year": "c. 460 BCE",
+					"title": "Odrysian Kingdom",
+					"description": "Establishment of the first major Thracian kingdom under King Teres I, unifying various tribes"
+				},
+				{
+					"year": "c. 73 BCE",
+					"title": "Spartacus Rebellion",
+					"description": "Spartacus, a Thracian gladiator, leads a major slave uprising against the Roman Republic"
+				},
+				{
+					"year": "46 CE",
+					"title": "Roman Annexation",
+					"description": "The last Thracian client kingdom is annexed by Emperor Claudius; the region becomes fully integrated into the Roman Empire"
+				},
+				{
+					"year": "c. 630-660 CE",
+					"title": "Old Great Bulgaria",
+					"description": "Khan Kubrat establishes a Bulgar confederation in the Pontic–Caspian steppe; upon his death, his sons disperse, with Asparuh leading a group toward the Danube"
+				}
+			],
+			"notableFigures": ["Orpheus (Mythological/Thracian figure)", "Spartacus", "Khan Kubrat"]
+		},
+		"medieval": {
+			"period": "681 - 1396",
+			"description": "The medieval period began with the establishment of the First Bulgarian Empire in 681, following a treaty between Khan Asparuh and the Byzantine Empire. This state saw the fusion of the proto-Bulgarian aristocracy and the Slavic majority. A pivotal moment came in 864 when Tsar Boris I adopted Christianity, integrating Bulgaria into the European cultural sphere. His son, Simeon I the Great, presided over the Golden Age of Bulgarian culture, during which the Cyrillic alphabet was developed and spread to other Slavic nations. Bulgaria became a rival to Byzantium for dominance in the Balkans. After falling to Byzantine rule in 1018, the Second Bulgarian Empire was established in 1185 by the brothers Asen and Peter. This revived state thrived under Tsar Ivan Asen II, expanding to three seas (Black, Aegean, and Adriatic). However, internal feudal fragmentation and external pressure eventually weakened the state, leaving it vulnerable to the expanding Ottoman Empire.",
+			"keyEvents": [
+				{
+					"year": "681",
+					"title": "Founding of Bulgaria",
+					"description": "Byzantine Emperor Constantine IV recognizes the Bulgarian state after defeat at Ongal; Khan Asparuh establishes Pliska as capital"
+				},
+				{
+					"year": "864",
+					"title": "Christianization",
+					"description": "Khan Boris I adopts Christianity as the official state religion, taking the title Knyaz (Prince) and aligning with the Ecumenical Patriarchate"
+				},
+				{
+					"year": "893-927",
+					"title": "Golden Age",
+					"description": "Reign of Simeon I the Great; Bulgaria reaches its territorial apogee and becomes a cultural center of the Slavic world"
+				},
+				{
+					"year": "1018",
+					"title": "Byzantine Conquest",
+					"description": "After decades of war, Emperor Basil II ('The Bulgar-Slayer') conquers the First Bulgarian Empire"
+				},
+				{
+					"year": "1185",
+					"title": "Uprising of Asen and Peter",
+					"description": "Brothers Asen and Peter lead a successful rebellion against Byzantine rule, establishing the Second Bulgarian Empire"
+				},
+				{
+					"year": "1396",
+					"title": "Fall of Vidin",
+					"description": "The capture of the Vidin Tsardom by the Ottomans marks the end of medieval Bulgarian statehood"
+				}
+			],
+			"notableFigures": [
+				"Khan Asparuh",
+				"Tsar Boris I",
+				"Tsar Simeon I the Great",
+				"Saints Cyril and Methodius",
+				"Saint Clement of Ohrid",
+				"Tsar Ivan Asen II"
+			]
+		},
+		"imperial": {
+			"period": "1396 - 1878",
+			"description": "For nearly five centuries, Bulgaria was part of the Ottoman Empire. The Bulgarian aristocracy was eliminated, the church placed under the Greek Patriarchate, and the peasantry subjected to feudal obligations and taxes, including the 'devshirme' (blood tax) where Christian boys were taken to serve as Janissaries. Despite this, Bulgarian culture survived in isolated monasteries and mountain villages. Resistance took the form of 'haiduks' (outlaws/rebels) who fought local oppressors. The 18th and 19th centuries saw the Bulgarian National Revival (Renaissance), a period of economic growth and cultural awakening. Monks like Paisius of Hilendar sparked national consciousness with written histories. This cultural movement evolved into a struggle for an independent church (achieved in 1870) and political liberty. The brutal suppression of the April Uprising in 1876 shocked Europe and precipitated the Russo-Turkish War, which led to Bulgaria's liberation.",
+			"keyEvents": [
+				{
+					"year": "1396-1878",
+					"title": "Ottoman Rule",
+					"description": "Period known in Bulgaria as the 'Turkish Yoke'; loss of statehood and political independence"
+				},
+				{
+					"year": "1762",
+					"title": "Istoriya Slavyanobolgarskaya",
+					"description": "Paisius of Hilendar writes 'Slavonic-Bulgarian History', urging Bulgarians to take pride in their heritage, sparking the National Revival"
+				},
+				{
+					"year": "1870",
+					"title": "Exarchate Established",
+					"description": "The Sultan issues a firman establishing an autonomous Bulgarian Exarchate, recognizing the Bulgarians as a distinct religious community"
+				},
+				{
+					"year": "1873",
+					"title": "Execution of Vasil Levski",
+					"description": "Vasil Levski, the 'Apostle of Freedom' and organizer of the internal revolutionary network, is hanged by Ottoman authorities"
+				},
+				{
+					"year": "1876",
+					"title": "April Uprising",
+					"description": "Massive insurrection against Ottoman rule; its brutal suppression results in the massacre of thousands (e.g., at Batak), drawing international condemnation"
+				},
+				{
+					"year": "1877-1878",
+					"title": "Russo-Turkish War",
+					"description": "Russia, aided by Bulgarian volunteers (Opalchentsi), defeats the Ottoman Empire, leading to the liberation of Bulgaria"
+				}
+			],
+			"notableFigures": ["Paisius of Hilendar", "Vasil Levski", "Hristo Botev", "Georgi Rakovski"]
+		},
+		"modern": {
+			"period": "1878 - Present",
+			"description": "The Treaty of San Stefano (1878) initially envisioned a large Bulgaria, but the Great Powers, fearing Russian influence, reduced the territory at the Congress of Berlin, leaving many Bulgarians outside the new borders. This 'national ideal' of reunification drove Bulgaria into several wars. The unification with Eastern Rumelia occurred in 1885. In the early 20th century, Bulgaria fought in the Balkan Wars and sided with the Central Powers in WWI and the Axis in WWII to regain lost territories, suffering severe losses known as 'National Catastrophes.' Despite being an Axis ally, Bulgaria notably saved its entire Jewish population of 48,000 from deportation to death camps. In 1944, the Soviet Army entered the country, leading to a communist coup. Under Todor Zhivkov (1954-1989), Bulgaria was a loyal Soviet satellite. The collapse of communism in 1989 ushered in a painful transition to a market economy and democracy. Today, Bulgaria is a parliamentary republic, a member of NATO (2004) and the EU (2007), striving to improve living standards and combat corruption.",
+			"keyEvents": [
+				{
+					"year": "1878",
+					"title": "Treaty of Berlin",
+					"description": "Establishes the Principality of Bulgaria (de facto independent) and the autonomous province of Eastern Rumelia"
+				},
+				{
+					"year": "1885",
+					"title": "Unification",
+					"description": "Bloodless unification of the Principality of Bulgaria and Eastern Rumelia, defended successfully in the Serbo-Bulgarian War"
+				},
+				{
+					"year": "1908",
+					"title": "Declaration of Independence",
+					"description": "Prince Ferdinand declares full independence from the Ottoman Empire and takes the title of Tsar"
+				},
+				{
+					"year": "1912-1918",
+					"title": "Balkan Wars & WWI",
+					"description": "Bulgaria fights to unify national territories but ends up losing land and facing economic ruin (First and Second National Catastrophes)"
+				},
+				{
+					"year": "1943",
+					"title": "Rescue of Bulgarian Jews",
+					"description": "Civil society, the church, and politicians successfully resist Nazi pressure to deport Bulgaria's Jewish population"
+				},
+				{
+					"year": "1946",
+					"title": "Republic Proclaimed",
+					"description": "Monarchy is abolished via referendum; Bulgaria becomes a People's Republic under Soviet influence"
+				},
+				{
+					"year": "1989",
+					"title": "Fall of Communism",
+					"description": "Todor Zhivkov is ousted on November 10, beginning the transition to democracy"
+				},
+				{
+					"year": "2007",
+					"title": "EU Accession",
+					"description": "Bulgaria becomes a full member of the European Union, marking its return to the European political family"
+				}
+			],
+			"notableFigures": [
+				"Tsar Ferdinand I",
+				"Tsar Boris III",
+				"Georgi Dimitrov",
+				"Todor Zhivkov",
+				"Simeon Saxe-Coburg-Gotha (last Tsar and later Prime Minister)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "681",
+				"era": "Medieval",
+				"title": "First Empire",
+				"description": "Official establishment of the Bulgarian state recognized by Byzantium"
+			},
+			{
+				"year": "864",
+				"era": "Medieval",
+				"title": "Christianization",
+				"description": "Adoption of Christianity integrates Bulgaria into European civilization"
+			},
+			{
+				"year": "1396",
+				"era": "Medieval",
+				"title": "Ottoman Conquest",
+				"description": "Bulgaria falls under Ottoman rule for nearly 500 years"
+			},
+			{
+				"year": "1878",
+				"era": "Imperial",
+				"title": "Liberation",
+				"description": "Russo-Turkish War ends Ottoman rule; Third Bulgarian State begins"
+			},
+			{
+				"year": "1908",
+				"era": "Modern",
+				"title": "Full Independence",
+				"description": "Bulgaria declares total independence from the Ottoman Empire"
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Communist Era",
+				"description": "Fatherland Front coup leads to communist regime aligned with USSR"
+			},
+			{
+				"year": "2007",
+				"era": "Modern",
+				"title": "EU Membership",
+				"description": "Bulgaria joins the European Union"
+			}
+		]
+	},
+	{
+		"name": "Czech Republic",
+		"overview": "Czechia, historically known as Bohemia, occupies a unique position in the heart of Europe. Its history is defined by its role within the Holy Roman Empire, its distinct Slavic identity, and its struggles for religious and political sovereignty. From the medieval power of the Kingdom of Bohemia and the Golden Age of Charles IV to the religious turbulence of the Hussite Wars and centuries of Habsburg rule, the Czech lands have been a center of culture and conflict. The 20th century saw the creation of Czechoslovakia, betrayal at Munich, Nazi occupation, and decades of communism, ending with the peaceful Velvet Revolution. Today, Czechia is a stable, prosperous democracy, celebrated for its architectural heritage, industrial tradition, and deep intellectual history.",
+		"source": {
+			"label": "Wikipedia - History of the Czech Lands",
+			"url": "https://en.wikipedia.org/wiki/History_of_the_Czech_lands",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_the_Czech_lands",
+				"https://www.britannica.com/place/Czech-Republic",
+				"https://www.mzv.cz/jnp/en/about_the_czech_republic/history/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Velvet Revolution",
+				"value": "Nov 17 - Dec 29, 1989"
+			},
+			{
+				"label": "State Founded",
+				"value": "c. 870 (Duchy of Bohemia)"
+			},
+			{
+				"label": "Capital",
+				"value": "Prague"
+			},
+			{
+				"label": "Famous University",
+				"value": "Charles University (est. 1348)"
+			},
+			{
+				"label": "Velvet Divorce",
+				"value": "January 1, 1993"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "17 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 400 BCE - 800 CE",
+			"description": "The territory of modern Czechia has been a crossroads for migration since prehistory. The region derives its historical name, Bohemia (Boiohaemum), from the Boii, a Celtic tribe that settled there in the 4th century BCE. The Boii developed advanced oppida (fortified settlements) and minted coins. By the 1st century CE, they were displaced by Germanic tribes, primarily the Marcomanni and Quadi, who frequently clashed with the Roman Empire along the Danube frontier. During the Migration Period (6th century CE), Slavic tribes arrived from the east, settling the area and assimilating the remaining population. In the 7th century, a Frankish merchant named Samo united these Slavic tribes to defend against the Avars and Franks, creating 'Samo's Empire,' the first known Slavic political entity, though it dissolved after his death.",
+			"keyEvents": [
+				{
+					"year": "c. 400 BCE",
+					"title": "Celtic Settlement",
+					"description": "The Boii tribe settles in the region, giving rise to the name Bohemia"
+				},
+				{
+					"year": "c. 10 BCE",
+					"title": "Germanic Migration",
+					"description": "The Marcomanni, a Germanic tribe, displace the Celts and establish a kingdom"
+				},
+				{
+					"year": "c. 550 CE",
+					"title": "Slavic Arrival",
+					"description": "Slavic tribes begin settling in the Czech lands during the Migration Period"
+				},
+				{
+					"year": "623-658",
+					"title": "Samo's Empire",
+					"description": "Frankish merchant Samo unites Slavic tribes in Bohemia and Moravia, successfully defeating the Avars and Frankish King Dagobert I"
+				}
+			],
+			"notableFigures": ["Samo", "Maroboduus (Marcomanni King)"]
+		},
+		"medieval": {
+			"period": "830 - 1526",
+			"description": "The medieval era saw the rise of the Great Moravian Empire, which introduced Christianity and the Glagolitic script via Saints Cyril and Methodius. After Moravia's fall to the Magyars, power shifted to the Duchy of Bohemia under the Přemyslid dynasty. Bohemia became a key state within the Holy Roman Empire, eventually elevated to a Kingdom in 1198. The 14th century was the Golden Age under Charles IV (King of Bohemia and Holy Roman Emperor), who transformed Prague into an imperial capital, founding Charles University and building the Charles Bridge. The 15th century was dominated by the Hussite Wars, triggered by the execution of reformer Jan Hus. The Hussites, using innovative military tactics like the wagenburg, successfully repelled five crusades, establishing a proto-Protestant tradition in Bohemia a century before Luther. The Jagiellonian dynasty followed, ruling until the fateful Battle of Mohács.",
+			"keyEvents": [
+				{
+					"year": "c. 830",
+					"title": "Great Moravia",
+					"description": "Rise of Great Moravia; Prince Rastislav invites missionaries Cyril and Methodius in 863"
+				},
+				{
+					"year": "935",
+					"title": "Death of St. Wenceslas",
+					"description": "Duke Wenceslas is murdered by his brother; he becomes the patron saint of the Czech state"
+				},
+				{
+					"year": "1212",
+					"title": "Golden Bull of Sicily",
+					"description": "Emperor Frederick II confirms the hereditary royal title of the Bohemian kings"
+				},
+				{
+					"year": "1346-1378",
+					"title": "Reign of Charles IV",
+					"description": "Bohemia becomes the center of the Holy Roman Empire; Prague expands massively"
+				},
+				{
+					"year": "1415",
+					"title": "Execution of Jan Hus",
+					"description": "Religious reformer Jan Hus is burned at the stake at the Council of Constance, sparking the Hussite Revolution"
+				},
+				{
+					"year": "1419-1434",
+					"title": "Hussite Wars",
+					"description": "Followers of Hus defeat imperial crusades; the conflict ends with the Compacts of Basel, allowing distinct religious practices"
+				}
+			],
+			"notableFigures": [
+				"Saint Wenceslas",
+				"Charles IV",
+				"Jan Hus",
+				"Jan Žižka (Hussite general)",
+				"George of Poděbrady (Hussite King)"
+			]
+		},
+		"imperial": {
+			"period": "1526 - 1918",
+			"description": "Following the death of King Louis II, the Bohemian estates elected Ferdinand I of Habsburg as king, beginning nearly 400 years of Habsburg rule. Tensions between the Protestant Bohemian nobility and the Catholic Habsburgs exploded in 1618 with the Defenestration of Prague, sparking the Thirty Years' War. The Protestant defeat at the Battle of White Mountain (1620) was catastrophic: the local nobility was decimated, the land was forcibly re-Catholicized, and German became the language of administration. This period is often called the 'Dark Age' in Czech historiography. However, the late 18th and 19th centuries witnessed the Czech National Revival. Intellectuals, linguists, and writers worked to revive the Czech language and culture, constructing the National Theatre and National Museum. Industrialization transformed the Czech lands into the economic powerhouse of the Austro-Hungarian Empire, setting the stage for future independence.",
+			"keyEvents": [
+				{
+					"year": "1526",
+					"title": "Habsburg Succession",
+					"description": "Habsburg dynasty ascends the Bohemian throne, integrating the lands into their vast monarchy"
+				},
+				{
+					"year": "1618",
+					"title": "Defenestration of Prague",
+					"description": "Bohemian nobles throw imperial regents out of a castle window, starting the Thirty Years' War"
+				},
+				{
+					"year": "1620",
+					"title": "Battle of White Mountain",
+					"description": "Decisive defeat of the Bohemian Revolt; leads to loss of independence and forced re-Catholicization"
+				},
+				{
+					"year": "1781",
+					"title": "Patent of Toleration",
+					"description": "Emperor Joseph II issues reforms allowing religious freedom and abolishing serfdom"
+				},
+				{
+					"year": "19th Century",
+					"title": "National Revival",
+					"description": "Scholars like Jungmann and Palacký revive the Czech language; rise of Czech nationalism within Austria-Hungary"
+				}
+			],
+			"notableFigures": [
+				"Rudolf II",
+				"John Amos Comenius (Teacher of Nations)",
+				"František Palacký (Father of the Nation)",
+				"Bedřich Smetana",
+				"Antonín Dvořák"
+			]
+		},
+		"modern": {
+			"period": "1918 - Present",
+			"description": "With the collapse of Austria-Hungary after WWI, Czechoslovakia was founded in 1918, becoming a stable democracy under Tomáš Garrigue Masaryk. However, the 1938 Munich Agreement allowed Nazi Germany to annex the Sudetenland, leading to the full occupation of Bohemia and Moravia in 1939. After liberation in 1945, the country fell into the Soviet sphere following the 1948 communist coup. The 1968 'Prague Spring,' a reform movement led by Alexander Dubček seeking 'socialism with a human face,' was crushed by Warsaw Pact tanks. The oppressive 'Normalization' period followed until 1989, when the peaceful Velvet Revolution, led by dissidents like Václav Havel, toppled the communist regime. In 1993, Czechoslovakia peacefully split into two sovereign states: the Czech Republic and Slovakia (the 'Velvet Divorce'). Since then, Czechia has integrated into the West, joining NATO in 1999 and the EU in 2004, maintaining a strong industrial economy.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Independence",
+					"description": "October 28, foundation of Czechoslovakia; Tomáš Garrigue Masaryk becomes the first president"
+				},
+				{
+					"year": "1938",
+					"title": "Munich Agreement",
+					"description": "Britain and France cede the Sudetenland to Hitler; full occupation follows in March 1939"
+				},
+				{
+					"year": "1942",
+					"title": "Assassination of Heydrich",
+					"description": "Operation Anthropoid: Czech paratroopers assassinate Nazi leader Reinhard Heydrich; Nazis retaliate by destroying Lidice"
+				},
+				{
+					"year": "1948",
+					"title": "Communist Coup",
+					"description": "The Communist Party of Czechoslovakia takes full control, aligning the country with the Soviet Union"
+				},
+				{
+					"year": "1968",
+					"title": "Prague Spring",
+					"description": "Warsaw Pact invasion ends a brief period of political liberalization"
+				},
+				{
+					"year": "1989",
+					"title": "Velvet Revolution",
+					"description": "Mass protests lead to the non-violent end of communist rule; Václav Havel elected president"
+				},
+				{
+					"year": "1993",
+					"title": "Velvet Divorce",
+					"description": "Dissolution of Czechoslovakia; the Czech Republic becomes an independent state"
+				},
+				{
+					"year": "2004",
+					"title": "EU Accession",
+					"description": "The Czech Republic joins the European Union"
+				}
+			],
+			"notableFigures": [
+				"Tomáš Garrigue Masaryk",
+				"Edvard Beneš",
+				"Alexander Dubček",
+				"Václav Havel",
+				"Madeleine Albright",
+				"Milan Kundera"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 870",
+				"era": "Medieval",
+				"title": "Bohemian Duchy",
+				"description": "Borivoj I becomes the first historically documented Duke of Bohemia"
+			},
+			{
+				"year": "1348",
+				"era": "Medieval",
+				"title": "Charles University",
+				"description": "Founding of the first university in Central Europe in Prague"
+			},
+			{
+				"year": "1620",
+				"era": "Imperial",
+				"title": "White Mountain",
+				"description": "Defeat of Bohemian estates confirms Habsburg dominance for 300 years"
+			},
+			{
+				"year": "1918",
+				"era": "Modern",
+				"title": "First Republic",
+				"description": "Czechoslovakia established as a democratic republic"
+			},
+			{
+				"year": "1968",
+				"era": "Modern",
+				"title": "Soviet Invasion",
+				"description": "Crushing of the Prague Spring reforms"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Freedom",
+				"description": "Velvet Revolution ends 41 years of communist rule"
+			},
+			{
+				"year": "1993",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Establishment of the independent Czech Republic"
+			}
+		]
+	},
+	{
+		"name": "Nigeria",
+		"overview": "Nigeria, often called the 'Giant of Africa,' boasts a history as diverse as its population of over 250 ethnic groups. From the ancient terracotta sculptures of the Nok culture to the sophisticated bronze works of Benin and Ife, the region has been a cradle of civilization for millennia. Home to powerful pre-colonial empires like the Sokoto Caliphate, Oyo, and Kanem-Bornu, Nigeria's identity was reshaped by British colonialism, which amalgamated distinct northern and southern protectorates in 1914. Since gaining independence in 1960, the nation has navigated the tragedy of the Biafran Civil War, a succession of military dictatorships, and a return to democracy in 1999. Today, Nigeria is an economic and cultural powerhouse, driven by its vast oil resources and the global influence of its entertainment industry, Nollywood.",
+		"source": {
+			"label": "Wikipedia - History of Nigeria",
+			"url": "https://en.wikipedia.org/wiki/History_of_Nigeria",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Nigeria",
+				"https://www.britannica.com/place/Nigeria",
+				"https://www.state.gov/countries-areas/nigeria/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "October 1, 1960"
+			},
+			{
+				"label": "Republic Day",
+				"value": "October 1, 1963"
+			},
+			{
+				"label": "Capital",
+				"value": "Abuja (relocated from Lagos, 1991)"
+			},
+			{
+				"label": "Major Languages",
+				"value": "English (official), Hausa, Yoruba, Igbo"
+			},
+			{
+				"label": "Currency",
+				"value": "Naira (₦)"
+			},
+			{
+				"label": "Population",
+				"value": "~220 Million (Most populous in Africa)"
+			}
+		],
+		"ancient": {
+			"period": "c. 1500 BCE - 1000 CE",
+			"description": "Long before modern borders existed, the region was home to the Nok culture (c. 1500 BCE – 500 CE) in central Nigeria, famous for their distinctive terracotta figures and early iron-smelting technology. This stands as one of the earliest known complex societies in West Africa. In the southeast, the Kingdom of Nri (founded c. 900 CE) developed as a center of the Igbo people, known for its priest-kings (Eze Nri) and lack of military force, relying instead on religious authority and trade. Concurrently, around Lake Chad, the Kanem Empire began to rise, facilitating early trans-Saharan trade.",
+			"keyEvents": [
+				{
+					"year": "c. 1500 BCE",
+					"title": "Nok Culture Emerges",
+					"description": "Early Iron Age civilization develops in the Jos Plateau, creating elaborate terracotta sculptures"
+				},
+				{
+					"year": "c. 900 CE",
+					"title": "Kingdom of Nri",
+					"description": "Establishment of the Nri Kingdom, the oldest continuously existing traditional state in Nigeria"
+				},
+				{
+					"year": "c. 1000 CE",
+					"title": "Rise of Ife",
+					"description": "The Yoruba city-state of Ile-Ife flourishes as a spiritual and artistic center known for naturalistic bronze and terracotta heads"
+				}
+			],
+			"notableFigures": [
+				"Eri (Mythical progenitor of the Nri Kingdom)",
+				"Oduduwa (Mythical ancestor of the Yoruba kings)"
+			]
+		},
+		"pre-colonial": {
+			"period": "1000 - 1861",
+			"description": "This era was defined by the rise of powerful, centralized states and empires. The Benin Empire (1440–1897) grew famous for its 'Benin Bronzes' and formidable military, controlling trade between the interior and Europeans on the coast. In the southwest, the Oyo Empire used cavalry to dominate the region. To the north, the Hausa City-States flourished as trade hubs until the 19th-century Jihad of Usman dan Fodio established the Sokoto Caliphate, one of the largest empires in Africa. These states engaged in complex diplomacy and warfare, and unfortunately became heavily involved in the Trans-Atlantic slave trade, which decimated populations but enriched the ruling elites.",
+			"keyEvents": [
+				{
+					"year": "c. 1100",
+					"title": "Benin Kingdom",
+					"description": "Rise of the Edo kingdom, later becoming a major empire under the Oba"
+				},
+				{
+					"year": "c. 1300",
+					"title": "Oyo Empire",
+					"description": "Oyo emerges as a dominant Yoruba state, utilizing cavalry for expansion"
+				},
+				{
+					"year": "1804-1808",
+					"title": "Fulani War",
+					"description": "Usman dan Fodio leads a jihad consolidating the Hausa states into the Sokoto Caliphate"
+				},
+				{
+					"year": "1850s",
+					"title": "Palm Oil Trade",
+					"description": "Shift from slave trade to 'legitimate commerce' in palm oil, increasing British economic interest"
+				}
+			],
+			"notableFigures": [
+				"Usman dan Fodio (Founder of Sokoto Caliphate)",
+				"Queen Amina (Warrior queen of Zazzau)",
+				"Oba Ewuare the Great (Reformer of the Benin Empire)",
+				"Olaudah Equiano (Abolitionist and author)"
+			]
+		},
+		"colonial": {
+			"period": "1861 - 1960",
+			"description": "British formal colonization began with the annexation of Lagos in 1861 to suppress the slave trade. Influence expanded through the Royal Niger Company until the British government took direct control in 1900. A pivotal moment occurred in 1914 when Lord Frederick Lugard amalgamated the Northern and Southern Protectorates into the 'Colony and Protectorate of Nigeria.' The British employed a system of 'Indirect Rule,' governing through local emirs and chiefs, which preserved traditional structures but deepened regional divisions. Nationalist movements gained momentum after World War II, led by figures like Nnamdi Azikiwe and Obafemi Awolowo.",
+			"keyEvents": [
+				{
+					"year": "1861",
+					"title": "Annexation of Lagos",
+					"description": "Lagos becomes a British Crown Colony"
+				},
+				{
+					"year": "1897",
+					"title": "Punitive Expedition",
+					"description": "British forces sack Benin City, looting the famous Benin Bronzes and exiling the Oba"
+				},
+				{
+					"year": "1914",
+					"title": "Amalgamation",
+					"description": "Lord Lugard merges Northern and Southern protectorates to form modern Nigeria"
+				},
+				{
+					"year": "1929",
+					"title": "Aba Women's War",
+					"description": "Major anti-colonial revolt organized by Igbo women against British taxation and warrant chiefs"
+				},
+				{
+					"year": "1954",
+					"title": "Lyttelton Constitution",
+					"description": "Established a federal principle, granting regions significant autonomy"
+				}
+			],
+			"notableFigures": [
+				"Lord Frederick Lugard",
+				"Herbert Macaulay (Father of Nigerian Nationalism)",
+				"Funmilayo Ransome-Kuti (Activist)"
+			]
+		},
+		"independence": {
+			"period": "1960 - 1999",
+			"description": "Nigeria gained independence on October 1, 1960, with high hopes, but ethnic and regional tensions quickly fractured the First Republic. A military coup in 1966 was followed by a counter-coup, leading to the persecution of Igbo people in the north and the secession of the Eastern Region as the Republic of Biafra in 1967. The resulting Civil War (1967-1970) caused over a million deaths, largely from starvation. Post-war Nigeria saw an oil boom that fueled corruption and a succession of military regimes (Gowon, Murtala/Obasanjo, Buhari, Babangida, Abacha). The annulment of the June 12, 1993, democratic elections by the military plunged the country into a crisis that lasted until the death of dictator Sani Abacha in 1998.",
+			"keyEvents": [
+				{
+					"year": "1960",
+					"title": "Independence",
+					"description": "Nigeria becomes an independent federation within the Commonwealth"
+				},
+				{
+					"year": "1966",
+					"title": "First Military Coup",
+					"description": "End of First Republic; Prime Minister Balewa killed; Ironsi takes power, followed by Gowon"
+				},
+				{
+					"year": "1967-1970",
+					"title": "Nigerian Civil War",
+					"description": "War between federal forces and the secessionist state of Biafra"
+				},
+				{
+					"year": "1979",
+					"title": "Second Republic",
+					"description": "General Obasanjo hands power to civilian President Shehu Shagari"
+				},
+				{
+					"year": "1993",
+					"title": "June 12 Annulment",
+					"description": "General Babangida annuls the election won by M.K.O. Abiola, leading to political turmoil"
+				},
+				{
+					"year": "1995",
+					"title": "Ken Saro-Wiwa Executed",
+					"description": "Environmental activist executed by the Abacha regime, sparking international outrage"
+				}
+			],
+			"notableFigures": [
+				"Nnamdi Azikiwe (First President)",
+				"Abubakar Tafawa Balewa (First Prime Minister)",
+				"Yakubu Gowon",
+				"Chukwuemeka Odumegwu Ojukwu (Biafran leader)",
+				"M.K.O. Abiola"
+			]
+		},
+		"modern": {
+			"period": "1999 - Present",
+			"description": "The Fourth Republic began in 1999 with the election of Olusegun Obasanjo, marking the longest period of continuous civilian rule. Nigeria has since established itself as Africa's largest economy, driven by telecommunications, banking, and oil. However, the country faces significant challenges, including the Boko Haram insurgency in the northeast since 2009, communal conflicts, and economic inequality. The #EndSARS protests in 2020 highlighted the youth's demand for police reform and better governance. Culturally, Nigeria has achieved global dominance through Afrobeats music and the Nollywood film industry.",
+			"keyEvents": [
+				{
+					"year": "1999",
+					"title": "Return to Democracy",
+					"description": "Olusegun Obasanjo elected president, ending 16 years of military rule"
+				},
+				{
+					"year": "2009",
+					"title": "Boko Haram Insurgency",
+					"description": "Militant group launches uprising in North East, leading to ongoing security crisis"
+				},
+				{
+					"year": "2014",
+					"title": "Chibok Girls Kidnapping",
+					"description": "Boko Haram kidnaps 276 schoolgirls, sparking global #BringBackOurGirls campaign"
+				},
+				{
+					"year": "2015",
+					"title": "Peaceful Power Transfer",
+					"description": "Incumbent Goodluck Jonathan concedes defeat to Muhammadu Buhari, a democratic milestone"
+				},
+				{
+					"year": "2020",
+					"title": "#EndSARS Protests",
+					"description": "Nationwide youth-led protests against police brutality and the Special Anti-Robbery Squad"
+				}
+			],
+			"notableFigures": [
+				"Olusegun Obasanjo",
+				"Goodluck Jonathan",
+				"Ngozi Okonjo-Iweala (WTO Director-General)",
+				"Wole Soyinka (Nobel Laureate)",
+				"Chinua Achebe"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 900",
+				"era": "Ancient",
+				"title": "Kingdom of Nri",
+				"description": "Establishment of the Nri Kingdom in Igboland"
+			},
+			{
+				"year": "1472",
+				"era": "Pre-Colonial",
+				"title": "Portuguese Contact",
+				"description": "First European contact with the Kingdom of Benin"
+			},
+			{
+				"year": "1804",
+				"era": "Pre-Colonial",
+				"title": "Sokoto Jihad",
+				"description": "Usman dan Fodio launches jihad, establishing the Sokoto Caliphate"
+			},
+			{
+				"year": "1914",
+				"era": "Colonial",
+				"title": "Amalgamation",
+				"description": "Northern and Southern Protectorates merged into Nigeria"
+			},
+			{
+				"year": "1960",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Nigeria gains independence from Britain"
+			},
+			{
+				"year": "1967",
+				"era": "Independence",
+				"title": "Civil War Begins",
+				"description": "Biafra declares secession, sparking three-year war"
+			},
+			{
+				"year": "1999",
+				"era": "Modern",
+				"title": "Fourth Republic",
+				"description": "New constitution adopted and democracy restored"
+			},
+			{
+				"year": "2015",
+				"era": "Modern",
+				"title": "Democratic Transfer",
+				"description": "First defeat of an incumbent president in democratic elections"
+			}
+		]
+	},
+	{
+		"name": "Liberia",
+		"overview": "Liberia occupies a unique place in African history as the continent's oldest republic, founded not by European colonial powers but by free people of color from the United States. Established in 1822 by the American Colonization Society, it became a haven for freed slaves who developed a distinct 'Americo-Liberian' identity. The country maintained its sovereignty during the European 'Scramble for Africa,' standing alongside Ethiopia as one of only two independent African nations in the early 20th century. However, the monopolization of power by the Americo-Liberian elite created deep fissures with the indigenous population, eventually leading to a violent coup in 1980 and two devastating civil wars (1989–2003). Since 2003, Liberia has been on a path of reconstruction and democratic stability, highlighted by the election of Africa's first female head of state.",
+		"source": {
+			"label": "Wikipedia - History of Liberia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Liberia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Liberia",
+				"https://www.britannica.com/place/Liberia",
+				"https://www.pbs.org/wgbh/globalconnections/liberia/history/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "July 26, 1847"
+			},
+			{
+				"label": "Capital",
+				"value": "Monrovia (named after US President James Monroe)"
+			},
+			{
+				"label": "Motto",
+				"value": "The Love of Liberty Brought Us Here"
+			},
+			{
+				"label": "Government",
+				"value": "Unitary presidential constitutional republic"
+			},
+			{
+				"label": "Official Language",
+				"value": "English"
+			},
+			{
+				"label": "Flag",
+				"value": "Modeled on US flag (One star for the only independent republic)"
+			}
+		],
+		"pre-colonial": {
+			"period": "Pre-1822",
+			"description": "Before the arrival of settlers from America, the region now known as Liberia was inhabited by diverse indigenous ethnic groups speaking at least three distinct language families: Mel, Mande, and Kru. These peoples, including the Gola, Kissi, Kpelle, and Kru, established complex societies engaged in agriculture and trade. The Kru people in particular were renowned mariners who resisted the Trans-Atlantic slave trade, often working as sailors on European ships rather than being captured. The region was historically known to European traders as the 'Grain Coast' (or Pepper Coast) due to the abundance of Melegueta pepper.",
+			"keyEvents": [
+				{
+					"year": "c. 1200-1600",
+					"title": "Mande Expansion",
+					"description": "Migration of Mande-speaking peoples from the declining Mali Empire into the forest region"
+				},
+				{
+					"year": "1461",
+					"title": "Portuguese Contact",
+					"description": "Portuguese explorers arrive, naming the area Costa da Pimenta (Pepper Coast)"
+				},
+				{
+					"year": "c. 1600s",
+					"title": "Grain Coast Trade",
+					"description": "Establishment of trade relations with Dutch and British merchants for pepper, ivory, and gold"
+				}
+			],
+			"notableFigures": [
+				"King Peter (Indigenous ruler involved in early treaties)",
+				"King Boatswain (Powerful leader who assisted early settlers)"
+			]
+		},
+		"colonial": {
+			"period": "1822 - 1847",
+			"description": "Liberia's 'colonial' period was atypical; it was a project of the American Colonization Society (ACS), a US organization that believed free blacks would have better opportunities in Africa than in the United States. The first settlers arrived in 1822, establishing a settlement on Cape Mesurado that would become Monrovia. The settlers faced harsh conditions, disease (especially malaria), and conflict with indigenous groups who resented the encroachment on their lands. The colony was governed by white agents of the ACS until 1841, when Joseph Jenkins Roberts became the first black governor. This period laid the groundwork for the cultural divide between the 'Americo-Liberians' (settlers) and the indigenous 'country people.'",
+			"keyEvents": [
+				{
+					"year": "1816",
+					"title": "ACS Founded",
+					"description": "American Colonization Society established in Washington D.C. to resettle free people of color"
+				},
+				{
+					"year": "1822",
+					"title": "Arrival at Providence Island",
+					"description": "First permanent settlers arrive; negotiation for land with local kings"
+				},
+				{
+					"year": "1824",
+					"title": "Naming of Liberia",
+					"description": "The colony is named Liberia ('Land of the Free') and the capital Monrovia"
+				},
+				{
+					"year": "1838",
+					"title": "Commonwealth Formed",
+					"description": "Various settlements along the coast unite to form the Commonwealth of Liberia"
+				}
+			],
+			"notableFigures": [
+				"Jehudi Ashmun (Early ACS leader/Governor)",
+				"Joseph Jenkins Roberts (First black governor and later President)"
+			]
+		},
+		"independence": {
+			"period": "1847 - 1980",
+			"description": "Liberia declared independence on July 26, 1847, adopting a constitution modeled on the United States. For over a century, the True Whig Party dominated politics, creating a de facto one-party state controlled by the Americo-Liberian minority (less than 5% of the population). While they modernized the economy through rubber plantations (Firestone deal, 1926) and foreign investment, indigenous people were largely excluded from citizenship until 1904 and faced forced labor practices. Under William Tubman (1944–1971), the 'Open Door Policy' brought economic prosperity, but wealth inequality deepened. The era ended violently as agitation for indigenous rights and economic justice boiled over.",
+			"keyEvents": [
+				{
+					"year": "1847",
+					"title": "Independence Declared",
+					"description": "Liberia becomes the first independent republic in Africa"
+				},
+				{
+					"year": "1862",
+					"title": "US Recognition",
+					"description": "United States formally recognizes Liberian independence during the Civil War"
+				},
+				{
+					"year": "1926",
+					"title": "Firestone Agreement",
+					"description": "Firestone Tire & Rubber Company leases 1 million acres for rubber production, transforming the economy"
+				},
+				{
+					"year": "1944",
+					"title": "Tubman Presidency",
+					"description": "William V.S. Tubman begins 27-year presidency, modernizing infrastructure but maintaining elite control"
+				},
+				{
+					"year": "1979",
+					"title": "Rice Riots",
+					"description": "Protests over increase in rice prices turn violent, signaling the end of True Whig Party stability"
+				}
+			],
+			"notableFigures": [
+				"William V.S. Tubman ('Father of Modern Liberia')",
+				"William Tolbert (President assassinated in 1980 coup)"
+			]
+		},
+		"modern": {
+			"period": "1980 - Present",
+			"description": "The modern era began with a bloody military coup in 1980 led by Samuel Doe, a Krahn master sergeant, ending Americo-Liberian rule. Doe's regime, however, descended into ethnic authoritarianism. In 1989, Charles Taylor launched an uprising that sparked the First Liberian Civil War, a brutal conflict involving child soldiers and ethnic massacres. A fragile peace broke in 1997 with Taylor's election, but the Second Civil War (1999–2003) soon followed. Peace was finally restored in 2003 with the Accra Comprehensive Peace Agreement and UN intervention. In 2005, Ellen Johnson Sirleaf was elected president, becoming Africa's first female head of state and overseeing a period of reconstruction, debt relief, and the handling of the 2014 Ebola crisis. In 2017, the peaceful transfer of power to former soccer star George Weah marked the consolidation of democracy.",
+			"keyEvents": [
+				{
+					"year": "1980",
+					"title": "Military Coup",
+					"description": "Samuel Doe overthrows and executes President Tolbert, ending 133 years of Americo-Liberian rule"
+				},
+				{
+					"year": "1989-1997",
+					"title": "First Civil War",
+					"description": "Charles Taylor invades from Ivory Coast; conflict kills 200,000+ and displaces millions"
+				},
+				{
+					"year": "1997",
+					"title": "Taylor Elected",
+					"description": "Charles Taylor wins presidency after war, but peace is short-lived"
+				},
+				{
+					"year": "2003",
+					"title": "Siege of Monrovia",
+					"description": "Rebel groups besiege capital; Taylor resigns and goes into exile; war ends"
+				},
+				{
+					"year": "2005",
+					"title": "Sirleaf Elected",
+					"description": "Ellen Johnson Sirleaf wins election, beginning era of reconstruction"
+				},
+				{
+					"year": "2014-2015",
+					"title": "Ebola Epidemic",
+					"description": "West African Ebola outbreak devastates Liberia's fragile healthcare system and economy"
+				},
+				{
+					"year": "2017",
+					"title": "Historic Election",
+					"description": "George Weah elected president; first democratic transfer of power between parties since 1944"
+				}
+			],
+			"notableFigures": [
+				"Samuel Doe",
+				"Charles Taylor (Convicted war criminal)",
+				"Ellen Johnson Sirleaf (Nobel Peace Prize winner)",
+				"Leymah Gbowee (Peace activist, Nobel laureate)",
+				"George Weah"
+			]
+		},
+		"timeline": [
+			{
+				"year": "1822",
+				"era": "Colonial",
+				"title": "Settlement",
+				"description": "First American settlers arrive at Cape Mesurado"
+			},
+			{
+				"year": "1847",
+				"era": "Independence",
+				"title": "Republic Born",
+				"description": "Liberia declares independence as a sovereign state"
+			},
+			{
+				"year": "1926",
+				"era": "Independence",
+				"title": "Firestone",
+				"description": "Firestone rubber concession integrates Liberia into global market"
+			},
+			{
+				"year": "1980",
+				"era": "Modern",
+				"title": "The Coup",
+				"description": "Samuel Doe takes power, executing cabinet ministers on the beach"
+			},
+			{
+				"year": "1989",
+				"era": "Modern",
+				"title": "Civil War",
+				"description": "Start of the First Liberian Civil War"
+			},
+			{
+				"year": "2003",
+				"era": "Modern",
+				"title": "Peace Accord",
+				"description": "Accra Comprehensive Peace Agreement ends 14 years of conflict"
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "First Female President",
+				"description": "Inauguration of Ellen Johnson Sirleaf"
+			}
+		]
 	}
 ]
