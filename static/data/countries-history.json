@@ -22444,5 +22444,583 @@
 				"description": "Robert Mugabe resigns following military pressure"
 			}
 		]
+	},
+	{
+		"name": "Azerbaijan",
+		"overview": "Azerbaijan's history is a tapestry woven from the threads of ancient Zoroastrian roots, Islamic heritage, and Turkic culture, situated at the strategic crossroads of Eastern Europe and Western Asia. Known as the 'Land of Fire' for its natural gas reserves and ancient fire-worshipping traditions, the nation has evolved from the early states of Caucasian Albania and Atropatene through the medieval dominance of the Shirvanshahs and Safavids. Following a period of fragmentation into independent khanates, Azerbaijan was absorbed by the Russian Empire, eventually giving rise to the Islamic world's first secular democracy in 1918. After decades of Soviet rule, modern Azerbaijan has re-emerged as a significant regional power, leveraging its energy wealth while navigating the complex geopolitical currents of the South Caucasus.",
+		"source": {
+			"label": "Wikipedia - History of Azerbaijan",
+			"url": "https://en.wikipedia.org/wiki/History_of_Azerbaijan",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Azerbaijan",
+				"https://www.britannica.com/place/Azerbaijan",
+				"https://unesco.preslib.az/en/page/y6Vf7d5c8E"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence",
+				"value": "May 28, 1918"
+			},
+			{
+				"label": "Restored Independence",
+				"value": "October 18, 1991"
+			},
+			{
+				"label": "Capital",
+				"value": "Baku (Icherisheher dates to 12th c.)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From Atropates (Ancient ruler) or 'Land of Fire'"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "5 World Heritage Sites"
+			},
+			{
+				"label": "Constitution Adopted",
+				"value": "November 12, 1995"
+			}
+		],
+		"ancient": {
+			"period": "c. 8th Century BCE - 7th Century CE",
+			"description": "The ancient history of Azerbaijan centers on the states of Caucasian Albania in the north and Atropatene in the south. The region was inhabited by diverse tribes and served as a cradle for Zoroastrianism, evidenced by ancient fire temples. Caucasian Albania, a vassal at times to the Roman and Sassanid empires, adopted Christianity in the 4th century under King Urnayr, developing a unique alphabet and distinct church. Meanwhile, Atropatene (from which the name 'Azerbaijan' is derived) maintained a strong Persian influence. The region was a strategic prize for contesting empires, including the Romans, Parthians, and Sassanids, who fortified the Caspian defenses, including the famous walls of Derbent, to protect against nomadic incursions from the north.",
+			"keyEvents": [
+				{
+					"year": "c. 323 BCE",
+					"title": "State of Atropatene",
+					"description": "Following the death of Alexander the Great, the satrap Atropates establishes an independent kingdom in the south, preserving Persian culture"
+				},
+				{
+					"year": "c. 1st Century BCE",
+					"title": "Roman Incursions",
+					"description": "Roman legions under Pompey and later Marc Antony march into Caucasian Albania; inscriptions at Gobustan mark the easternmost point of Roman expansion"
+				},
+				{
+					"year": "c. 313 CE",
+					"title": "Adoption of Christianity",
+					"description": "King Urnayr of Caucasian Albania adopts Christianity as the state religion, aligning the region with the Byzantine religious sphere temporarily"
+				}
+			],
+			"notableFigures": ["Atropates", "King Urnayr", "Javanshir (Albanian prince)"]
+		},
+		"medieval": {
+			"period": "7th Century - 18th Century",
+			"description": "The medieval era began with the Arab conquest in the 7th century, bringing Islam to the region. This period saw the rise of the Shirvanshahs, one of the longest-ruling Islamic dynasties, who oversaw a cultural golden age and built the walled city of Baku. The arrival of the Seljuk Turks in the 11th century was a pivotal moment, leading to the linguistic Turkification of the population. Later, the region became a battleground between the Ottoman and Safavid empires. The Safavids, originating from the region, established Shia Islam as the dominant sect, shaping the modern religious identity of the country. Following the decline of central authority in the 18th century, Azerbaijan fragmented into numerous semi-independent khanates (such as Karabakh, Sheki, and Ganja), each with its own ruler and distinct cultural life.",
+			"keyEvents": [
+				{
+					"year": "642",
+					"title": "Arab Conquest",
+					"description": "Arabs defeat the Sassanids and incorporate Azerbaijan into the Caliphate, beginning the process of Islamization"
+				},
+				{
+					"year": "861 - 1538",
+					"title": "Shirvanshah Dynasty",
+					"description": "Rise of the Shirvanshahs who rule largely autonomously, fostering architecture and literature, including the works of Nizami Ganjavi"
+				},
+				{
+					"year": "1501",
+					"title": "Safavid Empire",
+					"description": "Shah Ismail I establishes the Safavid dynasty, making Shia Islam the state religion and unifying the region against the Ottomans"
+				},
+				{
+					"year": "1747",
+					"title": "Era of Khanates",
+					"description": "Following the death of Nader Shah, local feudal lords establish independent khanates across Azerbaijan, including Baku, Sheki, and Karabakh"
+				}
+			],
+			"notableFigures": ["Nizami Ganjavi (Poet)", "Shah Ismail I", "Nasimi (Poet)", "Panah Ali Khan"]
+		},
+		"imperial": {
+			"period": "1804 - 1917",
+			"description": "The 19th century was defined by the Russian Empire's expansion into the Caucasus, leading to two major Russo-Persian Wars. The treaties of Gulistan (1813) and Turkmenchay (1828) permanently divided the Azerbaijani people between the Russian Empire (North) and Persia (South/Iran). Under Russian rule, Northern Azerbaijan underwent significant modernization. The late 19th century oil boom transformed Baku into a cosmopolitan industrial hub, producing half of the world's oil by 1900. This economic explosion created a wealthy merchant class and a vibrant intelligentsia that began to formulate ideas of modern Azerbaijani nationalism, distinct from their religious or regional identities.",
+			"keyEvents": [
+				{
+					"year": "1813",
+					"title": "Treaty of Gulistan",
+					"description": "Ends the first Russo-Persian War; Persia cedes vast northern territories, including Ganja and Baku, to Russia"
+				},
+				{
+					"year": "1828",
+					"title": "Treaty of Turkmenchay",
+					"description": "Finalizes the division of Azerbaijan; the Aras River becomes the border between the Russian and Persian empires"
+				},
+				{
+					"year": "1846",
+					"title": "First Oil Well",
+					"description": "The world's first mechanically drilled oil well is completed in Bibi-Heybat, catalyzing the global oil industry"
+				},
+				{
+					"year": "1908",
+					"title": "First Eastern Opera",
+					"description": "Uzeyir Hajibeyov composes 'Leyli and Majnun', the first opera in the Islamic world, blending Western instruments with traditional Mugham"
+				}
+			],
+			"notableFigures": ["Haji Zeynalabdin Taghiyev", "Uzeyir Hajibeyov", "Mirza Fatali Akhundov"]
+		},
+		"independence": {
+			"period": "1918 - 1920",
+			"description": "Following the collapse of the Russian Empire, the Azerbaijan Democratic Republic (ADR) was proclaimed on May 28, 1918. It holds the distinction of being the first secular democratic republic in the Muslim world. The ADR government implemented progressive reforms, including granting women the right to vote (predating many Western nations) and establishing Baku State University. Despite its achievements, the republic faced immense pressure from Bolsheviks, internal strife, and regional conflicts. Its independence was cut short after just 23 months when the Red Army invaded in April 1920, establishing Soviet rule.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Declaration of Independence",
+					"description": "May 28, the Azerbaijani National Council proclaims independence in Tiflis before moving to Ganja and then Baku"
+				},
+				{
+					"year": "1918",
+					"title": "Liberation of Baku",
+					"description": "September 15, the Islamic Army of the Caucasus liberates Baku from the Centrocaspian Dictatorship"
+				},
+				{
+					"year": "1919",
+					"title": "Women's Suffrage",
+					"description": "Azerbaijan grants voting rights to women, the first Muslim-majority nation to do so"
+				}
+			],
+			"notableFigures": ["Mammad Amin Rasulzadeh", "Fatali Khan Khoyski"]
+		},
+		"modern": {
+			"period": "1920 - Present",
+			"description": "As a Soviet republic, Azerbaijan underwent rapid industrialization and secularization, while Baku remained a critical energy supplier, fueling the Soviet war effort during WWII. The collapse of the USSR in 1991 led to the restoration of independence, accompanied by severe turbulence, including the First Nagorno-Karabakh War. Under the leadership of Heydar Aliyev and later Ilham Aliyev, the country utilized its oil wealth (the 'Contract of the Century') to modernize infrastructure and diplomatic standing. The 21st century has seen Azerbaijan assert itself as a regional power, hosting international events and reclaiming territory in the Second Nagorno-Karabakh War of 2020.",
+			"keyEvents": [
+				{
+					"year": "1990",
+					"title": "Black January",
+					"description": "Soviet troops violently crackdown on protesters in Baku, galvanizing the independence movement"
+				},
+				{
+					"year": "1991",
+					"title": "Restoration of Independence",
+					"description": "October 18, Azerbaijan formally restores its independence from the Soviet Union"
+				},
+				{
+					"year": "1994",
+					"title": "Contract of the Century",
+					"description": "A landmark agreement with Western oil companies to develop the Caspian oil fields, securing Azerbaijan's economic future"
+				},
+				{
+					"year": "2020",
+					"title": "Second Nagorno-Karabakh War",
+					"description": "44-day war results in Azerbaijan regaining control over territories lost in the early 1990s"
+				}
+			],
+			"notableFigures": ["Heydar Aliyev", "Abulfaz Elchibey", "Ilham Aliyev", "Muslim Magomayev"]
+		},
+		"timeline": [
+			{
+				"year": "c. 323 BCE",
+				"era": "Ancient",
+				"title": "Atropatene Founded",
+				"description": "Establishment of the kingdom that gives the region its name"
+			},
+			{
+				"year": "1501",
+				"era": "Medieval",
+				"title": "Safavid Rise",
+				"description": "Shah Ismail I unifies the region and establishes Shia Islam"
+			},
+			{
+				"year": "1828",
+				"era": "Imperial",
+				"title": "Treaty of Turkmenchay",
+				"description": "Permanent division of Azerbaijan between Russia and Persia"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "First Republic",
+				"description": "Establishment of the Azerbaijan Democratic Republic"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Independence Restored",
+				"description": "Azerbaijan leaves the Soviet Union"
+			}
+		]
+	},
+	{
+		"name": "Georgia",
+		"overview": "Georgia's history is the story of a resilient Christian outpost in the Caucasus, celebrated for its rugged mountains, polyphonic singing, and ancient winemaking traditions. From the mythic Kingdom of Colchis—destination of Jason and the Argonauts—to the medieval Golden Age under Queen Tamar, Georgia has fought to preserve its distinct Kartvelian language and culture against waves of Persian, Arab, Mongol, Turkish, and Russian conquerors. The nation's identity is deeply intertwined with the Georgian Orthodox Church and a feudal chivalry that persisted for centuries. After being absorbed by the Russian Empire and later the Soviet Union, modern Georgia has pursued a determined path toward Euro-Atlantic integration, marked by the Rose Revolution and a steadfast defense of its sovereignty.",
+		"source": {
+			"label": "Wikipedia - History of Georgia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Georgia_(country)",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Georgia_(country)",
+				"https://www.britannica.com/place/Georgia",
+				"https://www.georgianjournal.ge/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence",
+				"value": "May 26, 1918"
+			},
+			{
+				"label": "Restored Independence",
+				"value": "April 9, 1991"
+			},
+			{
+				"label": "Capital",
+				"value": "Tbilisi (founded 5th c.)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Western exonym (Persian 'Gurgan'); endonym is 'Sakartvelo'"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "4 World Heritage Sites"
+			},
+			{
+				"label": "National Day",
+				"value": "May 26 (Independence Day)"
+			}
+		],
+		"ancient": {
+			"period": "c. 13th Century BCE - 5th Century CE",
+			"description": "Georgia's ancient history is dominated by two kingdoms: Colchis in the west and Iberia (Kartli) in the east. Colchis, famous in Greek mythology as the land of the Golden Fleece, was an early center of metallurgy and trade. In the 4th century CE, the Kingdom of Iberia became one of the first nations in the world to adopt Christianity as a state religion, a conversion attributed to Saint Nino of Cappadocia. This pivotal event aligned Georgia culturally with the West and Byzantium, creating a distinct religious identity that would serve as a unifying force against later Zoroastrian and Islamic expansions.",
+			"keyEvents": [
+				{
+					"year": "c. 6th C. BCE",
+					"title": "Rise of Colchis",
+					"description": "Establishment of the Kingdom of Colchis, known for gold production and Greek trade"
+				},
+				{
+					"year": "337 CE",
+					"title": "Conversion to Christianity",
+					"description": "King Mirian III of Iberia accepts Christianity, taught by St. Nino, establishing the Georgian Orthodox Church"
+				},
+				{
+					"year": "447 CE",
+					"title": "Founding of Tbilisi",
+					"description": "King Vakhtang Gorgasali discovers hot springs and orders the construction of the new capital"
+				}
+			],
+			"notableFigures": ["King Pharnavaz I", "Saint Nino", "King Vakhtang Gorgasali"]
+		},
+		"medieval": {
+			"period": "6th Century - 18th Century",
+			"description": "The medieval period represents the zenith of Georgian power and culture, known as the 'Golden Age' (11th-13th centuries). Under King David the Builder and his great-granddaughter Queen Tamar, Georgia united the Caucasus, expelled the Seljuk Turks, and flourished as a pan-Caucasian empire with a renaissance in architecture, philosophy, and poetry (notably Shota Rustaveli's 'The Knight in the Panther's Skin'). However, this glory was shattered by the Mongol invasions in the 13th century, followed by the devastating raids of Tamerlane. By the 15th century, the unified kingdom fractured into rival kingdoms (Kartli, Kakheti, Imereti) and principalities, struggling to survive between the expanding Ottoman and Persian empires.",
+			"keyEvents": [
+				{
+					"year": "1121",
+					"title": "Battle of Didgori",
+					"description": "King David the Builder defeats a massive Seljuk coalition, securing Georgian independence and starting the Golden Age"
+				},
+				{
+					"year": "1184 - 1213",
+					"title": "Reign of Queen Tamar",
+					"description": "Georgia reaches its maximum territorial extent; a period of immense cultural and political power"
+				},
+				{
+					"year": "1236",
+					"title": "Mongol Invasions",
+					"description": "Mongol hordes devastate the kingdom, ending the Golden Age and reducing Georgia to a vassal state"
+				},
+				{
+					"year": "1625",
+					"title": "Battle of Marabda",
+					"description": "Georgians valiantly resist Safavid Persian attempts to annihilate the Kakhetian kingdom"
+				}
+			],
+			"notableFigures": ["David IV (The Builder)", "Queen Tamar", "Shota Rustaveli"]
+		},
+		"imperial": {
+			"period": "1801 - 1917",
+			"description": "Seeking protection from Persian aggression, the Georgian Kingdom of Kartli-Kakheti signed the Treaty of Georgievsk with Russia in 1783. However, instead of protection, Russia annexed the kingdom outright in 1801, abolishing the Georgian monarchy and the autocephaly of the Church. While Russian rule brought European-style modernization, roads, and protection from Islamic empires, it also suppressed Georgian culture. The 19th century saw a cultural revival led by the 'Tergdaleulebi'—intellectuals educated in Russia who returned to promote Georgian language and national consciousness, laying the groundwork for future independence.",
+			"keyEvents": [
+				{
+					"year": "1783",
+					"title": "Treaty of Georgievsk",
+					"description": "Protectorate agreement signed with Russia, which Russia later violates"
+				},
+				{
+					"year": "1801",
+					"title": "Russian Annexation",
+					"description": "Tsar Paul I and Alexander I sign decrees incorporating eastern Georgia into the Russian Empire"
+				},
+				{
+					"year": "1907",
+					"title": "Ilia Chavchavadze Assassinated",
+					"description": "Death of the 'Father of the Nation', a writer and statesman who spearheaded the national revival"
+				}
+			],
+			"notableFigures": ["King Erekle II", "Ilia Chavchavadze", "Akaki Tsereteli"]
+		},
+		"independence": {
+			"period": "1918 - 1921",
+			"description": "In the chaotic aftermath of the Russian Revolution, Georgia declared independence on May 26, 1918. The Democratic Republic of Georgia was a social-democratic state that garnered international recognition and held the first democratic elections in the region. It faced border wars and economic hardship but managed to create a constitution and state institutions. This experiment in democracy was brutally ended in February 1921 when the Red Army invaded, incorporating Georgia into the Soviet Union despite a recognized peace treaty.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Independence Declared",
+					"description": "Noe Zhordania leads the declaration of the Democratic Republic of Georgia"
+				},
+				{
+					"year": "1921",
+					"title": "Soviet Invasion",
+					"description": "The Red Army invades Tbilisi, forcing the government into exile and ending independence"
+				}
+			],
+			"notableFigures": ["Noe Zhordania", "Kote Makhashvili"]
+		},
+		"modern": {
+			"period": "1921 - Present",
+			"description": "Soviet Georgia was transformed from an agrarian society into an industrial one, while Georgians like Joseph Stalin and Lavrentiy Beria rose to the highest levels of Soviet power. Paradoxically, Georgia also maintained a potent underground nationalist movement, famously protesting to protect their language in 1978. Independence was restored in 1991, but the 1990s were marred by civil war, economic collapse, and separatist conflicts in Abkhazia and South Ossetia. The 2003 Rose Revolution ushered in a pro-Western reformist era, leading to rapid modernization but also the 2008 war with Russia. Today, Georgia continues to balance its European aspirations with the challenges of its geopolitical neighborhood.",
+			"keyEvents": [
+				{
+					"year": "1956",
+					"title": "Tbilisi Riots",
+					"description": "Mass protests against de-Stalinization are violently suppressed by Soviet troops"
+				},
+				{
+					"year": "1989",
+					"title": "April 9 Tragedy",
+					"description": "Soviet military disperses peaceful pro-independence rally, killing 21 and radicalizing the nation"
+				},
+				{
+					"year": "1991",
+					"title": "Independence Restored",
+					"description": "Zviad Gamsakhurdia leads the restoration of independence amidst rising civil strife"
+				},
+				{
+					"year": "2003",
+					"title": "Rose Revolution",
+					"description": "Peaceful protests oust Eduard Shevardnadze, bringing Mikheil Saakashvili to power and initiating reforms"
+				},
+				{
+					"year": "2008",
+					"title": "Russo-Georgian War",
+					"description": "Five-day war results in Russian occupation of Abkhazia and South Ossetia"
+				}
+			],
+			"notableFigures": [
+				"Zviad Gamsakhurdia",
+				"Eduard Shevardnadze",
+				"Mikheil Saakashvili",
+				"Nona Gaprindashvili (Chess legend)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "337",
+				"era": "Ancient",
+				"title": "Christianity Adopted",
+				"description": "Georgia becomes one of the first Christian states"
+			},
+			{
+				"year": "1121",
+				"era": "Medieval",
+				"title": "Golden Age Begins",
+				"description": "Victory at Didgori launches the peak of Georgian power"
+			},
+			{
+				"year": "1801",
+				"era": "Imperial",
+				"title": "Russian Annexation",
+				"description": "The Kingdom of Kartli-Kakheti is absorbed by Russia"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "First Republic",
+				"description": "Brief period of independence under social-democratic rule"
+			},
+			{
+				"year": "2003",
+				"era": "Modern",
+				"title": "Rose Revolution",
+				"description": "Pro-Western peaceful transfer of power"
+			}
+		]
+	},
+	{
+		"name": "Armenia",
+		"overview": "Armenia is one of the world's oldest civilizations, a nation defined by its rugged highlands, ancient Christianity, and a diaspora that spans the globe. As the first state to officially adopt Christianity (301 CE), its identity is anchored in the Armenian Apostolic Church and a unique alphabet created in the 5th century. From the expansionist Artaxiad empire under Tigranes the Great to the medieval splendors of Ani ('City of 1001 Churches'), Armenia has endured centuries of domination by Romans, Persians, Ottomans, and Russians. The 20th century was marked by the tragedy of the Armenian Genocide and the resilience of survival, leading to a modern state that balances strong ties with Russia, the West, and its own vibrant diaspora community.",
+		"source": {
+			"label": "Wikipedia - History of Armenia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Armenia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Armenia",
+				"https://www.britannica.com/place/Armenia",
+				"https://www.mfa.am/en/history/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "First Independence",
+				"value": "May 28, 1918"
+			},
+			{
+				"label": "Restored Independence",
+				"value": "September 21, 1991"
+			},
+			{
+				"label": "Capital",
+				"value": "Yerevan (founded 782 BCE)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "Exonym 'Armenia'; Endonym 'Hayastan' (Land of Hayk)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "3 World Heritage Sites"
+			},
+			{
+				"label": "Religion",
+				"value": "Apostolic Christian (Since 301 CE)"
+			}
+		],
+		"ancient": {
+			"period": "c. 860 BCE - 428 CE",
+			"description": "Armenia's ancient roots trace back to the Kingdom of Urartu, a formidable rival to Assyria. Following Urartu's decline, the Satrapy of Armenia emerged under Persian rule. The peak of ancient Armenian power arrived under the Artaxiad dynasty, specifically Tigranes the Great, whose empire stretched from the Caspian to the Mediterranean Sea. A defining moment in world history occurred in 301 CE when King Tiridates III, influenced by Saint Gregory the Illuminator, declared Christianity the state religion, making Armenia the first Christian nation. In 405 CE, the creation of the Armenian alphabet by Mesrop Mashtots secured the nation's cultural survival independent of political sovereignty.",
+			"keyEvents": [
+				{
+					"year": "782 BCE",
+					"title": "Erebuni Founded",
+					"description": "King Argishti I founds the fortress of Erebuni, the precursor to modern Yerevan"
+				},
+				{
+					"year": "95 - 55 BCE",
+					"title": "Empire of Tigranes",
+					"description": "Under Tigranes the Great, Armenia becomes the strongest state in the Roman East"
+				},
+				{
+					"year": "301 CE",
+					"title": "Conversion to Christianity",
+					"description": "Armenia becomes the first state to adopt Christianity officially"
+				},
+				{
+					"year": "405 CE",
+					"title": "Alphabet Created",
+					"description": "Mesrop Mashtots invents the Armenian alphabet, launching a Golden Age of literature"
+				}
+			],
+			"notableFigures": ["Tigranes the Great", "Saint Gregory the Illuminator", "Mesrop Mashtots"]
+		},
+		"medieval": {
+			"period": "5th Century - 15th Century",
+			"description": "The medieval era was a struggle for autonomy sandwiched between the Byzantine and Arab empires. The Bagratid dynasty (885–1045) restored the kingdom, establishing the magnificent capital of Ani, a center of trade and architecture. After Ani fell to the Byzantines and then Seljuks, a remarkable second Armenian state emerged outside the highlands: the Armenian Kingdom of Cilicia (1198–1375) on the Mediterranean coast. Cilician Armenia was a close ally of the European Crusaders, blending Armenian and Western feudal traditions. Its eventual fall to the Mamluks marked the end of Armenian statehood for over five centuries.",
+			"keyEvents": [
+				{
+					"year": "451",
+					"title": "Battle of Avarayr",
+					"description": "Vardan Mamikonian leads a doomed defense against Persia; though a military defeat, it preserved Armenian Christianity"
+				},
+				{
+					"year": "885",
+					"title": "Bagratid Restoration",
+					"description": "Ashot I is recognized as King of Armenia by both Caliph and Emperor, restoring statehood"
+				},
+				{
+					"year": "1198",
+					"title": "Cilician Kingdom",
+					"description": "Levon the Magnificent is crowned King of Cilician Armenia, creating a powerful Crusader-era state"
+				}
+			],
+			"notableFigures": ["Ashot I", "Vardan Mamikonian", "Levon the Magnificent"]
+		},
+		"imperial": {
+			"period": "15th Century - 1917",
+			"description": "For centuries, Armenia was divided ('Western Armenia' under the Ottomans and 'Eastern Armenia' under the Persians, later Russians). Under the Ottoman millet system, Armenians were a 'loyal community' but faced increasing discrimination and pogroms (Hamidian massacres) in the late 19th century as nationalism rose. Eastern Armenia was annexed by Russia in 1828, providing relative security and a cultural revival in cities like Tiflis and Yerevan. The era culminated in the catastrophic Armenian Genocide (1915-1923), where the Ottoman government systematically exterminated or deported some 1.5 million Armenians, erasing a continuous presence in Anatolia that had existed for millennia.",
+			"keyEvents": [
+				{
+					"year": "1828",
+					"title": "Russian Conquest",
+					"description": "Treaty of Turkmenchay cedes Eastern Armenia (Yerevan) from Persia to Russia"
+				},
+				{
+					"year": "1894-1896",
+					"title": "Hamidian Massacres",
+					"description": "Widespread pogroms against Armenians in the Ottoman Empire ordered by Sultan Abdul Hamid II"
+				},
+				{
+					"year": "1915",
+					"title": "Armenian Genocide",
+					"description": "Systematic deportation and mass killing of Armenians by the Young Turk government; April 24 marks the beginning"
+				}
+			],
+			"notableFigures": ["Khachatur Abovian", "Komitas Vardapet", "Andranik Ozanian"]
+		},
+		"independence": {
+			"period": "1918 - 1920",
+			"description": "Out of the ashes of genocide and the collapse of the Russian Empire, the First Republic of Armenia was born on May 28, 1918, following the miraculous victory at the Battle of Sardarabad which saved the remaining population from destruction. This small, landlocked republic faced famine, refugees, and border wars. Despite these insurmountable odds, it established a parliament and a university. In late 1920, crushed between the advancing Turkish nationalist forces and the Soviet Red Army, the republic was forced to sovietize.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Battle of Sardarabad",
+					"description": "Armenian forces halt the Turkish advance, preventing total annihilation and allowing independence"
+				},
+				{
+					"year": "1918",
+					"title": "First Republic",
+					"description": "Declaration of independence of the Republic of Armenia"
+				}
+			],
+			"notableFigures": ["Aram Manukian", "Drastamat Kanayan"]
+		},
+		"modern": {
+			"period": "1920 - Present",
+			"description": "As the smallest Soviet republic, Armenia became a hub for technology and industry. The late Soviet period was defined by the awakening of national consciousness, centering on the status of Nagorno-Karabakh and environmental concerns. The 1988 Spitak Earthquake was a devastating blow. Independence in 1991 was followed by victory in the First Nagorno-Karabakh War, but also economic blockade and hardship. The 2018 'Velvet Revolution' brought a wave of democratic optimism under Nikol Pashinyan. However, the 2020 Second Nagorno-Karabakh War resulted in significant territorial losses and a political crisis, leaving the nation at a critical juncture in its history.",
+			"keyEvents": [
+				{
+					"year": "1988",
+					"title": "Spitak Earthquake",
+					"description": "Devastating earthquake kills 25,000 people and destroys much of northern Armenia"
+				},
+				{
+					"year": "1991",
+					"title": "Independence",
+					"description": "September 21, Armenia overwhelmingly votes to leave the Soviet Union"
+				},
+				{
+					"year": "2018",
+					"title": "Velvet Revolution",
+					"description": "Peaceful protests led by Nikol Pashinyan oust the entrenched ruling party"
+				},
+				{
+					"year": "2020",
+					"title": "Second Nagorno-Karabakh War",
+					"description": "Major conflict with Azerbaijan leads to loss of territory and Russian peacekeeping deployment"
+				}
+			],
+			"notableFigures": ["Charles Aznavour", "Karen Demirchyan", "Levon Ter-Petrosyan", "Nikol Pashinyan"]
+		},
+		"timeline": [
+			{
+				"year": "301",
+				"era": "Ancient",
+				"title": "Christian State",
+				"description": "Armenia becomes the first nation to adopt Christianity"
+			},
+			{
+				"year": "405",
+				"era": "Ancient",
+				"title": "Alphabet Invention",
+				"description": "Creation of the unique Armenian script"
+			},
+			{
+				"year": "1915",
+				"era": "Imperial",
+				"title": "Genocide",
+				"description": "Start of the Armenian Genocide in the Ottoman Empire"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "First Republic",
+				"description": "Establishment of independent Armenia"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Independence Restored",
+				"description": "Armenia becomes an independent sovereign state"
+			}
+		]
 	}
 ]

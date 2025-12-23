@@ -44,9 +44,9 @@
 - [ ] EUROPE
   - [x] Albania
   - [ ] Andorra
-  - [ ] Armenia
+  - [x] Armenia
   - [x] Austria
-  - [ ] Azerbaijan
+  - [x] Azerbaijan
   - [ ] Belarus
   - [x] Belgium
   - [x] Bosnia and Herzegovina
@@ -58,7 +58,7 @@
   - [x] Estonia
   - [x] Finland
   - [x] France
-  - [ ] Georgia
+  - [x] Georgia
   - [x] Germany
   - [x] Greece
   - [x] Hungary
