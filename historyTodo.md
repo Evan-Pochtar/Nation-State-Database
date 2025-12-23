@@ -49,13 +49,13 @@
   - [ ] Azerbaijan
   - [ ] Belarus
   - [x] Belgium
-  - [ ] Bosnia and Herzegovina
+  - [x] Bosnia and Herzegovina
   - [x] Bulgaria
-  - [ ] Croatia
+  - [x] Croatia
   - [ ] Cyprus
   - [x] Czechia
   - [x] Denmark
-  - [ ] Estonia
+  - [x] Estonia
   - [x] Finland
   - [x] France
   - [ ] Georgia
@@ -65,9 +65,9 @@
   - [ ] Iceland
   - [x] Ireland
   - [x] Italy
-  - [ ] Kazakhstan
+  - [x] Kazakhstan
   - [ ] Kosovo
-  - [ ] Latvia
+  - [x] Latvia
   - [ ] Liechtenstein
   - [x] Lithuania
   - [x] Luxembourg
@@ -84,19 +84,17 @@
   - [x] Russia
   - [ ] San Marino
   - [x] Serbia
-  - [ ] Slovakia
-  - [ ] Slovenia
+  - [x] Slovakia
+  - [x] Slovenia
   - [x] Spain
   - [x] Sweden
   - [x] Switzerland
-  - [ ] Turkey
   - [x] Ukraine
   - [x] United Kingdom
   - [ ] Vatican City
   - [ ] Gibraltar
   - [ ] Isle of Man
   - [ ] Jersey
-  - [ ] Guernsey
 
 - [ ] AFRICA
   - [x] Algeria

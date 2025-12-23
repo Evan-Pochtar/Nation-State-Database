@@ -23143,5 +23143,1009 @@
 				"description": "Inauguration of Ellen Johnson Sirleaf"
 			}
 		]
+	},
+	{
+		"name": "Latvia",
+		"overview": "Latvia's history is defined by its strategic location at the crossroads of Northern and Eastern Europe, making it a frequent battleground for major powers while maintaining a distinct Baltic cultural identity. Known as the 'Land of Amber' since ancient times, the territory evolved from loose tribal confederations to the medieval Terra Mariana controlled by German crusaders. For centuries, the indigenous Latvians lived as a peasant class under the dominance of Baltic German nobility, Swedish kings, and Russian tsars. The 19th-century National Awakening set the stage for a hard-won independence in 1918, which was tragically interrupted by brutal Soviet and Nazi occupations during World War II. Following decades of Soviet rule, the 'Singing Revolution' restored sovereignty in 1991. Today, Latvia is a resilient parliamentary democracy, firmly integrated into the West as a member of the EU and NATO, celebrated for its rich folk heritage and the vibrant cosmopolitan history of Riga.",
+		"source": {
+			"label": "Britannica - History of Latvia",
+			"url": "https://www.britannica.com/place/Latvia/History",
+			"urls": [
+				"https://www.britannica.com/place/Latvia/History",
+				"https://www.latvia.eu/history",
+				"https://encyclopedia.1914-1918-online.net/article/latvia"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "November 18, 1918" },
+			{ "label": "Restoration of Independence", "value": "May 4, 1990" },
+			{ "label": "Capital", "value": "Riga (founded 1201)" },
+			{ "label": "Indigenous Roots", "value": "Baltic Tribes (Latgallians, Semigallians, etc.)" },
+			{ "label": "Symbol", "value": "Freedom Monument (Milda)" },
+			{ "label": "National Day", "value": "November 18" }
+		],
+		"ancient": {
+			"period": "c. 9000 BCE - 1198 CE",
+			"description": "The territory of modern Latvia was settled after the retreat of the glaciers, with the earliest inhabitants belonging to the Kunda culture. By the 2nd millennium BCE, the ancestors of the Baltic peoples arrived, bringing Indo-European languages. During the Iron Age, distinct tribal groups emerged: the Couronians (Kurši) in the west, known as fierce seafarers who rivaled the Vikings; the Semigallians (Zemgaļi) in the fertile center; the Selonians (Sēļi) in the southeast; and the Latgallians (Latgaļi) in the east. A Finno-Ugric tribe, the Livs, inhabited the coastal areas around the Gulf of Riga. This era was characterized by the flourishing 'Amber Road' trade, where Baltic amber was exchanged for Roman coins and metals, linking the region to the Mediterranean. These societies were organized into hillfort chiefdoms and engaged in agriculture, animistic religious practices, and periodic warfare with Scandinavian raiders and Slavic neighbors, remaining the last pagans in Europe well into the medieval period.",
+			"keyEvents": [
+				{
+					"year": "c. 2000 BCE",
+					"title": "Baltic Settlement",
+					"description": "Proto-Baltic tribes settle the region, differentiating from Slavic groups and establishing unique linguistic roots"
+				},
+				{
+					"year": "c. 100-400 CE",
+					"title": "Golden Age of Amber",
+					"description": "Peak of the Roman amber trade brings wealth and metal imports to the tribal chiefdoms"
+				},
+				{
+					"year": "c. 1000",
+					"title": "Viking Interactions",
+					"description": "Couronians engage in warfare and trade with Scandinavian Vikings; the Apuolė hillfort is besieged by Swedes"
+				}
+			],
+			"notableFigures": [
+				"Namejs (Semigallian chief)",
+				"Viestards (Semigallian leader)",
+				"Kaupo (Livonian leader who converted)"
+			]
+		},
+		"medieval": {
+			"period": "1198 - 1561",
+			"description": "The Medieval period in Latvia began with the Northern Crusades, a forceful Christianization campaign led by German bishops and military orders. In 1201, Bishop Albert founded Riga, which became a powerful member of the Hanseatic League and a gateway for trade between Russia and the West. The region was dubbed 'Terra Mariana' (Land of Mary) and was governed by a complex, often conflicted power structure involving the Livonian Order (a branch of the Teutonic Knights), the Catholic hierarchy, and the city burghers of Riga. While the indigenous nobility was largely decimated or assimilated, the native peasantry was gradually enserfed. Despite this, the Semigallians and Couronians put up fierce resistance that lasted nearly a century. This era cemented a social divide that would last for centuries: a German-speaking landowning elite ruling over a Latvian-speaking peasantry.",
+			"keyEvents": [
+				{
+					"year": "1201",
+					"title": "Founding of Riga",
+					"description": "Bishop Albert establishes Riga, which rapidly becomes the central trading hub of the eastern Baltic"
+				},
+				{
+					"year": "1202",
+					"title": "Livonian Brothers of the Sword",
+					"description": "Establishment of the military order dedicated to converting the pagan Balts"
+				},
+				{
+					"year": "1236",
+					"title": "Battle of Saule",
+					"description": "Samogitian and Semigallian forces annihilate the Livonian Brothers of the Sword, forcing their merger with the Teutonic Order"
+				},
+				{
+					"year": "1290",
+					"title": "Conquest Completed",
+					"description": "The last Semigallian resistance is crushed, completing the German conquest of Latvia"
+				}
+			],
+			"notableFigures": ["Bishop Albert", "Walter von Plettenberg (Livonian Master)"]
+		},
+		"imperial": {
+			"period": "1561 - 1918",
+			"description": "Following the collapse of the Livonian Order during the Livonian War, Latvia's territory was partitioned among neighboring empires. The region of Vidzeme (Livonia) fell first to Poland-Lithuania and later to Sweden (1629), commencing the 'Good Swedish Times,' a period remembered for educational reforms and checks on the nobility's power. Meanwhile, the Duchy of Courland and Semigallia in the west became a semi-autonomous vassal of Poland-Lithuania, achieving remarkable prosperity and even establishing colonies in the Caribbean (Tobago) and Africa (The Gambia). The Great Northern War (1700–1721) ended Swedish rule, bringing the territory under the Russian Empire. The 18th and 19th centuries saw the consolidation of Russian control, but also the abolition of serfdom (earlier than in Russia proper) and the First National Awakening. The 'Young Latvians' movement promoted indigenous language and culture, laying the intellectual groundwork for future statehood.",
+			"keyEvents": [
+				{
+					"year": "1561",
+					"title": "Treaty of Vilnius",
+					"description": "Livonian Order dissolved; Duchy of Courland created and Livonia ceded to Poland-Lithuania"
+				},
+				{
+					"year": "1629",
+					"title": "Swedish Livonia",
+					"description": "Sweden acquires Vidzeme (Livonia) after war with Poland; Riga becomes the largest city in the Swedish Empire"
+				},
+				{
+					"year": "1651",
+					"title": "Courland Colonization",
+					"description": "Duke Jacob Kettler establishes colonies in Gambia and Tobago, the only Baltic attempts at overseas colonization"
+				},
+				{
+					"year": "1721",
+					"title": "Treaty of Nystad",
+					"description": "Russia acquires Swedish Livonia, beginning two centuries of Tsarist rule"
+				},
+				{
+					"year": "1817-1819",
+					"title": "Abolition of Serfdom",
+					"description": "Serfdom abolished in Courland and Livonia, though peasants remain landless initially"
+				}
+			],
+			"notableFigures": [
+				"Duke Jacob Kettler",
+				"Krišjānis Valdemārs (Young Latvian leader)",
+				"Rainis (Poet and politician)"
+			]
+		},
+		"independence": {
+			"period": "1918 - 1940",
+			"description": "Amidst the chaos of World War I and the Russian Revolution, the People's Council of Latvia proclaimed independence on November 18, 1918. However, the new state had to fight a brutal War of Independence against three enemies: the Bolshevik Red Army, German paramilitary Freikorps, and the White Russian forces of Bermondt-Avalov. Victory was secured by 1920, followed by a peace treaty with Soviet Russia where Moscow renounced all claims to Latvia 'for eternity.' The parliamentary era saw rapid economic growth, land reform that redistributed German estates to Latvian farmers, and cultural flourishing. However, political fragmentation led to a bloodless coup in 1934 by Prime Minister Kārlis Ulmanis, who established an authoritarian but popular regime known for its emphasis on national unity and agriculture. This period of sovereignty ended abruptly with the Molotov-Ribbentrop Pact.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Proclamation of Independence",
+					"description": "November 18, independence declared in the National Theatre in Riga"
+				},
+				{
+					"year": "1919",
+					"title": "Battle of Cēsis",
+					"description": "Combined Estonian and Latvian forces defeat the German Baltische Landeswehr, a turning point in the war"
+				},
+				{
+					"year": "1920",
+					"title": "Peace with Russia",
+					"description": "Treaty of Riga signed; Soviet Russia recognizes Latvian independence"
+				},
+				{
+					"year": "1934",
+					"title": "Ulmanis Coup",
+					"description": "Kārlis Ulmanis suspends parliament and establishes an authoritarian regime"
+				}
+			],
+			"notableFigures": ["Kārlis Ulmanis", "Jānis Čakste (First President)", "Oskars Kalpaks (Military Commander)"]
+		},
+		"modern": {
+			"period": "1940 - Present",
+			"description": "Latvia's modern history is scarred by the triple occupation of World War II: first by the Soviets (1940), who carried out mass deportations during the 'Year of Terror'; then by Nazi Germany (1941), which brought the Holocaust; and again by the Soviets (1944), leading to nearly 50 years of occupation. Post-war resistance by 'Forest Brothers' guerillas continued until the 1950s. The Soviet era brought heavy industrialization and massive Russian immigration, threatening the demographic survival of the Latvian nation. The late 1980s saw the rise of the 'Singing Revolution,' a non-violent movement utilizing mass demonstrations and song to demand freedom. Independence was restored de facto in August 1991. Since then, Latvia has transformed into a market economy, joined the EU and NATO in 2004, and adopted the Euro, firmly anchoring itself in the Western community while preserving its unique Baltic heritage.",
+			"keyEvents": [
+				{
+					"year": "1941",
+					"title": "June Deportations",
+					"description": "Soviets deport over 15,000 Latvians to gulags just before Nazi invasion"
+				},
+				{
+					"year": "1989",
+					"title": "Baltic Way",
+					"description": "Two million people join hands across Latvia, Estonia, and Lithuania to protest Soviet occupation"
+				},
+				{
+					"year": "1990",
+					"title": "Declaration of Restoration",
+					"description": "May 4, Supreme Council declares the restoration of independence, beginning a transition period"
+				},
+				{
+					"year": "1991",
+					"title": "The Barricades",
+					"description": "Civilians build barricades in Riga to protect strategic sites from Soviet OMON forces; international recognition follows in August"
+				},
+				{
+					"year": "2004",
+					"title": "EU and NATO Accession",
+					"description": "Latvia secures its geopolitical future by joining major Western alliances"
+				}
+			],
+			"notableFigures": ["Vaira Vīķe-Freiberga (Former President)", "Dainis Īvāns (Leader of Popular Front)"]
+		},
+		"timeline": [
+			{
+				"year": "1201",
+				"era": "Medieval",
+				"title": "Riga Founded",
+				"description": "Establishment of Riga by Bishop Albert"
+			},
+			{
+				"year": "1561",
+				"era": "Imperial",
+				"title": "Terra Mariana Partitioned",
+				"description": "Collapse of the Livonian Order leads to Polish and Swedish rule"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Republic of Latvia proclaimed on November 18"
+			},
+			{
+				"year": "1940",
+				"era": "Modern",
+				"title": "Soviet Occupation",
+				"description": "USSR occupies Latvia under Molotov-Ribbentrop Pact protocols"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Freedom Restored",
+				"description": "Full independence restored after the collapse of the Soviet coup"
+			},
+			{
+				"year": "2014",
+				"era": "Modern",
+				"title": "Euro Adoption",
+				"description": "Latvia joins the Eurozone, cementing economic integration with Europe"
+			}
+		]
+	},
+	{
+		"name": "Estonia",
+		"overview": "Estonia's history is the story of a distinct Finno-Ugric people maintaining their identity on the frontier between East and West. Unlike their Baltic neighbors, Estonians share close linguistic and cultural ties with Finland. For centuries, the land was a contesting ground for Danes, Germans, Swedes, Poles, and Russians. The era of the Teutonic Knights established a German-dominated upper class that lasted well into the Russian Imperial period. Estonia experienced a profound National Awakening in the 19th century, leading to independence in 1918. After enduring the devastation of World War II and harsh Soviet annexation, Estonia emerged in 1991 not just as a free nation, but as a pioneer in digital innovation. Today, 'e-Estonia' is known globally for its advanced digital society, while retaining a deeply rooted culture celebrated through its massive Song Festivals.",
+		"source": {
+			"label": "Estonica - History",
+			"url": "http://www.estonica.org/en/History/",
+			"urls": [
+				"http://www.estonica.org/en/History/",
+				"https://www.britannica.com/place/Estonia/History",
+				"https://vm.ee/en/history-estonia"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "February 24, 1918" },
+			{ "label": "Restoration of Independence", "value": "August 20, 1991" },
+			{ "label": "Capital", "value": "Tallinn (Reval)" },
+			{ "label": "Language Group", "value": "Finno-Ugric (related to Finnish)" },
+			{ "label": "UNESCO Sites", "value": "Historic Centre of Tallinn (Old Town)" },
+			{ "label": "Nickname", "value": "The Baltic Tiger" }
+		],
+		"ancient": {
+			"period": "c. 9000 BCE - 1200 CE",
+			"description": "Human settlement in Estonia dates back to the Kunda culture following the Ice Age. The ancestors of modern Estonians arrived around 3000 BCE, bringing a Finno-Ugric language distinct from the Indo-European tongues of their southern neighbors. Ancient Estonia was not a unified state but a loose confederation of counties (maakond) and parishes (kihelkond) led by elders. These early Estonians were adept seafarers and traders, often referred to in Norse sagas as 'Esth' or 'Chuds.' They worshipped nature spirits and engaged in both trade and piracy across the Baltic Sea. The island of Saaremaa (Ösel) was a particularly stronghold of Viking-like raiders who maintained their pagan independence and controlled strategic sea routes long after Scandinavia had Christianized.",
+			"keyEvents": [
+				{
+					"year": "c. 3500 BCE",
+					"title": "Finno-Ugric Arrival",
+					"description": "Arrival of Finno-Ugric tribes, establishing the linguistic foundation of the nation"
+				},
+				{
+					"year": "c. 1187",
+					"title": "Raid on Sigtuna",
+					"description": "Oeselian (Estonian islander) raiders destroy Sigtuna, the then-capital of Sweden, demonstrating their maritime power"
+				}
+			],
+			"notableFigures": ["Lembitu (Elder of Sakala county)", "Elders of Saaremaa"]
+		},
+		"medieval": {
+			"period": "1208 - 1561",
+			"description": "The independence of ancient Estonia ended with the Livonian Crusade. While the German Sword Brethren attacked from the south, the Danish King Valdemar II invaded the north, conquering the stronghold of Lyndanisse in 1219 (future Tallinn). The legend of the Dannebrog (Danish flag) falling from the sky originates from this battle. The territory was divided between the Danish Crown in the north and the Livonian Order in the south. In 1343, the St. George's Night Uprising broke out—a massive peasant revolt against foreign masters—but was ruthlessly crushed, leading Denmark to sell its holdings to the Teutonic Order. This solidified the position of the Baltic Germans as the ruling elite, confining Estonians to serfdom. Cities like Tallinn (Reval) and Tartu (Dorpat) flourished as members of the Hanseatic League, creating a sharp contrast between the German urban merchant class and the indigenous rural peasantry.",
+			"keyEvents": [
+				{
+					"year": "1219",
+					"title": "Battle of Lyndanisse",
+					"description": "Danes conquer Northern Estonia; Tallinn founded as a Danish fortress"
+				},
+				{
+					"year": "1343",
+					"title": "St. George's Night Uprising",
+					"description": "Major indigenous rebellion against German and Danish rule; its defeat leads to total Teutonic Order control"
+				},
+				{
+					"year": "1525",
+					"title": "Reformation reaches Estonia",
+					"description": "Lutheranism spreads rapidly in the towns, eventually becoming the dominant religion"
+				}
+			],
+			"notableFigures": ["Lembitu (Resistance leader killed in 1217)", "Valdemar II of Denmark"]
+		},
+		"imperial": {
+			"period": "1561 - 1917",
+			"description": "The collapse of the Livonian Order ushered in the era of the 'Swedish Lion.' By the mid-17th century, Sweden controlled all of Estonia. The Swedish era is often romanticized in Estonian folklore as the 'good old Swedish times' because the crown attempted to improve the lot of the peasantry and established the University of Tartu (1632), promoting literacy. However, the Great Northern War devastated the population through plague and famine, transferring dominion to the Russian Empire in 1721. Under the Tsars, the Baltic German nobility retained their local autonomy and privileges. The 19th century brought the Estophile movement and the National Awakening, where intellectuals began to identify as 'Estonians' rather than just 'country people.' The first Song Festival in 1869 marked a pivotal moment in the consolidation of national identity.",
+			"keyEvents": [
+				{
+					"year": "1632",
+					"title": "University of Tartu Founded",
+					"description": "King Gustavus Adolphus establishes one of the oldest universities in Northern Europe"
+				},
+				{
+					"year": "1700-1721",
+					"title": "Great Northern War",
+					"description": "War results in massive depopulation; Russia annexes Estonia from Sweden"
+				},
+				{
+					"year": "1816/1819",
+					"title": "Serfdom Abolished",
+					"description": "Peasants gain personal freedom but not land ownership initially"
+				},
+				{
+					"year": "1869",
+					"title": "First Song Festival",
+					"description": "The first nationwide Song Festival in Tartu awakens national consciousness"
+				}
+			],
+			"notableFigures": ["Gustavus Adolphus", "Johann Voldemar Jannsen", "Carl Robert Jakobson"]
+		},
+		"independence": {
+			"period": "1918 - 1940",
+			"description": "Seizing the opportunity created by the Bolshevik Revolution, the Salvation Committee declared the independence of the Republic of Estonia on February 24, 1918. A difficult War of Independence followed against both Soviet Russia and the German Baltische Landeswehr. The Tartu Peace Treaty of 1920 was a crowning achievement, with Russia recognizing Estonia's independence 'in perpetuity.' The interwar republic rapidly modernized, implementing radical land reform that broke the power of the Baltic German nobility. Culturally and economically, Estonia oriented itself toward the West. However, political instability led to the 'Era of Silence' in 1934, when Konstantin Päts suspended parliament to prevent the rise of the far-right Vaps movement, ruling by decree until the Soviet takeover.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Independence Declaration",
+					"description": "Manifesto to the Peoples of Estonia proclaimed in Tallinn"
+				},
+				{
+					"year": "1919",
+					"title": "Land Reform",
+					"description": "Radical redistribution of land from Baltic German manors to Estonian farmers"
+				},
+				{
+					"year": "1920",
+					"title": "Tartu Peace Treaty",
+					"description": "Ended War of Independence; first international recognition of Soviet Russia and Estonia"
+				},
+				{
+					"year": "1934",
+					"title": "Päts' Decree",
+					"description": "Head of State Konstantin Päts declares state of emergency, beginning the 'Era of Silence'"
+				}
+			],
+			"notableFigures": ["Konstantin Päts", "Johan Laidoner (General)", "Jaan Tõnisson"]
+		},
+		"modern": {
+			"period": "1940 - Present",
+			"description": "Estonia's fate in WWII mirrored Latvia's: Soviet occupation in 1940, Nazi occupation in 1941, and Soviet re-occupation in 1944. The country lost a significant portion of its population to war, flight, and Stalinist deportations. During the Soviet era, heavy Russification policies were implemented, including the construction of massive industrial projects and the influx of Russian-speaking workers. Resistance remained alive through the 'Forest Brothers' and later through cultural preservation. The 'Singing Revolution' (1987-1991) saw massive, peaceful protests, including the famous Baltic Way human chain. Since restoring independence in 1991, Estonia has pursued radical free-market reforms and rapid digitization. It was the first country to allow online voting in general elections and offers 'e-Residency' to global citizens, earning the nickname 'E-stonia.'",
+			"keyEvents": [
+				{
+					"year": "1949",
+					"title": "March Deportations",
+					"description": "Over 20,000 Estonians deported to Siberia to force collectivization"
+				},
+				{
+					"year": "1988",
+					"title": "Singing Revolution",
+					"description": "Mass night-singing demonstrations at Tallinn Song Festival Grounds gather 300,000 people"
+				},
+				{
+					"year": "1991",
+					"title": "Restoration of Independence",
+					"description": "August 20, Supreme Council declares independence during the Soviet coup attempt"
+				},
+				{
+					"year": "1994",
+					"title": "Russian Troops Withdraw",
+					"description": "Last Russian military units leave, completing the restoration of sovereignty"
+				},
+				{
+					"year": "2007",
+					"title": "Bronze Night",
+					"description": "Cyber-attacks and riots following relocation of a Soviet monument; catalyzed Estonia's cyber-defense leadership"
+				}
+			],
+			"notableFigures": ["Lennart Meri (Writer and President)", "Arnold Rüütel", "Edgar Savisaar"]
+		},
+		"timeline": [
+			{
+				"year": "1219",
+				"era": "Medieval",
+				"title": "Danish Conquest",
+				"description": "Battle of Lyndanisse brings Northern Estonia under Danish rule"
+			},
+			{
+				"year": "1343",
+				"era": "Medieval",
+				"title": "Peasant War",
+				"description": "St. George's Night Uprising attempts to overthrow foreign rule"
+			},
+			{
+				"year": "1632",
+				"era": "Imperial",
+				"title": "Academia Gustaviana",
+				"description": "Founding of the University of Tartu promotes education"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Republic Born",
+				"description": "February 24 declaration of independence"
+			},
+			{
+				"year": "1920",
+				"era": "Independence",
+				"title": "Tartu Treaty",
+				"description": "Victory in War of Independence secured by treaty with Russia"
+			},
+			{ "year": "1991", "era": "Modern", "title": "Freedom Restored", "description": "End of Soviet occupation" },
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "Westward Integration",
+				"description": "Estonia joins NATO and the EU"
+			}
+		]
+	},
+	{
+		"name": "Slovakia",
+		"overview": "Slovakia's history is a narrative of resilience and survival at the crossroads of Central Europe. From the early Slavic empire of Great Moravia to a thousand years as part of the Kingdom of Hungary, the Slovak people maintained their linguistic and cultural identity despite lacking political independence for centuries. The 20th century brought the formation of Czechoslovakia, a complex experience during World War II, and decades of communist rule. The 'Velvet Revolution' of 1989 paved the way for democracy, and the peaceful 'Velvet Divorce' of 1993 finally established an independent Slovak Republic. Today, Slovakia is a deeply integrated member of the European Union, celebrated for its dramatic Tatra mountains, numerous castles, and rapidly modernizing economy.",
+		"source": {
+			"label": "Wikipedia - History of Slovakia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Slovakia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Slovakia",
+				"https://www.britannica.com/place/Slovakia/History",
+				"https://slovakia.travel/en/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence (Republic)", "value": "January 1, 1993" },
+			{ "label": "Capital", "value": "Bratislava" },
+			{ "label": "Constitution", "value": "September 1, 1992" },
+			{ "label": "Notable Geography", "value": "High Tatras (Carpathians)" },
+			{ "label": "Currency", "value": "Euro (since 2009)" },
+			{ "label": "National Uprising", "value": "Aug 29 (Slovak National Uprising)" }
+		],
+		"ancient": {
+			"period": "c. 500 BCE - 500 CE",
+			"description": "The territory of modern Slovakia has been inhabited since the Paleolithic era, but its ancient history is defined by its position on the frontiers of major civilizations. The Celts (specifically the Cotini tribe) established flourishing settlements and minted coins (Biatec) in the region around modern Bratislava. Later, the area served as a buffer zone between the expanding Roman Empire and Germanic tribes like the Quadi and Marcomanni. The Romans established the 'Limes Romanus' along the Danube River, building military camps such as Gerulata (Rusovce) and Trenčín (Laugaricio), where a famous Roman inscription from 179 CE still survives on the castle rock. The migration period saw the arrival of the first Slavic tribes in the 5th and 6th centuries, who would eventually become the dominant demographic.",
+			"keyEvents": [
+				{
+					"year": "c. 60 BCE",
+					"title": "Celtic Settlement",
+					"description": "Celts establish oppida (fortified settlements) in the region, including significant centers near modern Bratislava"
+				},
+				{
+					"year": "6 CE",
+					"title": "Marcomannic Kingdom",
+					"description": "Germanic tribes led by Maroboduus establish a kingdom challenging Roman authority"
+				},
+				{
+					"year": "179 CE",
+					"title": "Roman Inscription at Trenčín",
+					"description": "Roman legionaries carve an inscription celebrating a victory over Germanic tribes on the castle rock of Trenčín"
+				},
+				{
+					"year": "c. 500 CE",
+					"title": "Slavic Migration",
+					"description": "First major waves of Slavic tribes cross the Carpathian passes, settling in the Danube basin"
+				}
+			],
+			"notableFigures": ["Vannius (King of the Quadi)", "Marcus Aurelius (Roman Emperor who campaigned in the region)"]
+		},
+		"medieval": {
+			"period": "623 - 1526",
+			"description": "The medieval era marked the rise of the first Slavic political entities. The merchant Samo united Slavic tribes against the Avars and Franks in the 7th century. By the 9th century, the Principality of Nitra emerged and merged with Moravia to form Great Moravia, the first major West Slavic state. This era saw the arrival of Saints Cyril and Methodius, who created the Glagolitic alphabet and established Old Church Slavonic liturgy. Following the collapse of Great Moravia around 907 due to Magyar invasions, the territory of Slovakia was gradually integrated into the Kingdom of Hungary. Throughout the High Middle Ages, German colonists (Saxons) were invited to develop mining towns like Banská Štiavnica and Kremnica, which became wealthy centers of gold and silver production. The region, known as 'Upper Hungary', became a core industrial and cultural part of the kingdom.",
+			"keyEvents": [
+				{
+					"year": "623",
+					"title": "Empire of Samo",
+					"description": "Frankish merchant Samo unites Slavic tribes in one of the earliest known Slavic political unions"
+				},
+				{
+					"year": "833",
+					"title": "Great Moravia Formed",
+					"description": "Mojmír I unifies the Principalities of Moravia and Nitra"
+				},
+				{
+					"year": "863",
+					"title": "Arrival of Cyril and Methodius",
+					"description": "Byzantine brothers arrive to evangelize the Slavs, creating the first Slavic alphabet"
+				},
+				{
+					"year": "c. 1000",
+					"title": "Integration into Hungary",
+					"description": "Slovakia becomes part of the rising Kingdom of Hungary under Stephen I"
+				},
+				{
+					"year": "1241",
+					"title": "Mongol Invasion",
+					"description": "Mongol forces devastate the region, leading to the construction of extensive stone fortifications afterwards"
+				},
+				{
+					"year": "1328",
+					"title": "Mining Rights",
+					"description": "Kremnica receives royal privileges, establishing it as a major minting center for the Hungarian Forint"
+				}
+			],
+			"notableFigures": [
+				"Prince Pribina",
+				"Prince Rastislav",
+				"Svatopluk I (King of Great Moravia)",
+				"Matúš Čák of Trenčín (Oligarch, 'Lord of the Váh and Tatras')"
+			]
+		},
+		"imperial": {
+			"period": "1526 - 1918",
+			"description": "Following the Ottoman victory at Mohács in 1526, the Kingdom of Hungary was partitioned, and Slovakia became the core of 'Royal Hungary' under Habsburg rule. For nearly two centuries, Bratislava (then Pressburg/Pozsony) served as the capital and coronation city of Hungarian kings while the Ottomans occupied the south. This was a period of religious friction between Catholics and Protestants, and frequent anti-Habsburg uprisings led by nobility. The 19th century brought the 'National Awakening,' where intellectuals like Ľudovít Štúr codified the modern Slovak language and agitated for autonomy. The Austro-Hungarian Compromise of 1867, however, led to 'Magyarization,' a policy of forced assimilation that suppressed Slovak culture and language, fueling mass emigration to the United States and increasing desires for political separation.",
+			"keyEvents": [
+				{
+					"year": "1526",
+					"title": "Battle of Mohács",
+					"description": "Ottoman victory leads to Habsburgs claiming the Hungarian throne; Slovakia becomes the center of Royal Hungary"
+				},
+				{
+					"year": "1536",
+					"title": "Capital Relocation",
+					"description": "Bratislava becomes the capital of Royal Hungary and the coronation city for Habsburg monarchs"
+				},
+				{
+					"year": "1843",
+					"title": "Codification of Slovak",
+					"description": "Ľudovít Štúr and associates codify the modern Slovak literary language based on central dialects"
+				},
+				{
+					"year": "1848",
+					"title": "Slovak Uprising",
+					"description": "Slovak volunteers fight alongside Austrians against the Hungarian revolution, hoping for national autonomy"
+				},
+				{
+					"year": "1907",
+					"title": "Černová Tragedy",
+					"description": "Gendarmes fire on a crowd at a church consecration, killing 15 and drawing world attention to ethnic oppression"
+				}
+			],
+			"notableFigures": [
+				"Maria Theresa (crowned in Bratislava)",
+				"Juraj Jánošík (legendary outlaw/folk hero)",
+				"Ľudovít Štúr (language codifier)",
+				"Milan Rastislav Štefánik"
+			]
+		},
+		"independence": {
+			"period": "1918 - 1993",
+			"description": "The collapse of Austria-Hungary in 1918 allowed Slovaks to join with Czechs to form Czechoslovakia. While this liberated them from Magyarization, tensions eventually arose regarding Slovak autonomy within the new state. World War II saw the creation of a clerico-fascist Slovak State under Nazi patronage, a controversial period marked by the deportation of Jews but also by the fierce anti-fascist Slovak National Uprising in 1944. After the war, Czechoslovakia was reconstituted and fell under Soviet influence in 1948. The communist era brought industrialization but also repression. The 'Prague Spring' of 1968, led by Slovak Alexander Dubček, attempted 'socialism with a human face' before being crushed by Warsaw Pact tanks. The fall of communism in 1989's Velvet Revolution was followed by the 'Velvet Divorce,' a peaceful negotiation that dissolved Czechoslovakia and created an independent Slovakia on January 1, 1993.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Czechoslovakia Founded",
+					"description": "October 28/30, The Republic of Czechoslovakia is proclaimed, uniting Czechs and Slovaks"
+				},
+				{
+					"year": "1939",
+					"title": "Slovak Republic (Wartime)",
+					"description": "Under Nazi pressure, a separate Slovak state is declared under Jozef Tiso"
+				},
+				{
+					"year": "1944",
+					"title": "Slovak National Uprising",
+					"description": "Armed insurrection against the Nazi occupation and collaborationist government begins in Banská Bystrica"
+				},
+				{
+					"year": "1968",
+					"title": "Prague Spring",
+					"description": "Alexander Dubček leads liberalization reforms, ended by Soviet-led invasion"
+				},
+				{ "year": "1989", "title": "Velvet Revolution", "description": "Mass non-violent protests end communist rule" },
+				{
+					"year": "1993",
+					"title": "Independence",
+					"description": "January 1, dissolution of Czechoslovakia takes effect; Slovak Republic becomes a sovereign state"
+				}
+			],
+			"notableFigures": ["Andrej Hlinka", "Jozef Tiso", "Alexander Dubček", "Vladimír Mečiar"]
+		},
+		"modern": {
+			"period": "1993 - Present",
+			"description": "Since gaining independence, Slovakia has undergone a rapid transformation from a struggling post-communist state to a high-income European economy. The 1990s were marked by the semi-authoritarian rule of Vladimír Mečiar, which temporarily isolated the country. However, the 1998 elections marked a decisive turn toward the West. Slovakia engaged in deep economic reforms, earning the nickname 'Tatra Tiger' for its high growth rates, particularly in the automotive industry (becoming the world's largest car producer per capita). The country joined NATO and the European Union in 2004, and adopted the Euro in 2009, cementing its place in the western geopolitical sphere.",
+			"keyEvents": [
+				{
+					"year": "1998",
+					"title": "Political Turnaround",
+					"description": "Elections end the isolationist Mečiar era, setting a course for Euro-Atlantic integration"
+				},
+				{
+					"year": "2004",
+					"title": "EU and NATO Accession",
+					"description": "Slovakia formally joins the North Atlantic Treaty Organization and the European Union"
+				},
+				{
+					"year": "2009",
+					"title": "Euro Adoption",
+					"description": "Slovakia replaces the Koruna with the Euro, becoming the first former Eastern Bloc country in the region to do so"
+				}
+			],
+			"notableFigures": ["Mikuláš Dzurinda", "Zuzana Čaputová", "Peter Sagan"]
+		},
+		"timeline": [
+			{
+				"year": "623",
+				"era": "Medieval",
+				"title": "Samo's Empire",
+				"description": "First Slavic tribal union in Central Europe"
+			},
+			{
+				"year": "863",
+				"era": "Medieval",
+				"title": "Cyril and Methodius",
+				"description": "Arrival of Byzantine missionaries to Great Moravia"
+			},
+			{
+				"year": "1526",
+				"era": "Imperial",
+				"title": "Habsburg Rule Begins",
+				"description": "Slovakia becomes part of the Habsburg Monarchy after Mohács"
+			},
+			{
+				"year": "1843",
+				"era": "Imperial",
+				"title": "Language Codified",
+				"description": "Standardization of the modern Slovak language"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Czechoslovakia",
+				"description": "Foundation of the common state of Czechs and Slovaks"
+			},
+			{
+				"year": "1944",
+				"era": "Independence",
+				"title": "National Uprising",
+				"description": "Major anti-fascist rebellion during WWII"
+			},
+			{ "year": "1989", "era": "Independence", "title": "Velvet Revolution", "description": "End of Communist rule" },
+			{
+				"year": "1993",
+				"era": "Modern",
+				"title": "Slovak Republic",
+				"description": "Establishment of independent Slovakia"
+			},
+			{ "year": "2004", "era": "Modern", "title": "EU Accession", "description": "Slovakia joins the European Union" }
+		]
+	},
+	{
+		"name": "Slovenia",
+		"overview": "Slovenia's history is shaped by its unique position where the Alps, the Mediterranean, and the Pannonian Plain meet. From the early Slavic principality of Carantania—one of the earliest Slavic states—to centuries under Habsburg rule, the Slovene people preserved their identity through their language and culture. Unlike much of the Balkans, Slovenia was historically linked to Austria and Western Europe. Following the collapse of Austria-Hungary, it joined the Kingdom of Yugoslavia, and later Socialist Yugoslavia, where it was the most prosperous republic. In 1991, Slovenia was the first to declare independence from Yugoslavia, fighting a brief 'Ten-Day War' to secure its sovereignty. It has since become a stable democracy and the first former Yugoslav republic to join the EU and Eurozone.",
+		"source": {
+			"label": "Wikipedia - History of Slovenia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Slovenia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Slovenia",
+				"https://www.britannica.com/place/Slovenia/History",
+				"https://www.slovenia.info/en/stories/history-of-slovenia"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "June 25, 1991" },
+			{ "label": "Capital", "value": "Ljubljana" },
+			{ "label": "Highest Peak", "value": "Mount Triglav (2,864 m)" },
+			{ "label": "National Anthem", "value": "Zdravljica (A Toast)" },
+			{ "label": "UNESCO Sites", "value": "5 World Heritage Sites" },
+			{ "label": "Joined EU", "value": "May 1, 2004" }
+		],
+		"ancient": {
+			"period": "c. 250 BCE - 550 CE",
+			"description": "Before the arrival of the Slavs, the territory of Slovenia was a transit route for the Amber Road and inhabited by Illyrian and Celtic tribes. The Kingdom of Noricum, a federation of Celtic tribes, allied with and was eventually peacefully incorporated into the Roman Empire. The Romans established significant cities such as Emona (Ljubljana), Poetovio (Ptuj), and Celeia (Celje), building roads and infrastructure that integrated the region into the empire. As the Roman Empire declined in the 5th and 6th centuries, the region was traversed by migrating Huns and Ostrogoths, paving the way for the arrival of Alpine Slavs (ancestors of modern Slovenes) from the east.",
+			"keyEvents": [
+				{
+					"year": "c. 10 BCE",
+					"title": "Roman Annexation",
+					"description": "The Kingdom of Noricum is incorporated into the Roman Empire"
+				},
+				{
+					"year": "14 CE",
+					"title": "Founding of Emona",
+					"description": "Roman colonists establish the settlement of Emona, precursor to modern Ljubljana"
+				},
+				{
+					"year": "c. 568",
+					"title": "Slavic Settlement",
+					"description": "Slavic tribes begin settling the Alpine valleys following the departure of the Lombards"
+				}
+			],
+			"notableFigures": ["Teutoberg (Celtic leader)", "Bishop Victorinus of Pettau (Early Christian writer)"]
+		},
+		"medieval": {
+			"period": "c. 600 - 1335",
+			"description": "The defining moment of early Slovene history was the establishment of Carantania (Karantanija), the first independent Slavic principality, in the 7th century. It is famous for the 'Installation of the Dukes,' a democratic ritual where the ruler was elected by free peasants and seated on the Prince's Stone—a tradition that later fascinated Thomas Jefferson. Carantania eventually fell under Frankish and Bavarian suzerainty to secure protection against Avars, leading to the Christianization of the population. By the high middle ages, the territory was divided into various marches (border provinces) of the Holy Roman Empire, such as Carniola, Styria, and Carinthia. Local dynasties like the Counts of Celje rose to prominence, briefly rivalling the Habsburgs before dying out.",
+			"keyEvents": [
+				{
+					"year": "c. 658",
+					"title": "Carantania Established",
+					"description": "Formation of the Slavic Principality of Carantania with its center in Zollfeld"
+				},
+				{
+					"year": "c. 745",
+					"title": "Christianization",
+					"description": "Carantania accepts Bavarian overlordship and begins conversion to Christianity"
+				},
+				{
+					"year": "c. 976",
+					"title": "Duchy of Carinthia",
+					"description": "Establishment of Carinthia as a distinct duchy within the Holy Roman Empire"
+				},
+				{
+					"year": "c. 1000",
+					"title": "Freising Manuscripts",
+					"description": "Creation of the oldest surviving documents in a Slavic language written in Latin script"
+				}
+			],
+			"notableFigures": ["Prince Borut", "Counts of Celje (Hermann II, Ulrich II)"]
+		},
+		"imperial": {
+			"period": "1335 - 1918",
+			"description": "Following the extinction of local dynasties, the Habsburg family acquired the vast majority of Slovene-inhabited lands, a rule that would last until 1918. The Slovenes were a peasant nation under German-speaking feudal lords, but the Reformation in the 16th century sparked a cultural awakening. Primož Trubar published the first books in the Slovene language (1550), establishing a literary identity. Though the Counter-Reformation re-Catholicized the land, the linguistic foundation remained. Under Maria Theresa and Joseph II, modernization reforms improved peasant conditions. The Napoleonic Wars briefly created the 'Illyrian Provinces' (1809-1813) with Ljubljana as capital, where the French encouraged the use of the Slovene language in schools, boosting national consciousness. The 19th-century 'United Slovenia' program demanded the unification of all Slovene lands into one political entity.",
+			"keyEvents": [
+				{
+					"year": "1335",
+					"title": "Habsburg Acquisition",
+					"description": "Habsburgs acquire Carinthia and Carniola, beginning 600 years of rule"
+				},
+				{
+					"year": "1456",
+					"title": "End of Counts of Celje",
+					"description": "Last Count of Celje dies; their vast territories pass to the Habsburgs"
+				},
+				{
+					"year": "1515",
+					"title": "Peasant Revolts",
+					"description": "Large-scale peasant uprisings against feudal oppression spread across Slovene lands"
+				},
+				{
+					"year": "1550",
+					"title": "First Slovene Books",
+					"description": "Primož Trubar publishes 'Catechismus' and 'Abecedarium', the first printed books in Slovene"
+				},
+				{
+					"year": "1809",
+					"title": "Illyrian Provinces",
+					"description": "Napoleon creates the Illyrian Provinces with Ljubljana as capital, promoting Slovene language"
+				},
+				{
+					"year": "1848",
+					"title": "United Slovenia Program",
+					"description": "First political program demanding the unification of all Slovene-speaking areas"
+				}
+			],
+			"notableFigures": ["Primož Trubar", "Janez Vajkard Valvasor", "France Prešeren (National poet)", "Jernej Kopitar"]
+		},
+		"independence": {
+			"period": "1918 - 1991",
+			"description": "After WWI, the Austro-Hungarian Empire dissolved. Slovenes joined the State of Slovenes, Croats, and Serbs, which soon merged into the Kingdom of Yugoslavia. This period saw a loss of territory (the Littoral to Italy, Carinthia to Austria) but political consolidation. In WWII, Slovenia was uniquely partitioned between Germany, Italy, and Hungary, aimed at destroying the nation. The communist-led Partisan resistance was strong. After 1945, Slovenia became a republic within Tito's Socialist Federal Republic of Yugoslavia. It was the most industrialized and prosperous republic, often pushing for liberalization. In the 1980s, the 'Slovene Spring' movement demanded democracy and sovereignty. Tensions with Belgrade peaked in 1991, leading to a declaration of independence and the 'Ten-Day War' against the Yugoslav People's Army, which Slovenia won decisively.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "State of SHS",
+					"description": "Slovenia joins the State of Slovenes, Croats, and Serbs, ending Habsburg rule"
+				},
+				{
+					"year": "1920",
+					"title": "Carinthian Plebiscite",
+					"description": "Vote determines that southern Carinthia remains with Austria, fixing the northern border"
+				},
+				{
+					"year": "1941",
+					"title": "Partition and Resistance",
+					"description": "Axis powers partition Slovenia; Liberation Front (OF) is established to resist occupation"
+				},
+				{
+					"year": "1945",
+					"title": "Socialist Republic",
+					"description": "Slovenia becomes a constituent republic of socialist Yugoslavia"
+				},
+				{
+					"year": "1990",
+					"title": "Plebiscite on Independence",
+					"description": "88.5% of voters vote in favor of an independent and sovereign Slovenia"
+				},
+				{
+					"year": "1991",
+					"title": "Ten-Day War",
+					"description": "June-July: Brief armed conflict secures Slovenia's independence from Yugoslavia"
+				}
+			],
+			"notableFigures": ["Jože Plečnik (Architect)", "Josip Broz Tito (half-Slovene)", "Edvard Kardelj", "Milan Kučan"]
+		},
+		"modern": {
+			"period": "1991 - Present",
+			"description": "Independent Slovenia quickly oriented itself toward Western Europe, avoiding the prolonged violence that engulfed the rest of Yugoslavia. It successfully transitioned to a market economy and established a stable parliamentary democracy. Slovenia became a frontrunner among new EU member states, joining both NATO and the European Union in 2004, and adopting the Euro in 2007. It held the Presidency of the Council of the EU in 2008 and 2021. Today, it is known for its high quality of life, environmental focus (Green Destination of the World), and strong export-oriented economy.",
+			"keyEvents": [
+				{
+					"year": "1992",
+					"title": "UN Recognition",
+					"description": "Slovenia is admitted as a full member of the United Nations"
+				},
+				{
+					"year": "2004",
+					"title": "Euro-Atlantic Integration",
+					"description": "Slovenia joins NATO and the European Union in the largest expansion wave"
+				},
+				{
+					"year": "2007",
+					"title": "Eurozone Entry",
+					"description": "Slovenia becomes the first new member state to adopt the Euro currency"
+				}
+			],
+			"notableFigures": ["Slavoj Žižek (Philosopher)", "Melania Trump", "Luka Dončić"]
+		},
+		"timeline": [
+			{
+				"year": "c. 658",
+				"era": "Medieval",
+				"title": "Carantania",
+				"description": "Establishment of the first Slovene state"
+			},
+			{
+				"year": "1550",
+				"era": "Imperial",
+				"title": "First Books",
+				"description": "Primož Trubar publishes first books in Slovene"
+			},
+			{
+				"year": "1809",
+				"era": "Imperial",
+				"title": "French Rule",
+				"description": "Napoleon establishes Illyrian Provinces"
+			},
+			{
+				"year": "1848",
+				"era": "Imperial",
+				"title": "United Slovenia",
+				"description": "Program for a unified Slovene political entity"
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Yugoslavia",
+				"description": "Slovenia joins the Kingdom of Serbs, Croats and Slovenes"
+			},
+			{
+				"year": "1941",
+				"era": "Independence",
+				"title": "WWII Occupation",
+				"description": "Tripartite division of Slovenia by Axis powers"
+			},
+			{
+				"year": "1991",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Declaration of independence and Ten-Day War"
+			},
+			{ "year": "2004", "era": "Modern", "title": "EU/NATO", "description": "Accession to major Western alliances" }
+		]
+	},
+	{
+		"name": "Bosnia and Herzegovina",
+		"overview": "Bosnia and Herzegovina is historically the 'heart-shaped land' of the Balkans, defined by a unique synthesis of Eastern and Western civilizations. Historically an independent medieval banate and kingdom that reached its zenith under Tvrtko I, it was later transformed by four centuries of Ottoman rule which introduced Islam and oriental culture. This was followed by Austro-Hungarian administration that brought Central European modernization. As a result, the country became a complex mosaic of three constituent peoples—Bosniaks, Serbs, and Croats. The 20th century saw it as a central pillar of Yugoslavia, followed by a tragic war for independence in the 1990s. Today, it is a decentralized democracy working towards European integration.",
+		"source": {
+			"label": "Wikipedia - History of Bosnia and Herzegovina",
+			"url": "https://en.wikipedia.org/wiki/History_of_Bosnia_and_Herzegovina",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Bosnia_and_Herzegovina",
+				"https://www.britannica.com/place/Bosnia-and-Herzegovina",
+				"https://www.osce.org/mission-to-bosnia-and-herzegovina/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "March 1, 1992" },
+			{ "label": "Capital", "value": "Sarajevo (founded 1461)" },
+			{ "label": "Name Origin", "value": "Bosnia (River Bosna) & Herzegovina (German 'Herzog' for Duke)" },
+			{ "label": "UNESCO Sites", "value": "4 World Heritage Sites (inc. Mostar Bridge)" },
+			{ "label": "National Day", "value": "November 25 (Statehood Day)" },
+			{ "label": "Structure", "value": "Two entities: Federation of BiH & Republika Srpska" }
+		],
+		"ancient": {
+			"period": "c. 1200 BCE - 600 CE",
+			"description": "The region was originally inhabited by Illyrian tribes, most notably the Daesitiates in central Bosnia and the Daors in the south. The Romans conquered the area after centuries of conflict, finalizing their control after the suppression of the massive Batonian Revolt (6-9 CE). Under Roman rule, the region was part of the provinces of Dalmatia and Pannonia, serving as a mining center for silver and iron. The Romans established settlements and roads, bringing Latin culture. Christianity spread to the region early, but the collapse of Roman authority in the Migration Period saw the area overrun by Goths and eventually settled by Slavic tribes in the 7th century.",
+			"keyEvents": [
+				{
+					"year": "329 BCE",
+					"title": "Illyrian Tribes",
+					"description": "Greek records mention Illyrian tribes interacting with Mediterranean world"
+				},
+				{
+					"year": "6-9 CE",
+					"title": "Batonian War",
+					"description": "The Daesitiates lead a massive Illyrian revolt against Rome; suppressed by future emperor Tiberius"
+				},
+				{
+					"year": "476 CE",
+					"title": "Fall of Rome",
+					"description": "Region passes effectively out of Roman control, entering period of migration"
+				}
+			],
+			"notableFigures": ["Bato (Illyrian insurgent leader)"]
+		},
+		"medieval": {
+			"period": "c. 600 - 1463",
+			"description": "Medieval Bosnia emerged as a distinct political entity in the 12th century under the rule of its Bans (viceroys/rulers). Ban Kulin is often remembered for establishing peace and trade, particularly with Dubrovnik (Charter of Kulin, 1189). The region was notable for the Bosnian Church, considered heretical (Bogomilism) by both Catholic and Orthodox neighbors. The state reached its peak under King Tvrtko I (r. 1353-1391), who expanded Bosnia's borders to include parts of Dalmatia and Croatia, proclaiming himself King of Bosnia and Serbia. Following Tvrtko's death, feudal anarchy weakened the state, leaving it vulnerable to the expanding Ottoman Empire.",
+			"keyEvents": [
+				{
+					"year": "1189",
+					"title": "Charter of Kulin Ban",
+					"description": "First diplomatic document of Bosnia, granting trade rights to Dubrovnik; symbol of statehood"
+				},
+				{
+					"year": "1322",
+					"title": "Expansion",
+					"description": "Stjepan II Kotromanić expands Bosnian territory significantly"
+				},
+				{
+					"year": "1377",
+					"title": "Kingdom Proclaimed",
+					"description": "Tvrtko I crowned King, establishing Bosnia as a powerful regional kingdom"
+				},
+				{
+					"year": "1448",
+					"title": "Herzegovina Named",
+					"description": "Stjepan Vukčić Kosača titles himself 'Herzog' (Duke) of St. Sava, giving the southern region its name"
+				},
+				{
+					"year": "1463",
+					"title": "Ottoman Conquest",
+					"description": "Ottoman forces capture the last Bosnian King, Stjepan Tomašević, and execute him"
+				}
+			],
+			"notableFigures": ["Kulin Ban", "Tvrtko I Kotromanić (First King)", "Stjepan Vukčić Kosača"]
+		},
+		"imperial": {
+			"period": "1463 - 1918",
+			"description": "Ottoman rule (1463-1878) fundamentally transformed Bosnia. A significant portion of the population converted to Islam, creating a distinct Bosniak identity alongside the Catholic and Orthodox populations. Cities like Sarajevo and Mostar were founded, featuring mosques, bazaars, and bridges (e.g., Stari Most). As Ottoman power waned, Bosnia became a volatile borderland. In 1878, following the Congress of Berlin, Austria-Hungary occupied the province, formally annexing it in 1908. The Austro-Hungarian period introduced Western industrialization, railways, and architecture. Tensions culminated in 1914 when Gavrilo Princip, a member of Young Bosnia, assassinated Archduke Franz Ferdinand in Sarajevo, sparking World War I.",
+			"keyEvents": [
+				{
+					"year": "1463",
+					"title": "Ottoman Rule Begins",
+					"description": "Beginning of four centuries of Ottoman administration and Islamization"
+				},
+				{
+					"year": "1566",
+					"title": "Old Bridge Built",
+					"description": "Construction of the Stari Most in Mostar by Ottoman architect Mimar Hayruddin"
+				},
+				{
+					"year": "1831",
+					"title": "Great Bosnian Uprising",
+					"description": "Husein Gradaščević (Dragon of Bosnia) leads a failed rebellion for Bosnian autonomy against the Sultan"
+				},
+				{
+					"year": "1878",
+					"title": "Austrian Occupation",
+					"description": "Austria-Hungary occupies Bosnia, ending Ottoman rule"
+				},
+				{
+					"year": "1914",
+					"title": "Sarajevo Assassination",
+					"description": "June 28, Gavrilo Princip assassinates Archduke Franz Ferdinand, triggering WWI"
+				}
+			],
+			"notableFigures": ["Gazi Husrev-beg", "Husein Gradaščević", "Gavrilo Princip"]
+		},
+		"modern": {
+			"period": "1918 - Present",
+			"description": "Incorporated into the Kingdom of Yugoslavia in 1918, Bosnia was wiped off the map as a distinct political entity until World War II. During WWII, it was annexed by the fascist Independent State of Croatia (NDH) but became the stronghold of Tito's multi-ethnic Partisan resistance. The modern statehood was re-established in 1943 (ZAVNOBiH), and it became a republic within Socialist Yugoslavia. The breakup of Yugoslavia led to the Bosnian War (1992-1995), a devastating conflict involving the Siege of Sarajevo and the Srebrenica genocide. The war ended with the US-brokered Dayton Accords, which preserved Bosnia as a single state divided into two entities: the Federation of Bosnia and Herzegovina and Republika Srpska. The post-war era has been marked by slow reconstruction and complex political deadlock.",
+			"keyEvents": [
+				{
+					"year": "1943",
+					"title": "ZAVNOBiH",
+					"description": "Anti-Fascist Council restores Bosnian statehood within a future Yugoslav federation"
+				},
+				{
+					"year": "1984",
+					"title": "Winter Olympics",
+					"description": "Sarajevo hosts the Winter Olympic Games, a moment of global recognition"
+				},
+				{
+					"year": "1992",
+					"title": "Independence Referendum",
+					"description": "Majority votes for independence; war erupts shortly after"
+				},
+				{
+					"year": "1995",
+					"title": "Srebrenica Genocide",
+					"description": "Over 8,000 Bosniak men and boys killed by Bosnian Serb forces"
+				},
+				{
+					"year": "1995",
+					"title": "Dayton Accords",
+					"description": "Peace agreement signed in Paris, establishing the current constitution and ending the war"
+				}
+			],
+			"notableFigures": ["Alija Izetbegović", "Ivo Andrić (Nobel Laureate)", "Valter Perić"]
+		},
+		"timeline": [
+			{
+				"year": "1189",
+				"era": "Medieval",
+				"title": "Kulin's Charter",
+				"description": "First evidence of Bosnian statehood"
+			},
+			{ "year": "1377", "era": "Medieval", "title": "Kingdom", "description": "Tvrtko I crowned King of Bosnia" },
+			{
+				"year": "1463",
+				"era": "Imperial",
+				"title": "Ottoman Conquest",
+				"description": "Fall of the Kingdom to the Ottomans"
+			},
+			{
+				"year": "1878",
+				"era": "Imperial",
+				"title": "Austrian Rule",
+				"description": "Transfer of administration to Austria-Hungary"
+			},
+			{
+				"year": "1943",
+				"era": "Modern",
+				"title": "Republic Founded",
+				"description": "Bosnia established as a republic within Yugoslavia"
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "War Begins",
+				"description": "Declaration of independence triggers three-year war"
+			},
+			{ "year": "1995", "era": "Modern", "title": "Peace", "description": "Dayton Agreement ends the conflict" }
+		]
 	}
 ]
