@@ -16,7 +16,7 @@
   - [ ] Antigua and Barbuda
   - [ ] Bahamas
   - [ ] Barbados
-  - [ ] Cuba
+  - [x] Cuba
   - [ ] Dominica
   - [ ] Dominican Republic
   - [ ] Grenada
@@ -47,7 +47,7 @@
   - [x] Armenia
   - [x] Austria
   - [x] Azerbaijan
-  - [ ] Belarus
+  - [x] Belarus
   - [x] Belgium
   - [x] Bosnia and Herzegovina
   - [x] Bulgaria
@@ -66,7 +66,7 @@
   - [x] Ireland
   - [x] Italy
   - [x] Kazakhstan
-  - [ ] Kosovo
+  - [x] Kosovo
   - [x] Latvia
   - [ ] Liechtenstein
   - [x] Lithuania
@@ -74,9 +74,9 @@
   - [ ] Malta
   - [x] Moldova
   - [ ] Monaco
-  - [ ] Montenegro
+  - [x] Montenegro
   - [x] Netherlands
-  - [ ] North Macedonia
+  - [x] North Macedonia
   - [x] Norway
   - [x] Poland
   - [x] Portugal
@@ -147,7 +147,7 @@
   - [x] Sudan
   - [ ] Tanzania
   - [ ] Togo
-  - [ ] Tunisia
+  - [x] Tunisia
   - [ ] Uganda
   - [ ] Zambia
   - [x] Zimbabwe
@@ -161,7 +161,6 @@
   - [x] Brunei
   - [x] Cambodia
   - [x] China
-  - [ ] Cyprus
   - [x] India
   - [x] Indonesia
   - [ ] Iran

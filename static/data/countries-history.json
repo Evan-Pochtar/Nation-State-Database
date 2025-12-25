@@ -23022,5 +23022,1126 @@
 				"description": "Armenia becomes an independent sovereign state"
 			}
 		]
+	},
+	{
+		"name": "Kosovo",
+		"overview": "Kosovo's history is a complex tapestry woven from its ancient Illyrian roots, a pivotal role in the medieval Serbian Empire, and centuries of Ottoman influence that shaped its religious and cultural demographic. Historically known as Dardania, it stands at a strategic crossroads in the Balkans, serving as a frontier between empires and a focal point of modern ethnic nationalism. From the decisive Battle of Kosovo in 1389 to its incorporation into Yugoslavia and the violent conflicts of the late 20th century, the region has been defined by the struggle for identity and sovereignty. Today, as Europe's youngest nation, Kosovo navigates the challenges of state-building and international recognition while preserving a rich heritage of Byzantine monasteries and Ottoman architecture.",
+		"source": {
+			"label": "Wikipedia - History of Kosovo",
+			"url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Kosovo",
+				"https://www.britannica.com/place/Kosovo",
+				"https://www.state.gov/countries-areas/kosovo/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "February 17, 2008" },
+			{ "label": "Capital", "value": "Pristina" },
+			{ "label": "Major Battle", "value": "Battle of Kosovo (1389)" },
+			{ "label": "Population", "value": "~1.8 Million" },
+			{ "label": "Currency", "value": "Euro (€)" },
+			{ "label": "Demonym", "value": "Kosovar" }
+		],
+		"ancient": {
+			"period": "c. 4th Century BCE - 12th Century CE",
+			"description": "In antiquity, the region of modern Kosovo formed the core of the Kingdom of Dardania, inhabited by the Dardani, a Paleo-Balkan tribe often associated with Illyrian or Thracian origins. The area was known for its mineral wealth and strategic location. The Roman Empire conquered Dardania by 28 BCE, eventually establishing it as a distinct Roman province in the late 3rd century CE under Diocletian. The region became highly Romanized, serving as a key transit zone between the Adriatic and the Danube. Following the fall of Rome, the territory faced waves of migrations, including Ostrogoths, Huns, and eventually Slavs in the 6th and 7th centuries. Despite these upheavals, the region maintained a distinct identity, shifting between Byzantine control and the expanding Bulgarian and Serbian medieval states.",
+			"keyEvents": [
+				{
+					"year": "c. 4th Century BCE",
+					"title": "Dardanian Kingdom",
+					"description": "Rise of the Dardanian polity, which frequently conflicted with the neighboring Kingdom of Macedon"
+				},
+				{
+					"year": "28 BCE",
+					"title": "Roman Conquest",
+					"description": "Dardania is conquered by Roman forces, eventually becoming part of the province of Moesia"
+				},
+				{
+					"year": "284 CE",
+					"title": "Province of Dardania",
+					"description": "Emperor Diocletian establishes Dardania as a separate Roman province with its capital at Naissus (modern Niš)"
+				},
+				{
+					"year": "c. 6th-7th Century",
+					"title": "Slavic Migrations",
+					"description": "Slavic tribes settle in the Balkans, fundamentally altering the demographic landscape of the region"
+				}
+			],
+			"notableFigures": ["Bato of Dardania", "Justinian I (born in nearby Tauresium)", "Emperor Diocletian"]
+		},
+		"medieval": {
+			"period": "c. 1180 - 1455",
+			"description": "The medieval era saw Kosovo become the cultural and political heart of the Serbian Empire. The Nemanjić dynasty built monumental monasteries and churches, many of which, like Gračanica and Visoki Dečani, remain UNESCO World Heritage sites today. The region flourished economically due to its rich mines, particularly at Novo Brdo. However, the expanding Ottoman Empire posed a growing threat in the late 14th century. The seminal event of this period was the Battle of Kosovo in 1389, a fierce conflict between the coalition of Prince Lazar and the Ottoman forces of Sultan Murad I. While tactically inconclusive, the battle decimated the Serbian nobility and paved the way for eventual Ottoman conquest, becoming a potent symbol in Serbian national mythology.",
+			"keyEvents": [
+				{
+					"year": "1219",
+					"title": "Serbian Autocephaly",
+					"description": "Establishment of the Serbian Orthodox Church; the seat of the Archbishopric later moves to Peć in Kosovo"
+				},
+				{
+					"year": "1346",
+					"title": "Serbian Empire",
+					"description": "Stefan Dušan is crowned Emperor in Skopje; Kosovo serves as a central political and economic hub"
+				},
+				{
+					"year": "1389",
+					"title": "Battle of Kosovo",
+					"description": "June 15 (Vidovdan), Prince Lazar's coalition fights the Ottoman army; both Lazar and Sultan Murad I are killed"
+				},
+				{
+					"year": "1455",
+					"title": "Ottoman Conquest",
+					"description": "The region fully falls under Ottoman rule, ending the medieval Serbian state's control"
+				}
+			],
+			"notableFigures": ["Stefan Nemanja", "Stefan Dušan (The Mighty)", "Prince Lazar Hrebeljanović", "Sultan Murad I"]
+		},
+		"imperial": {
+			"period": "1455 - 1912",
+			"description": "Under nearly five centuries of Ottoman rule, Kosovo underwent profound transformations. The administration established the Sanjak of Prizren, and later the Vilayet of Kosovo. This period saw the gradual Islamization of the population, particularly among the Albanians, although Christian communities persisted as protected *dhimmis*. The region experienced the Great Serb Migration of 1690, where thousands of Serbs fled northward to Habsburg lands, shifting the demographic balance. In the 19th century, Kosovo became a center for the Albanian National Awakening (Rilindja), culminating in the formation of the League of Prizren in 1878, which sought to unify Albanians and resist partition by neighboring Balkan states. The era ended with the First Balkan War, when the Ottoman Empire was driven out of Europe.",
+			"keyEvents": [
+				{
+					"year": "1690",
+					"title": "Great Migration",
+					"description": "Patriarch Arsenije III leads a mass migration of Serbs from Kosovo to the Habsburg Monarchy"
+				},
+				{
+					"year": "1878",
+					"title": "League of Prizren",
+					"description": "Albanian leaders gather in Prizren to defend their lands and demand autonomy within the Ottoman Empire"
+				},
+				{
+					"year": "1910",
+					"title": "Albanian Revolts",
+					"description": "Widespread uprisings against Ottoman centralization and taxation"
+				},
+				{
+					"year": "1912",
+					"title": "First Balkan War",
+					"description": "Serbian and Montenegrin forces capture Kosovo, ending Ottoman rule"
+				}
+			],
+			"notableFigures": ["Pjeter Bogdani", "Isa Boletini", "Idriz Seferi", "Patriarch Arsenije III"]
+		},
+		"modern": {
+			"period": "1912 - Present",
+			"description": "Following the Balkan Wars, Kosovo was incorporated into the Kingdom of Serbia and later Yugoslavia. The 20th century was marked by ethnic tensions and shifting political status. After World War II, it became an Autonomous Province within socialist Serbia. However, the revocation of this autonomy in 1989 by Slobodan Milošević triggered a decade of peaceful resistance led by Ibrahim Rugova, followed by armed conflict initiated by the Kosovo Liberation Army (KLA) in 1998. The brutal war and humanitarian crisis prompted NATO intervention in 1999, forcing the withdrawal of Yugoslav forces. Kosovo was placed under UN administration until declaring independence in 2008. Since then, it has been recognized by over 100 countries, though its status remains disputed by Serbia.",
+			"keyEvents": [
+				{
+					"year": "1974",
+					"title": "1974 Constitution",
+					"description": "Yugoslav constitution grants Kosovo extensive autonomy as a Socialist Autonomous Province"
+				},
+				{
+					"year": "1989",
+					"title": "Autonomy Revoked",
+					"description": "Milošević regime revokes Kosovo's autonomy, leading to mass protests and parallel state structures"
+				},
+				{
+					"year": "1998-1999",
+					"title": "Kosovo War",
+					"description": "Armed conflict between KLA and Yugoslav forces; NATO intervenes with airstrikes to stop ethnic cleansing"
+				},
+				{
+					"year": "2008",
+					"title": "Declaration of Independence",
+					"description": "February 17, Parliament of Kosovo unilaterally declares independence from Serbia"
+				},
+				{
+					"year": "2013",
+					"title": "Brussels Agreement",
+					"description": "Agreement aimed at normalizing relations between the governments of Kosovo and Serbia"
+				}
+			],
+			"notableFigures": ["Ibrahim Rugova", "Adem Jashari", "Hashim Thaçi", "Albin Kurti"]
+		},
+		"timeline": [
+			{
+				"year": "1389",
+				"era": "Medieval",
+				"title": "Battle of Kosovo",
+				"description": "Ottomans defeat Serbian coalition, a turning point in Balkan history"
+			},
+			{
+				"year": "1878",
+				"era": "Imperial",
+				"title": "League of Prizren",
+				"description": "Formation of the first organization dedicated to Albanian national rights"
+			},
+			{
+				"year": "1912",
+				"era": "Modern",
+				"title": "End of Ottoman Rule",
+				"description": "Kosovo absorbed by Serbia and Montenegro after the First Balkan War"
+			},
+			{
+				"year": "1999",
+				"era": "Modern",
+				"title": "NATO Intervention",
+				"description": "78-day bombing campaign ends the Kosovo War; UN administration begins"
+			},
+			{
+				"year": "2008",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Kosovo becomes the youngest sovereign state in Europe"
+			}
+		]
+	},
+	{
+		"name": "North Macedonia",
+		"overview": "North Macedonia's history is a convergence of ancient civilizations, Slavic heritage, and the modern struggle for recognition. Historically associated with the ancient kingdom of Paeonia and the legendary legacy of Macedon, the land later became a cradle of Slavic literacy and Orthodox Christianity through the Ohrid Literary School. After five centuries of Ottoman rule, the 20th century brought partition during the Balkan Wars and subsequent inclusion in the Yugoslav federation. Emerging as an independent nation in 1991, it navigated a peaceful separation from Yugoslavia, only to face an internal insurgency in 2001 and a decades-long name dispute with Greece. The historic Prespa Agreement of 2018 resolved this diplomatic standoff, opening the door to NATO membership and European integration.",
+		"source": {
+			"label": "Wikipedia - History of North Macedonia",
+			"url": "https://en.wikipedia.org/wiki/History_of_North_Macedonia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_North_Macedonia",
+				"https://www.britannica.com/place/North-Macedonia",
+				"https://history.state.gov/countries/macedonia"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "September 8, 1991" },
+			{ "label": "Capital", "value": "Skopje" },
+			{ "label": "Prespa Agreement", "value": "Signed 2018" },
+			{ "label": "NATO Accession", "value": "March 27, 2020" },
+			{ "label": "UNESCO Site", "value": "Ohrid Region" },
+			{ "label": "Name Origin", "value": "From ancient kingdom of Macedon" }
+		],
+		"ancient": {
+			"period": "c. 800 BCE - 600 CE",
+			"description": "In antiquity, the territory of the modern republic roughly corresponded to the kingdom of Paeonia to the north and Ancient Macedonia to the south. The Paeonians were a distinct Paleo-Balkan people who were eventually subdued by Philip II of Macedon in the 4th century BCE. Under Alexander the Great, the region was integrated into his vast empire. Following the Roman conquest in 146 BCE, the area became a significant transport route via the Via Egnatia, connecting Rome to Constantinople. The ancient city of Scupi (modern Skopje) and Stobi prospered as Roman commercial hubs. The late antique period saw the division of the Roman Empire, placing the region firmly within the Byzantine sphere, though it suffered frequent raids by barbarian groups before the arrival of the Slavs.",
+			"keyEvents": [
+				{
+					"year": "c. 358 BCE",
+					"title": "Philip II Conquest",
+					"description": "Philip II of Macedon defeats the Paeonians and integrates the region into the Macedonian Kingdom"
+				},
+				{
+					"year": "146 BCE",
+					"title": "Roman Annexation",
+					"description": "The region becomes part of the Roman province of Macedonia"
+				},
+				{
+					"year": "518 CE",
+					"title": "Earthquake destroys Scupi",
+					"description": "A devastating earthquake destroys the Roman city of Scupi; Justinian I later rebuilds near the site"
+				}
+			],
+			"notableFigures": ["Philip II of Macedon", "Justinian I", "King Audoleon (Paeonian ruler)"]
+		},
+		"medieval": {
+			"period": "c. 600 - 1392",
+			"description": "The medieval period began with the massive migration of Slavic tribes in the 6th and 7th centuries. The region became a battleground between the Byzantine and Bulgarian Empires. A cultural zenith was reached under the First Bulgarian Empire, particularly with the work of Saints Clement and Naum, disciples of Cyril and Methodius, who established the Ohrid Literary School, a center of Slavic literacy and culture. In the late 10th century, Tsar Samuil ruled a vast empire from his capital in Ohrid. Later, the region fell under Byzantine control again, followed by the Serbian Empire under Stefan Dušan, who was crowned in Skopje in 1346. The fracturing of the Serbian Empire in the late 14th century left the region vulnerable to Ottoman expansion.",
+			"keyEvents": [
+				{
+					"year": "886",
+					"title": "Ohrid Literary School",
+					"description": "Founded by St. Clement of Ohrid, instrumental in spreading the Cyrillic script and Christianity to Slavs"
+				},
+				{
+					"year": "976-1014",
+					"title": "Samuil's Empire",
+					"description": "Tsar Samuil rules a large Slavic empire centered in Ohrid, challenging Byzantine authority"
+				},
+				{
+					"year": "1018",
+					"title": "Byzantine Reconquest",
+					"description": "Emperor Basil II defeats Samuil's forces and reintegrates the region into Byzantium"
+				},
+				{
+					"year": "1392",
+					"title": "Ottoman Conquest of Skopje",
+					"description": "Ottoman forces capture Skopje, marking the beginning of five centuries of Ottoman rule"
+				}
+			],
+			"notableFigures": ["Tsar Samuil", "Saint Clement of Ohrid", "Saint Naum", "King Vukašin Mrnjavčević"]
+		},
+		"imperial": {
+			"period": "1392 - 1912",
+			"description": "During the long Ottoman era, the region was known as the Vilayet of Manastir and Vilayet of Kosovo. Cities like Bitola (Monastir) became diplomatic and commercial centers. The population became religiously diverse with the conversion of some Slavs and Albanians to Islam, alongside the settlement of Turks. The 19th century saw the rise of the Internal Macedonian Revolutionary Organization (IMRO), fighting for autonomy. The pinnacle of this struggle was the Ilinden Uprising of 1903, which established the short-lived Kruševo Republic—often cited as the first modern republic in the Balkans. Despite its brutal suppression, the uprising laid the foundation for future statehood. The 'Macedonian Question' regarding the population's identity and the territory's fate plagued regional politics until the Ottoman collapse.",
+			"keyEvents": [
+				{
+					"year": "1689",
+					"title": "Karposh Rebellion",
+					"description": "An anti-Ottoman uprising in the Kumanovo region, ultimately suppressed"
+				},
+				{
+					"year": "1893",
+					"title": "IMRO Founded",
+					"description": "Foundation of the Internal Macedonian Revolutionary Organization in Thessaloniki"
+				},
+				{
+					"year": "1903",
+					"title": "Ilinden Uprising",
+					"description": "Major revolt against the Ottomans; proclamation of the Kruševo Republic, crushed after 10 days"
+				},
+				{
+					"year": "1908",
+					"title": "Young Turk Revolution",
+					"description": "Many Macedonian revolutionaries initially support the reformist Ottoman movement"
+				}
+			],
+			"notableFigures": ["Goce Delčev", "Dame Gruev", "Nikola Karev", "Pitu Guli"]
+		},
+		"modern": {
+			"period": "1912 - Present",
+			"description": "The Balkan Wars (1912-1913) ended Ottoman rule but resulted in the partition of the geographical region of Macedonia between Greece, Serbia, and Bulgaria. The territory of the present-day republic became 'South Serbia' or 'Vardar Banovina' within the Kingdom of Yugoslavia. During WWII, it was occupied by Axis-allied Bulgaria. Anti-fascist resistance led to the establishment of the Democratic Federal Macedonia in 1944 within Tito's Yugoslavia, recognizing the Macedonian nation and language for the first time. In 1991, the country declared independence peacefully. The 2001 ethnic insurgency by Albanian militants ended with the Ohrid Framework Agreement, granting greater rights to minorities. The long-standing naming dispute with Greece was resolved in 2018 with the Prespa Agreement, renaming the country 'North Macedonia'.",
+			"keyEvents": [
+				{
+					"year": "1913",
+					"title": "Treaty of Bucharest",
+					"description": "Formal partition of the region of Macedonia among Balkan states"
+				},
+				{
+					"year": "1944",
+					"title": "ASNOM",
+					"description": "Anti-fascist Assembly for the National Liberation of Macedonia proclaims statehood within federal Yugoslavia"
+				},
+				{
+					"year": "1963",
+					"title": "Skopje Earthquake",
+					"description": "Devastating earthquake destroys much of the capital; rebuilding effort involves global aid"
+				},
+				{
+					"year": "1991",
+					"title": "Independence",
+					"description": "September 8, referendum confirms independence from Yugoslavia"
+				},
+				{
+					"year": "2001",
+					"title": "Ohrid Framework Agreement",
+					"description": "Peace deal ending ethnic conflict and decentralizing power"
+				},
+				{
+					"year": "2018",
+					"title": "Prespa Agreement",
+					"description": "Agreement with Greece to change name to 'Republic of North Macedonia', unblocking NATO/EU paths"
+				}
+			],
+			"notableFigures": ["Kiro Gligorov", "Boris Trajkovski", "Mother Teresa (born in Skopje)", "Toše Proeski"]
+		},
+		"timeline": [
+			{
+				"year": "c. 350 BCE",
+				"era": "Ancient",
+				"title": "Macedonian Hegemony",
+				"description": "Region integrated into the expanding kingdom of Philip II and Alexander"
+			},
+			{
+				"year": "1014",
+				"era": "Medieval",
+				"title": "Battle of Kleidion",
+				"description": "Decisive defeat of Tsar Samuil's forces by the Byzantines"
+			},
+			{
+				"year": "1903",
+				"era": "Imperial",
+				"title": "Ilinden Uprising",
+				"description": "Historic attempt to establish an autonomous Macedonian state"
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Federal Republic",
+				"description": "Macedonia becomes a constituent republic of communist Yugoslavia"
+			},
+			{
+				"year": "2020",
+				"era": "Modern",
+				"title": "NATO Membership",
+				"description": "North Macedonia officially joins NATO as its 30th member"
+			}
+		]
+	},
+	{
+		"name": "Montenegro",
+		"overview": "Montenegro's history is defined by a fierce tradition of independence and resistance fostered by its rugged, mountainous terrain. From the medieval principality of Duklja to the theocratic rule of the Prince-Bishops, Montenegro often stood as a lone island of autonomy amidst the Ottoman sea. Its identity was forged through centuries of clan-based warfare and dynastic leadership under the House of Petrović-Njegoš. In the 20th century, it transitioned from a Kingdom to a Yugoslav republic. Uniquely, it remained in a federation with Serbia long after other Yugoslav republics broke away, until a peaceful referendum in 2006 restored its status as a sovereign nation. Today, it is a NATO member and a candidate for EU accession, known for its stunning Adriatic coast and deep historical pride.",
+		"source": {
+			"label": "Wikipedia - History of Montenegro",
+			"url": "https://en.wikipedia.org/wiki/History_of_Montenegro",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Montenegro",
+				"https://www.britannica.com/place/Montenegro",
+				"https://www.gov.me/en/government/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Restored", "value": "June 3, 2006" },
+			{ "label": "Capital", "value": "Podgorica" },
+			{ "label": "Royal Capital", "value": "Cetinje" },
+			{ "label": "Dynasty", "value": "Petrović-Njegoš" },
+			{ "label": "NATO Member", "value": "Since 2017" },
+			{ "label": "Name Meaning", "value": "Black Mountain (Crna Gora)" }
+		],
+		"ancient": {
+			"period": "c. 1000 BCE - 6th Century CE",
+			"description": "The earliest known inhabitants of Montenegro were the Illyrians, specifically the Docleatae tribe, who lived in the region of the Zeta valley. The area was known as Prevalitana under Roman rule. The Romans established key settlements such as Doclea (near modern Podgorica) and Risan. The region was notoriously difficult to conquer due to its karst topography. Following the division of the Roman Empire in 395 CE, the territory fell under the jurisdiction of the Eastern Roman (Byzantine) Empire, serving as a frontier zone. The ancient city of Doclea was devastated by the Ostrogoths in the late 5th century and later by an earthquake in 518 CE, setting the stage for the Slavic migrations that would reshape the demographic character of the region.",
+			"keyEvents": [
+				{
+					"year": "c. 229 BCE",
+					"title": "Illyrian Wars",
+					"description": "Queen Teuta of the Ardiaei fights against Roman expansion in the Bay of Kotor region"
+				},
+				{
+					"year": "9 CE",
+					"title": "Roman Pacification",
+					"description": "Final subjugation of Illyrian tribes; establishment of Roman administration"
+				},
+				{
+					"year": "297 CE",
+					"title": "Province of Praevalitana",
+					"description": "Emperor Diocletian establishes Praevalitana with Doclea as its capital"
+				}
+			],
+			"notableFigures": ["Queen Teuta", "King Gentius"]
+		},
+		"medieval": {
+			"period": "c. 600 - 1496",
+			"description": "In the Middle Ages, the region was known as Duklja (Doclea) and later Zeta. It emerged as an early center of Serb statehood. Under the Vojislavljević dynasty in the 11th century, Duklja achieved recognition as a kingdom from the Pope, the first of the Balkan Slavic states to do so. It later became a dependency of the Nemanjić Serbian state. With the decline of the Serbian Empire, the Balšić and later Crnojević noble families ruled Zeta as an independent principality. It was during the Crnojević rule in the late 15th century that the printing press was brought to Cetinje (1493), producing the first book printed in a South Slavic language, the Oktoih. The capital was moved to the inaccessible Cetinje to escape the encroaching Ottomans.",
+			"keyEvents": [
+				{
+					"year": "1042",
+					"title": "Battle of Bar",
+					"description": "Stefan Vojislav defeats the Byzantines, securing Duklja's independence"
+				},
+				{
+					"year": "1077",
+					"title": "Coronation of Mihailo",
+					"description": "Mihailo Vojislavljević receives royal insignia from Pope Gregory VII, Duklja becomes a Kingdom"
+				},
+				{
+					"year": "1493",
+					"title": "Crnojević Printing House",
+					"description": "Establishment of the first state printing press in Southeastern Europe in Cetinje"
+				},
+				{
+					"year": "1496",
+					"title": "Fall of Zeta",
+					"description": "Principality of Zeta falls to the Ottoman Empire; Crnojević dynasty ends"
+				}
+			],
+			"notableFigures": ["Stefan Vojislav", "Constantine Bodin", "Ivan Crnojević"]
+		},
+		"imperial": {
+			"period": "1516 - 1852",
+			"description": "Unique in the Balkans, Montenegro existed as a theocracy for over three centuries, ruled by Prince-Bishops (Vladikas). While nominally part of the Ottoman Empire, the mountainous heartland remained effectively autonomous, with tribes paying tribute only sporadically. From 1697, the rule became hereditary within the Petrović-Njegoš family (passing from uncle to nephew). This era was characterized by constant warfare against the Ottomans and the forging of a close alliance with Imperial Russia. Petar II Petrović-Njegoš, a philosopher-poet and ruler, modernized the state apparatus and wrote 'The Mountain Wreath', a defining work of Montenegrin literature. This period laid the groundwork for the secular state that would follow.",
+			"keyEvents": [
+				{
+					"year": "1697",
+					"title": "Petrović-Njegoš Dynasty",
+					"description": "Danilo I becomes Vladika, establishing the dynasty that would rule until 1918"
+				},
+				{
+					"year": "1712",
+					"title": "Battle of Carev Laz",
+					"description": "Major victory against Ottoman forces, cementing local autonomy"
+				},
+				{
+					"year": "1796",
+					"title": "Battle of Krusi",
+					"description": "Decisive defeat of the Pasha of Scutari; unification of the Brda region with Old Montenegro"
+				},
+				{
+					"year": "1851",
+					"title": "Secularization",
+					"description": "Danilo II renounces the position of Bishop to become a secular Prince (Knjaz)"
+				}
+			],
+			"notableFigures": [
+				"Petar I Petrović-Njegoš (Saint Peter of Cetinje)",
+				"Petar II Petrović-Njegoš",
+				"Vladika Danilo"
+			]
+		},
+		"independence": {
+			"period": "1852 - 1918",
+			"description": "Following secularization, Montenegro expanded its territory and international standing. Under Prince (later King) Nikola I, the country secured official international recognition of its independence at the Congress of Berlin in 1878, along with significant territorial gains reaching the Adriatic coast. The state modernized rapidly, introducing a constitution, a currency (Perper), and a standing army. In 1910, Montenegro was proclaimed a Kingdom. It fought in the Balkan Wars, expanding into the Sandžak region and Metohija. During WWI, Montenegro fought alongside the Allies, achieving a heroic but pyrrhic victory at the Battle of Mojkovac to protect the Serbian army's retreat. However, in 1918, the Podgorica Assembly voted to depose the Petrović dynasty and merge Montenegro into the new Kingdom of Serbs, Croats, and Slovenes (Yugoslavia).",
+			"keyEvents": [
+				{
+					"year": "1858",
+					"title": "Battle of Grahovac",
+					"description": "Grand Duke Mirko leads Montenegrins to a major victory over Ottomans, delineating borders"
+				},
+				{
+					"year": "1878",
+					"title": "Congress of Berlin",
+					"description": "Montenegro is recognized as the world's 27th independent state"
+				},
+				{
+					"year": "1910",
+					"title": "Kingdom Proclaimed",
+					"description": "Prince Nikola I elevates the principality to a Kingdom during his jubilee"
+				},
+				{
+					"year": "1916",
+					"title": "Battle of Mojkovac",
+					"description": "Montenegrin army holds off Austro-Hungarians to allow Serbian retreat; subsequent Austrian occupation"
+				},
+				{
+					"year": "1918",
+					"title": "Podgorica Assembly",
+					"description": "Controversial assembly votes for union with Serbia, ending Montenegrin statehood"
+				}
+			],
+			"notableFigures": ["King Nikola I", "Prince Danilo", "Marko Miljanov"]
+		},
+		"modern": {
+			"period": "1918 - Present",
+			"description": "As part of Yugoslavia, Montenegro was initially the Zeta Banovina. During WWII, it saw a massive anti-fascist uprising on July 13, 1941, the first in occupied Europe. After the war, it became one of the six republics of Tito's Socialist Yugoslavia, regaining its distinct political status. Following the breakup of Yugoslavia in the 1990s, Montenegro remained federated with Serbia. However, a distinct Montenegrin identity and political direction emerged under Milo Đukanović. This culminated in the 2006 independence referendum, where 55.5% voted to restore sovereignty. Since then, Montenegro has pursued Euro-Atlantic integration, joining NATO in 2017 and becoming a frontrunner for EU membership, while balancing complex internal political divisions.",
+			"keyEvents": [
+				{
+					"year": "1941",
+					"title": "13 July Uprising",
+					"description": "Massive popular revolt against Italian occupation forces"
+				},
+				{
+					"year": "1992",
+					"title": "FR Yugoslavia",
+					"description": "Montenegro forms a federation with Serbia after other republics secede"
+				},
+				{
+					"year": "2003",
+					"title": "State Union",
+					"description": "Transformation into the State Union of Serbia and Montenegro"
+				},
+				{
+					"year": "2006",
+					"title": "Independence Referendum",
+					"description": "May 21, voters approve independence; officially declared on June 3"
+				},
+				{
+					"year": "2017",
+					"title": "NATO Accession",
+					"description": "Montenegro officially becomes the 29th member of NATO"
+				}
+			],
+			"notableFigures": ["Milovan Đilas", "Milo Đukanović", "Filip Vujanović"]
+		},
+		"timeline": [
+			{
+				"year": "1077",
+				"era": "Medieval",
+				"title": "First Kingdom",
+				"description": "Duklja becomes the first recognized Slavic kingdom in the Balkans"
+			},
+			{
+				"year": "1493",
+				"era": "Medieval",
+				"title": "First Printing Press",
+				"description": "First state-owned printing press in the world established in Cetinje"
+			},
+			{
+				"year": "1878",
+				"era": "Independence",
+				"title": "Recognition",
+				"description": "Congress of Berlin recognizes Montenegro as an independent state"
+			},
+			{
+				"year": "1918",
+				"era": "Modern",
+				"title": "Yugoslav Union",
+				"description": "Loss of sovereignty and incorporation into the Yugoslav kingdom"
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "Restoration",
+				"description": "Independence restored following a peaceful referendum"
+			}
+		]
+	},
+	{
+		"name": "Cuba",
+		"overview": "Cuba's history is a turbulent saga of colonial exploitation, revolutionary fervor, and geopolitical defiance. Known as the 'Pearl of the Antilles,' it transformed from a Spanish stronghold built on sugar and slavery into a battleground for independence and eventually the Western Hemisphere's first communist state. From the indigenous Taíno decimated by conquest to the plantation society that enriched the Spanish Crown, Cuba has always been strategically vital. Its modern history is defined by the struggle against foreign domination—first Spain, then the United States—culminating in the 1959 Revolution led by Fidel Castro. This event reshaped the island into a focal point of the Cold War, bringing the world to the brink of nuclear conflict, and established a socialist system that has outlasted the Soviet Union while enduring a punishing U.S. embargo.",
+		"source": {
+			"label": "Britannica - History of Cuba",
+			"url": "https://www.britannica.com/place/Cuba/History",
+			"urls": [
+				"https://www.britannica.com/place/Cuba/History",
+				"https://en.wikipedia.org/wiki/History_of_Cuba",
+				"https://www.loc.gov/item/2002015949/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence from Spain",
+				"value": "December 10, 1898 (Treaty of Paris)"
+			},
+			{
+				"label": "Republic Established",
+				"value": "May 20, 1902"
+			},
+			{
+				"label": "Revolutionary Victory",
+				"value": "January 1, 1959"
+			},
+			{
+				"label": "Capital",
+				"value": "Havana (founded 1515)"
+			},
+			{
+				"label": "National Hero",
+				"value": "José Martí"
+			},
+			{
+				"label": "Key Export (Historical)",
+				"value": "Sugar"
+			}
+		],
+		"ancient": {
+			"period": "Pre-1492",
+			"description": "Before the arrival of Christopher Columbus in 1492, Cuba was inhabited by indigenous peoples, primarily the Guanahatabey, Ciboney, and Taíno. The Guanahatabey were likely the earliest inhabitants, living as hunter-gatherers in the western part of the island. The Taíno, who arrived later from South America, were an Arawak-speaking people who established a sophisticated agricultural society. They cultivated yucca, sweet potatoes, and maize, lived in villages led by chieftains known as 'caciques,' and crafted pottery and tools. Their society was peaceful but hierarchical, with a distinct spiritual belief system centering on 'zemis' (deities). By the late 15th century, the Taíno population numbered in the hundreds of thousands, but the Spanish conquest would lead to their near-total destruction through disease, forced labor in gold mines (the encomienda system), and warfare, though their genetic and cultural legacy persists in Cuban dialect and customs.",
+			"keyEvents": [
+				{
+					"year": "c. 4000 BCE",
+					"title": "First Inhabitants",
+					"description": "Hunter-gatherer groups, ancestors of the Guanahatabey, arrive in Cuba from South/Central America."
+				},
+				{
+					"year": "c. 1100 CE",
+					"title": "Taíno Migration",
+					"description": "Agricultural Taíno peoples migrate from Hispaniola, establishing dominance over the island."
+				},
+				{
+					"year": "1492",
+					"title": "Columbus Arrival",
+					"description": "October 27, Christopher Columbus lands on Cuba's northeast coast, claiming it for Spain."
+				}
+			],
+			"notableFigures": ["Hatuey (Cacique who resisted Spanish)", "Guama (Taíno leader)"]
+		},
+		"colonial": {
+			"period": "1511 - 1898",
+			"description": "Spanish colonization began in earnest in 1511 under Diego Velázquez de Cuéllar. The indigenous population was rapidly depleted, leading Spain to import enslaved Africans to work on plantations, fundamentally altering the island's demographics. Cuba became the staging ground for Spanish exploration of the Americas and a vital maritime hub; Havana's harbor was the gathering point for the treasure fleets returning to Spain. Unlike other colonies, Cuba remained loyal to the Crown during the early 19th-century independence movements, earning the title 'The Ever-Faithful Isle.' However, as the sugar industry exploded in the 19th century, creating a wealthy planter class, tensions grew over high taxes, lack of political representation, and the persistence of slavery. These tensions erupted in the Ten Years' War (1868) and the War of 1895, where revolutionaries struggled for a free Cuba, a dream finally realized—though compromised—after U.S. intervention in 1898.",
+			"keyEvents": [
+				{
+					"year": "1511",
+					"title": "Spanish Conquest",
+					"description": "Diego Velázquez establishes the first permanent Spanish settlement at Baracoa."
+				},
+				{
+					"year": "1519",
+					"title": "Havana Founded",
+					"description": "San Cristóbal de la Habana is established; it becomes a crucial port for the Spanish treasure fleet."
+				},
+				{
+					"year": "1762",
+					"title": "British Occupation",
+					"description": "The British capture Havana for 11 months, opening trade and introducing large numbers of slaves."
+				},
+				{
+					"year": "1868-1878",
+					"title": "Ten Years' War",
+					"description": "First major war for independence begins with the 'Grito de Yara' by Carlos Manuel de Céspedes."
+				},
+				{
+					"year": "1886",
+					"title": "Abolition of Slavery",
+					"description": "Spain formally abolishes slavery, one of the last nations in the Americas to do so."
+				},
+				{
+					"year": "1895",
+					"title": "War of Independence",
+					"description": "José Martí launches the final war against Spain; he is killed in battle shortly after."
+				}
+			],
+			"notableFigures": [
+				"Diego Velázquez",
+				"Carlos Manuel de Céspedes",
+				"Antonio Maceo",
+				"Máximo Gómez",
+				"Valeriano Weyler"
+			]
+		},
+		"modern": {
+			"period": "1898 - Present",
+			"description": "Following the Spanish-American War, Cuba became a U.S. protectorate under the Platt Amendment, which allowed U.S. intervention in Cuban affairs. The early 20th century saw economic growth but also political corruption and dictatorship, notably under Fulgencio Batista. In 1959, the 26th of July Movement led by Fidel Castro overthrew Batista. Castro declared the revolution socialist, aligned with the Soviet Union, and nationalized foreign property. This triggered the U.S. trade embargo, the failed Bay of Pigs invasion, and the Cuban Missile Crisis. Under Castro, Cuba achieved high literacy and healthcare standards but suppressed political dissent and suffered economic stagnation, particularly after the Soviet collapse (the 'Special Period'). In the 21st century, Raul Castro and successor Miguel Díaz-Canel have overseen cautious economic reforms while maintaining the one-party communist system.",
+			"keyEvents": [
+				{
+					"year": "1898",
+					"title": "U.S. Intervention",
+					"description": "The USS Maine explodes in Havana harbor; U.S. enters the war, defeating Spain."
+				},
+				{
+					"year": "1902",
+					"title": "Independence",
+					"description": "Republic of Cuba formally established, though limited by the U.S. Platt Amendment."
+				},
+				{
+					"year": "1959",
+					"title": "Cuban Revolution",
+					"description": "Fidel Castro's forces enter Havana; Batista flees; revolutionary government established."
+				},
+				{
+					"year": "1961",
+					"title": "Bay of Pigs",
+					"description": "U.S.-backed invasion by Cuban exiles fails; Castro declares the revolution socialist."
+				},
+				{
+					"year": "1962",
+					"title": "Missile Crisis",
+					"description": "Soviet nuclear missiles discovered in Cuba bring the world to the brink of nuclear war."
+				},
+				{
+					"year": "1991",
+					"title": "Special Period",
+					"description": "Collapse of the USSR causes severe economic crisis and shortages in Cuba."
+				},
+				{
+					"year": "2014",
+					"title": "Diplomatic Thaw",
+					"description": "U.S. and Cuba announce restoration of diplomatic ties (partially reversed later)."
+				}
+			],
+			"notableFigures": [
+				"José Martí",
+				"Fulgencio Batista",
+				"Fidel Castro",
+				"Che Guevara",
+				"Camilo Cienfuegos",
+				"Raúl Castro"
+			]
+		},
+		"timeline": [
+			{
+				"year": "1492",
+				"era": "Ancient",
+				"title": "European Discovery",
+				"description": "Columbus sights the island."
+			},
+			{
+				"year": "1511",
+				"era": "Colonial",
+				"title": "Colonization Begins",
+				"description": "Velázquez begins conquest."
+			},
+			{
+				"year": "1868",
+				"era": "Colonial",
+				"title": "Grito de Yara",
+				"description": "Start of the Ten Years' War for independence."
+			},
+			{
+				"year": "1898",
+				"era": "Independence",
+				"title": "Spanish Defeat",
+				"description": "Spain cedes Cuba to the U.S."
+			},
+			{
+				"year": "1959",
+				"era": "Modern",
+				"title": "Revolution",
+				"description": "Castro takes power."
+			},
+			{
+				"year": "1962",
+				"era": "Modern",
+				"title": "Missile Crisis",
+				"description": "Nuclear standoff between U.S. and USSR over Cuba."
+			},
+			{
+				"year": "2016",
+				"era": "Modern",
+				"title": "Death of Fidel",
+				"description": "Fidel Castro dies; end of an era."
+			}
+		]
+	},
+	{
+		"name": "Belarus",
+		"overview": "Belarus, situated at the crossroads of Eastern Europe, has a history defined by its position between major powers. Its roots lie in the ancient Principality of Polotsk and the Slavic tribes of the region. For centuries, it was a core part of the Grand Duchy of Lithuania and later the Polish-Lithuanian Commonwealth, during which its culture was deeply influenced by both Western and Eastern traditions. Absorbed by the Russian Empire in the late 18th century, the Belarusian lands became a battleground during the Napoleonic Wars and both World Wars. The 20th century brought immense tragedy; Belarus lost a quarter of its population during World War II. As a Soviet Republic, it became an industrial hub. Since gaining independence in 1991, Belarus has maintained close ties with Russia under the long authoritarian rule of Alexander Lukashenko, retaining many Soviet-style institutions.",
+		"source": {
+			"label": "Britannica - History of Belarus",
+			"url": "https://www.britannica.com/place/Belarus/History",
+			"urls": [
+				"https://www.britannica.com/place/Belarus/History",
+				"https://en.wikipedia.org/wiki/History_of_Belarus",
+				"https://president.gov.by/en/belarus/history"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "August 25, 1991"
+			},
+			{
+				"label": "Capital",
+				"value": "Minsk (first mentioned 1067)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "White Rus' (White Russia)"
+			},
+			{
+				"label": "Major Loss",
+				"value": "Lost 25% of population in WWII"
+			},
+			{
+				"label": "Key River",
+				"value": "Dnieper"
+			},
+			{
+				"label": "National Symbol",
+				"value": "Bison (Zubr)"
+			}
+		],
+		"ancient": {
+			"period": "c. 5th Century - 1230",
+			"description": "The territory of modern Belarus was settled by East Slavic tribes—the Krivichs, Dregoviches, and Radimichs—between the 6th and 8th centuries. These tribes established the first political entities in the region. The most powerful was the Principality of Polotsk (Polatsk), which emerged in the 9th century. Polotsk became a significant regional power, controlling trade routes between the Baltic and Black Seas. It rivaled Kiev and Novgorod in influence, building the monumental Saint Sophia Cathedral in the mid-11th century as a symbol of its prestige. During this period, Christianity was adopted (988), and the Cyrillic script was introduced. The region was a loose collection of principalities under the cultural and religious influence of Kievan Rus', but Polotsk maintained a strong independent identity until the fragmentation of Rus' due to Mongol invasions and internal strife.",
+			"keyEvents": [
+				{
+					"year": "862",
+					"title": "First Mention of Polotsk",
+					"description": "Polotsk is mentioned in the Primary Chronicle, marking the beginning of recorded history."
+				},
+				{
+					"year": "988",
+					"title": "Christianization",
+					"description": "Adoption of Orthodoxy brings Byzantine culture and literacy to the region."
+				},
+				{
+					"year": "1067",
+					"title": "First Mention of Minsk",
+					"description": "Minsk is recorded in chronicles in the context of the Battle on the Nemiga River."
+				},
+				{
+					"year": "1101-1173",
+					"title": "Euphrosyne of Polotsk",
+					"description": "Life of Saint Euphrosyne, a patron of arts and literacy, and the first Belarusian female saint."
+				}
+			],
+			"notableFigures": ["Rogvolod (Prince of Polotsk)", "Vseslav the Sorcerer", "Saint Euphrosyne of Polotsk"]
+		},
+		"medieval": {
+			"period": "1230 - 1795",
+			"description": "As Kievan Rus' disintegrated, the Belarusian lands were peacefully incorporated into the rising Grand Duchy of Lithuania to seek protection from the Golden Horde and Teutonic Knights. During this 'Golden Age,' Old Belarusian (Ruthenian) was the official state language, and the Statutes of Lithuania codified the law. In 1569, the Union of Lublin created the Polish-Lithuanian Commonwealth. This period saw the Polonization of the nobility and the rise of Catholicism alongside Orthodoxy (and the Uniate Church formed in 1596). The region became a cultural melting pot but also a site of devastating wars, including the deluge of the mid-17th century. The Commonwealth's decline in the 18th century led to the Partitions of Poland, resulting in the absorption of all Belarusian lands into the Russian Empire by 1795.",
+			"keyEvents": [
+				{
+					"year": "c. 1240",
+					"title": "Rise of Grand Duchy",
+					"description": "Belarusian lands become the core of the Grand Duchy of Lithuania."
+				},
+				{
+					"year": "1517",
+					"title": "First Printing",
+					"description": "Francysk Skaryna prints the first book in the Old Belarusian language in Prague."
+				},
+				{
+					"year": "1569",
+					"title": "Union of Lublin",
+					"description": "Formation of the Polish-Lithuanian Commonwealth; increased Polish influence."
+				},
+				{
+					"year": "1596",
+					"title": "Union of Brest",
+					"description": "Formation of the Uniate (Greek Catholic) Church."
+				},
+				{
+					"year": "1772-1795",
+					"title": "Partitions of Poland",
+					"description": "Russian Empire annexes Belarusian territories in three stages."
+				}
+			],
+			"notableFigures": ["Mindaugas", "Vytautas the Great", "Francysk Skaryna", "Tadeusz Kościuszko"]
+		},
+		"modern": {
+			"period": "1795 - Present",
+			"description": "Under the Russian Empire, Belarusian culture was suppressed through Russification. Following World War I and the collapse of the empire, the short-lived Belarusian National Republic (BNR) was declared in 1918. However, the Bolsheviks soon took control, establishing the Byelorussian Soviet Socialist Republic (BSSR). The BSSR suffered catastrophic losses during World War II under Nazi occupation, losing one in four residents and seeing its cities reduced to rubble. Post-war, Belarus was rebuilt into a major Soviet industrial center. The 1986 Chernobyl disaster contaminated a significant portion of its territory. Belarus declared independence in 1991. Since 1994, Alexander Lukashenko has led the country, maintaining a state-controlled economy and close alliance with Russia, while facing periodic mass protests over elections and human rights.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "BNR Declaration",
+					"description": "March 25, declaration of the Belarusian National Republic, the first attempt at modern statehood."
+				},
+				{
+					"year": "1921",
+					"title": "Treaty of Riga",
+					"description": "Belarus is divided between Poland (West) and the USSR (East)."
+				},
+				{
+					"year": "1941-1944",
+					"title": "Nazi Occupation",
+					"description": "WWII brings genocide and destruction; massive partisan resistance movement."
+				},
+				{
+					"year": "1986",
+					"title": "Chernobyl Disaster",
+					"description": "Nuclear fallout from Ukraine heavily contaminates southern Belarus."
+				},
+				{
+					"year": "1991",
+					"title": "Independence",
+					"description": "Belarus gains formal independence upon the dissolution of the Soviet Union."
+				},
+				{
+					"year": "1994",
+					"title": "Lukashenko Era",
+					"description": "Alexander Lukashenko elected first president; establishes authoritarian rule."
+				},
+				{
+					"year": "2020",
+					"title": "Mass Protests",
+					"description": "Disputed presidential election triggers largest anti-government protests in history."
+				}
+			],
+			"notableFigures": [
+				"Kastuś Kalinoŭski",
+				"Marc Chagall",
+				"Vasil Bykaŭ",
+				"Svetlana Alexievich",
+				"Alexander Lukashenko"
+			]
+		},
+		"timeline": [
+			{
+				"year": "862",
+				"era": "Ancient",
+				"title": "Polotsk",
+				"description": "First written record of Polotsk."
+			},
+			{
+				"year": "1569",
+				"era": "Medieval",
+				"title": "Commonwealth",
+				"description": "Union of Lublin joins Lithuania and Poland."
+			},
+			{
+				"year": "1795",
+				"era": "Imperial",
+				"title": "Russian Annexation",
+				"description": "Final partition of Poland completes Russian takeover."
+			},
+			{
+				"year": "1919",
+				"era": "Modern",
+				"title": "BSSR Formed",
+				"description": "Creation of the Soviet Republic."
+			},
+			{
+				"year": "1944",
+				"era": "Modern",
+				"title": "Liberation",
+				"description": "Soviet troops expel Nazi forces."
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Sovereignty",
+				"description": "Independence from USSR."
+			}
+		]
+	},
+	{
+		"name": "Tunisia",
+		"overview": "Tunisia's history is a rich tapestry woven by the great civilizations of the Mediterranean. It was the heart of the Carthaginian Empire, a rival to Rome, and later the 'breadbasket' of the Roman Empire. Following the Arab conquest in the 7th century, it became a center of Islamic learning and culture, particularly in Kairouan. Successive dynasties, from the Aghlabids to the Hafsids, ruled until the Ottoman Turks incorporated it into their empire. In the 19th century, Tunisia became a French protectorate, modernizing its institutions while sparking a nationalist movement. Achieving independence in 1956 under Habib Bourguiba, it pursued secular, progressive reforms. In 2011, Tunisia ignited the Arab Spring, overthrowing a dictatorship and embarking on a complex transition to democracy.",
+		"source": {
+			"label": "Wikipedia - History of Tunisia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Tunisia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Tunisia",
+				"https://www.britannica.com/place/Tunisia/History",
+				"https://www.leaders.com.tn/histoire"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "March 20, 1956"
+			},
+			{
+				"label": "Ancient Power",
+				"value": "Carthage"
+			},
+			{
+				"label": "Capital",
+				"value": "Tunis"
+			},
+			{
+				"label": "Religion",
+				"value": "Islam (Sunni)"
+			},
+			{
+				"label": "Revolution",
+				"value": "Jasmine Revolution (2011)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "8 World Heritage Sites"
+			}
+		],
+		"ancient": {
+			"period": "c. 1100 BCE - 698 CE",
+			"description": "Tunisia's ancient history is dominated by the rise and fall of Carthage. Founded by Phoenician settlers from Tyre around 814 BCE (traditionally by Queen Dido), Carthage grew into a maritime superpower, controlling trade across the Western Mediterranean. Its rivalry with the Roman Republic led to the three Punic Wars, featuring the legendary campaigns of Hannibal Barca. Rome eventually destroyed Carthage in 146 BCE but rebuilt it as the capital of Roman Africa. The region flourished as a major supplier of grain and olive oil to Rome, adorned with magnificent cities like Dougga and El Djem. Christianity took strong root here in the later empire (St. Augustine studied in Carthage). The region was later conquered by the Vandals in the 5th century and then reclaimed by the Byzantine Empire in the 6th century, before succumbing to the Arab expansion.",
+			"keyEvents": [
+				{
+					"year": "814 BCE",
+					"title": "Founding of Carthage",
+					"description": "Traditional date for the founding of Carthage by Queen Dido."
+				},
+				{
+					"year": "264-146 BCE",
+					"title": "Punic Wars",
+					"description": "Series of three wars between Carthage and Rome, ending in Carthage's destruction."
+				},
+				{
+					"year": "46 BCE",
+					"title": "Roman Africa",
+					"description": "Julius Caesar and Augustus refound Carthage; region becomes a prosperous Roman province."
+				},
+				{
+					"year": "439 CE",
+					"title": "Vandal Conquest",
+					"description": "Vandals capture Carthage, making it the capital of their kingdom."
+				},
+				{
+					"year": "533 CE",
+					"title": "Byzantine Reconquest",
+					"description": "General Belisarius retakes the region for the Byzantine Empire."
+				}
+			],
+			"notableFigures": ["Dido (Legendary Queen)", "Hannibal Barca", "Hamilcar Barca", "Saint Perpetua"]
+		},
+		"medieval": {
+			"period": "698 - 1574",
+			"description": "The Arab conquest in the late 7th century transformed the region culturally and religiously. The city of Kairouan, founded in 670, became the first holy city of Islam in the Maghreb and a base for expansion. Tunisia flourished under the Aghlabid dynasty (800-909), which sponsored great architecture and the conquest of Sicily. It later became the heart of the Fatimid Caliphate before they moved to Egypt. The Hafsid dynasty (1229-1574) represents a golden age where Tunis became the capital; the city thrived on trade and intellectualism, notably producing the scholar Ibn Khaldun. This period saw the construction of madrasas, mosques, and souks that still define Tunisian medinas today. In the 16th century, the region became a battleground between the Spanish Habsburgs and the Ottoman Empire.",
+			"keyEvents": [
+				{
+					"year": "670",
+					"title": "Founding of Kairouan",
+					"description": "Uqba ibn Nafi founds Kairouan, establishing a permanent Arab presence."
+				},
+				{
+					"year": "698",
+					"title": "Fall of Carthage",
+					"description": "Arab forces capture Carthage, effectively ending Byzantine rule."
+				},
+				{
+					"year": "800",
+					"title": "Aghlabid Dynasty",
+					"description": "Establishment of an autonomous emirate; era of prosperity and construction of the Great Mosque of Kairouan."
+				},
+				{
+					"year": "1229",
+					"title": "Hafsid Caliphate",
+					"description": "Hafsids declare independence from Almohads, making Tunis a brilliant cultural capital."
+				}
+			],
+			"notableFigures": ["Uqba ibn Nafi", "Ibn Khaldun", "Hayreddin Barbarossa"]
+		},
+		"colonial": {
+			"period": "1574 - 1956",
+			"description": "The Ottoman Empire wrested control of Tunisia from Spain in 1574. For centuries, Tunisia was ruled by Deys and later Beys (Husainid dynasty) who were nominally Ottoman vassals but acted with significant autonomy. They engaged in corsairing (piracy) which drew European ire. By the 19th century, the Beys attempted modernizing reforms but fell into deep debt to European powers. Using this debt and border incidents as a pretext, France invaded in 1881 and established a protectorate. French rule brought infrastructure and Western education but displaced Tunisian farmers and marginalized the local culture. A nationalist movement emerged in the early 20th century, led by the Neo-Destour party under Habib Bourguiba, blending negotiation with civil unrest to push for sovereignty.",
+			"keyEvents": [
+				{
+					"year": "1574",
+					"title": "Ottoman Conquest",
+					"description": "Sinan Pasha captures Tunis, annexing it to the Ottoman Empire."
+				},
+				{
+					"year": "1705",
+					"title": "Husainid Dynasty",
+					"description": "Husain ibn Ali founds the dynasty that would rule until 1957."
+				},
+				{
+					"year": "1861",
+					"title": "First Constitution",
+					"description": "Tunisia adopts the first constitution in the Arab world, though short-lived."
+				},
+				{
+					"year": "1881",
+					"title": "French Protectorate",
+					"description": "Treaty of Bardo is signed, placing Tunisia under French military and civil control."
+				},
+				{
+					"year": "1934",
+					"title": "Neo-Destour Party",
+					"description": "Habib Bourguiba founds the party that would lead the independence struggle."
+				}
+			],
+			"notableFigures": ["Khayr al-Din Pasha", "Habib Bourguiba", "Salah Ben Youssef"]
+		},
+		"modern": {
+			"period": "1956 - Present",
+			"description": "Tunisia gained independence in 1956. The monarchy was abolished in 1957, and the Republic was proclaimed with Habib Bourguiba as its first president. Bourguiba established a secular, one-party state, championing women's rights and education while suppressing opposition. In 1987, he was removed in a bloodless coup by Zine El Abidine Ben Ali, who promised democracy but established a corrupt police state. Decades of repression and economic inequality boiled over in December 2010, when the self-immolation of street vendor Mohamed Bouazizi sparked the Jasmine Revolution. Ben Ali fled in 2011. Tunisia subsequently adopted a progressive new constitution in 2014 and held free elections, becoming the sole democracy to emerge from the Arab Spring, though it continues to face severe economic challenges and political instability.",
+			"keyEvents": [
+				{
+					"year": "1956",
+					"title": "Independence",
+					"description": "France grants independence; Bourguiba becomes Prime Minister."
+				},
+				{
+					"year": "1957",
+					"title": "Republic Declared",
+					"description": "Monarchy abolished; Bourguiba becomes first President."
+				},
+				{
+					"year": "1987",
+					"title": "Ben Ali Takeover",
+					"description": "Prime Minister Ben Ali removes Bourguiba for incompetence and assumes power."
+				},
+				{
+					"year": "2010-2011",
+					"title": "Jasmine Revolution",
+					"description": "Mass protests force Ben Ali to flee; sparks the Arab Spring."
+				},
+				{
+					"year": "2014",
+					"title": "New Constitution",
+					"description": "Adoption of a modern, democratic constitution."
+				},
+				{
+					"year": "2015",
+					"title": "Nobel Peace Prize",
+					"description": "Awarded to the Tunisian National Dialogue Quartet for saving the democratic transition."
+				}
+			],
+			"notableFigures": ["Habib Bourguiba", "Zine El Abidine Ben Ali", "Mohamed Bouazizi", "Kaïs Saïed"]
+		},
+		"timeline": [
+			{
+				"year": "814 BCE",
+				"era": "Ancient",
+				"title": "Carthage Founded",
+				"description": "Phoenician settlement begins."
+			},
+			{
+				"year": "146 BCE",
+				"era": "Ancient",
+				"title": "Carthage Destroyed",
+				"description": "End of the Third Punic War; Roman rule begins."
+			},
+			{
+				"year": "670",
+				"era": "Medieval",
+				"title": "Islamic Conquest",
+				"description": "Founding of Kairouan."
+			},
+			{
+				"year": "1574",
+				"era": "Imperial",
+				"title": "Ottoman Rule",
+				"description": "Tunisia becomes an Ottoman province."
+			},
+			{
+				"year": "1881",
+				"era": "Colonial",
+				"title": "French Protectorate",
+				"description": "France occupies Tunisia."
+			},
+			{
+				"year": "1956",
+				"era": "Independence",
+				"title": "Sovereignty",
+				"description": "Independence from France."
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "Revolution",
+				"description": "Ben Ali overthrown; democratization begins."
+			}
+		]
 	}
 ]
