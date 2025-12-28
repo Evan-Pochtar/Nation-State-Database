@@ -41,7 +41,7 @@
   - [x] Uruguay
   - [x] Venezuela
 
-- [ ] EUROPE
+- [x] EUROPE
   - [x] Albania
   - [x] Andorra
   - [x] Armenia
@@ -92,9 +92,9 @@
   - [x] Ukraine
   - [x] United Kingdom
   - [x] Vatican City
-  - [ ] Gibraltar
-  - [ ] Isle of Man
-  - [ ] Jersey
+  - [x] Gibraltar
+  - [x] Isle of Man
+  - [x] Jersey
 
 - [ ] AFRICA
   - [x] Algeria

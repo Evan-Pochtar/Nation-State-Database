@@ -25611,5 +25611,559 @@
 				"description": "Protests and subsequent crackdown during Arab Spring"
 			}
 		]
+	},
+	{
+		"name": "Gibraltar",
+		"overview": "Gibraltar's history is defined by its strategic position as the guardian of the entrance to the Mediterranean. Known to the ancients as one of the Pillars of Hercules, this limestone monolith has witnessed the rise and fall of Neanderthal populations, the initial landing of the Moorish conquest of Spain, and centuries of siege warfare. From a crucial Moorish fortress to a Spanish stronghold, and finally to a British Overseas Territory, Gibraltar has developed a resilient identity, symbolized by the famous Barbary macaques and a unique cultural blend of British, Mediterranean, and Genoese influences. Its people, the Llanitos, have fiercely maintained their right to self-determination amidst centuries of diplomatic tension.",
+		"source": {
+			"label": "Government of Gibraltar - History",
+			"url": "https://www.gibraltar.gov.gi/history",
+			"urls": [
+				"https://www.gibraltar.gov.gi/history",
+				"https://www.britannica.com/place/Gibraltar",
+				"https://www.visitgibraltar.gi/history-heritage"
+			]
+		},
+		"keyFacts": [
+			{ "label": "British Sovereignty", "value": "Since 1713 (Treaty of Utrecht)" },
+			{ "label": "Land Area", "value": "6.8 km² (The Rock)" },
+			{ "label": "Famous Residents", "value": "Barbary Macaques (only wild monkeys in Europe)" },
+			{ "label": "Strategic Value", "value": "Choke point of the Mediterranean" },
+			{ "label": "Language", "value": "English (official), Spanish, Llanito" },
+			{ "label": "National Day", "value": "September 10 (1967 Sovereignty Referendum)" }
+		],
+		"ancient": {
+			"period": "c. 50,000 BCE - 711 CE",
+			"description": "Long before it was a fortress, the Rock of Gibraltar served as one of the last refuges for Neanderthals in Europe. Excavations at Gorham's Cave have revealed evidence of Neanderthal occupation dating back as recently as 24,000 to 28,000 years ago, far later than elsewhere on the continent. Known to the Phoenicians as 'Calpe', it was considered one of the Pillars of Hercules, marking the limit of the known world. While the Phoenicians and Carthaginians visited the Rock to leave offerings in its sea caves, they established no permanent settlements. The Romans later incorporated it into their sphere but arguably saw it more as a geographical landmark than a strategic base, leaving relatively few traces compared to the extensive fortifications that would follow in the medieval era.",
+			"keyEvents": [
+				{
+					"year": "c. 28,000 BCE",
+					"title": "Neanderthal Refuge",
+					"description": "Neanderthal populations survive in Gorham's Cave long after disappearing from the rest of Europe"
+				},
+				{
+					"year": "c. 900 BCE",
+					"title": "Phoenician Contact",
+					"description": "Phoenician traders visit the Rock, leaving offerings to their gods in the sea level caves"
+				},
+				{
+					"year": "c. 100 BCE",
+					"title": "Mons Calpe",
+					"description": "Romans designate the Rock as Mons Calpe, one of the two Pillars of Hercules marking the end of the Mediterranean"
+				}
+			],
+			"notableFigures": ["Neanderthals of Gorham's Cave", "Phoenician traders"]
+		},
+		"medieval": {
+			"period": "711 - 1704",
+			"description": "The medieval history of Gibraltar began with a pivotal moment in European history: the landing of the Berber general Tariq ibn Ziyad in 711 CE, who launched the Islamic conquest of Iberia. The mountain was named 'Jabal Tariq' (Mount of Tariq), from which 'Gibraltar' is derived. For seven centuries, it was a fortified Moorish city, witnessing clashes between the Emirs of Granada, the Marinids of Morocco, and the Christian Kingdom of Castile. The Moorish Castle, with its Tower of Homage, remains a testament to this era. Castile briefly captured the Rock in 1309 but lost it again in 1333. It was finally taken by Christian forces under the Duke of Medina Sidonia in 1462, ending 750 years of Islamic presence. Under Spanish rule, it became a heavily guarded key to Spain, though its population remained relatively small until the dramatic events of the early 18th century.",
+			"keyEvents": [
+				{
+					"year": "711",
+					"title": "Moorish Invasion",
+					"description": "Tariq ibn Ziyad lands at Gibraltar, beginning the Islamic conquest of the Iberian Peninsula"
+				},
+				{
+					"year": "1160",
+					"title": "First City Founded",
+					"description": "The Almohad caliph Abd al-Mu'min orders the construction of the first permanent settlement, Medinat al-Fath"
+				},
+				{
+					"year": "1333",
+					"title": "Marinid Siege",
+					"description": "After a brief Castilian occupation, the Marinids retake Gibraltar after a brutal siege"
+				},
+				{
+					"year": "1462",
+					"title": "Castilian Conquest",
+					"description": "The Duke of Medina Sidonia captures Gibraltar from the Moors on St. Bernard's Day, ending Islamic rule"
+				},
+				{
+					"year": "1501",
+					"title": "Royal Warrant",
+					"description": "Queen Isabella I annexes Gibraltar to the Spanish Crown and grants it a coat of arms (Castle and Key)"
+				}
+			],
+			"notableFigures": ["Tariq ibn Ziyad", "Abd al-Mu'min", "Duke of Medina Sidonia"]
+		},
+		"imperial": {
+			"period": "1704 - 1900",
+			"description": "Gibraltar's modern trajectory was set during the War of the Spanish Succession. In 1704, an Anglo-Dutch fleet led by Admiral Sir George Rooke captured the Rock. The Treaty of Utrecht (1713) formally ceded Gibraltar to Britain 'in perpetuity,' a clause that remains the legal basis for British sovereignty. The 18th century was defined by repeated Spanish attempts to recapture the territory, culminating in the Great Siege (1779-1783). During this four-year ordeal, the garrison withstood bombardment and starvation, digging the famous Great Siege Tunnels into the limestone to place cannons. The successful defense cemented Gibraltar's status as an impregnable symbol of British naval power. Throughout the 19th century, it served as a vital coaling station and naval base for the British Empire, securing the route to India via the Suez Canal.",
+			"keyEvents": [
+				{
+					"year": "1704",
+					"title": "British Capture",
+					"description": "Anglo-Dutch forces capture Gibraltar on August 4 during the War of the Spanish Succession"
+				},
+				{
+					"year": "1713",
+					"title": "Treaty of Utrecht",
+					"description": "Spain formally cedes Gibraltar to Great Britain under Article X of the treaty"
+				},
+				{
+					"year": "1779-1783",
+					"title": "The Great Siege",
+					"description": "Franco-Spanish forces besiege the Rock for four years; the British garrison survives, utilizing the new Great Siege Tunnels"
+				},
+				{
+					"year": "1805",
+					"title": "Battle of Trafalgar",
+					"description": "Nelson's body is brought to Gibraltar aboard HMS Victory after the battle; the fleet uses the port for repairs"
+				},
+				{
+					"year": "1830",
+					"title": "Crown Colony",
+					"description": "Gibraltar is formally declared a British Crown Colony"
+				}
+			],
+			"notableFigures": [
+				"Admiral Sir George Rooke",
+				"General George Augustus Eliott (Defender of the Great Siege)",
+				"Horatio Nelson"
+			]
+		},
+		"modern": {
+			"period": "1900 - Present",
+			"description": "In the 20th century, Gibraltar's strategic value was proven again during World War II, when the civilian population was evacuated, and the Rock controlled the entrance to the Mediterranean against Axis forces. The post-war era was marked by increasing tension with Francoist Spain, which culminated in the closure of the land border from 1969 to 1982, isolating the Gibraltarians and solidifying their distinct identity. Residents voted overwhelmingly to remain British in the 1967 sovereignty referendum and again in 2002, rejecting shared sovereignty. Today, Gibraltar is a self-governing territory with a robust economy based on finance, shipping, and tourism, navigating the complexities of post-Brexit relations with Spain and the EU while maintaining its unwavering loyalty to the British Crown.",
+			"keyEvents": [
+				{
+					"year": "1940",
+					"title": "Civilian Evacuation",
+					"description": "Most civilians are evacuated to London, Jamaica, and Madeira as the Rock is fortified for WWII"
+				},
+				{
+					"year": "1967",
+					"title": "Sovereignty Referendum",
+					"description": "99.6% of voters choose to remain British, leading to Gibraltar's National Day"
+				},
+				{
+					"year": "1969",
+					"title": "Border Closure",
+					"description": "General Franco closes the Spanish border in retaliation for the 1969 Constitution; it remains closed for 13 years"
+				},
+				{
+					"year": "1982",
+					"title": "Border Reopening",
+					"description": "The border is partially reopened for pedestrians, fully opening in 1985 prior to Spain's accession to the EEC"
+				},
+				{
+					"year": "2002",
+					"title": "Shared Sovereignty Vote",
+					"description": "Gibraltarians overwhelmingly reject a proposal for shared sovereignty between Britain and Spain"
+				}
+			],
+			"notableFigures": ["Sir Joshua Hassan (Chief Minister)", "Fabian Picardo"]
+		},
+		"timeline": [
+			{
+				"year": "c. 28,000 BCE",
+				"era": "Ancient",
+				"title": "Neanderthal Extinction",
+				"description": "Last known Neanderthal populations inhabit the caves of the Rock"
+			},
+			{
+				"year": "711",
+				"era": "Medieval",
+				"title": "Islamic Conquest",
+				"description": "Tariq ibn Ziyad lands, naming the mountain Jabal Tariq"
+			},
+			{
+				"year": "1462",
+				"era": "Medieval",
+				"title": "Spanish Reconquest",
+				"description": "The Rock is captured by the Duke of Medina Sidonia"
+			},
+			{
+				"year": "1704",
+				"era": "Imperial",
+				"title": "British Capture",
+				"description": "Admiral Rooke takes Gibraltar for Britain"
+			},
+			{
+				"year": "1713",
+				"era": "Imperial",
+				"title": "Treaty of Utrecht",
+				"description": "Spain cedes the Rock to Britain in perpetuity"
+			},
+			{
+				"year": "1783",
+				"era": "Imperial",
+				"title": "Great Siege Ends",
+				"description": "British forces successfully hold the Rock against a four-year siege"
+			},
+			{
+				"year": "1969",
+				"era": "Modern",
+				"title": "The Closure",
+				"description": "Spain closes the land border, isolating Gibraltar for over a decade"
+			},
+			{
+				"year": "2006",
+				"era": "Modern",
+				"title": "New Constitution",
+				"description": "Gibraltar adopts a constitution maximizing self-government"
+			}
+		]
+	},
+	{
+		"name": "Isle of Man",
+		"overview": "The Isle of Man, situated in the center of the Irish Sea, boasts a distinct history that is neither fully English, Scottish, nor Irish, but a unique blend of Celtic and Norse influences. A Crown Dependency rather than part of the UK, it possesses the oldest continuous parliament in the world, Tynwald, established by Vikings over a thousand years ago. The island's history flows from its misty Celtic roots through a golden age of Viking sea-kings who ruled the 'Kingdom of Mann and the Isles,' to the feudal Lordship of the Stanley family, and finally to its modern reinvention as a finance center and motorcycle racing capital. Its rugged coastlines and glens are steeped in folklore, where the Manx language and identity have seen a proud revival.",
+		"source": {
+			"label": "Manx National Heritage",
+			"url": "https://manxnationalheritage.im",
+			"urls": [
+				"https://manxnationalheritage.im",
+				"https://www.gov.im/about-the-government/departments/cabinet-office/external-relations/constitution-and-law/",
+				"https://www.britannica.com/place/Isle-of-Man"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Parliament", "value": "Tynwald (founded c. 979 AD)" },
+			{ "label": "Status", "value": "Crown Dependency (not part of UK)" },
+			{ "label": "Capital", "value": "Douglas" },
+			{ "label": "Motto", "value": "'Quocunque Jeceris Stabit' (Whithersoever you throw it, it will stand)" },
+			{ "label": "UNESCO Status", "value": "Entire island is a Biosphere Reserve" },
+			{ "label": "Language", "value": "English, Manx (Gaelg)" }
+		],
+		"ancient": {
+			"period": "c. 6500 BCE - 800 CE",
+			"description": "The Isle of Man was separated from Britain and Ireland by rising sea levels around 8,000 years ago. Its earliest inhabitants were Mesolithic hunter-gatherers, followed by Neolithic farmers who left behind impressive megalithic tombs like Cashtal yn Ard. By the Iron Age, a distinct Celtic culture had emerged, closely linked to Ireland. The island became a haven for Druids and developed a network of promontory forts. While the Romans knew of the island (calling it 'Monapia' or 'Mona'), they never conquered it, leaving the Manx Celts to develop in relative isolation. This period laid the foundation for the Manx language, a Goidelic tongue related to Irish and Scottish Gaelic, and a rich tradition of mythology involving giants and faeries.",
+			"keyEvents": [
+				{
+					"year": "c. 6500 BCE",
+					"title": "Mesolithic Settlement",
+					"description": "Hunter-gatherers colonize the island as it becomes separated from the mainland"
+				},
+				{
+					"year": "c. 3000 BCE",
+					"title": "Megalithic Era",
+					"description": "Construction of significant passage graves and stone circles like Mull Hill"
+				},
+				{
+					"year": "c. 500 BCE",
+					"title": "Celtic Iron Age",
+					"description": "Establishment of the Celtic culture and hill forts; emergence of early Manx Gaelic"
+				}
+			],
+			"notableFigures": ["Manannan mac Lir (Mythological sea god and protector)"]
+		},
+		"medieval": {
+			"period": "800 - 1405",
+			"description": "The Viking Age transformed the Isle of Man into the center of a maritime empire. Norse settlers arrived in the 9th century, initially raiding but soon settling and intermarrying with the local population to create a Norse-Gaelic culture. In 1079, the legendary Godred Crovan (King Orry) established the Kingdom of Mann and the Isles, ruling the Hebrides and Man. This era gave the island its parliament, Tynwald, which still meets annually on Tynwald Hill. Control of the island became a violent tug-of-war between Scotland and England after the Norwegian king ceded it to Scotland in 1266 (Treaty of Perth). The island changed hands repeatedly during the Anglo-Scottish wars until the English firmly established dominance in the 14th century.",
+			"keyEvents": [
+				{
+					"year": "c. 979",
+					"title": "Tynwald Established",
+					"description": "Traditional founding date of the High Court of Tynwald, the Norse parliament"
+				},
+				{
+					"year": "1079",
+					"title": "Battle of Skyhill",
+					"description": "Godred Crovan defeats the Manx and establishes the Kingdom of Mann and the Isles"
+				},
+				{
+					"year": "1266",
+					"title": "Treaty of Perth",
+					"description": "Magnus VI of Norway cedes Mann and the Hebrides to Scotland, ending Norse sovereignty"
+				},
+				{
+					"year": "1346",
+					"title": "Battle of Neville's Cross",
+					"description": "Following this battle, English control over the Isle of Man becomes more secure against Scottish claims"
+				}
+			],
+			"notableFigures": [
+				"Godred Crovan (King Orry)",
+				"Magnus Barefoot",
+				"Robert the Bruce (briefly captured the island)"
+			]
+		},
+		"feudal": {
+			"period": "1405 - 1828",
+			"description": "In 1405, King Henry IV of England granted the Isle of Man to the Stanley family (Earls of Derby), beginning over 300 years of stability under the 'Lords of Mann.' The Stanleys rarely visited, ruling through governors, but their tenure kept the island distinct from the English legal system. Smuggling became a major industry in the 18th century, depriving the British Crown of revenue. To stop this, the British government passed the Revestment Act in 1765, forcibly purchasing the regalities of the island from the Duke of Atholl (who had inherited it). This period, known as 'The Mischief' by locals, saw the island come under direct control of the British Crown, though it retained its own laws and parliament.",
+			"keyEvents": [
+				{
+					"year": "1405",
+					"title": "Stanley Rule Begins",
+					"description": "The Stanley family becomes Kings (later Lords) of Mann, commencing centuries of dynastic rule"
+				},
+				{
+					"year": "1651",
+					"title": "Illiam Dhone's Rising",
+					"description": "William Christian (Illiam Dhone) leads a rebellion against the Royalist Stanleys during the English Civil War"
+				},
+				{
+					"year": "1765",
+					"title": "Act of Revestment",
+					"description": "The British Crown buys the Lordship from the Duke of Atholl to crackdown on smuggling"
+				},
+				{
+					"year": "1828",
+					"title": "Final Purchase",
+					"description": "The Crown purchases the remaining manorial rights, ending the feudal era fully"
+				}
+			],
+			"notableFigures": ["Illiam Dhone (William Christian)", "James Stanley, 7th Earl of Derby", "The Duke of Atholl"]
+		},
+		"modern": {
+			"period": "1828 - Present",
+			"description": "The modern era saw the Isle of Man transform from a smuggling haven and fishing community into a thriving Victorian tourist destination. The introduction of steam ferries brought thousands of workers from Northern England to Douglas. In 1907, the island began hosting the TT (Tourist Trophy) motorcycle races, now world-famous. During the World Wars, the island hosted internment camps for 'enemy aliens,' including the Knockaloe camp which held over 20,000 men. In the late 20th century, as tourism declined, the island successfully diversified into offshore finance, e-gaming, and space commerce. It continues to assert its autonomy, not as part of the UK or EU, but as a self-governing dependency with a distinct Celtic-Norse identity.",
+			"keyEvents": [
+				{
+					"year": "1866",
+					"title": "House of Keys Reform",
+					"description": "The House of Keys becomes a popularly elected body, democratizing Manx politics"
+				},
+				{
+					"year": "1881",
+					"title": "Women's Suffrage",
+					"description": "The Isle of Man becomes the first national parliament to give women the vote (property owners)"
+				},
+				{
+					"year": "1907",
+					"title": "First TT Race",
+					"description": "The first Tourist Trophy motorcycle race is held, establishing a lasting motorsport legacy"
+				},
+				{
+					"year": "1914-1918",
+					"title": "Knockaloe Internment",
+					"description": "The island houses thousands of civilian internees during WWI"
+				},
+				{
+					"year": "1979",
+					"title": "Tynwald Millennium",
+					"description": "Celebration of 1,000 years of parliament, attended by Queen Elizabeth II"
+				}
+			],
+			"notableFigures": ["Hall Caine (Author)", "Sir Frank Connor", "Mark Cavendish (Cyclist)"]
+		},
+		"timeline": [
+			{
+				"year": "c. 979",
+				"era": "Medieval",
+				"title": "Tynwald Founded",
+				"description": "Establishment of the Norse parliament, the oldest continuous one in the world"
+			},
+			{
+				"year": "1079",
+				"era": "Medieval",
+				"title": "Godred Crovan invades",
+				"description": "Viking rule solidifies under King Orry"
+			},
+			{
+				"year": "1266",
+				"era": "Medieval",
+				"title": "End of Norse Rule",
+				"description": "Treaty of Perth transfers the island to Scotland"
+			},
+			{
+				"year": "1405",
+				"era": "Feudal",
+				"title": "Stanley Era",
+				"description": "The Stanley family begins their long rule as Lords of Mann"
+			},
+			{
+				"year": "1651",
+				"era": "Feudal",
+				"title": "Manx Rebellion",
+				"description": "Illiam Dhone surrenders the island to Parliamentarians"
+			},
+			{
+				"year": "1765",
+				"era": "Feudal",
+				"title": "Revestment Act",
+				"description": "Transfer of power from the Lords of Mann to the British Crown"
+			},
+			{
+				"year": "1881",
+				"era": "Modern",
+				"title": "Votes for Women",
+				"description": "Tynwald grants suffrage to women property owners"
+			},
+			{
+				"year": "1907",
+				"era": "Modern",
+				"title": "TT Races Begin",
+				"description": "Inaugural motorcycle races take place"
+			}
+		]
+	},
+	{
+		"name": "Jersey",
+		"overview": "Jersey, the largest of the Channel Islands, sits just off the coast of Normandy, France, yet remains a steadfast bailiwick of the British Crown. Its history is a complex tapestry of loyalty and independence. Originally part of the Duchy of Normandy, it chose to remain loyal to the English King when mainland Normandy was lost in 1204, earning it special privileges and self-governance that exist to this day. From its prehistoric dolmens and medieval castles to its role as a hotbed for privateers and its harrowing German Occupation during World War II, Jersey has always punched above its weight. Today, it is a leading international finance center that retains a unique Norman-French cultural heritage.",
+		"source": {
+			"label": "Jersey Heritage",
+			"url": "https://www.jerseyheritage.org/history",
+			"urls": [
+				"https://www.jerseyheritage.org/history",
+				"https://www.jersey.com/inspire-me/inspiration/history-timeline/",
+				"https://www.britannica.com/place/Jersey-island-Channel-Islands-English-Channel"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Status", "value": "Crown Dependency (Bailiwick of Jersey)" },
+			{ "label": "Capital", "value": "St Helier" },
+			{ "label": "Land Area", "value": "118 km²" },
+			{ "label": "Liberation Day", "value": "May 9 (end of German Occupation)" },
+			{ "label": "Famous Export", "value": "Jersey Cows, Jersey Royal Potatoes" },
+			{ "label": "Highest Point", "value": "Les Platons (136m)" }
+		],
+		"ancient": {
+			"period": "c. 250,000 BCE - 933 CE",
+			"description": "Jersey's history extends into deep time; the site of La Cotte de St Brelade reveals that Neanderthals hunted mammoths there over 200,000 years ago, driving them over cliffs in one of Europe's most significant Paleolithic sites. As sea levels rose after the last Ice Age, Jersey became an island. The Neolithic period saw the construction of impressive passage graves and dolmens, such as La Hougue Bie, one of the oldest buildings in the world. The island remained on the periphery of the Roman world, but by the 6th century, Christianity arrived with the hermit St. Helier, who was martyred by pirates. The island eventually fell under the influence of the Vikings, who raided and then settled the region that became Normandy.",
+			"keyEvents": [
+				{
+					"year": "c. 200,000 BCE",
+					"title": "Neanderthal Hunters",
+					"description": "Hunter-gatherers use La Cotte de St Brelade to hunt mammoths"
+				},
+				{
+					"year": "c. 4000 BCE",
+					"title": "Neolithic Monuments",
+					"description": "Construction of the passage grave at La Hougue Bie"
+				},
+				{
+					"year": "c. 555 CE",
+					"title": "St. Helier",
+					"description": "The hermit Helier settles in Jersey and is martyred, becoming the island's patron saint"
+				}
+			],
+			"notableFigures": ["St. Helier", "Neanderthals of La Cotte"]
+		},
+		"medieval": {
+			"period": "933 - 1204",
+			"description": "In 933, William Longsword, Duke of Normandy, annexed the Channel Islands, integrating them into the Duchy of Normandy. For nearly 300 years, Jersey was legally and culturally Norman. The pivotal moment came in 1066, when the Duke of Normandy conquered England, uniting the islands with the English Crown. However, in 1204, King John of England lost mainland Normandy to France. Faced with a choice, the Channel Islands remained loyal to John. In return, the King granted the islands a 'Constitution' preserving their Norman laws, customs, and freedom from English taxation. This event, the 'Division,' is the foundation of Jersey's modern status as a Crown Dependency—possession of the Monarch, but not part of the Kingdom.",
+			"keyEvents": [
+				{
+					"year": "933",
+					"title": "Annexation to Normandy",
+					"description": "William Longsword adds the Channel Islands to the Duchy of Normandy"
+				},
+				{
+					"year": "1066",
+					"title": "Norman Conquest",
+					"description": "Jersey becomes linked to the English Crown through William the Conqueror"
+				},
+				{
+					"year": "1204",
+					"title": "The Division",
+					"description": "Mainland Normandy falls to France; Jersey stays loyal to King John, securing its unique self-governing status"
+				},
+				{
+					"year": "1212",
+					"title": "Mont Orgueil",
+					"description": "Construction begins on Mont Orgueil Castle to defend the now-vulnerable island against the French"
+				}
+			],
+			"notableFigures": ["William Longsword", "King John"]
+		},
+		"feudal": {
+			"period": "1204 - 1800",
+			"description": "Following the separation from Normandy, Jersey became a front-line fortress in the wars between England and France. The island developed a feudal society dominated by powerful Seigneurs and defended by a local militia. Mont Orgueil and later Elizabeth Castle were built to repel frequent French raids. During the 17th and 18th centuries, Jersey profited immensely from the Newfoundland cod trade and from privateering—state-sanctioned piracy against French and American shipping. This wealth built the island's fine granite farmhouses. The threat of invasion remained constant, culminating in the Battle of Jersey in 1781, when a French force secretly landed and captured St Helier, only to be defeated by the local militia and British troops led by the heroic Major Peirson.",
+			"keyEvents": [
+				{
+					"year": "1640s",
+					"title": "English Civil War",
+					"description": "Jersey serves as a Royalist stronghold, sheltering the future King Charles II"
+				},
+				{
+					"year": "1781",
+					"title": "Battle of Jersey",
+					"description": "Baron de Rullecourt invades St Helier; Major Peirson defeats the French but dies in the moment of victory"
+				},
+				{
+					"year": "1795",
+					"title": "Royal Navy Base",
+					"description": "Jersey becomes a crucial station for the British blockade of Napoleonic France"
+				}
+			],
+			"notableFigures": [
+				"Sir George Carteret (Royalist leader)",
+				"Major Francis Peirson",
+				"Lillie Langtry (The 'Jersey Lily')"
+			]
+		},
+		"modern": {
+			"period": "1800 - Present",
+			"description": "The 19th century saw Jersey mellow from a fortress into a peaceful agricultural and tourist hub, famous for its cows and knitting. However, World War II brought the darkest chapter in the island's history. From 1940 to 1945, Jersey was occupied by Nazi Germany, the only British soil to fall to the Third Reich. Islanders endured food shortages, deportation of British-born residents to German camps, and slave labor utilized by the Organisation Todt to build massive concrete bunkers that still scar the coast. Liberated on May 9, 1945, the island rebuilt, eventually pivoting from agriculture to become a major offshore global finance center in the 1960s. Today, it balances this modern industry with the preservation of its distinct heritage and independence.",
+			"keyEvents": [
+				{
+					"year": "1940",
+					"title": "German Occupation Begins",
+					"description": "German forces occupy the island; the Channel Islands become the only British territory occupied by Nazis"
+				},
+				{
+					"year": "1942",
+					"title": "Deportations",
+					"description": "Specific residents are deported to internment camps in Germany (e.g., Bad Wurzach)"
+				},
+				{
+					"year": "1945",
+					"title": "Liberation",
+					"description": "May 9, British forces liberate the island, sparking massive celebrations still held annually"
+				},
+				{
+					"year": "1960s",
+					"title": "Finance Industry Boom",
+					"description": "Jersey transitions to a finance-based economy, attracting global banking institutions"
+				},
+				{
+					"year": "2020s",
+					"title": "Fishing Disputes",
+					"description": "Post-Brexit tensions arise with France over fishing rights in Jersey's waters"
+				}
+			],
+			"notableFigures": ["Gerald Durrell (Conservationist)", "Sir Alexander Coutanche (Bailiff during Occupation)"]
+		},
+		"timeline": [
+			{
+				"year": "c. 200,000 BCE",
+				"era": "Ancient",
+				"title": "La Cotte Occupation",
+				"description": "Neanderthals hunt mammoths at St Brelade"
+			},
+			{
+				"year": "933",
+				"era": "Medieval",
+				"title": "Norman Annexation",
+				"description": "Jersey becomes part of the Duchy of Normandy"
+			},
+			{
+				"year": "1204",
+				"era": "Medieval",
+				"title": "The Division",
+				"description": "Jersey separates from mainland Normandy, keeping its own laws"
+			},
+			{
+				"year": "1651",
+				"era": "Feudal",
+				"title": "Civil War Capture",
+				"description": "Parliamentarian forces capture the Royalist island"
+			},
+			{
+				"year": "1781",
+				"era": "Feudal",
+				"title": "Battle of Jersey",
+				"description": "Defeat of the last major French invasion attempt"
+			},
+			{
+				"year": "1940",
+				"era": "Modern",
+				"title": "Occupation",
+				"description": "German forces occupy Jersey for five years"
+			},
+			{
+				"year": "1945",
+				"era": "Modern",
+				"title": "Liberation Day",
+				"description": "End of German rule and return of British troops"
+			},
+			{
+				"year": "1962",
+				"era": "Modern",
+				"title": "Finance Law",
+				"description": "New laws pave the way for the offshore finance industry"
+			}
+		]
 	}
 ]
