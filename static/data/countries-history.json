@@ -24143,5 +24143,1473 @@
 				"description": "Ben Ali overthrown; democratization begins."
 			}
 		]
+	},
+	{
+		"name": "Andorra",
+		"overview": "Andorra's history is a remarkable tale of survival, emerging from a feudal curiosity to become a prosperous modern microstate. Nestled in the Pyrenees between France and Spain, it is the only surviving co-principality in the world, ruled jointly by the Bishop of Urgell and the President of France (formerly the King of France). Originating from the buffer zones created by Charlemagne, Andorra preserved its independence through the 'Paréages'—medieval feudal contracts that balanced power between two neighbors. For centuries, it remained an isolated, rural society known for smuggling and agriculture, before transforming in the late 20th century into a wealthy center for tourism and finance, all while maintaining its unique Catalan culture and political structure.",
+		"source": {
+			"label": "Wikipedia - History of Andorra",
+			"url": "https://en.wikipedia.org/wiki/History_of_Andorra",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Andorra",
+				"https://www.britannica.com/place/Andorra",
+				"https://www.andorra.ad/en/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Constitution Adopted", "value": "March 14, 1993" },
+			{ "label": "Political System", "value": "Parliamentary Co-Principality" },
+			{ "label": "Capital", "value": "Andorra la Vella (Highest in Europe)" },
+			{ "label": "Official Language", "value": "Catalan" },
+			{ "label": "Formation", "value": "Paréages of 1278" },
+			{ "label": "UNESCO Sites", "value": "Madriu-Perafita-Claror Valley" }
+		],
+		"ancient": {
+			"period": "c. 3500 BCE - 476 CE",
+			"description": "The valleys of Andorra have been inhabited since the Neolithic era, as evidenced by archaeological finds such as the La Margineda site. Before the arrival of the Romans, the region was home to the Andosins, an Iberian tribe mentioned by the Greek historian Polybius in his descriptions of the Punic Wars. The Andosins controlled the mountain passes, trading with neighboring peoples. During the Roman period, the territory was loosely integrated into the province of Hispania Tarraconensis, though its rugged terrain allowed the local population to maintain a degree of autonomy and preserve their distinct cultural habits. Roman influence is visible in the linguistic roots of the region and scattered ruins, but the high valleys remained largely peripheral to the empire's main activities.",
+			"keyEvents": [
+				{
+					"year": "c. 200 BCE",
+					"title": "Polybius Mentions Andosins",
+					"description": "Greek historian Polybius records the Andosins, an Iberian tribe inhabiting the Andorran valleys, who resisted Carthaginian passage."
+				},
+				{
+					"year": "c. 1st Century BCE",
+					"title": "Roman Integration",
+					"description": "The region falls under Roman influence within Hispania Tarraconensis, though retaining significant local autonomy due to geography."
+				}
+			],
+			"notableFigures": ["Andosins (Iberian tribe)"]
+		},
+		"medieval": {
+			"period": "476 - 1500",
+			"description": "Andorra's medieval history is defined by the legend of Charlemagne and the crystallization of its unique political status. Tradition holds that Charlemagne granted the Andorran people a charter in return for their help fighting the Moors, a founding myth that is celebrated in the national anthem. In reality, the territory was a dependency of the Counts of Urgell and later the Bishops of Urgell. A prolonged conflict over sovereignty between the Bishop of Urgell and the French House of Foix was resolved in 1278 with the signing of the first 'Paréage'. This feudal institution established a shared sovereignty (co-principality) that prevented Andorra from being absorbed by either state. In 1419, the Council of the Land (Consell de la Terra) was founded, creating one of Europe's oldest continuous parliaments.",
+			"keyEvents": [
+				{
+					"year": "803",
+					"title": "Charlemagne's Charter",
+					"description": "Traditional (though likely legendary) founding date where Charlemagne grants Andorra independence for aid against the Moors."
+				},
+				{
+					"year": "1133",
+					"title": "Bishop's Sovereignty",
+					"description": "Count Ermengol VI of Urgell cedes his rights over the valleys to the Bishop of Urgell."
+				},
+				{
+					"year": "1278",
+					"title": "First Paréage",
+					"description": "Historic feudal agreement signed between the Bishop of Urgell and the Count of Foix, establishing the shared Co-Principality."
+				},
+				{
+					"year": "1419",
+					"title": "Council of the Land",
+					"description": "Establishment of the Consell de la Terra, allowing heads of households to elect representatives, forming an early parliament."
+				}
+			],
+			"notableFigures": ["Charlemagne", "Roger-Bernard III (Count of Foix)", "Pere d'Urtx (Bishop of Urgell)"]
+		},
+		"feudal": {
+			"period": "1500 - 1930",
+			"description": "While the rest of Europe moved toward centralized nation-states, Andorra remained a feudal relic frozen in time. The rights of the Count of Foix passed to the King of Navarre and eventually to the King of France (Henry IV) in 1607. From then on, the head of the French state and the Bishop of Urgell served as Co-Princes. The country remained deeply isolated, governed by the 'Manual Digest' (1748) which codified its customs and laws. The economy relied on subsistence farming and sheep herding. During the Napoleonic Wars and 19th-century revolutions in Spain and France, Andorra managed to maintain its neutrality and unique status, though it was often viewed as a quaint curiosity. Smuggling became an important economic activity due to its border location and lack of taxes.",
+			"keyEvents": [
+				{
+					"year": "1607",
+					"title": "French Crown Rights",
+					"description": "King Henry IV of France issues an edict establishing the King of France and the Bishop of Urgell as permanent Co-Princes."
+				},
+				{
+					"year": "1748",
+					"title": "Manual Digest",
+					"description": "Antoni Fiter i Rossell compiles the 'Manual Digest,' codifying Andorran customs, laws, and administrative practices."
+				},
+				{
+					"year": "1866",
+					"title": "The New Reform",
+					"description": "Social unrest leads to the 'Nova Reforma,' expanding voting rights to heads of all households, not just the wealthy."
+				}
+			],
+			"notableFigures": ["Henry IV of France", "Antoni Fiter i Rossell"]
+		},
+		"modern": {
+			"period": "1930 - Present",
+			"description": "Andorra's entry into the modern world was rapid and transformative. In the 1930s, the country experienced a brief and bizarre episode when a Russian adventurer, Boris Skossyreff, declared himself King Boris I before being arrested by Spanish civil guards. Following World War II, Andorra shed its isolation, capitalizing on its tax-haven status and ski resorts to build a booming tourism economy. The demographic landscape changed drastically with immigration from Spain and Portugal. In 1993, Andorra modernized its political system by adopting its first written constitution, becoming a sovereign parliamentary democracy while retaining the Co-Princes as ceremonial heads of state. This move allowed Andorra to join the United Nations and the Council of Europe, fully integrating into the international community.",
+			"keyEvents": [
+				{
+					"year": "1933",
+					"title": "Universal Male Suffrage",
+					"description": "Andorra introduces universal male suffrage following social unrest and a brief French intervention."
+				},
+				{
+					"year": "1934",
+					"title": "Boris I Episode",
+					"description": "Russian adventurer Boris Skossyreff briefly declares himself King of Andorra before being arrested."
+				},
+				{
+					"year": "1970",
+					"title": "Female Suffrage",
+					"description": "Women are granted the right to vote, marking a major step in social modernization."
+				},
+				{
+					"year": "1993",
+					"title": "Constitution and UN",
+					"description": "Andorra adopts a democratic constitution, effectively becoming a sovereign state and joining the United Nations."
+				},
+				{
+					"year": "2011",
+					"title": "Tax Reform",
+					"description": "Andorra begins implementing tax reforms and information exchange agreements to shed its tax haven status."
+				}
+			],
+			"notableFigures": ["Boris Skossyreff", "Marc Forné Molné"]
+		},
+		"timeline": [
+			{
+				"year": "1278",
+				"era": "Medieval",
+				"title": "The Paréage",
+				"description": "Founding document establishing the Co-Principality."
+			},
+			{
+				"year": "1419",
+				"era": "Medieval",
+				"title": "First Parliament",
+				"description": "Creation of the Consell de la Terra."
+			},
+			{
+				"year": "1607",
+				"era": "Feudal",
+				"title": "French King as Co-Prince",
+				"description": "Henry IV establishes the French head of state as permanent Co-Prince."
+			},
+			{
+				"year": "1934",
+				"era": "Modern",
+				"title": "Kingdom Attempt",
+				"description": "Boris Skossyreff's failed attempt to establish a monarchy."
+			},
+			{
+				"year": "1993",
+				"era": "Modern",
+				"title": "Sovereignty",
+				"description": "First written constitution and entry into the UN."
+			}
+		]
+	},
+	{
+		"name": "Cyprus",
+		"overview": "Cyprus has a history defined by its strategic position as a crossroads of civilization in the Eastern Mediterranean. Known in antiquity for its vast copper resources, the island has been contested by empires for millennia, including the Assyrians, Egyptians, Persians, Romans, Byzantines, Venetians, Ottomans, and the British. It is the legendary birthplace of Aphrodite and was an early center of Christianity. In the modern era, the island's history has been marked by the struggle for independence, intercommunal violence between Greek and Turkish Cypriots, and a de facto division since 1974. Today, the Republic of Cyprus is an EU member, while the northern part remains recognized only by Turkey, with a UN buffer zone separating the two.",
+		"source": {
+			"label": "Wikipedia - History of Cyprus",
+			"url": "https://en.wikipedia.org/wiki/History_of_Cyprus",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Cyprus",
+				"https://www.britannica.com/place/Cyprus",
+				"http://www.mfa.gov.cy/mfa/mfa2016.nsf/mfa03_en/mfa03_en"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "August 16, 1960" },
+			{ "label": "EU Accession", "value": "May 1, 2004" },
+			{ "label": "Capital", "value": "Nicosia (last divided capital)" },
+			{ "label": "Ancient Name", "value": "Alashiya (Copper Source)" },
+			{ "label": "Division", "value": "Since 1974 (Green Line)" },
+			{ "label": "Mythology", "value": "Birthplace of Aphrodite" }
+		],
+		"ancient": {
+			"period": "c. 10,000 BCE - 330 CE",
+			"description": "Cyprus was a major center of the ancient world, famous for the copper mines that likely gave the metal its Latin name (cuprum). The island developed a unique culture influenced by Mycenaean Greek settlers who arrived around 1200 BCE, establishing city-kingdoms like Salamis, Kition, and Paphos. It was known as Alashiya in Near Eastern texts. Due to its wealth and location, Cyprus was dominated successively by the Assyrians, Egyptians, and Persians. In 333 BCE, the Cypriot kings welcomed Alexander the Great, and the island later became a prized possession of Ptolemaic Egypt. Under Roman rule (from 58 BCE), Cyprus enjoyed peace and prosperity; it was the first Roman province to be governed by a Christian, following the missionary journeys of Paul and Barnabas.",
+			"keyEvents": [
+				{
+					"year": "c. 1200 BCE",
+					"title": "Mycenaean Settlement",
+					"description": "Arrival of Achaean Greeks who establish city-kingdoms and Hellenize the island's culture."
+				},
+				{
+					"year": "58 BCE",
+					"title": "Roman Annexation",
+					"description": "Cyprus becomes a Roman province; later famously governed by Cicero and visited by Apostles Paul and Barnabas."
+				},
+				{
+					"year": "45 CE",
+					"title": "Christian Mission",
+					"description": "Apostles Paul and Barnabas preach in Cyprus, converting the Roman Proconsul Sergius Paulus."
+				}
+			],
+			"notableFigures": ["Zeno of Citium (Founder of Stoicism)", "Barnabas", "Evagoras I of Salamis"]
+		},
+		"medieval": {
+			"period": "330 - 1571",
+			"description": "During the Byzantine era, Cyprus faced Arab raids but remained a Christian stronghold. A pivotal moment occurred in 1191 when Richard the Lionheart captured the island during the Third Crusade, supposedly because the local ruler insulted his fiancée. Richard sold it to the Knights Templar, who then sold it to Guy de Lusignan, establishing the Kingdom of Cyprus. This Frankish dynasty ruled for three centuries, creating a Western feudal state with Gothic cathedrals in the Levant. In 1489, the island was ceded to the Republic of Venice. The Venetians built massive fortifications, most notably the walls of Nicosia and Famagusta, to defend against the rising Ottoman threat, which eventually conquered the island in 1571 after a brutal siege.",
+			"keyEvents": [
+				{
+					"year": "1191",
+					"title": "Richard the Lionheart",
+					"description": "King Richard I of England conquers Cyprus on his way to the Third Crusade, ending Byzantine rule."
+				},
+				{
+					"year": "1192",
+					"title": "Lusignan Dynasty",
+					"description": "Guy de Lusignan establishes a Frankish Kingdom, introducing Western feudalism and Catholicism."
+				},
+				{
+					"year": "1489",
+					"title": "Venetian Rule",
+					"description": "Queen Catherine Cornaro cedes Cyprus to Venice, which fortifies the island against the Ottomans."
+				}
+			],
+			"notableFigures": ["Richard the Lionheart", "Guy de Lusignan", "Queen Catherine Cornaro"]
+		},
+		"imperial": {
+			"period": "1571 - 1960",
+			"description": "Ottoman rule (1571–1878) restored the Orthodox Church's primacy (which had been suppressed by the Catholic Lusignans and Venetians) but imposed heavy taxation. The demographic character of the island changed with the settlement of Turkish soldiers and families. In 1878, the Ottoman Empire leased Cyprus to Britain in exchange for protection against Russia. Britain formally annexed the island in 1914 and made it a Crown Colony in 1925. The mid-20th century saw the rise of 'Enosis' (union with Greece) among Greek Cypriots, leading to the EOKA guerrilla campaign (1955–1959) against British rule. Turkish Cypriots, fearing marginalization, favored partition ('Taksim'). The conflict ended with the Zürich and London Agreements, granting independence to a power-sharing republic.",
+			"keyEvents": [
+				{
+					"year": "1571",
+					"title": "Ottoman Conquest",
+					"description": "Ottomans capture Famagusta; Cyprus becomes an Ottoman province."
+				},
+				{
+					"year": "1878",
+					"title": "British Administration",
+					"description": "Britain assumes administration of Cyprus under the Cyprus Convention."
+				},
+				{
+					"year": "1955-1959",
+					"title": "EOKA Struggle",
+					"description": "Greek Cypriot nationalists launch an armed campaign for Enosis (union with Greece) against British rule."
+				}
+			],
+			"notableFigures": ["Archbishop Makarios III", "General George Grivas", "Fazıl Küçük"]
+		},
+		"modern": {
+			"period": "1960 - Present",
+			"description": "Independence in 1960 was marred by constitutional breakdown and intercommunal violence in 1963, leading to the deployment of UN peacekeepers. In July 1974, a coup sponsored by the Greek military junta attempted to unite the island with Greece. In response, Turkey invaded five days later, occupying the northern third of the island. This cemented a division between the Greek Cypriot south and the Turkish Cypriot north. The 'Turkish Republic of Northern Cyprus' declared independence in 1983 but is recognized only by Turkey. Despite the division, the Republic of Cyprus achieved remarkable economic recovery and joined the European Union in 2004. Cross-border movement has eased since 2003, though political reunification remains elusive.",
+			"keyEvents": [
+				{
+					"year": "1960",
+					"title": "Independence",
+					"description": "Cyprus becomes an independent republic with Archbishop Makarios III as its first president."
+				},
+				{
+					"year": "1974",
+					"title": "Coup and Invasion",
+					"description": "A Greek-backed coup triggers a Turkish military invasion, resulting in the de facto partition of the island."
+				},
+				{
+					"year": "2004",
+					"title": "EU Accession",
+					"description": "The Republic of Cyprus joins the European Union; the Annan Plan for reunification is rejected by Greek Cypriots."
+				},
+				{
+					"year": "2008",
+					"title": "Wall Opening",
+					"description": "Ledra Street crossing in Nicosia reopens, symbolizing eased tensions."
+				}
+			],
+			"notableFigures": ["Glafcos Clerides", "Rauf Denktaş", "Tassos Papadopoulos"]
+		},
+		"timeline": [
+			{
+				"year": "1191",
+				"era": "Medieval",
+				"title": "Crusader Conquest",
+				"description": "Richard the Lionheart captures Cyprus."
+			},
+			{
+				"year": "1571",
+				"era": "Imperial",
+				"title": "Ottoman Rule Begins",
+				"description": "Fall of Famagusta marks the end of Venetian rule."
+			},
+			{
+				"year": "1878",
+				"era": "Imperial",
+				"title": "British Arrival",
+				"description": "Cyprus placed under British administration."
+			},
+			{ "year": "1960", "era": "Modern", "title": "Republic Founded", "description": "Independence from Britain." },
+			{ "year": "1974", "era": "Modern", "title": "Division", "description": "Turkish invasion divides the island." },
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "EU Membership",
+				"description": "Cyprus becomes a member of the European Union."
+			}
+		]
+	},
+	{
+		"name": "Iceland",
+		"overview": "Iceland's history is a saga of human resilience in a volatile land of fire and ice. Settled by Vikings in the 9th century, it established the Althing, the world's oldest surviving parliament, in 930 CE. After a golden age of literature that produced the famous Sagas, Iceland lost its independence to Norway and later Denmark, suffering centuries of isolation, plague, and catastrophic volcanic eruptions like the Laki fires. The 19th and 20th centuries saw a peaceful but determined struggle for independence, culminating in the foundation of the Republic in 1944. Today, Iceland is a progressive nation known for its renewable energy, gender equality, and cultural vibrancy, having recovered from a severe financial collapse in 2008 to become a prosperous modern society.",
+		"source": {
+			"label": "Wikipedia - History of Iceland",
+			"url": "https://en.wikipedia.org/wiki/History_of_Iceland",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Iceland",
+				"https://www.iceland.is/the-big-picture/history-and-traditions",
+				"https://www.britannica.com/place/Iceland"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Republic Founded", "value": "June 17, 1944" },
+			{ "label": "Parliament", "value": "Althing (founded 930)" },
+			{ "label": "Settlement", "value": "c. 874 CE" },
+			{ "label": "Capital", "value": "Reykjavík" },
+			{ "label": "Population", "value": "~370,000" },
+			{ "label": "Energy", "value": "~100% Renewable Electricity" }
+		],
+		"medieval": {
+			"period": "870 - 1550",
+			"description": "Iceland was settled during the Viking Age, primarily by Norwegians fleeing King Harald Fairhair, along with Celtic slaves. The first permanent settler, Ingólfr Arnarson, established Reykjavík in 874. In 930, the chieftains established the Althing at Thingvellir, creating a unique commonwealth without a king. This period, known as the Age of Sagas, saw the recording of oral histories and the peaceful conversion to Christianity in 1000 CE. However, internal feuding during the 'Age of the Sturlungs' led to civil war, causing Icelanders to sign the 'Old Covenant' in 1262, accepting Norwegian sovereignty to end the violence. When Norway entered the Kalmar Union in 1397, Iceland came under Danish control.",
+			"keyEvents": [
+				{
+					"year": "874",
+					"title": "Settlement Begins",
+					"description": "Ingólfr Arnarson establishes the first permanent settlement at Reykjavík."
+				},
+				{
+					"year": "930",
+					"title": "Althing Founded",
+					"description": "Establishment of the parliamentary assembly at Thingvellir, marking the start of the Commonwealth."
+				},
+				{
+					"year": "1000",
+					"title": "Conversion",
+					"description": "Iceland peacefully adopts Christianity by decision of the Lawspeaker Thorgeir Thorkelsson."
+				},
+				{
+					"year": "1262",
+					"title": "Old Covenant",
+					"description": "End of the Commonwealth as Iceland swears allegiance to the Norwegian King."
+				}
+			],
+			"notableFigures": ["Ingólfr Arnarson", "Snorri Sturluson (Historian/Poet)", "Leif Erikson"]
+		},
+		"colonial": {
+			"period": "1550 - 1918",
+			"description": "Under Danish rule, Iceland faced its darkest centuries. The imposition of the Lutheran Reformation in 1550 was violent, culminating in the execution of the last Catholic bishop, Jón Arason. In 1602, Denmark imposed a harsh trade monopoly, forbidding Icelanders from trading with anyone but Danish merchants, which caused widespread poverty. The 18th century was particularly devastating; the 1783 Laki volcanic eruption killed a large portion of the livestock and 25% of the human population in the resulting 'Mist Hardships' famine. However, the 19th century brought a wave of national romanticism. Led by intellectuals like Jón Sigurðsson, Icelanders began a political movement for independence, achieving a constitution in 1874 and Home Rule in 1904.",
+			"keyEvents": [
+				{
+					"year": "1602",
+					"title": "Trade Monopoly",
+					"description": "Denmark imposes a strict trade monopoly, severely damaging the Icelandic economy."
+				},
+				{
+					"year": "1783",
+					"title": "Laki Eruption",
+					"description": "The 'Skaftá Fires' eruption causes a famine that kills a quarter of the population."
+				},
+				{
+					"year": "1874",
+					"title": "First Constitution",
+					"description": "King Christian IX grants Iceland a constitution on the millennium of its settlement."
+				}
+			],
+			"notableFigures": ["Jón Arason", "Jón Sigurðsson (Independence Leader)"]
+		},
+		"independence": {
+			"period": "1918 - 1944",
+			"description": "The path to full independence was gradual and peaceful. In 1918, the Act of Union recognized Iceland as a sovereign state in personal union with Denmark; they shared a king and foreign policy but were otherwise separate. During World War II, following the German occupation of Denmark, the British (and later the US) occupied Iceland to prevent it from falling into Axis hands. This 'friendly invasion' transformed the economy, bringing infrastructure and jobs. On June 17, 1944, Iceland formally dissolved the union with Denmark and established the Republic of Iceland, electing Sveinn Björnsson as the first president.",
+			"keyEvents": [
+				{
+					"year": "1918",
+					"title": "Sovereignty",
+					"description": "Iceland becomes a sovereign state in personal union with the Danish King."
+				},
+				{
+					"year": "1940",
+					"title": "British Occupation",
+					"description": "UK forces occupy Iceland to secure the North Atlantic, later replaced by US troops."
+				},
+				{
+					"year": "1944",
+					"title": "Republic Founded",
+					"description": "Iceland declares full independence from Denmark at Thingvellir."
+				}
+			],
+			"notableFigures": ["Sveinn Björnsson"]
+		},
+		"modern": {
+			"period": "1944 - Present",
+			"description": "Post-war Iceland transformed from a poor fishing nation into a wealthy welfare state. The extension of fishing limits led to the 'Cod Wars' with Britain (1950s-1970s), which Iceland eventually won, securing control over its vital marine resources. The country harnessed its geothermal energy to power industry and homes. In 2008, Iceland faced a catastrophic banking collapse, becoming the first casualty of the global financial crisis, but it staged a remarkable recovery driven by tourism and fisheries. Culturally, Iceland gained global fame through artists like Björk and its booming tourism industry, though it continues to grapple with the challenges of managing mass tourism and volcanic activity.",
+			"keyEvents": [
+				{
+					"year": "1975",
+					"title": "Cod Wars Victory",
+					"description": "Iceland expands its exclusive economic zone to 200 miles, winning a series of disputes with the UK."
+				},
+				{
+					"year": "1980",
+					"title": "First Female President",
+					"description": "Vigdís Finnbogadóttir becomes the world's first democratically elected female head of state."
+				},
+				{
+					"year": "2008",
+					"title": "Financial Crisis",
+					"description": "Collapse of the banking system leads to severe recession and political protests."
+				},
+				{
+					"year": "2010",
+					"title": "Eyjafjallajökull",
+					"description": "Volcanic eruption disrupts European air travel and inadvertently boosts tourism."
+				}
+			],
+			"notableFigures": ["Vigdís Finnbogadóttir", "Björk", "Halldór Laxness (Nobel Laureate)"]
+		},
+		"timeline": [
+			{ "year": "874", "era": "Medieval", "title": "Settlement", "description": "First permanent settlers arrive." },
+			{ "year": "930", "era": "Medieval", "title": "Althing", "description": "Parliament established." },
+			{
+				"year": "1262",
+				"era": "Medieval",
+				"title": "Loss of Independence",
+				"description": "Iceland submits to Norwegian rule."
+			},
+			{
+				"year": "1918",
+				"era": "Independence",
+				"title": "Sovereignty",
+				"description": "Iceland becomes a sovereign state under the Danish crown."
+			},
+			{ "year": "1944", "era": "Modern", "title": "Republic", "description": "Full independence established." },
+			{ "year": "2008", "era": "Modern", "title": "The Crash", "description": "Major systemic banking collapse." }
+		]
+	},
+	{
+		"name": "Liechtenstein",
+		"overview": "Liechtenstein's history is a testament to diplomatic survival and strategic adaptation. Originating from the consolidation of the Lordship of Schellenberg and the County of Vaduz within the Holy Roman Empire, it remains one of the few surviving functional absolute monarchies in Europe, though now a constitutional one. For centuries, the Princely House of Liechtenstein governed from afar in Vienna, acquiring the territory solely to gain a seat in the Imperial Diet. Surviving the dissolution of the Holy Roman Empire and the German Confederation, Liechtenstein navigated the 20th century by shifting its orbit from a crumbling Austria-Hungary to a stable Switzerland. Today, it stands as a wealthy microstate, having transformed from an agrarian backwater into a global financial hub while fiercely protecting its sovereignty and unique alpine identity.",
+		"source": {
+			"label": "Liechtenstein Princely Collections & Government",
+			"url": "https://www.liechtenstein.li/en/history-culture",
+			"urls": [
+				"https://www.liechtenstein.li/en/history-culture",
+				"https://history.state.gov/countries/liechtenstein",
+				"https://www.britannica.com/place/Liechtenstein"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Principality Created",
+				"value": "January 23, 1719"
+			},
+			{
+				"label": "Independence (HRE Dissolution)",
+				"value": "1806"
+			},
+			{
+				"label": "Capital",
+				"value": "Vaduz"
+			},
+			{
+				"label": "Monarch",
+				"value": "Prince of Liechtenstein (Hans-Adam II)"
+			},
+			{
+				"label": "Customs Union",
+				"value": "With Switzerland (since 1923)"
+			},
+			{
+				"label": "Women's Suffrage",
+				"value": "1984 (Last in Europe)"
+			}
+		],
+		"medieval": {
+			"period": "c. 500 CE - 1699 CE",
+			"description": "The territory of modern Liechtenstein was historically part of the Roman province of Raetia before being settled by the Alamanni people. Throughout the Middle Ages, the region was fragmented into various feudal domains. The key political entities were the Lordship of Schellenberg and the County of Vaduz, which changed hands frequently among noble families like the Counts of Werdenberg, the Barons of Brandis, and the Counts of Hohenems. The region was a peripheral part of the Holy Roman Empire, subject to the complex web of feudal allegiances. The Thirty Years' War brought devastation and plague, but also cemented the distinct legal status of these small counties. By the late 17th century, the Counts of Hohenems fell into debt, prompting the sale of the territories—a pivotal moment that attracted the wealthy Austrian House of Liechtenstein, who sought a territory with 'imperial immediacy' to elevate their rank within the Empire.",
+			"keyEvents": [
+				{
+					"year": "1342",
+					"title": "County of Vaduz Formed",
+					"description": "The County of Vaduz is established as a separate territory after the division of the County of Werdenberg-Sargans."
+				},
+				{
+					"year": "1396",
+					"title": "Imperial Immediacy",
+					"description": "The County of Vaduz is granted imperial immediacy, meaning it answered directly to the Holy Roman Emperor rather than a local duke."
+				},
+				{
+					"year": "1699",
+					"title": "Purchase of Schellenberg",
+					"description": "Prince Johann Adam Andreas of Liechtenstein purchases the Lordship of Schellenberg from the indebted Counts of Hohenems."
+				}
+			],
+			"notableFigures": ["Counts of Werdenberg", "Counts of Hohenems", "Prince Johann Adam Andreas"]
+		},
+		"imperial": {
+			"period": "1712 - 1918",
+			"description": "The defining era of Liechtenstein began with the purchase of the County of Vaduz in 1712, completing the territorial acquisition. In 1719, Holy Roman Emperor Charles VI united Schellenberg and Vaduz, elevating them to the Imperial Principality of Liechtenstein. This allowed the Liechtenstein family to sit in the Council of Princes in Vienna, though they did not visit their new realm for over a century. Napoleon's dissolution of the Holy Roman Empire in 1806 inadvertently granted Liechtenstein full sovereignty as a member of the Confederation of the Rhine. Following Napoleon's defeat, it joined the German Confederation. Economically, it remained tied to the Austro-Hungarian Empire. A curious footnote of this era is the Austro-Prussian War of 1866; Liechtenstein fielded an army of 80 men who saw no combat and, according to legend, returned with 81 men, having made a friend (an Austrian liaison officer). The army was disbanded shortly after, cementing the nation's permanent neutrality.",
+			"keyEvents": [
+				{
+					"year": "1712",
+					"title": "Purchase of Vaduz",
+					"description": "The House of Liechtenstein acquires the County of Vaduz, securing the second half of the future principality."
+				},
+				{
+					"year": "1719",
+					"title": "Principality Established",
+					"description": "Emperor Charles VI unifies Vaduz and Schellenberg into the Imperial Principality of Liechtenstein."
+				},
+				{
+					"year": "1806",
+					"title": "Sovereignty",
+					"description": "Liechtenstein joins the Confederation of the Rhine, effectively becoming a sovereign state upon the dissolution of the Holy Roman Empire."
+				},
+				{
+					"year": "1862",
+					"title": "First Constitution",
+					"description": "Prince Johann II grants a constitution establishing a parliament (Landtag), modernizing the political structure."
+				},
+				{
+					"year": "1866",
+					"title": "Last Military Campaign",
+					"description": "Liechtenstein's army guards the Tyrolean border during the Austro-Prussian War; the military is disbanded permanently in 1868."
+				}
+			],
+			"notableFigures": ["Emperor Charles VI", "Prince Johann Adam Andreas", "Prince Johann II (The Good)"]
+		},
+		"modern": {
+			"period": "1918 - Present",
+			"description": "The collapse of the Austro-Hungarian Empire following World War I forced Liechtenstein to fundamentally realign its foreign policy. The country entered a customs and monetary union with Switzerland in 1923, integrating into the Swiss economic sphere while maintaining political independence. This neutrality helped it survive World War II intact, though the Princely family had to sell art treasures to remain solvent. The post-war era saw an economic miracle (Wirtschaftswunder), transforming the nation from a poor agrarian society into a highly industrialized and financial powerhouse with one of the world's highest GDPs per capita. The reign of Prince Franz Josef II (1938–1989) was crucial in solidifying national identity. In 2003, a constitutional referendum significantly expanded the powers of the Prince, a unique counter-trend to other European monarchies. Liechtenstein today balances its role in the European Economic Area (EEA) with its deep Swiss ties.",
+			"keyEvents": [
+				{
+					"year": "1923",
+					"title": "Customs Treaty with Switzerland",
+					"description": "Liechtenstein enters a customs union with Switzerland and adopts the Swiss Franc, securing economic stability."
+				},
+				{
+					"year": "1938",
+					"title": "Franz Josef II Moves to Vaduz",
+					"description": "Prince Franz Josef II becomes the first reigning prince to reside permanently within the principality."
+				},
+				{
+					"year": "1984",
+					"title": "Women's Suffrage",
+					"description": "After several failed referendums, male voters grant women the right to vote in national elections."
+				},
+				{
+					"year": "1990",
+					"title": "UN Membership",
+					"description": "Liechtenstein becomes a full member of the United Nations."
+				},
+				{
+					"year": "2003",
+					"title": "Constitutional Reform",
+					"description": "Voters approve a new constitution giving the Prince wide-ranging powers, including the right to veto legislation and dissolve parliament."
+				}
+			],
+			"notableFigures": ["Prince Franz Josef II", "Prince Hans-Adam II", "Mario Frick"]
+		},
+		"timeline": [
+			{
+				"year": "1719",
+				"era": "Imperial",
+				"title": "Creation of Principality",
+				"description": "Holy Roman Emperor Charles VI elevates the united territories of Vaduz and Schellenberg to a Principality."
+			},
+			{
+				"year": "1806",
+				"era": "Imperial",
+				"title": "Sovereignty Achieved",
+				"description": "Napoleon dissolves the HRE; Liechtenstein becomes a sovereign state in the Confederation of the Rhine."
+			},
+			{
+				"year": "1868",
+				"era": "Imperial",
+				"title": "Army Disbanded",
+				"description": "Following the Austro-Prussian War, Liechtenstein dissolves its military and declares permanent neutrality."
+			},
+			{
+				"year": "1923",
+				"era": "Modern",
+				"title": "Swiss Customs Union",
+				"description": "Strategic economic pivot from Austria to Switzerland, adopting the Swiss Franc."
+			},
+			{
+				"year": "1984",
+				"era": "Modern",
+				"title": "Universal Suffrage",
+				"description": "Women are granted the right to vote in national elections."
+			}
+		]
+	},
+	{
+		"name": "Malta",
+		"overview": "Malta's history is defined by its strategic position in the center of the Mediterranean, making it one of the most conquered and contested archipelagos in history. From the enigmatic temple builders of prehistory to the Phoenicians, Romans, and Arabs, Malta has been a crossroads of civilizations. It gained legendary status under the Knights of St. John, who turned the island into a fortress of Christendom that withstood the Ottoman Empire. Later, as a vital British naval base, Malta became the 'Nurse of the Mediterranean' and an unsinkable aircraft carrier during World War II, earning the George Cross for collective bravery. Since independence in 1964, Malta has emerged as a sovereign Republic and EU member, boasting a unique Semitic language written in Latin script and a heritage that layers millennia of influence.",
+		"source": {
+			"label": "Heritage Malta",
+			"url": "https://heritagemalta.mt/",
+			"urls": [
+				"https://heritagemalta.mt/",
+				"https://www.britannica.com/place/Malta",
+				"https://www.visitmalta.com/en/history"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "September 21, 1964"
+			},
+			{
+				"label": "Republic Declared",
+				"value": "December 13, 1974"
+			},
+			{
+				"label": "Capital",
+				"value": "Valletta (founded 1566)"
+			},
+			{
+				"label": "Language",
+				"value": "Maltese (Semitic origin)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "3 (including Megalithic Temples)"
+			},
+			{
+				"label": "National Award",
+				"value": "George Cross (1942)"
+			}
+		],
+		"ancient": {
+			"period": "c. 5900 BCE - 870 CE",
+			"description": "Malta's ancient history is dominated by the 'Temple Period' (3600–2500 BCE), during which an isolated civilization constructed the Megalithic Temples, some of the oldest free-standing stone structures on Earth, pre-dating the Pyramids of Giza. These complex lobed structures suggest a sophisticated matriarchal or fertility-cult society that mysteriously vanished. Following this, the islands were colonized by the Phoenicians, who used Malta (Maleth) as a trading post, and later the Carthaginians. During the Second Punic War (218 BCE), Malta came under Roman rule. A defining moment occurred in 60 CE, when St. Paul the Apostle was shipwrecked on the island (Acts of the Apostles 27-28), traditionally marking the beginning of Christianity in Malta. Under Rome and later Byzantium, the islands produced olive oil and textiles but remained a vulnerable frontier outpost.",
+			"keyEvents": [
+				{
+					"year": "c. 3600 BCE",
+					"title": "Gġantija Temples Built",
+					"description": "Construction begins on the Gġantija temples in Gozo, marking the start of the megalithic Temple Period."
+				},
+				{
+					"year": "218 BCE",
+					"title": "Roman Annexation",
+					"description": "Malta is incorporated into the Roman Republic at the start of the Second Punic War."
+				},
+				{
+					"year": "60 CE",
+					"title": "Shipwreck of St. Paul",
+					"description": "St. Paul is shipwrecked on Malta, an event central to Maltese religious identity and Christian heritage."
+				}
+			],
+			"notableFigures": ["St. Paul the Apostle", "Publius (First Bishop of Malta)"]
+		},
+		"feudal": {
+			"period": "870 CE - 1798",
+			"description": "This era encompasses the profound Arab influence and the glorious rule of the Knights. In 870 CE, the Aghlabids conquered Malta, leaving a lasting legacy on the language (Maltese is of Siculo-Arabic origin) and agriculture (introduction of cotton and citrus). The Normans, under Roger I, seized the islands in 1091, re-Christianizing the population while tolerating Islamic culture for a time. Malta passed through various feudal lords until 1530, when Holy Roman Emperor Charles V granted the islands to the Knights Hospitaller (Order of St. John) in exchange for a yearly tribute of one Maltese falcon. The Knights transformed Malta into a fortress. The Great Siege of 1565, where a small force of Knights and Maltese held off a massive Ottoman armada, is the island's most celebrated military victory. Following the siege, Grand Master La Valette founded the new capital, Valletta. The Order's rule brought baroque art, architecture, and medical advancements but ended abruptly with Napoleon's arrival.",
+			"keyEvents": [
+				{
+					"year": "870",
+					"title": "Arab Conquest",
+					"description": "Aghlabids from Tunisia conquer Malta, introducing the Arabic roots of the Maltese language."
+				},
+				{
+					"year": "1091",
+					"title": "Norman Conquest",
+					"description": "Roger I of Sicily takes Malta, bringing it back into the European Christian sphere."
+				},
+				{
+					"year": "1530",
+					"title": "Arrival of the Knights",
+					"description": "The Knights of St. John arrive in Malta, granted by Charles V after their expulsion from Rhodes."
+				},
+				{
+					"year": "1565",
+					"title": "The Great Siege",
+					"description": "The Knights and Maltese successfully defend the island against a massive Ottoman invasion force."
+				},
+				{
+					"year": "1566",
+					"title": "Founding of Valletta",
+					"description": "Jean Parisot de Valette lays the foundation stone for the new fortified capital city."
+				}
+			],
+			"notableFigures": ["Count Roger I", "Grand Master Jean Parisot de Valette", "Dragut Reis (Ottoman Commander)"]
+		},
+		"colonial": {
+			"period": "1798 - 1964",
+			"description": "Napoleon Bonaparte ended the Knights' rule in 1798 while en route to Egypt, but the French occupation was short-lived. Angered by the looting of churches, the Maltese rebelled and requested British aid. The British blockade forced a French surrender in 1800, and Malta became a British Protectorate, later formalized as a Crown Colony by the Treaty of Paris (1814). Malta became the linchpin of British naval power in the Mediterranean, vital for the route to India via the Suez Canal. The colonial period saw the anglicization of the administration and education. During World War II, Malta was subjected to some of the heaviest bombing in history by Italian and German air forces due to its proximity to Axis supply lines to North Africa. The island's resilience was recognized in 1942 when King George VI awarded the entire population the George Cross. Post-war political life was dominated by the question of integration with Britain versus independence.",
+			"keyEvents": [
+				{
+					"year": "1798",
+					"title": "French Occupation",
+					"description": "Napoleon captures Malta, expelling the Knights; a Maltese uprising begins shortly after."
+				},
+				{
+					"year": "1800",
+					"title": "British Protectorate",
+					"description": "French forces surrender to the British; Malta becomes a British protectorate."
+				},
+				{
+					"year": "1814",
+					"title": "Treaty of Paris",
+					"description": "Malta is formally recognized as a British Crown Colony."
+				},
+				{
+					"year": "1919",
+					"title": "Sette Giugno Riots",
+					"description": " riots against the price of bread and colonial rule lead to the granting of a Self-Government Constitution in 1921."
+				},
+				{
+					"year": "1942",
+					"title": "Award of the George Cross",
+					"description": "King George VI awards the George Cross to the fortress island of Malta for heroism during the Siege of Malta."
+				}
+			],
+			"notableFigures": ["Napoleon Bonaparte", "Sir Alexander Ball", "Manwel Dimech", "Dom Mintoff"]
+		},
+		"independence": {
+			"period": "1964 - Present",
+			"description": "Malta gained independence from Britain on September 21, 1964, initially retaining the British monarch as Head of State. The 1970s saw a shift toward neutrality and non-alignment under Prime Minister Dom Mintoff, culminating in Malta becoming a Republic in 1974. The last British military forces left on 'Freedom Day' (March 31) in 1979, ending centuries of foreign military presence. Modern Malta has transformed into a diversified economy based on manufacturing, tourism, and financial services. A crucial milestone was accession to the European Union in 2004, followed by the adoption of the Euro in 2008. The country today navigates challenges related to migration in the Mediterranean while preserving its dense historical heritage.",
+			"keyEvents": [
+				{
+					"year": "1964",
+					"title": "Independence",
+					"description": "Malta becomes a sovereign independent state within the Commonwealth."
+				},
+				{
+					"year": "1974",
+					"title": "Republic of Malta",
+					"description": "Constitutional changes replace the British Monarch with a Maltese President as Head of State."
+				},
+				{
+					"year": "1979",
+					"title": "Freedom Day",
+					"description": "Closure of the British military base, marking the end of permanent foreign military presence."
+				},
+				{
+					"year": "2004",
+					"title": "EU Accession",
+					"description": "Malta joins the European Union as its smallest member state."
+				}
+			],
+			"notableFigures": ["George Borg Olivier", "Dom Mintoff", "Eddie Fenech Adami"]
+		},
+		"timeline": [
+			{
+				"year": "c. 3600 BCE",
+				"era": "Ancient",
+				"title": "Temple Era Begins",
+				"description": "Start of the construction of the Megalithic Temples."
+			},
+			{
+				"year": "60 CE",
+				"era": "Ancient",
+				"title": "St. Paul's Shipwreck",
+				"description": "Christianity is brought to the islands by the shipwrecked Apostle."
+			},
+			{
+				"year": "1530",
+				"era": "Feudal",
+				"title": "Order of St. John",
+				"description": "The Knights Hospitaller arrive to rule the islands."
+			},
+			{
+				"year": "1565",
+				"era": "Feudal",
+				"title": "Great Siege",
+				"description": "Defeat of the Ottoman Empire secures Malta's status as a Christian fortress."
+			},
+			{
+				"year": "1800",
+				"era": "Colonial",
+				"title": "British Rule Begins",
+				"description": "Malta becomes a British Protectorate after the expulsion of the French."
+			},
+			{
+				"year": "1964",
+				"era": "Independence",
+				"title": "Sovereignty",
+				"description": "Malta gains independence from the United Kingdom."
+			},
+			{
+				"year": "2004",
+				"era": "Modern",
+				"title": "EU Membership",
+				"description": "Malta formally joins the European Union."
+			}
+		]
+	},
+	{
+		"name": "Monaco",
+		"overview": "Monaco's history is the story of the Grimaldi dynasty, the oldest ruling house in Europe, clinging to a rocky promontory on the Mediterranean coast. From a Greek colony to a Genoese fortress seized by guile in 1297, Monaco evolved from a turbulent feudal stronghold into a glamorous sovereign principality. For centuries, it survived as a protectorate of larger powers like Spain, France, and Sardinia. The loss of 95% of its territory in 1861 paradoxically secured its full sovereignty and spurred the creation of the Monte Carlo casino, transforming the economy from lemon exports to luxury tourism. Under Prince Rainier III and Princess Grace, Monaco solidified its status as a symbol of elegance and wealth. Today, it is the world's second-smallest country, renowned for its tax status, Grand Prix, and high population density.",
+		"source": {
+			"label": "Palais Princier de Monaco",
+			"url": "https://www.palais.mc/en/history-1-1.html",
+			"urls": [
+				"https://www.palais.mc/en/history-1-1.html",
+				"https://www.britannica.com/place/Monaco",
+				"https://history.state.gov/countries/monaco"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Grimaldi Rule Began",
+				"value": "January 8, 1297"
+			},
+			{
+				"label": "Treaty of Sovereignty",
+				"value": "1861 (Franco-Monegasque Treaty)"
+			},
+			{
+				"label": "Constitution",
+				"value": "1911 (revised 1962)"
+			},
+			{
+				"label": "Capital",
+				"value": "Monaco-Ville (The Rock)"
+			},
+			{
+				"label": "UN Membership",
+				"value": "1993"
+			},
+			{
+				"label": "Area",
+				"value": "2.02 km²"
+			}
+		],
+		"medieval": {
+			"period": "c. 600 BCE - 1500 CE",
+			"description": "Monaco's name derives from the Phocaean Greek colony 'Monoikos' founded in the 6th century BCE. The area's strategic harbor served Romans and later suffered Saracen raids. The pivotal moment in Monegasque history occurred in 1215 when the Ghibellines of Genoa built a fortress on 'The Rock'. On January 8, 1297, François Grimaldi, known as 'Malizia' (The Cunning), captured the fortress disguised as a Franciscan monk, leading a small troop inside. This event marks the beginning of the Grimaldi family's association with Monaco, though their control was contested for years. By the 15th century, the Grimaldis had secured their lordship, balancing precarious alliances between larger rivals like Genoa, Provence, and Milan.",
+			"keyEvents": [
+				{
+					"year": "1215",
+					"title": "Fortress Built",
+					"description": "Genoese colonists construct a fortress on the Rock of Monaco, the foundation of the Prince's Palace."
+				},
+				{
+					"year": "1297",
+					"title": "Grimaldi Capture",
+					"description": "François Grimaldi ('Malizia') captures the fortress disguised as a monk; the coat of arms still bears two monks with swords."
+				},
+				{
+					"year": "1419",
+					"title": "Grimaldi Purchase",
+					"description": "The Grimaldi family formally purchases Monaco from the Crown of Aragon, solidifying their legal claim."
+				}
+			],
+			"notableFigures": ["François Grimaldi (Malizia)", "Rainier I", "Lambert Grimaldi"]
+		},
+		"feudal": {
+			"period": "1500 - 1861",
+			"description": "Monaco spent the early modern era under the protection of major European powers to ensure its survival. In 1524, it became a protectorate of Spain under Charles V. In 1612, Lord Honoré II was the first to adopt the title 'Prince of Monaco', asserting sovereignty. The alliance shifted to France in 1641 via the Treaty of Péronne. The French Revolution was a dark period; the Principality was annexed by France in 1793, the palace looted, and members of the family imprisoned. Independence was restored in 1814, but the Congress of Vienna (1815) placed Monaco under the protection of the Kingdom of Sardinia. The population of the towns of Menton and Roquebrune, then part of Monaco, rebelled against heavy taxation in 1848, eventually leading to their secession.",
+			"keyEvents": [
+				{
+					"year": "1612",
+					"title": "Title of Prince",
+					"description": "Honoré II adopts the title of Prince, signaling Monaco's status as a sovereign principality."
+				},
+				{
+					"year": "1641",
+					"title": "Treaty of Péronne",
+					"description": "Monaco aligns with France, expelling the Spanish garrison and gaining French protection."
+				},
+				{
+					"year": "1793",
+					"title": "French Annexation",
+					"description": "Revolutionary France annexes Monaco; the territory is renamed 'Fort d'Hercule' until 1814."
+				},
+				{
+					"year": "1848",
+					"title": "Menton Secession",
+					"description": "The towns of Menton and Roquebrune revolt and declare independence, later joining France."
+				}
+			],
+			"notableFigures": ["Prince Honoré II", "Louise-Hippolyte (Only reigning Princess)", "Prince Charles III"]
+		},
+		"modern": {
+			"period": "1861 - Present",
+			"description": "Modern Monaco was born from the Franco-Monegasque Treaty of 1861. Prince Charles III ceded rights to Menton and Roquebrune to France in exchange for 4 million francs and recognition of full sovereignty. With the territory reduced by 95%, Charles III bet the nation's future on the Société des Bains de Mer and the new casino district, named Monte Carlo in his honor. The arrival of the railway in 1868 ensured its success. In 1911, Prince Albert I responded to unrest (the 'Monegasque Revolution') by granting the first constitution. The mid-20th century was defined by Prince Rainier III, the 'Builder Prince', who expanded the territory through land reclamation and married Hollywood star Grace Kelly in 1956, bringing global glamour to the principality. In recent decades, Monaco has integrated into the international community, joining the UN in 1993 and focusing on environmentalism and banking.",
+			"keyEvents": [
+				{
+					"year": "1861",
+					"title": "Franco-Monegasque Treaty",
+					"description": "Monaco cedes Menton and Roquebrune to France; France recognizes Monaco's full sovereignty."
+				},
+				{
+					"year": "1863",
+					"title": "Casino Founded",
+					"description": "Establishment of the Société des Bains de Mer and the Monte Carlo Casino."
+				},
+				{
+					"year": "1911",
+					"title": "Constitution Promulgated",
+					"description": "Prince Albert I establishes the first constitution, ending absolute rule."
+				},
+				{
+					"year": "1956",
+					"title": "Wedding of the Century",
+					"description": "Prince Rainier III marries Grace Kelly, cementing Monaco's image on the world stage."
+				},
+				{
+					"year": "1993",
+					"title": "UN Membership",
+					"description": "Monaco becomes a full member state of the United Nations."
+				}
+			],
+			"notableFigures": ["Prince Charles III", "Prince Albert I", "Prince Rainier III", "Princess Grace"]
+		},
+		"timeline": [
+			{
+				"year": "1297",
+				"era": "Medieval",
+				"title": "Grimaldi Seizure",
+				"description": "François Grimaldi captures the fortress of Monaco."
+			},
+			{
+				"year": "1612",
+				"era": "Feudal",
+				"title": "Principality Declared",
+				"description": "Honoré II takes the title of Prince."
+			},
+			{
+				"year": "1861",
+				"era": "Modern",
+				"title": "Sovereignty Treaty",
+				"description": "Treaty with France recognizes independence in exchange for territory."
+			},
+			{
+				"year": "1911",
+				"era": "Modern",
+				"title": "First Constitution",
+				"description": "Transition from absolute to constitutional monarchy."
+			},
+			{
+				"year": "1956",
+				"era": "Modern",
+				"title": "Rainier and Grace",
+				"description": "Marriage of Prince Rainier III and Grace Kelly."
+			},
+			{
+				"year": "1993",
+				"era": "Modern",
+				"title": "UN Accession",
+				"description": "Monaco joins the United Nations."
+			}
+		]
+	},
+	{
+		"name": "San Marino",
+		"overview": "San Marino is the oldest surviving sovereign state and constitutional republic in the world, an enclave surrounded by Italy. Founded in the early 4th century by a stonemason fleeing religious persecution, it has maintained its independence for over 1,700 years through a combination of diplomatic skill, difficult terrain, and fortunate alliances. Despite its tiny size, San Marino developed a unique democratic system based on the 'Arengo' of heads of families and later the Great and General Council, led by two Captains Regent. It survived the expansionist ambitions of the Borgias, the Napoleonic Wars, and the Unification of Italy, often serving as a sanctuary for refugees. Today, it remains a proud independent republic with a high standard of living, blending its medieval institutional heritage with a modern European economy.",
+		"source": {
+			"label": "San Marino Site - History",
+			"url": "https://www.sanmarinosite.com/en/history/",
+			"urls": [
+				"https://www.sanmarinosite.com/en/history/",
+				"https://www.britannica.com/place/San-Marino-republic-Europe",
+				"https://www.state.gov/u-s-relations-with-san-marino/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Founded", "value": "September 3, 301 AD" },
+			{ "label": "Constitution", "value": "Statutes of 1600 (Oldest active)" },
+			{ "label": "Government", "value": "Parliamentary Republic (Two Captains Regent)" },
+			{ "label": "Capital", "value": "City of San Marino" },
+			{ "label": "Patron Saint", "value": "Saint Marinus" },
+			{ "label": "UNESCO Status", "value": "Historic Centre and Mount Titano" }
+		],
+		"ancient": {
+			"period": "301 AD - c. 1000 AD",
+			"description": "The history of San Marino begins with a specific legendary foundation date: September 3, 301 AD. Marinus, a Christian stonemason from the island of Rab (in modern-day Croatia), fled the persecutions of the Roman Emperor Diocletian. He sought refuge on Mount Titano, where he established a small community of Christians and built a church. This community operated largely outside the direct control of the unraveling Roman Empire. Before his death, Marinus is said to have uttered the founding motto of the republic: 'Relinquo vos liberos ab utroque homine' (I leave you free from both men), referring to the Pope and the Emperor. This phrase became the legal and spiritual basis for the Sammarinese claim to independence, asserting that their sovereignty came from their founder, not from any temporal or spiritual overlord.",
+			"keyEvents": [
+				{
+					"year": "301 AD",
+					"title": "Foundation",
+					"description": "Saint Marinus establishes a Christian sanctuary on Mount Titano, traditionally marking the birth of the republic"
+				},
+				{
+					"year": "c. 313 AD",
+					"title": "Edict of Milan",
+					"description": "Christianity is legalized in the Roman Empire, allowing the community on Mount Titano to practice openly while maintaining autonomy"
+				},
+				{
+					"year": "885 AD",
+					"title": "Placito Feretrano",
+					"description": "The 'Placitum Feretranum', a legal document, provides the earliest documentary evidence of the existence of the San Marino community"
+				}
+			],
+			"notableFigures": [
+				"Saint Marinus (Founder and Patron Saint)",
+				"Bishop Gaudentius of Rimini (Ordained Marinus as a deacon)"
+			]
+		},
+		"medieval": {
+			"period": "c. 1000 - 1600",
+			"description": "During the Middle Ages, San Marino transformed from a religious community into a political commune. As city-states rose across Italy, San Marino formalized its self-governance. The 'Arengo,' an assembly of heads of families, was established to manage communal affairs. By the 13th century, the growing complexity of governance led to the appointment of the first Captains Regent (originally Consuls), establishing a dual-head-of-state system that continues to this day to prevent the centralization of power. The republic faced severe threats from powerful neighbors, particularly the Malatesta family of Rimini and later Cesare Borgia. Through strategic alliances—often siding with the enemies of their enemies, such as the Duke of Urbino and the Pope—San Marino managed to expand its territory slightly and secure recognition. The period culminated in the compilation of the Statutes of 1600, which codified the republic's laws and institutions and remain the core of its constitution.",
+			"keyEvents": [
+				{
+					"year": "1243",
+					"title": "First Captains Regent",
+					"description": "Appointment of the first two Consuls (later Captains Regent), creating a dual executive system to check power"
+				},
+				{
+					"year": "1463",
+					"title": "Territorial Expansion",
+					"description": "San Marino joins alliance against the Malatestas; Pope Pius II grants the towns of Fiorentino, Montegiardino, and Serravalle, defining current borders"
+				},
+				{
+					"year": "1503",
+					"title": "Borgia Occupation",
+					"description": "Cesare Borgia briefly occupies the republic, but his rule collapses after the death of his father, Pope Alexander VI"
+				},
+				{
+					"year": "1600",
+					"title": "Statutes of 1600",
+					"description": "The 'Leges Statutae Republicae Sancti Marini' are codified, serving as the country's constitution to this day"
+				}
+			],
+			"notableFigures": [
+				"Antonio Orafo (First recorded Consul)",
+				"Duke of Urbino (Historical ally)",
+				"Cesare Borgia (Invader)"
+			]
+		},
+		"modern": {
+			"period": "1600 - Present",
+			"description": "San Marino's modern history is defined by the defense of its liberty amidst the consolidation of European states. In 1739, Cardinal Alberoni occupied the republic, but civil disobedience and appeals to the Pope led to the restoration of independence. During the Napoleonic Wars, San Marino's diplomatic skill shone; Regent Antonio Onofri gained Napoleon's respect, who famously offered to extend the republic's territory—an offer San Marino wisely refused to avoid future retaliation. During the Italian Risorgimento, San Marino provided asylum to pro-unification figures, including Giuseppe Garibaldi. In gratitude, the new Kingdom of Italy respected San Marino's independence. In the 20th century, the republic remained neutral during both World Wars, though it was briefly bombed by the Allies in 1944. Post-war, it became the first Western European nation to democratically elect a communist government (in coalition) while maintaining a market economy. Today, it is a prosperous microstate integrated into the European economy but not a member of the EU.",
+			"keyEvents": [
+				{
+					"year": "1739",
+					"title": "Alberoni Occupation",
+					"description": "Cardinal Giulio Alberoni invades and occupies San Marino; Pope Clement XII restores independence months later"
+				},
+				{
+					"year": "1797",
+					"title": "Napoleonic Recognition",
+					"description": "Napoleon Bonaparte respects San Marino's independence, calling it a 'model of a republic'"
+				},
+				{
+					"year": "1849",
+					"title": "Garibaldi's Retreat",
+					"description": "Giuseppe Garibaldi takes refuge in San Marino while fleeing Austrian armies; San Marino protects him in exchange for guarantee of independence"
+				},
+				{
+					"year": "1862",
+					"title": "Treaty with Italy",
+					"description": "First convention of friendship with the newly unified Kingdom of Italy confirms San Marino's sovereignty"
+				},
+				{
+					"year": "1861",
+					"title": "Lincoln Citizenship",
+					"description": "San Marino grants honorary citizenship to Abraham Lincoln, who writes back praising the republic"
+				},
+				{
+					"year": "1944",
+					"title": "Battle of San Marino",
+					"description": "Despite neutrality, German and Allied forces clash on Sammarinese soil; the republic shelters 100,000 refugees"
+				},
+				{ "year": "1992", "title": "UN Membership", "description": "San Marino formally joins the United Nations" }
+			],
+			"notableFigures": [
+				"Antonio Onofri (Diplomat who negotiated with Napoleon)",
+				"Giuseppe Garibaldi (Italian revolutionary sheltered by San Marino)",
+				"Abraham Lincoln (Honorary Citizen)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "301 AD",
+				"era": "Ancient",
+				"title": "Foundation",
+				"description": "Saint Marinus founds the community on Mount Titano"
+			},
+			{
+				"year": "1243",
+				"era": "Medieval",
+				"title": "First Regents",
+				"description": "Institution of the Captains Regent established"
+			},
+			{
+				"year": "1463",
+				"era": "Medieval",
+				"title": "Final Borders",
+				"description": "Territory expands to current boundaries after war with Malatesta"
+			},
+			{ "year": "1600", "era": "Medieval", "title": "Constitution", "description": "Adoption of the Statutes of 1600" },
+			{
+				"year": "1739",
+				"era": "Modern",
+				"title": "Alberoni Crisis",
+				"description": "Brief occupation by Cardinal Alberoni ended by Papal intervention"
+			},
+			{
+				"year": "1862",
+				"era": "Modern",
+				"title": "Italian Friendship",
+				"description": "Treaty with Italy secures independence during unification"
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "UN Entry",
+				"description": "San Marino becomes a member of the United Nations"
+			}
+		]
+	},
+	{
+		"name": "Vatican City",
+		"overview": "Vatican City is the world's smallest independent state, yet it holds immense global influence as the spiritual and administrative center of the Roman Catholic Church. While the state itself was only established in 1929 by the Lateran Treaty, its history is inextricably linked to the ancient history of the Papacy and the location of St. Peter's martyrdom in Rome. For over a thousand years, Popes ruled a vast territory across central Italy known as the Papal States. The loss of these territories during Italian Unification led to the 'Roman Question,' resolved only by the creation of the Vatican City State. It stands today as an absolute elective monarchy, housing immense artistic and cultural treasures, and serving as the sovereign territory of the Holy See.",
+		"source": {
+			"label": "Vatican City State - History",
+			"url": "https://www.vaticanstate.va/it/stato-governo/storia/storia.html",
+			"urls": [
+				"https://www.vaticanstate.va/it/stato-governo/storia/storia.html",
+				"https://www.britannica.com/place/Vatican-City",
+				"https://www.history.com/topics/religion/vatican-city"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Established", "value": "February 11, 1929 (Lateran Treaty)" },
+			{ "label": "Government", "value": "Ecclesiastical Elective Absolute Monarchy" },
+			{ "label": "Head of State", "value": "The Pope" },
+			{ "label": "Area", "value": "0.49 km² (121 acres)" },
+			{ "label": "Population", "value": "~800 (smallest in the world)" },
+			{ "label": "Currency", "value": "Euro (issues own coins)" }
+		],
+		"ancient": {
+			"period": "c. 64 AD - 756 AD",
+			"description": "The history of the Vatican begins long before the state existed, rooted in the topography of ancient Rome. The 'Ager Vaticanus' was a marshy area on the west bank of the Tiber River. Emperor Caligula began building a circus (chariot racing track) there, which was completed by Nero. It was in this circus, during the Christian persecutions following the Great Fire of Rome in 64 AD, that Saint Peter is believed to have been crucified. He was buried in a nearby necropolis. This grave became a site of pilgrimage, and Emperor Constantine the Great built the first basilica over the site in the 4th century. For centuries, the area was a religious pilgrimage site rather than a political capital, while the Popes resided at the Lateran Palace on the other side of Rome.",
+			"keyEvents": [
+				{
+					"year": "c. 40 AD",
+					"title": "Circus of Nero",
+					"description": "Construction of the circus where many early Christians were martyred"
+				},
+				{
+					"year": "c. 64-67 AD",
+					"title": "Martyrdom of St. Peter",
+					"description": "Apostle Peter is crucified and buried in the Vatican Necropolis"
+				},
+				{
+					"year": "326 AD",
+					"title": "Old St. Peter's Basilica",
+					"description": "Emperor Constantine orders construction of the first basilica over Peter's tomb"
+				},
+				{
+					"year": "452 AD",
+					"title": "Leo I and Attila",
+					"description": "Pope Leo I meets Attila the Hun, dissuading him from sacking Rome, elevating Papal prestige"
+				}
+			],
+			"notableFigures": [
+				"Saint Peter (First Pope)",
+				"Emperor Nero (Persecutor)",
+				"Emperor Constantine (First Christian Emperor)"
+			]
+		},
+		"medieval": {
+			"period": "756 - 1870",
+			"description": "The temporal power of the Popes began in earnest with the 'Donation of Pepin' in 756, which granted the Papacy sovereignty over lands in central Italy, forming the Papal States. The Vatican area itself, however, remained just one part of Rome. In the 9th century, Pope Leo IV built the 'Leonine Wall' around the Vatican to protect it from Saracen raiders, creating a fortress-like enclave. During the Great Schism and the Avignon Papacy, the Vatican fell into disrepair. It was only after the Popes returned to Rome in the 15th century that the Vatican became the primary Papal residence. The Renaissance saw the construction of the current St. Peter's Basilica (starting 1506) and the Apostolic Palace, with patronage of artists like Michelangelo and Raphael. This era of temporal power lasted until the 19th century.",
+			"keyEvents": [
+				{
+					"year": "756",
+					"title": "Donation of Pepin",
+					"description": "Frankish King Pepin the Short grants land to the Pope, establishing the Papal States"
+				},
+				{
+					"year": "846",
+					"title": "Saracen Raid",
+					"description": "Saracen raiders sack the outskirts of Rome, including Old St. Peter's"
+				},
+				{
+					"year": "852",
+					"title": "Leonine Walls",
+					"description": "Construction of walls around the Vatican hill, enclosing the 'Leonine City'"
+				},
+				{
+					"year": "1377",
+					"title": "Return from Avignon",
+					"description": "Papacy returns to Rome; Vatican eventually supersedes Lateran as primary residence"
+				},
+				{
+					"year": "1506",
+					"title": "New St. Peter's",
+					"description": "Julius II lays cornerstone for the new basilica; Swiss Guard is founded"
+				}
+			],
+			"notableFigures": [
+				"Pepin the Short",
+				"Pope Julius II (The Warrior Pope)",
+				"Michelangelo (Artist of the Sistine Chapel)"
+			]
+		},
+		"modern": {
+			"period": "1870 - Present",
+			"description": "The modern history of the Vatican was born from the collapse of the Papal States. In 1870, Italian unification forces captured Rome, ending over a thousand years of Papal temporal rule. Pope Pius IX retreated behind the Vatican walls, refusing to recognize the Italian Kingdom and declaring himself a 'prisoner in the Vatican.' This standoff, known as the 'Roman Question,' lasted for nearly 60 years. It was resolved in 1929 by the Lateran Treaty between the Holy See and Benito Mussolini's Italian government. The treaty established Vatican City as a distinct sovereign state, compensated the Church for lost territories, and regulated relations with Italy. During WWII, the Vatican remained neutral, serving as a hub for information and quiet diplomacy, though its role remains a subject of historical debate. Post-war, the Second Vatican Council (1962-1965) modernized the Church. Today, the Vatican serves as a global voice on morality, peace, and climate change under Pope Francis.",
+			"keyEvents": [
+				{
+					"year": "1870",
+					"title": "Capture of Rome",
+					"description": "Italian forces breach Aurelian Walls; end of Papal States; Pope becomes 'Prisoner of the Vatican'"
+				},
+				{
+					"year": "1929",
+					"title": "Lateran Treaty",
+					"description": "Treaty signed with Italy establishes Vatican City as a sovereign state, ending the Roman Question"
+				},
+				{
+					"year": "1962-1965",
+					"title": "Vatican II",
+					"description": "Ecumenical council that modernized Church liturgy and relations with the world"
+				},
+				{
+					"year": "1978",
+					"title": "Year of Three Popes",
+					"description": "Death of Paul VI, brief reign of John Paul I, and election of John Paul II, first non-Italian pope in 455 years"
+				},
+				{
+					"year": "1981",
+					"title": "Assassination Attempt",
+					"description": "Pope John Paul II shot in St. Peter's Square"
+				},
+				{
+					"year": "2013",
+					"title": "Resignation of Benedict XVI",
+					"description": "First Papal resignation in nearly 600 years; election of Pope Francis"
+				}
+			],
+			"notableFigures": [
+				"Pope Pius IX (Last ruler of Papal States)",
+				"Pope Pius XI (Signatory of Lateran Treaty)",
+				"Pope John Paul II",
+				"Pope Francis"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 64 AD",
+				"era": "Ancient",
+				"title": "St. Peter's Death",
+				"description": "Martyrdom of Peter in the Circus of Nero"
+			},
+			{
+				"year": "326",
+				"era": "Ancient",
+				"title": "First Basilica",
+				"description": "Constantine builds Old St. Peter's"
+			},
+			{
+				"year": "756",
+				"era": "Medieval",
+				"title": "Papal States",
+				"description": "Creation of the Papal States via Donation of Pepin"
+			},
+			{
+				"year": "1506",
+				"era": "Medieval",
+				"title": "Swiss Guard",
+				"description": "Establishment of the Pontifical Swiss Guard"
+			},
+			{
+				"year": "1870",
+				"era": "Modern",
+				"title": "Fall of Rome",
+				"description": "Papal States annexed by Italy; beginning of 'Prisoner of the Vatican' period"
+			},
+			{
+				"year": "1929",
+				"era": "Modern",
+				"title": "Vatican City State",
+				"description": "Lateran Treaty creates the modern sovereign state"
+			},
+			{
+				"year": "2013",
+				"era": "Modern",
+				"title": "Papal Transition",
+				"description": "Resignation of Benedict XVI and election of Francis"
+			}
+		]
+	},
+	{
+		"name": "Bahrain",
+		"overview": "Bahrain, an archipelago in the Persian Gulf, boasts a history spanning over 5,000 years as a vital center of trade and commerce. Anciently known as Dilmun, it was a legendary land of immortality and a hub connecting Mesopotamia and the Indus Valley. Following the arrival of Islam in the 7th century, the islands experienced periods of prosperity and conflict under various Arab and Persian powers. The Portuguese controlled the islands in the 16th century to secure trade routes. Since 1783, Bahrain has been ruled by the Al Khalifa family. It became a British protectorate in the 19th century and regained full independence in 1971. Bahrain was the first Gulf state to discover oil in 1932, which spurred rapid modernization, though it has since diversified into banking and tourism while managing internal political tensions.",
+		"source": {
+			"label": "Bahrain Authority for Culture & Antiquities",
+			"url": "https://culture.gov.bh/en/about_culture/bahrain_history/",
+			"urls": [
+				"https://culture.gov.bh/en/about_culture/bahrain_history/",
+				"https://www.britannica.com/place/Bahrain",
+				"https://www.bbc.com/news/world-middle-east-14540571"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "August 15, 1971 (from UK)" },
+			{ "label": "Ancient Name", "value": "Dilmun / Tylos" },
+			{ "label": "Capital", "value": "Manama" },
+			{ "label": "Ruling Family", "value": "Al Khalifa (since 1783)" },
+			{ "label": "Economy", "value": "First Post-Oil Economy in Gulf" },
+			{ "label": "National Day", "value": "December 16" }
+		],
+		"ancient": {
+			"period": "c. 3000 BCE - 628 CE",
+			"description": "Bahrain was home to the Dilmun civilization, one of the most important trading centers of the ancient world. Described in Sumerian texts as a 'pure land' and a garden of paradise (possibly inspiring the Garden of Eden story), Dilmun controlled the Persian Gulf trade routes between Mesopotamia and the Indus Valley. The island contains the world's largest prehistoric cemetery, the Dilmun Burial Mounds. Following the conquest by Alexander the Great's admirals, the islands were known as Tylos and became a center for pearl trading and Hellenistic culture. By late antiquity, it was known as Awal and had a mixed population including Christians, Jews, and Zoroastrians under the influence of the Sassanid Empire.",
+			"keyEvents": [
+				{
+					"year": "c. 3000 BCE",
+					"title": "Rise of Dilmun",
+					"description": "Dilmun emerges as a major trade hub for copper and luxury goods"
+				},
+				{
+					"year": "c. 2000 BCE",
+					"title": "Golden Age",
+					"description": "Peak of Dilmun's power and construction of major settlements like Qal'at al-Bahrain"
+				},
+				{
+					"year": "c. 323 BCE",
+					"title": "Hellenistic Era",
+					"description": "Arrival of Greek explorers sent by Alexander; islands renamed Tylos and Arados"
+				},
+				{
+					"year": "c. 600 CE",
+					"title": "Pre-Islamic Era",
+					"description": "Region known as Awal; Nestorian Christianity is prominent"
+				}
+			],
+			"notableFigures": [
+				"Enzak (Principal deity of Dilmun)",
+				"Nearchus (Admiral of Alexander the Great who explored the Gulf)"
+			]
+		},
+		"medieval": {
+			"period": "628 - 1521",
+			"description": "Bahrain was one of the first regions to embrace Islam; in 628 CE, the Prophet Muhammad sent an envoy to the local ruler, Munzir ibn Sawa Al Tamimi, who converted peacefully. During the Islamic Golden Age, the islands prospered from pearling. In the late 9th century, Bahrain became the stronghold of the Qarmatians, a radical Ismaili sect that established a utopian republic. The Qarmatians became infamous for sacking Mecca and stealing the Black Stone in 930 CE, bringing it to Bahrain for 22 years. Later, the islands were ruled by various dynasties, including the Uyunids and the Usfurids, before falling under the influence of the Kingdom of Ormus, a wealthy trade power in the Gulf.",
+			"keyEvents": [
+				{
+					"year": "628",
+					"title": "Conversion to Islam",
+					"description": "Ruler Munzir ibn Sawa accepts Islam after receiving letter from Prophet Muhammad"
+				},
+				{
+					"year": "899",
+					"title": "Qarmatian State",
+					"description": "Millenarian Ismaili sect seizes Bahrain, establishing a radical republic"
+				},
+				{
+					"year": "930",
+					"title": "Theft of Black Stone",
+					"description": "Qarmatians sack Mecca and take the Black Stone to Bahrain, holding it until 952"
+				},
+				{
+					"year": "1076",
+					"title": "Uyunid Dynasty",
+					"description": "Defeat of Qarmatians and establishment of local Arab dynastic rule"
+				}
+			],
+			"notableFigures": ["Munzir ibn Sawa Al Tamimi", "Abu Tahir al-Jannabi (Qarmatian leader)"]
+		},
+		"colonial": {
+			"period": "1521 - 1971",
+			"description": "In 1521, the Portuguese invaded Bahrain to control the lucrative pearl trade, building the famous Bahrain Fort. They were expelled in 1602 by the Safavids of Persia. The modern era began in 1783 when the Al Khalifa family, originally from the Najd region (central Arabia) and based in Zubarah (Qatar), captured Bahrain from the Persians. To secure their rule against Omani and Persian threats, the Al Khalifa signed a series of treaties with the British Empire, starting in 1820. By 1861, Bahrain became a British protectorate, surrendering control of defense and foreign affairs in exchange for protection. The discovery of oil in 1932—the first on the Arab side of the Gulf—transformed the economy, moving it away from the collapsing pearl market and towards modernization.",
+			"keyEvents": [
+				{
+					"year": "1521",
+					"title": "Portuguese Conquest",
+					"description": "Portuguese seize the islands, building fortifications to control trade"
+				},
+				{
+					"year": "1602",
+					"title": "Persian Rule",
+					"description": "Safavid Empire expels Portuguese; Bahrain governed by Persian interests"
+				},
+				{
+					"year": "1783",
+					"title": "Al Khalifa Conquest",
+					"description": "Ahmed Al Fateh (The Conqueror) captures Bahrain, establishing the current ruling dynasty"
+				},
+				{
+					"year": "1861",
+					"title": "British Protectorate",
+					"description": "Treaty cements British protection and control over foreign relations"
+				},
+				{
+					"year": "1932",
+					"title": "Oil Discovery",
+					"description": "First oil well in the region strikes oil near Jebel Dukhan, transforming the economy"
+				}
+			],
+			"notableFigures": [
+				"António Correia (Portuguese conqueror)",
+				"Ahmed Al Fateh (First Al Khalifa ruler)",
+				"Major Frank Holmes (New Zealand prospector who found the oil)"
+			]
+		},
+		"modern": {
+			"period": "1971 - Present",
+			"description": "Bahrain declared independence on August 15, 1971, after the British withdrawal from 'East of Suez.' The Shah of Iran had claimed the islands, but a UN survey showed the population overwhelmingly favored independence. Bahrain rapidly developed into a banking and financial hub for the Gulf, diversifying from oil. In 2002, the Emirate became a Kingdom under a new constitutional framework. The country faced significant instability during the 2011 'Arab Spring,' with large-scale protests by the Shia majority demanding greater political rights, which were suppressed with the aid of the Gulf Cooperation Council (GCC) forces. Bahrain remains a key Western ally, hosting the US Navy's Fifth Fleet, while navigating complex regional dynamics and internal sectarian tensions.",
+			"keyEvents": [
+				{
+					"year": "1971",
+					"title": "Independence",
+					"description": "Bahrain becomes a sovereign state; joins UN and Arab League"
+				},
+				{
+					"year": "1981",
+					"title": "GCC Formation",
+					"description": "Bahrain becomes a founding member of the Gulf Cooperation Council"
+				},
+				{
+					"year": "1986",
+					"title": "Causeway Opens",
+					"description": "King Fahd Causeway connects Bahrain to Saudi Arabia, boosting commerce"
+				},
+				{
+					"year": "2002",
+					"title": "Kingdom Proclaimed",
+					"description": "Emir Hamad bin Isa Al Khalifa declares Bahrain a constitutional monarchy"
+				},
+				{
+					"year": "2011",
+					"title": "Pearl Roundabout Uprising",
+					"description": "Mass protests demanding reform; suppressed with intervention from Saudi Arabia and UAE"
+				},
+				{ "year": "2020", "title": "Abraham Accords", "description": "Bahrain normalizes relations with Israel" }
+			],
+			"notableFigures": [
+				"Isa bin Salman Al Khalifa (First Emir after independence)",
+				"Hamad bin Isa Al Khalifa (Current King)"
+			]
+		},
+		"timeline": [
+			{
+				"year": "c. 2000 BCE",
+				"era": "Ancient",
+				"title": "Dilmun Civilization",
+				"description": "Peak of ancient trade civilization"
+			},
+			{
+				"year": "628",
+				"era": "Medieval",
+				"title": "Islamic Conversion",
+				"description": "Islands embrace Islam peacefully"
+			},
+			{
+				"year": "1521",
+				"era": "Colonial",
+				"title": "Portuguese Rule",
+				"description": "Start of Portuguese occupation"
+			},
+			{
+				"year": "1783",
+				"era": "Colonial",
+				"title": "Al Khalifa Rule",
+				"description": "Current dynasty captures Bahrain from Persians"
+			},
+			{ "year": "1932", "era": "Colonial", "title": "Oil Age", "description": "First oil discovery in the Arab Gulf" },
+			{
+				"year": "1971",
+				"era": "Independence",
+				"title": "Sovereignty",
+				"description": "Independence from Britain declared"
+			},
+			{
+				"year": "2002",
+				"era": "Modern",
+				"title": "Constitutional Monarchy",
+				"description": "Transition to a Kingdom with a restored parliament"
+			},
+			{
+				"year": "2011",
+				"era": "Modern",
+				"title": "2011 Uprising",
+				"description": "Protests and subsequent crackdown during Arab Spring"
+			}
+		]
 	}
 ]

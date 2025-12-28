@@ -43,7 +43,7 @@
 
 - [ ] EUROPE
   - [x] Albania
-  - [ ] Andorra
+  - [x] Andorra
   - [x] Armenia
   - [x] Austria
   - [x] Azerbaijan
@@ -52,7 +52,7 @@
   - [x] Bosnia and Herzegovina
   - [x] Bulgaria
   - [x] Croatia
-  - [ ] Cyprus
+  - [x] Cyprus
   - [x] Czechia
   - [x] Denmark
   - [x] Estonia
@@ -62,18 +62,18 @@
   - [x] Germany
   - [x] Greece
   - [x] Hungary
-  - [ ] Iceland
+  - [x] Iceland
   - [x] Ireland
   - [x] Italy
   - [x] Kazakhstan
   - [x] Kosovo
   - [x] Latvia
-  - [ ] Liechtenstein
+  - [x] Liechtenstein
   - [x] Lithuania
   - [x] Luxembourg
-  - [ ] Malta
+  - [x] Malta
   - [x] Moldova
-  - [ ] Monaco
+  - [x] Monaco
   - [x] Montenegro
   - [x] Netherlands
   - [x] North Macedonia
@@ -82,7 +82,7 @@
   - [x] Portugal
   - [x] Romania
   - [x] Russia
-  - [ ] San Marino
+  - [x] San Marino
   - [x] Serbia
   - [x] Slovakia
   - [x] Slovenia
@@ -91,7 +91,7 @@
   - [x] Switzerland
   - [x] Ukraine
   - [x] United Kingdom
-  - [ ] Vatican City
+  - [x] Vatican City
   - [ ] Gibraltar
   - [ ] Isle of Man
   - [ ] Jersey
@@ -155,7 +155,7 @@
 
 - [ ] ASIA
   - [x] Afghanistan
-  - [ ] Bahrain
+  - [x] Bahrain
   - [ ] Bangladesh
   - [ ] Bhutan
   - [x] Brunei
