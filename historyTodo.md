@@ -156,19 +156,19 @@
 - [ ] ASIA
   - [x] Afghanistan
   - [x] Bahrain
-  - [ ] Bangladesh
-  - [ ] Bhutan
+  - [x] Bangladesh
+  - [x] Bhutan
   - [x] Brunei
   - [x] Cambodia
   - [x] China
   - [x] India
   - [x] Indonesia
-  - [ ] Iran
-  - [ ] Iraq
-  - [ ] Israel
+  - [x] Iran
+  - [x] Iraq
+  - [x] Israel
   - [x] Japan
   - [ ] Jordan
-  - [ ] Kazakhstan
+  - [x] Kazakhstan
   - [ ] Kuwait
   - [ ] Kyrgyzstan
   - [x] Laos
@@ -184,7 +184,7 @@
   - [ ] Palestine
   - [x] Philippines
   - [ ] Qatar
-  - [ ] Saudi Arabia
+  - [x] Saudi Arabia
   - [x] Singapore
   - [x] South Korea
   - [ ] Sri Lanka

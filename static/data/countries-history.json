@@ -26165,5 +26165,1344 @@
 				"description": "New laws pave the way for the offshore finance industry"
 			}
 		]
+	},
+	{
+		"name": "Bangladesh",
+		"overview": "Bangladesh's history is a rich tapestry woven from the vibrancy of the Bengal Delta, ancient trading civilizations, and a resilient struggle for linguistic and political identity. From the ancient Gangaridai kingdom to the prosperous Bengal Sultanate and the wealthy Mughal province of Bengal, the region has long been a crossroads of commerce and culture. It endured centuries of British colonial extraction and the trauma of the 1947 Partition, which birthed it as East Pakistan. The nation's modern identity was forged in the fire of the Language Movement and the brutal 1971 Liberation War, led by Sheikh Mujibur Rahman. Today, Bangladesh stands as a dynamic nation, overcoming natural calamities and political turbulence to become a rising economic power in South Asia.",
+		"source": {
+			"label": "Wikipedia - History of Bangladesh",
+			"url": "https://en.wikipedia.org/wiki/History_of_Bangladesh",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Bangladesh",
+				"https://www.britannica.com/place/Bangladesh",
+				"https://banglapedia.org/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "March 26, 1971" },
+			{ "label": "Victory Day", "value": "December 16, 1971" },
+			{ "label": "Capital", "value": "Dhaka (Established as Mughal capital 1610)" },
+			{ "label": "Language Movement Day", "value": "February 21 (UNESCO Mother Language Day)" },
+			{ "label": "Major River System", "value": "Ganges-Brahmaputra-Meghna Delta" },
+			{ "label": "National Anthem", "value": "'Amar Sonar Bangla' by Rabindranath Tagore" }
+		],
+		"ancient": {
+			"period": "c. 700 BCE - 1200 CE",
+			"description": "Ancient Bengal was a formidable power known to the Greeks and Romans as Gangaridai, famous for its war elephants which allegedly deterred Alexander the Great. The region transitioned through various empires, notably the Mauryan and Gupta. The Buddhist Pala Empire (8th-12th century) marked a golden era of intellectual and artistic expansion, fostering relations with Southeast Asia and Tibet. This was followed by the Hindu Sena dynasty, which promoted Sanskrit literature and Brahmanical Hinduism before the arrival of Islamic conquerors. Throughout this period, the region was a hub for maritime trade, exporting fine muslin textiles and spices.",
+			"keyEvents": [
+				{
+					"year": "c. 300 BCE",
+					"title": "Gangaridai Kingdom",
+					"description": "Powerful kingdom in the Bengal delta described by Greek travelers"
+				},
+				{
+					"year": "c. 750 CE",
+					"title": "Pala Empire Founded",
+					"description": "Gopala I founds the Pala dynasty, initiating centuries of Buddhist rule and stability"
+				},
+				{
+					"year": "c. 1095 CE",
+					"title": "Sena Dynasty",
+					"description": "Hemanta Sena establishes Hindu rule, replacing the Palas"
+				}
+			],
+			"notableFigures": ["Atisa Dipankara (Buddhist scholar)", "Gopala I (Founder of Pala Empire)"]
+		},
+		"medieval": {
+			"period": "1204 - 1757",
+			"description": "The medieval period began with the conquest of Bakhtiyar Khilji in 1204, introducing Islamic rule. The Independent Bengal Sultanate (1338–1576) emerged as a major trading power, described by travelers like Ibn Battuta as a land of abundance. The region reached its zenith under the Mughal Empire, becoming the 'Subah Bangalah'—the wealthiest province in the empire, responsible for 50% of the Mughal GDP. It was a global manufacturing hub for textiles and shipbuilding. Dhaka grew into a magnificent metropolis. However, internal rivalries and the decline of Mughal central authority eventually opened the door for European trading companies.",
+			"keyEvents": [
+				{
+					"year": "1204",
+					"title": "Islamic Conquest",
+					"description": "Bakhtiyar Khilji conquers parts of Bengal, ending Sena rule"
+				},
+				{
+					"year": "1352",
+					"title": "Sultanate of Bengal",
+					"description": "Shamsuddin Ilyas Shah unifies the region into an independent sultanate"
+				},
+				{
+					"year": "1610",
+					"title": "Dhaka named Capital",
+					"description": "Islam Khan inaugurates Dhaka as the provincial capital of Mughal Bengal"
+				},
+				{
+					"year": "1666",
+					"title": "Conquest of Chittagong",
+					"description": "Mughals expel Portuguese pirates and Arakanese, securing the port of Chittagong"
+				}
+			],
+			"notableFigures": ["Shamsuddin Ilyas Shah", "Isa Khan (Baro-Bhuyan chieftain)", "Shaista Khan (Mughal Governor)"]
+		},
+		"colonial": {
+			"period": "1757 - 1947",
+			"description": "British colonial rule was cemented at the Battle of Plassey in 1757, where the Nawab Siraj-ud-Daulah was defeated by the British East India Company. This marked the beginning of economic drainage; Bengal's wealth fueled the British Industrial Revolution while the region itself suffered deindustrialization and famines, including the devastating Great Bengal Famine of 1770. Resistance remained constant, from the Fakir-Sannyasi rebellion to the Indigo revolts. In 1905, the British attempted to Partition Bengal, which was reversed in 1911 due to fierce protests. The period ended with the 1947 Partition of India, where Bengal was divided along religious lines, with the Muslim-majority East becoming part of Pakistan.",
+			"keyEvents": [
+				{
+					"year": "1757",
+					"title": "Battle of Plassey",
+					"description": "Defeat of Siraj-ud-Daulah marks the start of British rule"
+				},
+				{
+					"year": "1770",
+					"title": "Great Bengal Famine",
+					"description": " catastrophic famine kills nearly one-third of the population"
+				},
+				{
+					"year": "1857",
+					"title": "Sepoy Mutiny",
+					"description": "Uprising against British rule, starting in Barrackpore and spreading to Dhaka/Chittagong"
+				},
+				{
+					"year": "1905",
+					"title": "First Partition of Bengal",
+					"description": "Curzon partitions Bengal; annulled in 1911 after protests"
+				},
+				{
+					"year": "1943",
+					"title": "Bengal Famine of 1943",
+					"description": "Man-made famine during WWII kills millions"
+				}
+			],
+			"notableFigures": ["Nawab Siraj-ud-Daulah", "Titumir", "Surya Sen"]
+		},
+		"independence": {
+			"period": "1947 - 1971",
+			"description": "As 'East Pakistan,' the region faced economic exploitation and cultural suppression by West Pakistan. The pivotal moment came in 1952 when students sacrificed their lives to defend the Bengali language against the imposition of Urdu. This 'Language Movement' planted the seeds of nationalism. Disparities grew until 1970, when the Awami League won a landslide election victory but was denied power. Following a brutal military crackdown (Operation Searchlight) in March 1971, Bangladesh declared independence. A nine-month Liberation War ensued, involving guerilla warfare by the Mukti Bahini and ending with Indian military intervention and Pakistani surrender in December 1971.",
+			"keyEvents": [
+				{
+					"year": "1952",
+					"title": "Language Movement",
+					"description": "Students killed in Dhaka demanding Bengali be a state language"
+				},
+				{
+					"year": "1966",
+					"title": "Six Point Movement",
+					"description": "Sheikh Mujib presents demands for regional autonomy"
+				},
+				{
+					"year": "1970",
+					"title": "Bhola Cyclone",
+					"description": "Devastating cyclone kills 500,000; poor government response fuels anger"
+				},
+				{
+					"year": "1971",
+					"title": "Liberation War",
+					"description": "March 26 declaration of independence leads to war; victory on Dec 16"
+				}
+			],
+			"notableFigures": ["Sheikh Mujibur Rahman", "Tajuddin Ahmad", "General M.A.G. Osmani"]
+		},
+		"timeline": [
+			{
+				"year": "1338",
+				"era": "Medieval",
+				"title": "Independence from Delhi",
+				"description": "Establishment of the independent Bengal Sultanate"
+			},
+			{
+				"year": "1757",
+				"era": "Colonial",
+				"title": "Battle of Plassey",
+				"description": "British East India Company takes control of Bengal"
+			},
+			{
+				"year": "1947",
+				"era": "Colonial",
+				"title": "Partition",
+				"description": "Bengal divided; East Bengal joins Pakistan"
+			},
+			{
+				"year": "1952",
+				"era": "Independence",
+				"title": "Language Movement",
+				"description": "Protests establish Bengali identity as political force"
+			},
+			{
+				"year": "1971",
+				"era": "Independence",
+				"title": "Birth of Bangladesh",
+				"description": "Independence achieved after Liberation War"
+			},
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Restoration of Democracy",
+				"description": "Mass uprising overthrows military dictator Ershad"
+			}
+		]
+	},
+	{
+		"name": "Bhutan",
+		"overview": "Bhutan's history is a unique narrative of a Himalayan fortress preserving its sovereignty through isolation and strategic diplomacy. Known as 'Drukyul' or Land of the Thunder Dragon, it remained independent throughout the colonial era, never colonized by external powers. Its history is deeply intertwined with Tibetan Buddhism, unified in the 17th century by the Zhabdrung Ngawang Namgyal, who built the iconic dzongs (fortresses). Transitioning from a theocratic feudatory system to a hereditary monarchy in 1907, Bhutan has recently gained global attention for its philosophy of Gross National Happiness and its peaceful transition from absolute monarchy to parliamentary democracy.",
+		"source": {
+			"label": "Wikipedia - History of Bhutan",
+			"url": "https://en.wikipedia.org/wiki/History_of_Bhutan",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Bhutan",
+				"https://www.britannica.com/place/Bhutan",
+				"https://www.bhutan.travel/page/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Unification", "value": "c. 1634 (Battle of Five Lamas)" },
+			{ "label": "First King Crowned", "value": "December 17, 1907" },
+			{ "label": "Capital", "value": "Thimphu" },
+			{ "label": "Official Religion", "value": "Vajrayana Buddhism" },
+			{ "label": "Development Philosophy", "value": "Gross National Happiness (GNH)" },
+			{ "label": "National Day", "value": "December 17" }
+		],
+		"ancient": {
+			"period": "Pre-history - 7th Century",
+			"description": "Early Bhutan was inhabited by nomadic herders and followers of the Bon religion. The region was known by various names such as Lho Mon (Southern Land of Darkness). The defining moment of ancient Bhutan was the introduction of Buddhism in the 7th century by the Tibetan King Songtsen Gampo, who built the Kyichu Lhakhang and Jambay Lhakhang. In the 8th century, Guru Rinpoche (Padmasambhava) visited the region, meditating in caves like the Tiger's Nest (Taktsang), subduing local demons, and firmly establishing Buddhism as the bedrock of Bhutanese culture.",
+			"keyEvents": [
+				{
+					"year": "c. 659 CE",
+					"title": "First Temples Built",
+					"description": "Songtsen Gampo builds Kyichu and Jambay Lhakhang"
+				},
+				{
+					"year": "746 CE",
+					"title": "Arrival of Guru Rinpoche",
+					"description": "Guru Rinpoche visits, spreading Vajrayana Buddhism"
+				}
+			],
+			"notableFigures": ["Guru Rinpoche", "Songtsen Gampo"]
+		},
+		"feudal": {
+			"period": "1616 - 1907",
+			"description": "The feudal era is dominated by the arrival of Zhabdrung Ngawang Namgyal from Tibet in 1616. He unified the warring valleys into a single state, established a dual system of government (religious and secular), and constructed the great Dzongs which served as centers of administration and religion. He successfully repelled multiple Tibetan invasions. Following his death, the country entered a long period of internal civil war and regional rivalry between Penlops (governors), particularly those of Paro and Trongsa. This era also saw conflict with the British Empire over the Duars (lowland passes), leading to the Duar War (1864–65) and the loss of some territory, but the preservation of Bhutanese autonomy.",
+			"keyEvents": [
+				{
+					"year": "1616",
+					"title": "Arrival of Zhabdrung",
+					"description": "Ngawang Namgyal flees Tibet and begins unification of Bhutan"
+				},
+				{ "year": "1629", "title": "Semtokha Dzong", "description": "Construction of the first fortress-monastery" },
+				{
+					"year": "1865",
+					"title": "Treaty of Sinchula",
+					"description": "Ends war with British India; Bhutan cedes Duars for annual subsidy"
+				}
+			],
+			"notableFigures": ["Zhabdrung Ngawang Namgyal", "Jigme Namgyel (The Black Regent)"]
+		},
+		"modern": {
+			"period": "1907 - Present",
+			"description": "Modern Bhutan began with the unanimous election of Ugyen Wangchuck as the first hereditary King in 1907, ending civil strife. The Wangchuck dynasty gradually opened the country to the world while fiercely protecting its culture. The Third King, Jigme Dorji Wangchuck, abolished serfdom and joined the UN in 1971. The Fourth King, Jigme Singye Wangchuck, introduced the philosophy of Gross National Happiness (GNH) and voluntarily abdicated in 2006 to pave the way for democracy. In 2008, Bhutan held its first democratic elections, completing a unique transition initiated by the throne itself rather than by revolution.",
+			"keyEvents": [
+				{
+					"year": "1907",
+					"title": "Establishment of Monarchy",
+					"description": "Ugyen Wangchuck crowned first Druk Gyalpo (Dragon King)"
+				},
+				{
+					"year": "1971",
+					"title": "UN Membership",
+					"description": "Bhutan joins the United Nations, affirming sovereignty"
+				},
+				{
+					"year": "1974",
+					"title": "Coronation of 4th King",
+					"description": "Jigme Singye Wangchuck promotes GNH over GDP"
+				},
+				{
+					"year": "2008",
+					"title": "Democratic Transition",
+					"description": "First parliamentary elections held; Constitution enacted"
+				}
+			],
+			"notableFigures": ["Ugyen Wangchuck", "Jigme Singye Wangchuck"]
+		},
+		"timeline": [
+			{ "year": "746", "era": "Ancient", "title": "Guru Rinpoche", "description": "Introduction of Buddhism" },
+			{
+				"year": "1616",
+				"era": "Feudal",
+				"title": "Unification",
+				"description": "Zhabdrung Ngawang Namgyal unifies Bhutan"
+			},
+			{
+				"year": "1865",
+				"era": "Feudal",
+				"title": "Treaty of Sinchula",
+				"description": "Peace treaty with British India"
+			},
+			{
+				"year": "1907",
+				"era": "Modern",
+				"title": "Monarchy Founded",
+				"description": "Establishment of the Wangchuck Dynasty"
+			},
+			{
+				"year": "1999",
+				"era": "Modern",
+				"title": "Television/Internet",
+				"description": "Ban on television and internet lifted"
+			},
+			{ "year": "2008", "era": "Modern", "title": "Democracy", "description": "Transition to Constitutional Monarchy" }
+		]
+	},
+	{
+		"name": "Kazakhstan",
+		"overview": "Kazakhstan's history is the epic of the Eurasian Steppe, characterized by the rhythmic movement of nomadic empires and the Silk Road trade. For millennia, it was the domain of Scythians, Turks, and Mongols. The genesis of the modern nation lies in the Kazakh Khanate founded in the 15th century. Slowly absorbed by the Russian Empire and later transformed by the Soviet Union into an industrial and agricultural hub (often at great human cost), Kazakhstan declared independence in 1991. It has since utilized its vast oil and mineral wealth to build a modern state with a futuristic capital, balancing relations between Russia, China, and the West.",
+		"source": {
+			"label": "Wikipedia - History of Kazakhstan",
+			"url": "https://en.wikipedia.org/wiki/History_of_Kazakhstan",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Kazakhstan",
+				"https://www.britannica.com/place/Kazakhstan",
+				"https://astanatimes.com/history/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "December 16, 1991" },
+			{ "label": "Capital", "value": "Astana (formerly Nur-Sultan/Akmola)" },
+			{ "label": "Land Area", "value": "9th largest in world (Largest landlocked)" },
+			{ "label": "Cosmodrome", "value": "Baikonur (First human spaceflight launched here)" },
+			{ "label": "Currency", "value": "Tenge" },
+			{ "label": "National Instrument", "value": "Dombra" }
+		],
+		"ancient": {
+			"period": "c. 1000 BCE - 500 CE",
+			"description": "The ancient steppes of Kazakhstan were home to the Saka (Scythians), fierce nomadic warriors who mastered mounted warfare and created intricate 'Animal Style' gold jewelry. The 'Golden Man,' a warrior prince clad in gold armor discovered in the Issyk kurgan, symbolizes this rich heritage. Later, the Huns and other tribal confederations moved through this corridor connecting East and West, influencing the fall of empires in Europe and Asia.",
+			"keyEvents": [
+				{
+					"year": "c. 6th C. BCE",
+					"title": "Saka Culture",
+					"description": "Flourishing of Scythian nomadic culture and art"
+				},
+				{
+					"year": "c. 4th C. BCE",
+					"title": "Golden Man",
+					"description": "Burial of the Golden Man warrior prince (national symbol)"
+				}
+			],
+			"notableFigures": ["Queen Tomyris (Massagetae ruler who defeated Cyrus the Great)"]
+		},
+		"medieval": {
+			"period": "550 - 1465",
+			"description": "This era saw the rise of the Turkic Khaganates, establishing the linguistic and cultural roots of modern Kazakhs. The Silk Road flourished, bringing prosperity to cities like Otrar and Taraz. In the 13th century, Genghis Khan's Mongol invasion devastated the region but eventually integrated it into the Golden Horde. As the Golden Horde fragmented, the nomadic tribes began to coalesce into a distinct ethnic identity.",
+			"keyEvents": [
+				{ "year": "552", "title": "Turkic Khaganate", "description": "Establishment of the First Turkic Khaganate" },
+				{
+					"year": "1218",
+					"title": "Mongol Invasion",
+					"description": "Genghis Khan conquers the region; destruction of Otrar"
+				},
+				{ "year": "c. 1240", "title": "Golden Horde", "description": "Region becomes part of the Mongol Golden Horde" }
+			],
+			"notableFigures": ["Genghis Khan", "Al-Farabi (Scholar from Otrar)"]
+		},
+		"pre-colonial": {
+			"period": "1465 - 1731",
+			"description": "The Kazakh Khanate was founded in 1465 by Janybek and Kerey Khan, marking the birth of the Kazakh nation. The Khanate expanded to control the vast steppe but eventually divided into three 'Juz' (Hordes): Senior, Middle, and Junior. The 17th and early 18th centuries were marked by the 'Years of Great Disaster'—brutal wars against the invading Dzungar Khanate, which threatened the very existence of the Kazakh people until they united to repel the invaders.",
+			"keyEvents": [
+				{
+					"year": "1465",
+					"title": "Kazakh Khanate Founded",
+					"description": "Janybek and Kerey separate from Uzbek Khanate"
+				},
+				{
+					"year": "1511",
+					"title": "Kasym Khan's Rule",
+					"description": "Khanate reaches greatest expansion and codifies laws"
+				},
+				{
+					"year": "1723-1730",
+					"title": "Years of Great Disaster",
+					"description": "Devastating invasion by Dzungar Mongols"
+				}
+			],
+			"notableFigures": ["Kasym Khan", "Tauke Khan", "Abul Khair Khan"]
+		},
+		"imperial": {
+			"period": "1731 - 1917",
+			"description": "Seeking protection from Dzungars, the Kazakh Khans began swearing allegiance to the Russian Empire. Russia slowly advanced its fortified lines, eroding the Khanate's autonomy. By the mid-19th century, the Khanate was abolished, and the territory was fully annexed. Russian settlers moved into the northern steppes, disrupting traditional nomadic migration routes and leading to several uprisings, most notably by Kenesary Kasymov, the last Khan.",
+			"keyEvents": [
+				{
+					"year": "1731",
+					"title": "Russian Protection",
+					"description": "Abul Khair Khan of the Junior Juz swears allegiance to Russia"
+				},
+				{
+					"year": "1847",
+					"title": "Death of Kenesary",
+					"description": "End of the last major resistance to Russian rule"
+				},
+				{ "year": "1916", "title": "Central Asian Revolt", "description": "Uprising against conscription during WWI" }
+			],
+			"notableFigures": ["Kenesary Kasymov", "Abai Qunanbaiuly (Poet and reformer)"]
+		},
+		"modern": {
+			"period": "1917 - Present",
+			"description": "Following the Russian Revolution and a brief autonomous government (Alash Orda), Kazakhstan became a Soviet Republic. The Soviet era brought rapid industrialization but immense tragedy: forced collectivization caused a famine (1930-33) that killed nearly 40% of the Kazakh population. Later, the territory became a site for nuclear testing (Semipalatinsk) and the Virgin Lands campaign. Kazakhstan declared independence in 1991, the last Soviet republic to do so. Under Nursultan Nazarbayev (1991-2019), the country capitalized on energy reserves, built a new capital, and maintained stability, though recent years have seen pushes for political reform.",
+			"keyEvents": [
+				{ "year": "1917", "title": "Alash Orda", "description": "Short-lived autonomous government formed" },
+				{
+					"year": "1930-1933",
+					"title": "Asharshylyk (Famine)",
+					"description": "Collectivization leads to death of 1.5 million Kazakhs"
+				},
+				{
+					"year": "1955",
+					"title": "Baikonur Established",
+					"description": "Construction of the world's first space launch facility"
+				},
+				{ "year": "1991", "title": "Independence", "description": "Kazakhstan declares independence from USSR" },
+				{ "year": "1997", "title": "Capital Move", "description": "Capital moved from Almaty to Akmola (Astana)" }
+			],
+			"notableFigures": ["Dinmukhamed Kunayev", "Nursultan Nazarbayev", "Kassym-Jomart Tokayev"]
+		},
+		"timeline": [
+			{
+				"year": "1465",
+				"era": "Pre-Colonial",
+				"title": "Khanate Founded",
+				"description": "Establishment of Kazakh statehood"
+			},
+			{
+				"year": "1723",
+				"era": "Pre-Colonial",
+				"title": "Dzungar Invasion",
+				"description": "Start of the 'Years of Great Disaster'"
+			},
+			{
+				"year": "1847",
+				"era": "Imperial",
+				"title": "Russian Annexation",
+				"description": "Completion of Russian conquest of the Steppe"
+			},
+			{
+				"year": "1932",
+				"era": "Modern",
+				"title": "Great Famine",
+				"description": "Devastating loss of population under Stalin"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Establishment of Republic of Kazakhstan"
+			},
+			{
+				"year": "2019",
+				"era": "Modern",
+				"title": "Power Transition",
+				"description": "Nazarbayev resigns; Tokayev becomes president"
+			}
+		]
+	},
+	{
+		"name": "Iran",
+		"overview": "Iran's history is a millennia-spanning tapestry of imperial grandeur, intellectual innovation, and spiritual depth, representing one of the world's oldest continuous major civilizations. From the foundational tolerance of Cyrus the Great's Achaemenid Empire to the cultural renaissance of the Safavids and the dramatic political shifts of the 20th century, Iran has maintained a distinct identity even while serving as a bridge between East and West. The nation has weathered the devastation of Mongol conquests and the pressures of modern geopolitics, evolving from the legendary 'Persia' of antiquity into a complex modern Islamic Republic that continues to assert its influence on the global stage.",
+		"source": {
+			"label": "Britannica - History of Iran",
+			"url": "https://www.britannica.com/place/Iran/History",
+			"urls": [
+				"https://www.britannica.com/place/Iran/History",
+				"https://en.wikipedia.org/wiki/History_of_Iran",
+				"https://www.iranicaonline.org/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Empire Founded",
+				"value": "550 BCE (Achaemenid)"
+			},
+			{
+				"label": "Islamic Republic",
+				"value": "April 1, 1979"
+			},
+			{
+				"label": "Capital",
+				"value": "Tehran (since 1786)"
+			},
+			{
+				"label": "Name Origin",
+				"value": "From 'Aryana' (Land of the Aryans)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "27 World Heritage Sites"
+			},
+			{
+				"label": "Major Religion",
+				"value": "Twelver Shia Islam"
+			}
+		],
+		"ancient": {
+			"period": "c. 3200 BCE - 651 CE",
+			"description": "Ancient Iran was the cradle of superpower politics and administrative genius. It began with the Elamites in the southwest, but the true rise of Iranian power came with the Achaemenid Empire founded by Cyrus the Great. Cyrus established a model of benevolent governance, freeing the Jews from Babylon and drafting the Cyrus Cylinder, often cited as an early charter of human rights. This vast empire, stretching from the Balkans to the Indus, was eventually conquered by Alexander the Great, but Iranian identity reasserted itself under the Parthians, who became formidable rivals to Rome. The subsequent Sassanian Empire brought Iranian civilization to new heights in art, architecture, and philosophy, establishing Zoroastrianism as the state religion and creating a centralized state that would heavily influence the later Islamic caliphates. This era was defined by the struggle between Rome and Persia, a rivalry that exhausted both and paved the way for the Arab conquest.",
+			"keyEvents": [
+				{
+					"year": "550 BCE",
+					"title": "Achaemenid Empire Founded",
+					"description": "Cyrus the Great unites the Medes and Persians, establishing the first Persian Empire"
+				},
+				{
+					"year": "539 BCE",
+					"title": "Conquest of Babylon",
+					"description": "Cyrus conquers Babylon and allows exiled peoples, including Jews, to return home"
+				},
+				{
+					"year": "330 BCE",
+					"title": "Fall of Persepolis",
+					"description": "Alexander the Great burns the ceremonial capital, ending the Achaemenid dynasty"
+				},
+				{
+					"year": "247 BCE",
+					"title": "Rise of Parthia",
+					"description": "The Parthian Empire emerges, reclaiming Iran from Hellenistic Seleucid rule"
+				},
+				{
+					"year": "224 CE",
+					"title": "Sassanian Empire Founded",
+					"description": "Ardashir I overthrows the Parthians, establishing a powerful, centralized Zoroastrian state"
+				}
+			],
+			"notableFigures": ["Cyrus the Great", "Darius I", "Xerxes I", "Shapur I"]
+		},
+		"medieval": {
+			"period": "651 - 1501",
+			"description": "The Arab Muslim conquest of 651 collapsed the Sassanian state but did not extinguish Persian culture; instead, it led to a unique fusion. During the Islamic Golden Age, Persian scholars like Avicenna and Khayyam became the intellectual torchbearers of the Islamic world, contributing massively to science, medicine, and poetry. The region saw the rise of semi-autonomous dynasties like the Samanids and Seljuks who revived the Persian language. This blossoming was brutally interrupted by the Mongol invasion in the 13th century, a cataclysm that destroyed libraries, irrigation systems, and slaughtered millions. Yet, the Mongol Ilkhanate eventually adopted Persian culture. The subsequent Timurid era saw a final flourish of art and architecture before the rise of a new native empire, bridging the gap between the medieval and early modern worlds.",
+			"keyEvents": [
+				{
+					"year": "651",
+					"title": "Arab Conquest",
+					"description": "Fall of the Sassanian Empire; Islam gradually replaces Zoroastrianism"
+				},
+				{
+					"year": "c. 1000",
+					"title": "Writing of the Shahnameh",
+					"description": "Ferdowsi completes the 'Book of Kings,' preserving the Persian language and mythos"
+				},
+				{
+					"year": "1219",
+					"title": "Mongol Invasion",
+					"description": "Genghis Khan's forces devastate Iran, leading to massive depopulation and cultural destruction"
+				}
+			],
+			"notableFigures": ["Ferdowsi", "Avicenna (Ibn Sina)", "Omar Khayyam", "Hulagu Khan"]
+		},
+		"imperial": {
+			"period": "1501 - 1979",
+			"description": "The modern Iranian nation-state took shape under the Safavid Dynasty, which declared Twelver Shi'ism the state religion, forging a unified national identity distinct from the Sunni Ottoman Empire. This era saw the height of Persian art in Isfahan, 'half the world.' Following the Safavids, Nader Shah briefly restored military might, but the 19th-century Qajar dynasty faced humiliation at the hands of Russian and British imperialism, sparking the Constitutional Revolution of 1906—the first of its kind in the Middle East. The Pahlavi dynasty (1925-1979) attempted rapid, top-down modernization and secularization, fueled by oil wealth. However, the regime's autocracy and perceived subservience to Western powers alienated the populace, setting the stage for a massive social explosion.",
+			"keyEvents": [
+				{
+					"year": "1501",
+					"title": "Safavid Empire Founded",
+					"description": "Shah Ismail I establishes the Safavid dynasty and imposes Shi'a Islam"
+				},
+				{
+					"year": "1598",
+					"title": "Isfahan Becomes Capital",
+					"description": "Shah Abbas I moves the capital to Isfahan, initiating a golden age of architecture"
+				},
+				{
+					"year": "1906",
+					"title": "Constitutional Revolution",
+					"description": "Mass protests force the Qajar Shah to accept a parliament (Majlis) and constitution"
+				},
+				{
+					"year": "1925",
+					"title": "Pahlavi Dynasty Begins",
+					"description": "Reza Shah Pahlavi seizes power, initiating rapid modernization reforms"
+				},
+				{
+					"year": "1953",
+					"title": "Coup d'état",
+					"description": "US and UK intelligence orchestrate the overthrow of PM Mohammad Mosaddegh to protect oil interests"
+				}
+			],
+			"notableFigures": ["Shah Abbas the Great", "Nader Shah", "Reza Shah", "Mohammad Mosaddegh"]
+		},
+		"modern": {
+			"period": "1979 - Present",
+			"description": "The Islamic Revolution of 1979 completely transformed Iran, replacing the monarchy with a theocratic republic led by Ayatollah Khomeini. This seismic shift realigned the Middle East's geopolitical balance. The new republic almost immediately faced the devastating Iran-Iraq War (1980-1988), a conflict that entrenched the regime's narrative of resistance. Post-war Iran has been characterized by a complex dual-government system, oscillating between hardline conservatism and reformist attempts, all while under severe international sanctions over its nuclear program. Despite political repression and economic hardship, Iranian society remains vibrant, educated, and increasingly vocal, as evidenced by recurring waves of civil unrest demanding social and political freedoms.",
+			"keyEvents": [
+				{
+					"year": "1979",
+					"title": "Islamic Revolution",
+					"description": "The Shah is overthrown; Islamic Republic is established under Ayatollah Khomeini"
+				},
+				{
+					"year": "1980-1988",
+					"title": "Iran-Iraq War",
+					"description": "A brutal eight-year war following Iraq's invasion results in a stalemate and high casualties"
+				},
+				{
+					"year": "2015",
+					"title": "JCPOA Nuclear Deal",
+					"description": "Iran agrees to limit nuclear program in exchange for sanctions relief (later abandoned by US)"
+				},
+				{
+					"year": "2022",
+					"title": "Mahsa Amini Protests",
+					"description": "Widespread 'Woman, Life, Freedom' protests erupt against the mandatory hijab and clerical rule"
+				}
+			],
+			"notableFigures": ["Ruhollah Khomeini", "Ali Khamenei", "Akbar Hashemi Rafsanjani", "Qasem Soleimani"]
+		},
+		"timeline": [
+			{
+				"year": "550 BCE",
+				"era": "Ancient",
+				"title": "Empire Rises",
+				"description": "Cyrus the Great founds the Achaemenid Empire"
+			},
+			{
+				"year": "330 BCE",
+				"era": "Ancient",
+				"title": "Greek Conquest",
+				"description": "Alexander the Great conquers Persia"
+			},
+			{
+				"year": "651",
+				"era": "Medieval",
+				"title": "Islamic Conquest",
+				"description": "End of Sassanian rule; beginning of Islamic era"
+			},
+			{
+				"year": "1501",
+				"era": "Imperial",
+				"title": "Safavid Unity",
+				"description": "Establishment of a unified Shi'a state"
+			},
+			{
+				"year": "1906",
+				"era": "Imperial",
+				"title": "Constitution",
+				"description": "First constitution and parliament established"
+			},
+			{
+				"year": "1979",
+				"era": "Modern",
+				"title": "Revolution",
+				"description": "Establishment of the Islamic Republic"
+			}
+		]
+	},
+	{
+		"name": "Iraq",
+		"overview": "Iraq, known to antiquity as Mesopotamia, is the 'Cradle of Civilization' where humanity first developed writing, cities, and written law. Its history flows from the creative brilliance of Sumer and Babylon to the imperial zenith of the Abbasid Caliphate, when Baghdad was the intellectual center of the world. In the modern era, Iraq has been shaped by the artificial borders of the British Mandate, a turbulent monarchy, and the authoritarian grip of the Ba'ath party. The nation has endured a traumatic recent history of dictatorship, devastating wars, international sanctions, and sectarian conflict, yet it retains the deep cultural resilience of a land that has been a center of human history for six thousand years.",
+		"source": {
+			"label": "Wikipedia - History of Iraq",
+			"url": "https://en.wikipedia.org/wiki/History_of_Iraq",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Iraq",
+				"https://www.britannica.com/place/Iraq",
+				"https://study.com/academy/lesson/history-of-iraq-timeline-civilizations-war.html"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence",
+				"value": "October 3, 1932"
+			},
+			{
+				"label": "Republic Declared",
+				"value": "July 14, 1958"
+			},
+			{
+				"label": "Capital",
+				"value": "Baghdad (founded 762 CE)"
+			},
+			{
+				"label": "Ancient Name",
+				"value": "Mesopotamia"
+			},
+			{
+				"label": "Key Rivers",
+				"value": "Tigris and Euphrates"
+			},
+			{
+				"label": "Major Resources",
+				"value": "Oil (5th largest reserves)"
+			}
+		],
+		"ancient": {
+			"period": "c. 4000 BCE - 636 CE",
+			"description": "Long before it was a modern nation, the land of Iraq was Mesopotamia, the 'land between rivers.' This region witnessed the dawn of history with the Sumerians, who invented cuneiform writing, the wheel, and complex irrigation. Successive empires rose from this fertile soil: the Akkadians, the world's first empire; the Babylonians, famous for Hammurabi's Code and the Hanging Gardens; and the Assyrians, masters of military engineering. Babylon became the greatest city of antiquity, a center of astronomy and mathematics. The region later fell under Persian influence (Achaemenid, Parthian, and Sassanian) but remained a critical economic and cultural hub, housing Ctesiphon, the capital of the Persian emperors, before the arrival of Islamic forces.",
+			"keyEvents": [
+				{
+					"year": "c. 3500 BCE",
+					"title": "Uruk Period",
+					"description": "Emergence of the first true cities and development of writing in Sumer"
+				},
+				{
+					"year": "c. 1792 BCE",
+					"title": "Code of Hammurabi",
+					"description": "Babylonian King Hammurabi establishes one of the earliest written legal codes"
+				},
+				{
+					"year": "612 BCE",
+					"title": "Fall of Nineveh",
+					"description": "Destruction of the Assyrian capital by a coalition of Babylonians and Medes"
+				},
+				{
+					"year": "539 BCE",
+					"title": "Persian Conquest",
+					"description": "Cyrus the Great captures Babylon, ending native Mesopotamian rule"
+				}
+			],
+			"notableFigures": ["Gilgamesh (Legendary King)", "Sargon of Akkad", "Hammurabi", "Nebuchadnezzar II"]
+		},
+		"medieval": {
+			"period": "636 - 1534",
+			"description": "The Islamic conquest transformed Iraq into the heart of the Muslim world. Following the Battle of al-Qadisiyyah, the region was integrated into the Caliphate. The founding of Baghdad in 762 CE by the Abbasids marked the beginning of a Golden Age; the city became a beacon of science, philosophy, and trade, preserving Greek knowledge and advancing medicine and mathematics. However, this brilliance was extinguished by the Mongol invasion of 1258, which sacked Baghdad and destroyed its legendary House of Wisdom, plunging the region into centuries of decline and neglect. Iraq subsequently became a frontier battleground between the rival Ottoman and Safavid empires, changing hands repeatedly before stabilizing under Ottoman control.",
+			"keyEvents": [
+				{
+					"year": "762",
+					"title": "Founding of Baghdad",
+					"description": "Caliph Al-Mansur builds the Round City, which becomes the capital of the Abbasid Caliphate"
+				},
+				{
+					"year": "c. 786-809",
+					"title": "Reign of Harun al-Rashid",
+					"description": "Zenith of the Islamic Golden Age; Baghdad becomes the world's center of learning"
+				},
+				{
+					"year": "1258",
+					"title": "Siege of Baghdad",
+					"description": "Mongols under Hulagu Khan sack the city, executing the Caliph and ending the Abbasid era"
+				}
+			],
+			"notableFigures": ["Al-Mansur", "Harun al-Rashid", "Salah al-Din (Saladin - born in Tikrit)"]
+		},
+		"colonial": {
+			"period": "1534 - 1932",
+			"description": "For centuries, Iraq was a neglected province of the Ottoman Empire, divided into the vilayets of Mosul, Baghdad, and Basra. Ottoman rule brought some stability but little development until the late 19th-century administrative reforms. World War I changed everything; the British invaded to secure oil interests and the route to India. Following the collapse of the Ottoman Empire, Britain was granted a mandate over Iraq by the League of Nations in 1920. This foreign rule sparked an immediate and fierce nationalist revolt. In response, the British installed Faisal I, a Hashemite prince, as king to give the mandate a veneer of legitimacy, drawing the modern borders that bound together Kurds, Sunnis, and Shiites into a single, often fractious state.",
+			"keyEvents": [
+				{
+					"year": "1534",
+					"title": "Ottoman Conquest",
+					"description": "Suleiman the Magnificent captures Baghdad, incorporating Iraq into the Ottoman Empire"
+				},
+				{
+					"year": "1916",
+					"title": "Sykes-Picot Agreement",
+					"description": "Secret treaty between UK and France effectively partitioning the region"
+				},
+				{
+					"year": "1920",
+					"title": "Great Iraqi Revolt",
+					"description": "Widespread uprising against British military occupation and mandate rule"
+				},
+				{
+					"year": "1921",
+					"title": "Coronation of Faisal I",
+					"description": "British install Faisal as King of Iraq to stabilize the country under their influence"
+				}
+			],
+			"notableFigures": ["Suleiman the Magnificent", "Gertrude Bell", "King Faisal I"]
+		},
+		"modern": {
+			"period": "1932 - Present",
+			"description": "Independent Iraq was born in 1932, but stability proved elusive. The monarchy was brutally overthrown in 1958, establishing a republic that soon fell under the sway of the Ba'ath Party. Saddam Hussein rose to absolute power in 1979, establishing a repressive dictatorship funded by oil wealth. His ambitions led to the catastrophic Iran-Iraq War and the invasion of Kuwait, which resulted in the Gulf War and crippling international sanctions. The US-led invasion of 2003 ended Saddam's rule but unleashed insurgencies, sectarian violence, and the rise of extremist groups like ISIS. Today, Iraq is a fragile federal democracy rebuilding its cities and institutions while navigating the complex influence of its neighbors and internal sectarian divisions.",
+			"keyEvents": [
+				{
+					"year": "1932",
+					"title": "Independence",
+					"description": "Iraq becomes the first mandate territory to gain formal independence"
+				},
+				{
+					"year": "1958",
+					"title": "14 July Revolution",
+					"description": "Monarchy overthrown in a violent coup; Republic established"
+				},
+				{
+					"year": "1979",
+					"title": "Saddam Hussein Presides",
+					"description": "Saddam purges the Ba'ath party and consolidates total power"
+				},
+				{
+					"year": "1988",
+					"title": "Halabja Massacre",
+					"description": "Chemical weapons attack on Kurdish civilians during the Iran-Iraq War"
+				},
+				{
+					"year": "2003",
+					"title": "US Invasion",
+					"description": "Coalition forces topple Saddam Hussein; beginning of occupation and insurgency"
+				},
+				{
+					"year": "2017",
+					"title": "Defeat of ISIS",
+					"description": "Iraqi forces declare victory over the Islamic State after liberating Mosul"
+				}
+			],
+			"notableFigures": ["Saddam Hussein", "Abd al-Karim Qasim", "Jalal Talabani", "Nouri al-Maliki"]
+		},
+		"timeline": [
+			{
+				"year": "c. 3500 BCE",
+				"era": "Ancient",
+				"title": "Birth of Writing",
+				"description": "Sumerians develop cuneiform in southern Mesopotamia"
+			},
+			{
+				"year": "762",
+				"era": "Medieval",
+				"title": "Baghdad Founded",
+				"description": "Abbasids build the Round City, creating a global intellectual hub"
+			},
+			{
+				"year": "1258",
+				"era": "Medieval",
+				"title": "Mongol Sack",
+				"description": "Destruction of Baghdad ends the Islamic Golden Age"
+			},
+			{
+				"year": "1920",
+				"era": "Colonial",
+				"title": "British Mandate",
+				"description": "Iraq placed under British control, sparking nationalist revolt"
+			},
+			{
+				"year": "1958",
+				"era": "Modern",
+				"title": "Republic Born",
+				"description": "Military coup ends the Hashemite monarchy"
+			},
+			{
+				"year": "2003",
+				"era": "Modern",
+				"title": "Regime Change",
+				"description": "End of Ba'athist rule following US-led invasion"
+			}
+		]
+	},
+	{
+		"name": "Israel",
+		"overview": "Israel's history is a tapestry woven from ancient religious roots, centuries of diaspora, and a modern struggle for statehood. Located at the junction of Europe, Asia, and Africa, it is the birthplace of the Jewish people and the site of fervent religious devotion for Jews, Christians, and Muslims. After the destruction of the ancient Kingdom of Judah by the Romans, the Jewish people maintained a continuous but diminished presence while dispersed globally. The rise of Zionism in the late 19th century led to waves of immigration to Ottoman and later British-controlled Palestine. Following the horrors of the Holocaust, the State of Israel was established in 1948, triggering an immediate war for survival and an ongoing complex conflict with its Arab neighbors and the Palestinians. Today, Israel is a global technological powerhouse and a vibrant, albeit polarized, democracy that grapples with balancing its Jewish identity, democratic values, and security challenges.",
+		"source": {
+			"label": "Wikipedia - History of Israel",
+			"url": "https://en.wikipedia.org/wiki/History_of_Israel",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Israel",
+				"https://www.britannica.com/place/Israel",
+				"https://www.gov.il/en/departments/general/history-of-israel"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "May 14, 1948"
+			},
+			{
+				"label": "Capital",
+				"value": "Jerusalem"
+			},
+			{
+				"label": "Population",
+				"value": "~9.8 Million"
+			},
+			{
+				"label": "Major Languages",
+				"value": "Hebrew (official), Arabic"
+			},
+			{
+				"label": "Currency",
+				"value": "New Shekel (ILS)"
+			},
+			{
+				"label": "National Day",
+				"value": "Yom HaAtzmaut (Date varies/Iyar 5)"
+			}
+		],
+		"ancient": {
+			"period": "c. 1700 BCE - 636 CE",
+			"description": "The ancient history of Israel begins with the Patriarchs (Abraham, Isaac, and Jacob) and the emergence of the Israelite tribes in the Canaanite highlands. By roughly 1000 BCE, a United Monarchy was established under Kings Saul, David, and Solomon, centered in Jerusalem. After Solomon's death, the kingdom split into Israel (North) and Judah (South). The Northern Kingdom fell to the Assyrians in 722 BCE, while the Southern Kingdom was conquered by the Babylonians in 586 BCE, leading to the destruction of the First Temple and the Babylonian Exile. The Return to Zion began under Persian rule in 538 BCE, leading to the Second Temple period. The region subsequently came under Hellenistic influence until the Maccabean Revolt established the independent Hasmonean dynasty. Rome eventually exerted control, installing client kings like Herod the Great. Growing Jewish resistance to Roman rule sparked the Great Revolt (66–73 CE), resulting in the destruction of the Second Temple in 70 CE, and the Bar Kokhba Revolt (132–136 CE), after which Jews were killed or exiled in vast numbers, and the region was renamed Syria Palaestina to detach it from Jewish identity.",
+			"keyEvents": [
+				{
+					"year": "c. 1000 BCE",
+					"title": "United Monarchy Established",
+					"description": "King David unites the tribes of Israel and establishes Jerusalem as the political and spiritual capital."
+				},
+				{
+					"year": "586 BCE",
+					"title": "Destruction of First Temple",
+					"description": "Nebuchadnezzar II of Babylon destroys Solomon's Temple and exiles the Jewish elite to Babylon."
+				},
+				{
+					"year": "516 BCE",
+					"title": "Second Temple Completed",
+					"description": "Following Cyrus the Great's decree, returning exiles rebuild the Temple in Jerusalem."
+				},
+				{
+					"year": "167-160 BCE",
+					"title": "Maccabean Revolt",
+					"description": "Jewish rebellion against the Seleucid Empire leads to the rededication of the Temple (Hanukkah) and Hasmonean sovereignty."
+				},
+				{
+					"year": "70 CE",
+					"title": "Destruction of Second Temple",
+					"description": "Roman legions under Titus breach Jerusalem's walls and destroy the Temple to suppress the Great Jewish Revolt."
+				},
+				{
+					"year": "132-136 CE",
+					"title": "Bar Kokhba Revolt",
+					"description": "Final major Jewish uprising against Rome; its failure results in massive depopulation and the banning of Jews from Jerusalem."
+				}
+			],
+			"notableFigures": ["King David", "King Solomon", "Judah Maccabee", "Herod the Great", "Simon Bar Kokhba"]
+		},
+		"medieval": {
+			"period": "636 - 1517",
+			"description": "Following the Islamic conquest of the Levant in the 7th century, the region passed from Byzantine to Muslim rule under the Rashidun, Umayyad, and Abbasid caliphates. The Dome of the Rock was constructed on the Temple Mount in 691 CE, cementing Jerusalem's status as a holy city in Islam. The Jewish population, though diminished, maintained presence in cities like Tiberias and Jerusalem. In 1099, the First Crusade established the Latin Kingdom of Jerusalem, massacring Jewish and Muslim inhabitants. The Crusaders were eventually expelled by Saladin in 1187 and later the Mamluks in 1291. The Mamluk period (1291–1517) was characterized by relative stagnation and the decline of coastal cities, with the region governed as a backwater province of Egypt.",
+			"keyEvents": [
+				{
+					"year": "636-638",
+					"title": "Arab Conquest",
+					"description": "Rashidun Caliphate forces defeat Byzantines at Yarmouk; Caliph Umar accepts the surrender of Jerusalem."
+				},
+				{
+					"year": "691",
+					"title": "Dome of the Rock Built",
+					"description": "Umayyad Caliph Abd al-Malik completes the shrine on the Temple Mount."
+				},
+				{
+					"year": "1099",
+					"title": "First Crusade",
+					"description": "Crusaders capture Jerusalem, establishing a Christian Kingdom and slaughtering local inhabitants."
+				},
+				{
+					"year": "1187",
+					"title": "Saladin Recaptures Jerusalem",
+					"description": "Ayyubid Sultan Saladin defeats Crusaders at Hattin and retakes the city, allowing Jews to return."
+				},
+				{
+					"year": "1260",
+					"title": "Battle of Ain Jalut",
+					"description": "Mamluks defeat the Mongols in the Jezreel Valley, halting Mongol expansion into the Middle East."
+				}
+			],
+			"notableFigures": ["Caliph Umar", "Saladin", "Maimonides (died in Egypt, buried in Tiberias)", "Nahmanides"]
+		},
+		"imperial": {
+			"period": "1517 - 1917",
+			"description": "The Ottoman Empire conquered the region in 1517 under Selim I. For four centuries, the land was divided into various administrative districts (sanjaks). Suleiman the Magnificent rebuilt the walls of Jerusalem, which stand today. While the 16th century saw some prosperity, later centuries were marked by neglect and corruption. In the 19th century, European powers began to exert influence through 'capitulations' and protection of Christian minorities. Simultaneously, the rise of modern Zionism in Europe—driven by persecution and the desire for national self-determination—led to the First Aliyah (1881), bringing thousands of Jewish immigrants who established agricultural colonies. The local Arab population also began developing a distinct national consciousness. World War I brought an end to Ottoman rule as British forces under General Allenby captured Jerusalem in 1917.",
+			"keyEvents": [
+				{
+					"year": "1517",
+					"title": "Ottoman Conquest",
+					"description": "Selim I defeats the Mamluks, bringing Palestine under Ottoman Turkish rule for 400 years."
+				},
+				{
+					"year": "1535-1542",
+					"title": "Walls of Jerusalem Rebuilt",
+					"description": "Suleiman the Magnificent orders the reconstruction of the city walls and the Citadel."
+				},
+				{
+					"year": "1881",
+					"title": "First Aliyah",
+					"description": "First major wave of Zionist immigration from Eastern Europe and Yemen establishes early settlements like Rishon LeZion."
+				},
+				{
+					"year": "1897",
+					"title": "First Zionist Congress",
+					"description": "Convened by Theodor Herzl in Basel, formally establishing the goal of a Jewish home in Palestine."
+				},
+				{
+					"year": "1909",
+					"title": "Tel Aviv Founded",
+					"description": "Establishment of the first modern Hebrew city on the dunes north of Jaffa."
+				}
+			],
+			"notableFigures": ["Suleiman the Magnificent", "Theodor Herzl", "Eliezer Ben-Yehuda"]
+		},
+		"colonial": {
+			"period": "1917 - 1948",
+			"description": "Following World War I, Britain was granted a Mandate over Palestine by the League of Nations, incorporating the Balfour Declaration's commitment to a 'national home for the Jewish people.' This period saw rapid development of infrastructure and institutions by the Jewish Yishuv, alongside growing Arab nationalist opposition. Tensions escalated into violence, notably the 1929 riots and the 1936–1939 Arab Revolt. Britain responded by restricting Jewish immigration (White Paper of 1939) just as Jews sought escape from Nazi Europe. After WWII and the Holocaust, Jewish paramilitary groups (Haganah, Irgun, Lehi) fought a rebellion against British rule. Unable to resolve the conflict, Britain referred the matter to the UN, which proposed partitioning the land into Arab and Jewish states.",
+			"keyEvents": [
+				{
+					"year": "1917",
+					"title": "Balfour Declaration",
+					"description": "British Foreign Secretary Arthur Balfour expresses support for a 'national home for the Jewish people' in Palestine."
+				},
+				{
+					"year": "1922",
+					"title": "British Mandate Formalized",
+					"description": "League of Nations ratifies the Mandate; Transjordan is separated from the territory designated for the Jewish home."
+				},
+				{
+					"year": "1929",
+					"title": "Hebron Massacre",
+					"description": "Arab riots result in the killing of 67 Jews in Hebron and the destruction of the ancient Jewish community there."
+				},
+				{
+					"year": "1936-1939",
+					"title": "Arab Revolt",
+					"description": "Widespread Arab uprising against British rule and Jewish immigration, suppressed by British forces."
+				},
+				{
+					"year": "1947",
+					"title": "UN Partition Plan",
+					"description": "UN Resolution 181 proposes dividing the land; accepted by Jewish leadership but rejected by Arab leadership."
+				}
+			],
+			"notableFigures": ["Chaim Weizmann", "David Ben-Gurion", "Haj Amin al-Husseini", "Orde Wingate"]
+		},
+		"independence": {
+			"period": "1948 - 1949",
+			"description": "On May 14, 1948, as the British Mandate expired, David Ben-Gurion declared the establishment of the State of Israel. The new state was immediately invaded by the armies of Egypt, Jordan, Syria, Lebanon, and Iraq, transforming the civil war into an interstate conflict. Israel, though outnumbered and initially outgunned, managed to survive and expand its borders beyond the UN partition lines. The war resulted in the displacement of approximately 700,000 Palestinian Arabs (the Nakba) and the subsequent arrival of hundreds of thousands of Jewish refugees expelled from Arab lands. Armistice agreements were signed in 1949, establishing the 'Green Line' borders that held until 1967.",
+			"keyEvents": [
+				{
+					"year": "1948",
+					"title": "Declaration of Independence",
+					"description": "May 14, David Ben-Gurion proclaims the State of Israel at the Tel Aviv Museum."
+				},
+				{
+					"year": "1948-1949",
+					"title": "War of Independence",
+					"description": "Israel defeats invading Arab armies; Jerusalem is divided between Israeli (West) and Jordanian (East) control."
+				},
+				{
+					"year": "1949",
+					"title": "UN Membership",
+					"description": "Israel is admitted as the 59th member of the United Nations."
+				}
+			],
+			"notableFigures": ["David Ben-Gurion", "Golda Meir", "Yigal Allon", "Menachem Begin"]
+		},
+		"modern": {
+			"period": "1949 - Present",
+			"description": "Modern Israel has been defined by rapid development, the absorption of millions of immigrants (from the post-war Europe, Arab nations, Ethiopia, and the former USSR), and persistent conflict. The 1967 Six-Day War was a watershed moment where Israel captured the West Bank, Gaza, Golan Heights, and East Jerusalem. The 1973 Yom Kippur War shook the nation's confidence but led to the 1979 peace treaty with Egypt, the first with an Arab neighbor. Israel invaded Lebanon in 1982 and 2006 to stop attacks from the north. The 1990s saw the Oslo Accords attempt to resolve the Palestinian conflict, but the peace process collapsed into the Second Intifada (2000–2005). Israel withdrew unilaterally from Gaza in 2005, which was later taken over by Hamas. Domestically, Israel transformed from a socialist agrarian economy into the 'Start-Up Nation,' a global high-tech hub. Political instability and social polarization over judicial reforms and religious issues have marked recent years, culminating in the devastating Hamas attack on October 7, 2023, and the ensuing war.",
+			"keyEvents": [
+				{
+					"year": "1967",
+					"title": "Six-Day War",
+					"description": "Israel launches preemptive strikes against Egypt, Syria, and Jordan, capturing the Sinai, Golan, West Bank, and East Jerusalem."
+				},
+				{
+					"year": "1973",
+					"title": "Yom Kippur War",
+					"description": "Surprise attack by Egypt and Syria on the holiest Jewish day; Israel eventually turns the tide but suffers heavy casualties."
+				},
+				{
+					"year": "1979",
+					"title": "Egypt-Israel Peace Treaty",
+					"description": "Menachem Begin and Anwar Sadat sign historic peace accord; Israel returns the Sinai Peninsula."
+				},
+				{
+					"year": "1993",
+					"title": "Oslo Accords",
+					"description": "Rabin and Arafat sign agreements creating the Palestinian Authority and outlining a path to peace."
+				},
+				{
+					"year": "1995",
+					"title": "Assassination of Rabin",
+					"description": "Prime Minister Yitzhak Rabin is assassinated by a Jewish extremist opposed to the peace process."
+				},
+				{
+					"year": "2005",
+					"title": "Disengagement from Gaza",
+					"description": "Israel unilaterally dismantles all settlements in the Gaza Strip and withdraws military forces."
+				},
+				{
+					"year": "2020",
+					"title": "Abraham Accords",
+					"description": "Israel normalizes relations with UAE, Bahrain, Sudan, and Morocco, reshaping regional diplomacy."
+				},
+				{
+					"year": "2023",
+					"title": "October 7 Attacks",
+					"description": "Hamas launches massive terror attack; Israel declares war with the goal of dismantling Hamas governance in Gaza."
+				}
+			],
+			"notableFigures": ["Moshe Dayan", "Yitzhak Rabin", "Shimon Peres", "Benjamin Netanyahu", "Ariel Sharon"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1000 BCE",
+				"era": "Ancient",
+				"title": "King David's Reign",
+				"description": "Establishment of Jerusalem as the capital of the United Kingdom of Israel."
+			},
+			{
+				"year": "70 CE",
+				"era": "Ancient",
+				"title": "Temple Destroyed",
+				"description": "Roman destruction of the Second Temple in Jerusalem, intensifying the Diaspora."
+			},
+			{
+				"year": "1099",
+				"era": "Medieval",
+				"title": "Crusader Conquest",
+				"description": "First Crusade captures Jerusalem, massacring Jewish and Muslim inhabitants."
+			},
+			{
+				"year": "1492",
+				"era": "Medieval",
+				"title": "Safed Kabbalah",
+				"description": "Following expulsion from Spain, Jews settle in Safed, making it a center of mysticism."
+			},
+			{
+				"year": "1897",
+				"era": "Imperial",
+				"title": "Zionist Congress",
+				"description": "Theodor Herzl convenes the First Zionist Congress in Basel, Switzerland."
+			},
+			{
+				"year": "1917",
+				"era": "Colonial",
+				"title": "British Conquest",
+				"description": "General Allenby enters Jerusalem; Balfour Declaration issued."
+			},
+			{
+				"year": "1948",
+				"era": "Independence",
+				"title": "Statehood",
+				"description": "Israel declares independence; War of Independence begins."
+			},
+			{
+				"year": "1967",
+				"era": "Modern",
+				"title": "Six-Day War",
+				"description": "Israel captures West Bank, Gaza, and Golan Heights, unifying Jerusalem."
+			},
+			{
+				"year": "1995",
+				"era": "Modern",
+				"title": "Rabin Assassinated",
+				"description": "Peace process derailed by assassination of PM Yitzhak Rabin."
+			},
+			{
+				"year": "2023",
+				"era": "Modern",
+				"title": "Swords of Iron",
+				"description": "Outbreak of major war following Hamas invasion on October 7."
+			}
+		]
+	},
+	{
+		"name": "Saudi Arabia",
+		"overview": "The Kingdom of Saudi Arabia occupies most of the Arabian Peninsula and holds a unique status as the birthplace of Islam and the custodian of its two holiest sites, Mecca and Medina. Historically a patchwork of tribal alliances and trade routes, the region was united in the 20th century by the Al Saud family through a strategic alliance with the religious teachings of Muhammad ibn Abd al-Wahhab. The discovery of vast oil reserves in 1938 transformed the nation from a subsistence desert economy into one of the world's wealthiest countries and a geopolitical heavyweight. Saudi history is characterized by the balancing act between strict religious conservatism, tribal tradition, and rapid modernization. Under the recent Vision 2030 initiative, the Kingdom is undergoing profound social and economic changes, attempting to diversify beyond oil and liberalize aspects of society while maintaining absolute political control.",
+		"source": {
+			"label": "Wikipedia - History of Saudi Arabia",
+			"url": "https://en.wikipedia.org/wiki/History_of_Saudi_Arabia",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Saudi_Arabia",
+				"https://www.britannica.com/place/Saudi-Arabia",
+				"https://www.saudiembassy.net/history"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Kingdom Unified",
+				"value": "September 23, 1932"
+			},
+			{
+				"label": "Capital",
+				"value": "Riyadh"
+			},
+			{
+				"label": "Major Religion",
+				"value": "Islam (Sunni Majority)"
+			},
+			{
+				"label": "Oil Discovered",
+				"value": "March 3, 1938"
+			},
+			{
+				"label": "Currency",
+				"value": "Saudi Riyal (SAR)"
+			},
+			{
+				"label": "Key Sites",
+				"value": "Mecca, Medina, AlUla"
+			}
+		],
+		"ancient": {
+			"period": "Pre-history - 610 CE",
+			"description": "Before the rise of Islam, the Arabian Peninsula was home to nomadic Bedouin tribes and settled communities along trade routes connecting the Indian Ocean with the Mediterranean. Ancient civilizations flourished in specific regions, such as the Dilmun civilization in the east and the Nabataean Kingdom in the northwest, which carved the spectacular rock city of Hegra (Mada'in Salih). The south (near modern Yemen) saw powerful kingdoms like Saba controlling the frankincense trade. The interior, known as the Najd, remained largely isolated and dominated by tribal politics. The pre-Islamic period, often referred to in Islamic tradition as the 'Jahiliyyah' (Age of Ignorance), was characterized by polytheism, poetry, and a code of tribal honor and retaliation.",
+			"keyEvents": [
+				{
+					"year": "c. 3000 BCE",
+					"title": "Dilmun Civilization",
+					"description": "Eastern Arabia serves as a major trading hub between Mesopotamia and the Indus Valley."
+				},
+				{
+					"year": "c. 1st Century CE",
+					"title": "Nabataean Hegemony",
+					"description": "Nabataeans establish Hegra (Mada'in Salih) as a key southern outpost of their empire."
+				},
+				{
+					"year": "c. 400-600 CE",
+					"title": "Kindah Kingdom",
+					"description": "A tribal confederation in central Arabia attempts to unite various tribes, foreshadowing later unifications."
+				}
+			],
+			"notableFigures": ["Imru' al-Qais (Pre-Islamic poet)", "Hatim al-Tai (Symbol of generosity)"]
+		},
+		"medieval": {
+			"period": "610 - 1744",
+			"description": "The course of Arabian history changed forever in 610 CE when Muhammad received the first revelations of the Quran in Mecca. By the time of his death in 632, most of the peninsula had united under the banner of Islam. Under the Rashidun Caliphs, armies burst forth from Arabia to conquer vast territories. However, as the political center of the Islamic world shifted to Damascus (Umayyads) and then Baghdad (Abbasids), the Arabian Peninsula largely returned to tribal rule and isolation, retaining importance primarily due to the annual Hajj pilgrimage to Mecca. For centuries, the Holy Cities were governed by the Sharifs of Mecca, usually under the suzerainty of external empires like the Mamluks and later the Ottomans, while the interior (Najd) remained a lawless frontier of feuding emirates.",
+			"keyEvents": [
+				{
+					"year": "610",
+					"title": "Revelation of Islam",
+					"description": "Prophet Muhammad receives first revelations in the cave of Hira near Mecca."
+				},
+				{
+					"year": "622",
+					"title": "The Hijra",
+					"description": "Migration of Muhammad and his followers from Mecca to Medina, marking year 1 of the Islamic calendar."
+				},
+				{
+					"year": "630",
+					"title": "Conquest of Mecca",
+					"description": "Muhammad returns to Mecca, cleansing the Kaaba of idols and unifying the tribes."
+				},
+				{
+					"year": "1258",
+					"title": "Fall of Baghdad",
+					"description": "Mongol destruction of the Abbasid Caliphate leaves Arabia further isolated from central power."
+				},
+				{
+					"year": "1517",
+					"title": "Ottoman Suzerainty",
+					"description": "Ottomans defeat Mamluks and claim custodianship of Mecca and Medina, though direct control is limited to the Hejaz coast."
+				}
+			],
+			"notableFigures": ["Prophet Muhammad", "Abu Bakr", "Umar ibn al-Khattab"]
+		},
+		"pre-colonial": {
+			"period": "1744 - 1902",
+			"description": "The roots of the modern state lie in the 1744 pact between Muhammad bin Saud, a local emir in Diriyah, and Muhammad ibn Abd al-Wahhab, a religious reformer preaching a return to 'pure' Islam. This alliance created the First Saudi State, which rapidly conquered most of the peninsula, including Mecca, challenging Ottoman authority. The Ottomans dispatched Muhammad Ali of Egypt to crush the state, destroying its capital Diriyah in 1818. A Second Saudi State was established in Riyadh in 1824 but was plagued by internal family feuds and eventually fell to the rival Al Rashid clan in 1891, forcing the Al Saud family into exile in Kuwait. This era solidified the enduring bond between the Saudi royal family and the Wahhabi religious establishment.",
+			"keyEvents": [
+				{
+					"year": "1744",
+					"title": "Diriyah Pact",
+					"description": "Alliance formed between Muhammad bin Saud and Muhammad ibn Abd al-Wahhab, founding the First Saudi State."
+				},
+				{
+					"year": "1803",
+					"title": "Capture of Mecca",
+					"description": "Saudi forces capture the Holy City, purging shrines and challenging Ottoman legitimacy."
+				},
+				{
+					"year": "1818",
+					"title": "Destruction of Diriyah",
+					"description": "Ottoman-Egyptian forces under Ibrahim Pasha besiege and destroy the Saudi capital, ending the First State."
+				},
+				{
+					"year": "1824",
+					"title": "Second Saudi State",
+					"description": "Turki bin Abdullah recaptures Riyadh, establishing the Second Saudi State."
+				},
+				{
+					"year": "1891",
+					"title": "Battle of Mulayda",
+					"description": "The Al Rashid dynasty defeats the Al Saud, ending the Second State and forcing the family into exile."
+				}
+			],
+			"notableFigures": ["Muhammad bin Saud", "Muhammad ibn Abd al-Wahhab", "Ibrahim Pasha", "Turki bin Abdullah"]
+		},
+		"modern": {
+			"period": "1902 - Present",
+			"description": "The modern era began in 1902 when a young Abdulaziz (Ibn Saud) daringly recaptured Riyadh with a small band of followers. Over the next 30 years, he waged a campaign to unify the peninsula, defeating the Al Rashid in the north and the Hashemites in the Hejaz. The Kingdom of Saudi Arabia was proclaimed in 1932. The discovery of oil in 1938 fundamentally changed the nation's trajectory, forging a strategic partnership with the United States. Following Ibn Saud's death in 1953, the kingdom navigated the Cold War, the oil boom of the 1970s, and the rise of Islamist extremism (notably the 1979 Grand Mosque seizure). King Faisal (1964–1975) modernized the state bureaucracy. In recent years, under King Salman and Crown Prince Mohammed bin Salman, the Kingdom has embarked on 'Vision 2030,' an ambitious plan to diversify the economy, curb the power of the religious police, and loosen social restrictions (e.g., allowing women to drive), while maintaining a strict authoritarian political structure and asserting regional dominance.",
+			"keyEvents": [
+				{
+					"year": "1902",
+					"title": "Recapture of Riyadh",
+					"description": "Abdulaziz (Ibn Saud) scales the walls of Masmak Fort, retaking his ancestral capital."
+				},
+				{
+					"year": "1932",
+					"title": "Unification of the Kingdom",
+					"description": "September 23, the regions of Hejaz, Najd, and Al-Hasa are united as the Kingdom of Saudi Arabia."
+				},
+				{
+					"year": "1938",
+					"title": "Oil Discovery",
+					"description": "Commercial quantities of oil found at Dammam Well No. 7, transforming the economy."
+				},
+				{
+					"year": "1973",
+					"title": "Oil Embargo",
+					"description": "Saudi Arabia leads an oil embargo against Western backers of Israel during the Yom Kippur War, quadrupling oil prices."
+				},
+				{
+					"year": "1979",
+					"title": "Grand Mosque Seizure",
+					"description": "Extremists seize the Grand Mosque in Mecca; the subsequent crackdown leads to decades of increased social conservatism."
+				},
+				{
+					"year": "1990",
+					"title": "Gulf War",
+					"description": "King Fahd invites US troops to defend the Kingdom against Saddam Hussein, sparking Islamist backlash."
+				},
+				{
+					"year": "2015",
+					"title": "Yemen Intervention",
+					"description": "Saudi Arabia launches military operations against Houthi rebels in neighboring Yemen."
+				},
+				{
+					"year": "2018",
+					"title": "Women Right to Drive",
+					"description": "Ban on women driving is lifted as part of social liberalization reforms."
+				}
+			],
+			"notableFigures": ["King Abdulaziz (Ibn Saud)", "King Faisal", "King Fahd", "Mohammed bin Salman (MBS)"]
+		},
+		"timeline": [
+			{
+				"year": "610",
+				"era": "Medieval",
+				"title": "Birth of Islam",
+				"description": "Prophet Muhammad begins preaching Islam in Mecca."
+			},
+			{
+				"year": "1744",
+				"era": "Pre-Colonial",
+				"title": "Saudi-Wahhabi Pact",
+				"description": "Alliance establishing the political-religious foundation of the Saudi state."
+			},
+			{
+				"year": "1818",
+				"era": "Pre-Colonial",
+				"title": "Fall of Diriyah",
+				"description": "First Saudi State destroyed by Ottoman-Egyptian forces."
+			},
+			{
+				"year": "1902",
+				"era": "Modern",
+				"title": "Return of Al Saud",
+				"description": "Abdulaziz recaptures Riyadh, beginning the Third Saudi State."
+			},
+			{
+				"year": "1932",
+				"era": "Modern",
+				"title": "Kingdom Proclaimed",
+				"description": "Unification of the Kingdom of Saudi Arabia."
+			},
+			{
+				"year": "1938",
+				"era": "Modern",
+				"title": "Oil Era Begins",
+				"description": "Discovery of vast oil reserves marks the start of rapid modernization."
+			},
+			{
+				"year": "1975",
+				"era": "Modern",
+				"title": "King Faisal Assassinated",
+				"description": "King Faisal is killed by his nephew; succeeded by King Khalid."
+			},
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Desert Shield",
+				"description": "US troops deploy to Saudi Arabia following Iraq's invasion of Kuwait."
+			},
+			{
+				"year": "2016",
+				"era": "Modern",
+				"title": "Vision 2030",
+				"description": "Launch of strategic framework to reduce oil dependence and diversify economy."
+			}
+		]
 	}
 ]
