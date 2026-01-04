@@ -27504,5 +27504,1170 @@
 				"description": "Launch of strategic framework to reduce oil dependence and diversify economy."
 			}
 		]
-	}
+	},
+  {
+    "name": "Jordan",
+    "overview": "Jordan's history is a testament to its strategic position as a crossroads of civilization, where the desert meets the sown land. From the rose-red city of Petra carved by the Nabataeans to the Roman Decapolis cities, the region has been a vital conduit for trade and culture for millennia. Forming the heart of the Transjordan, it witnessed the rise of Ammon, Moab, and Edom, the clash of Crusaders and Islamic armies, and centuries of Ottoman rule. Under the leadership of the Hashemite dynasty, Jordan emerged from the British Mandate as a sovereign kingdom, navigating the turbulent geopolitics of the modern Middle East with a focus on stability and diplomacy. It remains a land of profound historical continuity, balancing its Bedouin heritage with modern development while hosting refugees from neighboring conflicts and guarding significant holy sites.",
+    "source": {
+      "label": "Wikipedia - History of Jordan",
+      "url": "https://en.wikipedia.org/wiki/History_of_Jordan",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Jordan",
+        "https://www.britannica.com/place/Jordan",
+        "https://kinghussein.gov.jo/history.html"
+      ]
+    },
+    "keyFacts": [
+      {
+        "label": "Independence",
+        "value": "May 25, 1946"
+      },
+      {
+        "label": "Capital",
+        "value": "Amman (ancient Rabbath Ammon)"
+      },
+      {
+        "label": "Government",
+        "value": "Constitutional Monarchy"
+      },
+      {
+        "label": "Name Origin",
+        "value": "From the Jordan River (Hebrew/Canaanite 'Yarad', to descend)"
+      },
+      {
+        "label": "UNESCO Sites",
+        "value": "6 World Heritage Sites (including Petra)"
+      },
+      {
+        "label": "Key Feature",
+        "value": "Dead Sea (Lowest point on Earth)"
+      }
+    ],
+    "ancient": {
+      "period": "c. 2000 BCE - 636 CE",
+      "description": "Ancient Jordan was the domain of the biblical kingdoms of Ammon, Moab, and Edom, which thrived along the King's Highway trade route. These Semitic kingdoms engaged in frequent conflicts and alliances with the Israelites and Assyrians. The most iconic civilization to emerge was the Nabataeans, nomadic traders who settled in the south and carved their spectacular capital, Petra, into sheer rock faces, mastering water engineering in the arid desert. They dominated the frankincense and spice trade until annexed by the Roman Empire in 106 CE. Under Rome, the region flourished as the province of Arabia Petraea; the Decapolis league of cities (including Gerasa/Jerash and Philadelphia/Amman) became centers of Hellenistic culture, commerce, and architecture. Christianity took root early here, with numerous Byzantine churches and mosaics (like the Madaba Map) dotting the landscape before the Islamic conquest.",
+      "keyEvents": [
+        {
+          "year": "c. 1200 BCE",
+          "title": "Iron Age Kingdoms",
+          "description": "Establishment of the Kingdoms of Ammon (Amman), Moab (central), and Edom (south)"
+        },
+        {
+          "year": "c. 312 BCE",
+          "title": "Rise of the Nabataeans",
+          "description": "Nabataeans establish Petra as their capital, controlling lucrative trade routes"
+        },
+        {
+          "year": "63 BCE",
+          "title": "Roman Conquest",
+          "description": "Pompey the Great conquers the region, establishing the Decapolis league of cities"
+        },
+        {
+          "year": "106 CE",
+          "title": "Annexation of Petra",
+          "description": "Roman Emperor Trajan annexes the Nabataean Kingdom, creating the province of Arabia Petraea"
+        }
+      ],
+      "notableFigures": [
+        "King Mesha (Moabite king)",
+        "Aretas IV (Nabataean king)",
+        "Hadrian (Roman Emperor who visited Jerash)"
+      ]
+    },
+    "medieval": {
+      "period": "636 - 1516",
+      "description": "The Battle of Yarmouk in 636 CE marked the transition to Islamic rule, with the region becoming part of the Bilad al-Sham province. The Umayyad Caliphs, ruling from nearby Damascus, favored the Jordanian steppe, building distinct 'desert castles' (Qasr Amra, Qasr Kharana) as hunting lodges and diplomatic meeting places. Following the shift of power to Baghdad under the Abbasids, the region's importance declined until the Crusader era. In the 12th century, Crusaders established the Lordship of Oultrejordain, building massive fortresses like Kerak and Shobak to control trade and pilgrimage routes. These castles became focal points of conflict between the Kingdom of Jerusalem and the Ayyubid forces of Saladin. After the expulsion of the Crusaders, the Mamluks of Egypt ruled the area, revitalizing the sugar industry in the Jordan Valley and fortifying castles against Mongol threats, though the region largely remained a tribal frontier.",
+      "keyEvents": [
+        {
+          "year": "636",
+          "title": "Battle of Yarmouk",
+          "description": "Decisive Muslim victory over Byzantine forces opens the Levant to Islamic rule"
+        },
+        {
+          "year": "c. 700-750",
+          "title": "Umayyad Desert Castles",
+          "description": "Construction of Qasr Amra and other desert retreats by Umayyad caliphs"
+        },
+        {
+          "year": "1115",
+          "title": "Crusader Expansion",
+          "description": "Baldwin I establishes the Lordship of Oultrejordain, building Montreal (Shobak) castle"
+        },
+        {
+          "year": "1187",
+          "title": "Battle of Hattin",
+          "description": "Saladin defeats Crusaders, leading to the recapture of Transjordanian castles"
+        },
+        {
+          "year": "1260",
+          "title": "Battle of Ain Jalut",
+          "description": "Mamluks defeat Mongol Ilkhanate, securing control over the region"
+        }
+      ],
+      "notableFigures": [
+        "Abu Ubaidah ibn al-Jarrah (Companion of the Prophet)",
+        "Reynald of Châtillon (Crusader Lord of Kerak)",
+        "Saladin (Ayyubid Sultan)"
+      ]
+    },
+    "imperial": {
+      "period": "1516 - 1918",
+      "description": "Following the Ottoman conquest of the Mamluks in 1516, Jordan became part of the Ottoman Empire for four centuries. For much of this period, Ottoman administration was loose, often limited to collecting taxes and securing the Hajj pilgrimage route to Mecca. The region was administratively divided but largely left to the governance of local Bedouin chieftains and prominent families. The 19th century saw attempts at centralization (Tanzimat reforms) and the settlement of Chechen and Circassian refugees by the Ottomans to bolster agriculture and security. A major modernization project was the Hejaz Railway (completed 1908), which connected Damascus to Medina through Jordan, facilitating pilgrimage and troop movements. During World War I, the Great Arab Revolt was launched from the region, with Hashemite forces led by Faisal and supported by T.E. Lawrence attacking Ottoman garrisons and blowing up the railway, ending centuries of Ottoman dominion.",
+      "keyEvents": [
+        {
+          "year": "1516",
+          "title": "Ottoman Conquest",
+          "description": "Selim I defeats Mamluks, incorporating Jordan into the Ottoman Empire"
+        },
+        {
+          "year": "1900-1908",
+          "title": "Hejaz Railway",
+          "description": "Construction of the railway linking Damascus and Medina, passing through Amman and Ma'an"
+        },
+        {
+          "year": "1916",
+          "title": "Great Arab Revolt",
+          "description": "Sharif Hussein bin Ali launches revolt against Ottoman rule; forces move north through Jordan"
+        },
+        {
+          "year": "1917",
+          "title": "Battle of Aqaba",
+          "description": "Arab forces and T.E. Lawrence capture the strategic port of Aqaba from Ottomans"
+        }
+      ],
+      "notableFigures": [
+        "Sharif Hussein bin Ali",
+        "Auda ibu Tayi (Bedouin leader)",
+        "Faisal I of Iraq"
+      ]
+    },
+    "colonial": {
+      "period": "1921 - 1946",
+      "description": "Following the collapse of the Ottoman Empire and the partitioning of the Middle East, the Emirate of Transjordan was established in 1921 under the British Mandate. Abdullah I, a son of Sharif Hussein, arrived in Ma'an and was recognized by the British as Emir, effectively separating the region's administration from Palestine west of the river. This period was characterized by state-building under British tutelage. The Arab Legion was formed as a disciplined military force, originally to police the desert borders and curb tribal raiding. British officials like John Bagot Glubb played significant roles in training the military. While the mandate provided a framework for development, there was constant pressure for full independence. The Emirate remained relatively stable during the upheavals in neighboring Palestine, establishing the foundations of the modern Jordanian state.",
+      "keyEvents": [
+        {
+          "year": "1921",
+          "title": "Emirate Established",
+          "description": "Abdullah I establishes the Emirate of Transjordan under British supervision"
+        },
+        {
+          "year": "1923",
+          "title": "Autonomy Recognized",
+          "description": "Britain recognizes Transjordan as a national state preparing for independence"
+        },
+        {
+          "year": "1928",
+          "title": "Organic Law",
+          "description": "First constitution (Organic Law) promulgated, defining the powers of the Emir and council"
+        }
+      ],
+      "notableFigures": [
+        "Emir Abdullah I",
+        "John Bagot Glubb (Glubb Pasha)"
+      ]
+    },
+    "modern": {
+      "period": "1946 - Present",
+      "description": "Jordan gained full independence as the Hashemite Kingdom of Jordan in 1946. The subsequent decades were defined by the Arab-Israeli conflict. King Abdullah I was assassinated in 1951, and after a brief reign by Talal, King Hussein ascended the throne in 1952, ruling for nearly 50 years. Jordan participated in the 1948 War, after which it annexed the West Bank, and the 1967 Six-Day War, resulting in the loss of the West Bank to Israel and a massive influx of Palestinian refugees. Internal stability was threatened during 'Black September' (1970) when the monarchy clashed with PLO militants. King Hussein navigated these crises with political agility, eventually renouncing claims to the West Bank in 1988 to support Palestinian self-determination and signing a peace treaty with Israel in 1994. Under King Abdullah II (since 1999), Jordan has focused on economic modernization and maintaining security amidst regional turmoil, including the Iraq War and the Syrian Civil War, which brought waves of refugees, further straining resources but highlighting Jordan's resilience.",
+      "keyEvents": [
+        {
+          "year": "1946",
+          "title": "Independence",
+          "description": "Treaty of London grants full independence; Abdullah I becomes King"
+        },
+        {
+          "year": "1948",
+          "title": "Arab-Israeli War",
+          "description": "Jordanian Arab Legion fights in Palestine; Jordan occupies and later annexes the West Bank"
+        },
+        {
+          "year": "1967",
+          "title": "Six-Day War",
+          "description": "Israel captures the West Bank and East Jerusalem from Jordan; massive refugee influx"
+        },
+        {
+          "year": "1970",
+          "title": "Black September",
+          "description": "Civil conflict between Jordanian Armed Forces and PLO militants ends in PLO expulsion"
+        },
+        {
+          "year": "1994",
+          "title": "Peace Treaty",
+          "description": "Jordan signs peace treaty with Israel, ending state of war"
+        },
+        {
+          "year": "1999",
+          "title": "Succession",
+          "description": "King Hussein dies; King Abdullah II ascends to the throne"
+        },
+        {
+          "year": "2005",
+          "title": "Amman Bombings",
+          "description": "Terrorist attacks on hotels in Amman shock the nation; crackdown on extremism follows"
+        }
+      ],
+      "notableFigures": [
+        "King Hussein bin Talal",
+        "King Abdullah II",
+        "Queen Rania",
+        "Wasfi Tal"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "c. 300 BCE",
+        "era": "Ancient",
+        "title": "Petra Flourishes",
+        "description": "Nabataeans establish Petra as a major trade hub"
+      },
+      {
+        "year": "106 CE",
+        "era": "Ancient",
+        "title": "Roman Annexation",
+        "description": "Region becomes Roman province of Arabia Petraea"
+      },
+      {
+        "year": "1516",
+        "era": "Imperial",
+        "title": "Ottoman Rule",
+        "description": "Jordan incorporated into Ottoman Empire"
+      },
+      {
+        "year": "1916",
+        "era": "Imperial",
+        "title": "Arab Revolt",
+        "description": "Great Arab Revolt begins against Ottoman rule"
+      },
+      {
+        "year": "1921",
+        "era": "Colonial",
+        "title": "Emirate Created",
+        "description": "Emirate of Transjordan established under Abdullah I"
+      },
+      {
+        "year": "1946",
+        "era": "Modern",
+        "title": "Kingdom Founded",
+        "description": "Full independence declared as Hashemite Kingdom of Jordan"
+      },
+      {
+        "year": "1994",
+        "era": "Modern",
+        "title": "Peace with Israel",
+        "description": "Treaty normalizes relations and sets borders"
+      }
+    ]
+  },
+  {
+    "name": "Lebanon",
+    "overview": "Lebanon's history is shaped by its rugged mountain terrain and Mediterranean coast, which created a sanctuary for diverse religious minorities and a hub for maritime commerce. Home to the ancient Phoenicians, the creators of the alphabet and master seafarers, the land has always looked outward. Throughout history, Mount Lebanon provided refuge for Maronite Christians and Druze communities who developed a unique culture of autonomy. The region flourished as a bridge between East and West, often called the 'Switzerland of the East' for its banking and 'Paris of the Middle East' for its culture in the mid-20th century. However, its complex sectarian makeup has also made it a theater for conflict, most notably the devastating Civil War (1975-1990). Despite invasions, occupations, and economic crises, Lebanon maintains a vibrant, resilient identity defined by pluralism and cultural richness.",
+    "source": {
+      "label": "Wikipedia - History of Lebanon",
+      "url": "https://en.wikipedia.org/wiki/History_of_Lebanon",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Lebanon",
+        "https://www.britannica.com/place/Lebanon",
+        "https://www.diplomatie.gouv.fr/en/country-files/lebanon/"
+      ]
+    },
+    "keyFacts": [
+      {
+        "label": "Independence",
+        "value": "November 22, 1943"
+      },
+      {
+        "label": "Capital",
+        "value": "Beirut"
+      },
+      {
+        "label": "Name Origin",
+        "value": "Semitic 'Laban' (White), referring to snow-capped mountains"
+      },
+      {
+        "label": "Ancient Identity",
+        "value": "Home of the Phoenicians"
+      },
+      {
+        "label": "UNESCO Sites",
+        "value": "5 World Heritage Sites (including Baalbek and Byblos)"
+      },
+      {
+        "label": "Symbol",
+        "value": "Cedar of Lebanon"
+      }
+    ],
+    "ancient": {
+      "period": "c. 3000 BCE - 636 CE",
+      "description": "Lebanon was the home of the Phoenicians, a maritime civilization based in city-states like Byblos, Sidon, and Tyre. They dominated Mediterranean trade, founded Carthage, and revolutionized communication by inventing the phonetic alphabet. The region's cedar forests were prized by neighbors like Egypt and Mesopotamia for shipbuilding and temple construction. Following Phoenician dominance, the region was conquered by a succession of empires: Assyrian, Babylonian, Persian, and Alexander the Great. Under Roman rule, the region prospered; the city of Berytus (Beirut) became famous for its law school, and the colossal temple complex at Baalbek (Heliopolis) was constructed, remaining one of the best-preserved Roman sites in the world. Christianity arrived early, with biblical references to Jesus visiting the region of Tyre and Sidon.",
+      "keyEvents": [
+        {
+          "year": "c. 1200 BCE",
+          "title": "Phoenician Peak",
+          "description": "Phoenician city-states dominate Mediterranean trade and spread the alphabet"
+        },
+        {
+          "year": "332 BCE",
+          "title": "Siege of Tyre",
+          "description": "Alexander the Great conquers the island city of Tyre after a seven-month siege"
+        },
+        {
+          "year": "64 BCE",
+          "title": "Roman Conquest",
+          "description": "Pompey incorporates the region into the Roman province of Syria"
+        },
+        {
+          "year": "c. 200 CE",
+          "title": "Beirut Law School",
+          "description": "Establishment of the famous Roman law school in Berytus"
+        }
+      ],
+      "notableFigures": [
+        "Hiram I (King of Tyre)",
+        "Euclid of Tyre (Mathematician)",
+        "Ulpian (Roman Jurist)"
+      ]
+    },
+    "medieval": {
+      "period": "636 - 1516",
+      "description": "The Islamic conquest brought the Arabic language and Islam, though the rugged Mount Lebanon range remained a haven for minority groups. The Maronites, an Eastern Christian sect, established a stronghold in the northern mountains, while the Druze, an offshoot of Ismaili Islam, settled in the south. During the Crusades, the coast became part of the County of Tripoli and the Kingdom of Jerusalem. The Maronites established ties with the Crusaders (and later the Vatican), beginning a long relationship with the West. The Mamluks eventually expelled the Crusaders in the late 13th century. Mamluk rule saw the flourishing of Tripoli and trade, but the distinct demography of the mountain meant local chieftains retained significant autonomy compared to the coastal cities.",
+      "keyEvents": [
+        {
+          "year": "c. 685",
+          "title": "Maronite Settlement",
+          "description": "Followers of Saint Maron seek refuge in Mount Lebanon, establishing a distinct community"
+        },
+        {
+          "year": "1020s",
+          "title": "Druze Emergence",
+          "description": "Druze faith emerges and followers settle in the Shouf mountains"
+        },
+        {
+          "year": "1109",
+          "title": "Crusader Conquest",
+          "description": "Crusaders capture Tripoli, establishing the County of Tripoli"
+        },
+        {
+          "year": "1291",
+          "title": "Mamluk Conquest",
+          "description": "Mamluks capture remaining Crusader outposts, ending Crusader presence"
+        }
+      ],
+      "notableFigures": [
+        "Saint Maron",
+        "Raymond IV of Toulouse"
+      ]
+    },
+    "imperial": {
+      "period": "1516 - 1918",
+      "description": "Under the Ottoman Empire, Lebanon enjoyed a unique status. The mountainous terrain allowed local dynasties like the Ma'ans and later the Shihabs to rule with high autonomy, paying tribute to the Sultan but governing internally. Fakhreddine II (17th century) is often considered the father of modern Lebanon, as he united much of the territory and encouraged trade with Tuscany and Europe. In the 19th century, Bashir Shihab II further consolidated power. However, tensions between the Druze and Maronites exploded in the 1840s and 1860, leading to European intervention. Consequently, the Ottomans created the 'Mutasarrifate of Mount Lebanon' in 1861, an autonomous Christian-majority district guaranteed by European powers. This period saw a cultural renaissance (Nahda) and massive emigration to the Americas due to economic hardship and the Great Famine during WWI.",
+      "keyEvents": [
+        {
+          "year": "1516",
+          "title": "Ottoman Rule Begins",
+          "description": "Ottomans defeat Mamluks; local feudal system remains largely intact"
+        },
+        {
+          "year": "1590-1635",
+          "title": "Reign of Fakhreddine II",
+          "description": "Druze Emir expands territory and builds ties with Europe, creating a proto-state"
+        },
+        {
+          "year": "1860",
+          "title": "Civil Conflict",
+          "description": "Sectarian conflict between Druze and Maronites leads to French military intervention"
+        },
+        {
+          "year": "1861",
+          "title": "Mutasarrifate Established",
+          "description": "Creation of autonomous Mount Lebanon district under Ottoman suzerainty"
+        },
+        {
+          "year": "1915-1918",
+          "title": "Great Famine",
+          "description": "WWI blockade and locusts cause famine killing nearly half the population of Mount Lebanon"
+        }
+      ],
+      "notableFigures": [
+        "Fakhreddine II",
+        "Bashir Shihab II",
+        "Youssef Bey Karam"
+      ]
+    },
+    "colonial": {
+      "period": "1920 - 1943",
+      "description": "After World War I, the League of Nations granted France a mandate over Syria and Lebanon. In 1920, General Gouraud proclaimed the State of Greater Lebanon, expanding the borders of the old Mutasarrifate to include Beirut, the Bekaa Valley, and coastal cities (Tripoli, Sidon, Tyre), significantly altering the demographic balance by adding large Muslim populations to the Christian-majority mountain. The 1926 Constitution established a parliamentary republic but enshrined a confessional system where power was distributed among religious sects (President as Maronite, Prime Minister as Sunni, Speaker as Shia) to maintain balance. This period saw Beirut develop rapidly as a cosmopolitan center, though tensions over national identity—between Arabism and Lebanese nationalism—persisted.",
+      "keyEvents": [
+        {
+          "year": "1920",
+          "title": "Greater Lebanon Proclaimed",
+          "description": "September 1, France establishes Greater Lebanon with present-day borders"
+        },
+        {
+          "year": "1926",
+          "title": "Republic Declared",
+          "description": "Constitution adopted establishing the Lebanese Republic under French Mandate"
+        },
+        {
+          "year": "1943",
+          "title": "National Pact",
+          "description": "Unwritten agreement establishing the sectarian power-sharing system"
+        }
+      ],
+      "notableFigures": [
+        "General Henri Gouraud",
+        "Bishara al-Khuri",
+        "Riad al-Solh"
+      ]
+    },
+    "modern": {
+      "period": "1943 - Present",
+      "description": "Lebanon gained independence in 1943. Until the mid-1970s, it flourished as a financial and cultural hub. However, regional conflicts and internal sectarian imbalances strained the fragile state. The influx of Palestinian refugees after 1948 and 1967, and the PLO's use of Lebanon as a base, exacerbated tensions. In 1975, a brutal Civil War erupted, lasting 15 years and involving local militias, Palestinian forces, Syria, and Israel. The war ended with the Taif Agreement (1989), which adjusted the power-sharing formula. Post-war reconstruction under Rafic Hariri rebuilt Beirut, but the country remained under Syrian occupation until the 2005 Cedar Revolution, sparked by Hariri's assassination. Since then, Lebanon has faced political paralysis, war with Israel (2006), spillover from the Syrian Civil War, and a catastrophic economic collapse beginning in 2019, compounded by the 2020 Beirut port explosion.",
+      "keyEvents": [
+        {
+          "year": "1943",
+          "title": "Independence",
+          "description": "End of French Mandate; Lebanon becomes a sovereign state"
+        },
+        {
+          "year": "1958",
+          "title": "Lebanon Crisis",
+          "description": "Political crisis leads to brief US military intervention to stabilize government"
+        },
+        {
+          "year": "1975-1990",
+          "title": "Civil War",
+          "description": "Devastating sectarian conflict involving internal and external actors kills roughly 120,000"
+        },
+        {
+          "year": "1982",
+          "title": "Israeli Invasion",
+          "description": "Israel invades to expel PLO; occupation of south continues until 2000"
+        },
+        {
+          "year": "2005",
+          "title": "Cedar Revolution",
+          "description": "Mass protests following Rafic Hariri's assassination force Syrian troop withdrawal"
+        },
+        {
+          "year": "2006",
+          "title": "July War",
+          "description": "Month-long war between Hezbollah and Israel causes heavy damage"
+        },
+        {
+          "year": "2020",
+          "title": "Beirut Port Explosion",
+          "description": "August 4, massive explosion at Beirut port devastates the capital"
+        }
+      ],
+      "notableFigures": [
+        "Camille Chamoun",
+        "Bachir Gemayel",
+        "Rafic Hariri",
+        "Fairuz (Cultural icon)"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "c. 1000 BCE",
+        "era": "Ancient",
+        "title": "Phoenician Dominance",
+        "description": "Tyre and Sidon lead Mediterranean trade"
+      },
+      {
+        "year": "64 BCE",
+        "era": "Ancient",
+        "title": "Roman Rule",
+        "description": "Pompey conquers the region for Rome"
+      },
+      {
+        "year": "1516",
+        "era": "Imperial",
+        "title": "Ottoman Conquest",
+        "description": "Lebanon becomes part of Ottoman Empire"
+      },
+      {
+        "year": "1861",
+        "era": "Imperial",
+        "title": "Mutasarrifate",
+        "description": "Mount Lebanon gains autonomous status"
+      },
+      {
+        "year": "1920",
+        "era": "Colonial",
+        "title": "Greater Lebanon",
+        "description": "France establishes modern borders"
+      },
+      {
+        "year": "1943",
+        "era": "Modern",
+        "title": "Independence",
+        "description": "Lebanon gains independence from France"
+      },
+      {
+        "year": "1975",
+        "era": "Modern",
+        "title": "Civil War Begins",
+        "description": "Start of 15-year civil war"
+      },
+      {
+        "year": "2005",
+        "era": "Modern",
+        "title": "Syrian Withdrawal",
+        "description": "End of 29-year Syrian occupation"
+      }
+    ]
+  },
+  {
+    "name": "Nepal",
+    "overview": "Nepal's history is a saga of resilience and independence, characterized by its unique position as a sovereign Himalayan buffer state that was never colonized. From the ancient civilizations of the Kathmandu Valley to the birth of Lord Buddha in Lumbini, Nepal has been a center of spiritual and cultural synthesis. The nation's identity was forged through the unification campaigns of the Shah dynasty and preserved during the isolationist Rana oligarchy. Transitioning from a feudal monarchy to a federal democratic republic, Nepal has navigated civil war, dramatic political upheavals, and natural disasters, while maintaining a diverse tapestry of ethnicity, language, and the enduring heritage of the Himalayas.",
+    "source": {
+      "label": "Wikipedia - History of Nepal",
+      "url": "https://en.wikipedia.org/wiki/History_of_Nepal",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Nepal",
+        "https://www.britannica.com/place/Nepal/History",
+        "https://cn.nepalembassy.gov.np/pages/history-of-nepal/"
+      ]
+    },
+    "keyFacts": [
+      {
+        "label": "Unification",
+        "value": "September 25, 1768"
+      },
+      {
+        "label": "Republic Declared",
+        "value": "May 28, 2008"
+      },
+      {
+        "label": "Capital",
+        "value": "Kathmandu"
+      },
+      {
+        "label": "Highest Peak",
+        "value": "Mt. Everest (8,848.86m)"
+      },
+      {
+        "label": "Religion",
+        "value": "Predominantly Hindu, significant Buddhist minority"
+      },
+      {
+        "label": "Constitution",
+        "value": "Adopted September 20, 2015"
+      }
+    ],
+    "ancient": {
+      "period": "c. 1500 BCE - 750 CE",
+      "description": "The ancient history of Nepal centers on the Kathmandu Valley, a fertile lake-bed that attracted early settlers including the Gopalas and Mahishapalas. The Kirat dynasty, ruling from around 800 BCE, marks the beginning of recorded history, during which Buddhism began to take root following the birth of Siddhartha Gautama in Lumbini. The subsequent Licchavi period (c. 400–750 CE) is often termed a 'Golden Age' for its renaissance in art, architecture, and trade. Rulers like Amshuverma fostered close ties with Tibet and China, facilitating the exchange of culture and the spread of Buddhism across the Himalayas. The Changu Narayan Temple, dating to this era, stands as a testament to the sophisticated craftsmanship of early Nepalese civilization.",
+      "keyEvents": [
+        {
+          "year": "c. 563 BCE",
+          "title": "Birth of Buddha",
+          "description": "Siddhartha Gautama is born in the gardens of Lumbini, establishing the region as a sacred pilgrimage site"
+        },
+        {
+          "year": "c. 250 BCE",
+          "title": "Emperor Ashoka's Visit",
+          "description": "Mauryan Emperor Ashoka visits Lumbini and the Kathmandu Valley, erecting pillars and stupas"
+        },
+        {
+          "year": "c. 400 CE",
+          "title": "Rise of Licchavis",
+          "description": "The Licchavi dynasty establishes control, ushering in an era of prosperity, Sanskrit learning, and stone architecture"
+        },
+        {
+          "year": "641 CE",
+          "title": "Marriage of Bhrikuti",
+          "description": "Princess Bhrikuti marries Tibetan King Songtsen Gampo, instrumental in spreading Buddhism to Tibet"
+        }
+      ],
+      "notableFigures": [
+        "Siddhartha Gautama (The Buddha)",
+        "Yalamber (First Kirat King)",
+        "Amshuverma (Licchavi ruler)",
+        "Manadeva (First historically authenticated King)"
+      ]
+    },
+    "medieval": {
+      "period": "750 - 1768",
+      "description": "The Medieval period was dominated by the Malla Dynasty, which ruled the Kathmandu Valley from the 12th to the 18th century. This era saw the flowering of Newar culture, known for its exquisite woodcarving, metalwork, and pagoda-style architecture. Following the death of Yaksha Malla in 1482, the valley fractured into three rival city-states: Kathmandu, Patan, and Bhaktapur. This competition, while politically destabilizing, fueled a cultural renaissance as each kingdom vied to build the most magnificent Durbar Squares and temples. Outside the valley, the region was a patchwork of small principalities known as the Baise (22) and Chaubise (24) rajyas, constantly shifting alliances until the rise of the House of Gorkha.",
+      "keyEvents": [
+        {
+          "year": "1200",
+          "title": "Malla Dynasty Begins",
+          "description": "Ari Malla establishes the dynasty that would define the cultural landscape of the valley"
+        },
+        {
+          "year": "1382",
+          "title": "Jayasthiti Malla's Rule",
+          "description": "Codification of social and caste laws, restructuring society and stabilizing the kingdom"
+        },
+        {
+          "year": "1482",
+          "title": "Division of the Valley",
+          "description": "The kingdom splits into three autonomous states: Kathmandu, Patan, and Bhaktapur"
+        },
+        {
+          "year": "1559",
+          "title": "Establishment of Gorkha",
+          "description": "Dravya Shah conquers Gorkha, establishing the Shah dynasty that would later unify Nepal"
+        }
+      ],
+      "notableFigures": [
+        "Jayasthiti Malla",
+        "Pratap Malla",
+        "Dravya Shah"
+      ]
+    },
+    "feudal": {
+      "period": "1768 - 1951",
+      "description": "This era is defined by the unification of Nepal and the subsequent century of isolation under the Rana oligarchy. Prithvi Narayan Shah of Gorkha conquered the Kathmandu Valley in 1768, founding modern Nepal. The expansionist state eventually clashed with the British East India Company, leading to the Anglo-Nepalese War and the Treaty of Sugauli (1816), which established Nepal's current boundaries. In 1846, the bloody Kot Massacre transferred power to Jung Bahadur Rana, who established a hereditary prime ministership. The Shah kings were reduced to figureheads while the Ranas ruled with absolute authority, keeping Nepal isolated from the world to preserve their power while maintaining independence from the British Raj.",
+      "keyEvents": [
+        {
+          "year": "1768",
+          "title": "Unification",
+          "description": "Prithvi Narayan Shah conquers Kathmandu during the festival of Indra Jatra, unifying the valley"
+        },
+        {
+          "year": "1814-1816",
+          "title": "Anglo-Nepalese War",
+          "description": "Conflict with the British East India Company ends with the Sugauli Treaty, ceding territory but preserving sovereignty"
+        },
+        {
+          "year": "1846",
+          "title": "Kot Massacre",
+          "description": "Jung Bahadur Rana orchestrates the killing of courtiers, seizing absolute power and starting the Rana regime"
+        },
+        {
+          "year": "1923",
+          "title": "Friendship Treaty",
+          "description": "Treaty with Britain formally recognizes Nepal's independence and sovereignty internationally"
+        }
+      ],
+      "notableFigures": [
+        "Prithvi Narayan Shah",
+        "Bhimsen Thapa",
+        "Jung Bahadur Rana",
+        "Chandra Shumsher"
+      ]
+    },
+    "modern": {
+      "period": "1951 - Present",
+      "description": "Modern Nepal began with the 1951 revolution that overthrew the Rana regime and restored the Shah monarchy. Experiments with democracy were cut short by King Mahendra's imposition of the partyless Panchayat system in 1960. A People's Movement (Jana Andolan) in 1990 restored multiparty democracy, but political instability persisted. In 1996, the Maoist insurgency began a decade-long civil war that claimed thousands of lives. The conflict ended with a peace accord in 2006, leading to the abolition of the monarchy in 2008. Nepal is now a Federal Democratic Republic, striving to implement its 2015 constitution while rebuilding from the devastating 2015 earthquake and navigating complex geopolitics.",
+      "keyEvents": [
+        {
+          "year": "1951",
+          "title": "Fall of Ranas",
+          "description": "King Tribhuvan and the Nepali Congress end Rana rule, opening Nepal to the world"
+        },
+        {
+          "year": "1996",
+          "title": "Maoist Insurgency",
+          "description": "Launch of the 'People's War' by the CPN-Maoist, initiating a decade of civil conflict"
+        },
+        {
+          "year": "2001",
+          "title": "Royal Massacre",
+          "description": "Crown Prince Dipendra kills King Birendra and family members, shocking the nation and weakening the monarchy"
+        },
+        {
+          "year": "2008",
+          "title": "Republic Declared",
+          "description": "Constituent Assembly abolishes the 240-year-old monarchy, declaring Nepal a republic"
+        },
+        {
+          "year": "2015",
+          "title": "Gorkha Earthquake",
+          "description": "7.8 magnitude earthquake devastates central Nepal; new Constitution promulgated later that year"
+        }
+      ],
+      "notableFigures": [
+        "King Mahendra",
+        "B.P. Koirala",
+        "Prachanda (Pushpa Kamal Dahal)",
+        "Pasang Lhamu Sherpa"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "c. 563 BCE",
+        "era": "Ancient",
+        "title": "Birth of Buddha",
+        "description": "Siddhartha Gautama born in Lumbini"
+      },
+      {
+        "year": "1768",
+        "era": "Feudal",
+        "title": "Unification",
+        "description": "Prithvi Narayan Shah establishes the Kingdom of Nepal"
+      },
+      {
+        "year": "1846",
+        "era": "Feudal",
+        "title": "Rana Regime Begins",
+        "description": "Jung Bahadur Rana seizes power after Kot Massacre"
+      },
+      {
+        "year": "1951",
+        "era": "Modern",
+        "title": "Democracy Intro",
+        "description": "End of Rana rule, restoration of Shah monarchy"
+      },
+      {
+        "year": "2008",
+        "era": "Modern",
+        "title": "Monarchy Abolished",
+        "description": "Nepal becomes a Federal Democratic Republic"
+      }
+    ]
+  },
+  {
+    "name": "Sri Lanka",
+    "overview": "Sri Lanka, historically known as Ceylon, possesses a rich history shaped by its strategic location in the Indian Ocean. From the hydraulic civilization of Anuradhapura and the introduction of Buddhism, the island developed a sophisticated culture that endured for millennia. Its immense natural wealth in spices and gems attracted Portuguese, Dutch, and British colonizers, each leaving a lasting imprint on the island's laws, religion, and economy. Following independence in 1948, the nation grappled with ethnic tensions that culminated in a brutal 26-year civil war. Today, Sri Lanka is a multicultural republic working towards reconciliation and economic stability, celebrated for its biodiversity and heritage.",
+    "source": {
+      "label": "Wikipedia - History of Sri Lanka",
+      "url": "https://en.wikipedia.org/wiki/History_of_Sri_Lanka",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Sri_Lanka",
+        "https://www.britannica.com/place/Sri-Lanka/History",
+        "https://www.insightguides.com/destinations/asia-pacific/sri-lanka/historical-highlights"
+      ]
+    },
+    "keyFacts": [
+      {
+        "label": "Independence",
+        "value": "February 4, 1948"
+      },
+      {
+        "label": "Commercial Capital",
+        "value": "Colombo"
+      },
+      {
+        "label": "Civil War",
+        "value": "1983 - 2009"
+      },
+      {
+        "label": "Former Name",
+        "value": "Ceylon (until 1972)"
+      },
+      {
+        "label": "Major Export",
+        "value": "Tea (Ceylon Tea)"
+      },
+      {
+        "label": "Currency",
+        "value": "Sri Lankan Rupee (LKR)"
+      }
+    ],
+    "ancient": {
+      "period": "c. 543 BCE - 1232 CE",
+      "description": "The ancient period is defined by the great Kingdom of Anuradhapura, characterized by advanced hydraulic engineering and the profound influence of Buddhism. According to the Mahavamsa chronicle, Prince Vijaya arrived from India in the 6th century BCE, establishing the Sinhalese people. Buddhism was introduced in the 3rd century BCE by Mahinda, son of Emperor Ashoka, fundamentally shaping the island's culture. Kings constructed massive reservoirs (tanks) and dagobas (stupas) that rivaled the pyramids in scale. The period saw frequent interactions and conflicts with South Indian dynasties, leading to the eventual shift of the capital to Polonnaruwa, which flourished briefly with spectacular architecture before declining due to invasions and malaria.",
+      "keyEvents": [
+        {
+          "year": "c. 377 BCE",
+          "title": "Anuradhapura Established",
+          "description": "King Pandukabhaya establishes Anuradhapura as the capital"
+        },
+        {
+          "year": "247 BCE",
+          "title": "Arrival of Buddhism",
+          "description": "Mahinda Thera introduces Buddhism; King Devanampiya Tissa converts"
+        },
+        {
+          "year": "205-161 BCE",
+          "title": "Elara and Dutugemunu",
+          "description": "Chola King Elara rules until defeated by Sinhalese hero King Dutugemunu, who unifies the island"
+        },
+        {
+          "year": "477 CE",
+          "title": "Sigiriya Built",
+          "description": "King Kashyapa builds the spectacular rock fortress and palace at Sigiriya"
+        }
+      ],
+      "notableFigures": [
+        "King Devanampiya Tissa",
+        "King Dutugemunu",
+        "King Parakramabahu I",
+        "Mahinda Thera"
+      ]
+    },
+    "colonial": {
+      "period": "1505 - 1948",
+      "description": "Sri Lanka's colonial era began with the accidental arrival of the Portuguese in 1505, who sought to control the lucrative cinnamon trade. They established control over coastal areas and introduced Catholicism. The Dutch ousted the Portuguese in 1658, leaving a legacy of Roman-Dutch law, canals, and the Burgher community, though they failed to conquer the interior Kingdom of Kandy. The British arrived in 1796, displacing the Dutch, and eventually conquered the entire island by 1815 with the fall of Kandy, unifying the administration. The British developed a plantation economy (coffee, then tea and rubber), built railways, and introduced English education, setting the stage for a modern, albeit stratified, state.",
+      "keyEvents": [
+        {
+          "year": "1505",
+          "title": "Portuguese Arrival",
+          "description": "Lorenço de Almeida arrives, beginning European influence in coastal regions"
+        },
+        {
+          "year": "1658",
+          "title": "Dutch Control",
+          "description": "Dutch East India Company (VOC) expels Portuguese and dominates trade"
+        },
+        {
+          "year": "1815",
+          "title": "Fall of Kandy",
+          "description": "British sign the Kandyan Convention, deposing the last king and unifying the island"
+        },
+        {
+          "year": "1833",
+          "title": "Colebrooke-Cameron Reforms",
+          "description": "Establishment of a modern administrative and judicial framework"
+        }
+      ],
+      "notableFigures": [
+        "King Rajasinha II",
+        "Keppetipola Disawe",
+        "Don Stephen Senanayake",
+        "Anagarika Dharmapala"
+      ]
+    },
+    "modern": {
+      "period": "1948 - Present",
+      "description": "Since gaining independence in 1948, Sri Lanka has faced the challenge of building a unified national identity. Early politics were dominated by the English-speaking elite, but the 1956 election of S.W.R.D. Bandaranaike marked a shift toward Sinhala nationalism, alienating the Tamil minority. Tensions escalated into a full-scale Civil War in 1983 between the government and the Liberation Tigers of Tamil Eelam (LTTE). The brutal conflict lasted nearly three decades, ending in 2009 with the government's military victory. Post-war Sri Lanka has focused on reconstruction and tourism, though it has faced severe tests, including the 2004 Tsunami, the 2019 Easter bombings, and a crippling economic crisis in 2022 that led to mass protests and political transition.",
+      "keyEvents": [
+        {
+          "year": "1948",
+          "title": "Independence",
+          "description": "Ceylon becomes an independent Dominion within the Commonwealth"
+        },
+        {
+          "year": "1956",
+          "title": "Sinhala Only Act",
+          "description": "Official language policy marginalizes Tamil speakers, sowing seeds of ethnic conflict"
+        },
+        {
+          "year": "1972",
+          "title": "Republic of Sri Lanka",
+          "description": "New constitution adopted; country renamed from Ceylon to Sri Lanka"
+        },
+        {
+          "year": "1983",
+          "title": "Black July",
+          "description": "Anti-Tamil pogroms trigger the start of the 26-year Civil War"
+        },
+        {
+          "year": "2004",
+          "title": "Indian Ocean Tsunami",
+          "description": "Devastating waves kill over 30,000 people and displace hundreds of thousands"
+        },
+        {
+          "year": "2009",
+          "title": "End of Civil War",
+          "description": "Military defeat of the LTTE and death of its leader Prabhakaran ends the conflict"
+        },
+        {
+          "year": "2022",
+          "title": "Economic Crisis & Protests",
+          "description": "Severe economic collapse leads to 'Aragalaya' protests and resignation of President Rajapaksa"
+        }
+      ],
+      "notableFigures": [
+        "Sirimavo Bandaranaike (First female PM in the world)",
+        "J.R. Jayewardene",
+        "Velupillai Prabhakaran",
+        "Mahinda Rajapaksa"
+      ]
+    },
+    "timeline": [
+      {
+        "year": "247 BCE",
+        "era": "Ancient",
+        "title": "Buddhism Arrives",
+        "description": "Mahinda Thera converts King Devanampiya Tissa"
+      },
+      {
+        "year": "1505",
+        "era": "Colonial",
+        "title": "Portuguese Contact",
+        "description": "First European colonial power establishes presence"
+      },
+      {
+        "year": "1815",
+        "era": "Colonial",
+        "title": "British Unification",
+        "description": "Entire island comes under British rule"
+      },
+      {
+        "year": "1948",
+        "era": "Modern",
+        "title": "Independence",
+        "description": "Ceylon gains independence from Britain"
+      },
+      {
+        "year": "2009",
+        "era": "Modern",
+        "title": "War Ends",
+        "description": "Government declares victory over LTTE rebels"
+      }
+    ]
+  },
+  {
+    "name": "Tajikistan",
+    "overview": "Tajikistan's history is the story of the Persian-speaking heart of Central Asia, distinguished by its ancient heritage in a region largely dominated by Turkic peoples. Descended from the Sogdians and Bactrians of antiquity, the Tajik people were the architects of the glorious Samanid Empire, which fostered a renaissance of Persian language, science, and poetry in the 10th century. Unlike its neighbors, Tajikistan's identity is rooted in Iranian culture, though its borders were often redrawn by waves of invaders from Alexander the Great to the Mongols. The modern nation emerged from the complex ethno-territorial divisions of the Soviet Union, enduring a painful civil war shortly after independence before stabilizing. Today, it balances its rich Persian cultural legacy with the realities of being a mountainous, strategic state at the crossroads of Asia.",
+    "source": {
+      "label": "Wikipedia - History of Tajikistan",
+      "url": "https://en.wikipedia.org/wiki/History_of_Tajikistan",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Tajikistan",
+        "https://www.britannica.com/place/Tajikistan",
+        "https://grokipedia.com/page/History_of_Tajikistan"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Independence Declared", "value": "September 9, 1991" },
+      { "label": "Capital", "value": "Dushanbe (founded as market village)" },
+      { "label": "Currency", "value": "Somoni (named after Ismail Samani)" },
+      { "label": "Language Roots", "value": "Persian (Tajik dialect)" },
+      { "label": "Highest Peak", "value": "Ismail Samani Peak (7,495 m)" },
+      { "label": "National Hero", "value": "Ismail Samani" }
+    ],
+    "ancient": {
+      "period": "c. 600 BCE - 710 CE",
+      "description": "The territory of modern Tajikistan was historically part of the ancient Persian empires, specifically the regions of Bactria and Sogdiana. These lands were pivotal in the development of Zoroastrianism and served as a bridge between East and West. The Achaemenid Empire ruled the region until the conquest of Alexander the Great in 329 BCE, who faced fierce resistance from local Sogdian warlords like Spitamenes. Following the Greek interlude, the region saw the rise of the Greco-Bactrian Kingdom and later the Kushan Empire, which facilitated the spread of Buddhism along the Silk Road. The ancient cities of Penjikent and Sarazm flourished as cosmopolitan trade hubs where Hellenistic, Persian, and Indian cultures merged.",
+      "keyEvents": [
+        { "year": "329 BCE", "title": "Alexander's Conquest", "description": "Alexander the Great conquers the Persian satrapies of Bactria and Sogdiana, founding Alexandria Eschate (Khujand)" },
+        { "year": "c. 130 BCE", "title": "Silk Road Emergence", "description": "Zhang Qian's mission opens trade routes, integrating local cities into the Silk Road network" },
+        { "year": "c. 100 CE", "title": "Kushan Empire", "description": "Peak of the Kushan Empire, promoting Buddhism and trade across the Pamirs" }
+      ],
+      "notableFigures": [
+        "Spitamenes (Sogdian resistance leader)",
+        "Roxana (Bactrian princess, wife of Alexander)",
+        "Kanishka the Great (Kushan emperor)"
+      ]
+    },
+    "medieval": {
+      "period": "710 - 1500",
+      "description": "The Arab conquest in the 8th century brought Islam to the region, gradually replacing Zoroastrianism and Buddhism. The zenith of Tajik history occurred under the Samanid Empire (819–999), the first native Persian dynasty to rule after the Arab conquest. With its capital in Bukhara (now in Uzbekistan), the Samanid era was a 'Golden Age' that revived Persian language and culture, sponsoring scholars like Avicenna and poets like Rudaki. This era defined the Tajik ethnic identity. The Samanid collapse led to centuries of Turkic and Mongol rule, including the devastating invasion of Genghis Khan in the 13th century and the subsequent Timurid Renaissance, where Persian culture continued to serve as the language of administration and high art despite Turkic political dominance.",
+      "keyEvents": [
+        { "year": "819-999", "title": "Samanid Empire", "description": "Rule of the Samanid dynasty, considered the Golden Age of Tajik culture and Persian revival" },
+        { "year": "c. 900", "title": "Rudaki's Poetry", "description": "Rudaki, the 'Father of Persian Poetry', flourishes in the Samanid court" },
+        { "year": "1220", "title": "Mongol Invasion", "description": "Genghis Khan's forces devastate the region, destroying cities and irrigation systems" }
+      ],
+      "notableFigures": [
+        "Ismail Samani (Amir of the Samanids)",
+        "Rudaki (Poet)",
+        "Avicenna (Polymath, born near Bukhara)"
+      ]
+    },
+    "imperial": {
+      "period": "1860s - 1917",
+      "description": "By the 19th century, the territory of present-day Tajikistan was divided between the Emirate of Bukhara and the Khanate of Kokand. As the Russian Empire expanded southward during the 'Great Game' rivalry with Britain, it annexed the northern Tajik lands in the 1860s, incorporating them into Russian Turkestan. The Emirate of Bukhara became a Russian protectorate, leaving the southern mountain Tajiks under indirect Russian influence. This period introduced railways, Russian administration, and limited industrialization, but also led to the 'Basmachi' resistance movement against foreign encroachment. The imposition of borders began to separate the Tajiks from their cultural capitals of Samarkand and Bukhara.",
+      "keyEvents": [
+        { "year": "1868", "title": "Russian Protectorate", "description": "The Emirate of Bukhara becomes a protectorate of the Russian Empire" },
+        { "year": "1895", "title": "Pamir Boundary", "description": "Anglo-Russian agreement sets the border at the Panj River, separating Tajiks in the empire from those in Afghanistan" }
+      ],
+      "notableFigures": [
+        "Kurmanjan Datka (active in the Alai region)",
+        "Konstantin von Kaufman (Russian Governor-General)"
+      ]
+    },
+    "modern": {
+      "period": "1917 - Present",
+      "description": "Following the Russian Revolution, the Soviet Union executed a 'national delimitation' in 1924, initially creating Tajikistan as an autonomous republic within Uzbekistan. It became a full Soviet Socialist Republic in 1929, though without the historic Tajik cities of Samarkand and Bukhara, leaving the new republic with Dushanbe as its capital. The Soviet era brought modernization, literacy, and secularism but suppressed Islamic practice. Upon independence in 1991, the country plunged into a brutal Civil War (1992-1997) between government forces and a coalition of democratic and Islamist clans. Peace was established in 1997, leading to the consolidated, long-term presidency of Emomali Rahmon, who has focused on stability, infrastructure projects like the Rogun Dam, and fostering a distinct national identity.",
+      "keyEvents": [
+        { "year": "1929", "title": "Tajik SSR Created", "description": "Tajikistan becomes a full Union Republic separate from Uzbekistan" },
+        { "year": "1991", "title": "Independence", "description": "Tajikistan declares independence as the Soviet Union collapses" },
+        { "year": "1992-1997", "title": "Civil War", "description": "Devastating internal conflict between Neo-Communist government and United Tajik Opposition" },
+        { "year": "1997", "title": "Peace Accord", "description": "UN-brokered peace treaty ends the civil war, integrating opposition into government" }
+      ],
+      "notableFigures": [
+        "Bobojon Ghafurov (Historian)",
+        "Emomali Rahmon (President)",
+        "Ahmad Shah Massoud (Afghan Tajik leader, influential icon)"
+      ]
+    },
+    "timeline": [
+      { "year": "875", "era": "Medieval", "title": "Samanid Dynasty", "description": "Ismail Samani establishes full independence, centering Persian culture in Bukhara" },
+      { "year": "1220", "era": "Medieval", "title": "Mongol Conquest", "description": "Region overrun by Mongols; major cities destroyed" },
+      { "year": "1868", "era": "Imperial", "title": "Russian Annexation", "description": "Northern Tajikistan annexed by Russia; Bukhara becomes protectorate" },
+      { "year": "1929", "era": "Modern", "title": "Soviet Republic", "description": "Tajik SSR formally established with Dushanbe as capital" },
+      { "year": "1991", "era": "Independence", "title": "Independence", "description": "Republic of Tajikistan declares independence from USSR" },
+      { "year": "1997", "era": "Modern", "title": "End of Civil War", "description": "General Peace Agreement signed in Moscow" }
+    ]
+  },
+  {
+    "name": "Uzbekistan",
+    "overview": "Uzbekistan is the populous heart of Central Asia, a land of ancient cities that once served as the crown jewels of the Silk Road. Its history is defined by the ebb and flow of empires, from the golden age of the Samanids to the terrifying conquests of Genghis Khan and the architectural renaissance of Timur (Tamerlane). Home to the architectural masterpieces of Samarkand, Bukhara, and Khiva, Uzbekistan has long been a center of Islamic scholarship, astronomy, and trade. Following centuries of rule by local Khans and integration into the Russian Empire, it became the Soviet Union's primary cotton producer. Since independence, it has navigated a path from isolationist authoritarianism toward a gradual economic and political opening, seeking to reclaim its historic role as the region's central power.",
+    "source": {
+      "label": "Wikipedia - History of Uzbekistan",
+      "url": "https://en.wikipedia.org/wiki/History_of_Uzbekistan",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Uzbekistan",
+        "https://www.britannica.com/place/Uzbekistan",
+        "https://advancetour.com/uzbekistan/history.html"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Independence Declared", "value": "September 1, 1991" },
+      { "label": "Capital", "value": "Tashkent (Largest city in Central Asia)" },
+      { "label": "Currency", "value": "Uzbek Soʻm" },
+      { "label": "UNESCO Sites", "value": "5 World Heritage Sites" },
+      { "label": "Major Resource", "value": "Gold, Cotton, Natural Gas" },
+      { "label": "National Hero", "value": "Amir Timur (Tamerlane)" }
+    ],
+    "ancient": {
+      "period": "c. 1000 BCE - 700 CE",
+      "description": "Long before the Uzbek ethnos formed, the region known as Transoxiana (the land beyond the Oxus River) was home to sophisticated urban civilizations. The ancient states of Sogdiana, Khorezm, and Bactria developed advanced irrigation agriculture and fortified cities. Alexander the Great conquered the region in 327 BCE, marrying the Bactrian princess Roxana. The subsequent centuries saw a melting pot of cultures under the Greco-Bactrians and Kushans, where Zoroastrianism, Buddhism, and Manichaeism coexisted. The Sogdian merchants became the primary facilitators of trade along the Silk Road, establishing commercial colonies as far away as China.",
+      "keyEvents": [
+        { "year": "329 BCE", "title": "Siege of the Sogdian Rock", "description": "Alexander the Great captures the fortress and marries Roxana" },
+        { "year": "c. 100 BCE - 100 CE", "title": "Silk Road Peak", "description": "Sogdian merchants dominate trade between China and the Mediterranean" }
+      ],
+      "notableFigures": [
+        "Spitamenes",
+        "Roxana"
+      ]
+    },
+    "medieval": {
+      "period": "700 - 1500",
+      "description": "The Arab conquest brought Islam, turning Bukhara and Samarkand into intellectual capitals of the Muslim world during the Islamic Golden Age. Scholars like Al-Khwarizmi (father of algebra) and Al-Bukhari flourished here. After the devastation of the Mongol invasion in 1220, the region rose again under Amir Timur (Tamerlane) in the 14th century. Timur built a vast empire with Samarkand as its capital, adorning it with monumental architecture that defines the country today. His grandson, Ulugbek, transformed Samarkand into a center of science, building a famous observatory. The arrival of the nomadic Uzbek tribes in the early 16th century marked the end of the Timurid era and the beginning of the Uzbek Khanates.",
+      "keyEvents": [
+        { "year": "1220", "title": "Destruction by Genghis Khan", "description": "Mongol forces level Samarkand and Bukhara, decimating the population" },
+        { "year": "1370-1405", "title": "Reign of Timur", "description": "Amir Timur establishes the Timurid Empire, beautifying Samarkand with spoils of war" },
+        { "year": "1420s", "title": "Ulugbek's Observatory", "description": "Ulugbek builds a great observatory in Samarkand, cataloging over 1,000 stars" }
+      ],
+      "notableFigures": [
+        "Amir Timur (Tamerlane)",
+        "Ulugbek (Astronomer-King)",
+        "Al-Khwarizmi (Mathematician)",
+        "Ibn Sina (Avicenna)"
+      ]
+    },
+    "feudal": {
+      "period": "1500 - 1865",
+      "description": "Following the Timurid decline, the Shaybanid dynasty established Uzbek dominance. The region eventually fractured into three rival feudal states: the Emirate of Bukhara, the Khanate of Khiva, and the Khanate of Kokand. This period was marked by intermittent warfare, the flourishing of localized court culture, and increasing isolation as maritime trade routes bypassed the Silk Road. Khiva became infamous for its slave market, while Bukhara remained a conservative religious center. These 'Three Khanates' maintained medieval social structures well into the 19th century until they collided with the expanding Russian Empire.",
+      "keyEvents": [
+        { "year": "1500", "title": "Shaybanid Conquest", "description": "Muhammad Shaybani Khan conquers Transoxiana, bringing the Uzbek ethnonym and political dominance" },
+        { "year": "1700s-1800s", "title": "Era of Three Khanates", "description": "Consolidation of power into the rival states of Khiva, Bukhara, and Kokand" }
+      ],
+      "notableFigures": [
+        "Muhammad Shaybani",
+        "Bahadur Khan"
+      ]
+    },
+    "imperial": {
+      "period": "1865 - 1917",
+      "description": "Russia's southward expansion into Central Asia began in earnest in the mid-19th century, driven by the need for markets and raw materials, specifically cotton. Tashkent fell to Russian troops in 1865, followed by the subjugation of Bukhara and Khiva, which became protectorates. The Russians established the Governor-Generalship of Turkestan with Tashkent as the capital. This era saw the introduction of railways, the telegraph, and a colonial administration that existed alongside the traditional Muslim hierarchy. It also initiated the transformation of Uzbekistan's agriculture into a cotton monoculture to supply Russian textile mills, a policy that would have devastating environmental consequences later.",
+      "keyEvents": [
+        { "year": "1865", "title": "Fall of Tashkent", "description": "Russian General Chernyayev captures Tashkent" },
+        { "year": "1873", "title": "Khiva Campaign", "description": "Russia conquers the Khanate of Khiva, reducing it to a protectorate" }
+      ],
+      "notableFigures": [
+        "General Mikhail Chernyayev",
+        "Kaufman"
+      ]
+    },
+    "modern": {
+      "period": "1917 - Present",
+      "description": "The Soviet period formally established the 'Uzbek Soviet Socialist Republic' in 1924, consolidating the Uzbek national identity. The Soviets pushed aggressive secularization, industrialization, and massive expansion of cotton irrigation, which led to the shrinking of the Aral Sea—one of the world's worst environmental disasters. Upon independence in 1991, Islam Karimov ruled with an iron fist for 27 years, maintaining stability but suppressing dissent and isolating the country. Following his death in 2016, President Shavkat Mirziyoyev launched a period of reform, 'Uzbekistan's Spring,' opening the country to tourism, foreign investment, and improving regional relations while maintaining a controlled political environment.",
+      "keyEvents": [
+        { "year": "1924", "title": "Creation of Uzbek SSR", "description": "Soviet national delimitation creates modern borders of Uzbekistan" },
+        { "year": "1966", "title": "Tashkent Earthquake", "description": "Massive earthquake destroys much of Tashkent, followed by Soviet-style rebuilding" },
+        { "year": "1991", "title": "Independence", "description": "Uzbekistan declares independence; Islam Karimov becomes president" },
+        { "year": "2016", "title": "Political Transition", "description": "Death of Islam Karimov; Shavkat Mirziyoyev initiates reforms" }
+      ],
+      "notableFigures": [
+        "Islam Karimov",
+        "Shavkat Mirziyoyev",
+        "Abdulla Qodiriy (Writer)"
+      ]
+    },
+    "timeline": [
+      { "year": "1370", "era": "Medieval", "title": "Timurid Empire", "description": "Timur establishes his capital in Samarkand, beginning a cultural renaissance" },
+      { "year": "1865", "era": "Imperial", "title": "Russian Conquest", "description": "Tashkent captured by Russian forces, becoming the center of Russian Turkestan" },
+      { "year": "1924", "era": "Modern", "title": "Uzbek SSR", "description": "Formation of the Uzbek Soviet Socialist Republic" },
+      { "year": "1991", "era": "Independence", "title": "Independence", "description": "Declaration of independence from the Soviet Union" },
+      { "year": "2016", "era": "Modern", "title": "New Era", "description": "Shavkat Mirziyoyev elected president, beginning economic and social reforms" }
+    ]
+  },
+  {
+    "name": "Kyrgyzstan",
+    "overview": "Kyrgyzstan is the land of celestial mountains and nomadic traditions, distinguished by the Tien Shan range that covers most of the country. Unlike the settled agrarian societies of its neighbors, the Kyrgyz people have a deep history of pastoral nomadism, preserved orally through the epic poem 'Manas,' one of the longest in the world. The Kyrgyz tribes migrated from the Yenisei River in Siberia to their current home, surviving Mongol conquests and Qing expansion. Dominated by the Khanate of Kokand and then the Russian Empire, the Kyrgyz endured the tragic 1916 Urkun revolt before becoming a Soviet Republic. Since independence, Kyrgyzstan has been the 'island of democracy' in Central Asia, though a volatile one, having experienced multiple revolutions that overthrew authoritarian leaders in its quest for a stable parliamentary system.",
+    "source": {
+      "label": "Wikipedia - History of Kyrgyzstan",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kyrgyzstan",
+      "urls": [
+        "https://en.wikipedia.org/wiki/History_of_Kyrgyzstan",
+        "https://www.britannica.com/place/Kyrgyzstan",
+        "https://www.advantour.com/kyrgyzstan/history.htm"
+      ]
+    },
+    "keyFacts": [
+      { "label": "Independence Declared", "value": "August 31, 1991" },
+      { "label": "Capital", "value": "Bishkek (formerly Frunze)" },
+      { "label": "National Epic", "value": "Epic of Manas" },
+      { "label": "Geography", "value": "90% mountainous (Tien Shan)" },
+      { "label": "Currency", "value": "Kyrgyz Som" },
+      { "label": "Key Event", "value": "Urkun (1916 Revolt)" }
+    ],
+    "ancient": {
+      "period": "c. 200 BCE - 840 CE",
+      "description": "The ancestors of the Kyrgyz people are believed to be among the oldest Turkic tribes, originally inhabiting the Yenisei River valley in southern Siberia. Ancient Chinese chronicles from the 2nd century BCE mention them as the 'Jiankun.' For centuries, they existed on the periphery of the great steppe empires, including the Xiongnu and the Göktürks. In 840 CE, the Yenisei Kyrgyz defeated the Uyghur Khaganate, briefly establishing a 'Kyrgyz Greatness' empire that spanned parts of Mongolia and Siberia, though they did not migrate en masse to the Tien Shan mountains until centuries later.",
+      "keyEvents": [
+        { "year": "201 BCE", "title": "First Mention", "description": "First Chinese records mention the Kyrgyz people (Gekun/Jiankun) in the Yenisei region" },
+        { "year": "840 CE", "title": "Defeat of Uyghurs", "description": "Yenisei Kyrgyz overthrow the Uyghur Khaganate, reaching the peak of their ancient power" }
+      ],
+      "notableFigures": [
+        "Barsbek Kagan (Early Kyrgyz leader)"
+      ]
+    },
+    "medieval": {
+      "period": "840 - 1700",
+      "description": "The medieval period was defined by the gradual migration of Kyrgyz tribes from Siberia southward to the Tien Shan mountains, a process accelerated by the Mongol expansion in the 13th century. Under Mongol rule, the Kyrgyz were absorbed into the Golden Horde and Chagatai Khanate but managed to retain their nomadic culture and tribal structure. It was during these turbulent centuries that the oral tradition of the 'Epic of Manas' likely began to crystalize, serving as a moral code and historical memory for a people without a written language. By the 16th and 17th centuries, the Kyrgyz had firmly established themselves in their modern territory, fiercely defending their grazing lands against the Jungar (Oirat) Mongols.",
+      "keyEvents": [
+        { "year": "1207", "title": "Mongol Submission", "description": "Kyrgyz tribes submit to Jochi, eldest son of Genghis Khan" },
+        { "year": "1600s", "title": "Jungar Wars", "description": "Repeated conflicts with the Jungar Khanate force consolidation of Kyrgyz tribes in the Tien Shan" }
+      ],
+      "notableFigures": [
+        "Manas (Mythical hero and unifier of the 40 tribes)",
+        "Tagay Biy (Historical leader credited with uniting tribes)"
+      ]
+    },
+    "feudal": {
+      "period": "1700 - 1876",
+      "description": "In the early 19th century, the dispersed Kyrgyz tribes fell under the dominion of the rising Khanate of Kokand. The Kokand rulers built fortresses (such as Pishpek, now Bishkek) to tax the nomads and control trade routes. This period saw a complex relationship of tribute and rebellion. Southern Kyrgyz leaders were often integrated into the Khanate's politics, while northern tribes frequently resisted. The most famous figure of this era was Kurmanjan Datka, the 'Queen of the Alai,' who led her people with diplomatic skill during the decline of Kokand and the arrival of the Russians.",
+      "keyEvents": [
+        { "year": "1825", "title": "Pishpek Founded", "description": "Kokand Khanate builds the fortress of Pishpek (future Bishkek) to control the Chu Valley" },
+        { "year": "1862", "title": "Russian Advance", "description": "Russian forces, aided by Kyrgyz rebels, capture Pishpek from Kokand" }
+      ],
+      "notableFigures": [
+        "Kurmanjan Datka (Queen of the Alai)",
+        "Shabdan Baatyr"
+      ]
+    },
+    "imperial": {
+      "period": "1876 - 1917",
+      "description": "The Russian Empire formally annexed the territory after defeating the Kokand Khanate in 1876. Russian colonization brought Slavic settlers who seized the best agricultural land in the valleys, displacing nomadic Kyrgyz to higher, harsher grounds. Tensions boiled over in 1916 during World War I, when the Tsar attempted to conscript Central Asians. This triggered the 'Urkun' (The Great Exodus), a massive revolt and subsequent brutal crackdown where thousands of Kyrgyz died or fled across the snowy passes into China. This tragedy remains a central trauma in the national memory.",
+      "keyEvents": [
+        { "year": "1876", "title": "Annexation", "description": "Russia dissolves the Khanate of Kokand; Kyrgyzstan becomes part of the Fergana Oblast" },
+        { "year": "1916", "title": "The Urkun", "description": "Violent uprising against Russian conscription leads to massacre and mass flight to China" }
+      ],
+      "notableFigures": [
+        "Nicholas II (Tsar during the Urkun)"
+      ]
+    },
+    "modern": {
+      "period": "1917 - Present",
+      "description": "Soviet rule established the Kara-Kyrgyz Autonomous Oblast in 1924, later upgrading it to the Kyrgyz SSR in 1936. The Soviets forced the settling of nomads (collectivization), which caused famine but also brought literacy, healthcare, and industrialization. Upon independence in 1991, Askar Akayev became president. Unlike its neighbors, Kyrgyzstan developed a vibrant but volatile political culture. It has experienced three major revolutions (2005, 2010, 2020) driven by corruption and clan politics. The 2010 revolution led to the first peaceful transfer of power in Central Asia and a parliamentary experiment, though the country continues to grapple with economic dependence on gold mining and remittances, as well as border disputes.",
+      "keyEvents": [
+        { "year": "1936", "title": "Kyrgyz SSR", "description": "Kyrgyzstan becomes a full Union Republic of the USSR" },
+        { "year": "1991", "title": "Independence", "description": "Kyrgyzstan declares independence; Askar Akayev becomes first president" },
+        { "year": "2005", "title": "Tulip Revolution", "description": "Mass protests overthrow President Akayev" },
+        { "year": "2010", "title": "Second Revolution", "description": "Violent overthrow of President Bakiyev, followed by ethnic clashes in the south" }
+      ],
+      "notableFigures": [
+        "Chingiz Aitmatov (World-renowned writer)",
+        "Askar Akayev",
+        "Roza Otunbayeva (First female president in Central Asia)"
+      ]
+    },
+    "timeline": [
+      { "year": "840", "era": "Ancient", "title": "Great Kyrgyz Khaganate", "description": "Yenisei Kyrgyz defeat Uyghurs and establish a vast steppe empire" },
+      { "year": "1876", "era": "Imperial", "title": "Russian Annexation", "description": "Final incorporation of Kyrgyz lands into the Russian Empire" },
+      { "year": "1916", "era": "Imperial", "title": "Urkun Revolt", "description": "Tragic uprising and flight of Kyrgyz people to China" },
+      { "year": "1991", "era": "Independence", "title": "Independence", "description": "Declaration of independence from the Soviet Union" },
+      { "year": "2005", "era": "Modern", "title": "Tulip Revolution", "description": "First of several revolutions overthrowing the government" },
+      { "year": "2010", "era": "Modern", "title": "Constitutional Reform", "description": "Adoption of a parliamentary constitution after the second revolution" }
+    ]
+  }
 ]

@@ -167,17 +167,17 @@
   - [x] Iraq
   - [x] Israel
   - [x] Japan
-  - [ ] Jordan
+  - [x] Jordan
   - [x] Kazakhstan
   - [ ] Kuwait
-  - [ ] Kyrgyzstan
+  - [x] Kyrgyzstan
   - [x] Laos
-  - [ ] Lebanon
+  - [x] Lebanon
   - [x] Malaysia
   - [ ] Maldives
   - [ ] Mongolia
   - [x] Myanmar
-  - [ ] Nepal
+  - [x] Nepal
   - [x] North Korea
   - [ ] Oman
   - [ ] Pakistan
@@ -187,16 +187,16 @@
   - [x] Saudi Arabia
   - [x] Singapore
   - [x] South Korea
-  - [ ] Sri Lanka
+  - [x] Sri Lanka
   - [x] Syria
   - [ ] Taiwan
-  - [ ] Tajikistan
+  - [x] Tajikistan
   - [x] Thailand
   - [ ] Timor-Leste
   - [x] Turkey
   - [ ] Turkmenistan
   - [ ] United Arab Emirates
-  - [ ] Uzbekistan
+  - [x] Uzbekistan
   - [x] Vietnam
   - [ ] Yemen
   - [ ] Hong Kong
