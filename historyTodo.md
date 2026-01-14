@@ -98,7 +98,7 @@
 
 - [ ] AFRICA
   - [x] Algeria
-  - [ ] Angola
+  - [x] Angola
   - [ ] Benin
   - [ ] Botswana
   - [ ] Burkina Faso
@@ -107,7 +107,7 @@
   - [ ] Cameroon
   - [ ] Central African Republic
   - [ ] Chad
-  - [ ] Comoros
+  - [x] Comoros
   - [ ] Congo (Republic of the)
   - [ ] Congo (Democratic Republic of the)
   - [ ] Côte d'Ivoire
@@ -122,26 +122,26 @@
   - [ ] Ghana
   - [ ] Guinea
   - [ ] Guinea-Bissau
-  - [ ] Kenya
+  - [x] Kenya
   - [ ] Lesotho
   - [x] Liberia
   - [x] Libya
-  - [ ] Madagascar
+  - [x] Madagascar
   - [ ] Malawi
   - [ ] Mali
   - [ ] Mauritania
-  - [ ] Mauritius
+  - [x] Mauritius
   - [x] Morocco
   - [ ] Mozambique
   - [ ] Namibia
   - [ ] Niger
   - [x] Nigeria
   - [ ] Rwanda
-  - [ ] São Tomé and Príncipe
+  - [x] São Tomé and Príncipe
   - [ ] Senegal
   - [ ] Seychelles
   - [ ] Sierra Leone
-  - [ ] Somalia
+  - [x] Somalia
   - [x] South Africa
   - [ ] South Sudan
   - [x] Sudan
