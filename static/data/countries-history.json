@@ -29908,5 +29908,1233 @@
 				"description": "Agreements signed for offshore oil exploration"
 			}
 		]
+	},
+	{
+		"name": "Lesotho",
+		"overview": "Lesotho's history is a testament to the resilience of the Basotho people, forged in the mountainous 'Kingdom in the Sky' under the legendary diplomacy of King Moshoeshoe I. Born from the chaos of the Lifaqane wars, the nation successfully maintained its unique identity and autonomy despite being completely landlocked by South Africa. From the strategic defense of the Thaba Bosiu fortress to the complex geopolitical dance with British colonial power, Lesotho has navigated a path between traditional chieftaincy and modern statehood. The country has endured military coups and political instability while preserving a deep cultural heritage rooted in the Sesotho language and the pony-riding traditions of its high-altitude terrain.",
+		"source": {
+			"label": "Wikipedia - History of Lesotho",
+			"url": "https://en.wikipedia.org/wiki/History_of_Lesotho",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Lesotho",
+				"https://www.britannica.com/place/Lesotho",
+				"https://sahistory.org.za/place/lesotho"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "October 4, 1966" },
+			{ "label": "Capital", "value": "Maseru (founded 1869)" },
+			{ "label": "Founder", "value": "King Moshoeshoe I" },
+			{ "label": "Name Origin", "value": "Land of the Sotho speakers" },
+			{ "label": "Geography", "value": "Only independent state entirely above 1,000m" },
+			{ "label": "National Motto", "value": "Khotso, Pula, Nala (Peace, Rain, Prosperity)" }
+		],
+		"ancient": {
+			"period": "Pre-1800s",
+			"description": "For thousands of years prior to the formation of the modern Basotho state, the mountainous region was inhabited by San hunter-gatherers, who left behind a rich legacy of rock art in the caves of the Maloti Mountains. These earliest inhabitants lived in harmony with the harsh, high-altitude environment. Over centuries, Bantu-speaking peoples, specifically Nguni and Sotho-Tswana groups, migrated into the fertile lowlands surrounding the mountains. These groups lived in relatively small, decentralized chiefdoms, cultivating crops and herding cattle. The interplay between the San and the incoming iron-working agriculturalists was initially peaceful, characterized by trade and intermarriage, before increased competition for land and resources began to alter the demographic landscape.",
+			"keyEvents": [
+				{
+					"year": "c. 25,000 BCE",
+					"title": "San Habitation",
+					"description": "Hunter-gatherer groups inhabit the Drakensberg and Maloti mountains, creating extensive rock art"
+				},
+				{
+					"year": "c. 500 CE",
+					"title": "Iron Age Migration",
+					"description": "Bantu-speaking agriculturalists begin settling in the fertile Caledon River valley"
+				}
+			],
+			"notableFigures": ["San artists (anonymous creators of rock paintings)"]
+		},
+		"pre-colonial": {
+			"period": "1818 - 1868",
+			"description": "The modern nation of Lesotho was born during the Lifaqane (Mfecane), a period of devastating warfare and migration across Southern Africa sparked by the rise of the Zulu Kingdom. In this chaotic era, a minor chief named Moshoeshoe I displayed extraordinary leadership by gathering refugees and shattered clans to the impregnable natural fortress of Thaba Bosiu. Through a masterful combination of military defense and diplomatic benevolence, he united these diverse groups into the Basotho nation. Moshoeshoe invited French missionaries to his kingdom in the 1830s, utilizing them as scribes and foreign policy advisors to navigate threats from encroaching Boer trekkers and British colonial forces. His strategic genius allowed the Basotho to resist total conquest, although they lost significant agricultural land to the Orange Free State.",
+			"keyEvents": [
+				{
+					"year": "1824",
+					"title": "Occupation of Thaba Bosiu",
+					"description": "Moshoeshoe I establishes his capital on the defensive mountain plateau, securing the Basotho nation"
+				},
+				{
+					"year": "1833",
+					"title": "Missionary Arrival",
+					"description": "Paris Evangelical Missionary Society arrives, bringing literacy and diplomatic channels to Europe"
+				},
+				{
+					"year": "1858",
+					"title": "Senekal's War",
+					"description": "Conflict with the Orange Free State; Basotho forces successfully defend Thaba Bosiu"
+				}
+			],
+			"notableFigures": ["King Moshoeshoe I", "Eugène Casalis (French missionary and advisor)"]
+		},
+		"colonial": {
+			"period": "1868 - 1966",
+			"description": "Fearing total annihilation by the Boers of the Orange Free State, Moshoeshoe I appealed to Queen Victoria for protection. In 1868, Basutoland was declared a British Protectorate, saving the kingdom but resulting in the permanent loss of its fertile western territories. The British initially annexed the territory to the Cape Colony, sparking the Gun War (1880-1881) when colonial administrators attempted to disarm the Basotho. The Basotho victory led to direct rule from London in 1884, separating them from the harsh racial policies developing in South Africa. Throughout the colonial period, the British ruled through traditional chiefs, while the economy became increasingly dependent on migrant labor to South African gold mines. Despite pressure to incorporate Basutoland into the Union of South Africa in 1910, the British honored the wishes of the Basotho to remain separate.",
+			"keyEvents": [
+				{
+					"year": "1868",
+					"title": "British Protection",
+					"description": "Basutoland becomes a British Protectorate, ending the Boer wars but defining current borders"
+				},
+				{
+					"year": "1870",
+					"title": "Death of Moshoeshoe I",
+					"description": "The founder of the nation dies, leaving a unified but reduced kingdom"
+				},
+				{
+					"year": "1880-1881",
+					"title": "The Gun War",
+					"description": "Basotho successfully resist Cape Colony attempts to confiscate their firearms"
+				},
+				{
+					"year": "1910",
+					"title": "Union of South Africa Exclusion",
+					"description": "Basutoland formally excluded from the new Union of South Africa, preserving its autonomy"
+				}
+			],
+			"notableFigures": ["Queen Victoria", "Chief Lerotholi", "Seeiso Griffith"]
+		},
+		"independence": {
+			"period": "1966 - Present",
+			"description": "Lesotho gained independence on October 4, 1966, as a constitutional monarchy under King Moshoeshoe II. However, the early years were marred by political strife. In 1970, Prime Minister Leabua Jonathan suspended the constitution and seized power after losing the election, ruling by decree for over a decade. This period saw internal conflict and a complex relationship with Apartheid South Africa, which squeezed Lesotho economically. A military coup in 1986 ousted Jonathan, leading to a period of military junta rule. Democracy was restored in 1993, but stability remained elusive, with a disputed election in 1998 triggering riots and a South African military intervention. In the 21st century, Lesotho has seen peaceful transitions of power through coalition governments, though it continues to grapple with economic challenges and the HIV/AIDS epidemic.",
+			"keyEvents": [
+				{
+					"year": "1966",
+					"title": "Independence",
+					"description": "Kingdom of Lesotho becomes a sovereign state within the Commonwealth"
+				},
+				{
+					"year": "1970",
+					"title": "Suspension of Constitution",
+					"description": "Prime Minister Leabua Jonathan annuls election results and seizes power"
+				},
+				{
+					"year": "1986",
+					"title": "Military Coup",
+					"description": "Major General Justin Lekhanya overthrows Jonathan's government"
+				},
+				{
+					"year": "1998",
+					"title": "Political Crisis and Intervention",
+					"description": "Post-election riots lead to SADC military intervention led by South Africa"
+				},
+				{
+					"year": "2012",
+					"title": "Coalition Government",
+					"description": "First peaceful transfer of power to an opposition coalition"
+				}
+			],
+			"notableFigures": ["King Moshoeshoe II", "Leabua Jonathan", "King Letsie III", "Tom Thabane"]
+		},
+		"timeline": [
+			{
+				"year": "1824",
+				"era": "Pre-Colonial",
+				"title": "Nation Founding",
+				"description": "Moshoeshoe I establishes the Basotho stronghold at Thaba Bosiu"
+			},
+			{
+				"year": "1868",
+				"era": "Colonial",
+				"title": "Protectorate Status",
+				"description": "Britain annexes Basutoland to protect it from Boer expansion"
+			},
+			{
+				"year": "1966",
+				"era": "Independence",
+				"title": "Sovereignty",
+				"description": "Lesotho gains full independence from Great Britain"
+			},
+			{
+				"year": "1998",
+				"era": "Modern",
+				"title": "SADC Intervention",
+				"description": "South African troops enter Lesotho to restore order after election riots"
+			}
+		]
+	},
+	{
+		"name": "Eswatini",
+		"overview": "Eswatini (formerly Swaziland) holds a unique position as one of the world's last absolute monarchies, deeply rooted in the traditions of the Dlamini clan. The nation's history is defined by the endurance of its dual monarchy system—the Ngwenyama (King/Lion) and Ndlovukati (Queen Mother/She-Elephant). Emerging as a consolidated kingdom in the 19th century to resist Zulu expansion, Eswatini survived the 'Scramble for Africa' through concessions and protectorate status. The long reign of King Sobhuza II bridged the colonial and modern eras, overseeing independence and the reassertion of royal power. Today, the country balances rich cultural ceremonies like the Umhlanga Reed Dance with calls for democratic reform.",
+		"source": {
+			"label": "Wikipedia - History of Eswatini",
+			"url": "https://en.wikipedia.org/wiki/History_of_Eswatini",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Eswatini",
+				"https://www.gov.sz/index.php/about-eswatini-history",
+				"https://www.sahistory.org.za/place/swaziland"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "September 6, 1968" },
+			{ "label": "Name Change", "value": "Swaziland to Eswatini (2018)" },
+			{ "label": "Government", "value": "Absolute Monarchy" },
+			{ "label": "Capitals", "value": "Mbabane (admin), Lobamba (royal)" },
+			{ "label": "Longest Reign", "value": "Sobhuza II (82 years)" },
+			{ "label": "Currency", "value": "Lilangeni (pegged to Rand)" }
+		],
+		"pre-colonial": {
+			"period": "c. 1750 - 1902",
+			"description": "The precursors to the modern Swazi nation, the Ngwane people, migrated from Mozambique to present-day Eswatini in the mid-18th century under the leadership of the Dlamini clan. The kingdom was consolidated by King Sobhuza I and later his son Mswati II, the nation's namesake, who expanded the territory and integrated various clans through military conquest and diplomacy. Like Lesotho, Eswatini faced the threat of the expanding Zulu Kingdom, necessitating a militarized state structure centered on the 'amabutho' (regimental) system. By the late 19th century, the discovery of gold attracted European concession-seekers. The illiterate King Mbandzeni granted overlapping land and mineral rights to Europeans, creating a confused legal landscape that eventually eroded the kingdom's sovereignty and paved the way for foreign administration.",
+			"keyEvents": [
+				{
+					"year": "c. 1750",
+					"title": "Dlamini Settlement",
+					"description": "Ngwane III settles in the Pongola River valley, marking the beginning of the Swazi nation"
+				},
+				{
+					"year": "1840-1868",
+					"title": "Reign of Mswati II",
+					"description": "Greatest expansion of the kingdom; the people become known as 'Swazis' after him"
+				},
+				{
+					"year": "1881",
+					"title": "Pretoria Convention",
+					"description": "British and Transvaal governments recognize Swazi independence but define borders"
+				},
+				{
+					"year": "1894",
+					"title": "Transvaal Administration",
+					"description": "Swaziland placed under the administration of the South African Republic (Boers)"
+				}
+			],
+			"notableFigures": ["King Sobhuza I", "King Mswati II", "King Mbandzeni"]
+		},
+		"colonial": {
+			"period": "1902 - 1968",
+			"description": "Following the Second Boer War, the British assumed control of Swaziland in 1902, establishing it as a protectorate. The early colonial period was dominated by the land partition of 1907, which reserved only one-third of the territory for the Swazi people, while the rest was allocated to European settlers and crown land. This dispossession became the central grievance of the monarchy. King Sobhuza II, crowned in 1921, spent decades peacefully fighting to regain the land, famously using the 'Lifa Fund' to buy back territory for the nation. Unlike other colonies, the British ruled indirectly, allowing the monarchy to retain significant cultural authority. As the 'winds of change' swept Africa in the 1960s, Sobhuza II formed his own political party, the Imbokodvo National Movement, ensuring that independence would come on his terms rather than through radical pan-Africanist parties.",
+			"keyEvents": [
+				{
+					"year": "1903",
+					"title": "British Protectorate",
+					"description": "Britain formally takes over administration after defeating the Boers"
+				},
+				{
+					"year": "1907",
+					"title": "Land Partition",
+					"description": "Two-thirds of Swazi land allocated to white settlers, sparking decades of grievance"
+				},
+				{
+					"year": "1921",
+					"title": "Sobhuza II Coronation",
+					"description": "Sobhuza II becomes Ngwenyama, beginning the world's longest recorded reign"
+				},
+				{
+					"year": "1964",
+					"title": "First Constitution",
+					"description": "Britain introduces a constitution, but Sobhuza successfully maneuvers to maintain royal power"
+				}
+			],
+			"notableFigures": ["King Sobhuza II", "Queen Regent Labotsibeni"]
+		},
+		"independence": {
+			"period": "1968 - Present",
+			"description": "Swaziland achieved independence on September 6, 1968. While initially a constitutional monarchy, King Sobhuza II suspended the constitution in 1973, citing that it was 'un-Swazi,' and assumed supreme power. He governed through a system of traditional tinkhundla (local councils) until his death in 1982. A tumultuous regency followed, marked by palace intrigues, until the coronation of the young King Mswati III in 1986. Mswati III has maintained the absolute monarchy, often drawing international criticism for his lavish lifestyle amidst high poverty rates and the severe impact of the HIV/AIDS epidemic. In 2018, to mark the country's 50th anniversary, the King renamed the nation 'Eswatini'. Pro-democracy protests in recent years have challenged the traditional power structures, leading to violent crackdowns and dialogue.",
+			"keyEvents": [
+				{ "year": "1968", "title": "Independence", "description": "Swaziland becomes a sovereign nation" },
+				{
+					"year": "1973",
+					"title": "Decree of 1973",
+					"description": "Sobhuza II suspends the constitution and bans political parties"
+				},
+				{
+					"year": "1986",
+					"title": "Coronation of Mswati III",
+					"description": "Prince Makhosetive is crowned King at age 18"
+				},
+				{
+					"year": "2005",
+					"title": "New Constitution",
+					"description": "New constitution adopted, reasserting the King's absolute authority"
+				},
+				{
+					"year": "2018",
+					"title": "Name Change",
+					"description": "King Mswati III officially renames the country the Kingdom of Eswatini"
+				},
+				{
+					"year": "2021",
+					"title": "Civil Unrest",
+					"description": "Widespread pro-democracy protests erupt, challenging the monarchy"
+				}
+			],
+			"notableFigures": ["King Sobhuza II", "King Mswati III", "Queen Mother Ntfombi"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1840",
+				"era": "Pre-Colonial",
+				"title": "Kingdom Consolidation",
+				"description": "Mswati II expands the kingdom to its greatest extent"
+			},
+			{
+				"year": "1902",
+				"era": "Colonial",
+				"title": "British Rule",
+				"description": "Britain assumes direct control following the Boer War"
+			},
+			{
+				"year": "1968",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "End of British protectorate status"
+			},
+			{
+				"year": "1973",
+				"era": "Independence",
+				"title": "Absolute Monarchy",
+				"description": "King Sobhuza II repeals the constitution"
+			},
+			{
+				"year": "2018",
+				"era": "Modern",
+				"title": "Eswatini Renaming",
+				"description": "Country name changed from Swaziland to Eswatini"
+			}
+		]
+	},
+	{
+		"name": "Seychelles",
+		"overview": "The history of Seychelles is a narrative of maritime discovery, colonial contest, and the forging of a unique Creole identity in the middle of the Indian Ocean. Unlike its mainland counterparts, Seychelles had no indigenous population; its society was entirely created through immigration—French planters, enslaved Africans, British administrators, and Asian traders. From its role as a pirate hideout and spice plantation to a strategic British naval outpost, the archipelago has evolved into a stable democracy known for its environmental stewardship and luxury tourism. The post-independence era was marked by a socialist coup and a one-party state, followed by a peaceful return to multiparty democracy.",
+		"source": {
+			"label": "Wikipedia - History of Seychelles",
+			"url": "https://en.wikipedia.org/wiki/History_of_Seychelles",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Seychelles",
+				"https://www.seychelles.com/history",
+				"https://www.britannica.com/place/Seychelles"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "June 29, 1976" },
+			{ "label": "First Settlement", "value": "1770 (French)" },
+			{ "label": "Capital", "value": "Victoria" },
+			{ "label": "Language", "value": "Seychellois Creole, English, French" },
+			{ "label": "Geography", "value": "115-island archipelago" },
+			{ "label": "Economy", "value": "Highest GDP per capita in Africa" }
+		],
+		"colonial": {
+			"period": "1770 - 1976",
+			"description": "Although sighted by Vasco da Gama in 1502 and visited by British East India Company ships in 1609, Seychelles remained uninhabited until the French established the first settlement in 1770 on St. Anne Island. Named after Jean Moreau de Séchelles, Louis XV's finance minister, the islands became a producer of spices like cinnamon and vanilla, labor-intensive crops worked by enslaved Africans. During the Napoleonic Wars, the British seized control, formally acquiring the islands in the Treaty of Paris (1814). Under British rule, slavery was abolished in 1835, leading to an influx of liberated Africans and changing the agricultural economy to coconuts (copra). The islands were administered as a dependency of Mauritius for nearly a century before becoming a separate Crown Colony in 1903. The colonial society was highly stratified, dominated by the 'Grands Blancs' (landowners), but a distinct Creole culture and language gradually unified the population.",
+			"keyEvents": [
+				{
+					"year": "1502",
+					"title": "First Sighting",
+					"description": "Vasco da Gama spots the islands, naming them the Admiral Islands"
+				},
+				{
+					"year": "1770",
+					"title": "First Settlement",
+					"description": "French expedition establishes the first permanent settlement on St. Anne"
+				},
+				{
+					"year": "1814",
+					"title": "British Cession",
+					"description": "Treaty of Paris formally cedes Seychelles to Britain"
+				},
+				{
+					"year": "1835",
+					"title": "Abolition of Slavery",
+					"description": "End of slavery transforms the economy and demographics"
+				},
+				{
+					"year": "1903",
+					"title": "Crown Colony Status",
+					"description": "Seychelles separates from Mauritius to become a distinct colony"
+				}
+			],
+			"notableFigures": [
+				"Lazare Picault (Explorer)",
+				"Jean-Baptiste Quéau de Quincy (French administrator)",
+				"Pierre Poivre"
+			]
+		},
+		"independence": {
+			"period": "1976 - Present",
+			"description": "Seychelles gained independence on June 29, 1976, as a republic within the Commonwealth. The first president, James Mancham, favored tourism and capitalism, but his rule was short-lived. In 1977, Prime Minister France-Albert René staged a coup d'état while Mancham was abroad, installing a socialist one-party state. René's regime focused on social welfare, education, and healthcare, achieving high development indicators, but maintained tight political control and survived multiple coup attempts, including one involving foreign mercenaries in 1981. Pressure for reform led to the return of multiparty democracy in 1993. The leftist party (later United Seychelles) retained power for decades until the historic 2020 election, when the opposition leader Wavel Ramkalawan won the presidency, marking the first democratic transfer of power between rival parties.",
+			"keyEvents": [
+				{
+					"year": "1976",
+					"title": "Independence",
+					"description": "Republic of Seychelles established with James Mancham as President"
+				},
+				{
+					"year": "1977",
+					"title": "Coup d'État",
+					"description": "France-Albert René seizes power, establishing a socialist one-party state"
+				},
+				{
+					"year": "1981",
+					"title": "Mercenary Coup Attempt",
+					"description": "Failed attempt by mercenaries led by 'Mad Mike' Hoare to overthrow René"
+				},
+				{
+					"year": "1993",
+					"title": "Return to Multiparty System",
+					"description": "New constitution adopted, restoring democratic elections"
+				},
+				{
+					"year": "2020",
+					"title": "Opposition Victory",
+					"description": "Wavel Ramkalawan wins presidency, ending 43 years of United Seychelles rule"
+				}
+			],
+			"notableFigures": ["James Mancham", "France-Albert René", "Wavel Ramkalawan"]
+		},
+		"timeline": [
+			{
+				"year": "1770",
+				"era": "Colonial",
+				"title": "French Settlement",
+				"description": "First permanent inhabitants arrive"
+			},
+			{
+				"year": "1814",
+				"era": "Colonial",
+				"title": "British Rule",
+				"description": "Islands officially become part of the British Empire"
+			},
+			{
+				"year": "1976",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Seychelles becomes an independent republic"
+			},
+			{
+				"year": "1977",
+				"era": "Modern",
+				"title": "Socialist Coup",
+				"description": "One-party state established by France-Albert René"
+			},
+			{
+				"year": "2020",
+				"era": "Modern",
+				"title": "Democratic Transition",
+				"description": "First transfer of power to the opposition party"
+			}
+		]
+	},
+	{
+		"name": "Equatorial Guinea",
+		"overview": "Equatorial Guinea is unique as the only sovereign African state where Spanish is an official language. Its history is defined by its disjointed geography—comprising the mainland region of Río Muni and the island of Bioko (formerly Fernando Po). Indigenous Bubi and Fang societies were disrupted by European contact, first by the Portuguese and later the Spanish, who developed a plantation economy dependent on forced labor. Since gaining independence in 1968, the nation has been ruled by only two presidents from the same family: Francisco Macías Nguema, whose brutal reign devastated the country, and his nephew Teodoro Obiang Nguema Mbasogo, who has ruled since 1979. The discovery of massive oil reserves in the 1990s transformed the nation's economy into one of Africa's wealthiest per capita, though wealth inequality remains stark.",
+		"source": {
+			"label": "Wikipedia - History of Equatorial Guinea",
+			"url": "https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea",
+				"https://www.britannica.com/place/Equatorial-Guinea",
+				"https://www.state.gov/countries-areas/equatorial-guinea/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "October 12, 1968" },
+			{ "label": "Capital", "value": "Malabo (on Bioko Island)" },
+			{ "label": "Official Languages", "value": "Spanish, French, Portuguese" },
+			{ "label": "Major Resource", "value": "Petroleum (discovered mid-1990s)" },
+			{ "label": "Geography", "value": "Mainland (Río Muni) & Islands (Bioko, Annobón)" }
+		],
+		"pre-colonial": {
+			"period": "Pre-1472",
+			"description": "Before European contact, the region was inhabited by diverse ethnic groups with distinct social structures. The mainland (Río Muni) was likely originally inhabited by Pygmies, but was later dominated by Bantu migrations, specifically the Fang people, who established a decentralized, clan-based society. The island of Bioko was settled by the Bubi people, who migrated from the mainland in waves beginning around 2000 BCE. Isolated by the sea, the Bubi developed a unique stratified society with a monarchy and distinct clans, relatively untouched by the mainland's tribal dynamics until European arrival. The island of Annobón was largely uninhabited before colonization.",
+			"keyEvents": [
+				{
+					"year": "c. 2000 BCE",
+					"title": "Bubi Settlement",
+					"description": "Bubi people migrate from the African mainland to Bioko island, developing an isolated, stratified society"
+				},
+				{
+					"year": "c. 12th Century",
+					"title": "Fang Migrations",
+					"description": "Bantu-speaking Fang peoples begin gradual migration towards the coastal regions of the mainland"
+				}
+			],
+			"notableFigures": ["Moka (historic Bubi King)", "Various Clan Elders"]
+		},
+		"colonial": {
+			"period": "1472 - 1968",
+			"description": "European contact began in 1472 when Portuguese explorer Fernão do Pó sighted Bioko. Portugal claimed the islands and mainland rights but ceded them to Spain in the 1778 Treaty of El Pardo. Spain struggled to establish effective control due to disease and indigenous resistance. In the 19th century, Bioko (then Fernando Po) became a hub for cocoa plantations, initially using British anti-slavery patrols as a base, and later importing contract laborers from Nigeria and Liberia. The mainland was not effectively occupied by Spain until the 1920s, following the suppression of Fang resistance. Under the Franco regime, 'Spanish Guinea' was paternalistic but saw relatively high investment in health and education compared to other colonies, aiming to assimilate the population as Spanish subjects.",
+			"keyEvents": [
+				{
+					"year": "1472",
+					"title": "Portuguese Discovery",
+					"description": "Fernão do Pó discovers the island of Bioko, naming it 'Formosa' (Beautiful)"
+				},
+				{
+					"year": "1778",
+					"title": "Treaty of El Pardo",
+					"description": "Portugal cedes the islands and commercial rights on the mainland to Spain in exchange for territory in Brazil"
+				},
+				{
+					"year": "1827-1843",
+					"title": "British Presence",
+					"description": "Britain leases bases on Bioko for its anti-slavery squadron; Port Clarence (now Malabo) founded"
+				},
+				{
+					"year": "1900",
+					"title": "Treaty of Paris",
+					"description": "France and Spain settle the borders of the mainland territory (Río Muni)"
+				},
+				{
+					"year": "1959",
+					"title": "Provincial Status",
+					"description": "Territory designated as provinces of Spain, granting inhabitants Spanish citizenship"
+				}
+			],
+			"notableFigures": ["Fernão do Pó", "Bonifacio Ondó Edu"]
+		},
+		"independence": {
+			"period": "1968 - Present",
+			"description": "Equatorial Guinea gained independence from Spain on October 12, 1968. The first president, Francisco Macías Nguema, quickly dismantled democratic institutions, establishing a totalitarian single-party state. His 'Reign of Terror' (1968-1979) saw the persecution of intellectuals, the church, and the Bubi minority, leading to the death or exile of a third of the population and total economic collapse. In 1979, his nephew Teodoro Obiang Nguema Mbasogo overthrew him in a coup. While initially promising reform, Obiang consolidated absolute power. The discovery of vast oil reserves in 1995 fundamentally changed the nation, generating immense revenue that funded infrastructure projects but also entrenched the regime's power. Despite high GDP figures, the majority of the population sees little benefit, and the country remains under strict authoritarian control.",
+			"keyEvents": [
+				{
+					"year": "1968",
+					"title": "Independence",
+					"description": "Spain grants independence; Francisco Macías Nguema elected president"
+				},
+				{
+					"year": "1972",
+					"title": "Life President",
+					"description": "Macías declares himself President for Life, accelerating the country's descent into chaos"
+				},
+				{
+					"year": "1979",
+					"title": "Freedom Coup",
+					"description": "Teodoro Obiang Nguema overthrows Macías, who is subsequently tried and executed"
+				},
+				{
+					"year": "1995",
+					"title": "Oil Boom",
+					"description": "Mobil discovers the Zafiro oil field, marking the start of the petroleum era"
+				},
+				{
+					"year": "2011",
+					"title": "African Union Summit",
+					"description": "Malabo hosts AU summit, showcasing infrastructure built with oil wealth"
+				}
+			],
+			"notableFigures": ["Francisco Macías Nguema", "Teodoro Obiang Nguema Mbasogo"]
+		},
+		"timeline": [
+			{
+				"year": "1472",
+				"era": "Colonial",
+				"title": "European Contact",
+				"description": "Portuguese explorers reach the island of Bioko"
+			},
+			{
+				"year": "1778",
+				"era": "Colonial",
+				"title": "Spanish Cession",
+				"description": "Portugal cedes territory to Spain via Treaty of El Pardo"
+			},
+			{
+				"year": "1968",
+				"era": "Independence",
+				"title": "Republic Declared",
+				"description": "Equatorial Guinea becomes an independent republic"
+			},
+			{
+				"year": "1979",
+				"era": "Modern",
+				"title": "Obiang Takeover",
+				"description": "Coup d'état installs Teodoro Obiang Nguema"
+			},
+			{
+				"year": "1990s",
+				"era": "Modern",
+				"title": "Oil Discovery",
+				"description": "Major offshore oil reserves discovered, transforming economy"
+			}
+		]
+	},
+	{
+		"name": "Malawi",
+		"overview": "Known as the 'Warm Heart of Africa' for the friendliness of its people, Malawi's history is deeply connected to the Great Rift Valley lake that dominates its geography. From the early Maravi Empire which gave the nation its name, to the arrival of Scottish missionaries and British colonizers who formed Nyasaland, the region has been a crossroads of culture and trade. Malawi achieved independence peacefully in 1964 but spent its first three decades under the idiosyncratic one-party rule of Dr. Hastings Kamuzu Banda. Since 1994, the country has transitioned to a multi-party democracy, facing challenges of economic development, healthcare, and food security while maintaining political stability.",
+		"source": {
+			"label": "Wikipedia - History of Malawi",
+			"url": "https://en.wikipedia.org/wiki/History_of_Malawi",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Malawi",
+				"https://www.britannica.com/place/Malawi",
+				"https://travelmalawi-guide.com/history/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "July 6, 1964" },
+			{ "label": "Republic Status", "value": "July 6, 1966" },
+			{ "label": "Capital", "value": "Lilongwe" },
+			{ "label": "Old Name", "value": "Nyasaland" },
+			{ "label": "Major Feature", "value": "Lake Malawi (approx. 20% of area)" },
+			{ "label": "Currency", "value": "Malawian Kwacha" }
+		],
+		"pre-colonial": {
+			"period": "c. 10th Century - 1891",
+			"description": "Early inhabitants of the region were hunter-gatherers, likely Batwa people. Bantu migrations arrived around the 10th century. By the 15th century, the Maravi Empire was established by the Amaravi people (who would become the Chewa). This loose confederation of chiefdoms controlled territory extending into modern Mozambique and Zambia, trading ivory and iron with Swahili-Arab merchants on the coast. In the 19th century, the region faced upheaval from two sources: the Yao people invading from the north (converting to Islam and engaging in the slave trade) and the Ngoni people fleeing the Zulu Mfecane in South Africa. The area became a major source for the Indian Ocean slave trade, which devastated local populations and drew the attention of European missionaries.",
+			"keyEvents": [
+				{
+					"year": "c. 1480",
+					"title": "Maravi Empire",
+					"description": "Establishment of the Maravi confederacy under the Kalonga dynasty"
+				},
+				{
+					"year": "c. 1830s",
+					"title": "Ngoni Invasions",
+					"description": "Ngoni warriors arrive from South Africa, conquering parts of the region"
+				},
+				{
+					"year": "1859",
+					"title": "Livingstone's Arrival",
+					"description": "David Livingstone reaches Lake Malawi, paving the way for missions and commerce"
+				}
+			],
+			"notableFigures": ["Kalonga (Title of Maravi kings)", "David Livingstone"]
+		},
+		"colonial": {
+			"period": "1891 - 1964",
+			"description": "Prompted by missionary interests and the desire to curb the slave trade (and Portuguese expansion), Britain established the British Central Africa Protectorate in 1891, renamed Nyasaland in 1907. The colonial economy relied on tea and tobacco plantations, often forcing locals into labor or migration to mines in South Africa and Rhodesia. Resistance to colonial rule appeared early; in 1915, Reverend John Chilembwe led an armed uprising against British rule, which, though quickly suppressed, became a symbol of national consciousness. In 1953, Britain forced Nyasaland into the Federation of Rhodesia and Nyasaland against the will of the African majority, sparking intense nationalist agitation led by the Nyasaland African Congress and later Hastings Banda.",
+			"keyEvents": [
+				{
+					"year": "1891",
+					"title": "Protectorate Established",
+					"description": "British Central Africa Protectorate proclaimed"
+				},
+				{ "year": "1907", "title": "Nyasaland Named", "description": "Territory officially renamed Nyasaland" },
+				{
+					"year": "1915",
+					"title": "Chilembwe Uprising",
+					"description": "John Chilembwe leads an unsuccessful but symbolic revolt against colonial rule"
+				},
+				{
+					"year": "1953",
+					"title": "Federation Formed",
+					"description": "Nyasaland joined into the Federation of Rhodesia and Nyasaland despite protests"
+				},
+				{
+					"year": "1958",
+					"title": "Banda Returns",
+					"description": "Dr. Hastings Banda returns to lead the independence movement"
+				}
+			],
+			"notableFigures": ["John Chilembwe", "Sir Harry Johnston", "Hastings Kamuzu Banda"]
+		},
+		"modern": {
+			"period": "1964 - Present",
+			"description": "Malawi became independent in 1964 and a republic in 1966. Dr. Hastings Kamuzu Banda declared himself President for Life in 1971, establishing a conservative, pro-Western dictatorship. Unlike its neighbors, Malawi maintained diplomatic ties with Apartheid South Africa. Banda's rule was characterized by strict censorship, a cult of personality, and stability, but also human rights abuses. Domestic pressure and the end of the Cold War forced a referendum in 1993, leading to the first multi-party elections in 1994, which Banda lost. Since then, Malawi has remained a democracy, witnessing peaceful transfers of power between various parties. The nation continues to grapple with high poverty rates, reliance on subsistence agriculture, and the HIV/AIDS epidemic, though recent years have seen efforts toward economic diversification.",
+			"keyEvents": [
+				{ "year": "1964", "title": "Independence", "description": "Malawi gains independence within the Commonwealth" },
+				{ "year": "1971", "title": "President for Life", "description": "Banda consolidates total power" },
+				{ "year": "1993", "title": "Referendum", "description": "Voters overwhelmingly choose to end one-party rule" },
+				{
+					"year": "1994",
+					"title": "First Multiparty Election",
+					"description": "Bakili Muluzi elected president; Banda retires"
+				},
+				{
+					"year": "2012",
+					"title": "Joyce Banda Presidency",
+					"description": "Joyce Banda becomes Malawi's first female president following the death of Bingu wa Mutharika"
+				},
+				{
+					"year": "2020",
+					"title": "Court-Ordered Re-run",
+					"description": "Opposition wins presidency after courts annul fraudulent election results, a landmark for African democracy"
+				}
+			],
+			"notableFigures": ["Hastings Kamuzu Banda", "Bakili Muluzi", "Bingu wa Mutharika", "Lazarus Chakwera"]
+		},
+		"timeline": [
+			{
+				"year": "1859",
+				"era": "Colonial",
+				"title": "Livingstone Visits",
+				"description": "David Livingstone reaches Lake Nyasa (Malawi)"
+			},
+			{
+				"year": "1891",
+				"era": "Colonial",
+				"title": "British Protectorate",
+				"description": "Formal establishment of British rule"
+			},
+			{
+				"year": "1915",
+				"era": "Colonial",
+				"title": "Chilembwe Rising",
+				"description": "Uprising against colonial labor practices"
+			},
+			{
+				"year": "1964",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Nyasaland becomes independent Malawi"
+			},
+			{
+				"year": "1994",
+				"era": "Modern",
+				"title": "Democracy",
+				"description": "First multi-party democratic elections held"
+			}
+		]
+	},
+	{
+		"name": "Western Sahara",
+		"overview": "Western Sahara is a sparsely populated territory on the northwest coast of Africa, bordering Morocco, Mauritania, and Algeria. It is the subject of one of the world's longest-running decolonization disputes. Historically inhabited by nomadic Berber and Arab tribes, it became a Spanish colony in the late 19th century. Following Spain's withdrawal in 1975, the territory was claimed by both Morocco and Mauritania, leading to a war with the indigenous independence movement, the Polisario Front. While Mauritania eventually withdrew, Morocco secured control of the majority of the territory, including the major cities and phosphate deposits. A UN-brokered ceasefire in 1991 promised a referendum on self-determination, but this vote has never taken place, leaving the territory divided by a sand berm and in a state of diplomatic limbo.",
+		"source": {
+			"label": "Wikipedia - History of Western Sahara",
+			"url": "https://en.wikipedia.org/wiki/History_of_Western_Sahara",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Western_Sahara",
+				"https://www.bbc.com/news/world-africa-14115273",
+				"https://www.un.org/dppa/decolonization/en/nsgt/western-sahara"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Status", "value": "Disputed Territory / Non-Self-Governing Territory (UN)" },
+			{ "label": "Claimants", "value": "Morocco & Sahrawi Arab Democratic Republic (Polisario)" },
+			{ "label": "Largest City", "value": "Laayoune" },
+			{ "label": "Major Resource", "value": "Phosphates, Fisheries" },
+			{ "label": "Physical Feature", "value": "The Berm (2,700 km sand wall)" }
+		],
+		"ancient": {
+			"period": "Pre-1884",
+			"description": "The early history of the region is defined by the migration of Sanhaja Berber tribes who established a nomadic pastoral lifestyle suited to the harsh desert environment. The introduction of the camel (c. 1st century CE) revolutionized trade, linking the region to the trans-Saharan routes. In the 8th century, Islam arrived, and the region later became the birthplace of the Almoravid dynasty (11th century), which built an empire stretching across the Maghreb and Spain. In the 13th century, the Maqil Arab tribes migrated into the area, slowly merging with the Berber population to form the modern Sahrawi culture and spreading the Hassaniya Arabic dialect. The society was organized around tribes and clans, resisting external control from northern sultans.",
+			"keyEvents": [
+				{
+					"year": "c. 1000 BCE",
+					"title": "Berber Settlement",
+					"description": "Establishment of Sanhaja Berber tribal groups"
+				},
+				{
+					"year": "c. 1050",
+					"title": "Almoravid Movement",
+					"description": "Rise of the Almoravid religious movement in the region"
+				},
+				{
+					"year": "c. 13th Century",
+					"title": "Arab Migration",
+					"description": "Arrival of Maqil Arab tribes, leading to Arabization of the region"
+				}
+			],
+			"notableFigures": ["Abdallah ibn Yasin (Almoravid founder)"]
+		},
+		"colonial": {
+			"period": "1884 - 1975",
+			"description": "Spain claimed a protectorate over the coast from Cape Bojador to Cape Blanc in 1884 during the Scramble for Africa, naming it Río de Oro, and later expanding to Saguia el-Hamra. Spanish control was initially limited to coastal outposts like Villa Cisneros (Dakhla). Effective occupation of the interior only occurred in the 1930s and pushed back against tribal resistance. In the 1960s, the discovery of vast phosphate deposits at Bou Craa increased the territory's economic value. As worldwide pressure for decolonization grew, Spain faced demands from Morocco and Mauritania, as well as an internal Sahrawi nationalist movement. The Polisario Front was formed in 1973 to fight for independence.",
+			"keyEvents": [
+				{
+					"year": "1884",
+					"title": "Spanish Protectorate",
+					"description": "Spain declares protectorate over the coast of Río de Oro"
+				},
+				{
+					"year": "1934",
+					"title": "Pacification",
+					"description": "Spain completes military occupation of the interior"
+				},
+				{
+					"year": "1965",
+					"title": "UN Resolution",
+					"description": "UN General Assembly asks Spain to decolonize the territory"
+				},
+				{
+					"year": "1973",
+					"title": "Polisario Formed",
+					"description": "Formation of the Polisario Front to launch armed struggle for independence"
+				}
+			],
+			"notableFigures": ["El-Ouali Mustapha Sayed (Polisario founder)"]
+		},
+		"modern": {
+			"period": "1975 - Present",
+			"description": "As Spain prepared to withdraw in 1975, Morocco launched the 'Green March,' sending 350,000 civilians across the border to claim the territory. Spain signed the Madrid Accords, dividing the territory between Morocco and Mauritania. The Polisario Front proclaimed the Sahrawi Arab Democratic Republic (SADR) and waged a guerilla war. Mauritania withdrew in 1979 due to economic exhaustion, allowing Morocco to annex the southern portion. Morocco constructed a massive sand berm to secure the resource-rich west from Polisario incursions. A UN-brokered ceasefire held from 1991 until 2020, contingent on a referendum that never occurred due to disagreements over voter eligibility. The conflict remains a stalemate, with tens of thousands of Sahrawi refugees living in camps in Tindouf, Algeria.",
+			"keyEvents": [
+				{
+					"year": "1975",
+					"title": "Green March",
+					"description": "Nov 6, Massive Moroccan civilian demonstration entering the territory to assert claim"
+				},
+				{
+					"year": "1976",
+					"title": "SADR Proclaimed",
+					"description": "Polisario declares the Sahrawi Arab Democratic Republic; Spain officially departs"
+				},
+				{
+					"year": "1979",
+					"title": "Mauritanian Withdrawal",
+					"description": "Mauritania signs peace with Polisario; Morocco annexes the rest of the territory"
+				},
+				{
+					"year": "1991",
+					"title": "Ceasefire",
+					"description": "UN-brokered truce ends 16 years of war; MINURSO mission established"
+				},
+				{
+					"year": "2020",
+					"title": "Clashes Resume",
+					"description": "Ceasefire breaks down following border tensions at Guerguerat"
+				}
+			],
+			"notableFigures": ["King Hassan II", "Mohamed Abdelaziz", "Brahim Ghali"]
+		},
+		"timeline": [
+			{
+				"year": "1884",
+				"era": "Colonial",
+				"title": "Spanish Colonization",
+				"description": "Spain claims coastal areas of Western Sahara"
+			},
+			{
+				"year": "1973",
+				"era": "Colonial",
+				"title": "Polisario Front",
+				"description": "Nationalist movement founded to fight Spanish rule"
+			},
+			{
+				"year": "1975",
+				"era": "Modern",
+				"title": "Green March",
+				"description": "Morocco asserts control; Madrid Accords signed"
+			},
+			{
+				"year": "1976",
+				"era": "Modern",
+				"title": "War Begins",
+				"description": "Full-scale war between Morocco/Mauritania and Polisario"
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "UN Ceasefire",
+				"description": "Hostilities end pending a referendum"
+			}
+		]
+	},
+	{
+		"name": "Mali",
+		"overview": "Mali's history is the story of great empires, immense wealth, and intellectual flourishing in the heart of West Africa. Once the center of the Ghana, Mali, and Songhai Empires, this land controlled the lucrative trans-Saharan trade routes of gold and salt, producing legendary leaders like Mansa Musa and centers of learning like Timbuktu. Following the decline of these empires, the region endured French colonization as 'French Sudan' before achieving independence in 1960. Modern Mali has faced significant challenges, including droughts, political instability, and insurgencies in the north, yet it retains a proud cultural identity rooted in the oral traditions of the griots, distinct architecture, and a legacy of religious tolerance and scholarship.",
+		"source": {
+			"label": "Wikipedia - History of Mali",
+			"url": "https://en.wikipedia.org/wiki/History_of_Mali",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Mali",
+				"https://www.britannica.com/place/Mali/History",
+				"https://www.state.gov/u-s-relations-with-mali/"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "September 22, 1960"
+			},
+			{
+				"label": "Capital",
+				"value": "Bamako"
+			},
+			{
+				"label": "Famous Ruler",
+				"value": "Mansa Musa (r. c. 1312–1337)"
+			},
+			{
+				"label": "UNESCO Sites",
+				"value": "4 (including Timbuktu)"
+			},
+			{
+				"label": "Major River",
+				"value": "Niger River"
+			},
+			{
+				"label": "Former Name",
+				"value": "French Sudan"
+			}
+		],
+		"medieval": {
+			"period": "c. 800 - 1591 CE",
+			"description": "The medieval period was the Golden Age of Mali, dominated by the rise of three successive Sahelian kingdoms: Ghana, Mali, and Songhai. The Ghana Empire (Wagadou) thrived on the trans-Saharan gold-salt trade until its decline in the 12th century. It was succeeded by the Mali Empire, founded by the 'Lion King' Sundiata Keita after his victory at the Battle of Kirina in 1235. The Mali Empire reached its zenith under Mansa Musa I, whose 1324 pilgrimage to Mecca displayed such wealth that it destabilized gold prices in Egypt and put Mali on European maps. During this era, the cities of Timbuktu and Djenné became global centers of Islamic scholarship, science, and trade, housing renowned universities like Sankore. As Mali declined in the 15th century due to succession disputes, the Songhai Empire rose to dominance under Sonni Ali and Askia the Great, expanding administrative control and trade even further. This era of imperial grandeur ended abruptly in 1591, when a Moroccan army equipped with gunpowder weapons crossed the Sahara and defeated the Songhai at the Battle of Tondibi, leading to the fragmentation of the region into smaller kingdoms such as the Bamana Empire and the Maasina Kingdom.",
+			"keyEvents": [
+				{
+					"year": "c. 800-1200",
+					"title": "Ghana Empire",
+					"description": "The Wagadou (Ghana) Empire dominates the region, becoming wealthy through taxation of the trans-Saharan gold and salt trade."
+				},
+				{
+					"year": "1235",
+					"title": "Battle of Kirina",
+					"description": "Sundiata Keita defeats the Soso king Soumaoro Kanté, establishing the Mali Empire and the 'Kurukan Fuga' (charter of human rights)."
+				},
+				{
+					"year": "1324",
+					"title": "Pilgrimage of Mansa Musa",
+					"description": "Mansa Musa performs the Hajj to Mecca, distributing massive amounts of gold and establishing diplomatic ties with the Arab world."
+				},
+				{
+					"year": "c. 1464",
+					"title": "Rise of Songhai",
+					"description": "Sonni Ali Ber conquers key cities including Timbuktu and Djenné, eclipsing the Mali Empire and establishing Songhai dominance."
+				},
+				{
+					"year": "1591",
+					"title": "Battle of Tondibi",
+					"description": "Moroccan forces led by Judar Pasha defeat the Songhai Empire using arquebuses, marking the end of the great West African empires."
+				}
+			],
+			"notableFigures": ["Sundiata Keita", "Mansa Musa", "Sonni Ali", "Askia the Great"]
+		},
+		"colonial": {
+			"period": "1880 - 1960",
+			"description": "French colonial penetration began in the late 19th century as part of the Scramble for Africa. The French military faced fierce resistance, particularly from Samori Ture and the Wassoulou Empire, who fought a protracted war against French expansion until his capture in 1898. By 1892, the region was designated as the colony of French Sudan (Soudan Français). The French implemented a system of direct rule, attempting to assimilate the population to French culture while exploiting resources, primarily cotton and groundnuts, through forced labor systems and taxation. The colonial capital was moved from Kayes to Bamako in 1908. During the World Wars, many Malians (recruited as 'Tirailleurs Sénégalais') fought for France, which later fueled demands for equal rights and eventual independence. After World War II, political activity surged with the formation of the African Democratic Rally (RDA). In 1958, French Sudan voted to become an autonomous republic within the French Community, and in 1959, it formed the Mali Federation with Senegal, hoping to unify Francophone West Africa.",
+			"keyEvents": [
+				{
+					"year": "1883",
+					"title": "French Enter Bamako",
+					"description": "French military forces occupy Bamako, establishing a strategic foothold on the Niger River."
+				},
+				{
+					"year": "1898",
+					"title": "Capture of Samori Ture",
+					"description": "The defeat and capture of resistance leader Samori Ture consolidates French control over the interior."
+				},
+				{
+					"year": "1904",
+					"title": "French West Africa",
+					"description": "French Sudan is formally integrated into the federation of French West Africa (AOF)."
+				},
+				{
+					"year": "1946",
+					"title": "Formation of RDA",
+					"description": "The Rassemblement Démocratique Africain (RDA) is founded in Bamako to campaign for African political rights."
+				},
+				{
+					"year": "1959",
+					"title": "Mali Federation",
+					"description": "French Sudan and Senegal unite to form the Mali Federation, gaining autonomy from France."
+				}
+			],
+			"notableFigures": ["Samori Ture", "Archinard (French Commander)", "Modibo Keïta"]
+		},
+		"independence": {
+			"period": "1960 - 1991",
+			"description": "The Mali Federation gained full independence from France on June 20, 1960, but the union collapsed months later due to political differences between the Sudanese (Malian) and Senegalese leaders. On September 22, 1960, the Republic of Mali was declared, with Modibo Keïta as its first president. Keïta pursued a socialist path, aligning with the Eastern Bloc and establishing a one-party state, but economic difficulties led to growing discontent. In 1968, a bloodless military coup led by Lieutenant Moussa Traoré toppled Keïta. Traoré installed a military regime that later transitioned to a one-party constitutional rule, maintaining power for over two decades. His regime was characterized by corruption, repression, and economic stagnation, exacerbated by severe droughts in the 1970s and 80s. In 1991, following months of pro-democracy protests and a violent crackdown dubbed 'Black Friday,' Traoré was overthrown in a coup led by Amadou Toumani Touré, who facilitated a transition to multi-party democracy.",
+			"keyEvents": [
+				{
+					"year": "1960",
+					"title": "Republic Declared",
+					"description": "After the breakup of the Mali Federation with Senegal, Modibo Keïta declares the independent Republic of Mali on September 22."
+				},
+				{
+					"year": "1962",
+					"title": "Malian Franc",
+					"description": "Mali issues its own currency, leading to trade isolation and economic hardship."
+				},
+				{
+					"year": "1968",
+					"title": "Military Coup",
+					"description": "Moussa Traoré overthrows Modibo Keïta, suspending the constitution and establishing the CMLN junta."
+				},
+				{
+					"year": "1974",
+					"title": "New Constitution",
+					"description": "Traoré creates a new constitution legitimizing one-party rule under the UDPM."
+				},
+				{
+					"year": "1991",
+					"title": "March Revolution",
+					"description": "Popular protests and strikes lead to a coup by Amadou Toumani Touré, ending Traoré's 23-year rule."
+				}
+			],
+			"notableFigures": ["Modibo Keïta", "Moussa Traoré", "Amadou Toumani Touré"]
+		},
+		"modern": {
+			"period": "1991 - Present",
+			"description": "Following the 1991 transition, Mali was initially hailed as a model of democracy in West Africa, with Alpha Oumar Konaré serving two terms followed by the re-election of Amadou Toumani Touré. However, underlying tensions erupted in 2012 when a Tuareg rebellion in the north (Azawad), bolstered by heavily armed fighters returning from the Libyan Civil War, overwhelmed the army. Discontent within the military led to a coup in March 2012. Islamist militant groups subsequently hijacked the northern rebellion, imposing harsh Sharia law. A French-led military intervention (Operation Serval) in 2013 recaptured the north, but instability persisted. Since 2020, Mali has experienced renewed political turbulence with two military coups (2020 and 2021) led by Assimi Goïta, driven by frustration over corruption and the ongoing security crisis. The country currently faces complex challenges involving jihadist insurgencies, inter-communal violence, and strained relations with traditional Western allies while building new partnerships with nations like Russia.",
+			"keyEvents": [
+				{
+					"year": "1992",
+					"title": "First Democratic Election",
+					"description": "Alpha Oumar Konaré is elected president in Mali's first free multi-party election."
+				},
+				{
+					"year": "2012",
+					"title": "Northern Rebellion & Coup",
+					"description": "Tuareg rebels declare independence for Azawad; military coup ousts President Touré; Islamists seize the north."
+				},
+				{
+					"year": "2013",
+					"title": "Operation Serval",
+					"description": "French and Chadian forces intervene to liberate northern cities from Islamist control."
+				},
+				{
+					"year": "2015",
+					"title": "Algiers Peace Agreement",
+					"description": "Peace deal signed between the government and rebel groups, though implementation remains difficult."
+				},
+				{
+					"year": "2020-2021",
+					"title": "Political Upheaval",
+					"description": "Two successive military coups result in the transitional military government of Assimi Goïta."
+				}
+			],
+			"notableFigures": ["Alpha Oumar Konaré", "Ibrahim Boubacar Keïta", "Assimi Goïta"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1235",
+				"era": "Medieval",
+				"title": "Empire Founded",
+				"description": "Sundiata Keita establishes the Mali Empire."
+			},
+			{
+				"year": "1324",
+				"era": "Medieval",
+				"title": "Mansa Musa's Hajj",
+				"description": "The Emperor's pilgrimage displays Mali's immense wealth to the world."
+			},
+			{
+				"year": "1591",
+				"era": "Medieval",
+				"title": "Collapse of Songhai",
+				"description": "Moroccan invasion destroys the last great empire of the region."
+			},
+			{
+				"year": "1898",
+				"era": "Colonial",
+				"title": "French Conquest",
+				"description": "Defeat of Samori Ture solidifies French control over French Sudan."
+			},
+			{
+				"year": "1960",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Republic of Mali declared under Modibo Keïta."
+			},
+			{
+				"year": "1991",
+				"era": "Modern",
+				"title": "Democratic Transition",
+				"description": "Moussa Traoré is overthrown, leading to multi-party democracy."
+			},
+			{
+				"year": "2012",
+				"era": "Modern",
+				"title": "War in the North",
+				"description": "Tuareg rebellion and Islamist takeover plunge the country into crisis."
+			}
+		]
+	},
+	{
+		"name": "Mozambique",
+		"overview": "Mozambique's history is shaped by its long Indian Ocean coastline, which facilitated centuries of trade between indigenous Bantu peoples and Arab, Persian, and later European merchants. For nearly five centuries, it was a Portuguese colony, a period marked by exploitation and a rigid racial hierarchy. The struggle for freedom culminated in a decade-long war of independence led by FRELIMO, achieving sovereignty in 1975. However, the new nation was immediately plunged into a brutal 15-year civil war fueled by Cold War rivalries and apartheid South Africa's destabilization efforts. Since achieving peace in 1992, Mozambique has worked towards democratic stability and economic recovery, leveraging its massive natural gas reserves and tourism potential, though it continues to grapple with poverty, corruption, and a recent insurgency in the resource-rich north.",
+		"source": {
+			"label": "Wikipedia - History of Mozambique",
+			"url": "https://en.wikipedia.org/wiki/History_of_Mozambique",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Mozambique",
+				"https://www.britannica.com/place/Mozambique/History",
+				"https://www.un.org/africarenewal/magazine/december-2016-march-2017/mozambique-history-conflict-and-hope"
+			]
+		},
+		"keyFacts": [
+			{
+				"label": "Independence Declared",
+				"value": "June 25, 1975"
+			},
+			{
+				"label": "Capital",
+				"value": "Maputo (formerly Lourenço Marques)"
+			},
+			{
+				"label": "Official Language",
+				"value": "Portuguese"
+			},
+			{
+				"label": "Civil War Duration",
+				"value": "1977 – 1992"
+			},
+			{
+				"label": "Key Export",
+				"value": "Aluminum, Coal, Electricity"
+			},
+			{
+				"label": "Coastline",
+				"value": "2,470 km (Indian Ocean)"
+			}
+		],
+		"pre-colonial": {
+			"period": "c. 100 - 1505 CE",
+			"description": "Before European arrival, Mozambique was a thriving cultural crossroads. The original San hunter-gatherer populations were displaced or absorbed by Bantu-speaking peoples migrating from the north and west in the first millennium CE, who brought iron-working and agriculture. By the 9th century, the coast had become an integral part of the Swahili trade network. Wealthy city-states like Sofala, Angoche, and Mozambique Island flourished by trading gold and ivory from the Zimbabwean plateau for cloth, glass, and porcelain from Persia, India, and China. In the interior, powerful kingdoms emerged, most notably the Monomotapa (Mutapa) Empire, which controlled the gold trade routes to the coast. These societies were complex and cosmopolitan, with Islam becoming established among the coastal elites and Swahili culture and language acting as a lingua franca for commerce. The arrival of Vasco da Gama in 1498 marked the beginning of the end for this independent trade network, as the Portuguese sought to seize control of the gold routes and displace Arab merchants.",
+			"keyEvents": [
+				{
+					"year": "c. 300 CE",
+					"title": "Bantu Migrations",
+					"description": "Bantu-speaking farmers and ironworkers settle the region, displacing earlier hunter-gatherers."
+				},
+				{
+					"year": "c. 900 CE",
+					"title": "Rise of Swahili Coast",
+					"description": "Establishment of trade settlements along the coast, integrating Mozambique into the Indian Ocean commercial network."
+				},
+				{
+					"year": "c. 1430",
+					"title": "Mutapa Empire",
+					"description": "Rise of the Mutapa Empire in the interior, which becomes the primary supplier of gold to coastal traders."
+				},
+				{
+					"year": "1498",
+					"title": "Vasco da Gama Arrives",
+					"description": "Portuguese explorer Vasco da Gama reaches Mozambique Island, the first European to enter the region's trade network."
+				}
+			],
+			"notableFigures": ["Sultans of Mozambique Island", "Mwenemutapa (Rulers of Mutapa)"]
+		},
+		"colonial": {
+			"period": "1505 - 1975",
+			"description": "Portuguese colonization was a slow, uneven process that lasted nearly 500 years. Initially, Portugal established coastal fortresses (feitorias) like Sofala (1505) and Mozambique Island to control the spice and gold trade routes. Penetration into the interior was driven by the 'prazo' system—huge land grants given to Portuguese settlers who ruled like feudal lords, often intermarrying with locals to create Afro-Portuguese dynasties. The 18th and 19th centuries saw a shift towards the slave trade, devastating local populations. It was only after the Berlin Conference (1884-1885) that Portugal effectively occupied the interior to secure its claims against British expansion. The colonial economy was extractive, relying on forced labor (chibalo) and the export of labor to South African mines. Much of the country was leased to foreign charter companies (e.g., the Niassa and Mozambique Companies) which acted as private governments. Under the Estado Novo regime (1933-1974), Mozambique was declared an 'overseas province,' and while some development occurred, the indigenous population was largely denied citizenship, education, and political rights, fueling the rise of nationalist movements in the 1960s.",
+			"keyEvents": [
+				{
+					"year": "1507",
+					"title": "Fortress of Mozambique",
+					"description": "Portuguese establish a permanent base on Mozambique Island, which becomes the capital of Portuguese East Africa."
+				},
+				{
+					"year": "1752",
+					"title": "Separate Administration",
+					"description": "Mozambique is administratively separated from Portuguese India, recognizing its specific importance."
+				},
+				{
+					"year": "1891",
+					"title": "Anglo-Portuguese Treaty",
+					"description": "Treaty defines the modern borders of Mozambique, ending territorial disputes with Britain."
+				},
+				{
+					"year": "1942",
+					"title": "Resistance suppression",
+					"description": "Portugal intensifies administrative control, suppressing the last independent resistance in the Barue region."
+				},
+				{
+					"year": "1960",
+					"title": "Mueda Massacre",
+					"description": "Portuguese troops kill peaceful protesters in Mueda, a turning point that galvanizes the independence movement."
+				}
+			],
+			"notableFigures": ["Vasco da Gama", "Gungunhana (Resistance leader)", "Mouzinho de Albuquerque"]
+		},
+		"independence": {
+			"period": "1962 - 1992",
+			"description": "The fight for independence began with the formation of FRELIMO (Mozambique Liberation Front) in 1962 in Tanzania, led by Eduardo Mondlane. FRELIMO launched an armed struggle in 1964, gaining control of northern regions and implementing social programs. After Mondlane's assassination in 1969, Samora Machel took command. The Carnation Revolution in Portugal (1974) ended the colonial war, and Mozambique became independent on June 25, 1975, under Machel's presidency. FRELIMO established a Marxist-Leninist one-party state, nationalizing land and industries. However, the country was almost immediately destabilized by Rhodesian and South African intelligence services, which created and supported the rebel group RENAMO (Mozambican National Resistance) to undermine FRELIMO's support for anti-apartheid movements. The resulting Civil War (1977-1992) was catastrophic, killing one million people and destroying infrastructure. Machel died in a mysterious plane crash in 1986 and was succeeded by Joaquim Chissano, who eventually steered the country away from Marxism and towards peace negotiations as the Cold War ended.",
+			"keyEvents": [
+				{
+					"year": "1962",
+					"title": "FRELIMO Founded",
+					"description": "Three nationalist groups merge in Dar es Salaam to form FRELIMO under Eduardo Mondlane."
+				},
+				{
+					"year": "1964",
+					"title": "Armed Struggle Begins",
+					"description": "FRELIMO launches its first guerilla attacks in Cabo Delgado province."
+				},
+				{
+					"year": "1974",
+					"title": "Lusaka Accord",
+					"description": "Following the coup in Portugal, FRELIMO and Portugal sign an agreement for transfer of power."
+				},
+				{
+					"year": "1975",
+					"title": "Independence",
+					"description": "Independence is declared; Samora Machel becomes the first president; Portuguese settlers flee en masse."
+				},
+				{
+					"year": "1977",
+					"title": "Civil War Begins",
+					"description": "RENAMO, backed by Rhodesia and later South Africa, begins a brutal insurgency against the FRELIMO government."
+				},
+				{
+					"year": "1986",
+					"title": "Death of Samora Machel",
+					"description": "President Machel dies in a plane crash near the South African border; Joaquim Chissano succeeds him."
+				}
+			],
+			"notableFigures": ["Eduardo Mondlane", "Samora Machel", "Joaquim Chissano", "Afonso Dhlakama (RENAMO leader)"]
+		},
+		"modern": {
+			"period": "1992 - Present",
+			"description": "The General Peace Agreement signed in Rome in 1992 ended the civil war, paving the way for multi-party elections in 1994, won by FRELIMO. Mozambique achieved remarkable economic growth in the late 1990s and 2000s, becoming a darling of international donors and attracting investment in aluminum and coal. However, wealth inequality remained stark. The discovery of massive offshore natural gas reserves in the 2010s promised an economic boom but also heightened corruption (highlighted by the 'tuna bond' scandal) and regional tensions. Since 2017, the province of Cabo Delgado has faced a violent Islamist insurgency (Ansar al-Sunna), causing a humanitarian crisis and disrupting gas projects. The country continues to navigate the difficult path of post-conflict reconstruction, balancing the dominance of the FRELIMO party with the need for inclusive development and security.",
+			"keyEvents": [
+				{
+					"year": "1992",
+					"title": "Rome General Peace Accords",
+					"description": "FRELIMO and RENAMO sign a peace treaty, ending 15 years of civil war."
+				},
+				{
+					"year": "1994",
+					"title": "First Multi-Party Elections",
+					"description": "Joaquim Chissano and FRELIMO win the first democratic elections; RENAMO becomes the official opposition."
+				},
+				{
+					"year": "2010s",
+					"title": "Gas Discoveries",
+					"description": "Discovery of vast natural gas reserves in the Rovuma Basin attracts major international energy companies."
+				},
+				{
+					"year": "2017",
+					"title": "Cabo Delgado Insurgency",
+					"description": "Islamist militants begin attacks in the north, leading to a complex conflict involving foreign troops from Rwanda and SADC."
+				},
+				{
+					"year": "2019",
+					"title": "Cyclone Idai",
+					"description": "Devastating tropical cyclone hits Beira and central Mozambique, causing massive destruction and humanitarian need."
+				}
+			],
+			"notableFigures": ["Joaquim Chissano", "Armando Guebuza", "Filipe Nyusi"]
+		},
+		"timeline": [
+			{
+				"year": "1498",
+				"era": "Pre-Colonial",
+				"title": "Portuguese Arrival",
+				"description": "Vasco da Gama reaches Mozambique Island."
+			},
+			{
+				"year": "1505",
+				"era": "Colonial",
+				"title": "Sofala Established",
+				"description": "First Portuguese fort built, marking the start of colonial presence."
+			},
+			{
+				"year": "1891",
+				"era": "Colonial",
+				"title": "Borders Fixed",
+				"description": "Anglo-Portuguese treaty establishes modern boundaries."
+			},
+			{
+				"year": "1964",
+				"era": "Independence",
+				"title": "War for Independence",
+				"description": "FRELIMO launches armed struggle against Portuguese rule."
+			},
+			{
+				"year": "1975",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Mozambique gains sovereignty after 470 years of Portuguese influence."
+			},
+			{
+				"year": "1977-1992",
+				"era": "Independence",
+				"title": "Civil War",
+				"description": "Devastating conflict between FRELIMO and RENAMO."
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "Peace Accord",
+				"description": "End of civil war sets stage for democratic transition."
+			},
+			{
+				"year": "2017",
+				"era": "Modern",
+				"title": "Northern Insurgency",
+				"description": "Conflict erupts in gas-rich Cabo Delgado province."
+			}
+		]
 	}
 ]

@@ -113,9 +113,9 @@
   - [ ] Côte d'Ivoire
   - [ ] Djibouti
   - [x] Egypt
-  - [ ] Equatorial Guinea
+  - [x] Equatorial Guinea
   - [ ] Eritrea
-  - [ ] Eswatini
+  - [x] Eswatini
   - [x] Ethiopia
   - [ ] Gabon
   - [ ] Gambia
@@ -123,23 +123,23 @@
   - [ ] Guinea
   - [ ] Guinea-Bissau
   - [x] Kenya
-  - [ ] Lesotho
+  - [x] Lesotho
   - [x] Liberia
   - [x] Libya
   - [x] Madagascar
-  - [ ] Malawi
-  - [ ] Mali
+  - [x] Malawi
+  - [x] Mali
   - [ ] Mauritania
   - [x] Mauritius
   - [x] Morocco
-  - [ ] Mozambique
+  - [x] Mozambique
   - [ ] Namibia
   - [ ] Niger
   - [x] Nigeria
   - [ ] Rwanda
   - [x] São Tomé and Príncipe
   - [ ] Senegal
-  - [ ] Seychelles
+  - [x] Seychelles
   - [ ] Sierra Leone
   - [x] Somalia
   - [x] South Africa
@@ -151,7 +151,7 @@
   - [ ] Uganda
   - [ ] Zambia
   - [x] Zimbabwe
-  - [ ] Western Sahara
+  - [x] Western Sahara
 
 - [ ] ASIA
   - [x] Afghanistan
