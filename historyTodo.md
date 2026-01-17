@@ -13,19 +13,19 @@
   - [x] Panama
 
 - [ ] CARIBBEAN
-  - [ ] Antigua and Barbuda
-  - [ ] Bahamas
-  - [ ] Barbados
+  - [x] Antigua and Barbuda
+  - [x] Bahamas
+  - [x] Barbados
   - [x] Cuba
-  - [ ] Dominica
+  - [x] Dominica
   - [ ] Dominican Republic
-  - [ ] Grenada
+  - [x] Grenada
   - [ ] Haiti
-  - [ ] Jamaica
-  - [ ] Saint Kitts and Nevis
-  - [ ] Saint Lucia
+  - [x] Jamaica
+  - [x] Saint Kitts and Nevis
+  - [x] Saint Lucia
   - [ ] Saint Vincent and the Grenadines
-  - [ ] Trinidad and Tobago
+  - [x] Trinidad and Tobago
 
 - [x] SOUTH AMERICA
   - [x] Argentina

@@ -31136,5 +31136,1344 @@
 				"description": "Conflict erupts in gas-rich Cabo Delgado province."
 			}
 		]
+	},
+	{
+		"name": "The Bahamas",
+		"overview": "The history of The Bahamas is a compelling narrative of indigenous Lucayans, colonial experimentation, piracy, and resilience. As the site of Christopher Columbus's first landfall in the Americas, the archipelago became the gateway to the New World. Its geography—hundreds of islands and cays—shaped its destiny as a haven for the Eleutheran Adventurers seeking religious freedom, a notorious stronghold for pirates like Blackbeard, and a refuge for American Loyalists who reshaped the demographic and economic landscape. Transitioning from a British colony to an independent nation in 1973, The Bahamas has evolved into a premier global tourism and financial center while maintaining a vibrant culture rooted in West African and British traditions, expressed vividly through Junkanoo and storytelling.",
+		"source": {
+			"label": "Britannica - History of The Bahamas",
+			"url": "https://www.britannica.com/place/The-Bahamas/History",
+			"urls": [
+				"https://www.britannica.com/place/The-Bahamas/History",
+				"https://www.bahamas.gov.bs/wps/portal/public/About%20The%20Bahamas",
+				"https://en.wikipedia.org/wiki/History_of_the_Bahamas"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "July 10, 1973" },
+			{ "label": "Capital", "value": "Nassau (founded 1670 as Charles Town)" },
+			{ "label": "First Landfall", "value": "San Salvador (1492)" },
+			{ "label": "Motto", "value": "Forward, Upward, Onward, Together" },
+			{ "label": "Legislature", "value": "One of the oldest in the Americas (1729)" },
+			{ "label": "Currency", "value": "Bahamian Dollar (BSD)" }
+		],
+		"pre-colonial": {
+			"period": "c. 600 CE - 1492",
+			"description": "Originally inhabited by the Lucayans, a branch of the Taino (Arawak) people who migrated from the Greater Antilles (Hispaniola and Cuba) around the 7th century. The Lucayans developed a peaceful, seafaring society adapted to the archipelago's coral islands. They lived in villages of thatch huts, cultivated cassava and sweet potatoes, and were skilled potters and weavers. Their society was hierarchical, led by caciques (chiefs). Estimates suggest the population reached nearly 40,000 by the time of European contact. They called their islands 'Lucayos' (Islands of the Lucayans). Tragically, within decades of Columbus's arrival in 1492, the Lucayan population was completely decimated due to introduced diseases and enslavement by the Spanish for labor in the pearl fisheries of Margarita and the mines of Hispaniola.",
+			"keyEvents": [
+				{
+					"year": "c. 600-800",
+					"title": "Lucayan Migration",
+					"description": "Taino peoples migrate north from Hispaniola/Cuba, adapting to the Bahamian environment"
+				},
+				{
+					"year": "1492",
+					"title": "Columbus's Landfall",
+					"description": "October 12, Christopher Columbus lands on the island of Guanahani, renaming it San Salvador"
+				}
+			],
+			"notableFigures": ["Unknown Lucayan Caciques"]
+		},
+		"colonial": {
+			"period": "1492 - 1973",
+			"description": "After the Lucayan genocide, the islands remained largely uninhabited for over a century until English Puritans, known as the Eleutheran Adventurers, established the first permanent European settlement in 1648 seeking religious freedom. The late 17th and early 18th centuries saw the 'Golden Age of Piracy,' with Nassau becoming a lawless pirate republic until restored to order by Royal Governor Woodes Rogers in 1718. The American Revolutionary War brought a massive influx of Loyalists and their enslaved Africans, who established cotton plantations and fundamentally altered the islands' demographics and culture. Following the abolition of the slave trade (1807) and slavery (1834), the economy fluctuated between wrecking, sponging, and blockade-running during the American Civil War and Prohibition. The islands served as a strategic British outpost throughout the World Wars.",
+			"keyEvents": [
+				{
+					"year": "1648",
+					"title": "Eleutheran Adventurers",
+					"description": "William Sayle leads English Puritans to settle Eleuthera, establishing the first permanent British colony"
+				},
+				{
+					"year": "1718",
+					"title": "End of Pirate Republic",
+					"description": "Woodes Rogers arrives as Royal Governor, offering pardons to pirates and hanging those who refused, securing British control"
+				},
+				{
+					"year": "1782-1783",
+					"title": "Spanish Occupation",
+					"description": "Spain briefly captures Nassau during the American Revolutionary War before it is retaken by Colonel Andrew Deveaux"
+				},
+				{
+					"year": "1834",
+					"title": "Emancipation",
+					"description": "Slavery is abolished across the British Empire, transforming the social structure of the islands"
+				},
+				{
+					"year": "1940-1945",
+					"title": "Duke of Windsor's Governorship",
+					"description": "The abdicated King Edward VIII serves as Governor of the Bahamas during WWII"
+				}
+			],
+			"notableFigures": ["William Sayle", "Blackbeard (Edward Teach)", "Woodes Rogers", "Lord Dunmore"]
+		},
+		"independence": {
+			"period": "1953 - 1973",
+			"description": "The path to independence began with the formation of the first organized political parties in the 1950s, challenging the 'Bay Street Boys,' a white merchant oligarchy that dominated the economy and government. The Progressive Liberal Party (PLP), led by Lynden Pindling, championed the cause of the black majority. Key events like the 1958 General Strike and the fight for women's suffrage (granted in 1962) galvanized the movement. In 1967, the PLP won a historic election, achieving Majority Rule. This paved the way for full sovereignty. On July 10, 1973, The Bahamas peacefully became a fully independent Commonwealth realm, ending 325 years of British rule.",
+			"keyEvents": [
+				{
+					"year": "1953",
+					"title": "PLP Founded",
+					"description": "Establishment of the Progressive Liberal Party, the first organized political party"
+				},
+				{
+					"year": "1958",
+					"title": "General Strike",
+					"description": "Taxi drivers and hotel workers strike, paralyzing tourism and highlighting labor power"
+				},
+				{
+					"year": "1967",
+					"title": "Majority Rule Day",
+					"description": "The PLP wins the general election, marking the first time the black majority held political power"
+				},
+				{
+					"year": "1973",
+					"title": "Independence",
+					"description": "The Bahamas becomes an independent sovereign nation within the Commonwealth"
+				}
+			],
+			"notableFigures": ["Sir Lynden Pindling", "Sir Milo Butler", "Dame Doris Johnson"]
+		},
+		"modern": {
+			"period": "1973 - Present",
+			"description": "Post-independence Bahamas focused on developing tourism and offshore banking, becoming one of the wealthiest nations in the Caribbean per capita. The 1980s saw challenges related to drug trafficking transshipment, which impacted social stability. However, the nation stabilized and diversified its tourism product with mega-resorts like Atlantis. Political power has alternated peacefully between the PLP and the Free National Movement (FNM). The country faces modern challenges including climate change, as evidenced by the devastation of Hurricane Dorian in 2019, while continuing to play a leading role in regional organizations like CARICOM.",
+			"keyEvents": [
+				{
+					"year": "1992",
+					"title": "FNM Victory",
+					"description": "Hubert Ingraham leads the Free National Movement to victory, ending 25 years of Pindling's rule"
+				},
+				{
+					"year": "2002",
+					"title": "Ivy Dumont Appointed",
+					"description": "Dame Ivy Dumont becomes the first female Governor-General"
+				},
+				{
+					"year": "2019",
+					"title": "Hurricane Dorian",
+					"description": "Category 5 storm devastates Abaco and Grand Bahama, the worst natural disaster in the nation's history"
+				}
+			],
+			"notableFigures": ["Hubert Ingraham", "Perry Christie", "Hubert Minnis", "Philip Davis"]
+		},
+		"timeline": [
+			{
+				"year": "1492",
+				"era": "Pre-Colonial",
+				"title": "First Landfall",
+				"description": "Columbus arrives in the New World at San Salvador"
+			},
+			{
+				"year": "1648",
+				"era": "Colonial",
+				"title": "Eleutheran Settlement",
+				"description": "Puritan settlers arrive seeking religious freedom"
+			},
+			{
+				"year": "1718",
+				"era": "Colonial",
+				"title": "Royal Colony",
+				"description": "The Bahamas becomes a British Crown Colony to combat piracy"
+			},
+			{
+				"year": "1783",
+				"era": "Colonial",
+				"title": "Loyalist Influx",
+				"description": "Arrival of American Loyalists and enslaved Africans boosts population"
+			},
+			{
+				"year": "1967",
+				"era": "Independence",
+				"title": "Majority Rule",
+				"description": "First government elected by the black majority"
+			},
+			{
+				"year": "1973",
+				"era": "Independence",
+				"title": "Nationhood",
+				"description": "The Bahamas becomes an independent country"
+			},
+			{
+				"year": "2019",
+				"era": "Modern",
+				"title": "Hurricane Dorian",
+				"description": "Historic storm causes catastrophic damage"
+			}
+		]
+	},
+	{
+		"name": "Barbados",
+		"overview": "Barbados holds a distinct place in Caribbean history due to its geological position as the easternmost island and its uninterrupted British colonial rule from 1627 to 1966, earning it the nickname 'Little England.' Unlike its volcanic neighbors, Barbados is a coral island that was transformed into a powerhouse of the sugar plantation economy. This 'Sugar Revolution' created a wealthy plantocracy and a massive enslaved African population, the ancestors of the majority of modern Bajans. The island has a strong tradition of parliamentary democracy, with a legislature dating back to 1639. Today, Barbados is a stable democracy with a high quality of life, having recently transitioned to a republic in 2021, severing ties with the British monarchy while remaining in the Commonwealth.",
+		"source": {
+			"label": "Wikipedia - History of Barbados",
+			"url": "https://en.wikipedia.org/wiki/History_of_Barbados",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Barbados",
+				"https://www.britannica.com/place/Barbados",
+				"https://barbados.org/history1.htm"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "November 30, 1966" },
+			{ "label": "Republic Declared", "value": "November 30, 2021" },
+			{ "label": "Capital", "value": "Bridgetown (UNESCO Heritage Site)" },
+			{ "label": "First Settlement", "value": "Holetown (1627)" },
+			{ "label": "Legislature", "value": "Parliament established 1639 (3rd oldest in Commonwealth)" },
+			{ "label": "National Hero", "value": "Sir Garfield Sobers (among others)" }
+		],
+		"pre-colonial": {
+			"period": "c. 1600 BCE - 1536 CE",
+			"description": "Archaeological evidence suggests Barbados was first settled by Saladoid-Barrancoid peoples (Amerindians) from South America around 1600 BCE. Later waves included the Arawaks (Lokono) around 800 CE and the Caribs (Kalinago) in the 13th century. These groups lived in villages, farming cassava and fishing. By the time the Portuguese visited briefly in 1536 (naming the island 'Los Barbados' or 'The Bearded Ones' likely due to the bearded fig trees), the island was largely depopulated, likely due to slave raids by the Spanish and introduced diseases. When the English arrived in 1627, they found the island uninhabited but with clear signs of previous indigenous habitation.",
+			"keyEvents": [
+				{
+					"year": "c. 1600 BCE",
+					"title": "First Settlement",
+					"description": "Arrival of Amerindian peoples from the Orinoco delta"
+				},
+				{
+					"year": "c. 1200 CE",
+					"title": "Carib Expansion",
+					"description": "Kalinago peoples establish presence, displacing earlier groups"
+				},
+				{
+					"year": "1536",
+					"title": "Portuguese Sighting",
+					"description": "Pedro a Campos visits the island, leaving pigs but no permanent settlement"
+				}
+			],
+			"notableFigures": ["Unknown Amerindian leaders"]
+		},
+		"colonial": {
+			"period": "1627 - 1966",
+			"description": "English settlement began at Holetown in 1627. Initially cultivating tobacco and cotton with indentured servants, the island underwent a dramatic 'Sugar Revolution' in the 1640s, introduced by Dutch expertise and capital. This shifted the economy to large-scale sugar plantations and necessitated the mass importation of enslaved West Africans. Barbados became one of the richest colonies in the world for the British planter class. The enslaved population resisted through culture and occasional revolt, most notably the 1816 Bussa Rebellion. Slavery was abolished in 1834, followed by an apprenticeship period until 1838. A white oligarchy retained political control for a century after emancipation, prompting civil unrest and riots in 1937, which spurred the formation of trade unions and political parties advocating for universal suffrage and independence.",
+			"keyEvents": [
+				{
+					"year": "1627",
+					"title": "English Settlement",
+					"description": "First English ship 'Olive Blossom' arrives; settlement begins at Holetown"
+				},
+				{
+					"year": "1639",
+					"title": "House of Assembly",
+					"description": "Establishment of the House of Assembly, starting a long tradition of parliamentary rule"
+				},
+				{
+					"year": "1640s",
+					"title": "Sugar Revolution",
+					"description": "Transition to sugar cane monoculture and the plantation system"
+				},
+				{
+					"year": "1816",
+					"title": "Bussa's Rebellion",
+					"description": "Largest slave revolt in Barbadian history, led by Bussa, now a National Hero"
+				},
+				{
+					"year": "1876",
+					"title": "Confederation Riots",
+					"description": "Uprising against attempts to federate Barbados with other Windward Islands"
+				},
+				{
+					"year": "1937",
+					"title": "Labor Riots",
+					"description": "Civil unrest over poor economic conditions leads to the Moyne Commission and political reform"
+				}
+			],
+			"notableFigures": ["Bussa", "Sarah Ann Gill", "Grantley Adams", "Clement Payne"]
+		},
+		"independence": {
+			"period": "1966 - 2021",
+			"description": "Barbados achieved independence from Britain on November 30, 1966, under the leadership of Errol Barrow, who became the first Prime Minister. Unlike many neighbors, the transition was peaceful and the island maintained political stability with two dominant parties (DLP and BLP). The economy successfully diversified from sugar to tourism and international finance. Barbados invested heavily in education and healthcare, achieving one of the highest literacy rates in the region. Culturally, the island gained global recognition through cricket and music.",
+			"keyEvents": [
+				{
+					"year": "1966",
+					"title": "Independence",
+					"description": "Barbados becomes an independent state within the Commonwealth"
+				},
+				{
+					"year": "1994",
+					"title": "Sherbourne Conference",
+					"description": "Global UN conference on sustainable development for small island states held in Barbados"
+				},
+				{
+					"year": "2018",
+					"title": "BLP Landslide",
+					"description": "Mia Mottley becomes the first female Prime Minister, winning all parliamentary seats"
+				}
+			],
+			"notableFigures": ["Errol Barrow", "Tom Adams", "Mia Mottley", "Rihanna"]
+		},
+		"modern": {
+			"period": "2021 - Present",
+			"description": "In a historic move completing its journey of self-determination, Barbados transitioned to a parliamentary republic on November 30, 2021, removing Queen Elizabeth II as head of state. Dame Sandra Mason was inaugurated as the first President. The country continues to be a vocal advocate on the global stage for climate justice, given its vulnerability to rising sea levels, and is pioneering the 'Bridgetown Initiative' to reform global development finance for developing nations.",
+			"keyEvents": [
+				{
+					"year": "2021",
+					"title": "Republic Transition",
+					"description": "Barbados formally becomes a republic, replacing the British monarch with a Barbadian President"
+				}
+			],
+			"notableFigures": ["Dame Sandra Mason", "Mia Mottley"]
+		},
+		"timeline": [
+			{ "year": "1627", "era": "Colonial", "title": "Settlement", "description": "English settle at Holetown" },
+			{
+				"year": "1639",
+				"era": "Colonial",
+				"title": "Parliament",
+				"description": "First meeting of the House of Assembly"
+			},
+			{
+				"year": "1816",
+				"era": "Colonial",
+				"title": "Slave Revolt",
+				"description": "Bussa leads major uprising against slavery"
+			},
+			{
+				"year": "1834",
+				"era": "Colonial",
+				"title": "Abolition",
+				"description": "Slavery abolished throughout British Empire"
+			},
+			{
+				"year": "1937",
+				"era": "Colonial",
+				"title": "Riots",
+				"description": "Labor unrest sparks political movement towards independence"
+			},
+			{
+				"year": "1966",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Barbados becomes independent under Errol Barrow"
+			},
+			{ "year": "2021", "era": "Modern", "title": "Republic", "description": "Barbados becomes a republic" }
+		]
+	},
+	{
+		"name": "Dominica",
+		"overview": "Dominica, known as the 'Nature Isle of the Caribbean,' has a rugged, volcanic landscape that historically deterred rapid colonization and provided a natural fortress for the indigenous Kalinago people. It was the last Caribbean island to be colonized by Europeans, serving as a neutral territory and a flashpoint between French and British forces for over a century. This tug-of-war resulted in a unique cultural blend: an English-speaking nation with French Creole patois, Catholic dominance, and French place names. Dominica is also unique for being the only Eastern Caribbean island with a reserved territory for the indigenous Kalinago population. Since independence in 1978, the nation has navigated political turbulence and devastating hurricanes to become a leader in eco-tourism and climate resilience.",
+		"source": {
+			"label": "Britannica - History of Dominica",
+			"url": "https://www.britannica.com/place/Dominica/History",
+			"urls": [
+				"https://www.britannica.com/place/Dominica/History",
+				"https://dominica.gov.dm/about-dominica/history",
+				"https://en.wikipedia.org/wiki/History_of_Dominica"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence", "value": "November 3, 1978" },
+			{ "label": "Capital", "value": "Roseau" },
+			{ "label": "Nickname", "value": "The Nature Isle" },
+			{ "label": "Indigenous People", "value": "Home to the Kalinago Territory" },
+			{ "label": "Currency", "value": "East Caribbean Dollar (XCD)" },
+			{ "label": "Geography", "value": "Youngest island in Lesser Antilles, volcanic" }
+		],
+		"pre-colonial": {
+			"period": "c. 3000 BCE - 1763",
+			"description": "Dominica was originally inhabited by the Ortoiroid people, followed by the Arawaks (Igneri). By the 14th century, the Island Caribs (Kalinago) arrived, displacing the Arawaks. The Kalinago named the island 'Waitukubuli' ('Tall is her body'), referring to the mountainous terrain. Unlike other islands where indigenous populations were quickly wiped out, the Kalinago fiercely resisted European settlement for two centuries after Columbus sighted the island in 1493. Their resistance was aided by the island's steep, rugged terrain, which made it difficult for European powers to establish plantations. This forced Britain and France to agree to the 1748 Treaty of Aix-la-Chapelle, officially leaving the island neutral and in possession of the Caribs, though French woodcutters eventually encroached.",
+			"keyEvents": [
+				{
+					"year": "c. 1000",
+					"title": "Kalinago Arrival",
+					"description": "Kalinago people settle the island, establishing a stronghold"
+				},
+				{
+					"year": "1493",
+					"title": "Columbus Sighting",
+					"description": "Columbus spots the island on a Sunday (Dominica), but does not land due to resistance"
+				},
+				{
+					"year": "1660",
+					"title": "Treaty of Neutrality",
+					"description": "French and English agree to leave Dominica and St. Vincent to the Caribs"
+				}
+			],
+			"notableFigures": ["Kalinago Chiefs (Warner)"]
+		},
+		"colonial": {
+			"period": "1763 - 1978",
+			"description": "Britain formally acquired Dominica in 1763 via the Treaty of Paris, but French attempts to recapture it continued, most successfully in 1778. It was permanently restored to Britain in 1783, though French cultural influence remained profound. The British established sugar and coffee plantations using enslaved African labor. Dominica was unique in the British Caribbean for having a legislature controlled by free men of color in the 1830s (the 'Mulatto Ascendancy') shortly after abolition, causing anxiety among white planters who lobbied for direct Crown Colony rule (imposed in 1896) to reduce local political power. The island suffered economic neglect and was often governed as part of the Leeward or Windward Islands federations before moving toward self-government.",
+			"keyEvents": [
+				{ "year": "1763", "title": "British Acquisition", "description": "Treaty of Paris cedes Dominica to Britain" },
+				{
+					"year": "1795",
+					"title": "Fédon-style Revolt",
+					"description": "Attempted uprising inspired by the Haitian Revolution"
+				},
+				{
+					"year": "1805",
+					"title": "French Burning of Roseau",
+					"description": "French forces sack the capital, Roseau"
+				},
+				{
+					"year": "1838",
+					"title": "Mulatto Ascendancy",
+					"description": "Dominica becomes the only British colony to have a black-controlled legislature in the 19th century"
+				},
+				{
+					"year": "1903",
+					"title": "Carib Reserve Established",
+					"description": "British administrator Hesketh Bell formally establishes the Carib Reserve (now Kalinago Territory)"
+				},
+				{
+					"year": "1967",
+					"title": "Associated Statehood",
+					"description": "Dominica becomes an Associated State of the UK, gaining internal self-government"
+				}
+			],
+			"notableFigures": ["Thomas Warner", "Jean-Baptiste Labat", "Cecilia Burnett"]
+		},
+		"independence": {
+			"period": "1978 - Present",
+			"description": "Dominica became an independent republic within the Commonwealth on November 3, 1978, with Patrick John as the first Prime Minister. The early years were chaotic, marked by strikes, a constitutional crisis, and an attempted coup involving mercenaries (Operation Red Dog). In 1980, Dame Eugenia Charles became the Caribbean's first female Prime Minister, bringing stability and a pro-Western stance (famously supporting the US invasion of Grenada). The economy shifted from bananas to eco-tourism as trade preferences eroded. The island is highly vulnerable to natural disasters; Hurricane David (1979) and Hurricane Maria (2017) caused near-total destruction, prompting the nation's current mission to become the world's first fully 'climate-resilient' nation.",
+			"keyEvents": [
+				{ "year": "1978", "title": "Independence", "description": "Dominica achieves full independence from Britain" },
+				{
+					"year": "1979",
+					"title": "Hurricane David",
+					"description": "Category 5 hurricane devastates the economy and infrastructure"
+				},
+				{
+					"year": "1980",
+					"title": "First Female PM",
+					"description": "Eugenia Charles (Freedom Party) elected as Caribbean's first female Prime Minister"
+				},
+				{
+					"year": "1981",
+					"title": "Attempted Coup",
+					"description": "Failed 'Operation Red Dog' involving KKK-affiliated mercenaries trying to restore Patrick John"
+				},
+				{
+					"year": "2017",
+					"title": "Hurricane Maria",
+					"description": "Category 5 storm destroys 90% of structures; PM Roosevelt Skerrit pledges to build a climate-resilient nation"
+				}
+			],
+			"notableFigures": ["Patrick John", "Dame Eugenia Charles", "Roosevelt Skerrit"]
+		},
+		"timeline": [
+			{ "year": "1493", "era": "Pre-Colonial", "title": "Sighting", "description": "Columbus names the island" },
+			{
+				"year": "1748",
+				"era": "Pre-Colonial",
+				"title": "Neutrality",
+				"description": "Island declared neutral territory for Caribs"
+			},
+			{ "year": "1763", "era": "Colonial", "title": "British Rule", "description": "Britain takes formal possession" },
+			{
+				"year": "1838",
+				"era": "Colonial",
+				"title": "Political Milestone",
+				"description": "First black-majority legislature in the British Empire"
+			},
+			{ "year": "1978", "era": "Independence", "title": "Independence", "description": "Dominica becomes a republic" },
+			{
+				"year": "1980",
+				"era": "Independence",
+				"title": "Eugenia Charles",
+				"description": "First female PM in the Caribbean elected"
+			},
+			{
+				"year": "2017",
+				"era": "Modern",
+				"title": "Hurricane Maria",
+				"description": "Devastating storm reshapes national focus to climate resilience"
+			}
+		]
+	},
+	{
+		"name": "Grenada",
+		"overview": "Grenada's history is a dramatic narrative of indigenous resistance, colonial conflict, and modern revolution. Known as the 'Spice Isle' for its production of nutmeg and mace, it was fought over by France and Britain for centuries, resulting in a unique culture that blends French colonial heritage (visible in place names and Patois) with British institutions. The island is distinct in the English-speaking Caribbean for its 1979 revolution, which established the first socialist government in the region, ending in a tragic coup and a U.S. military invasion in 1983. Today, Grenada is a stable democracy known for its stunning natural beauty and resilient agricultural economy.",
+		"source": {
+			"label": "Britannica - History of Grenada",
+			"url": "https://www.britannica.com/place/Grenada/History",
+			"urls": [
+				"https://www.britannica.com/place/Grenada/History",
+				"https://www.gov.gd/about-grenada/history",
+				"https://history.state.gov/countries/grenada"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "February 7, 1974" },
+			{ "label": "Capital", "value": "St. George's (founded 1650)" },
+			{ "label": "Nickname", "value": "The Spice Isle" },
+			{ "label": "Revolutionary Period", "value": "1979–1983" },
+			{ "label": "Major Export", "value": "Nutmeg (20% of world supply)" },
+			{ "label": "National Day", "value": "February 7 (Independence Day)" }
+		],
+		"ancient": {
+			"period": "c. 3000 BCE - 1498 CE",
+			"description": "Long before European arrival, Grenada was inhabited by successive waves of indigenous peoples from South America. The earliest were the Ciboney (or Guanahatabey), followed by the Arawaks (Taino) who brought agriculture and pottery. By roughly 1000 CE, the Island Caribs (Kalinago) arrived, a warrior society that displaced or assimilated the Arawaks. They named the island 'Camerhogne.' The Caribs were fierce defenders of their territory, successfully repelling early European settlement attempts for over a century after Columbus sighted the island in 1498. Their legacy is tragically marked by the 'Leapers' Hill' incident in 1651, where the last resisting Caribs jumped off a cliff rather than submit to French conquest.",
+			"keyEvents": [
+				{
+					"year": "c. 3000 BCE",
+					"title": "Ciboney Settlement",
+					"description": "Arrival of the first hunter-gatherer peoples from South America"
+				},
+				{
+					"year": "c. 800 CE",
+					"title": "Kalinago Arrival",
+					"description": "Caribs migrate north, displacing the peaceful Arawak population"
+				},
+				{
+					"year": "1498",
+					"title": "Columbus Sights Island",
+					"description": "Christopher Columbus sights the island on his third voyage, naming it 'Concepción'"
+				}
+			],
+			"notableFigures": ["Kaierouanne (Carib Chief who resisted the French)"]
+		},
+		"colonial": {
+			"period": "1650 - 1974",
+			"description": "Grenada's colonial era was defined by the struggle between France and Britain. The French established the first permanent settlement in 1650, exterminating the indigenous population and establishing sugar/indigo plantations worked by enslaved Africans. Britain captured the island in 1762 during the Seven Years' War. The most significant event of this era was Fédon's Rebellion (1795–1796), a massive uprising led by Julien Fédon, a free mixed-race planter inspired by the French Revolution, who controlled most of the island for over a year before being defeated. Grenada eventually became a British Crown Colony, shifting its economy from sugar to cocoa and nutmeg. The 20th century saw the rise of labor movements led by the charismatic and controversial Eric Gairy, who led the country to independence.",
+			"keyEvents": [
+				{
+					"year": "1650",
+					"title": "French Settlement",
+					"description": "Cardinal Richelieu's company purchases the island; French establish St. George's"
+				},
+				{
+					"year": "1651",
+					"title": "Leapers' Hill",
+					"description": "Defeated Caribs jump to their deaths at Sauteurs to avoid French captivity"
+				},
+				{ "year": "1763", "title": "Treaty of Paris", "description": "Grenada is formally ceded to Great Britain" },
+				{
+					"year": "1795-1796",
+					"title": "Fédon's Rebellion",
+					"description": "Julien Fédon leads a pro-French, anti-slavery rebellion, seizing control of the island"
+				},
+				{
+					"year": "1834",
+					"title": "Abolition of Slavery",
+					"description": "Slavery is abolished, followed by a period of apprenticeship until 1838"
+				},
+				{
+					"year": "1951",
+					"title": "Sky Red",
+					"description": "General strike and social unrest led by Eric Gairy marks the rise of organized labor"
+				}
+			],
+			"notableFigures": ["Julien Fédon", "T.A. Marryshow (Father of West Indies Federation)", "Eric Gairy"]
+		},
+		"modern": {
+			"period": "1974 - Present",
+			"description": "Grenada attained independence in 1974 under Eric Gairy, whose rule became increasingly authoritarian. In 1979, the New Jewel Movement (NJM) led by the charismatic Maurice Bishop staged a bloodless coup, establishing the People's Revolutionary Government (PRG). The PRG implemented literacy programs and social reforms but suspended elections and aligned with Cuba and the USSR. Internal power struggles led to Bishop's execution by hardliners in October 1983, triggering a U.S.-led invasion (Operation Urgent Fury) that restored democratic governance. Since then, Grenada has maintained a stable parliamentary democracy. The island faced a major setback in 2004 when Hurricane Ivan destroyed 90% of homes and the nutmeg crop, but has since rebuilt its economy around tourism and education (St. George's University).",
+			"keyEvents": [
+				{
+					"year": "1974",
+					"title": "Independence",
+					"description": "Grenada gains independence from Britain; Eric Gairy becomes first Prime Minister"
+				},
+				{
+					"year": "1979",
+					"title": "Grenada Revolution",
+					"description": "March 13, Maurice Bishop and the NJM overthrow Gairy, establishing the first revolutionary government in the English-speaking Caribbean"
+				},
+				{
+					"year": "1983",
+					"title": "US Invasion",
+					"description": "Following Bishop's execution, US forces invade (Operation Urgent Fury) to restore order and democracy"
+				},
+				{
+					"year": "2004",
+					"title": "Hurricane Ivan",
+					"description": "Category 5 hurricane devastates the island, destroying the vital nutmeg industry"
+				},
+				{
+					"year": "2022",
+					"title": "Republic Debate",
+					"description": "Renewed national conversations about becoming a republic and removing the British monarch as head of state"
+				}
+			],
+			"notableFigures": ["Maurice Bishop", "Sir Paul Scoon", "Keith Mitchell", "Kirani James (Olympic Gold Medalist)"]
+		},
+		"timeline": [
+			{ "year": "1498", "era": "Ancient", "title": "European Discovery", "description": "Columbus sights the island" },
+			{
+				"year": "1650",
+				"era": "Colonial",
+				"title": "French Colonization",
+				"description": "First permanent European settlement established"
+			},
+			{
+				"year": "1763",
+				"era": "Colonial",
+				"title": "British Cession",
+				"description": "France cedes Grenada to Britain"
+			},
+			{
+				"year": "1795",
+				"era": "Colonial",
+				"title": "Fédon's Rebellion",
+				"description": "Violent uprising against British rule"
+			},
+			{
+				"year": "1974",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Grenada becomes an independent nation"
+			},
+			{ "year": "1979", "era": "Modern", "title": "Revolution", "description": "New Jewel Movement takes power" },
+			{ "year": "1983", "era": "Modern", "title": "Invasion", "description": "US Invasion restores democracy" }
+		]
+	},
+	{
+		"name": "Jamaica",
+		"overview": "Jamaica's history is a powerful saga of resistance, resilience, and cultural global influence. Originally 'Xaymaca' (Land of Wood and Water), it transitioned from Spanish neglect to becoming the jewel of the British Empire's sugar economy, fueled by the forced labor of hundreds of thousands of enslaved Africans. The island is renowned for the Maroons—escaped slaves who fought the British to a standstill and won treaties of autonomy. Post-independence Jamaica has grappled with political tribalism and economic debt but has simultaneously produced a cultural explosion through Reggae music, Rastafari, and athletics that has made the island a global superpower in soft power, far outstripping its small size.",
+		"source": {
+			"label": "Jamaica Information Service - History",
+			"url": "https://jis.gov.jm/information/jamaican-history/",
+			"urls": [
+				"https://jis.gov.jm/information/jamaican-history/",
+				"https://www.britannica.com/place/Jamaica",
+				"https://nlj.gov.jm/history-notes-jamaica/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "August 6, 1962" },
+			{ "label": "Motto", "value": "Out of Many, One People" },
+			{ "label": "Capital", "value": "Kingston (founded 1692)" },
+			{ "label": "Largest City", "value": "Kingston" },
+			{ "label": "Indigenous Name", "value": "Xaymaca" },
+			{ "label": "National Hero", "value": "Marcus Garvey (among 7 others)" }
+		],
+		"ancient": {
+			"period": "c. 600 CE - 1494 CE",
+			"description": "The original inhabitants of Jamaica were the Taino people (a subgroup of the Arawaks), who arrived from South America around 600 CE. They established a peaceful, agrarian society divided into chiefdoms (caciques). They named the island 'Xaymaca,' meaning 'Land of Wood and Water.' The Taino were skilled potters and weavers, cultivating cassava, maize, and sweet potatoes. Their population is estimated to have been around 60,000 at the time of Columbus's arrival. Tragically, under Spanish occupation beginning in 1494, the Taino were virtually exterminated within 50 years due to imported diseases, enslavement, and starvation, though recent genetic studies suggest some assimilation into the African and European populations.",
+			"keyEvents": [
+				{
+					"year": "c. 650 CE",
+					"title": "Taino Settlement",
+					"description": "The 'Redware people' arrive, followed by the Taino Arawaks"
+				},
+				{
+					"year": "1494",
+					"title": "Columbus Arrival",
+					"description": "Christopher Columbus lands at St. Ann's Bay, claiming the island for Spain"
+				}
+			],
+			"notableFigures": ["Caciques (Taino Chiefs)"]
+		},
+		"colonial": {
+			"period": "1494 - 1962",
+			"description": "Spanish rule (1509–1655) was weak, used primarily as a supply base. In 1655, the British captured the island, transforming it into the world's leading sugar exporter. This wealth was built on the brutal chattel slavery of Africans. The era was defined by constant resistance; the Maroons (escaped slaves) fought the British from the mountainous cockpit country, forcing the British to sign peace treaties in 1739. The 19th century saw the end of the slave trade (1807) and slavery itself (1834), largely precipitated by the Christmas Rebellion led by Sam Sharpe in 1831. Post-emancipation strife culminated in the Morant Bay Rebellion of 1865, which led to Jamaica becoming a Crown Colony. The 1930s labor riots birthed the modern political party system (PNP and JLP) and the push for self-rule.",
+			"keyEvents": [
+				{
+					"year": "1655",
+					"title": "British Capture",
+					"description": "British expedition under Penn and Venables captures Jamaica from the Spanish"
+				},
+				{
+					"year": "1692",
+					"title": "Port Royal Earthquake",
+					"description": "The 'wickedest city on earth' is destroyed by a massive earthquake and tsunami"
+				},
+				{
+					"year": "1739",
+					"title": "Maroon Treaties",
+					"description": "British sign peace treaties with Maroon leaders Cudjoe and Quao, granting them autonomy"
+				},
+				{
+					"year": "1831",
+					"title": "Christmas Rebellion",
+					"description": "Massive slave uprising led by Sam Sharpe hastens the end of slavery"
+				},
+				{
+					"year": "1865",
+					"title": "Morant Bay Rebellion",
+					"description": "Paul Bogle leads a protest against injustice that turns violent; brutally suppressed by Governor Eyre"
+				},
+				{
+					"year": "1938",
+					"title": "Labor Riots",
+					"description": "Worker uprisings across the island lead to the formation of trade unions and political parties"
+				}
+			],
+			"notableFigures": [
+				"Nanny of the Maroons",
+				"Cudjoe",
+				"Sam Sharpe",
+				"Paul Bogle",
+				"George William Gordon",
+				"Alexander Bustamante"
+			]
+		},
+		"modern": {
+			"period": "1962 - Present",
+			"description": "Jamaica gained independence in 1962, but remained within the Commonwealth. The initial optimism was challenged in the 1970s by Cold War tensions, as Prime Minister Michael Manley (democratic socialist) and Edward Seaga (conservative) engaged in fierce ideological battles that frequently spilled into street violence. Economically, the country shifted from sugar to bauxite mining and tourism. Culturally, this period saw the global rise of Reggae music and Rastafari, with Bob Marley becoming an international icon of peace and resistance. Despite challenges with debt, crime, and emigration, Jamaica maintains a vibrant democracy and remains a cultural heavyweight, influencing global music, language, and fashion.",
+			"keyEvents": [
+				{
+					"year": "1962",
+					"title": "Independence",
+					"description": "Jamaica becomes an independent nation; Alexander Bustamante is first Prime Minister"
+				},
+				{
+					"year": "1972",
+					"title": "Manley Era Begins",
+					"description": "Michael Manley elected, introducing socialist reforms and non-aligned foreign policy"
+				},
+				{
+					"year": "1988",
+					"title": "Hurricane Gilbert",
+					"description": "Devastating hurricane causes massive damage to infrastructure and economy"
+				},
+				{
+					"year": "2011",
+					"title": "First Female PM",
+					"description": "Portia Simpson-Miller becomes the first female Prime Minister"
+				}
+			],
+			"notableFigures": [
+				"Norman Manley",
+				"Michael Manley",
+				"Edward Seaga",
+				"Bob Marley",
+				"Usain Bolt",
+				"Miss Lou (Louise Bennett-Coverley)"
+			]
+		},
+		"timeline": [
+			{ "year": "1494", "era": "Ancient", "title": "Spanish Arrival", "description": "Columbus lands in Jamaica" },
+			{
+				"year": "1655",
+				"era": "Colonial",
+				"title": "British Conquest",
+				"description": "Britain takes the island from Spain"
+			},
+			{
+				"year": "1739",
+				"era": "Colonial",
+				"title": "Maroon Peace",
+				"description": "Treaties signed ending the First Maroon War"
+			},
+			{
+				"year": "1834",
+				"era": "Colonial",
+				"title": "Emancipation",
+				"description": "Slavery abolished throughout the British Empire"
+			},
+			{
+				"year": "1962",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Jamaica becomes a sovereign state"
+			},
+			{
+				"year": "1976",
+				"era": "Modern",
+				"title": "State of Emergency",
+				"description": "Political violence leads to declared state of emergency"
+			}
+		]
+	},
+	{
+		"name": "Saint Lucia",
+		"overview": "Saint Lucia is known as the 'Helen of the West Indies' because it changed hands between the French and British fourteen times, likened to the mythical Helen of Troy. This intense rivalry has left a deep duality in the island's culture: while the official language and political system are British, the culture, place names, and the widely spoken Creole language (Kwéyòl) are distinctly French. Dominated by the iconic Pitons, the island transitioned from a sugar economy to bananas, and now to high-end tourism. It is notable for having the highest number of Nobel Laureates per capita in the world, with two winners (Derek Walcott and Sir Arthur Lewis) from a population of under 200,000.",
+		"source": {
+			"label": "Government of Saint Lucia - History",
+			"url": "http://www.govt.lc/about/history",
+			"urls": [
+				"http://www.govt.lc/about/history",
+				"https://www.britannica.com/place/Saint-Lucia",
+				"https://en.wikipedia.org/wiki/History_of_Saint_Lucia"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "February 22, 1979" },
+			{ "label": "Capital", "value": "Castries" },
+			{ "label": "Nickname", "value": "Helen of the West Indies" },
+			{ "label": "Indigenous Name", "value": "Hewanorra (Land of Iguanas)" },
+			{ "label": "Nobel Laureates", "value": "2 (Literature, Economics)" },
+			{ "label": "Major Landmark", "value": "The Pitons (UNESCO Site)" }
+		],
+		"ancient": {
+			"period": "c. 200 CE - 1500 CE",
+			"description": "The first inhabitants were the Arawaks, who arrived from South America around 200 CE, leaving behind sophisticated pottery. They were displaced around 800 CE by the Caribs (Kalinago), a more warlike people who named the island 'Ioüanalao' and later 'Hewanorra,' meaning 'there where the iguana is found.' The Caribs fiercely defended the island against early European colonization attempts. In 1605, an English vessel, the 'Oliphe Blossom', was blown off course and 67 settlers attempted to stay; within weeks, the Caribs had killed most of them, and the survivors fled, marking the strength of indigenous resistance in St. Lucia.",
+			"keyEvents": [
+				{
+					"year": "c. 200 CE",
+					"title": "Arawak Settlement",
+					"description": "Arawak peoples settle and develop agriculture and pottery"
+				},
+				{ "year": "c. 800 CE", "title": "Carib Conquest", "description": "Caribs arrive and displace the Arawaks" },
+				{
+					"year": "1605",
+					"title": "Oliphe Blossom",
+					"description": "Failed English settlement attempt; colonists driven out by Caribs"
+				}
+			],
+			"notableFigures": ["Chief Augraumart (Carib leader)"]
+		},
+		"colonial": {
+			"period": "1635 - 1979",
+			"description": "Saint Lucia's colonial history is a tug-of-war. The French signed a treaty with the Caribs in 1660, establishing the first lasting settlements. For the next 150 years, the island was a battleground, switching flags 14 times as Britain and France fought for control of the strategic harbour at Castries. It was finally ceded to Britain in 1814. The island saw a period of 'Brigand Wars' during the French Revolution, where freedom fighters and slaves fought the British. After the abolition of slavery in 1834, the economy struggled, eventually finding a niche as a major coaling station for steamships in the late 19th century, before moving to banana cultivation (the 'Green Gold') in the 20th century.",
+			"keyEvents": [
+				{
+					"year": "1660",
+					"title": "Carib Treaty",
+					"description": "French sign treaty with Caribs, allowing for first permanent settlement"
+				},
+				{ "year": "1746", "title": "Soufrière Founded", "description": "First town established by the French" },
+				{
+					"year": "1794-1798",
+					"title": "Brigands' War",
+					"description": "Guerrilla war fought by 'L'Armée Française dans les bois' against British control"
+				},
+				{
+					"year": "1814",
+					"title": "Treaty of Paris",
+					"description": "Saint Lucia finally ceded to the British, ending the 14 changes of possession"
+				},
+				{
+					"year": "1924",
+					"title": "Constitutional Reform",
+					"description": "Introduction of a partially elected legislative council"
+				}
+			],
+			"notableFigures": ["Flore Bois Gaillard (Leader in the Brigands' War)", "Sir George Charles"]
+		},
+		"modern": {
+			"period": "1979 - Present",
+			"description": "Saint Lucia achieved independence on February 22, 1979, under Sir John Compton and the United Workers Party. The early years of independence were marked by a brief political struggle, but the country quickly stabilized. The economy transformed from a monocrop banana agriculture (protected by preferential trade agreements that later eroded) to a robust tourism sector. Saint Lucia gained international prestige through its two Nobel Laureates: Sir Arthur Lewis (Economics, 1979) and Derek Walcott (Literature, 1992). Today, it is a member of the OECS and CARICOM, focusing on regional integration and sustainable development while preserving its unique Creole heritage.",
+			"keyEvents": [
+				{
+					"year": "1979",
+					"title": "Independence",
+					"description": "Saint Lucia becomes an independent Commonwealth realm"
+				},
+				{
+					"year": "1992",
+					"title": "Derek Walcott Nobel Prize",
+					"description": "Walcott wins Nobel Prize in Literature, putting St. Lucian culture on the world map"
+				},
+				{
+					"year": "2016",
+					"title": "Chastanet Elected",
+					"description": "Return of UWP to power, focusing on tourism expansion"
+				},
+				{
+					"year": "2021",
+					"title": "Pierre Elected",
+					"description": "Philip J. Pierre (SLP) becomes Prime Minister following general elections"
+				}
+			],
+			"notableFigures": [
+				"Sir John Compton ('Father of the Nation')",
+				"Sir Arthur Lewis",
+				"Derek Walcott",
+				"Kenny Anthony"
+			]
+		},
+		"timeline": [
+			{
+				"year": "1605",
+				"era": "Ancient",
+				"title": "First English Attempt",
+				"description": "Failed settlement by the Oliphe Blossom party"
+			},
+			{
+				"year": "1660",
+				"era": "Colonial",
+				"title": "French Treaty",
+				"description": "French secure agreement with Caribs"
+			},
+			{
+				"year": "1814",
+				"era": "Colonial",
+				"title": "British Rule Finalized",
+				"description": "France cedes island to Britain permanently"
+			},
+			{
+				"year": "1967",
+				"era": "Colonial",
+				"title": "Associated Statehood",
+				"description": "Island gains full internal self-government"
+			},
+			{
+				"year": "1979",
+				"era": "Independence",
+				"title": "Independence",
+				"description": "Saint Lucia becomes a sovereign state"
+			},
+			{
+				"year": "1992",
+				"era": "Modern",
+				"title": "Nobel Prize",
+				"description": "Derek Walcott wins Nobel Prize in Literature"
+			}
+		]
+	},
+	{
+		"name": "Antigua and Barbuda",
+		"overview": "Antigua and Barbuda's history is a transition from an indigenous maritime hub to a strategic British naval stronghold, and finally to a modern dual-island nation celebrated for its tourism and sailing. Originally inhabited by the Ciboney, Arawak, and Kalinago peoples, the islands became a linchpin of the British Empire's Caribbean sugar economy, famously serving as the base for Admiral Horatio Nelson. The islands endured centuries of plantation slavery, the legacy of which shaped the demographic and cultural landscape. Since gaining independence in 1981, the nation has navigated the challenges of a small island economy, moving from agriculture to high-end tourism and financial services, while maintaining a vibrant culture rooted in calypso, cricket, and the distinct identities of its two main islands.",
+		"source": {
+			"label": "Britannica - Antigua and Barbuda",
+			"url": "https://www.britannica.com/place/Antigua-and-Barbuda",
+			"urls": [
+				"https://www.britannica.com/place/Antigua-and-Barbuda",
+				"https://thecommonwealth.org/our-member-countries/antigua-and-barbuda/history",
+				"https://antigua-barbuda.com/history_culture.asp"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "November 1, 1981" },
+			{ "label": "Capital", "value": "St. John's" },
+			{ "label": "Indigenous Names", "value": "Waladli (Antigua), Wa'omoni (Barbuda)" },
+			{ "label": "Major Historic Site", "value": "Nelson's Dockyard (UNESCO)" },
+			{ "label": "Highest Peak", "value": "Mount Obama (formerly Boggy Peak)" },
+			{ "label": "Motto", "value": "Each Endeavouring, All Achieving" }
+		],
+		"pre-colonial": {
+			"period": "c. 2900 BCE - 1632 CE",
+			"description": "Long before European sails appeared on the horizon, Antigua and Barbuda were settled by successive waves of indigenous peoples from South America. The earliest inhabitants, the Ciboney (or Archaic people), arrived around 2900 BCE, living as hunter-gatherers. They were followed by the Arawak-speaking Saladoid people around 35 CE, who introduced agriculture, pottery, and established permanent villages. These peaceful agriculturalists called Antigua 'Waladli' and Barbuda 'Wa'omoni'. By 1100 CE, the Kalinago (Caribs) began to expand into the region. Known for their navigational skills and warrior culture, the Kalinago dominated the islands, utilizing the abundant timber to build large sea-faring canoes. Their fierce resistance, combined with the islands' lack of fresh water springs, successfully deterred early European colonization attempts for over a century after Columbus first sighted the islands in 1493.",
+			"keyEvents": [
+				{
+					"year": "c. 2900 BCE",
+					"title": "Archaic Settlement",
+					"description": "Arrival of the Ciboney peoples, the first known inhabitants living a hunter-gatherer lifestyle"
+				},
+				{
+					"year": "c. 35 CE",
+					"title": "Arawak Arrival",
+					"description": "Saladoid peoples arrive from the Orinoco region, introducing ceramics and agriculture"
+				},
+				{
+					"year": "c. 1200",
+					"title": "Kalinago Expansion",
+					"description": "Kalinago peoples establish dominance in the region, displacing or assimilating earlier groups"
+				},
+				{
+					"year": "1493",
+					"title": "Columbus Sighting",
+					"description": "Christopher Columbus spots the island, naming it Santa María de la Antigua after a statue in Seville Cathedral"
+				}
+			],
+			"notableFigures": ["Unknown Arawak Caciques", "Kalinago Warriors"]
+		},
+		"colonial": {
+			"period": "1632 - 1981",
+			"description": "After failed Spanish and French attempts, the British successfully colonized Antigua in 1632, establishing a settlement that would transform the island into a 'sugar island' monoculture. Under the Codrington family's influence, Betty's Hope became the first major sugar plantation, signaling the shift to an economy dependent on the labor of enslaved Africans. Barbuda was leased to the Codringtons in 1685, used uniquely as a nursery for livestock and provisions for the Antiguan plantations. Antigua's strategic location and deep harbors led the British Royal Navy to establish a major dockyard at English Harbour in the 18th century, serving as the headquarters for the Leeward Islands station. Slavery was abolished in 1834, but the transition was harsh; freed people were immediately forced into a contract labor system due to a lack of available land. The 20th century saw the rise of the labor movement, led by V.C. Bird, which challenged the colonial sugar barons and laid the groundwork for political independence.",
+			"keyEvents": [
+				{
+					"year": "1632",
+					"title": "British Colonization",
+					"description": "Settlers from St. Kitts establish the first permanent British colony on Antigua"
+				},
+				{
+					"year": "1674",
+					"title": "Betty's Hope Established",
+					"description": "Christopher Codrington founds the first large-scale sugar plantation, solidifying the plantation economy"
+				},
+				{
+					"year": "1685",
+					"title": "Lease of Barbuda",
+					"description": "The Codrington family leases Barbuda from the Crown, running it as a private fiefdom for centuries"
+				},
+				{
+					"year": "1784",
+					"title": "Nelson Arrives",
+					"description": "Horatio Nelson arrives to enforce Navigation Acts, overseeing the development of the naval dockyard"
+				},
+				{
+					"year": "1834",
+					"title": "Emancipation",
+					"description": "Slavery is abolished; unlike other colonies, Antigua bypasses 'apprenticeship' but economic freedom remains elusive"
+				},
+				{
+					"year": "1939",
+					"title": "Trade Union Formation",
+					"description": "Establishment of the Antigua Trades and Labour Union (ATLU), marking the rise of organized labor and political consciousness"
+				},
+				{
+					"year": "1967",
+					"title": "Associated Statehood",
+					"description": "Antigua becomes an Associated State with internal self-government, while Britain retains control of defense"
+				}
+			],
+			"notableFigures": [
+				"Christopher Codrington",
+				"Admiral Horatio Nelson",
+				"Prince Klaas (Slave revolt leader)",
+				"V.C. Bird"
+			]
+		},
+		"modern": {
+			"period": "1981 - Present",
+			"description": "Antigua and Barbuda achieved full independence on November 1, 1981, with V.C. Bird becoming the first Prime Minister. The post-independence era was politically dominated by the Bird family and the Antigua Labour Party, bringing stability but also accusations of corruption and cronyism. The economy shifted dramatically from the collapsing sugar industry—which officially closed in the 1970s—to tourism and offshore finance. The nation has faced significant challenges, including devastation from hurricanes like Luis (1995) and Irma (2017), the latter of which forced the total temporary evacuation of Barbuda. Tensions between the two islands have occasionally flared, particularly regarding land rights on Barbuda, where land was historically held in common. Today, the nation focuses on sustainable high-end tourism and addressing climate change vulnerabilities.",
+			"keyEvents": [
+				{
+					"year": "1981",
+					"title": "Independence",
+					"description": "The nation becomes fully independent within the Commonwealth"
+				},
+				{
+					"year": "2004",
+					"title": "Political Change",
+					"description": "Baldwin Spencer wins the election, ending decades of uninterrupted rule by the Bird dynasty"
+				},
+				{
+					"year": "2017",
+					"title": "Hurricane Irma",
+					"description": "Category 5 hurricane devastates Barbuda, destroying 95% of structures and forcing evacuation of the entire population to Antigua"
+				},
+				{
+					"year": "2023",
+					"title": "Republic Referendum Discussion",
+					"description": "Following the death of Queen Elizabeth II, discussions intensify regarding a potential referendum to become a republic"
+				}
+			],
+			"notableFigures": ["V.C. Bird (Father of the Nation)", "Lester Bird", "Baldwin Spencer", "Gaston Browne"]
+		},
+		"timeline": [
+			{
+				"year": "c. 1100",
+				"era": "Pre-Colonial",
+				"title": "Kalinago Dominance",
+				"description": "Kalinago peoples establish control over the islands"
+			},
+			{
+				"year": "1493",
+				"era": "Colonial",
+				"title": "European Discovery",
+				"description": "Columbus sights and names Antigua"
+			},
+			{
+				"year": "1632",
+				"era": "Colonial",
+				"title": "British Settlement",
+				"description": "First permanent British settlement established"
+			},
+			{
+				"year": "1834",
+				"era": "Colonial",
+				"title": "Abolition of Slavery",
+				"description": "Immediate emancipation granted to enslaved population"
+			},
+			{
+				"year": "1981",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Antigua and Barbuda becomes a sovereign nation"
+			},
+			{
+				"year": "2017",
+				"era": "Modern",
+				"title": "Barbuda Evacuation",
+				"description": "Hurricane Irma forces total evacuation of Barbuda"
+			}
+		]
+	},
+	{
+		"name": "Saint Kitts and Nevis",
+		"overview": "Saint Kitts and Nevis, often called the 'Mother Colony' of the West Indies, holds the distinction of being the first Caribbean territory settled by both the English and French. The dual-island federation has a history defined by intense colonial rivalry, evidenced by the massive fortress of Brimstone Hill. For centuries, the islands were dominated by a sugar monoculture that generated immense wealth for planters and misery for the enslaved African population. In the modern era, the federation has navigated the complexities of a two-island political union, the closure of its 350-year-old sugar industry, and a transition toward a service-based economy centered on tourism and citizenship-by-investment.",
+		"source": {
+			"label": "Wikipedia - History of Saint Kitts and Nevis",
+			"url": "https://en.wikipedia.org/wiki/History_of_Saint_Kitts_and_Nevis",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Saint_Kitts_and_Nevis",
+				"https://www.historicstkitts.kn/",
+				"https://thecommonwealth.org/our-member-countries/st-kitts-and-nevis/history"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "September 19, 1983" },
+			{ "label": "Constitution", "value": "Federal Constitutional Monarchy" },
+			{ "label": "Indigenous Names", "value": "Liamuiga (St. Kitts), Oualie (Nevis)" },
+			{ "label": "UNESCO Site", "value": "Brimstone Hill Fortress National Park" },
+			{ "label": "Capital", "value": "Basseterre" },
+			{ "label": "Smallest Sovereign State", "value": "Smallest in Western Hemisphere by area and population" }
+		],
+		"pre-colonial": {
+			"period": "c. 3000 BCE - 1623 CE",
+			"description": "The indigenous history of St. Kitts and Nevis dates back roughly 5,000 years with the arrival of Archaic peoples. Later, Igneri (Arawak) agriculturalists settled the fertile volcanic slopes, followed by the Kalinago around 1300 CE. St. Kitts was known as 'Liamuiga' (Fertile Land), and Nevis as 'Oualie' (Land of Beautiful Waters). The islands were a significant hub for the Kalinago people, who maintained a stronghold here. Unlike other islands where indigenous populations were sparse upon European arrival, St. Kitts had a robust Kalinago community led by Chief Tegremond. They initially welcomed the first English settlers in 1623, assisting them in survival, but relations quickly deteriorated as European numbers grew, leading to a tragic pre-emptive massacre by the colonists.",
+			"keyEvents": [
+				{
+					"year": "c. 3000 BCE",
+					"title": "First Inhabitants",
+					"description": "Archaic peoples settle the islands, utilizing marine resources"
+				},
+				{
+					"year": "c. 1300 CE",
+					"title": "Kalinago Settlement",
+					"description": "Kalinago warriors migrate north, establishing Liamuiga as a major center"
+				},
+				{
+					"year": "1493",
+					"title": "Columbus Visit",
+					"description": "Columbus sights the islands, originally naming Nevis 'San Martín' (later confused on maps)"
+				},
+				{
+					"year": "1623",
+					"title": "English Arrival",
+					"description": "Thomas Warner arrives, welcomed by Kalinago Chief Tegremond"
+				}
+			],
+			"notableFigures": ["Chief Tegremond (Ouboutou)"]
+		},
+		"colonial": {
+			"period": "1623 - 1983",
+			"description": "St. Kitts became the launching pad for British colonization in the Caribbean when Thomas Warner established a settlement in 1623. Shortly after, the French arrived, and the two powers partitioned the island, leading to over a century of fluctuating control and warfare. In 1626, in an event known as the Genocide at Bloody Point, English and French forces joined to massacre over 2,000 Kalinago people, ending indigenous resistance. The introduction of sugar in the 1640s transformed the islands into plantation societies run on enslaved African labor. Nevis briefly became the richest island in the British Caribbean during the 17th century, known as the 'Queen of the Caribbees.' The 18th century saw the construction of Brimstone Hill, the 'Gibraltar of the West Indies.' Britain finally secured total control in 1783 under the Treaty of Versailles. The islands remained a sugar colony well into the 20th century, with labor unrest in the 1930s (the Buckley's Riots) spawning the labor movement that would eventually lead the drive for independence.",
+			"keyEvents": [
+				{
+					"year": "1623",
+					"title": "First British Colony",
+					"description": "Thomas Warner establishes the first successful British colony in the West Indies on St. Kitts"
+				},
+				{
+					"year": "1626",
+					"title": "Kalinago Genocide",
+					"description": "Joint English-French massacre of the indigenous population at Bloody Point"
+				},
+				{
+					"year": "1627",
+					"title": "Anglo-French Partition",
+					"description": "St. Kitts is divided between French (ends) and English (middle) sectors"
+				},
+				{
+					"year": "1782",
+					"title": "Siege of Brimstone Hill",
+					"description": "French capture the fortress after a month-long siege, though the island is returned to Britain the following year"
+				},
+				{
+					"year": "1783",
+					"title": "Treaty of Versailles",
+					"description": "France cedes St. Kitts solely to Britain, ending the partition era"
+				},
+				{
+					"year": "1834",
+					"title": "Emancipation",
+					"description": "Slavery abolished, transitioning to an apprenticeship system until 1838"
+				},
+				{
+					"year": "1935",
+					"title": "Buckley's Riots",
+					"description": "Labor unrest on sugar estates sparks a wave of strikes across the British Caribbean"
+				},
+				{
+					"year": "1967",
+					"title": "Associated Statehood",
+					"description": "St. Kitts, Nevis, and Anguilla become an Associated State; Anguilla rebels and separates shortly after"
+				}
+			],
+			"notableFigures": ["Thomas Warner", "Alexander Hamilton (Born in Nevis)", "Robert L. Bradshaw"]
+		},
+		"modern": {
+			"period": "1983 - Present",
+			"description": "Saint Kitts and Nevis gained independence in 1983 under Prime Minister Kennedy Simmonds, becoming the smallest sovereign nation in the Americas. The federation is unique in that the constitution grants Nevis considerable autonomy and the right to secede, a clause that was tested in a failed 1998 referendum. The defining economic event of the modern era was the government's decision to close the sugar industry in 2005 after more than 300 years, due to unprofitability. This forced a rapid pivot to tourism, offshore education, and a Citizenship by Investment program that has attracted significant foreign capital but also international scrutiny. The islands continue to balance federal unity with Nevisian desires for autonomy while developing a service-based economy.",
+			"keyEvents": [
+				{ "year": "1983", "title": "Independence", "description": "Federation achieves independence from Britain" },
+				{
+					"year": "1998",
+					"title": "Nevis Referendum",
+					"description": "A referendum for Nevis to secede from the federation fails to reach the required two-thirds majority"
+				},
+				{
+					"year": "2005",
+					"title": "End of Sugar",
+					"description": "The government officially closes the sugar industry, ending centuries of cane cultivation"
+				},
+				{
+					"year": "2015",
+					"title": "Unity Government",
+					"description": "Team Unity coalition wins election, marking a rare instance of cross-island political cooperation"
+				}
+			],
+			"notableFigures": ["Kennedy Simmonds", "Denzil Douglas", "Timothy Harris"]
+		},
+		"timeline": [
+			{
+				"year": "1623",
+				"era": "Colonial",
+				"title": "Warner Arrives",
+				"description": "Establishment of the first permanent English settlement in the West Indies"
+			},
+			{
+				"year": "1626",
+				"era": "Colonial",
+				"title": "Bloody Point",
+				"description": "Massacre of the indigenous Kalinago population"
+			},
+			{
+				"year": "1783",
+				"era": "Colonial",
+				"title": "British Sovereignty",
+				"description": "Treaty of Versailles confirms British control over the entirety of St. Kitts"
+			},
+			{
+				"year": "1935",
+				"era": "Colonial",
+				"title": "Labor Unrest",
+				"description": "Buckley's Riots launch the modern labor movement"
+			},
+			{
+				"year": "1983",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "St. Kitts and Nevis becomes an independent sovereign state"
+			},
+			{
+				"year": "2005",
+				"era": "Modern",
+				"title": "Sugar Closure",
+				"description": "Cessation of the national sugar industry"
+			}
+		]
+	},
+	{
+		"name": "Trinidad and Tobago",
+		"overview": "Trinidad and Tobago possesses a history distinct from the rest of the English-speaking Caribbean, characterized by a complex dual colonial heritage (Spanish and British) and a highly diverse population resulting from African slavery and Indian indentureship. Trinidad was a neglected Spanish outpost for centuries before becoming a British sugar colony, while Tobago changed hands more times than any other Caribbean island. The nation is the birthplace of the steelpan, calypso, and limbo, and hosts one of the world's most famous Carnivals. Economically, the discovery of oil and natural gas transformed the islands into an industrial powerhouse, creating a unique socio-political dynamic different from its tourism-dependent neighbors.",
+		"source": {
+			"label": "Wikipedia - History of Trinidad and Tobago",
+			"url": "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago",
+			"urls": [
+				"https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago",
+				"https://www.britannica.com/place/Trinidad-and-Tobago",
+				"http://www.nalis.gov.tt/"
+			]
+		},
+		"keyFacts": [
+			{ "label": "Independence Declared", "value": "August 31, 1962" },
+			{ "label": "Republic Status", "value": "August 1, 1976" },
+			{ "label": "Indigenous Name", "value": "Iere (Land of the Hummingbird)" },
+			{ "label": "Major Invention", "value": "Steelpan (only acoustic instrument invented in 20th century)" },
+			{ "label": "Capital", "value": "Port of Spain" },
+			{ "label": "Economy", "value": "Oil and Natural Gas based" }
+		],
+		"pre-colonial": {
+			"period": "c. 5000 BCE - 1498 CE",
+			"description": "Trinidad's proximity to South America meant it was settled earlier than the northern Caribbean islands, serving as a gateway for migration. The earliest settlers belonged to the Ortoiroid culture (Archaic) around 5000 BCE. Later, the Saladoid and Barrancoid peoples (Arawakan speakers) arrived, bringing pottery and agriculture. The indigenous population was diverse, including the Nepoya, Suppoya, and Yao groups on Trinidad, and the Kalinago on Tobago. They called Trinidad 'Iere' (Land of the Hummingbird). Unlike the smaller islands, Trinidad supported large, complex chiefdoms. When Columbus arrived in 1498, the islands were well-populated, though the subsequent Spanish encomienda system and slave raids decimated these populations, leaving only small pockets of indigenous ancestry by the 18th century.",
+			"keyEvents": [
+				{
+					"year": "c. 5000 BCE",
+					"title": "Banwari Trace",
+					"description": "Earliest evidence of human settlement in the West Indies found at Banwari Trace, Trinidad"
+				},
+				{
+					"year": "c. 250 BCE",
+					"title": "Saladoid Arrival",
+					"description": "Ceramic-using agriculturalists migrate from the Orinoco delta"
+				},
+				{
+					"year": "1498",
+					"title": "Third Voyage",
+					"description": "Christopher Columbus sights the three peaks of the Trinity Hills, naming the island 'La Trinidad'"
+				}
+			],
+			"notableFigures": ["Hyarima (Cacique who resisted the Spanish)"]
+		},
+		"colonial": {
+			"period": "1498 - 1962",
+			"description": "Trinidad remained a Spanish possession for three centuries but was largely neglected and sparsely populated. In contrast, Tobago was fought over fiercely, changing flags 33 times between the French, Dutch, British, and Courlanders (Latvians). To populate Trinidad, Spain issued the 'Cedula of Population' in 1783, inviting French planters and their enslaved workers, which gave Trinidad a distinct French cultural layer (patois, Catholicism) under Spanish rule. In 1797, the British captured Trinidad. Following the abolition of slavery in 1834, the British implemented a massive indentureship program (1845-1917), bringing over 147,000 Indians to the islands to work the sugar estates. This created a unique demographic split between Afro-Trinidadians and Indo-Trinidadians. The two islands were administratively joined in 1889. The discovery of oil in the early 20th century began to shift the economy away from agriculture. The labor riots of 1937, led by Uriah Butler, marked the birth of the modern political movement.",
+			"keyEvents": [
+				{
+					"year": "1592",
+					"title": "St. Joseph Founded",
+					"description": "Antonio de Berrio founds San José de Oña, the first capital of Trinidad"
+				},
+				{
+					"year": "1783",
+					"title": "Cedula of Population",
+					"description": "Spain invites Catholic foreign planters to settle, leading to a massive influx of French influence"
+				},
+				{
+					"year": "1797",
+					"title": "British Capture",
+					"description": "Sir Ralph Abercromby captures Trinidad from the Spanish; formalized by the Treaty of Amiens in 1802"
+				},
+				{
+					"year": "1814",
+					"title": "Tobago Ceded",
+					"description": "After changing hands dozens of times, Tobago is finally ceded to Britain"
+				},
+				{
+					"year": "1845",
+					"title": "Indian Indentureship",
+					"description": "The ship 'Fath Al Razack' arrives with the first group of indentured laborers from India"
+				},
+				{
+					"year": "1889",
+					"title": "Union",
+					"description": "Trinidad and Tobago are administratively united into a single colony"
+				},
+				{
+					"year": "1937",
+					"title": "Butler Riots",
+					"description": "Oilfield strikes sparked by Tubal Uriah Butler ignite the labor movement and push for self-governance"
+				}
+			],
+			"notableFigures": ["Tubal Uriah 'Buzz' Butler", "Captain Arthur Cipriani", "Sir Ralph Abercromby"]
+		},
+		"modern": {
+			"period": "1962 - Present",
+			"description": "Trinidad and Tobago gained independence in 1962 under the People's National Movement (PNM) led by Dr. Eric Williams, a renowned historian who became the 'Father of the Nation.' The country became a republic in 1976. The 1970s saw the Black Power Revolution, which challenged social and economic inequality. The nation faced a severe test in 1990 when the Jamaat al Muslimeen, a radical Islamist group, attempted a coup d'état, holding the government hostage for six days—the only Islamist insurrection in the Western Hemisphere. The country has since enjoyed economic prosperity due to oil and natural gas booms, making it one of the wealthiest in the Caribbean, though it struggles with crime and ethnic political polarization. Culturally, it remains a powerhouse, exporting its carnival arts and music globally.",
+			"keyEvents": [
+				{
+					"year": "1962",
+					"title": "Independence",
+					"description": "Trinidad and Tobago gains independence within the Commonwealth"
+				},
+				{
+					"year": "1970",
+					"title": "Black Power Revolution",
+					"description": "Mass protests and an army mutiny challenge the government to address racial and economic disparity"
+				},
+				{
+					"year": "1976",
+					"title": "Republic Day",
+					"description": "The nation severs ties with the British monarchy, becoming a republic with a ceremonial president"
+				},
+				{
+					"year": "1990",
+					"title": "Attempted Coup",
+					"description": "Yasin Abu Bakr and the Jamaat al Muslimeen storm Parliament, holding the Prime Minister hostage in a failed coup attempt"
+				},
+				{
+					"year": "2010",
+					"title": "First Female PM",
+					"description": "Kamla Persad-Bissessar becomes the first female Prime Minister"
+				}
+			],
+			"notableFigures": [
+				"Dr. Eric Williams",
+				"Basdeo Panday",
+				"A.N.R. Robinson",
+				"V.S. Naipaul (Nobel Laureate)",
+				"Brian Lara"
+			]
+		},
+		"timeline": [
+			{
+				"year": "1498",
+				"era": "Colonial",
+				"title": "Columbus Arrival",
+				"description": "Christopher Columbus lands on Trinidad"
+			},
+			{
+				"year": "1797",
+				"era": "Colonial",
+				"title": "British Conquest",
+				"description": "Britain takes control of Trinidad from Spain"
+			},
+			{
+				"year": "1845",
+				"era": "Colonial",
+				"title": "Indentureship Begins",
+				"description": "First arrival of Indian indentured laborers"
+			},
+			{
+				"year": "1962",
+				"era": "Modern",
+				"title": "Independence",
+				"description": "Nation becomes independent from Great Britain"
+			},
+			{ "year": "1976", "era": "Modern", "title": "Republic Status", "description": "Transition to a Republic" },
+			{
+				"year": "1990",
+				"era": "Modern",
+				"title": "Coup Attempt",
+				"description": "Failed insurrection by Jamaat al Muslimeen"
+			}
+		]
 	}
 ]
